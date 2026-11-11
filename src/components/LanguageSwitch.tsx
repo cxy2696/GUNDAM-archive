@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Dictionary } from "@/lib/i18n";
@@ -43,9 +42,9 @@ export function LanguageSwitch({
   return (
     <div className={`lang-switch ${className}`} role="group" aria-label={dict.common.language}>
       {(["zh", "ja"] as const).map((target) => (
-        <Link
+        <a
           key={target}
-          href={`/${target}${rest}${suffix}`}
+          href={`${basePath}/${target}${rest}${suffix}`}
           className={`lang-switch__option ${lang === target ? "is-active" : ""}`}
           aria-current={lang === target ? "true" : undefined}
           aria-label={target === "zh" ? "中文" : "日本語"}
@@ -54,7 +53,7 @@ export function LanguageSwitch({
         >
           <span className="lang-switch__full" aria-hidden>{target === "zh" ? "中文" : "日本語"}</span>
           <span className="lang-switch__short" aria-hidden>{target === "zh" ? "中" : "日"}</span>
-        </Link>
+        </a>
       ))}
     </div>
   );
