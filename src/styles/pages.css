@@ -3105,9 +3105,6 @@
   .tl-head__count {
     margin-top: 8px;
   }
-  .tl-track {
-    min-height: 200px !important;
-  }
   .tl-event {
     width: 92px;
   }
