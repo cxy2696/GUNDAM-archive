@@ -1,0 +1,18 @@
+{
+  "machineSlug": "rx-78-2",
+  "version": "1.0.0",
+  "status": "procedural-placeholder",
+  "scale": "1:1 (meters)",
+  "bounds": { "x": 8.6, "y": 18.0, "z": 5.2 },
+  "lods": [{ "level": "P", "url": null, "tris": null }],
+  "parts": [
+    { "id": "head", "axis": [0, 1, 0], "order": 3 },
+    { "id": "torso", "axis": [0, 0.35, 0], "order": 1 },
+    { "id": "backpack", "axis": [0, 0.1, -1], "order": 2 },
+    { "id": "shield", "axis": [-1, 0, 0.45], "order": 2 }
+  ],
+  "materials": { "primary": "#E8EDF2", "secondary": "#2B4E8C", "accent": "#E0B64A" },
+  "animations": [],
+  "designSheets": [{ "kind": "line", "url": "/zh/machines/rx-78-2/" }],
+  "note": "V1 renders this machine procedurally in the browser. Replace lods with glTF LOD0/1/2 and keep the part contract."
+}
