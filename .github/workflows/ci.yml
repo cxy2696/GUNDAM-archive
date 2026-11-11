@@ -27,4 +27,4 @@ jobs:
       - name: Build static site
         run: pnpm build
         env:
-          NEXT_PUBLIC_SITE_URL: https://gaia-archive.example
+          NEXT_PUBLIC_SITE_URL: https://cxy2696.github.io/GUNDAM-archive

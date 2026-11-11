@@ -47,7 +47,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
           </div>
           <div className="footer__col">
             <h3 className="micro">PROJECT</h3>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/cxy2696/GUNDAM-archive" target="_blank" rel="noreferrer">
               GitHub Repository
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>

@@ -242,7 +242,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <span className="micro">06 / CONTRIBUTE</span>
             <h2>{dict.about.contributeTitle}</h2>
             <p>{dict.about.contribute}</p>
-            <a className="btn btn--ghost btn--sm about-github" href="https://github.com/gaia-archive/gaia-archive" target="_blank" rel="noreferrer">
+            <a className="btn btn--ghost btn--sm about-github" href="https://github.com/cxy2696/GUNDAM-archive" target="_blank" rel="noreferrer">
               GitHub Repository <ArrowUpRightIcon size={13} />
             </a>
           </div>

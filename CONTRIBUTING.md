@@ -9,7 +9,7 @@
 - 可选：Python 3（仅 `pnpm preview` 静态预览）
 
 ```bash
-git clone <repo>
+git clone https://github.com/cxy2696/GUNDAM-archive.git
 cd gaia-archive
 pnpm install
 pnpm dev

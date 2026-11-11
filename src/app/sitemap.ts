@@ -3,7 +3,7 @@ export const dynamic = "force-static";
 import type { MetadataRoute } from "next";
 import { getBundle } from "@/lib/content";
 
-const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gaia-archive.example";
+const base = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive").replace(/\/$/, "");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const bundle = getBundle();
@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const lang of ["zh", "ja"]) {
     for (const path of staticPaths) {
       entries.push({
-        url: new URL(`/${lang}${path}/`, base).toString(),
+        url: `${base}/${lang}${path}/`,
         lastModified,
         changeFrequency: path === "" ? "weekly" : "monthly",
         priority: path === "" ? 1 : path === "/machines" ? 0.9 : 0.7,
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const machine of bundle.machines) {
       entries.push({
-        url: new URL(`/${lang}/machines/${machine.id}/`, base).toString(),
+        url: `${base}/${lang}/machines/${machine.id}/`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.8,
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const faction of bundle.factions) {
       entries.push({
-        url: new URL(`/${lang}/factions/${faction.id}/`, base).toString(),
+        url: `${base}/${lang}/factions/${faction.id}/`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.6,
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const character of bundle.characters) {
       entries.push({
-        url: new URL(`/${lang}/characters/${character.id}/`, base).toString(),
+        url: `${base}/${lang}/characters/${character.id}/`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.6,

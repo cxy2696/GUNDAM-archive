@@ -5,6 +5,8 @@
 
 **Next.js 15 · React 19 · TypeScript · Three.js / R3F · Zod · 静态导出 · JSON 驱动**
 
+**Repository**: [cxy2696/GUNDAM-archive](https://github.com/cxy2696/GUNDAM-archive)
+
 > 非官方粉丝考据项目，与 Bandai Namco / 创通・Sunrise 无关联。代码 MIT，原创内容 CC BY-NC-SA 4.0。详见 [NOTICE](NOTICE)。
 
 ![GAIA Archive 首页](preview/home.png)
@@ -178,9 +180,9 @@ gaia-archive/
 
 1. 仓库 Settings → Pages → Source 选择 **GitHub Actions**。
 2. 推送到 `main`，`.github/workflows/deploy-pages.yml` 会自动：
-   - 以 `NEXT_PUBLIC_BASE_PATH=/<repo>` 构建；
+   - 以 `NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive` 构建；
    - 上传 `out/`；
-   - 部署到 `https://<owner>.github.io/<repo>/`。
+   - 部署到 `https://cxy2696.github.io/GUNDAM-archive/`。
 
 项目页必须设置 `NEXT_PUBLIC_BASE_PATH`；用户页/自定义域名留空。`public/.nojekyll` 已包含，避免 `_next` 被 Jekyll 忽略。
 
@@ -189,7 +191,7 @@ gaia-archive/
 | 变量 | 用途 | 默认 |
 | --- | --- | --- |
 | `NEXT_PUBLIC_BASE_PATH` | 子路径部署前缀 | 空 |
-| `NEXT_PUBLIC_SITE_URL` | canonical / sitemap / OG 的绝对域名 | `https://gaia-archive.example` |
+| `NEXT_PUBLIC_SITE_URL` | canonical / sitemap / OG 的绝对域名 | `https://cxy2696.github.io/GUNDAM-archive` |
 
 ## 已知限制（V1 的真实边界）
 

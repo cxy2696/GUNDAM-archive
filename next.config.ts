@@ -5,7 +5,7 @@ import type { NextConfig } from "next";
  * Pages, S3 or any dumb file host. Dynamic concerns (search, viewer state) run
  * entirely client-side; content is compiled at build time from /content.
  *
- * For a project page on GitHub Pages set NEXT_PUBLIC_BASE_PATH=/<repo>.
+ * For a project page on GitHub Pages set NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive.
  */
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 

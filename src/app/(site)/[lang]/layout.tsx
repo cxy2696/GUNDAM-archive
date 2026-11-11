@@ -12,7 +12,7 @@ import "@/app/globals.css";
 
 export const dynamicParams = false;
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gaia-archive.example";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive";
 
 export function generateStaticParams() {
   return [{ lang: "zh" }, { lang: "ja" }];
