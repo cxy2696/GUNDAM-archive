@@ -106,6 +106,36 @@
           "level": "A"
         }
       ]
+    },
+    {
+      "to": "age-2-double-bullet",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 AGE-2 为基础发展出的 高达 AGE-2 双炮型。",
+        "ja": "ガンダムAGE-2を基に発展したガンダムAGE-2ダブルバレット。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
+    },
+    {
+      "to": "age-2-dark-hound",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 AGE-2 为基础发展出的 高达 AGE-2 黑猎犬。",
+        "ja": "ガンダムAGE-2を基に発展したガンダムAGE-2ダークハウンド。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
     }
   ],
   "viewer": {

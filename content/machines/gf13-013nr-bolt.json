@@ -1,0 +1,107 @@
+{
+  "id": "gf13-013nr-bolt",
+  "modelCode": "GF13-013NR",
+  "name": {
+    "zh": "闪电高达",
+    "ja": "ボルトガンダム",
+    "en": "Bolt Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新俄罗斯的代表机体，以重力锤与厚重装甲进行力量压制。",
+    "ja": "ネオロシアの代表機。グラビティ・ハンマーと厚い装甲で力を押し付ける。"
+  },
+  "description": {
+    "zh": [
+      "闪电高达的轮廓像一座会移动的堡垒。它的主武装是一柄可以改变质量的重力锤，挥动时的惯性足以把对手连同地面一起掀翻。",
+      "驾驶它需要的不只是力量，还有在极近距离判断重心与落点的经验。它是一台把“重量”变成战术的机体。"
+    ],
+    "ja": [
+      "ボルトガンダムの輪郭は動く要塞のようだ。主武装は質量を変えられるグラビティ・ハンマーで、振り下ろした際の慣性は相手ごと地面を掘り返す。",
+      "必要なのは力だけではない。至近距離で重心と着点を見極める経験である。この機体は「重さ」を戦術に変える。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "重力锤",
+        "ja": "グラビティ・ハンマー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "钻头",
+        "ja": "ドリル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "argo-gulskii"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": false,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

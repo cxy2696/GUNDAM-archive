@@ -1,0 +1,124 @@
+{
+  "id": "gn-000-0-gundam",
+  "modelCode": "GN-000",
+  "name": {
+    "zh": "0 高达",
+    "ja": "0ガンダム",
+    "en": "0 Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2307,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "天上人最早的高达，也是所有 GN 驱动系谱的原点。",
+    "ja": "ソレスタルビーイング最初のガンダム。すべてのGNドライブ系譜の原点である。"
+  },
+  "description": {
+    "zh": [
+      "0 高达是第一台搭载 GN 驱动器的机体。它的设计朴素得近乎原始，却把“以 GN 粒子驱动的人形兵器”这个想法变成了现实。",
+      "在故事的最后，它由利冯兹驾驶，与 00 高达对峙。原点与终点在同一片战场上相遇，构成了一种残酷的对称。"
+    ],
+    "ja": [
+      "0ガンダムは最初にGNドライブを搭載した機体である。設計は原始的とも言えるほど素朴だが、「GN粒子で駆動する人型兵器」という発想を現実にした。",
+      "物語の最後、リボンズが操縦してダブルオーガンダムと対峙する。原点と終点が同じ戦場で出会う、残酷な対称性である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "ribbons-almark"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [
+    {
+      "to": "gn-001-exia",
+      "kind": "tech_from",
+      "note": {
+        "zh": "0 高达 的技术路线在 能天使高达 上延续。",
+        "ja": "0ガンダムの技術路線はガンダムエクシアへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 00》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 00》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

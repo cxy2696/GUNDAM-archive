@@ -1,0 +1,113 @@
+{
+  "id": "gn-008-seravee",
+  "modelCode": "GN-008",
+  "name": {
+    "zh": "炽天使高达",
+    "ja": "セラヴィーガンダム",
+    "en": "Seravee Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2308,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "德天使高达的后继机，背部隐藏着第二台高达 Seraphim。",
+    "ja": "ヴァーチェの後継機。背部に第二のガンダム、セラフィムを隠す。"
+  },
+  "description": {
+    "zh": [
+      "炽天使高达的外观比德天使更厚重，背部却藏着另一台机体 Seraphim。这个设计让它在重装火力之外，保留了突然变阵的能力。",
+      "提耶利亚对“隐藏”的执念，在这台机体上变成了结构本身。它不只是一台重装高达，也是一套双重身份的战术。"
+    ],
+    "ja": [
+      "セラヴィーの外観はヴァーチェより重厚だが、背部にはもう一機のガンダム、セラフィムを隠す。この設計により、重装火力の外側に突然の形態変化を残した。",
+      "ティエリアの「隠す」ことへの執着が、機体構造そのものになっている。重装ガンダムであると同時に、二重身の戦術でもある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 火箭炮 ×2",
+        "ja": "GNバズーカ ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 光束炮",
+        "ja": "GNビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "隐藏机体 Seraphim",
+        "ja": "セラフィム"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "gn-field",
+    "beam-weapon",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "tieria-erde"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "bazooka",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

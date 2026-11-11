@@ -1,0 +1,113 @@
+{
+  "id": "rx-124",
+  "modelCode": "RX-124",
+  "name": {
+    "zh": "高达 TR-6 伍德沃特",
+    "ja": "ガンダムTR-6 ウーンドウォート",
+    "en": "Gundam TR-6 Woundwort"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "titans",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 86,
+    "month": 4,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "TR 系列集大成的小型高机动机体，可换装为多种形态。",
+    "ja": "TRシリーズの集大成となる小型高機動機。複数の形態へ換装できる。"
+  },
+  "description": {
+    "zh": [
+      "伍德沃特把 TR 计划积累的换装技术压缩到一台小型机体里。它的轮廓比其他提坦斯机体更轻，四肢与推进器却可以按任务重组成不同形态。",
+      "它像一份未完成的设计草稿，却已经具备完整的战斗逻辑。对提坦斯而言，这是技术上的胜利；对驾驶员而言，这是一台需要理解整套系统的机体。"
+    ],
+    "ja": [
+      "ウーンドウォートはTR計画で蓄積された換装技術を、一機の小型機体へ圧縮した。他のティターンズ機より輪郭は軽く、四肢とスラスターは任務に応じて再構成できる。",
+      "未完成の設計草稿のようでありながら、戦闘論理はすでに完成している。ティターンズにとっては技術的勝利だが、パイロットにとってはシステム全体を理解することを求める機体だ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "复合光束枪",
+        "ja": "複合ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌推进器",
+        "ja": "シールド・ブースター"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "钩爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "aoz"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -76,7 +76,11 @@
     "beam-weapon",
     "funnel"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "kio-asuno"
+    }
+  ],
   "eventIds": [
     "third-generation"
   ],

@@ -1,0 +1,129 @@
+{
+  "id": "lm312v04",
+  "modelCode": "LM312V04",
+  "name": {
+    "zh": "胜利高达",
+    "ja": "ヴィクトリーガンダム",
+    "en": "Victory Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "league-militaire",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 153,
+    "month": 4,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "神圣军事同盟的 15 米级可变高达，以合体结构与光束盾著称。",
+    "ja": "神聖軍事同盟の15m級可変ガンダム。合体構造とビームシールドで知られる。"
+  },
+  "description": {
+    "zh": [
+      "胜利高达把“小型化”与“合体”两个想法放在了一起。它由核心战机、上身与下身三部分组合，战场上可以用更小的单位运输和隐藏。",
+      "15 米级的体格让它在赞斯卡尔战争中更难被命中，但也意味着装甲与搭载空间更加紧张。光束盾是它在这种取舍下最聪明的答案。"
+    ],
+    "ja": [
+      "ヴィクトリーガンダムは「小型化」と「合体」という二つの発想を同居させた。コア・ファイター、上半身、下半身の三部構成で、戦場ではより小さな単位で輸送・隠匿できる。",
+      "15m級の体格はザンスカール戦争で被弾しにくい一方、装甲と搭載空間の余裕を奪う。ビームシールドはその取捨選択に対する最も賢い答えだった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束盾",
+        "ja": "ビームシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "头顶加农炮",
+        "ja": "頭部バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "uso-ewin"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "victory-1993"
+  ],
+  "edges": [
+    {
+      "to": "lm314v21-v2",
+      "kind": "tech_from",
+      "note": {
+        "zh": "胜利高达 的技术路线在 V2 高达 上延续。",
+        "ja": "ヴィクトリーガンダムの技術路線はV2ガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士 V 高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

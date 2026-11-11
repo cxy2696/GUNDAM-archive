@@ -172,6 +172,66 @@
           "level": "A"
         }
       ]
+    },
+    {
+      "to": "rx-78-6",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 为基础发展出的 泥岩高达。",
+        "ja": "ガンダムを基に発展したマドロックガンダム。"
+      },
+      "sources": [
+        {
+          "label": "《吉翁前线 机动战士高达0079》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    },
+    {
+      "to": "rx-79g",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 的技术路线在 陆战型高达 上延续。",
+        "ja": "ガンダムの技術路線は陸戦型ガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 第08MS小队》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    },
+    {
+      "to": "fa-78-1",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 为基础发展出的 全装甲高达。",
+        "ja": "ガンダムを基に発展したフルアーマーガンダム。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "luna-titanium"
+    },
+    {
+      "to": "rx-78al",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 的技术路线在 阿特拉斯高达 上延续。",
+        "ja": "ガンダムの技術路線はアトラスガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 雷霆宙域》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
     }
   ],
   "viewer": {

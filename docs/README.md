@@ -1,6 +1,8 @@
 # 文档索引与维护规则
 
 > 文档不是越多越好。这里定义每份文档的**唯一职责**、权威顺序，以及修改时必须同步的文件，避免同一事实在四处漂移。
+>
+> **第一次来？** 先读 [CHRONOLOGY](CHRONOLOGY.md) 的“一分钟版”，再按下面的“按问题找文档”跳转，不需要从头读到尾。
 
 ## 1. 权威顺序
 
@@ -19,6 +21,8 @@
 | --- | --- | --- |
 | [../README.md](../README.md) | 项目入口、在线地址、快速开始、能力概览 | 字段级定义、完整审校流程 |
 | [../README.ja.md](../README.ja.md) | 日本語の概要・起動方法 | 中国語の詳細仕様 |
+| [CHRONOLOGY.md](CHRONOLOGY.md) | 十二纪元世纪表、逐纪元速查、阅读顺序 | 字段定义、完整设定史 |
+| [MACHINE_COVERAGE.md](MACHINE_COVERAGE.md) | “全机体”的收录规则、覆盖矩阵、明确不包含什么 | 具体参数、逐条出处 |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | 六层模型、目录边界、数据流、查看器、部署、ADR、迁移 | 字段表、逐条内容规范 |
 | [CONTENT_GUIDE.md](CONTENT_GUIDE.md) | 新增/修改机体、事件、人物、势力、作品的步骤；双语与审校清单 | schema 类型定义、API 设计 |
 | [DATA_DICTIONARY.md](DATA_DICTIONARY.md) | 字段、枚举、单位、日期、关联、校验规则 | 操作步骤、路线图 |
@@ -32,7 +36,19 @@
 | [../CHANGELOG.md](../CHANGELOG.md) | 版本变更 | 规划中的功能 |
 | [templates/](templates/) | 可复制的机体 JSON、asset-manifest 示例 | 生产数据 |
 
-## 3. 按角色的阅读路径
+## 3. 按问题找文档
+
+| 我想…… | 先读 | 再读 |
+| --- | --- | --- |
+| 快速理解全系列 | [CHRONOLOGY](CHRONOLOGY.md) | [GLOSSARY](GLOSSARY.md) |
+| 知道收了哪些机体 | [MACHINE_COVERAGE](MACHINE_COVERAGE.md) | [CHRONOLOGY](CHRONOLOGY.md) |
+| 新增一台机体 | [CONTENT_GUIDE](CONTENT_GUIDE.md) 第 2 节 | [DATA_DICTIONARY](DATA_DICTIONARY.md) 的 Machine / Edge |
+| 改一个字段 | `src/lib/schema.ts` | [DATA_DICTIONARY](DATA_DICTIONARY.md) |
+| 判断出处能不能用 | [GOVERNANCE](GOVERNANCE.md) | [DATA_SOURCES](DATA_SOURCES.md) |
+| 接 3D 资产 | [ASSET_PIPELINE](ASSET_PIPELINE.md) | `docs/templates/asset-manifest.example.json` |
+| 看版本计划 | [ROADMAP](ROADMAP.md) | [../CHANGELOG.md](../CHANGELOG.md) |
+
+## 4. 按角色的阅读路径
 
 **第一次接触项目**
 
@@ -54,7 +70,7 @@
 
 `GOVERNANCE` → `CONTENT_GUIDE` 的双语与审校 → `NOTICE`
 
-## 4. 更新规则
+## 5. 更新规则
 
 1. **Schema 先行**：新增字段先改 `src/lib/schema.ts`，再改内容与 `DATA_DICTIONARY`。
 2. **字段表只放一处**：Machine、Event、Faction 等字段表只在 `DATA_DICTIONARY` 维护；README、ARCHITECTURE、CONTENT_GUIDE 只链接，不复制。
@@ -65,7 +81,7 @@
 7. **版本同步**：发布时更新 `CHANGELOG`、`ROADMAP`、`package.json`、页脚版本号；不要只改其中一个。
 8. **不写未实现的能力**：路线图内容必须标“计划/进行中”，不能写成现状。
 
-## 5. 文档 Review 清单
+## 6. 文档 Review 清单
 
 - [ ] 与 `schema.ts` 的字段、枚举一致
 - [ ] 数量（机体/纪元/事件/页面/索引）与当前构建一致
@@ -76,7 +92,7 @@
 - [ ] 中日文 UI 文案成对出现
 - [ ] 版权与“非官方”声明未被删改
 
-## 6. 已知的文档/实现差距
+## 7. 已知的文档/实现差距
 
 这些差距是明确记录的，不用文档话术掩盖：
 
@@ -85,7 +101,7 @@
 - **3D 资产**：文档描述 glTF LOD0 契约，当前运行的是程序化 LOD-P；manifest 示例不等于已交付资产。
 - **API/DB/Admin**：只在路线图中，仓库没有对应实现。
 
-## 7. 文档变更流程
+## 8. 文档变更流程
 
 1. 改代码或内容；
 2. 更新 `DATA_DICTIONARY`（若涉及字段）与对应指南；

@@ -1,0 +1,116 @@
+{
+  "id": "gn-011-harute",
+  "modelCode": "GN-011",
+  "name": {
+    "zh": "妖天使高达",
+    "ja": "ガンダムハルート",
+    "en": "Gundam Harute"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 2314,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "堕天使高达的后继机，以双人格协同与高机动变形进行决战。",
+    "ja": "アリオスの後継機。二重人格の協調と高機動変形で決戦を戦う。"
+  },
+  "description": {
+    "zh": [
+      "妖天使高达的外观带着明显的异形感。它的推进器与翼状单元在 MA 形态下展开，速度与机动都指向“在 ELS 群中活下去”。",
+      "阿雷路亚与哈雷路亚在这台机体里不再争夺控制权，而是同时存在。它的战斗方式是两种人格的合奏。"
+    ],
+    "ja": [
+      "ハルートの外観には明確な異形感がある。スラスターと翼状ユニットはMA形態で展開し、速度と機動は「ELS群の中で生き残る」ことに向けられている。",
+      "アレルヤとハレルヤはこの機体の中で制御を奪い合わず、同時に存在する。その戦い方は二つの人格の合奏である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 光束军刀",
+        "ja": "GNビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 步枪",
+        "ja": "GNライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "allelujah-haptism"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-movie"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达00 先驱者的觉醒》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

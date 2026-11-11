@@ -1,0 +1,129 @@
+{
+  "id": "ozx-gu01a-geminass-01",
+  "modelCode": "OZX-GU01A",
+  "name": {
+    "zh": "双子座高达 01",
+    "ja": "ガンダムジェミナス01",
+    "en": "Gundam Geminass 01"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "oz",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 195,
+    "month": 6,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "OZ 的 G-UNIT 计划机体，以换装与高通用性为目标。",
+    "ja": "OZのG-UNIT計画の機体。換装と高い汎用性を目指す。"
+  },
+  "description": {
+    "zh": [
+      "双子座高达 01 是 OZ 在五台流星作战机体之外推进的另一次尝试。它强调通用骨架与任务换装，而不是单一极端性能。",
+      "在 G-UNIT 的故事里，它由殖民地少年驾驶，卷入 OZ 内部的权力斗争。机体本身很标准，难的是驾驶它的人如何选择立场。"
+    ],
+    "ja": [
+      "ガンダムジェミナス01は、五機のオペレーション・メテオとは別にOZが進めた試みである。単一の極端な性能ではなく、汎用骨格と任務換装を重視した。",
+      "G-UNITの物語ではコロニーの少年が操縦し、OZ内部の権力闘争に巻き込まれる。機体は標準的だが、難しいのは乗る者の立場の選択だ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "g-unit"
+  ],
+  "edges": [
+    {
+      "to": "oz-19masx-griepe",
+      "kind": "tech_from",
+      "note": {
+        "zh": "双子座高达 01 的技术路线在 格雷普高达 上延续。",
+        "ja": "ガンダムジェミナス01の技術路線はガンダムグリープへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《新机动战记高达W 双故事 G-UNIT》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "《新机动战记高达W 双故事 G-UNIT》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

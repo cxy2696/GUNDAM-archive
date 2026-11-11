@@ -1,0 +1,129 @@
+{
+  "id": "gn-007-arios",
+  "modelCode": "GN-007",
+  "name": {
+    "zh": "堕天使高达",
+    "ja": "アリオスガンダム",
+    "en": "Arios Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2308,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "主天使高达的后继机，以更高的变形效率进行高速战。",
+    "ja": "キュリオスの後継機。より高い変形効率で高速戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "堕天使高达把主天使的变形机构做得更流畅。MA 形态下它的轮廓更薄，适合在轨道与大气层边缘高速穿插。",
+      "阿雷路亚与哈雷路亚的双重人格，让这台机体的战斗风格在冷静与狂暴之间切换。它像一台有两个驾驶习惯的机体。"
+    ],
+    "ja": [
+      "アリオスはキュリオスの変形機構をより滑らかにした。MA形態では輪郭が薄くなり、軌道や大気圏辺縁の高速侵入に適する。",
+      "アレルヤとハレルヤの二重人格が、この機体の戦い方を冷静と狂暴の間で切り替える。二つの操縦癖を持つ機体のようだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 光束军刀",
+        "ja": "GNビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束步枪",
+        "ja": "GNビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "allelujah-haptism"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [
+    {
+      "to": "gn-011-harute",
+      "kind": "tech_from",
+      "note": {
+        "zh": "堕天使高达 的技术路线在 妖天使高达 上延续。",
+        "ja": "アリオスガンダムの技術路線はガンダムハルートへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达00 先驱者的觉醒》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

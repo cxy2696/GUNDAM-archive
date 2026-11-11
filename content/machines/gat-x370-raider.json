@@ -1,0 +1,106 @@
+{
+  "id": "gat-x370-raider",
+  "modelCode": "GAT-X370",
+  "name": {
+    "zh": "掠夺高达",
+    "ja": "レイダーガンダム",
+    "en": "Raider Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 7,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军的可变型高达，以 MA 形态进行高速追击与格斗。",
+    "ja": "地球連合軍の可変型ガンダム。MA形態で高速追撃と格闘を行う。"
+  },
+  "description": {
+    "zh": [
+      "掠夺高达可以在 MS 与 MA 之间切换。MA 形态下它像一只俯冲的猛禽，用爪与光束炮追击撤退中的目标。",
+      "它与灾厄、禁断一起构成联合军的强化人三机编队。三台机体都不是为单打独斗设计的，而是为互相补位。"
+    ],
+    "ja": [
+      "レイダーはMSとMAを切り替えられる。MA形態では急降下する猛禽のように、爪とビーム砲で撤退中の目標を追う。",
+      "カラミティ、フォビドゥンと共に連合軍の強化人間三機編隊を成す。三機はいずれも単独戦用ではなく、互いの位置を補うために設計されている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束炮",
+        "ja": "ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

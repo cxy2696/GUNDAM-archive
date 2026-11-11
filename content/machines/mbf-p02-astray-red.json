@@ -1,0 +1,117 @@
+{
+  "id": "mbf-p02-astray-red",
+  "modelCode": "MBF-P02",
+  "name": {
+    "zh": "异端高达红色机",
+    "ja": "ガンダムアストレイ レッドフレーム",
+    "en": "Gundam Astray Red Frame"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "奥布持有的异端高达之一，由鉴定师罗·裘尔驾驶，以菊一文字闻名。",
+    "ja": "オーブが保有したアストレイの一機。ジャンク屋ロウ・ギュールが駆り、菊一文字で知られる。"
+  },
+  "description": {
+    "zh": [
+      "红色机原本是奥布秘密开发的异端系列之一。它没有强袭那样的换装系统，却拥有极高的基础性能与扩展空间。",
+      "罗·裘尔把它当成一台可以修、可以改、可以带着走的伙伴。菊一文字不是量产兵器，而是一把被驾驶员选择的长刀。"
+    ],
+    "ja": [
+      "レッドフレームはオーブが秘密裏に開発したアストレイシリーズの一機である。ストライクのような換装システムはないが、基礎性能と拡張性は高い。",
+      "ロウ・ギュールにとって、それは修理でき、改造でき、持ち歩ける相棒だ。菊一文字は量産兵器ではなく、パイロットが選んだ一本の長刀である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "菊一文字",
+        "ja": "菊一文字"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "飞行背包",
+        "ja": "フライトパック"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "lowe-guele"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-astray"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达SEED ASTRAY》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

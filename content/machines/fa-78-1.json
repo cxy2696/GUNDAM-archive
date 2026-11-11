@@ -1,0 +1,113 @@
+{
+  "id": "fa-78-1",
+  "modelCode": "FA-78-1",
+  "name": {
+    "zh": "全装甲高达",
+    "ja": "フルアーマーガンダム",
+    "en": "Full Armor Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 79,
+    "month": 12,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "在 RX-78 上追加全套装甲与重火力的方案，以机动性换取生存性。",
+    "ja": "RX-78に全身装甲と重火力を追加した案。機動性と引き換えに生存性を高める。"
+  },
+  "description": {
+    "zh": [
+      "全装甲高达是联邦对“高达还能怎么改”的一次直接回答：把能装的装甲都装上，把能带的导弹都带上。结果是火力与防护上升，机动性明显下降。",
+      "它更像一套可拆卸的战术套装，而不是一台全新机体。这个思路后来在 GP 系列与各种全装甲方案里反复出现。"
+    ],
+    "ja": [
+      "フルアーマーガンダムは「ガンダムをどこまで改修できるか」という連邦の直接的な答えである。装着できる装甲をすべて着け、携行できるミサイルをすべて積んだ。結果として火力と防御力は上がり、機動性は明確に低下した。",
+      "新しい機体というより、着脱式の戦術装備に近い。この発想は後のGPシリーズや各種フルアーマー案に繰り返し現れる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "双管光束枪",
+        "ja": "ツイン・ビーム・ガン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹发射器 ×2",
+        "ja": "ミサイル・ランチャー ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "core-block",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "msg-1979"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

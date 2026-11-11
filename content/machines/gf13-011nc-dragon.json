@@ -1,0 +1,108 @@
+{
+  "id": "gf13-011nc-dragon",
+  "modelCode": "GF13-011NC",
+  "name": {
+    "zh": "龙高达",
+    "ja": "ドラゴンガンダム",
+    "en": "Dragon Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新中国的代表机体，以龙爪与火焰放射进行贴身格斗。",
+    "ja": "ネオチャイナの代表機。ドラゴン・クローと火炎放射で密着格闘を戦う。"
+  },
+  "description": {
+    "zh": [
+      "龙高达的动作模仿了武术中的擒拿与寸劲。它的前臂可以弹出龙爪，胸口与肩部则藏有短程火焰发射器。",
+      "在武斗会里，它常常主动缩短距离。对龙高达来说，中远距离是浪费，真正决定胜负的是对手能否承受第一次抓握。"
+    ],
+    "ja": [
+      "ドラゴンガンダムの動きは武術の擒拿と寸勁を模している。前腕からドラゴン・クローがせり出し、胸部と肩には短距離の火炎放射器を隠す。",
+      "ガンダムファイトでは自ら距離を詰めることが多い。中遠距離は浪費であり、勝負を決めるのは最初の掴みに耐えられるかどうかだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "龙爪",
+        "ja": "ドラゴン・クロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火焰放射",
+        "ja": "火炎放射"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束长枪",
+        "ja": "ビームランス"
+      },
+      "type": "beam"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "sai-saici"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#6B7A55",
+      "secondary": "#3A2E2A",
+      "accent": "#C9A227",
+      "eye": "#FF6B6B",
+      "frame": "#3A3A3A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

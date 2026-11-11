@@ -91,7 +91,38 @@
   "workIds": [
     "seed-2002"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "gat-x105e-strike-noir",
+      "kind": "tech_from",
+      "note": {
+        "zh": "强袭高达 的技术路线在 漆黑强袭高达 上延续。",
+        "ja": "ストライクガンダムの技術路線はストライクノワールへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达SEED C.E.73 STARGAZER》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "phase-shift"
+    },
+    {
+      "to": "mbf-02-strike-rouge",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 强袭高达 为基础发展出的 嫣红强袭。",
+        "ja": "ストライクガンダムを基に発展したストライクルージュ。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 SEED》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "phase-shift"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

@@ -1,0 +1,120 @@
+{
+  "id": "gt-9600-leopard",
+  "modelCode": "GT-9600",
+  "name": {
+    "zh": "豹式高达",
+    "ja": "ガンダムレオパルド",
+    "en": "Gundam Leopard"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "秃鹫部队的重火力支援机体，以双管光束加特林压制战场。",
+    "ja": "ヴァルチャーの重火力支援機。ツイン・ビームガトリングで戦場を制圧する。"
+  },
+  "description": {
+    "zh": [
+      "豹式高达的火力配置接近移动炮台。双管光束加特林适合持续扫射，肩部导弹仓则用来处理掩体后的目标。",
+      "它的装甲不算厚，机动也只是中规中矩。真正的价值在于，当队友需要掩护时，它总能提供一条足够长的火力走廊。"
+    ],
+    "ja": [
+      "レオパルドの火力配置は移動砲台に近い。ツイン・ビームガトリングは継続掃射に適し、肩のミサイル・ポッドは掩体後の目標を処理する。",
+      "装甲は厚くなく、機動も標準的だ。本当の価値は、仲間が援護を必要とした時、十分に長い火力の回廊を用意できることにある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管光束加特林",
+        "ja": "ツイン・ビームガトリング"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹仓",
+        "ja": "ミサイル・ポッド"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [
+    {
+      "to": "gt-9600-d-leopard-destroy",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 豹式高达 为基础发展出的 豹式高达破坏型。",
+        "ja": "ガンダムレオパルドを基に発展したガンダムレオパルドデストロイ。"
+      },
+      "sources": [
+        {
+          "label": "《机动新世纪高达 X》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -86,7 +86,23 @@
   "workIds": [
     "ibo-2015"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "asw-g-08-barbatos-lupus",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 巴巴托斯 为基础发展出的 巴巴托斯 狼王。",
+        "ja": "バルバトスを基に発展したガンダム・バルバトスルプス。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "alaya-vijnana"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "heavy",

@@ -91,7 +91,53 @@
   "workIds": [
     "age-2011"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "age-1-titus",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 AGE-1 为基础发展出的 高达 AGE-1 猛将型。",
+        "ja": "ガンダムAGE-1を基に発展したガンダムAGE-1タイタス。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
+    },
+    {
+      "to": "age-1-sparrow",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 AGE-1 为基础发展出的 高达 AGE-1 飞燕型。",
+        "ja": "ガンダムAGE-1を基に発展したガンダムAGE-1スパロー。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
+    },
+    {
+      "to": "age-2",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 AGE-1 的技术路线在 高达 AGE-2 上延续。",
+        "ja": "ガンダムAGE-1の技術路線はガンダムAGE-2へ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

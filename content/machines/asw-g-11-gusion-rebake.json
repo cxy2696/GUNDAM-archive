@@ -1,0 +1,125 @@
+{
+  "id": "asw-g-11-gusion-rebake",
+  "modelCode": "ASW-G-11",
+  "name": {
+    "zh": "古辛 重锻",
+    "ja": "ガンダム・グシオンリベイク",
+    "en": "Gundam Gusion Rebake"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "古辛经过铁华团改装后的形态，兼顾火力与近战。",
+    "ja": "鉄華団によって改修されたグシオン。火力と近接戦を両立する。"
+  },
+  "description": {
+    "zh": [
+      "重锻把古辛从一台重装水下机改成了更通用的战斗形态。装甲被重新分布，手臂获得更大的活动范围，并追加了长步枪。",
+      "昭弘·阿尔特兰驾驶它时，这台机体不再只是“战利品”，而是铁华团自己的战力。"
+    ],
+    "ja": [
+      "リベイクはグシオンを重装水中機から、より汎用的な戦闘形態へ改修した。装甲は再配置され、腕の可動域が広がり、長距離ライフルが追加された。",
+      "昭弘・アルトランドが駆る時、この機体は単なる「戦利品」ではなく、鉄華団自身の戦力になる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "锤矛",
+        "ja": "メイス"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "长步枪",
+        "ja": "ロングライフル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "akihiro-altland"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [
+    {
+      "to": "asw-g-11-gusion-rebake-full-city",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 古辛 重锻 为基础发展出的 古辛 重锻 全城。",
+        "ja": "ガンダム・グシオンリベイクを基に発展したガンダム・グシオンリベイクフルシティ。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "alaya-vijnana"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

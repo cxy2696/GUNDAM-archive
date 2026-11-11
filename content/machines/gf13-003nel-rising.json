@@ -1,0 +1,108 @@
+{
+  "id": "gf13-003nel-rising",
+  "modelCode": "GF13-003NEL",
+  "name": {
+    "zh": "旭日高达",
+    "ja": "ライジングガンダム",
+    "en": "Rising Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新日本的备用机体，以光束弓进行中距离支援。",
+    "ja": "ネオジャパンの予備機。ビームボウによる中距離支援を担う。"
+  },
+  "description": {
+    "zh": [
+      "旭日高达是闪耀高达的备用机，轮廓更轻，武装也更偏向支援。它的光束弓可以连射，也能在近距离展开成护盾。",
+      "它没有主角机那样的聚光灯，却在关键时刻替搭档补上了火力空缺。武斗会不只是一个人的擂台。"
+    ],
+    "ja": [
+      "ライジングガンダムはシャイニングガンダムの予備機で、輪郭はより軽く、武装も支援寄りである。ビームボウは連射でき、近距離では盾へ展開する。",
+      "主役機のようなスポットライトはないが、要所で相棒の火力の空白を埋めた。ガンダムファイトは一人のリングではない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束弓",
+        "ja": "ビームボウ"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "苦无",
+        "ja": "クナイ"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "rain-mikamura"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

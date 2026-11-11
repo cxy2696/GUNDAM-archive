@@ -1,0 +1,115 @@
+{
+  "id": "gundam-pharact",
+  "modelCode": "FP/A-77",
+  "name": {
+    "zh": "铁骑高达",
+    "ja": "ガンダム・ファラクト",
+    "en": "Gundam Pharact"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "benerit",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "佩尔公司开发的 GUND 格式化高达，以高机动与远程操纵闻名。",
+    "ja": "ペイル社が開発したGUNDフォーマット搭載ガンダム。高機動と遠隔操作で知られる。"
+  },
+  "description": {
+    "zh": [
+      "铁骑高达的设计带有明显的实验色彩。它的四肢与推进器可以分离重组，让驾驶员在远距离操纵多个部件。",
+      "对佩尔公司来说，这台机体是技术展示；对驾驶它的强化人来说，它是一次次被消耗的实验。"
+    ],
+    "ja": [
+      "ファラクトの設計には明確な実験の気配がある。四肢とスラスターは分離・再構成でき、パイロットは遠距離から複数の部位を操作する。",
+      "ペイル社にとっては技術展示であり、乗る強化人間にとっては繰り返し消耗される実験である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "GUND 格式化",
+        "ja": "GUNDフォーマット"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "elan-ceres"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "fin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 水星的魔女》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

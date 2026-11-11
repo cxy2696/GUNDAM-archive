@@ -1,0 +1,106 @@
+{
+  "id": "gat-x131-calamity",
+  "modelCode": "GAT-X131",
+  "name": {
+    "zh": "灾厄高达",
+    "ja": "カラミティガンダム",
+    "en": "Calamity Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 7,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军为强化人部队开发的炮击型高达，以重火力压制战场。",
+    "ja": "地球連合軍が強化人間部隊のために開発した砲撃型ガンダム。重火力で戦場を制圧する。"
+  },
+  "description": {
+    "zh": [
+      "灾厄高达是联合军“以火力换机动”思路的产物。它的光束炮与导弹仓可以在短时间内覆盖大片区域，但机体本身的动作并不灵活。",
+      "它常与禁断、掠夺编队行动。三台机体分别负责压制、突入与追击，构成了联合军强化人部队的标准战术。"
+    ],
+    "ja": [
+      "カラミティは連合軍の「機動と引き換えに火力を得る」発想の産物である。ビーム砲とミサイル・ポッドで短時間に広範囲を覆うが、機体自体の動きは軽快ではない。",
+      "フォビドゥン、レイダーと編隊を組むことが多い。三機が制圧・突入・追撃を分担し、連合軍強化人間部隊の標準戦術を形成した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束炮",
+        "ja": "ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹",
+        "ja": "ミサイル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

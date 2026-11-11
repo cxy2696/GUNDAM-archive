@@ -1,0 +1,117 @@
+{
+  "id": "mbf-02-strike-rouge",
+  "modelCode": "MBF-02",
+  "name": {
+    "zh": "嫣红强袭",
+    "ja": "ストライクルージュ",
+    "en": "Strike Rouge"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "强袭高达的同型机，以嫣红涂装与追加推进器活跃于奥布战线。",
+    "ja": "ストライクの同型機。ストライクルージュの塗装と追加スラスターでオーブ戦線を戦う。"
+  },
+  "description": {
+    "zh": [
+      "嫣红强袭以强袭高达的备用零件与数据为基础，换上了奥布风格的嫣红涂装。它保留了换装背包接口，但更常以空战形态出击。",
+      "它常被视为“另一台强袭”，却承载了不同的驾驶员与不同的选择。同一套骨架，可以走向完全不同的战场。"
+    ],
+    "ja": [
+      "ストライクルージュはストライクの予備部品とデータを基に、オーブ風の紅い塗装を施した機体である。換装バックパックの接口は残るが、空戦形態で出撃することが多い。",
+      "「もう一機のストライク」と呼ばれるが、乗る者も選択も異なる。同じ骨格が、まったく別の戦場へ向かうことができる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "cagalli-yula-athha"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

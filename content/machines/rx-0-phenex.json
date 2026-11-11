@@ -1,0 +1,113 @@
+{
+  "id": "rx-0-phenex",
+  "modelCode": "RX-0[N]",
+  "name": {
+    "zh": "凤凰",
+    "ja": "フェネクス",
+    "en": "Phenex"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 96,
+    "month": 3,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "独角兽三号机，金色精神感应框架与莉塔·贝尔纳的意识一同游荡在宇宙。",
+    "ja": "ユニコーン3号機。金色のサイコフレームとリタ・ベルナルの意識が宇宙を彷徨う。"
+  },
+  "description": {
+    "zh": [
+      "凤凰是独角兽系列的三号机。与一号机和二号机不同，它的精神感应框架呈现金色，并在实验中与驾驶员莉塔·贝尔纳发生了无法解释的共鸣。",
+      "在《机动战士高达 NT》中，它更像一个传说或幽灵：时而出现，时而消失，把“高达”变成了无法用性能表描述的存在。"
+    ],
+    "ja": [
+      "フェネクスはユニコーンシリーズの3号機である。1号機・2号機と異なり、サイコフレームは金色を帯び、実験中にパイロットのリタ・ベルナルと説明不能な共鳴を起こした。",
+      "『機動戦士ガンダムNT』では伝説か幽霊のように現れ、消える。性能表では記述できない存在としての「ガンダム」を体現している。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "精神感应框架",
+        "ja": "サイコフレーム"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "psychoframe",
+    "beam-weapon",
+    "funnel",
+    "gundarium"
+  ],
+  "pilots": [
+    {
+      "characterId": "rita-bernal"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "unicorn-2010"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "unicorn",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "xxxg-01h2-heavyarms-custom",
+  "modelCode": "XXXG-01H2",
+  "name": {
+    "zh": "重武装高达改",
+    "ja": "ガンダムヘビーアームズ改",
+    "en": "Gundam Heavyarms Custom"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 195,
+    "month": 12,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "重武装高达的后继机，追加双肩加特林与更多导弹仓。",
+    "ja": "ガンダムヘビーアームズの後継機。両肩のガトリングと追加ミサイル・ポッドを備える。"
+  },
+  "description": {
+    "zh": [
+      "重武装高达改把“火力不足”这个选项彻底删掉了。双肩加特林与扩充后的导弹仓，让它在短时间内能覆盖更宽正面。",
+      "代价是更严重的弹药依赖。它必须在补给线上作战，否则再强的弹幕也只是一次性的烟花。"
+    ],
+    "ja": [
+      "ガンダムヘビーアームズ改は「火力不足」という選択肢を完全に消した。両肩のガトリングと拡張されたミサイル・ポッドにより、短時間でより広い正面を覆える。",
+      "代償は弾薬依存の深刻化である。補給線の上で戦わなければ、どんな弾幕も一度きりの花火に過ぎない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管加特林 ×2",
+        "ja": "ツイン・ガトリング ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "导弹仓 ×2",
+        "ja": "ミサイル・ポッド ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "军刀",
+        "ja": "アーミーナイフ"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "trowa-barton"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "endless-waltz"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

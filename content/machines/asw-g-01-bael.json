@@ -69,7 +69,11 @@
     "nanolaminate",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "mcgillis-fareed"
+    }
+  ],
   "eventIds": [
     "gjallarhorn-coup",
     "mars-arc"

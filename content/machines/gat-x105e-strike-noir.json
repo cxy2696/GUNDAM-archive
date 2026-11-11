@@ -1,0 +1,117 @@
+{
+  "id": "gat-x105e-strike-noir",
+  "modelCode": "GAT-X105E",
+  "name": {
+    "zh": "漆黑强袭高达",
+    "ja": "ストライクノワール",
+    "en": "Strike Noir Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 73,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军第 81 独立机动群的黑衣强袭，以双短枪进行近距压制。",
+    "ja": "地球連合軍第81独立機動群の黒衣のストライク。二丁のショートガンで近距離制圧を行う。"
+  },
+  "description": {
+    "zh": [
+      "漆黑强袭是强袭高达的再设计型，专为“幻痛”部队的暗色作战准备。双短枪让它在舰内与殖民地街道上都能快速转向射击。",
+      "它的黑色涂装不是隐身，而是标记：这台机体执行的任务通常不会出现在正式记录里。"
+    ],
+    "ja": [
+      "ストライクノワールはストライクの再設計型で、ファントムペインの暗色作戦のために用意された。二丁のショートガンにより艦内やコロニー街路でも素早く射角を変えられる。",
+      "黒い塗装はステルスではなく標識である。この機体が行う任務は、通常、公式記録には残らない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双短枪 ×2",
+        "ja": "ショートガン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "sven-cal-bayang"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-stargazer"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达SEED C.E.73 STARGAZER》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

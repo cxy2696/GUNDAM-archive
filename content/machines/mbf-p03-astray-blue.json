@@ -1,0 +1,117 @@
+{
+  "id": "mbf-p03-astray-blue",
+  "modelCode": "MBF-P03",
+  "name": {
+    "zh": "异端高达蓝色机",
+    "ja": "ガンダムアストレイ ブルーフレーム",
+    "en": "Gundam Astray Blue Frame"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "奥布异端高达的三号机，由佣兵盖·村云驾驶，以战术武装著称。",
+    "ja": "オーブのアストレイ3号機。傭兵ガイ・ムラクモが駆り、タクティカルアームズで知られる。"
+  },
+  "description": {
+    "zh": [
+      "蓝色机是一台被佣兵使用的异端高达。它的战术武装把多种武器整合到一个模块里，适合在不确定的战场上快速切换。",
+      "与红色机的冒险气质不同，蓝色机更冷静、更职业。它的每一次出击都像一份合同：目标、路线、撤离点，清楚得没有多余情绪。"
+    ],
+    "ja": [
+      "ブルーフレームは傭兵に使われるアストレイである。タクティカルアームズは複数の武器を一つのモジュールに統合し、不確実な戦場で素早く切り替えられる。",
+      "レッドフレームの冒険的な気質とは違い、ブルーフレームは冷静で職業的だ。出撃のたびに、目標・経路・離脱点が契約書のように整理されている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "战术武装",
+        "ja": "タクティカルアームズ"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "gai-murakumo"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-astray"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达SEED ASTRAY》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

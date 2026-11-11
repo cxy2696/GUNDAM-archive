@@ -90,7 +90,23 @@
   "workIds": [
     "00-2007"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "gn-006-cherudim",
+      "kind": "tech_from",
+      "note": {
+        "zh": "力天使高达 的技术路线在 智天使高达 上延续。",
+        "ja": "ガンダムデュナメスの技術路線はケルディムガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

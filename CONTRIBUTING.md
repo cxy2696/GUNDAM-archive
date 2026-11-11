@@ -10,7 +10,7 @@
 
 ```bash
 git clone https://github.com/cxy2696/GUNDAM-archive.git
-cd gundam-archive
+cd GUNDAM-archive
 pnpm install
 pnpm dev
 ```
@@ -52,9 +52,10 @@ chore(ci): cache pnpm store
 
 先读：
 
-- [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md)
-- [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)
-- [docs/GOVERNANCE.md](docs/GOVERNANCE.md)
+- [docs/MACHINE_COVERAGE.md](docs/MACHINE_COVERAGE.md)：判断这台机体该不该单列，还是并到本体页
+- [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md)：具体填写步骤
+- [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)：字段与枚举
+- [docs/GOVERNANCE.md](docs/GOVERNANCE.md)：出处分级与版权边界
 
 最低要求：
 
@@ -63,7 +64,8 @@ chore(ci): cache pnpm store
 3. 驾驶员/事件/人物双向回指；
 4. 中日文本的型号、数值、年份一致；
 5. `pnpm validate` 通过；
-6. PR 附出处与页面截图。
+6. 同步 `docs/MACHINE_COVERAGE.md` 与 `docs/CHRONOLOGY.md` 的计数；
+7. PR 附出处与页面截图。
 
 ## 5. Pull Request
 

@@ -1,0 +1,132 @@
+{
+  "id": "asw-g-08-barbatos-lupus",
+  "modelCode": "ASW-G-08",
+  "name": {
+    "zh": "巴巴托斯 狼王",
+    "ja": "ガンダム・バルバトスルプス",
+    "en": "Gundam Barbatos Lupus"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "巴巴托斯在埃德蒙顿之战后的改装形态，速度与近战能力进一步提升。",
+    "ja": "エドモントン戦後の改修形態。速度と近接戦能力をさらに高めたバルバトス。"
+  },
+  "description": {
+    "zh": [
+      "狼王是巴巴托斯在经历多次战斗后的改装形态。它的装甲被削减，推进器与尾部单元得到强化，整体轮廓更像一头准备扑击的兽。",
+      "三日月·奥格斯与这台机体的连接越来越深。阿赖耶识系统让他能直接感知机体，但也让每一次冲击都传回身体。"
+    ],
+    "ja": [
+      "ルプスは数多の戦いを経たバルバトスの改修形態である。装甲を削り、スラスターとテイルユニットを強化し、全体の輪郭は獲物に襲いかかる獣のようになった。",
+      "三日月・オーガスと機体の接続は深くなる。阿頼耶識システムは機体を直接感じさせ、同時にすべての衝撃を身体へ返す。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "200mm 炮",
+        "ja": "200mm砲"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "锤矛",
+        "ja": "メイス"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "尾部推进器",
+        "ja": "テイルブースター"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "mikazuki-augus"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [
+    {
+      "to": "asw-g-08-barbatos-lupus-rex",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 巴巴托斯 狼王 为基础发展出的 巴巴托斯 狼王·帝王。",
+        "ja": "ガンダム・バルバトスルプスを基に発展したガンダム・バルバトスルプスレクス。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "alaya-vijnana"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": false,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

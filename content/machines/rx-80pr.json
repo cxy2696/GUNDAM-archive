@@ -1,0 +1,113 @@
+{
+  "id": "rx-80pr",
+  "modelCode": "RX-80PR",
+  "name": {
+    "zh": "苍白骑士",
+    "ja": "ペイルライダー",
+    "en": "Pale Rider"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "game_original",
+  "firstAppear": {
+    "year": 79,
+    "month": 11,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦“苍白骑士计划”的产物，搭载以强化人为核心的 HADES 系统。",
+    "ja": "連邦「ペイルライダー計画」の産物。強化人間を核心とするHADESシステムを搭載する。"
+  },
+  "description": {
+    "zh": [
+      "苍白骑士是联邦在暗处推进的强化人计划的一环。HADES 系统会在短时间内解放机体的限制，同时把巨大的信息负荷压到驾驶员身上。",
+      "它的白色装甲与红色传感器像一具实验台上的标本。与其说这是兵器，不如说是把人体与机器强行接合的装置。"
+    ],
+    "ja": [
+      "ペイルライダーは連邦が暗部で進めた強化人間計画の一環である。HADESシステムは短時間だけ機体のリミッターを解放し、同時に巨大な情報負荷をパイロットへ押し付ける。",
+      "白い装甲と赤いセンサーは実験台の標本のようだ。兵器というより、人体と機械を強引に接合する装置に近い。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮",
+        "ja": "60mmバルカン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "巨型加特林",
+        "ja": "ジャイアント・ガトリング"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "exam",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "missing-link"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达外传 失落的环节》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "gundam-darilbalde",
+  "modelCode": "MD-0064",
+  "name": {
+    "zh": "达利尔巴尔德",
+    "ja": "ガンダム・ダリルバルデ",
+    "en": "Gundam Darilbalde"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "benerit",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "杰特克公司的决斗型高达，由古尔·杰特克驾驶。",
+    "ja": "ジェターク社の決闘型ガンダム。グエル・ジェタークが駆る。"
+  },
+  "description": {
+    "zh": [
+      "达利尔巴尔德是一台为决斗规则优化的机体。它的动作响应与武器切换都经过调校，适合在学园的规则内进行一对一对决。",
+      "但战争不会遵守学园的规则。这台机体最终要面对的问题，是它能否从“决斗机”变成真正的战场机体。"
+    ],
+    "ja": [
+      "ダリルバルデは決闘の規則に最適化された機体である。動作応答と武器切り替えは調整され、学園の規則内での一対一の決闘に適する。",
+      "だが戦争は学園の規則を守らない。この機体が最後に向き合うのは、「決闘機」から本物の戦場機へなれるかという問いである。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.7,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": 72.8,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "GUND 格式化",
+        "ja": "GUNDフォーマット"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "guel-jeturk"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [
+    {
+      "to": "gundam-schwarzette",
+      "kind": "tech_from",
+      "note": {
+        "zh": "达利尔巴尔德 的技术路线在 战骑高达 上延续。",
+        "ja": "ガンダム・ダリルバルデの技術路線はガンダム・シュバルゼッテへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gund-format"
+    }
+  ],
+  "viewer": {
+    "head": "fin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#7A2E4A",
+      "accent": "#D7B46A",
+      "eye": "#FF6B7A",
+      "frame": "#3C3C46"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 水星的魔女》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

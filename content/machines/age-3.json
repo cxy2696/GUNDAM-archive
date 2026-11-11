@@ -1,0 +1,132 @@
+{
+  "id": "age-3",
+  "modelCode": "AGE-3",
+  "name": {
+    "zh": "高达 AGE-3",
+    "ja": "ガンダムAGE-3",
+    "en": "Gundam AGE-3"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 164,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE 系统的第三代机体，以换装与高通用性支撑奇奥的战斗。",
+    "ja": "AGEシステムの第三世代機。換装と高い汎用性でキオの戦いを支える。"
+  },
+  "description": {
+    "zh": [
+      "AGE-3 是 AGE 系统在百年战争后期的答案。它延续了换装理念，但把基础性能推到足以单独应对维根新型机的水平。",
+      "奇奥驾驶它时，战争已经不再是父辈的战争。这台机体要面对的不只是敌人，还有“为什么还要继续战斗”这个问题。"
+    ],
+    "ja": [
+      "AGE-3は百年戦争後期におけるAGEシステムの答えである。換装の理念を継承しつつ、基礎性能をヴェイガンの新型機に単独で対抗できる水準へ押し上げた。",
+      "キオが乗る頃、戦争はもはや父祖の戦争ではない。この機体が向き合うのは敵だけでなく、「なぜ戦い続けるのか」という問いでもある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "换装背包",
+        "ja": "ウェアラブル・パック"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "kio-asuno"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [
+    {
+      "to": "age-fx",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 AGE-3 的技术路线在 高达 AGE-FX 上延续。",
+        "ja": "ガンダムAGE-3の技術路線はガンダムAGE-FXへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 AGE》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "age-system"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

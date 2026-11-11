@@ -1,0 +1,113 @@
+{
+  "id": "rx-9-c",
+  "modelCode": "RX-9/C",
+  "name": {
+    "zh": "叙述高达 C 装备",
+    "ja": "ナラティブガンダム C装備",
+    "en": "Narrative Gundam C-Pack"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 96,
+    "month": 9,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "叙述高达的 C 装备形态，为追踪凤凰而加装精神感应捕获器。",
+    "ja": "ナラティブガンダムのC装備。フェネクス追跡のためにサイコ・キャプチャーを追加した。"
+  },
+  "description": {
+    "zh": [
+      "叙述高达本身是一台以“故事”为名的试验机，C 装备则把它推向极端：用精神感应捕获器去触碰另一台机体留下的意识残响。",
+      "它不是为了正面战斗而生的形态。与其说 C 装备增强了火力，不如说它让驾驶员有机会理解凤凰为什么不肯停下来。"
+    ],
+    "ja": [
+      "ナラティブガンダムは「物語」の名を持つ試験機であり、C装備はそれを極端へ押し進める。サイコ・キャプチャーで、別の機体が残した意識の残響に触れるのだ。",
+      "正面戦闘のために生まれた形態ではない。C装備が強化したのは火力ではなく、フェネクスがなぜ止まらないのかを理解する可能性である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "精神感应捕获器",
+        "ja": "サイコ・キャプチャー"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "psychoframe",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "jona-bashta"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "narrative-2018"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

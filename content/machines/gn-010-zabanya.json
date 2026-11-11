@@ -1,0 +1,116 @@
+{
+  "id": "gn-010-zabanya",
+  "modelCode": "GN-010",
+  "name": {
+    "zh": "狱天使高达",
+    "ja": "ガンダムザバーニャ",
+    "en": "Gundam Zabanya"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 2314,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "智天使高达的后继机，以大量浮游盾与枪械进行全方位射击。",
+    "ja": "ケルディムの後継機。多数のシールドビットと銃器で全方位射撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "狱天使高达把“狙击”扩展成了“弹幕”。它的浮游盾既能防御，也能挂载枪械，在战场上形成一张不断移动的火力网。",
+      "洛克昂仍然是最冷静的射手，但这台机体允许他在同一时间处理更多目标。技术上的进步，也意味着更大的责任。"
+    ],
+    "ja": [
+      "ザバーニャは「狙撃」を「弾幕」へ拡張した。シールドビットは防御だけでなく銃器を搭載し、戦場に移動し続ける火力網を作る。",
+      "ロックオンは依然として最も冷静な射手だが、この機体は同時により多くの目標を扱える。技術の進歩は、より大きな責任でもある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 手枪 ×2",
+        "ja": "GNピストル ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 浮游盾",
+        "ja": "GNシールドビット"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "GN 步枪",
+        "ja": "GNライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "浮游炮",
+        "ja": "ファンネル"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "funnel",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "lockon-stratos"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-movie"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "round",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达00 先驱者的觉醒》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

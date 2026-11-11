@@ -398,5 +398,277 @@
       "zh": "在 A.A. 纪元的地球圈遗迹中，玩家驾驶螺旋高达穿越废弃轨道，对抗未知的自我增殖威胁。",
       "ja": "A.A.紀元の地球圏遺跡を舞台に、プレイヤーは螺旋ガンダムで放棄軌道を駆け、未知の自己増殖脅威へ挑む。"
     }
+  },
+  {
+    "id": "08th-ms-team",
+    "title": {
+      "zh": "机动战士高达 第08MS小队",
+      "ja": "機動戦士ガンダム 第08MS小隊",
+      "en": "Mobile Suit Gundam: The 08th MS Team"
+    },
+    "year": 1996,
+    "type": "ova",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "东南亚战线的陆战小队群像。没有王牌与奇迹，只有泥泞、补给和一台陆战型高达。",
+      "ja": "東南アジア戦線の陸戦小隊を描く群像劇。エースも奇跡もなく、泥と補給と一機の陸戦型ガンダムがあるだけだ。"
+    }
+  },
+  {
+    "id": "thunderbolt",
+    "title": {
+      "zh": "机动战士高达 雷霆宙域",
+      "ja": "機動戦士ガンダム サンダーボルト",
+      "en": "Mobile Suit Gundam Thunderbolt"
+    },
+    "year": 2015,
+    "type": "ova",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "穆尔殖民地废墟中的爵士与狙击。联邦与吉翁的残兵在漂浮的残骸带里互相猎杀。",
+      "ja": "ムーア同胞団の残骸で響くジャズと狙撃。連邦とジオンの残兵が漂うデブリ帯で殺し合う。"
+    }
+  },
+  {
+    "id": "missing-link",
+    "title": {
+      "zh": "机动战士高达外传 失落的环节",
+      "ja": "機動戦士ガンダム外伝 ミッシングリンク",
+      "en": "Mobile Suit Gundam Side Story: Missing Link"
+    },
+    "year": 2014,
+    "type": "game",
+    "eraId": "uc",
+    "canon": "game_original",
+    "summary": {
+      "zh": "地球联邦与吉翁两支试验部队在一年战争末期的平行轨迹。",
+      "ja": "一年戦争末期、連邦とジオンの二つの実験部隊の平行する軌跡。"
+    }
+  },
+  {
+    "id": "blue-destiny",
+    "title": {
+      "zh": "机动战士高达外传 蓝色命运",
+      "ja": "機動戦士ガンダム外伝 ブルーディスティニー",
+      "en": "Mobile Suit Gundam Side Story: Blue Destiny"
+    },
+    "year": 1996,
+    "type": "game",
+    "eraId": "uc",
+    "canon": "game_original",
+    "summary": {
+      "zh": "EXAM 系统与联邦陆战队的失控实验。蓝色机体里装着不该被唤醒的东西。",
+      "ja": "EXAMシステムと連邦陸戦隊の暴走実験。青い機体には目覚めさせるべきでないものが宿る。"
+    }
+  },
+  {
+    "id": "aoz",
+    "title": {
+      "zh": "机动战士高达 Advance of Zeta 在提坦斯的旗下",
+      "ja": "機動戦士ガンダム アドバンス・オブ・ゼータ ティターンズの旗のもとに",
+      "en": "Advance of Zeta: The Flag of Titans"
+    },
+    "year": 2001,
+    "type": "manga",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "提坦斯试验部队与 TR 系列的故事。技术狂热、派系倾轧与强化人实验交织。",
+      "ja": "ティターンズの実験部隊とTRシリーズの物語。技術偏重、派閥抗争、強化人間実験が交錯する。"
+    }
+  },
+  {
+    "id": "cca-beltorchika",
+    "title": {
+      "zh": "机动战士高达 逆袭的夏亚 贝托蒂嘉的子嗣",
+      "ja": "機動戦士ガンダム 逆襲のシャア ベルトーチカ・チルドレン",
+      "en": "Mobile Suit Gundam: Char's Counterattack - Beltorchika's Children"
+    },
+    "year": 1988,
+    "type": "novel",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "《逆袭的夏亚》的小说版。Hi-ν 高达与夜莺在这里登场，战场走向与剧场版不同。",
+      "ja": "『逆襲のシャア』の小説版。Hi-νガンダムとナイチンゲールが登場し、戦局は劇場版と異なる。"
+    }
+  },
+  {
+    "id": "f90",
+    "title": {
+      "zh": "机动战士高达 F90",
+      "ja": "機動戦士ガンダムF90",
+      "en": "Mobile Suit Gundam F90"
+    },
+    "year": 1990,
+    "type": "manga",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "宇宙世纪 0120 年代，联邦次世代主力机 F90 的换装实验与火星残党冲突。",
+      "ja": "宇宙世紀0120年代、連邦次世代主力機F90の換装実験と火星残党の衝突。"
+    }
+  },
+  {
+    "id": "crossbone",
+    "title": {
+      "zh": "机动战士海盗高达",
+      "ja": "機動戦士クロスボーン・ガンダム",
+      "en": "Mobile Suit Crossbone Gundam"
+    },
+    "year": 1994,
+    "type": "manga",
+    "eraId": "uc",
+    "canon": "side_story",
+    "summary": {
+      "zh": "宇宙世纪 0133 年，木星圈与十字骨先锋的游击战。小型化机体的极限与海盗旗。",
+      "ja": "宇宙世紀0133年、木星圏とクロスボーン・バンガードのゲリラ戦。小型化機体の限界と海賊旗。"
+    }
+  },
+  {
+    "id": "zeonic-front",
+    "title": {
+      "zh": "吉翁前线 机动战士高达0079",
+      "ja": "ジオニックフロント 機動戦士ガンダム0079",
+      "en": "Zeonic Front: Mobile Suit Gundam 0079"
+    },
+    "year": 2001,
+    "type": "game",
+    "eraId": "uc",
+    "canon": "game_original",
+    "summary": {
+      "zh": "从吉翁军视角进行的小队战术模拟。高达是敌方最强的未知数。",
+      "ja": "ジオン軍視点の小隊戦術シミュレーション。ガンダムは敵側最強の未知数。"
+    }
+  },
+  {
+    "id": "endless-waltz",
+    "title": {
+      "zh": "新机动战记高达W 无尽的华尔兹",
+      "ja": "新機動戦記ガンダムW Endless Waltz",
+      "en": "Mobile Suit Gundam Wing: Endless Waltz"
+    },
+    "year": 1997,
+    "type": "ova",
+    "eraId": "ac",
+    "canon": "side_story",
+    "summary": {
+      "zh": "A.C.196 年的后日谈。玛丽美亚之乱与五台高达的最终形态。",
+      "ja": "A.C.196年の後日談。マリーメイアの乱と五機のガンダムの最終形態。"
+    }
+  },
+  {
+    "id": "g-unit",
+    "title": {
+      "zh": "新机动战记高达W 双故事 G-UNIT",
+      "ja": "新機動戦記ガンダムW デュアルストーリー G-UNIT",
+      "en": "Mobile Suit Gundam Wing Dual Story: G-Unit"
+    },
+    "year": 1997,
+    "type": "manga",
+    "eraId": "ac",
+    "canon": "side_story",
+    "summary": {
+      "zh": "OZ 的 G-UNIT 计划与殖民地的少年驾驶员。五台高达之外的另一次流星作战。",
+      "ja": "OZのG-UNIT計画とコロニーの少年パイロット。五機のガンダムとは別のオペレーション・メテオ。"
+    }
+  },
+  {
+    "id": "seed-astray",
+    "title": {
+      "zh": "机动战士高达SEED ASTRAY",
+      "ja": "機動戦士ガンダムSEED ASTRAY",
+      "en": "Mobile Suit Gundam SEED Astray"
+    },
+    "year": 2002,
+    "type": "manga",
+    "eraId": "ce",
+    "canon": "side_story",
+    "summary": {
+      "zh": "战力外鉴定士罗·裘尔与异端高达们的冒险。战场之外，还有另一种活着的方式。",
+      "ja": "ジャンク屋ロウ・ギュールとアストレイたちの冒険。戦場の外にも、別の生き方がある。"
+    }
+  },
+  {
+    "id": "seed-stargazer",
+    "title": {
+      "zh": "机动战士高达SEED C.E.73 STARGAZER",
+      "ja": "機動戦士ガンダムSEED C.E.73 スターゲイザー",
+      "en": "Mobile Suit Gundam SEED C.E.73 Stargazer"
+    },
+    "year": 2006,
+    "type": "ova",
+    "eraId": "ce",
+    "canon": "side_story",
+    "summary": {
+      "zh": "C.E.73 的观测部队与漆黑强袭。没有主角光环，只有被战争卷走的普通人。",
+      "ja": "C.E.73の観測部隊とストライクノワール。主人公補正はなく、戦争に巻き込まれた普通の人々がいる。"
+    }
+  },
+  {
+    "id": "00-movie",
+    "title": {
+      "zh": "机动战士高达00 先驱者的觉醒",
+      "ja": "劇場版 機動戦士ガンダム00 -A wakening of the Trailblazer-",
+      "en": "Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer"
+    },
+    "year": 2010,
+    "type": "movie",
+    "eraId": "ad",
+    "canon": "mainline",
+    "summary": {
+      "zh": "A.D.2314，ELS 与人类的第一次接触。00 Qan[T] 用对话代替最后一击。",
+      "ja": "A.D.2314、ELSと人類の初接触。ダブルオークアンタは最後の一撃の代わりに対話を選ぶ。"
+    }
+  },
+  {
+    "id": "ibo-urdr-hunt",
+    "title": {
+      "zh": "机动战士高达 铁血的奥尔芬斯 Urdr Hunt",
+      "ja": "機動戦士ガンダム 鉄血のオルフェンズ ウルズハント",
+      "en": "Mobile Suit Gundam: Iron-Blooded Orphans Urdr Hunt"
+    },
+    "year": 2022,
+    "type": "game",
+    "eraId": "pd",
+    "canon": "side_story",
+    "summary": {
+      "zh": "P.D.325，围绕“乌尔德之猎”的寻宝与加拉尔霍恩的阴影。",
+      "ja": "P.D.325、「ウルズハント」を巡る宝探しとギャラルホルンの影。"
+    }
+  },
+  {
+    "id": "witch-prologue",
+    "title": {
+      "zh": "机动战士高达 水星的魔女 PROLOGUE",
+      "ja": "機動戦士ガンダム 水星の魔女 PROLOGUE",
+      "en": "Mobile Suit Gundam: The Witch from Mercury - Prologue"
+    },
+    "year": 2022,
+    "type": "ova",
+    "eraId": "as",
+    "canon": "side_story",
+    "summary": {
+      "zh": "凡娜迪斯事变的前夜。GUND 格式化、魔灵与一个被夺走的童年。",
+      "ja": "ヴァナディース事変の前夜。GUNDフォーマット、ルブリス、奪われた幼少期。"
+    }
+  },
+  {
+    "id": "age-memory-of-eden",
+    "title": {
+      "zh": "机动战士高达AGE 伊甸的回忆",
+      "ja": "機動戦士ガンダムAGE メモリー・オブ・エデン",
+      "en": "Mobile Suit Gundam AGE: Memory of Eden"
+    },
+    "year": 2013,
+    "type": "ova",
+    "eraId": "ag",
+    "canon": "side_story",
+    "summary": {
+      "zh": "亚瑟姆与泽哈特视角的再剪辑。两个被战争推着走的少年，走向不同的终点。",
+      "ja": "アセムとゼハート視点の再編集。戦争に押し流された二人の少年が、異なる終着点へ向かう。"
+    }
   }
 ]

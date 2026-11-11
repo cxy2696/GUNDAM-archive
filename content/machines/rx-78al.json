@@ -1,0 +1,116 @@
+{
+  "id": "rx-78al",
+  "modelCode": "RX-78AL",
+  "name": {
+    "zh": "阿特拉斯高达",
+    "ja": "アトラスガンダム",
+    "en": "Atlas Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 79,
+    "month": 12,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦为水陆两用与高机动战开发的实验机，能在殖民地残骸中高速机动。",
+    "ja": "連邦が水陸両用と高機動戦のために開発した実験機。コロニー残骸の中を高速機動できる。"
+  },
+  "description": {
+    "zh": [
+      "阿特拉斯高达的设计围绕“在破碎的殖民地残骸中移动”展开。腿部与辅助臂提供多方向推进，使它能在雷霆宙域的残骸带里做出常规 MS 难以完成的姿态控制。",
+      "它并非为量产而生，而是把战场上收集到的极端环境数据反馈给联邦技术部门。每一处外露的推进器都写着实验机的任性。"
+    ],
+    "ja": [
+      "アトラスガンダムの設計は「破砕したコロニー残骸の中を移動する」ことに集中している。脚部とサブアームが多方向の推力を生み、サンダーボルトのデブリ帯で通常のMSには難しい姿勢制御を可能にした。",
+      "量産を目的とせず、戦場で得た極限環境のデータを連邦の技術部門へ還元するための機体である。露出したスラスターの一つ一つが実験機のわがままを物語る。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "轨道炮",
+        "ja": "レールガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "辅助臂",
+        "ja": "サブアーム"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "水中用推进器",
+        "ja": "水中用スラスター"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "io-fleming"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "thunderbolt"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 雷霆宙域》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "gat-x103-buster",
+  "modelCode": "GAT-X103",
+  "name": {
+    "zh": "暴风高达",
+    "ja": "バスターガンダム",
+    "en": "Buster Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军的远程炮击型高达，双炮组合覆盖远近火力。",
+    "ja": "地球連合軍の遠距離砲撃型ガンダム。二門の砲を組み合わせて遠近の火力を担う。"
+  },
+  "description": {
+    "zh": [
+      "暴风高达的设计围绕两门主炮展开。350mm 炮击管负责实弹压制，94mm 高能步枪负责光束狙击，两者可以组合成更强的射击模式。",
+      "它不适合单机突进。驾驶员必须站在队友身后，用火力把战场切成一段一段，让前线的人有路可走。"
+    ],
+    "ja": [
+      "バスターの設計は二門の主砲を軸にしている。350mm砲撃管は実弾制圧、94mm高エネルギービームライフルはビーム狙撃を担い、両者を組み合わせた射撃モードもある。",
+      "単機突進には向かない。パイロットは仲間の後ろに立ち、火力で戦場を区切り、前線の人間に進む道を作る。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "350mm 炮击管",
+        "ja": "350mm砲撃管"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "94mm 高能步枪",
+        "ja": "94mm高エネルギービームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹",
+        "ja": "ミサイル"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -130,6 +130,21 @@
           "level": "A"
         }
       ]
+    },
+    {
+      "to": "rx-0-phenex",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 独角兽高达 为基础发展出的 凤凰。",
+        "ja": "ユニコーンガンダムを基に発展したフェネクス。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 UC》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "psychoframe"
     }
   ],
   "viewer": {

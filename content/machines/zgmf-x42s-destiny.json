@@ -76,7 +76,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "shinn-asuka"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-destiny-2004"

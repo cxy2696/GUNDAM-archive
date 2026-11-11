@@ -1,0 +1,108 @@
+{
+  "id": "gf13-050nsw-nobel",
+  "modelCode": "GF13-050NSW",
+  "name": {
+    "zh": "诺贝尔高达",
+    "ja": "ノーベルガンダム",
+    "en": "Nobel Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新瑞典的代表机体，以体操般的机动与光束缎带进行近身战。",
+    "ja": "ネオスウェーデンの代表機。体操のような機動とビームリボンで近接戦を戦う。"
+  },
+  "description": {
+    "zh": [
+      "诺贝尔高达的外形在历届参赛机中显得格外纤细。它放弃了厚重装甲，把机动性推到极限，用光束缎带与拳击在擂台上控制距离。",
+      "它的驾驶舱周围留有明显的女性化设计，但别被外表骗了：在武斗会规则下，这台机体可以做出几乎不符合 MS 力学的连续转身与踢击。"
+    ],
+    "ja": [
+      "ノーベルガンダムの外観は歴代の参加機の中でも際立って細い。厚い装甲を捨てて機動性を極限まで高め、ビームリボンと拳でリング上の距離を支配する。",
+      "コクピット周辺には女性的な意匠が残るが、外見に騙されてはいけない。ガンダムファイトの規則の下、この機体はMSの力学に反するような連続ターンと蹴りを繰り出す。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束缎带",
+        "ja": "ビームリボン"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "诺贝尔拳",
+        "ja": "ノーベル・パンチ"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "allenby-beardsley"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#7A2E4A",
+      "accent": "#D7B46A",
+      "eye": "#FF6B7A",
+      "frame": "#3C3C46"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

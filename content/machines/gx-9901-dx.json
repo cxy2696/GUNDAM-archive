@@ -76,7 +76,11 @@
     "beam-weapon",
     "core-block"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "garrod-ran"
+    }
+  ],
   "eventIds": [
     "after-war-awakening",
     "new-une-final"

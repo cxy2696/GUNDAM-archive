@@ -1,0 +1,129 @@
+{
+  "id": "gn-006-cherudim",
+  "modelCode": "GN-006",
+  "name": {
+    "zh": "智天使高达",
+    "ja": "ケルディムガンダム",
+    "en": "Cherudim Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2308,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "力天使高达的后继机，以狙击与浮游盾进行远程支援。",
+    "ja": "デュナメスの後継機。狙撃とシールドビットで遠距離支援を行う。"
+  },
+  "description": {
+    "zh": [
+      "智天使高达继承了力天使的狙击定位，但把防护也做成了可分离的浮游盾。它可以在保持瞄准的同时，让盾牌自行寻找威胁。",
+      "洛克昂的战斗风格仍然是“先看清，再开枪”。这台机体给了他更多观察时间，也给了他更多不能失手的理由。"
+    ],
+    "ja": [
+      "ケルディムはデュナメスの狙撃定位を継承しつつ、防御も分離式のシールドビットにした。照準を保ったまま、盾が自律的に脅威へ向かう。",
+      "ロックオンの戦い方は「まず見て、それから撃つ」のままである。この機体は観測の時間を増やし、同時に外せない理由も増やした。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 狙击步枪",
+        "ja": "GNスナイパーライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 手枪 ×2",
+        "ja": "GNピストル ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "浮游盾",
+        "ja": "シールドビット"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "lockon-stratos"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [
+    {
+      "to": "gn-010-zabanya",
+      "kind": "tech_from",
+      "note": {
+        "zh": "智天使高达 的技术路线在 狱天使高达 上延续。",
+        "ja": "ケルディムガンダムの技術路線はガンダムザバーニャへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达00 先驱者的觉醒》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "funnel"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

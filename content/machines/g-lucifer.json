@@ -68,7 +68,11 @@
     "beam-weapon",
     "funnel"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "aida-surugan"
+    }
+  ],
   "eventIds": [
     "full-moon"
   ],

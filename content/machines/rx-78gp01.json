@@ -77,7 +77,11 @@
     "beam-weapon",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "kou-uraki"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "0083-1991"

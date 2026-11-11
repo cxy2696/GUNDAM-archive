@@ -1,0 +1,116 @@
+{
+  "id": "asw-g-11-gusion-rebake-full-city",
+  "modelCode": "ASW-G-11",
+  "name": {
+    "zh": "古辛 重锻 全城",
+    "ja": "ガンダム・グシオンリベイクフルシティ",
+    "en": "Gundam Gusion Rebake Full City"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "古辛重锻的最终改修型，追加副臂与城市战装备。",
+    "ja": "グシオンリベイクの最終改修型。サブアームと市街戦装備を追加した。"
+  },
+  "description": {
+    "zh": [
+      "全城型针对城市与殖民地内部战斗做了优化。副臂可以同时操作盾牌与武器，让它在狭窄空间里保持火力。",
+      "这台机体保留了古辛的厚重感，却不再笨拙。它是铁华团在资源有限的情况下，把一台旧高达反复用到极限的证明。"
+    ],
+    "ja": [
+      "フルシティは市街地やコロニー内部での戦闘に最適化された。サブアームは盾と武器を同時に扱い、狭い空間でも火力を保つ。",
+      "グシオンの重厚感を残しつつ、もはや鈍重ではない。限られた資源の中で、古いガンダムを限界まで使い続けた鉄華団の証明である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "锤矛",
+        "ja": "メイス"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "长步枪",
+        "ja": "ロングライフル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "副臂",
+        "ja": "サブアーム"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "akihiro-altland"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

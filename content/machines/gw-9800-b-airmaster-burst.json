@@ -1,0 +1,105 @@
+{
+  "id": "gw-9800-b-airmaster-burst",
+  "modelCode": "GW-9800-B",
+  "name": {
+    "zh": "空中霸王高达爆发型",
+    "ja": "ガンダムエアマスターバースト",
+    "en": "Gundam Airmaster Burst"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "空中霸王高达的强化形态，飞行性能与火力同步提升。",
+    "ja": "ガンダムエアマスターの強化形態。飛行性能と火力を同時に高めた。"
+  },
+  "description": {
+    "zh": [
+      "爆发型把空中霸王的高空优势继续推高。肩部与背部的翼状单元经过重新设计，能在一次俯冲中完成锁定、发射与脱离。",
+      "它不适合长时间缠斗。驾驶员必须相信自己的第一次进入角度，因为第二次机会往往不会出现。"
+    ],
+    "ja": [
+      "バーストはエアマスターの高空優勢をさらに押し上げる。肩部と背部の翼状ユニットは再設計され、一度の急降下で照準・発射・離脱を完了できる。",
+      "長期の格闘には向かない。パイロットは最初の進入角度を信じなければならない。二度目の機会はほとんど来ないからだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹",
+        "ja": "ミサイル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

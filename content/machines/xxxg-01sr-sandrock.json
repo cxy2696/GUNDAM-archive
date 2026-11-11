@@ -1,0 +1,125 @@
+{
+  "id": "xxxg-01sr-sandrock",
+  "modelCode": "XXXG-01SR",
+  "name": {
+    "zh": "沙漠高达",
+    "ja": "ガンダムサンドロック",
+    "en": "Gundam Sandrock"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 195,
+    "month": 4,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "流星作战的五台高达之一，以沙漠战与近身格斗见长。",
+    "ja": "オペレーション・メテオの五機のガンダムの一機。砂漠戦と近接格闘に長ける。"
+  },
+  "description": {
+    "zh": [
+      "沙漠高达的装甲与关节针对沙尘环境做了特别处理。它的主武装是两把热弯刀，战斗风格接近骑兵：快速切入、切断、再脱离。",
+      "在五台高达中，它最像一台为“保护某人”而造的机体。卡特尔·拉巴伯·温拿的战斗动机也一直比其他人更柔软。"
+    ],
+    "ja": [
+      "ガンダムサンドロックの装甲と関節は砂塵環境に合わせて特別に処理されている。主武装は二本のヒートショーテルで、戦い方は騎兵に近い。素早く切り込み、断ち、離脱する。",
+      "五機の中では「誰かを守るため」に造られた機体の印象が最も強い。カトル・ラバーバ・ウィナーの戦う動機も、他の誰よりも柔らかい。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "热弯刀 ×2",
+        "ja": "ヒートショーテル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "quatre-raberba-winner"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "wing-1995"
+  ],
+  "edges": [
+    {
+      "to": "xxxg-01sr2-sandrock-custom",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 沙漠高达 为基础发展出的 沙漠高达改。",
+        "ja": "ガンダムサンドロックを基に発展したガンダムサンドロック改。"
+      },
+      "sources": [
+        {
+          "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gundarium"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达 W》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "oz-19masx-griepe",
+  "modelCode": "OZ-19MASX",
+  "name": {
+    "zh": "格雷普高达",
+    "ja": "ガンダムグリープ",
+    "en": "Gundam Griepe"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "oz",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 195,
+    "month": 8,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "G-UNIT 计划的高阶机体，以重型光束炮与可变装甲著称。",
+    "ja": "G-UNIT計画の上位機。重光束砲と可変装甲で知られる。"
+  },
+  "description": {
+    "zh": [
+      "格雷普高达是 G-UNIT 系列中更接近“决战机”的一台。它的肩部与背部集成重型光束炮，装甲可以按形态展开。",
+      "它没有五台高达那样的传奇色彩，却是 OZ 技术路线的直接体现：用更少的机体，承担更集中的火力。"
+    ],
+    "ja": [
+      "ガンダムグリープはG-UNITシリーズの中でも「決戦機」に近い一機である。肩部と背部に重光束砲を統合し、装甲は形態に応じて展開する。",
+      "五機のガンダムのような伝説性はないが、OZの技術路線を直接示している。より少ない機体で、より集中した火力を担う。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束炮",
+        "ja": "ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "g-unit"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "《新机动战记高达W 双故事 G-UNIT》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

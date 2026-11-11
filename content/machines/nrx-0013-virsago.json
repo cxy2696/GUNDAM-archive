@@ -1,0 +1,121 @@
+{
+  "id": "nrx-0013-virsago",
+  "modelCode": "NRX-0013",
+  "name": {
+    "zh": "维萨戈高达",
+    "ja": "ガンダムヴァサーゴ",
+    "en": "Gundam Virsago"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "new-une",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新联合国军的强化人专用机，以光束爪与散射炮进行猎杀。",
+    "ja": "新UN軍の強化人間専用機。ビームクローと拡散ビーム砲で狩りを行う。"
+  },
+  "description": {
+    "zh": [
+      "维萨戈高达是为强化人调整的机体。它的光束爪适合在近距离撕开装甲，散射光束炮则用来封锁对手的退路。",
+      "对弗罗斯特兄弟来说，战斗不是决斗，而是任务。这台机体的设计也体现了同样的冷感：没有多余的装饰，只有最高效的杀伤路径。"
+    ],
+    "ja": [
+      "ヴァサーゴは強化人間向けに調整された機体である。ビームクローは近距離で装甲を裂き、拡散ビーム砲は相手の退路を塞ぐ。",
+      "フロスト兄弟にとって戦闘は決闘ではなく任務だ。機体の設計も同じ冷たさを帯びる。余計な装飾はなく、最も効率的な殺傷経路だけがある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束爪",
+        "ja": "ビームクロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "散射光束炮",
+        "ja": "拡散ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [
+    {
+      "to": "nrx-0013-cb-virsago-chest-break",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 维萨戈高达 为基础发展出的 维萨戈高达胸甲破坏型。",
+        "ja": "ガンダムヴァサーゴを基に発展したガンダムヴァサーゴ・チェストブレイク。"
+      },
+      "sources": [
+        {
+          "label": "《机动新世纪高达 X》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

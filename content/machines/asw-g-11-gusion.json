@@ -1,0 +1,125 @@
+{
+  "id": "asw-g-11-gusion",
+  "modelCode": "ASW-G-11",
+  "name": {
+    "zh": "古辛",
+    "ja": "ガンダム・グシオン",
+    "en": "Gundam Gusion"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 323,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代的高达，以厚重装甲与锤矛进行水下与近身战。",
+    "ja": "厄祭戦時代のガンダム。厚い装甲とメイスで水中・近接戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "古辛的轮廓比其他高达更圆、更重。它的装甲像一层额外的壳体，适合在水下或低重力环境中承受冲击。",
+      "最初它属于布鲁瓦斯，后来被铁华团夺取。机体本身没有改变，改变的是驾驶它的人与理由。"
+    ],
+    "ja": [
+      "グシオンは他のガンダムより丸く、重い輪郭を持つ。装甲は追加の殻のようで、水中や低重力環境での衝撃に耐える。",
+      "当初はブルワーズに所属し、後に鉄華団へ奪われた。機体自体は変わらない。変わったのは、操縦する者とその理由である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "锤矛",
+        "ja": "メイス"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "机枪",
+        "ja": "マシンガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "akihiro-altland"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [
+    {
+      "to": "asw-g-11-gusion-rebake",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 古辛 为基础发展出的 古辛 重锻。",
+        "ja": "ガンダム・グシオンを基に発展したガンダム・グシオンリベイク。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "alaya-vijnana"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

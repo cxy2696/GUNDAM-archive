@@ -1,0 +1,106 @@
+{
+  "id": "rx-78-3",
+  "modelCode": "RX-78-3",
+  "name": {
+    "zh": "G-3 高达",
+    "ja": "G-3ガンダム",
+    "en": "G-3 Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 79,
+    "month": 9,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "以二号机数据修复的第三台 RX-78，采用低可视度涂装并优化了磁涂层。",
+    "ja": "2号機のデータで復旧した3番目のRX-78。低視認性塗装とマグネット・コーティングの最適化が施された。"
+  },
+  "description": {
+    "zh": [
+      "G-3 是在 RX-78-2 的战斗数据基础上重新组合的第三台同型机。灰蓝色涂装与改良后的关节响应，让它看起来更像一台技术验证机，而不是宣传海报上的白色英雄。",
+      "它没有改变一年战争的最终走向，却证明了 RX-78 的骨架可以容纳更高强度的机动战术，为后续联邦系高达的调校留下了参照。"
+    ],
+    "ja": [
+      "G-3はRX-78-2の戦闘データを基に再構成された3番目の同型機である。灰色がかった青の塗装と改良された関節応答は、白い英雄というより技術検証機の印象を与える。",
+      "一年戦争の帰趨を変えたわけではないが、RX-78の骨格がより高強度の機動戦術に耐えうることを示し、後の連邦系ガンダムの調整に参照を残した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "core-block",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "msg-1979"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

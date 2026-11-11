@@ -1,0 +1,113 @@
+{
+  "id": "gat-x207-blitz",
+  "modelCode": "GAT-X207",
+  "name": {
+    "zh": "迅雷高达",
+    "ja": "ブリッツガンダム",
+    "en": "Blitz Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军的隐密型高达，以海市蜃楼系统实现光学隐身。",
+    "ja": "地球連合軍の隠密型ガンダム。ミラージュコロイドで光学ステルスを実現する。"
+  },
+  "description": {
+    "zh": [
+      "迅雷高达的核心不是火力，而是“消失”。海市蜃楼系统用微粒包裹机体，使其在可见光与雷达上同时变得稀薄。",
+      "它适合执行破坏、夺取与斩首任务。驾驶员必须习惯在看不见自己的状态下战斗，这种孤独感是性能表不会写的。"
+    ],
+    "ja": [
+      "ブリッツの核心は火力ではなく「消えること」にある。ミラージュコロイドが微粒子で機体を包み、可視光とレーダーの両方で希薄にする。",
+      "破壊、奪取、斬首任務に適する。パイロットは自分が見えない状態で戦うことに慣れねばならない。この孤独は性能表には書かれない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "攻盾系统",
+        "ja": "攻盾システム"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "海市蜃楼系统",
+        "ja": "ミラージュコロイド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "mirage-colloid",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

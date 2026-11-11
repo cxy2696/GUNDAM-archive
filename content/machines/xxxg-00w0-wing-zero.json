@@ -93,7 +93,23 @@
   "workIds": [
     "wing-1995"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "xxxg-01w-wing",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 飞翼高达零式 为基础发展出的 飞翼高达。",
+        "ja": "ウイングガンダムゼロを基に発展したウイングガンダム。"
+      },
+      "sources": [
+        {
+          "label": "《新机动战记高达 W》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gundarium"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

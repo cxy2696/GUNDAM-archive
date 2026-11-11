@@ -3,6 +3,30 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [2.0.0] — 2026-11-12
+
+### Added
+
+- **Full 11-era Gundam roster**: 147 machines across U.C. (38), F.C. (12), A.C. (13), A.W. (10), C.C. (2), C.E. (21), A.D. (15), A.G. (9), R.C. (5), P.D. (11) and A.S. (9), plus the two existing A.A. units.
+- **Century tables on the chronology page**: an era overview table and a collapsible full-roster table grouped by era; all 147 entries link to their dossier pages.
+- **17 side-story works**, including 08th MS Team, Thunderbolt, Missing Link, Blue Destiny, AoZ, Beltorchika's Children, F90, Crossbone, Zeonic Front, Endless Waltz, G-Unit, SEED Astray, SEED C.E.73 Stargazer, 00 the Movie, Urdr Hunt, Witch from Mercury PROLOGUE and Memory of Eden.
+- **41 characters** (73 total), covering the Shuffle Alliance, the five Gundam pilots, SEED/DESTINY, 00, AGE, Iron-Blooded Orphans and The Witch from Mercury.
+- **60 new lineage edges** (82 total) across all major eras, each with a source.
+- **Seven controlled tags**: DRAGOON, Trans-AM, Alaya-Vijnana, GN Field, Hyper Jammer, Mirage Colloid, DG Cell.
+- **Six faction groups**: Gundam Fight Nations, DSSD, Innovators, Vanadis Institute, Dawn of Fold, Mafty.
+- **Readable documentation**: `docs/CHRONOLOGY.md` (era-by-era guide), `docs/MACHINE_COVERAGE.md` (scope and coverage matrix), a question-based documentation index, and a rewritten README.
+
+### Changed
+
+- Static pages: 528; search index: 347; machines: 147; characters: 73; works: 42; factions: 35; tags: 31.
+- The chronology page's “coverage” copy no longer hardcodes counts; it explains scope and points to the coverage document.
+- Version bumped to `2.0.0`.
+
+### Notes
+
+- New machines use the same `seed` policy: unknown specs stay `null`, and no official art is bundled.
+- A.A. remains a repository-original extension and is kept separate from the 11 canonical eras.
+
 ## [1.4.0] — 2026-11-11
 
 ### Added

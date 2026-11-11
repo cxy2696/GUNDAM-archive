@@ -1,0 +1,117 @@
+{
+  "id": "gat-x303-aegis",
+  "modelCode": "GAT-X303",
+  "name": {
+    "zh": "圣盾高达",
+    "ja": "イージスガンダム",
+    "en": "Aegis Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军的可变型高达，可变形为 MA 进行高速突袭。",
+    "ja": "地球連合軍の可変型ガンダム。MAへ変形して高速突撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "圣盾高达是 GAT 系列中唯一强调可变结构的机体。MS 形态下它擅长使用四把光束军刀进行近战，MA 形态则能以高速接近并撞击目标。",
+      "它的设计带着一种攻击性的优雅：所有武器都指向“靠近并终结”，而不是远距离消耗。"
+    ],
+    "ja": [
+      "イージスはGATシリーズで唯一、可変構造を重視した機体である。MS形態では四本のビームサーベルによる近接戦を得意とし、MA形態では高速で目標へ接近し突撃する。",
+      "その設計には攻撃的な優雅さがある。すべての武器は「近づいて終わらせる」ためであり、遠距離での消耗を目的としない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×4",
+        "ja": "ビームサーベル ×4"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "athrun-zala"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

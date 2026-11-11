@@ -1,0 +1,116 @@
+{
+  "id": "gnt-0000-00-qan-t",
+  "modelCode": "GNT-0000",
+  "name": {
+    "zh": "量子型 00 高达",
+    "ja": "ダブルオークアンタ",
+    "en": "00 Qan[T]"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 2314,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "00 高达的最终形态，以量子爆发寻求对话而非歼灭。",
+    "ja": "ダブルオーガンダムの最終形態。量子バーストによる対話を模索し、殲滅を選ばない。"
+  },
+  "description": {
+    "zh": [
+      "量子型 00 高达不是一台更强的 00。它的设计目标从“赢得战斗”转向“理解对方”，GN 剑 V 与量子爆发都是为接触 ELS 而准备的。",
+      "在剧场版的最后，刹那没有用最强的一击结束战争，而是选择让意识跨越物种的边界。这台机体因此成为整个 00 系谱的答案。"
+    ],
+    "ja": [
+      "ダブルオークアンタは「より強いダブルオー」ではない。設計目標は「戦闘に勝つこと」から「相手を理解すること」へ移り、GNソードVとクアンタムバーストはELSとの接触のために用意された。",
+      "劇場版の最後、刹那は最強の一撃で戦争を終わらせず、意識を種の境界へ越えさせた。この機体は00系譜の答えである。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 剑 V",
+        "ja": "GNソードV"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束枪",
+        "ja": "GNビームガン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "量子爆发",
+        "ja": "クアンタムバースト"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "setsuna-f-seiei"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-movie"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "binder",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达00 先驱者的觉醒》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

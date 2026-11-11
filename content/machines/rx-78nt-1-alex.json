@@ -76,7 +76,11 @@
     "beam-weapon",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "christina-mackenzie"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "gundam-0080"

@@ -1,0 +1,105 @@
+{
+  "id": "nrx-0015-ashtaron",
+  "modelCode": "NRX-0015",
+  "name": {
+    "zh": "阿斯塔隆高达",
+    "ja": "ガンダムアシュタロン",
+    "en": "Gundam Ashtaron"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "new-une",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新联合国军的可变型高达，以 MA 形态进行高速突袭。",
+    "ja": "新UN軍の可変型ガンダム。MA形態で高速突撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "阿斯塔隆高达可以在 MS 与 MA 两种形态间切换。MA 形态下它的轮廓变得扁平，适合从高空或轨道快速切入。",
+      "它的武装不算丰富，但胜在进入角度难以预测。与维萨戈搭档时，两台机体形成了一套完整的猎杀组合。"
+    ],
+    "ja": [
+      "アシュタロンはMSとMAの二形態を切り替えられる。MA形態では輪郭が扁平になり、高空や軌道からの高速侵入に適する。",
+      "武装は多くないが、進入角度の読みにくさが強みだ。ヴァサーゴと組むことで、二機は完成された狩りの組み合わせになる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束爪",
+        "ja": "ビームクロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "导弹",
+        "ja": "ミサイル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "可变装甲",
+        "ja": "可変装甲"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "none",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

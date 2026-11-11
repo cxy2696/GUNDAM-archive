@@ -1,0 +1,113 @@
+{
+  "id": "gat-x102-duel",
+  "modelCode": "GAT-X102",
+  "name": {
+    "zh": "决斗高达",
+    "ja": "デュエルガンダム",
+    "en": "Duel Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "omni-enforcer",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "地球联合军 GAT 系列的原型机，以均衡性能成为后续机体的基准。",
+    "ja": "地球連合軍GATシリーズの原型機。バランスの取れた性能で後続機の基準となった。"
+  },
+  "description": {
+    "zh": [
+      "决斗高达是 GAT 系列中最“标准”的一台。它没有强袭的换装、暴风的炮击或迅雷的隐身，却在各项性能上保持了稳定的平衡。",
+      "正因为它足够标准，才成为后续开发的参照。战争后期它被追加装甲与武装，但骨架仍然是那台朴素的原型机。"
+    ],
+    "ja": [
+      "デュエルはGATシリーズの中で最も「標準」な機体である。ストライクの換装、バスターの砲撃、ブリッツのステルスはないが、各性能は安定したバランスを保つ。",
+      "標準的であるからこそ、後続開発の参照になった。戦争後期には追加装甲と武装が施されたが、骨格は素朴な原型機のままだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

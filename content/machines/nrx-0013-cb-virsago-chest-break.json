@@ -1,0 +1,105 @@
+{
+  "id": "nrx-0013-cb-virsago-chest-break",
+  "modelCode": "NRX-0013-CB",
+  "name": {
+    "zh": "维萨戈高达胸甲破坏型",
+    "ja": "ガンダムヴァサーゴ・チェストブレイク",
+    "en": "Gundam Virsago Chest Break"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "new-une",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "维萨戈高达的决战形态，胸部展开大型光束炮。",
+    "ja": "ガンダムヴァサーゴの決戦形態。胸部に大型ビーム砲を展開する。"
+  },
+  "description": {
+    "zh": [
+      "胸甲破坏型把维萨戈的火力集中到胸口。装甲展开后露出的炮口可以在极短时间内释放高密度光束，代价是机体正面几乎无法防御。",
+      "这是一台为“最后一击”而存在的形态。它不准备打持久战，只准备在第一次交火中决定结果。"
+    ],
+    "ja": [
+      "チェストブレイクはヴァサーゴの火力を胸部へ集中させた。装甲を展開して現れる砲口は、極短時間に高密度ビームを放つ。代償として正面はほとんど防御できない。",
+      "「最後の一撃」のために存在する形態である。持久戦を想定せず、最初の交火で結果を決めることだけを狙う。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "胸部大型光束炮",
+        "ja": "胸部大型ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束爪",
+        "ja": "ビームクロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "散射光束炮",
+        "ja": "拡散ビーム砲"
+      },
+      "type": "beam"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

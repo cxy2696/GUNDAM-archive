@@ -1,0 +1,109 @@
+{
+  "id": "age-2-double-bullet",
+  "modelCode": "AGE-2DB",
+  "name": {
+    "zh": "高达 AGE-2 双炮型",
+    "ja": "ガンダムAGE-2ダブルバレット",
+    "en": "Gundam AGE-2 Double Bullet"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 140,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE-2 的炮击换装形态，以双管光束炮进行中远距压制。",
+    "ja": "AGE-2の砲撃換装形態。ツインビーム砲で中遠距離制圧を行う。"
+  },
+  "description": {
+    "zh": [
+      "双炮型把 AGE-2 的速度优势换成了持续火力。双管光束炮可以交替射击，保持对目标的压力。",
+      "亚瑟姆更擅长近距离判断，但这套装备让他学会在更远处思考。火力不是答案，时机才是。"
+    ],
+    "ja": [
+      "ダブルバレットはAGE-2の速度優位を継続火力へ置き換えた。ツインビーム砲は交互射撃で目標への圧力を保つ。",
+      "アセムは近距離の判断を得意としたが、この装備はより遠くで考えることを教えた。火力は答えではなく、タイミングが答えである。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管光束炮",
+        "ja": "ツインビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "asemu-asuno"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

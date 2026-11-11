@@ -1,0 +1,117 @@
+{
+  "id": "zgaf-x19a-infinite-justice",
+  "modelCode": "ZGMF-X19A",
+  "name": {
+    "zh": "无限正义高达",
+    "ja": "インフィニットジャスティスガンダム",
+    "en": "Infinite Justice Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 74,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "正义高达的后继机，以命运-01 背包与光束盾强化高机动战。",
+    "ja": "ジャスティスの後継機。ファトゥム-01とビームシールドで高機動戦を強化した。"
+  },
+  "description": {
+    "zh": [
+      "无限正义高达把正义的支援定位推得更远。命运-01 背包提供更强的推力与机动，光束盾则让它在近身战中多了一层容错。",
+      "它的战斗方式仍然围绕搭档展开，但这次搭档是强袭自由。两台机体在战场上互为支点，形成一种近乎编队舞蹈的配合。"
+    ],
+    "ja": [
+      "インフィニットジャスティスはジャスティスの支援定位をさらに推し進めた。ファトゥム-01はより強い推力と機動を与え、ビームシールドは近接戦に余裕を加える。",
+      "戦い方は今回も相棒を軸にするが、その相手はストライクフリーダムだ。二機は戦場で互いの支点となり、編隊舞踏のような連携を見せる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "命运-01 背包",
+        "ja": "ファトゥム-01"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "athrun-zala"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-destiny-2004"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED DESTINY》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

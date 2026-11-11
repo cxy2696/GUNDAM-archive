@@ -1,0 +1,113 @@
+{
+  "id": "cb-0000g-c-reborns",
+  "modelCode": "CB-0000G/C",
+  "name": {
+    "zh": "再生高达",
+    "ja": "リボーンズガンダム",
+    "en": "Reborns Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "innovators",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2312,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "变革者的旗舰机体，可在高达与 MA 形态间切换。",
+    "ja": "イノベイターの旗艦機。ガンダムとMAの形態を切り替えられる。"
+  },
+  "description": {
+    "zh": [
+      "再生高达是利冯兹·阿尔马克为自己准备的机体。它同时具备高达与 MA 两种形态，火力、机动与防御都指向“单机决定战局”。",
+      "它的名字带着讽刺：一台以“再生”为名的机体，最终被用来终结旧秩序。利冯兹相信自己是新的起点，而战场给出了另一种答案。"
+    ],
+    "ja": [
+      "リボーンズガンダムはリボンズ・アルマークが自らのために用意した機体である。ガンダムとMAの二形態を持ち、火力・機動・防御のすべてが「単機で戦局を決める」ことに向かう。",
+      "その名は皮肉である。「再生」の名を持つ機体は、旧秩序を終わらせるために使われた。リボンズは自分を新たな起点と信じ、戦場は別の答えを出した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 光束步枪",
+        "ja": "GNビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 爪",
+        "ja": "GNクロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "ribbons-almark"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

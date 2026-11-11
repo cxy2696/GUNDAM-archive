@@ -1,0 +1,116 @@
+{
+  "id": "age-2-dark-hound",
+  "modelCode": "AGE-2DH",
+  "name": {
+    "zh": "高达 AGE-2 黑猎犬",
+    "ja": "ガンダムAGE-2ダークハウンド",
+    "en": "Gundam AGE-2 Dark Hound"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 161,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE-2 的海盗风格改装机，以光束锚与钩爪进行捕获战。",
+    "ja": "AGE-2の海賊風改装機。ビームアンカーとフックで捕獲戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "黑猎犬是 AGE-2 经过大幅改装后的形态。它的黑色装甲、眼罩状传感器与光束锚，都带着明显的海盗气质。",
+      "亚瑟姆以“黑猎犬”的身份活动时，这台机体既是伪装，也是他无法回到过去的证明。"
+    ],
+    "ja": [
+      "ダークハウンドはAGE-2を大幅に改装した形態である。黒い装甲、眼帯状のセンサー、ビームアンカーは明確な海賊の気配を帯びる。",
+      "アセムが「ダークハウンド」として活動する時、この機体は偽装であると同時に、過去へ戻れないことの証明でもあった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束锚",
+        "ja": "ビームアンカー"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "钩爪",
+        "ja": "フック"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "asemu-asuno"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -76,7 +76,11 @@
     "nanolaminate",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "gaelio-bauduin"
+    }
+  ],
   "eventIds": [
     "edmonton"
   ],

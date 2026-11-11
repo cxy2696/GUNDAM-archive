@@ -1,0 +1,105 @@
+{
+  "id": "asw-g-29-astaroth",
+  "modelCode": "ASW-G-29",
+  "name": {
+    "zh": "阿斯塔罗特",
+    "ja": "ガンダム・アスタロト",
+    "en": "Gundam Astaroth"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代的高达，在 Urdr Hunt 中以寻宝者的身份重新登场。",
+    "ja": "厄祭戦時代のガンダム。ウルズハントで宝探しの立場から再登場する。"
+  },
+  "description": {
+    "zh": [
+      "阿斯塔罗特是一台被拆解、转卖、重新拼装过的高达。它的武装与装甲并不完整，却因此带着一种“被历史用过”的质感。",
+      "在 Urdr Hunt 的故事里，它更像一件被追逐的遗产。机体本身没有立场，立场来自愿意为它付出代价的人。"
+    ],
+    "ja": [
+      "アスタロトは分解され、売買され、再び組み立てられたガンダムである。武装と装甲は完全ではなく、そのために「歴史に使われた」質感を帯びる。",
+      "ウルズハントの物語では、追い求められる遺産に近い。機体本身に立場はなく、立場はその代償を払う者から生まれる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "剑",
+        "ja": "ソード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "步枪",
+        "ja": "ライフル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "ibo-urdr-hunt"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 铁血的奥尔芬斯 Urdr Hunt》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

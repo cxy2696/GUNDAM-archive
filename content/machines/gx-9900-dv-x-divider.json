@@ -1,0 +1,116 @@
+{
+  "id": "gx-9900-dv-x-divider",
+  "modelCode": "GX-9900-DV",
+  "name": {
+    "zh": "高达 X 分裂者",
+    "ja": "ガンダムXディバイダー",
+    "en": "Gundam X Divider"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "高达 X 的修复形态，以分裂者盾弥补卫星加农炮损坏后的火力空缺。",
+    "ja": "ガンダムXの修復形態。サテライト・キャノン損傷後の火力空白をディバイダー・シールドで補う。"
+  },
+  "description": {
+    "zh": [
+      "X 分裂者不是全新机体，而是把受损的高达 X 重新拼装后的结果。损坏的卫星加农炮被拆除，取而代之的是可展开的分裂者盾。",
+      "它代表的是废土上的生存智慧：没有完整备件，就把还能用的部分做到最好。火力下降了，但机体终于可以再次站起来。"
+    ],
+    "ja": [
+      "Xディバイダーは新造機ではなく、損傷したガンダムXを組み直した結果である。破損したサテライト・キャノンを取り外し、展開式のディバイダー・シールドを装備した。",
+      "そこにあるのは廃土の生存知恵だ。完全な予備部品がなければ、使える部分を最良に仕上げる。火力は落ちたが、機体は再び立ち上がった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "分裂者盾",
+        "ja": "ディバイダー・シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "garrod-ran"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

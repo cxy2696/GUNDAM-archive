@@ -93,7 +93,23 @@
   "workIds": [
     "reconguista-2014"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "g-self-perfect-pack",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 G-自我 为基础发展出的 G-自我 完美背包。",
+        "ja": "G-セルフを基に発展したG-セルフ パーフェクトパック。"
+      },
+      "sources": [
+        {
+          "label": "《高达 G 之复国运动》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "materialize"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

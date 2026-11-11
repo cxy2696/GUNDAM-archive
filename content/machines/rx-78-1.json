@@ -1,0 +1,137 @@
+{
+  "id": "rx-78-1",
+  "modelCode": "RX-78-1",
+  "name": {
+    "zh": "原型高达",
+    "ja": "プロトタイプガンダム",
+    "en": "Prototype Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 79,
+    "month": 7,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦 V 作战中最早完成的原型机，为二号机与三号机提供了基础数据。",
+    "ja": "連邦V作戦で最初に完成した原型機。2号機と3号機に基礎データを提供した。"
+  },
+  "description": {
+    "zh": [
+      "在 Side 7 的组装线上，RX-78-1 是最先成形的机体。它的装甲与发电机仍带有明显的试验色彩，随后被拆解用于数据采集。",
+      "相比后来成为“白色恶魔”的 RX-78-2，一号机没有机会写下自己的战史，却把高达的基本骨架留给了整条联邦系谱。"
+    ],
+    "ja": [
+      "サイド7の組立ラインで最初に形になったのがRX-78-1である。装甲と発電機にはなお試験的な性格が強く、後にデータ採取のために解体された。",
+      "「白い悪魔」となったRX-78-2と違い、1号機は自らの戦史を残せなかったが、ガンダムの基本骨格を連邦系譜全体に残した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "core-block",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "msg-1979"
+  ],
+  "edges": [
+    {
+      "to": "rx-78-2",
+      "kind": "tech_from",
+      "note": {
+        "zh": "原型高达 的技术路线在 高达 上延续。",
+        "ja": "プロトタイプガンダムの技術路線はガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "core-block"
+    },
+    {
+      "to": "rx-78-3",
+      "kind": "tech_from",
+      "note": {
+        "zh": "原型高达 的技术路线在 G-3 高达 上延续。",
+        "ja": "プロトタイプガンダムの技術路線はG-3ガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "core-block"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

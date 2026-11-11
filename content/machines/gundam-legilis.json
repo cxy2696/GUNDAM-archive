@@ -1,0 +1,116 @@
+{
+  "id": "gundam-legilis",
+  "modelCode": "Gundam Legilis",
+  "name": {
+    "zh": "雷吉鲁斯高达",
+    "ja": "ガンダムレギルス",
+    "en": "Gundam Legilis"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "vagan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 164,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "维根方的高达型机体，由泽哈特驾驶，以浮游炮与高机动战著称。",
+    "ja": "ヴェイガン側のガンダム型機体。ゼハートが駆り、ファンネルと高機動戦で知られる。"
+  },
+  "description": {
+    "zh": [
+      "雷吉鲁斯高达是维根技术路线的结晶。它的单眼传感器与流线型轮廓，与联邦系高达形成鲜明对比。",
+      "泽哈特驾驶它时，已经不再是为了证明什么，而是为了守住自己选择的路。这台机体因此带着一种悲剧性的完成度。"
+    ],
+    "ja": [
+      "レギルスはヴェイガンの技術路線の結晶である。単眼センサーと流線形の輪郭は、連邦系ガンダムと明確な対比を成す。",
+      "ゼハートがこれに乗る頃、彼は何かを証明するためではなく、自ら選んだ道を守るために戦っていた。機体には悲劇的な完成度が漂う。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "浮游炮",
+        "ja": "ファンネル"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "zeheart-galette"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#6B7A55",
+      "secondary": "#3A2E2A",
+      "accent": "#C9A227",
+      "eye": "#FF6B6B",
+      "frame": "#3A3A3A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

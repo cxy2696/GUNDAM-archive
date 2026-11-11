@@ -1,0 +1,122 @@
+{
+  "id": "f90",
+  "modelCode": "F90",
+  "name": {
+    "zh": "高达 F90",
+    "ja": "ガンダムF90",
+    "en": "Gundam F90"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 120,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦次世代主力机，以 Mission Pack 换装覆盖多种战场。",
+    "ja": "連邦の次世代主力機。ミッション・パック換装で多様な戦場に対応する。"
+  },
+  "description": {
+    "zh": [
+      "F90 是宇宙世纪 0120 年代联邦“小型化”路线的代表。它比 RX-78 矮了一截，却通过 Mission Pack 获得了侦察、重装、高机动等多种形态。",
+      "这台机体把“一台机器适应所有任务”的想法推到了极致。它的价值不在单一性能，而在后勤与战术层面的通用性。"
+    ],
+    "ja": [
+      "F90は宇宙世紀0120年代の連邦「小型化」路線を代表する機体である。RX-78より一回り小さいが、ミッション・パックによって偵察・重装・高機動などの形態を得る。",
+      "「一機ですべての任務に対応する」という発想を極限まで押し進めた。価値は単一性能ではなく、後方支援と戦術の汎用性にある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "f90"
+  ],
+  "edges": [
+    {
+      "to": "f91",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 F90 的技术路线在 高达 F91 上延续。",
+        "ja": "ガンダムF90の技術路線はガンダムF91へ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 F91》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 F90》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

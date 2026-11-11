@@ -1,0 +1,117 @@
+{
+  "id": "gn-004-nadleeh",
+  "modelCode": "GN-004",
+  "name": {
+    "zh": "中性高达",
+    "ja": "ガンダムナドレ",
+    "en": "Gundam Nadleeh"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2307,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "隐藏在德天使内部的瘦身形态，搭载审判系统。",
+    "ja": "ヴァーチェの内部に隠された細身の形態。トライアルシステムを搭載する。"
+  },
+  "description": {
+    "zh": [
+      "中性高达是德天使高达的“内层”。当外部重装甲被剥离，露出的是一台线条纤细、以 GN 粒子驱动的高机动 ms。",
+      "它最危险的武器不是光束，而是审判系统：在特定条件下，可以让其他 GN 驱动机关机。它是一台用来审判同伴的机体。"
+    ],
+    "ja": [
+      "ナドレはヴァーチェの「内層」である。外装の重装甲が剥がれると、GN粒子で駆動する細身の高機動MSが現れる。",
+      "最も危険な武器はビームではなくトライアルシステムだ。特定条件下で他のGNドライブを停止させる。仲間を裁くための機体である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束炮",
+        "ja": "GNビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "审判系统",
+        "ja": "トライアルシステム"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "tieria-erde"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 00》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

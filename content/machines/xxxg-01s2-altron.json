@@ -1,0 +1,110 @@
+{
+  "id": "xxxg-01s2-altron",
+  "modelCode": "XXXG-01S2",
+  "name": {
+    "zh": "双头龙高达",
+    "ja": "アルトロンガンダム",
+    "en": "Altron Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 195,
+    "month": 12,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "神龙高达的后继机，双臂龙爪与火焰放射进一步强化。",
+    "ja": "シェンロンガンダムの後継機。両腕のドラゴンクローと火炎放射を強化した。"
+  },
+  "description": {
+    "zh": [
+      "双头龙高达把神龙的单臂龙爪扩展到双臂。它可以同时抓握两个目标，再用光束长枪或火焰放射完成终结。",
+      "这台机体几乎没有远程手段，所有战术都指向同一个答案：靠近。对张五飞而言，这是一种态度。"
+    ],
+    "ja": [
+      "アルトロンガンダムはシェンロンの片腕ドラゴンクローを両腕へ拡張した。二つの目標を同時に掴み、ビームグレイブか火炎放射で止めを刺す。",
+      "遠距離手段はほとんどなく、すべての戦術は「近づく」という一つの答えへ向かう。チャン・ウーフェイにとって、それは態度である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双龙爪",
+        "ja": "ツインドラゴンクロー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束长枪",
+        "ja": "ビームグレイブ"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "火焰放射 ×2",
+        "ja": "火炎放射 ×2"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "chang-wufei"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "endless-waltz"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#6B7A55",
+      "secondary": "#3A2E2A",
+      "accent": "#C9A227",
+      "eye": "#FF6B6B",
+      "frame": "#3A3A3A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

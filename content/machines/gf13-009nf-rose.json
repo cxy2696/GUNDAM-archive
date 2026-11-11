@@ -1,0 +1,109 @@
+{
+  "id": "gf13-009nf-rose",
+  "modelCode": "GF13-009NF",
+  "name": {
+    "zh": "玫瑰高达",
+    "ja": "ガンダムローズ",
+    "en": "Gundam Rose"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新法国的代表机体，以击剑与玫瑰浮游炮进行优雅的远程压制。",
+    "ja": "ネオフランスの代表機。フェンシングとローゼス・ビットによる優雅な遠距離制圧を行う。"
+  },
+  "description": {
+    "zh": [
+      "玫瑰高达的设计像一套行走的礼服：细长的四肢、披风状的肩甲，以及从盾牌中散开的玫瑰浮游炮。",
+      "它的战斗节奏与其他武斗会机体不同，先用地形与浮游炮迫使对手移动，再用一击精准的刺击结束。优雅是它的战术，不是装饰。"
+    ],
+    "ja": [
+      "ガンダムローズの設計は歩く礼服のようだ。細長い四肢、マント状の肩甲、そして盾から散るローゼス・ビット。",
+      "戦闘のリズムは他の参加機とは異なる。地形とビットで相手を動かし、最後に一撃の正確な突きで終える。優雅さは戦術であり、飾りではない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "玫瑰浮游炮",
+        "ja": "ローゼス・ビット"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "西洋剑",
+        "ja": "サーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "funnel",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "george-de-sand"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "funnel",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

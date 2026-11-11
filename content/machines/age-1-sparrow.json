@@ -1,0 +1,109 @@
+{
+  "id": "age-1-sparrow",
+  "modelCode": "AGE-1S",
+  "name": {
+    "zh": "高达 AGE-1 飞燕型",
+    "ja": "ガンダムAGE-1スパロー",
+    "en": "Gundam AGE-1 Sparrow"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 115,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE-1 的空战换装形态，以轻量化与飞行性能见长。",
+    "ja": "AGE-1の空戦換装形態。軽量化と飛行性能に優れる。"
+  },
+  "description": {
+    "zh": [
+      "飞燕型去掉了重型装甲，换上轻量化的空战组件。它可以在大气层内长时间飞行，并利用高度优势进行俯冲射击。",
+      "与猛将型相比，它更像一台侦察与游击机。AGE 系统的价值就在这里：同一台机体，可以按战场需要改变性格。"
+    ],
+    "ja": [
+      "スパローは重装甲を外し、軽量な空戦ユニットを装着した形態である。大気圏内を長時間飛行し、高度優位から急降下射撃を行う。",
+      "タイタスに比べれば偵察・遊撃機に近い。AGEシステムの価値はここにある。同じ機体が戦場に応じて性格を変えられる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "飞行背包",
+        "ja": "フライトパック"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "flit-asuno"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

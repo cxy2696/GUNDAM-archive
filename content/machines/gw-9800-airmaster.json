@@ -75,7 +75,23 @@
   "workIds": [
     "x-1996"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "gw-9800-b-airmaster-burst",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 高达 Airmaster 为基础发展出的 空中霸王高达爆发型。",
+        "ja": "ガンダムエアマスターを基に発展したガンダムエアマスターバースト。"
+      },
+      "sources": [
+        {
+          "label": "《机动新世纪高达 X》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

@@ -1,0 +1,113 @@
+{
+  "id": "xm-x2",
+  "modelCode": "XM-X2",
+  "name": {
+    "zh": "十字骨高达 X-2",
+    "ja": "クロスボーン・ガンダムX-2",
+    "en": "Crossbone Gundam X-2"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "crossbone-vanguard",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 133,
+    "month": 5,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "与 X-1 同型的二号机，被木星势力夺取后由萨比尼驾驶。",
+    "ja": "X-1と同型の2号機。木星勢力に奪われ、ザビネ・シャルーが搭乗する。"
+  },
+  "description": {
+    "zh": [
+      "X-2 与 X-1 共享同一套设计，却因为驾驶员的立场而成为完全不同的故事。它被木星势力夺取后，成为萨比尼·夏尔追击昔日同伴的武器。",
+      "同型机之间的战斗没有性能差，只有驾驶员的选择。X-2 的存在提醒读者：高达并不是天然站在正义一侧的。"
+    ],
+    "ja": [
+      "X-2はX-1と同じ設計を共有しながら、パイロットの立場によってまったく別の物語になった。木星勢力に奪われ、ザビネ・シャルーがかつての仲間を追う武器となる。",
+      "同型機同士の戦いに性能差はなく、あるのはパイロットの選択だけである。X-2の存在は、ガンダムが当然に正義の側に立つわけではないことを思い出させる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束 Zanber",
+        "ja": "ビーム・ザンバー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束枪",
+        "ja": "ビームガン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "ABC 披风",
+        "ja": "ABCマント"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "crossbone"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士海盗高达》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

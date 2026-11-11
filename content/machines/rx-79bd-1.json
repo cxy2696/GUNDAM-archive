@@ -1,0 +1,129 @@
+{
+  "id": "rx-79bd-1",
+  "modelCode": "RX-79BD-1",
+  "name": {
+    "zh": "蓝色命运 1 号机",
+    "ja": "ブルーディスティニー1号機",
+    "en": "Blue Destiny Unit 1"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "game_original",
+  "firstAppear": {
+    "year": 79,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "搭载 EXAM 系统的陆战型高达，蓝色装甲下封着新人类少女的意识。",
+    "ja": "EXAMシステムを搭載した陸戦型ガンダム。青い装甲の下にニュータイプの少女の意識が封じられている。"
+  },
+  "description": {
+    "zh": [
+      "蓝色命运 1 号机以陆战型高达为基础，核心是 EXAM 系统——一个能把敌方 Newtype 的感知强行拉入战斗的接口。系统启动时，机体头部会转为红色。",
+      "它的蓝色涂装并不是为了隐蔽，而是为了标记这台“实验品”。驾驶员必须在系统暴走前结束战斗，否则意识会被拖进另一个人的战场。"
+    ],
+    "ja": [
+      "ブルーディスティニー1号機は陸戦型ガンダムを基盤とし、中核にEXAMシステムを搭載する。敵のニュータイプ知覚を強引に戦闘へ引き込むインターフェースだ。起動時には頭部が赤く変わる。",
+      "青い塗装は隠蔽のためではなく、この「実験体」を示すためのものだ。パイロットはシステムの暴走が始まる前に戦闘を終えなければならない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮",
+        "ja": "60mmバルカン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "100mm 机枪",
+        "ja": "100mmマシンガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "导弹发射器",
+        "ja": "ミサイル・ランチャー"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "exam",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "blue-destiny"
+  ],
+  "edges": [
+    {
+      "to": "rx-80pr",
+      "kind": "tech_from",
+      "note": {
+        "zh": "蓝色命运 1 号机 的技术路线在 苍白骑士 上延续。",
+        "ja": "ブルーディスティニー1号機の技術路線はペイルライダーへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达外传 失落的环节》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "exam"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达外传 蓝色命运》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

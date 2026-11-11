@@ -1,0 +1,104 @@
+{
+  "id": "gf13-026nd-mermaid",
+  "modelCode": "GF13-026ND",
+  "name": {
+    "zh": "人鱼高达",
+    "ja": "マーメイドガンダム",
+    "en": "Mermaid Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新丹麦的代表机体，水下与水面战特化的人鱼型高达。",
+    "ja": "ネオデンマークの代表機。水中・水上戦に特化したマーメイド型ガンダム。"
+  },
+  "description": {
+    "zh": [
+      "人鱼高达的腿部可以合并成尾鳍状推进单元，在水中获得远超常规 MS 的速度。它的三叉戟既是近战武器，也是水流炮的导流器。",
+      "在武斗会的水域赛场上，它几乎不会被正面击中。真正的弱点是离开水之后，那套为流体设计的姿态控制系统会变得迟钝。"
+    ],
+    "ja": [
+      "マーメイドガンダムの脚部は尾びれ状の推進ユニットに合体し、水中では通常のMSを大きく上回る速度を得る。トライデントは近接武器であると同時に水流砲の導流器でもある。",
+      "水上ステージでは正面から捉えにくい。弱点は水を離れた後で、流体用に設計された姿勢制御系が鈍くなることだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束三叉戟",
+        "ja": "ビームトライデント"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "水流炮",
+        "ja": "水流砲"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F0EAD8",
+      "secondary": "#2E7D6E",
+      "accent": "#D9A441",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

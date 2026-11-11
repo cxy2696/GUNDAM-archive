@@ -1,0 +1,133 @@
+{
+  "id": "xm-x1",
+  "modelCode": "XM-X1",
+  "name": {
+    "zh": "十字骨高达 X-1",
+    "ja": "クロスボーン・ガンダムX-1",
+    "en": "Crossbone Gundam X-1"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "crossbone-vanguard",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 133,
+    "month": 5,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "十字骨先锋的海盗高达，小型化机体与 ABC 披风的结合。",
+    "ja": "クロスボーン・バンガードの海賊ガンダム。小型化機体とABCマントの組み合わせ。"
+  },
+  "description": {
+    "zh": [
+      "X-1 是宇宙世纪 0133 年的小型化高达。它的骨架紧凑，装甲轻薄，却通过 ABC 披风与光束 Zanber 获得了超出体格的生存能力。",
+      "海盗旗不是装饰。对十字骨先锋来说，这台机体要在木星圈的正规军缝隙里活动，隐蔽、快速、一次脱离比正面火力更重要。"
+    ],
+    "ja": [
+      "X-1は宇宙世紀0133年の小型化ガンダムである。骨格は緊密で装甲は薄いが、ABCマントとビーム・ザンバーによって体格以上の生存性を得た。",
+      "海賊旗は飾りではない。クロスボーン・バンガードにとって、この機体は木星圏の正規軍の隙間を動くための中量級であり、隠密・快速・一撃離脱が正面火力より重要だった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束 Zanber",
+        "ja": "ビーム・ザンバー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束枪",
+        "ja": "ビームガン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "ABC 披风",
+        "ja": "ABCマント"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "tobia-arronax"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "crossbone"
+  ],
+  "edges": [
+    {
+      "to": "xm-x2",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 十字骨高达 X-1 为基础发展出的 十字骨高达 X-2。",
+        "ja": "クロスボーン・ガンダムX-1を基に発展したクロスボーン・ガンダムX-2。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士海盗高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士海盗高达》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

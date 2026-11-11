@@ -68,7 +68,11 @@
     "gundarium",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "zechs-merquise"
+    }
+  ],
   "eventIds": [
     "eve-wars",
     "marimeia-uprising"

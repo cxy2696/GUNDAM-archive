@@ -13,7 +13,7 @@
 
 - **これは何か**：JSON駆動の静的ガンダムアーカイブ。機体・紀元・系譜・出典を一つの読みやすい構造にまとめる。
 - **これは何ではないか**：公式資料庫ではなく、5,000件超の全派生型図鑑でもなく、公式デザイン画像も含まない。
-- **どこから読むか**：全紀元の俯瞰は[世紀表](https://cxy2696.github.io/GUNDAM-archive/ja/chronology/)、機体は[機体アーカイブ](https://cxy2696.github.io/GUNDAM-archive/ja/machines/)、更新は[CONTENT_GUIDE](docs/CONTENT_GUIDE.md)。
+- **どこから読むか**：全紀元の俯瞰は[世紀表](https://cxy2696.github.io/GUNDAM-archive/ja/chronology/)、全機体は[機体総表](https://cxy2696.github.io/GUNDAM-archive/ja/chronology/#roster-title)、収録範囲は[MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md)。
 - **信頼性**：機体と事件には出典を付す。未確認値は `seed`、係争値は `disputed`。
 
 ![GUNDAM Archive ホーム](preview/home.png)
@@ -30,17 +30,27 @@ GUNDAM Archive は、その知識を**閲覧でき、追跡でき、育てられ
 | **追跡** Trace | どこから来て、どこへ続くか | 技術タグ付きDAG、3種類の辺、全辺に出典 |
 | **定位** Locate | いつ、どの戦争、どこで | 十二紀元の年表、地球圏／ラグランジュ点の示意地図、事件ドロワー |
 
-A.A.（アフター・アポカリプス）紀元を追加：XARX-0ガンダムZERO、螺旋ガンダム、『機動戦士ガンダムRG XARX-ZERO』『GUNDAM ROGUE ORBIT』。
+A.A.（アフター・アポカリプス）は本リポジトリのオリジナル拡張紀元です：XARX-0ガンダムZERO、螺旋ガンダム、『機動戦士ガンダムRG XARX-ZERO』『GUNDAM ROGUE ORBIT』。11の正史紀元とは分けて読んでください。
 
-収録内容：**49機体 · 12紀元 · 50事件 · 29勢力 · 32人物 · 25作品 · 15地点 · 24技術タグ · 22系譜辺**。`/zh` と `/ja` の二言語、**240ページ**の静的サイト、ビルド時に**185件**の検索索引を生成します。
+収録内容：**147機体 · 12紀元 · 73人物 · 42作品 · 50事件 · 35勢力 · 31技術タグ · 82系譜辺**。`/zh` と `/ja` の二言語、**528ページ**の静的サイト、ビルド時に**347件**の検索索引を生成します。
+
+## 今回の更新（V2.0）
+
+| 項目 | 内容 |
+| --- | --- |
+| **11紀元の機体補完** | U.C. 38・F.C. 12・A.C. 13・A.W. 10・C.C. 2・C.E. 21・A.D. 15・A.G. 9・R.C. 5・P.D. 11・A.S. 9、別にA.A. 2 |
+| **世紀表** | 紀元速覧と、紀元別の全機体総表を追加。147機すべてリンク可能 |
+| **技術系譜** | 出典付きの系譜辺を82本へ拡張 |
+| **人物・作品** | 73人物・42作品。流星作戦、ガンダムファイト、SEED、00、鉄血、水星の主要搭乗者を補完 |
+| **読みやすさ** | [CHRONOLOGY](docs/CHRONOLOGY.md) と [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md) を追加し、READMEを「問いから引く」構成へ |
 
 ## 主な機能
 
 - **3Dビューア**：回転、ズーム、パン、視点プリセット、自動回転、分解、部位ホバー、ワイヤーフレーム。3Dエンジンは遅延読み込みで、ページ本体の表示を妨げません。
 - **量子形態**：0–100%の連続補間。粒子、エネルギーリング、装甲の色相偏移、発光を同期。コンソールからいつでもオフにできます。
 - **2D／3D連動**：3D・設計図・分割の3モード。SVGレイヤーと3Dが `partId` を共有し、ホバーが双方向に同期。製図モード付き。
-- **技術系譜**：U.C.主系譜のDAG＋並行紀元の機体目録。49機体・22辺、`derive_of` / `tech_from` / `replace` の3種の辺、タグハイライト、ビルド時の循環検査。
-- **紀元年表**：七つの泳道がそれぞれの紀年尺度を保持。年／十年／世紀の目盛り、主線フィルタ、U.C.全史切替、事件詳細。
+- **技術系譜**：U.C.主系譜のDAG＋並行紀元の機体目録。147機体・82辺、`derive_of` / `tech_from` / `replace` の3種の辺、タグハイライト、ビルド時の循環検査。
+- **紀元年表**：十二紀元の泳道がそれぞれの紀年尺度を保持。年／十年／世紀の目盛り、主線フィルタ、U.C.全史切替、事件詳細。
 - **関係档案**：勢力の組織樹、5種類の関係、人物の任期と搭乗機体、作品索引。`⌘K` 検索と検索ページ。
 - **中／日切替**：`/zh` と `/ja` のルート、hreflang／canonical。ヘッダー、モバイルメニュー、フッターから切替でき、パス・クエリ・アンカー・スクロール位置を保持。初回はブラウザ言語で入口を選択。
 
@@ -83,7 +93,7 @@ src/lib/content.ts     解析・外部参照・系譜・双方向の検証
 src/lib/tree.ts        DAGレイアウト
 src/lib/search-index.ts
    ▼
-app/(site)/[lang]      React Server Components → 100ページ
+app/(site)/[lang]      React Server Components → 528ページ
    ▼
 next build (output: export) → out/ → GitHub Pages
 ```
@@ -101,6 +111,8 @@ next build (output: export) → out/ → GitHub Pages
 | --- | --- |
 | [README.md](README.md) | 中国語の総合入口 |
 | [docs/README.md](docs/README.md) | ドキュメント索引・権威の境界・更新ルール |
+| [docs/CHRONOLOGY.md](docs/CHRONOLOGY.md) | 十二紀元の世紀表・紀元別速覧・読み方 |
+| [docs/MACHINE_COVERAGE.md](docs/MACHINE_COVERAGE.md) | 「全機体」の収録規則・カバレッジ・含まないもの |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 六層モデル、データフロー、ビューア、デプロイ、ADR |
 | [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | コンテンツ追加、二言語、レビュー、よくあるエラー |
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | フィールド、列挙、単位、日付、検証規則 |
@@ -117,7 +129,7 @@ next build (output: export) → out/ → GitHub Pages
 
 ## 既知の境界
 
-- **範囲**：現在は**49機の主線ガンダム系機体**を12紀元にわたり収録しています。文字通りの全派生型・外伝・ゲームオリジナル機ではありません。B3/B4の目録で継続補完します。
+- **範囲**：現在は**147機体**（11の正史紀元で145機、A.A.拡張で2機）を収録しています。主線と主要外伝はカバーしますが、文字通りの5,000件超の全派生型ではありません。収録規則は [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md) を参照。
 - **公式デザイン画像は収録しません**。現在のビジュアルは自作SVG／プロシージャル3Dで、公式画像・設定集スキャン・Wiki画像の転載や直リンクは行いません。詳細は [DATA_SOURCES](docs/DATA_SOURCES.md)。
 - **3DはプロシージャルLOD-Pの暫定アセット**です。公式モデルでも最終glTFでもありません。部位・組立軸・分解順は `partId` で整理済みで、LOD0接続時にビューアを書き換える必要はありません。
 - **データはシードデータ**です。公開資料に基づきますが、設定資料集の頁まで逐項確認していません。UIには `seed` / `disputed` を表示します。

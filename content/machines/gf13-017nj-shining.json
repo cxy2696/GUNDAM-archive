@@ -99,6 +99,21 @@
           "level": "A"
         }
       ]
+    },
+    {
+      "to": "gf13-003nel-rising",
+      "kind": "tech_from",
+      "note": {
+        "zh": "闪耀高达 的技术路线在 旭日高达 上延续。",
+        "ja": "シャイニングガンダムの技術路線はライジングガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动武斗传 G 高达》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
     }
   ],
   "viewer": {

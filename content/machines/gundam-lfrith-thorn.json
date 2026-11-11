@@ -1,0 +1,108 @@
+{
+  "id": "gundam-lfrith-thorn",
+  "modelCode": "EDM-GA-02",
+  "name": {
+    "zh": "魔灵高达 索恩",
+    "ja": "ガンダム・ルブリス・ソーン",
+    "en": "Gundam Lfrith Thorn"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "dawn-of-fold",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "魔灵系列的量产试探型，由多米尼克斯队驾驶。",
+    "ja": "ルブリス系の量産試作型。ドミニコス隊が運用する。"
+  },
+  "description": {
+    "zh": [
+      "索恩是魔灵系列走向实用化的一步。它的结构比原型机更简化，适合小队运用，但仍保留了 GUND 格式化的核心接口。",
+      "在学园的阴影里，这些机体被用来执行不该被记录的任务。它们的存在说明，技术从来不会只停留在医疗用途。"
+    ],
+    "ja": [
+      "ソーンはルブリス系を実用化へ近づけた一歩である。構造は原型機より簡略化され、小隊運用に適するが、GUNDフォーマットの核心接口は残る。",
+      "学園の影で、これらの機体は記録されるべきでない任務に使われる。その存在は、技術が医療用途にとどまらないことを示している。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 14.4,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": 41.2,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "norea-du-noc"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "fin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#7A2E4A",
+      "accent": "#D7B46A",
+      "eye": "#FF6B7A",
+      "frame": "#3C3C46"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 水星的魔女》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

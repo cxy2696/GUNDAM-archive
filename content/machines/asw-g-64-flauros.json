@@ -1,0 +1,105 @@
+{
+  "id": "asw-g-64-flauros",
+  "modelCode": "ASW-G-64",
+  "name": {
+    "zh": "弗劳洛斯",
+    "ja": "ガンダム・フラウロス",
+    "en": "Gundam Flauros"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代的高达，以远程炮击与变形机构支援铁华团。",
+    "ja": "厄祭戦時代のガンダム。遠距離砲撃と変形機構で鉄華団を支援する。"
+  },
+  "description": {
+    "zh": [
+      "弗劳洛斯的火力在铁华团中最为突出。它可以在远距离用火炮与导弹削弱敌方阵型，也能变形为 MA 形态快速转移。",
+      "诺尔巴·西诺驾驶它时，这台机体承担的是“让队友活下来”的工作。火力不是荣耀，是责任。"
+    ],
+    "ja": [
+      "フラウロスは鉄華団の中でも火力が突出している。遠距離から砲とミサイルで敵陣を削り、MA形態へ変形して迅速に移動できる。",
+      "ノルバ・シノが駆る時、この機体の仕事は「仲間を生き残らせること」である。火力は栄光ではなく責任だ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "火炮",
+        "ja": "キャノン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "导弹",
+        "ja": "ミサイル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

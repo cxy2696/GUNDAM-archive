@@ -1,0 +1,108 @@
+{
+  "id": "gundam-lfrith-ur",
+  "modelCode": "EDM-GA-01",
+  "name": {
+    "zh": "魔灵高达 乌尔",
+    "ja": "ガンダム・ルブリス・ウル",
+    "en": "Gundam Lfrith Ur"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "dawn-of-fold",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "魔灵系列的重装变体，以火力与装甲支援小队。",
+    "ja": "ルブリス系の重装変体。火力と装甲で小隊を支援する。"
+  },
+  "description": {
+    "zh": [
+      "乌尔在魔灵系列中偏向重装支援。它的装甲更厚，武装接口更多，适合在正面交火中替队友承受第一轮攻击。",
+      "与索恩一样，它被投入到不属于学园演习的战场。机体越像兵器，驾驶它的孩子就越难被当作孩子。"
+    ],
+    "ja": [
+      "ウルはルブリス系の中でも重装支援寄りである。装甲は厚く、武装接口も多く、正面交火で仲間の代わりに最初の一撃を受ける。",
+      "ソーンと同じく、学園の演習ではない戦場へ投入される。機体が兵器に近づくほど、乗る子どもたちは子どもとして扱われにくくなる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 21.2,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": 75.9,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "sophie-pulone"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "fin",
+    "build": "standard",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#7A2E4A",
+      "accent": "#D7B46A",
+      "eye": "#FF6B7A",
+      "frame": "#3C3C46"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 水星的魔女》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

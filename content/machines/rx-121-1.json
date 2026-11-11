@@ -1,0 +1,129 @@
+{
+  "id": "rx-121-1",
+  "modelCode": "RX-121-1",
+  "name": {
+    "zh": "高达 TR-1 海兹尔改",
+    "ja": "ガンダムTR-1 ヘイズル改",
+    "en": "Gundam TR-1 Hazel Custom"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "titans",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 84,
+    "month": 8,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "提坦斯 TR 计划的第一台高达型，使用可换装装甲与盾牌推进器。",
+    "ja": "ティターンズTR計画の最初のガンダム型。換装装甲とシールド・ブースターを採用する。"
+  },
+  "description": {
+    "zh": [
+      "海兹尔改是 TR 计划用来“试错”的机体。它的装甲可以按任务更换，盾牌本身也是推进器，整台机体像一套不断增生的实验平台。",
+      "在提坦斯的试验部队里，它承担了大量数据采集任务。技术人员的热情与派系斗争同时压在它身上，使它成为一台很难用“完成品”形容的高达。"
+    ],
+    "ja": [
+      "ヘイズル改はTR計画の「試行錯誤」のための機体である。任務に応じて装甲を換装でき、シールド自体がブースターにもなる。機体全体が増殖し続ける実験プラットフォームのようだ。",
+      "ティターンズの実験部隊では多くのデータ採取を担った。技術者の情熱と派閥闘争が同時にのしかかり、「完成品」と呼びにくいガンダムになっている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌推进器",
+        "ja": "シールド・ブースター"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "多用途发射器",
+        "ja": "多目的ランチャー"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "aoz"
+  ],
+  "edges": [
+    {
+      "to": "rx-124",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 TR-1 海兹尔改 的技术路线在 高达 TR-6 伍德沃特 上延续。",
+        "ja": "ガンダムTR-1 ヘイズル改の技術路線はガンダムTR-6 ウーンドウォートへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

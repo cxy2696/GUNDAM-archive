@@ -1,0 +1,132 @@
+{
+  "id": "xxxg-01h-heavyarms",
+  "modelCode": "XXXG-01H",
+  "name": {
+    "zh": "重武装高达",
+    "ja": "ガンダムヘビーアームズ",
+    "en": "Gundam Heavyarms"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 195,
+    "month": 4,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "流星作战的五台高达之一，以压倒性弹幕进行火力压制。",
+    "ja": "オペレーション・メテオの五機のガンダムの一機。圧倒的な弾幕で火力制圧を行う。"
+  },
+  "description": {
+    "zh": [
+      "重武装高达的设计几乎没有“节省弹药”这个概念。双管加特林、肩部导弹仓与胸部火神炮可以在极短时间内把一片区域变成火海。",
+      "它的弱点是再装填与近身。驾驶员特洛瓦·巴顿因此习惯用最少的动作完成最多的射击，把战场当成一道需要精确计算的火力题。"
+    ],
+    "ja": [
+      "ガンダムヘビーアームズの設計には「弾薬を節約する」という発想がほとんどない。ツイン・ガトリング、肩のミサイル・ポッド、胸部バルカンで一帯を一瞬で火の海に変える。",
+      "弱点は再装填と近接である。パイロットのトロワ・バートンは最小の動作で最大の射撃を重ね、戦場を精密な火力計算の問題として扱った。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管加特林",
+        "ja": "ツイン・ガトリング"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "导弹仓",
+        "ja": "ミサイル・ポッド"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "军刀",
+        "ja": "アーミーナイフ"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "trowa-barton"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "wing-1995"
+  ],
+  "edges": [
+    {
+      "to": "xxxg-01h2-heavyarms-custom",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 重武装高达 为基础发展出的 重武装高达改。",
+        "ja": "ガンダムヘビーアームズを基に発展したガンダムヘビーアームズ改。"
+      },
+      "sources": [
+        {
+          "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gundarium"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达 W》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

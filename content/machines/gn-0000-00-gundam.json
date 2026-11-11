@@ -1,0 +1,129 @@
+{
+  "id": "gn-0000-00-gundam",
+  "modelCode": "GN-0000",
+  "name": {
+    "zh": "00 高达",
+    "ja": "ダブルオーガンダム",
+    "en": "00 Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2308,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "天上人的第四世代高达，以双 GN 驱动器实现平方化的粒子输出。",
+    "ja": "ソレスタルビーイングの第四世代ガンダム。ツインGNドライブで二乗化した粒子出力を得る。"
+  },
+  "description": {
+    "zh": [
+      "00 高达最大的特征不是武器，而是背上的两个 GN 驱动器。双炉同步后，粒子输出不是相加，而是以平方级增长。",
+      "这种设计也意味着极高的风险。两台驱动器必须保持完美同步，否则机体可能在瞬间失去控制。"
+    ],
+    "ja": [
+      "ダブルオーガンダムの最大の特徴は武器ではなく、背部の二基のGNドライブである。同期すると粒子出力は加算ではなく二乗で増大する。",
+      "同時に高いリスクを伴う。二基のドライブは完全な同期を保たねばならず、崩れれば機体は一瞬で制御を失う。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 剑 II ×2",
+        "ja": "GNソードII ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束步枪",
+        "ja": "GNビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "双 GN 驱动器",
+        "ja": "ツインGNドライブ"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "setsuna-f-seiei"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [
+    {
+      "to": "gnt-0000-00-qan-t",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 00 高达 为基础发展出的 量子型 00 高达。",
+        "ja": "ダブルオーガンダムを基に発展したダブルオークアンタ。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达00 先驱者的觉醒》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "binder",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

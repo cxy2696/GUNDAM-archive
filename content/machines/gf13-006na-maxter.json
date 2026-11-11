@@ -1,0 +1,114 @@
+{
+  "id": "gf13-006na-maxter",
+  "modelCode": "GF13-006NA",
+  "name": {
+    "zh": "极限高达",
+    "ja": "ガンダムマックスター",
+    "en": "Gundam Maxter"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "gundam-fighters",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "新美国的代表机体，拳击与橄榄球装备合一的近战型高达。",
+    "ja": "ネオアメリカの代表機。ボクシングとアメリカンフットボールの装備を併せ持つ近接型ガンダム。"
+  },
+  "description": {
+    "zh": [
+      "极限高达把“运动”直接写进了机体结构：肩部护甲像橄榄球护具，前臂可以展开拳套，腰部还挂着左轮手枪。",
+      "它的战斗方式非常直接——逼近、承受、然后用一记重拳结束。新美国的观众喜欢这种毫不掩饰的力量。"
+    ],
+    "ja": [
+      "ガンダムマックスターは「スポーツ」を機体構造に直接書き込んでいる。肩の装甲はアメリカンフットボールの防具のようで、前腕はナックルへ展開し、腰にはリボルバーを下げる。",
+      "戦い方は非常に直接的だ。接近し、耐え、一発の重い拳で終わらせる。ネオアメリカの観客はその隠しのない力を好んだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "拳套",
+        "ja": "ナックル・ガード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "左轮手枪 ×2",
+        "ja": "リボルバー ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "chibodee-crocket"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "none",
+    "shield": true,
+    "colors": {
+      "primary": "#F1E9D2",
+      "secondary": "#B33A3A",
+      "accent": "#D9B44A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动武斗传 G 高达》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

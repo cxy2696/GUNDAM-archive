@@ -1,0 +1,133 @@
+{
+  "id": "zgaf-x56s-impulse",
+  "modelCode": "ZGMF-X56S",
+  "name": {
+    "zh": "脉冲高达",
+    "ja": "インパルスガンダム",
+    "en": "Impulse Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 73,
+    "month": 2,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "扎夫特的新世代高达，以分离合体与换装背包适应多种战况。",
+    "ja": "ザフトの新世代ガンダム。分離合体と換装バックパックで多様な戦況に対応する。"
+  },
+  "description": {
+    "zh": [
+      "脉冲高达把“换装”做成了结构本身。它由核心战机、胸部、腿部与背包组成，可以在战场上分离、重组并更换装备。",
+      "这种设计让它在补给困难时依然保持战斗力，但也要求驾驶员理解一套复杂的合体逻辑。它是一台需要“学会”才能开好的高达。"
+    ],
+    "ja": [
+      "インパルスは「換装」を構造そのものにした機体である。コア・ファイター、胸部、脚部、バックパックに分かれ、戦場で分離・再構成・装備交換ができる。",
+      "補給が困難な状況でも戦闘力を保てる一方、パイロットには複雑な合体論理の理解が求められる。「学ぶ」ことで扱えるガンダムだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "分离合体",
+        "ja": "分離合体"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "shinn-asuka"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-destiny-2004"
+  ],
+  "edges": [
+    {
+      "to": "zgmf-x42s-destiny",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "脉冲高达的换装与分离技术路线在命运高达上延续。",
+        "ja": "インパルスの換装・分離技術の路線はデスティニーへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 SEED DESTINY》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED DESTINY》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "gt-9600-d-leopard-destroy",
+  "modelCode": "GT-9600-D",
+  "name": {
+    "zh": "豹式高达破坏型",
+    "ja": "ガンダムレオパルドデストロイ",
+    "en": "Gundam Leopard Destroy"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "豹式高达的强化形态，追加大型导弹与光束炮。",
+    "ja": "ガンダムレオパルドの強化形態。大型ミサイルとビーム砲を追加した。"
+  },
+  "description": {
+    "zh": [
+      "破坏型把豹式高达的“支援”推向了“攻城”。大型导弹与光束炮让它可以拆除据点，而不只是压制步兵。",
+      "但它的轮廓也更大、更慢。使用它的部队必须接受一个事实：火力越强，越容易成为敌方优先照顾的目标。"
+    ],
+    "ja": [
+      "デストロイはレオパルドの「支援」を「攻城」へ押し進めた。大型ミサイルとビーム砲により、歩兵の制圧だけでなく拠点の破壊が可能になる。",
+      "一方で輪郭は大きく、遅い。運用部隊は一つの事実を受け入れねばならない。火力が強いほど、敵に優先して狙われる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管光束加特林",
+        "ja": "ツイン・ビームガトリング"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "大型导弹",
+        "ja": "大型ミサイル"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束炮",
+        "ja": "ビーム砲"
+      },
+      "type": "beam"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动新世纪高达 X》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -82,7 +82,23 @@
   "workIds": [
     "reconguista-2014"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "g-arcane-full-dress",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 G-Arcane 为基础发展出的 G-阿尔凯恩 正装。",
+        "ja": "G-アルケインを基に発展したG-アルケイン フルドレス。"
+      },
+      "sources": [
+        {
+          "label": "《高达 G 之复国运动》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

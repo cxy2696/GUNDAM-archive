@@ -1,0 +1,117 @@
+{
+  "id": "zgaf-x666s-legend",
+  "modelCode": "ZGMF-X666S",
+  "name": {
+    "zh": "传说高达",
+    "ja": "レジェンドガンダム",
+    "en": "Legend Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 74,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "神意高达的后继机，以改良龙骑兵与光束盾进行全方位战。",
+    "ja": "プロヴィデンスの後継機。改良ドラグーンとビームシールドで全方位戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "传说高达继承了神意的龙骑兵概念，但把系统做得更小、更稳定。背包上的龙骑兵可以更快地重新定位，形成持续的多角度压制。",
+      "它仍然是一台为特定驾驶员准备的机体。技术越复杂，越需要一个人同时理解战场与自己的极限。"
+    ],
+    "ja": [
+      "レジェンドはプロヴィデンスのドラグーン概念を継承しつつ、システムを小型化・安定化した。背部のドラグーンはより素早く再配置され、持続的な多角度制圧を行う。",
+      "特定のパイロットのために用意された機体であることに変わりはない。技術が複雑になるほど、戦場と自分の限界を同時に理解する者が求められる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "龙骑兵系统",
+        "ja": "ドラグーン・システム"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "dragoon",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "rey-za-burrel"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-destiny-2004"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED DESTINY》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

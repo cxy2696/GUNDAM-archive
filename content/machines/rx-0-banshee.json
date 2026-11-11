@@ -76,7 +76,11 @@
     "gundarium",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "marida-cruz"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "unicorn-2010"

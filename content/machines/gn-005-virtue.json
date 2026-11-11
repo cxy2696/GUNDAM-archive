@@ -1,0 +1,133 @@
+{
+  "id": "gn-005-virtue",
+  "modelCode": "GN-005",
+  "name": {
+    "zh": "德天使高达",
+    "ja": "ガンダムヴァーチェ",
+    "en": "Gundam Virtue"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2307,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "天上人的重装高达，以 GN 力场与大口径光束炮进行压制。",
+    "ja": "ソレスタルビーイングの重装ガンダム。GNフィールドと大口径ビーム砲で制圧を行う。"
+  },
+  "description": {
+    "zh": [
+      "德天使高达的外形像一座会走路的堡垒。GN 力场可以偏转光束，GN 火箭炮则能在一次射击中抹平一片阵地。",
+      "它的重量与火力都指向同一个战术：站在最前面，替队友承受第一轮攻击。对提耶利亚来说，这既是机体定位，也是心理负担。"
+    ],
+    "ja": [
+      "ヴァーチェの外観は歩く要塞のようだ。GNフィールドはビームを偏向し、GNバズーカは一度の射撃で陣地を消し飛ばす。",
+      "重量と火力は一つの戦術へ向かう。最前線に立ち、仲間の代わりに最初の一撃を受ける。ティエリアにとって、それは機体の役割であり心理的な重荷でもあった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 火箭炮",
+        "ja": "GNバズーカ"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 光束炮",
+        "ja": "GNビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "GN 力场",
+        "ja": "GNフィールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "gn-field",
+    "beam-weapon",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "tieria-erde"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [
+    {
+      "to": "gn-008-seravee",
+      "kind": "tech_from",
+      "note": {
+        "zh": "德天使高达 的技术路线在 炽天使高达 上延续。",
+        "ja": "ガンダムヴァーチェの技術路線はセラヴィーガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "bazooka",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 00》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

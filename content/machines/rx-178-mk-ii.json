@@ -76,12 +76,32 @@
     "movable-frame",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "kamille-bidan"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "zeta-1985"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "rx-121-1",
+      "kind": "tech_from",
+      "note": {
+        "zh": "高达 Mk-II 的技术路线在 高达 TR-1 海兹尔改 上延续。",
+        "ja": "ガンダムMk-IIの技術路線はガンダムTR-1 ヘイズル改へ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

@@ -23,6 +23,8 @@ export async function generateMetadata({
   };
 }
 
+const pad = (value: number, length = 4) => String(value).padStart(length, "0");
+
 export default async function ChronologyPage({
   params,
 }: {
@@ -56,7 +58,7 @@ export default async function ChronologyPage({
           <p>{dict.chronology.lead}</p>
           <div className="page-head__stats">
             <div>
-              <b className="mono">{String(bundle.machines.length).padStart(2, "0")}</b>
+              <b className="mono">{String(bundle.machines.length).padStart(3, "0")}</b>
               <span>{dict.nav.machines}</span>
             </div>
             <div>
@@ -70,6 +72,50 @@ export default async function ChronologyPage({
           </div>
         </div>
       </header>
+
+      <section className="chronology-table-section" aria-labelledby="era-overview-title">
+        <div className="chronology-section-head">
+          <span className="micro">01 / OVERVIEW</span>
+          <h2 id="era-overview-title">{dict.chronology.tableTitle}</h2>
+          <p>{dict.chronology.tableLead}</p>
+        </div>
+        <div className="chronology-table-scroll">
+          <table className="chronology-table">
+            <thead>
+              <tr>
+                <th scope="col">{dict.chronology.colEra}</th>
+                <th scope="col">{dict.chronology.colSpan}</th>
+                <th scope="col">{dict.chronology.colWindow}</th>
+                <th scope="col" className="is-num">{dict.chronology.colMachines}</th>
+                <th scope="col" className="is-num">{dict.chronology.colWorks}</th>
+                <th scope="col" className="is-num">{dict.chronology.colEvents}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {eras.map((era) => {
+                const machines = bundle.machines.filter((machine) => machine.eraId === era.id);
+                const works = bundle.works.filter((work) => work.eraId === era.id);
+                const events = bundle.events.filter((event) => event.eraId === era.id);
+                return (
+                  <tr key={era.id} style={{ "--era": era.color } as React.CSSProperties}>
+                    <th scope="row">
+                      <Link href={`/${typed}/timeline?era=${era.id}`} className="chronology-table__era">
+                        <span className="mono">{era.code}</span>
+                        <b>{pick(era.name, typed)}</b>
+                      </Link>
+                    </th>
+                    <td className="mono">{pad(era.span.start)} — {pad(era.span.end)}</td>
+                    <td className="mono">{pad(era.window.start)} — {pad(era.window.end)}</td>
+                    <td className="is-num mono">{machines.length}</td>
+                    <td className="is-num mono">{works.length}</td>
+                    <td className="is-num mono">{events.length}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <section className="chronology-grid" aria-label={dict.chronology.title}>
         {eras.map((era, index) => {
@@ -92,7 +138,7 @@ export default async function ChronologyPage({
               </div>
               <h2>{pick(era.name, typed)}</h2>
               <span className="mono chronology-card__years">
-                {String(era.span.start).padStart(4, "0")} — {String(era.span.end).padStart(4, "0")}
+                {pad(era.span.start)} — {pad(era.span.end)}
               </span>
               <p>{pick(era.summary, typed)}</p>
               <div className="chronology-card__stats">
@@ -104,6 +150,67 @@ export default async function ChronologyPage({
             </Link>
           );
         })}
+      </section>
+
+      <section className="chronology-roster" aria-labelledby="roster-title">
+        <div className="chronology-section-head">
+          <span className="micro">02 / FULL ROSTER</span>
+          <h2 id="roster-title">{dict.chronology.rosterTitle}</h2>
+          <p>{dict.chronology.rosterLead}</p>
+        </div>
+        <div className="roster-groups">
+          {eras.map((era, index) => {
+            const machines = bundle.machines
+              .filter((machine) => machine.eraId === era.id)
+              .sort((a, b) => a.firstAppear.year - b.firstAppear.year || a.modelCode.localeCompare(b.modelCode));
+            return (
+              <details key={era.id} className="roster-group" open={index === 0} style={{ "--era": era.color } as React.CSSProperties}>
+                <summary>
+                  <span className="mono roster-group__code">{era.code}</span>
+                  <b>{pick(era.name, typed)}</b>
+                  <span className="roster-group__count mono">{machines.length} {dict.chronology.rosterCount}</span>
+                  <span className="roster-group__chevron" aria-hidden>＋</span>
+                </summary>
+                <div className="roster-table-scroll">
+                  <table className="roster-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">{dict.chronology.colModel}</th>
+                        <th scope="col">{dict.chronology.colName}</th>
+                        <th scope="col">{dict.chronology.colYear}</th>
+                        <th scope="col">{dict.chronology.colFaction}</th>
+                        <th scope="col">{dict.chronology.colWork}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {machines.map((machine) => {
+                        const faction = bundle.factions.find((item) => item.id === machine.factionId);
+                        const work = bundle.works.find((item) => item.id === machine.workIds[0]);
+                        return (
+                          <tr key={machine.id}>
+                            <td className="mono">{machine.modelCode}</td>
+                            <td>
+                              <Link href={`/${typed}/machines/${machine.id}`}>
+                                {pick(machine.name, typed)}
+                              </Link>
+                              <span className="roster-table__ja">{typed === "zh" ? machine.name.ja : machine.name.zh}</span>
+                              <span className="roster-table__meta">
+                                {faction?.short ?? "—"} · {work ? pick(work.title, typed) : "—"}
+                              </span>
+                            </td>
+                            <td className="mono">{pad(machine.firstAppear.year)}</td>
+                            <td>{faction?.short ?? "—"}</td>
+                            <td>{work ? pick(work.title, typed) : "—"}</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            );
+          })}
+        </div>
       </section>
 
       <section className="chronology-note">

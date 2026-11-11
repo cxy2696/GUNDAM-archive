@@ -1,0 +1,124 @@
+{
+  "id": "rx-93-v2",
+  "modelCode": "RX-93-ν2",
+  "name": {
+    "zh": "Hi-ν 高达",
+    "ja": "Hi-νガンダム",
+    "en": "Hi-Nu Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 93,
+    "month": 3,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "小说版《逆袭的夏亚》中阿姆罗的最终座机，ν 高达的完成形态。",
+    "ja": "小説版『逆襲のシャア』におけるアムロの最終搭乗機。νガンダムの完成形。"
+  },
+  "description": {
+    "zh": [
+      "Hi-ν 高达在小说版中取代了剧场版的 ν 高达，成为阿姆罗在阿克西斯战场的座机。它的精神感应框架与飞翅浮游炮配合，能同时处理攻击、防御与感知。",
+      "相比剧场版 ν 高达的克制，Hi-ν 的轮廓更完整，也更具“最终决战机”的仪式感。它代表的是另一种可能：如果阿姆罗有更多时间完成这台机体。"
+    ],
+    "ja": [
+      "Hi-νガンダムは小説版で劇場版のνガンダムに代わり、アムロがアクシズ戦場で駆る機体となった。サイコフレームとフィン・ファンネルの連携により、攻撃・防御・知覚を同時に処理できる。",
+      "劇場版νガンダムの抑制された印象に比べ、Hi-νの輪郭はより完成され、「最終決戦機」の儀式性を帯びる。アムロにもう少し時間があれば、という別の可能性を示す機体である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "飞翅浮游炮 ×6",
+        "ja": "フィン・ファンネル ×6"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "psychoframe",
+    "funnel",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "amuro-ray"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "cca-beltorchika"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 逆袭的夏亚 贝托蒂嘉的子嗣》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

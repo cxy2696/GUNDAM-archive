@@ -1,0 +1,105 @@
+{
+  "id": "asw-g-35-marchosias",
+  "modelCode": "ASW-G-35",
+  "name": {
+    "zh": "马可西亚斯",
+    "ja": "ガンダム・マルコシアス",
+    "en": "Gundam Marchosias"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 325,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代的高达，在 Urdr Hunt 中作为被争夺的遗产登场。",
+    "ja": "厄祭戦時代のガンダム。ウルズハントで争奪される遺産として登場する。"
+  },
+  "description": {
+    "zh": [
+      "马可西亚斯是厄祭战时期留下的高达之一，机体状态并不完整。它的价值更多来自“厄祭战遗产”这个身份，而不是当前性能。",
+      "在 Urdr Hunt 中，围绕它的争夺把不同人的欲望连在一起。机体只是金属，故事却由追逐它的人写成。"
+    ],
+    "ja": [
+      "マルコシアスは厄祭戦時代に残されたガンダムの一機で、機体状態は完全ではない。価値は現在の性能より、「厄祭戦の遺産」という身分に由来する。",
+      "ウルズハントでは、これを巡る争奪が異なる者たちの欲望を結びつける。機体は金属に過ぎないが、物語は追う者たちによって書かれる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "剑",
+        "ja": "ソード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "爪",
+        "ja": "クロー"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "alaya-vijnana",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "ibo-urdr-hunt"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#E9E4D8",
+      "secondary": "#2E4B6B",
+      "accent": "#C9A227",
+      "eye": "#FF7A59",
+      "frame": "#3B3B3B"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 铁血的奥尔芬斯 Urdr Hunt》原作与设定资料",
+      "level": "B"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

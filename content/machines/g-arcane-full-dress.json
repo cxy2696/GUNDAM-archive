@@ -1,0 +1,108 @@
+{
+  "id": "g-arcane-full-dress",
+  "modelCode": "YG-111",
+  "name": {
+    "zh": "G-阿尔凯恩 正装",
+    "ja": "G-アルケイン フルドレス",
+    "en": "G-Arcane Full Dress"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "rc",
+  "factionId": "amerian",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 1014,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "G-阿尔凯恩 的强化形态，追加装甲与高机动组件。",
+    "ja": "G-アルケインの強化形態。追加装甲と高機動ユニットを備える。"
+  },
+  "description": {
+    "zh": [
+      "正装形态让 G-阿尔凯恩 从候选机变成一台完整的战斗机体。追加装甲与推进器弥补了原型机在持续战中的不足。",
+      "艾达·斯尔冈驾驶它时，这台机体不再只是“被选中的候补”，而是她自己的战场选择。"
+    ],
+    "ja": [
+      "フルドレスはG-アルケインを候補機から完成された戦闘機体へ変えた。追加装甲とスラスターが、原型機の持久戦における不足を補う。",
+      "アイーダ・スルガンが駆る時、この機体は「選ばれた候補」ではなく、彼女自身の戦場の選択になる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "aida-surugan"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "reconguista-2014"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F0EAD8",
+      "secondary": "#2E7D6E",
+      "accent": "#D9A441",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《高达 G 之复国运动》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

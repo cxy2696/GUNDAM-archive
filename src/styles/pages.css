@@ -5248,6 +5248,222 @@ a.aside-work:hover {
   flex-shrink: 0;
 }
 
+.chronology-table-section,
+.chronology-roster {
+  margin-top: 30px;
+}
+
+.chronology-section-head {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.chronology-section-head h2 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.chronology-section-head p {
+  max-width: 820px;
+  font-size: 11px;
+  line-height: 1.75;
+  color: var(--text-3);
+}
+
+.chronology-table-scroll,
+.roster-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 70%, transparent);
+}
+
+.chronology-table,
+.roster-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.chronology-table th,
+.chronology-table td,
+.roster-table th,
+.roster-table td {
+  padding: 11px 13px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.chronology-table thead th,
+.roster-table thead th {
+  background: color-mix(in srgb, var(--bg) 84%, var(--text) 3%);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.chronology-table tbody tr:last-child th,
+.chronology-table tbody tr:last-child td,
+.roster-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.chronology-table tbody tr {
+  transition: background var(--dur);
+}
+
+.chronology-table tbody tr:hover {
+  background: color-mix(in srgb, var(--bg-panel) 88%, var(--era) 5%);
+}
+
+.chronology-table tbody th {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.chronology-table__era {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.chronology-table__era .mono {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: var(--era);
+}
+
+.chronology-table__era b {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chronology-table td {
+  font-size: 10.5px;
+  color: var(--text-3);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.chronology-table .is-num {
+  text-align: right;
+  font-size: 11px;
+  color: var(--text);
+}
+
+.chronology-table thead .is-num {
+  color: var(--text-3);
+}
+
+.roster-groups {
+  display: grid;
+  gap: 8px;
+}
+
+.roster-group {
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 70%, transparent);
+}
+
+.roster-group[open] {
+  border-color: color-mix(in srgb, var(--line) 70%, var(--era) 30%);
+}
+
+.roster-group > summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.roster-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.roster-group > summary:focus-visible {
+  outline: 1px solid var(--era);
+  outline-offset: -2px;
+}
+
+.roster-group__code {
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: var(--era);
+}
+
+.roster-group > summary b {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.roster-group__count {
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+}
+
+.roster-group__chevron {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--text-3);
+  transition: transform var(--dur), color var(--dur), border-color var(--dur);
+}
+
+.roster-group[open] .roster-group__chevron {
+  transform: rotate(45deg);
+  color: var(--era);
+  border-color: var(--era);
+}
+
+.roster-table {
+  min-width: 680px;
+}
+
+.roster-table td {
+  font-size: 11px;
+  color: var(--text-3);
+  border-top: 1px solid var(--line);
+}
+
+.roster-table td.mono {
+  font-size: 10px;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.roster-table a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.roster-table a:hover {
+  color: var(--era);
+}
+
+.roster-table__ja {
+  display: block;
+  margin-top: 2px;
+  font-size: 9px;
+  color: var(--text-3);
+}
+
+.roster-table__meta {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .chronology-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5260,6 +5476,38 @@ a.aside-work:hover {
   }
   .chronology-card {
     min-height: 0;
+  }
+  .chronology-section-head h2 {
+    font-size: 20px;
+  }
+  .chronology-table,
+  .roster-table {
+    min-width: 0;
+  }
+  .chronology-table th,
+  .chronology-table td,
+  .roster-table th,
+  .roster-table td {
+    padding: 9px 8px;
+  }
+  .chronology-table th:nth-child(3),
+  .chronology-table td:nth-child(3),
+  .chronology-table th:nth-child(5),
+  .chronology-table td:nth-child(5),
+  .roster-table th:nth-child(4),
+  .roster-table td:nth-child(4),
+  .roster-table th:nth-child(5),
+  .roster-table td:nth-child(5) {
+    display: none;
+  }
+  .roster-table td:nth-child(2) {
+    width: 58%;
+  }
+  .roster-table__meta {
+    display: block;
+    margin-top: 3px;
+    font-size: 8px;
+    color: var(--text-3);
   }
   .chronology-note {
     flex-direction: column;

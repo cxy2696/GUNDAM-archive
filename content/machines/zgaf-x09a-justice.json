@@ -1,0 +1,133 @@
+{
+  "id": "zgaf-x09a-justice",
+  "modelCode": "ZGMF-X09A",
+  "name": {
+    "zh": "正义高达",
+    "ja": "ジャスティスガンダム",
+    "en": "Justice Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 9,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "扎夫特的核动力高达，与自由高达搭档，以命运-00 背包进行高机动战。",
+    "ja": "ザフトの核動力ガンダム。フリーダムと組み、ファトゥム-00で高機動戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "正义高达与自由高达共享核动力与相转移装甲技术，但定位更偏向近距支援。命运-00 背包让它可以在大气层内长时间飞行。",
+      "它的战斗风格比自由更克制：不追求单机压制，而是为搭档创造空间。两台机体合在一起，才构成完整的战术。"
+    ],
+    "ja": [
+      "ジャスティスはフリーダムと核動力・フェイズシフト装甲の技術を共有するが、位置づけは近接支援寄りである。ファトゥム-00により大気圏内でも長時間飛行できる。",
+      "戦い方はフリーダムより抑制されている。単機制圧ではなく、相棒のために空間を作る。二機が揃って初めて完全な戦術になる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "命运-00 背包",
+        "ja": "ファトゥム-00"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "athrun-zala"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [
+    {
+      "to": "zgaf-x19a-infinite-justice",
+      "kind": "tech_from",
+      "note": {
+        "zh": "正义高达 的技术路线在 无限正义高达 上延续。",
+        "ja": "ジャスティスガンダムの技術路線はインフィニットジャスティスガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 SEED DESTINY》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

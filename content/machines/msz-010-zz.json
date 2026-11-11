@@ -77,12 +77,32 @@
     "core-block",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "judau-ashta"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "zz-1986"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "rx-93-nu",
+      "kind": "tech_from",
+      "note": {
+        "zh": "ZZ 高达 的技术路线在 ν 高达 上延续。",
+        "ja": "ΖΖガンダムの技術路線はνガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 逆袭的夏亚》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "psychoframe"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "heavy",

@@ -9,12 +9,31 @@
 
 > 非官方粉丝考据项目，与 Bandai Namco / 创通・Sunrise 无关联。代码 MIT，原创内容 CC BY-NC-SA 4.0。详见 [NOTICE](NOTICE)。
 
-## 5 分钟读懂
+## 30 秒读懂
 
-- **这是什么**：一个静态的、JSON 驱动的高达档案站，重点是把机体、纪年、谱系和出处放在同一个可读结构里。
-- **这不是什么**：不是官方资料库，不是全 5,000+ 衍生型号的图鉴，也不包含官方设计图。
-- **先看哪里**：想快速理解全系列 → [世纪表](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/)；想查机体 → [机体档案](https://cxy2696.github.io/GUNDAM-archive/zh/machines/)；想改内容 → [CONTENT_GUIDE](docs/CONTENT_GUIDE.md)。
-- **可信度**：机体与事件有出处；未核对参数标 `seed`，冲突标 `disputed`。
+- **这是什么**：一个静态的、JSON 驱动的高达档案站，把机体、纪年、谱系、人物与出处放在同一个可读结构里。
+- **现在有什么**：**147 台机体 · 12 个纪元 · 73 位人物 · 42 部作品 · 50 条事件 · 35 个势力 · 31 个受控标签 · 82 条谱系边**；`/zh` 与 `/ja` 双语，共 **528 个静态页面**。
+- **先看哪三页**：[世纪表](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/) 看全系列 → [机体总表](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/#roster-title) 查所有机体 → [覆盖说明](docs/MACHINE_COVERAGE.md) 看收录边界。
+- **可信度**：机体与事件有 `sources`；未核对参数标 `seed`，冲突标 `disputed`；没有的参数显示“资料未载”，不估算。
+
+> **范围**：收录 11 个正史纪元的高达型主线机体与核心外传机体，另保留 2 台 A.A. 原创扩展。不是 5,000+ 全衍生型号图鉴，也不含官方设计图。收录规则见 [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md)。
+
+## 这次更新（V2.0）
+
+| 你关心的 | 现在有什么 |
+| --- | --- |
+| **11 个纪元的机体补齐** | U.C. 38 · F.C. 12 · A.C. 13 · A.W. 10 · C.C. 2 · C.E. 21 · A.D. 15 · A.G. 9 · R.C. 5 · P.D. 11 · A.S. 9；另 A.A. 2 |
+| **世纪表** | `/[lang]/chronology` 新增“纪元速览”总表与“按纪元分组的全机体总表”，147 台全部可点 |
+| **技术谱系** | 82 条带出处的谱系边，覆盖 U.C.、F.C.、A.C.、A.W.、C.E.、A.D.、A.G.、P.D.、A.S. |
+| **人物与作品** | 73 位人物、42 部作品，补齐流星作战、武斗会、SEED、00、铁血、水星等主线驾驶员与作品锚点 |
+| **文档可读性** | 新增 [世纪表阅读指南](docs/CHRONOLOGY.md)、[机体覆盖表](docs/MACHINE_COVERAGE.md)，README 与文档索引改为“按问题找入口” |
+
+## 怎么读这个站
+
+1. **先看世纪表**：一分钟版表格告诉你每个纪元的历法、跨度、作品与机体数量；再展开任一纪元的全机体总表。
+2. **再进机体页**：每台机体都有纪元、势力、初登场、武装、驾驶员、谱系边与出处；3D 为程序化预览，不是官方模型。
+3. **想追技术路线**：打开 [技术谱系](https://cxy2696.github.io/GUNDAM-archive/zh/tech-tree/)，按技术标签高亮；每条边都能回到两台机体。
+4. **想改内容**：从 [CONTENT_GUIDE](docs/CONTENT_GUIDE.md) 开始；新增机体不需要改页面代码。
 
 ![GUNDAM Archive 首页](preview/home.png)
 
@@ -30,13 +49,13 @@ GUNDAM Archive 把散落的知识组织成**可交互、可追溯、可继续生
 | **追溯** Trace | 它从哪里来？后来变成了什么？ | 带技术标签的有向无环谱系图，三种边类型，每条边附出处 |
 | **定位** Locate | 它在哪一年、哪场战争、哪个地点出现？ | 十二纪元泳道年表、地球圈/拉格朗日点示意地图、事件抽屉 |
 
-A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《机动战士高达 RG XARX-ZERO》《GUNDAM 异轨征途》两部作品。
+A.A. 后启示录是本仓库的原创扩展纪元：XARX-0 高达 ZERO、螺旋高达，以及《机动战士高达 RG XARX-ZERO》《GUNDAM 异轨征途》两部作品；它与 11 个正史纪元分开阅读。
 
 | A.A. 年表 | XARX-0 高达 ZERO |
 | --- | --- |
 | ![A.A. 纪元年表](preview/aa-era.png) | ![XARX-0](preview/xarx.png) |
 
-当前内容：**49 台机体 · 12 个纪元 · 50 条事件 · 29 个势力 · 32 位人物 · 25 部作品 · 15 个地点 · 24 个受控标签 · 22 条谱系边**；`/zh` 与 `/ja` 双语，共 **240 个静态页面**，构建期生成 185 条检索索引。
+当前内容：**147 台机体 · 12 个纪元 · 50 条事件 · 35 个势力 · 73 位人物 · 42 部作品 · 15 个地点 · 31 个受控标签 · 82 条谱系边**；`/zh` 与 `/ja` 双语，共 **528 个静态页面**，构建期生成 **347 条检索索引**。
 
 ## 在线访问
 
@@ -52,7 +71,7 @@ A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《
 
 ## 界面
 
-| 首页 · 3D 检阅 | 机体索引 · 49 台 |
+| 首页 · 3D 检阅 | 机体索引 · 147 台 |
 | --- | --- |
 | ![首页](preview/home.png) | ![机体索引](preview/machines.png) |
 
@@ -79,8 +98,8 @@ A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《
 - **检阅**：R3F 查看器支持轨道旋转、缩放、平移、视角预设、自动旋转、爆炸拆解、分件悬停、线框叠加；3D 引擎异步加载，不阻塞页面外壳。
 - **量子形态**：0–100% 连续插值，粒子、能量环、装甲色相偏移与自发光同步；可在控制台随时关闭。
 - **2D / 3D 联动**：3D、设计图、分屏三态；SVG 分层图与 3D 共享 `partId`，悬停双向高亮，支持工程图模式。
-- **技术谱系**：U.C. 主谱系 DAG + 平行纪元机体目录，49 台、22 条边；`derive_of` / `tech_from` / `replace` 三种边，标签高亮与构建期无环校验。
-- **纪元年表**：七条泳道保留各自纪年尺度；年/十年/世纪刻度、主线过滤、U.C. 全史切换、事件详情抽屉。
+- **技术谱系**：U.C. 主谱系 DAG + 平行纪元机体目录，147 台、82 条边；`derive_of` / `tech_from` / `replace` 三种边，标签高亮与构建期无环校验。
+- **纪元年表**：十二纪元泳道保留各自纪年尺度；年/十年/世纪刻度、主线过滤、U.C. 全史切换、事件详情抽屉。
 - **关系档案**：势力组织树、五类关系、人物任期与驾驶机体、作品索引；`⌘K` 全局检索 + 独立检索页。
 - **中日双语**：`/zh` 与 `/ja` 路由，hreflang/canonical；桌面、移动端与页脚均可切换，保留路径、查询串、锚点与滚动位置；首次访问按浏览器语言选择入口。
 
@@ -125,7 +144,7 @@ src/lib/content.ts     解析、跨文件校验、查询
 src/lib/tree.ts        DAG 布局
 src/lib/search-index.ts
    ▼
-app/(site)/[lang]      React Server Components → 238 个静态页面
+app/(site)/[lang]      React Server Components → 528 个静态页面
    ▼
 next build (output: export) → out/ → GitHub Pages
 ```
@@ -143,6 +162,8 @@ next build (output: export) → out/ → GitHub Pages
 | --- | --- |
 | [README.ja.md](README.ja.md) | 日本語の概要・起動方法 |
 | [docs/README.md](docs/README.md) | 文档索引、权威边界、更新规则 |
+| [docs/CHRONOLOGY.md](docs/CHRONOLOGY.md) | 十二纪元世纪表、逐纪元速查、阅读顺序 |
+| [docs/MACHINE_COVERAGE.md](docs/MACHINE_COVERAGE.md) | “全机体”的收录规则、覆盖矩阵、明确不包含什么 |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 六层模型、数据流、查看器、部署、ADR、迁移 |
 | [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | 新增/修改内容、双语、审校清单、常见错误 |
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | 字段、枚举、单位、日期、校验规则（字段级权威） |
@@ -156,6 +177,18 @@ next build (output: export) → out/ → GitHub Pages
 | [CHANGELOG.md](CHANGELOG.md) | 版本变更 |
 
 > 权威顺序：`src/lib/schema.ts` → `DATA_DICTIONARY` → 其他文档。文档之间不重复维护字段表；新增字段先改 schema，再更新数据字典与指南。
+
+## 按问题找文档
+
+| 我想…… | 先读 |
+| --- | --- |
+| 快速理解全系列 | [世纪表](docs/CHRONOLOGY.md) → [术语表](docs/GLOSSARY.md) |
+| 知道“到底收了哪些机体” | [机体覆盖表](docs/MACHINE_COVERAGE.md) |
+| 新增一台机体 / 事件 / 人物 | [CONTENT_GUIDE](docs/CONTENT_GUIDE.md) → [DATA_DICTIONARY](docs/DATA_DICTIONARY.md) |
+| 改字段或校验规则 | `src/lib/schema.ts` → [DATA_DICTIONARY](docs/DATA_DICTIONARY.md) |
+| 判断出处能不能用 | [GOVERNANCE](docs/GOVERNANCE.md) → [DATA_SOURCES](docs/DATA_SOURCES.md) |
+| 接 3D 资产 | [ASSET_PIPELINE](docs/ASSET_PIPELINE.md) |
+| 看下一步计划 | [ROADMAP](docs/ROADMAP.md) → [CHANGELOG](CHANGELOG.md) |
 
 ## 质量门禁
 
@@ -183,7 +216,7 @@ next build (output: export) → out/ → GitHub Pages
 
 ## 已知边界
 
-- **范围说明**：当前收录 **49 台主线 Gundam 型机体**，覆盖 12 个纪元；不是字面意义上的全部衍生型号。外传、游戏原创与量产衍生型号列入 B3/B4 目录，继续补全。
+- **范围说明**：当前收录 **147 台机体**（145 台属于 11 个正史纪元，2 台为 A.A. 扩展），覆盖主线与核心外传；不是字面意义上的全部 5,000+ 衍生型号。收录规则、覆盖矩阵与“为什么 C.C. 只有 2 台”见 [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md)。
 - **3D 是程序化 LOD-P 占位**，不是官方模型，也不是最终 glTF；分件、装配轴、爆炸顺序已按 `partId` 组织，接入 LOD0 不改查看器。
 - **不使用官方设计图**：当前视觉为自绘 SVG / 程序化 3D；官方图、扫描设定集与 Wiki 图片不转存、不热链，授权素材的接入规则见 [DATA_SOURCES](docs/DATA_SOURCES.md)。
 - **数据是种子数据**：参数按公开资料整理，尚未逐项核对到设定集页码；界面标 `seed` 与 `disputed`。

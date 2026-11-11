@@ -1,0 +1,133 @@
+{
+  "id": "zgaf-x13a-providence",
+  "modelCode": "ZGMF-X13A",
+  "name": {
+    "zh": "神意高达",
+    "ja": "プロヴィデンスガンダム",
+    "en": "Providence Gundam"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 11,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "扎夫特的指挥官用高达，搭载龙骑兵系统进行全方位光束攻击。",
+    "ja": "ザフトの指揮官用ガンダム。ドラグーン・システムで全方位ビーム攻撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "神意高达是扎夫特为空间认识能力者准备的机体。背包上的龙骑兵可以脱离本体，从多个角度同时射击，形成几乎没有死角的火力网。",
+      "它的设计不考虑量产，也不考虑普通驾驶员。只有能同时处理大量空间信息的人，才能让这台机体真正“睁开眼”。"
+    ],
+    "ja": [
+      "プロヴィデンスはザフトが空間認識能力者のために用意した機体である。背部のドラグーンは本体から分離し、多方向から同時射撃を行い、ほぼ死角のない火力網を作る。",
+      "量産も一般パイロットも想定していない。大量の空間情報を同時に処理できる者だけが、この機体を本当に「開眼」させられる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "龙骑兵系统",
+        "ja": "ドラグーン・システム"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮",
+        "ja": "バルカン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "dragoon",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "rau-le-creuset"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [
+    {
+      "to": "zgaf-x666s-legend",
+      "kind": "tech_from",
+      "note": {
+        "zh": "神意高达 的技术路线在 传说高达 上延续。",
+        "ja": "プロヴィデンスガンダムの技術路線はレジェンドガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 SEED DESTINY》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "dragoon"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "spike",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#8A1C2B",
+      "accent": "#D4AF37",
+      "eye": "#7DFF9E",
+      "frame": "#3C4650"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 SEED》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

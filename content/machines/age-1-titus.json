@@ -1,0 +1,109 @@
+{
+  "id": "age-1-titus",
+  "modelCode": "AGE-1T",
+  "name": {
+    "zh": "高达 AGE-1 猛将型",
+    "ja": "ガンダムAGE-1タイタス",
+    "en": "Gundam AGE-1 Titus"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 115,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE-1 的格斗换装形态，以光束拳套与重装甲进行近身战。",
+    "ja": "AGE-1の格闘換装形態。ビームナックルと重装甲で近接戦を行う。"
+  },
+  "description": {
+    "zh": [
+      "猛将型把 AGE-1 的四肢换成更厚重的格斗组件。光束拳套可以在接触瞬间释放高能粒子，把拳击变成穿透装甲的武器。",
+      "它的动作比标准型慢，但每一击都更重。对弗利特来说，这是他在近距离面对维根机体时最直接的答案。"
+    ],
+    "ja": [
+      "タイタスはAGE-1の四肢をより重厚な格闘ユニットへ換装した形態である。ビームナックルは接触の瞬間に高エネルギー粒子を放ち、拳を装甲貫通用の武器へ変える。",
+      "動きは標準型より遅いが、一撃は重い。フリットにとって、ヴェイガン機と至近距離で向き合うための最も直接的な答えだった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束拳套",
+        "ja": "ビームナックル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "movable-frame",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "flit-asuno"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "none",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 AGE》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

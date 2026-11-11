@@ -1,0 +1,110 @@
+{
+  "id": "rx-78gp02a",
+  "modelCode": "RX-78GP02A",
+  "name": {
+    "zh": "高达 GP02A 酸浆果",
+    "ja": "ガンダムGP02A サイサリス",
+    "en": "Gundam GP02A Physalis"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 83,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "为核打击而设计的重装高达，盾内藏 MK82 核弹头。",
+    "ja": "核攻撃のために設計された重装ガンダム。シールド内にMK82核弾頭を収める。"
+  },
+  "description": {
+    "zh": [
+      "GP02A 的任務从一开始就不是MS战。它要在敌方舰队中心投下核弹，再活着离开——因此装甲被加到近乎笨重，推进器则集中在短距离脱离上。",
+      "“酸浆果”这个花名掩盖不了它的本质：一台把战略核打击压缩到单机尺度的兵器。星尘作战让它成为联邦技术史上最危险的作品之一。"
+    ],
+    "ja": [
+      "GP02Aの任務は最初からMS戦ではなかった。敵艦隊の中心に核を投下し、生きて離脱する。そのために装甲は鈍重なまでに厚く、推力は短距離離脱に集中した。",
+      "「サイサリス」という花の名は本質を隠せない。戦略核攻撃を単機サイズに押し込んだ兵器である。スターダスト作戦は、この機体を連邦技術史でもっとも危険な作品の一つにした。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "核弹头火箭炮",
+        "ja": "核弾頭ランチャー"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "anavel-gato"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "0083-1991"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 0083 星尘的回忆》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "rx-78gp03",
+  "modelCode": "RX-78GP03D",
+  "name": {
+    "zh": "高达 GP03 石斛兰",
+    "ja": "ガンダムGP03 デンドロビウム",
+    "en": "Gundam GP03 Dendrobium"
+  },
+  "aliases": [],
+  "unitType": "mobile_armor",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 83,
+    "month": 11,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "由核心机 Stamen 与武器库 Orchis 组成的机动要塞，联邦 GP 计划的火力顶点。",
+    "ja": "コア機スターメンと武器庫オーキスからなる機動要塞。連邦GP計画の火力の頂点。"
+  },
+  "description": {
+    "zh": [
+      "GP03 不是一个单独的驾驶舱，而是一整套“把高达塞进武器库”的方案。Stamen 负责控制，Orchis 提供推进、导弹与大型光束炮；合体后它更像一艘小型军舰。",
+      "它的火力足以单独压制一支舰队，但庞大的轮廓也让它成为最显眼的目标。石斛兰的浪漫，建立在驾驶员必须同时处理数百个目标的现实之上。"
+    ],
+    "ja": [
+      "GP03は単独のコクピットではなく、「ガンダムを武器庫に収める」ためのシステムである。スターメンが制御を担い、オーキスが推力・ミサイル・大型ビーム砲を供給する。合体後は小型艦に近い。",
+      "その火力は単独で艦隊を制圧できるほどだが、巨大な輪郭は最も目立つ標的にもなる。デンドロビウムの浪漫は、パイロットが数百の目標を同時に処理する現実の上に成り立っている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "大型光束炮",
+        "ja": "大型ビーム砲"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "微型导弹仓",
+        "ja": "マイクロ・ミサイル・ポッド"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "I 力场发生器",
+        "ja": "Iフィールド・ジェネレーター"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "kou-uraki"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "0083-1991"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "binder",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 0083 星尘的回忆》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "rx-79g",
+  "modelCode": "RX-79[G]",
+  "name": {
+    "zh": "陆战型高达",
+    "ja": "陸戦型ガンダム",
+    "en": "Ground Gundam"
+  },
+  "aliases": [],
+  "unitType": "mass_production",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 79,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "用 RX-78 剩余零件与陆战需求拼出的量产型高达，活跃于东南亚战线。",
+    "ja": "RX-78の余剰部品と陸戦要求を組み合わせた量産型ガンダム。東南アジア戦線で活躍した。"
+  },
+  "description": {
+    "zh": [
+      "陆战型高达不是为阅兵或宣传而生的机体。它把 RX-78 的剩余零件、陆战用的防尘处理和可更换武装组合在一起，强调在泥泞与丛林中持续作战。",
+      "第 08MS 小队等部队的使用记录说明，它的价值不在单机性能，而在补给、维修与步兵协同——这是一台真正被当作“装备”使用的高达。"
+    ],
+    "ja": [
+      "陸戦型ガンダムは観閲式や宣伝のために生まれた機体ではない。RX-78の余剰部品、陸戦用の防塵処理、交換可能な武装を組み合わせ、泥とジャングルでの継続戦闘を重視した。",
+      "第08MS小隊などの運用記録が示すのは、単機性能ではなく補給・整備・歩兵連携の価値である。ガンダムを「装備」として使う機体だった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮",
+        "ja": "60mmバルカン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "100mm 机枪",
+        "ja": "100mmマシンガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "180mm 加农炮",
+        "ja": "180mmキャノン"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "luna-titanium",
+    "beam-weapon",
+    "movable-frame",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "shiro-amada"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "08th-ms-team"
+  ],
+  "edges": [
+    {
+      "to": "rx-79g-ez8",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 陆战型高达 为基础发展出的 高达 Ez8。",
+        "ja": "陸戦型ガンダムを基に発展したガンダムEz8。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 第08MS小队》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "movable-frame"
+    },
+    {
+      "to": "rx-79bd-1",
+      "kind": "tech_from",
+      "note": {
+        "zh": "陆战型高达 的技术路线在 蓝色命运 1 号机 上延续。",
+        "ja": "陸戦型ガンダムの技術路線はブルーディスティニー1号機へ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达外传 蓝色命运》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "exam"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "none",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 第08MS小队》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

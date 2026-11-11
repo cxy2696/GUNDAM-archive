@@ -1,0 +1,110 @@
+{
+  "id": "xxxg-01d2-deathscythe-hell",
+  "modelCode": "XXXG-01D2",
+  "name": {
+    "zh": "地狱死神高达",
+    "ja": "ガンダムデスサイズヘル",
+    "en": "Gundam Deathscythe Hell"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "side_story",
+  "firstAppear": {
+    "year": 195,
+    "month": 12,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "死神高达的后继机，以活动披风与双刃光束镰刀强化隐密战。",
+    "ja": "ガンダムデスサイズの後継機。アクティブクロークとツインビームサイズで隠密戦を強化した。"
+  },
+  "description": {
+    "zh": [
+      "地狱死神高达把隐形从“降低被发现概率”推进到“主动控制视野”。活动披风可以展开成干扰面，也能在近战中充当护盾。",
+      "双刃光束镰刀的轮廓比前代更夸张，但使用逻辑没有变：在对手察觉之前结束战斗。"
+    ],
+    "ja": [
+      "ガンダムデスサイズヘルは隠密を「見つかりにくくする」段階から「視界を能動的に制御する」段階へ進めた。アクティブクロークは妨害面として展開し、近接戦では盾にもなる。",
+      "ツインビームサイズの輪郭は先代より大げさだが、使用の論理は変わらない。相手が気づく前に戦いを終えることだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双刃光束镰刀",
+        "ja": "ツインビームサイズ"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "活动披风",
+        "ja": "アクティブクローク"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "movable-frame",
+    "hyper-jammer"
+  ],
+  "pilots": [
+    {
+      "characterId": "duo-maxwell"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "endless-waltz"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "gundam-schwarzette",
+  "modelCode": "MDX-0003",
+  "name": {
+    "zh": "战骑高达",
+    "ja": "ガンダム・シュバルゼッテ",
+    "en": "Gundam Schwarzette"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "benerit",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 123,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "杰特克公司开发的高达型机体，以大型光束剑进行决战。",
+    "ja": "ジェターク社が開発したガンダム型機体。大型ビームソードで決戦を戦う。"
+  },
+  "description": {
+    "zh": [
+      "战骑高达的轮廓比同代机体更重，主武装是一把几乎与机体等长的大型光束剑。它的设计目标很明确：在近距离一击结束战斗。",
+      "它被交到古尔·杰特克手中时，已经不再只是一台公司产品。它承载着家族的期待、失败与最后一次证明自己的机会。"
+    ],
+    "ja": [
+      "シュバルゼッテの輪郭は同世代機より重く、主武装は機体とほぼ同じ長さの大型ビームソードである。設計目標は明確だ。近距離で一撃で終わらせる。",
+      "グエル・ジェタークに託された時、それはもはや企業製品ではなかった。一族の期待、失敗、そして最後に自分を証明する機会を背負っている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.7,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": 73.3,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "大型光束剑",
+        "ja": "大型ビームソード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "lauda-neill"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "fin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#7A2E4A",
+      "accent": "#D7B46A",
+      "eye": "#FF6B7A",
+      "frame": "#3C3C46"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 水星的魔女》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

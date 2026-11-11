@@ -66,6 +66,8 @@ const extra = {
     schemaText: "src/lib/schema.ts 同时约束数据结构与 TypeScript 类型。构建期通过 zod 解析每个文件，任何字段、外键或谱系环问题都会让构建失败，而不是带着错误上线。",
     repoTitle: "仓库入口",
     docs: [
+      { path: "docs/CHRONOLOGY.md", label: "十二纪元世纪表与阅读路径" },
+      { path: "docs/MACHINE_COVERAGE.md", label: "机体覆盖范围与收录规则" },
       { path: "docs/ARCHITECTURE.md", label: "架构与决策记录" },
       { path: "docs/CONTENT_GUIDE.md", label: "新增机体 / 事件 / 人物的操作手册" },
       { path: "docs/DATA_DICTIONARY.md", label: "数据字典与单位规范" },
@@ -89,6 +91,8 @@ const extra = {
     schemaText: "src/lib/schema.ts がデータ構造とTypeScript型を同時に拘束する。ビルド時にzodが各ファイルを解析し、フィールド・外部参照・系譜の循環のいずれかに問題があればビルドを止める。",
     repoTitle: "リポジトリ",
     docs: [
+      { path: "docs/CHRONOLOGY.md", label: "十二紀元の世紀表と読み方" },
+      { path: "docs/MACHINE_COVERAGE.md", label: "機体カバレッジと収録規則" },
       { path: "docs/ARCHITECTURE.md", label: "アーキテクチャと意思決定" },
       { path: "docs/CONTENT_GUIDE.md", label: "機体・事件・人物の追加手順" },
       { path: "docs/DATA_DICTIONARY.md", label: "データ辞書と単位規約" },
@@ -121,7 +125,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ABOUT</span>
-            <span className="mono">V1.4.0 / 2026.11.11</span>
+            <span className="mono">V2.0.0 / 2026.11.12</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -130,8 +134,8 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 1.4.0</span>
-            <span className="micro">{t.cut} 2026.11.11</span>
+            <span className="micro">{t.version} 2.0.0</span>
+            <span className="micro">{t.cut} 2026.11.12</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
         </div>
@@ -268,7 +272,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GUNDAM ARCHIVE / V1.4.0</span>
+              <span className="micro">GUNDAM ARCHIVE / V2.0.0</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>

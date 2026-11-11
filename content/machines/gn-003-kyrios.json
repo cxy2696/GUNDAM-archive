@@ -1,0 +1,133 @@
+{
+  "id": "gn-003-kyrios",
+  "modelCode": "GN-003",
+  "name": {
+    "zh": "主天使高达",
+    "ja": "ガンダムキュリオス",
+    "en": "Gundam Kyrios"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2307,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "天上人的可变型高达，以 MA 形态进行高速侦察与突袭。",
+    "ja": "ソレスタルビーイングの可変型ガンダム。MA形態で高速偵察と突撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "主天使高达负责天上人最常被忽视的工作：进入、观察、带人离开。它的 MA 形态适合长距离高速移动，MS 形态则保留了足够的格斗能力。",
+      "在四台天使中，它最像一台“交通工具”。但正是这种低调，让它在情报与救援任务中不可替代。"
+    ],
+    "ja": [
+      "キュリオスはソレスタルビーイングの最も地味な仕事を担う。侵入し、観測し、人を連れ帰る。MA形態は長距離高速移動に適し、MS形態でも十分な格闘能力を保つ。",
+      "四機の天使の中では「乗り物」に最も近い。だがその地味さこそが、情報と救出任務で代替不能な存在にしている。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "变形 MA 形态",
+        "ja": "MA形態"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon",
+    "movable-frame",
+    "trans-am"
+  ],
+  "pilots": [
+    {
+      "characterId": "allelujah-haptism"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [
+    {
+      "to": "gn-007-arios",
+      "kind": "tech_from",
+      "note": {
+        "zh": "主天使高达 的技术路线在 堕天使高达 上延续。",
+        "ja": "ガンダムキュリオスの技術路線はアリオスガンダムへ継承された。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "gn-drive"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F5F8",
+      "secondary": "#2E6F9E",
+      "accent": "#6FD3C7",
+      "eye": "#8CFFDA",
+      "frame": "#3A4A55"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《机动战士高达 00》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

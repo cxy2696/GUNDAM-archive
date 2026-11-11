@@ -1,0 +1,126 @@
+{
+  "id": "xxxg-01d-deathscythe",
+  "modelCode": "XXXG-01D",
+  "name": {
+    "zh": "死神高达",
+    "ja": "ガンダムデスサイズ",
+    "en": "Gundam Deathscythe"
+  },
+  "aliases": [],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 195,
+    "month": 4,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "流星作战的五台高达之一，以隐形与一击脱离为设计核心。",
+    "ja": "オペレーション・メテオの五機のガンダムの一機。隠密と一撃離脱を設計の核とする。"
+  },
+  "description": {
+    "zh": [
+      "死神高达把“被看见”视为失败。它的装甲接缝与推进器布局都尽量压低雷达特征，主武装则是一把足以切开舰艇装甲的光束镰刀。",
+      "在流星作战中，它负责在敌方防线内部制造恐惧。战斗结束后，往往只留下被切断的机体和一段无法解释的空白。"
+    ],
+    "ja": [
+      "ガンダムデスサイズは「見られること」を失敗と見なす。装甲の継ぎ目とスラスター配置はレーダー特性を抑え、主武装は艦艇装甲を切り裂くビームサイズだ。",
+      "オペレーション・メテオでは敵防線の内部で恐怖を生む役割を担った。戦闘の後には、切断された機体と説明のつかない空白だけが残る。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束镰刀",
+        "ja": "ビームサイズ"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "破坏盾",
+        "ja": "バスターシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "movable-frame",
+    "hyper-jammer"
+  ],
+  "pilots": [
+    {
+      "characterId": "duo-maxwell"
+    }
+  ],
+  "eventIds": [],
+  "workIds": [
+    "wing-1995"
+  ],
+  "edges": [
+    {
+      "to": "xxxg-01d2-deathscythe-hell",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 死神高达 为基础发展出的 地狱死神高达。",
+        "ja": "ガンダムデスサイズを基に発展したガンダムデスサイズヘル。"
+      },
+      "sources": [
+        {
+          "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "hyper-jammer"
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "saber",
+    "shield": true,
+    "colors": {
+      "primary": "#26324C",
+      "secondary": "#6D5AA8",
+      "accent": "#D9B44A",
+      "eye": "#FF6B6B",
+      "frame": "#343B4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "动画《新机动战记高达 W》正片",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方作品资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

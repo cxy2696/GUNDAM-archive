@@ -77,12 +77,32 @@
     "beam-weapon",
     "funnel"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "jona-bashta"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "narrative-2018"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "rx-9-c",
+      "kind": "derive_of",
+      "note": {
+        "zh": "以 叙述高达 为基础发展出的 叙述高达 C 装备。",
+        "ja": "ナラティブガンダムを基に発展したナラティブガンダム C装備。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 NT》机体设定（谱系整理）",
+          "level": "B"
+        }
+      ],
+      "techTag": "psychoframe"
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",
