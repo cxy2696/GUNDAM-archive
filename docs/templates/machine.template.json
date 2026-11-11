@@ -1,0 +1,56 @@
+{
+  "id": "example-machine",
+  "modelCode": "XXX-000",
+  "name": { "zh": "示例机体", "ja": "サンプル機体", "en": "Example Machine" },
+  "aliases": ["示例", "Sample", "サンプル"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": { "year": 79, "month": 1, "day": 1, "precision": "day" },
+  "summary": {
+    "zh": "一句话定位，说明它在技术与历史中的位置。",
+    "ja": "技術と歴史の中での位置を示す一行の定位。"
+  },
+  "description": {
+    "zh": ["第一段：开发背景与设计取舍。", "第二段：战史、驾驶员或技术影响。"],
+    "ja": ["第一段：開発背景と設計上の取捨。", "第二段：戦史、パイロット、技術的影響。"]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [{ "name": { "zh": "示例武装", "ja": "サンプル武装" }, "type": "beam" }],
+  "tags": ["thermonuclear"],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": ["msg-1979"],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    { "label": "作品名 / 集数 / 设定集页码", "level": "S" },
+    { "label": "官方机体页（可选）", "level": "A", "url": "https://www.gundam.info/" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

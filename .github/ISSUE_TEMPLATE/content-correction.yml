@@ -1,0 +1,44 @@
+name: Content correction
+description: Report a factual error, missing source, or disputed value in the archive.
+title: "[content] "
+labels: ["content", "needs-review"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      description: Machine / event / faction / character / work + URL slug.
+      placeholder: "rx-78-2 (RX-78-2)"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Quote the current value and the proposed correction.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Work + episode, setting-book page, or official URL. B-level community wikis are leads only.
+    validations:
+      required: true
+  - type: dropdown
+    id: disputed
+    attributes:
+      label: Is this disputed?
+      options:
+        - "No, it is a clear factual correction"
+        - "Yes, sources disagree"
+        - "Unsure"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I have read docs/GOVERNANCE.md and understand that unsourced claims will not be merged.
+          required: true

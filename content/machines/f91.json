@@ -1,0 +1,80 @@
+{
+  "id": "f91",
+  "modelCode": "F91",
+  "name": { "zh": "高达 F91", "ja": "ガンダムF91", "en": "Gundam F91" },
+  "aliases": ["F91", "F91高达", "ガンダムF91", "西布克专用机"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": { "year": 123, "month": 3, "precision": "month" },
+  "summary": {
+    "zh": "联邦小型化 MS 计划的产物。15.5 米级的机身搭载生物传感器与双 VSBR，证明“更小”并不等于“更弱”。",
+    "ja": "連邦のMS小型化計画の産物。15.5m級の機体にバイオセンサーと二門のヴェスバーを搭載し、「小さい」ことが「弱い」ではないことを証明した。"
+  },
+  "description": {
+    "zh": [
+      "F91 把反应炉、装甲与推进系统压缩到 15 米级，同时保留光束盾与高机动战能力。生物传感器会读取驾驶员的生理反应，在极限状态下短暂解除机体制御限制。",
+      "西布克·阿诺在 Frontier Side 的冲突中驾驶该机。F91 的实战数据让联邦确认了小型化路线的可行性，也暴露了生物传感器对驾驶员精神状态的依赖。"
+    ],
+    "ja": [
+      "F91は反応炉、装甲、推進系を15m級へ圧縮しつつ、ビームシールドと高機動戦能力を維持した。バイオセンサーはパイロットの生理反応を読み取り、極限状態で一時的に機体制御のリミッターを解除する。",
+      "シーブック・アノーはフロンティアサイドの紛争でこの機体を駆った。F91の実戦データは連邦に小型化路線の実現可能性を確信させたが、バイオセンサーのパイロット精神状態への依存も露呈させた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 15.5,
+    "heightHead": 15.5,
+    "weightEmpty": 9.8,
+    "weightFull": 19.1,
+    "powerOutput": 4250,
+    "thrust": 88400,
+    "sensorRadius": 25000,
+    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+  },
+  "armament": [
+    { "name": { "zh": "可变速光束步枪 ×2", "ja": "ヴェスバー ×2" }, "type": "beam" },
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
+    { "name": { "zh": "光束盾牌", "ja": "ビームシールド" }, "type": "special" },
+    { "name": { "zh": "火神炮 ×2", "ja": "バルカン ×2" }, "type": "kinetic" }
+  ],
+  "tags": ["vsbr", "gundarium", "beam-weapon", "movable-frame", "biosensor"],
+  "pilots": [{ "characterId": "seabook-arano", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
+  "eventIds": ["cosmo-babylonia-war"],
+  "workIds": ["f91-1991"],
+  "edges": [
+    {
+      "to": "lm314v21-v2",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "小型化可动骨架与高输出反应炉的设计路线在 V2 上继续推进。",
+        "ja": "小型化ムーバブルフレームと高出力反応炉の設計路線はV2でさらに推し進められた。"
+      },
+      "sources": [{ "label": "《机动战士 V 高达》MS 设定资料", "level": "A" }]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E9EEF3",
+      "secondary": "#1D4E89",
+      "accent": "#D64545",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    { "label": "剧场版《机动战士高达 F91》", "level": "S" },
+    { "label": "《机动战士高达 F91》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

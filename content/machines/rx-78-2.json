@@ -1,0 +1,80 @@
+{
+  "id": "rx-78-2",
+  "modelCode": "RX-78-2",
+  "name": { "zh": "高达", "ja": "ガンダム", "en": "Gundam" },
+  "aliases": ["元祖高达", "白色恶魔", "White Devil", "ガンダム", "RX-78"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": { "year": 79, "month": 9, "day": 18, "precision": "day" },
+  "summary": {
+    "zh": "联邦 V 作战的旗舰试作机。月神钛装甲、核心战机与光束步枪的组合，让一台机体足以改变一年战争的走向。",
+    "ja": "連邦V作戦の旗艦試作機。ルナチタニウム装甲、コア・ブロック、ビームライフルの組み合わせが、一機で一年戦争の帰趨を変えた。"
+  },
+  "description": {
+    "zh": [
+      "RX-78-2 是联邦军在 Side 7 秘密推进的 V 作战产物。它把当时尚属实验阶段的光束步枪、月神钛合金装甲与核心战机系统整合到一台 18 米级机体上，代价是极高的单机成本与复杂的维护需求。",
+      "在白色基地的实战记录中，它先后参与敖德萨、所罗门与阿·巴瓦·库战役。阿姆罗·雷的战斗数据不仅改写了联邦的 MS 开发路线，也让“高达”从一个型号编号变成了整个联邦系谱的象征。"
+    ],
+    "ja": [
+      "RX-78-2は連邦軍がサイド7で極秘に進めたV作戦の産物である。当時まだ実験段階だったビームライフル、ルナチタニウム合金装甲、コア・ブロック・システムを18m級の機体へ統合したが、単機コストと整備性の悪さという代償を伴った。",
+      "ホワイトベースでの実戦記録では、オデッサ、ソロモン、ア・バオア・クーに参加。アムロ・レイの戦闘データは連邦のMS開発路線を書き換えただけでなく、「ガンダム」という型式名を連邦系譜全体の象徴へ変えた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": 43.4,
+    "weightFull": 60.0,
+    "powerOutput": 1380,
+    "thrust": 55500,
+    "sensorRadius": 5700,
+    "armor": { "zh": "月神钛合金", "ja": "ルナチタニウム合金" }
+  },
+  "armament": [
+    { "name": { "zh": "60mm 火神炮 ×2", "ja": "60mmバルカン ×2" }, "type": "kinetic" },
+    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "超级火箭炮", "ja": "ハイパー・バズーカ" }, "type": "kinetic" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["luna-titanium", "core-block", "beam-weapon", "thermonuclear"],
+  "pilots": [{ "characterId": "amuro-ray", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
+  "eventIds": ["one-year-war", "operation-odessa", "jaburo-assault", "battle-of-solomon", "battle-of-a-baoa-qu"],
+  "workIds": ["msg-1979"],
+  "edges": [
+    {
+      "to": "msz-006-zeta",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "联邦系高达的可动骨架与高机动设计在 Z 计划中延续。",
+        "ja": "連邦系ガンダムのムーバブルフレームと高機動設計はΖ計画へ継承された。"
+      },
+      "sources": [{ "label": "《机动战士 Z 高达》MS 设定资料", "level": "A" }]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" },
+    { "label": "Gundam.INFO 官方机体资料（RX-78-2）", "level": "A", "url": "https://www.gundam.info/" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

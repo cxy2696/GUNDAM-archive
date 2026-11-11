@@ -1,0 +1,19 @@
+{
+  "machineSlug": "rx-78-2",
+  "version": "1.2.0",
+  "scale": "1:1 (meters)",
+  "bounds": { "x": 5.2, "y": 18.5, "z": 4.1 },
+  "lods": [
+    { "level": 0, "url": "l0.glb", "tris": 128400, "bytes": 5900000 },
+    { "level": 1, "url": "l1.glb", "tris": 31200, "bytes": 1800000 },
+    { "level": 2, "url": "l2.glb", "tris": 4200, "bytes": 260000 }
+  ],
+  "parts": [
+    { "id": "head", "axis": [0, 1, 0], "order": 3 },
+    { "id": "shoulder_L", "axis": [-1, 0.15, 0], "order": 2 },
+    { "id": "backpack", "axis": [0, 0.1, -1], "order": 4 }
+  ],
+  "materials": { "primary": "#2B4E8C", "secondary": "#D7DDE3" },
+  "animations": ["idle", "deploy", "open_hatch"],
+  "designSheets": [{ "kind": "line", "url": "sheet-line.svg" }]
+}

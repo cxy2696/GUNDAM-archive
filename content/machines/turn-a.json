@@ -1,0 +1,67 @@
+{
+  "id": "turn-a",
+  "modelCode": "SYSTEM-∀",
+  "name": { "zh": "∀高达", "ja": "∀ガンダム", "en": "Turn A Gundam" },
+  "aliases": ["Turn A", "倒A高达", "ターンエー", "白色 Doll"],
+  "unitType": "prototype",
+  "eraId": "cc",
+  "factionId": "inglessa-militia",
+  "canon": "parallel",
+  "firstAppear": { "year": 2345, "precision": "year" },
+  "summary": {
+    "zh": "被埋在正历地球地下的“黑历史”遗物。月光蝶与纳米机械群让它既是文明的守护者，也是能够终结文明的最终兵器。",
+    "ja": "正暦の地球地下に埋もれていた「黒歴史」の遺物。月光蝶とナノマシン群により、文明の守護者であると同時に文明を終わらせうる最終兵器でもある。"
+  },
+  "description": {
+    "zh": [
+      "Turn A 的机体线条与其他高达截然不同：圆润的胸甲、像胡须一样的金色散热板、以及可展开的月光蝶。它的技术来源被刻意从历史记录中抹去，只留下“黑历史”这个模糊的指称。",
+      "罗兰·塞亚克在因格莱萨的冲突中启动该机。月光蝶一旦完全展开，会把沿途的金属与电子设备分解到分子级；因此 Turn A 的每一次出战，都是对“是否值得使用最终兵器”的一次追问。"
+    ],
+    "ja": [
+      "ターンAの機体ラインは他のガンダムと大きく異なる。丸みを帯びた胸甲、髭のような金色の放熱板、展開可能な月光蝶。その技術的出自は歴史記録から意図的に消され、「黒歴史」という曖昧な呼称だけが残った。",
+      "ロラン・セアックはイングレッサの紛争でこの機体を起動した。月光蝶が完全展開すれば、沿道の金属と電子機器を分子レベルまで分解する。ゆえにターンAの出撃は常に「最終兵器を使う価値があるか」という問いを伴う。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 20.0,
+    "heightHead": 20.0,
+    "weightEmpty": 17.5,
+    "weightFull": null,
+    "powerOutput": 27000,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "光束军刀", "ja": "ビームサーベル" }, "type": "melee" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" },
+    { "name": { "zh": "月光蝶", "ja": "月光蝶" }, "type": "special" }
+  ],
+  "tags": ["moonlight-butterfly", "beam-weapon"],
+  "pilots": [{ "characterId": "loran-cehack", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
+  "eventIds": ["dark-history"],
+  "workIds": ["turn-a-1999"],
+  "edges": [],
+  "viewer": {
+    "head": "mustache",
+    "build": "standard",
+    "shoulder": "round",
+    "backpack": "none",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#EDEDE8",
+      "secondary": "#6B7280",
+      "accent": "#C9A227",
+      "eye": "#FFD166",
+      "frame": "#4B5563"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《∀高达》全 50 话", "level": "S" },
+    { "label": "《∀高达》黑历史设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

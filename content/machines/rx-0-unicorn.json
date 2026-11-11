@@ -1,0 +1,68 @@
+{
+  "id": "rx-0-unicorn",
+  "modelCode": "RX-0",
+  "name": { "zh": "独角兽高达", "ja": "ユニコーンガンダム", "en": "Unicorn Gundam" },
+  "aliases": ["独角兽", "Unicorn", "ユニコーン", "RX-0"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": { "year": 96, "month": 1, "day": 3, "precision": "day" },
+  "summary": {
+    "zh": "毕斯特财团与阿纳海姆秘密开发的“拉普拉斯之盒”钥匙。独角兽模式下的封印装甲，在毁灭模式中让位于全身精神感应框架。",
+    "ja": "ヴィスト財団とアナハイムが極秘開発した「ラプラスの箱」の鍵。ユニコーンモードの封印装甲は、デストロイモードで全身のサイコフレームへ置き換わる。"
+  },
+  "description": {
+    "zh": [
+      "RX-0 的最大特征不是火力，而是“限制器”。独角兽模式用装甲约束精神感应框架的响应，避免驾驶员被过载的意识吞没；一旦解除限制，机体高度与关节可动范围都会显著增加。",
+      "巴纳吉·林克斯在拉普拉斯事件中驾驶该机。它多次在无人能够解释的情况下自行响应驾驶员的意志，使联邦与毕斯特财团都意识到：这台机体不是单纯的兵器，而是宪章政治的延续。"
+    ],
+    "ja": [
+      "RX-0の最大の特徴は火力ではなく「リミッター」である。ユニコーンモードは装甲でサイコフレームの応答を拘束し、パイロットの意識が過負荷に呑まれるのを防ぐ。制限を解けば機体高と関節可動域は大きく増大する。",
+      "バナージ・リンクスはラプラス事件でこの機体を駆った。説明のつかない形でパイロットの意志に応答する姿は、連邦とヴィスト財団の双方に、この機体が単なる兵器ではなく憲章政治の延長であることを知らしめた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 19.7,
+    "heightHead": 19.7,
+    "weightEmpty": 23.7,
+    "weightFull": null,
+    "powerOutput": 3480,
+    "thrust": null,
+    "sensorRadius": null,
+    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+  },
+  "armament": [
+    { "name": { "zh": "光束马格南", "ja": "ビーム・マグナム" }, "type": "beam" },
+    { "name": { "zh": "60mm 火神炮 ×2", "ja": "60mmバルカン ×2" }, "type": "kinetic" },
+    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["psychoframe", "gundarium", "beam-weapon"],
+  "pilots": [{ "characterId": "banagher-links", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
+  "eventIds": ["laplace-incident", "torrington-assault"],
+  "workIds": ["unicorn-2010"],
+  "edges": [],
+  "viewer": {
+    "head": "unicorn",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F7FA",
+      "secondary": "#1E3A5F",
+      "accent": "#D4AF37",
+      "eye": "#FF4D6D",
+      "frame": "#2B3440"
+    }
+  },
+  "sources": [
+    { "label": "OVA《机动战士高达 UC》第 1—7 话", "level": "S" },
+    { "label": "《机动战士高达 UC》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

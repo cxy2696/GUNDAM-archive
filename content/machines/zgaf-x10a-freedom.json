@@ -1,0 +1,69 @@
+{
+  "id": "zgaf-x10a-freedom",
+  "modelCode": "ZGMF-X10A",
+  "name": { "zh": "自由高达", "ja": "フリーダムガンダム", "en": "Freedom Gundam" },
+  "aliases": ["Freedom", "自由", "フリーダム", "X10A"],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "parallel",
+  "firstAppear": { "year": 71, "month": 6, "day": 15, "precision": "approximate" },
+  "summary": {
+    "zh": "ZAFT 开发、后被基拉·大和夺取的高性能机。相转移装甲、翼状推进器与多目标锁定系统，让它成为 C.E.71 战场上最难以击落的机体之一。",
+    "ja": "ザフトが開発し、後にキラ・ヤマトに奪取された高性能機。フェイズシフト装甲、翼状推進器、多目標ロックシステムにより、C.E.71の戦場で最も撃墜困難な機体の一つとなった。"
+  },
+  "description": {
+    "zh": [
+      "Freedom 的设计目标是“单机压制战域”。翼状推进器内藏多组光束炮与导弹，配合高精度传感器可在短时间内同时攻击多个目标；相转移装甲则让它在实弹火力下几乎免疫。",
+      "基拉驾驶该机介入奥布攻防战后，Freedom 成为独立于地球联合与 ZAFT 的第三方战力象征。它的高功耗与对驾驶员空间认知的极高要求，也说明这台机体并非为量产士兵设计。"
+    ],
+    "ja": [
+      "フリーダムの設計目標は「単機による戦域制圧」である。翼状推進器には複数のビーム砲とミサイルが内蔵され、高精度センサーと組み合わせて短時間に多数の目標を攻撃できる。フェイズシフト装甲は実弾火力をほぼ無効化した。",
+      "キラがオーブ攻防戦へ介入した後、フリーダムは地球連合とザフトの双方から独立した第三勢力の象徴となる。高い電力消費とパイロットの空間認識への極端な要求は、この機体が量産兵のためのものではないことを示している。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.03,
+    "heightHead": 18.03,
+    "weightEmpty": 71.5,
+    "weightFull": null,
+    "powerOutput": 8826,
+    "thrust": null,
+    "sensorRadius": null,
+    "armor": { "zh": "相转移装甲", "ja": "フェイズシフト装甲" }
+  },
+  "armament": [
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
+    { "name": { "zh": "磁轨炮 ×2", "ja": "レールガン ×2" }, "type": "kinetic" },
+    { "name": { "zh": "等离子集束炮 ×2", "ja": "プラズマ収束砲 ×2" }, "type": "beam" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["phase-shift", "beam-weapon", "thermonuclear"],
+  "pilots": [{ "characterId": "kira-yamato", "note": { "zh": "夺取后的主要驾驶员", "ja": "奪取後の主パイロット" } }],
+  "eventIds": ["battle-of-orb"],
+  "workIds": ["seed-2002"],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E9EEF3",
+      "secondary": "#1E4FA3",
+      "accent": "#D64545",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《机动战士高达 SEED》第 1—50 话", "level": "S" },
+    { "label": "《机动战士高达 SEED》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

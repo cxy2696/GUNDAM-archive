@@ -1,0 +1,67 @@
+{
+  "id": "ms-06s-zaku-ii",
+  "modelCode": "MS-06S",
+  "name": { "zh": "夏亚专用扎古 II", "ja": "シャア専用ザクII", "en": "Char's Zaku II" },
+  "aliases": ["红色彗星", "赤い彗星", "Char's Zaku", "夏亚扎古"],
+  "unitType": "limited",
+  "eraId": "uc",
+  "factionId": "zeon",
+  "canon": "mainline",
+  "firstAppear": { "year": 79, "month": 1, "day": 15, "precision": "day" },
+  "summary": {
+    "zh": "扎古 II 的指挥官型，因夏亚·阿兹纳布尔的红色涂装与鲁姆战果而成为一年战争最具辨识度的机体之一。",
+    "ja": "ザクIIの指揮官型。シャア・アズナブルの赤い塗装とルウムでの戦果により、一年戦争で最も識別度の高い機体の一つとなった。"
+  },
+  "description": {
+    "zh": [
+      "S 型在 F 型基础上提高了反应炉输出与关节响应，并加装角状天线以标示指挥官身份。夏亚机采用高对比度的红粉涂装，在战场上既是战术标识，也是心理战工具。",
+      "鲁姆会战中，夏亚驾驶该机击沉五艘联邦战舰，“红色彗星”由此得名。此后他换乘更先进的机体，但这台扎古 II 仍被视为吉翁王牌文化的原点。"
+    ],
+    "ja": [
+      "S型はF型から反応炉出力と関節応答を高め、指揮官識別用の角状アンテナを追加した。シャア機の高コントラストな赤い塗装は、戦場での戦術標識であると同時に心理戦の道具でもあった。",
+      "ルウム戦役でシャアはこの機体により連邦戦艦五隻を撃沈し、「赤い彗星」の名を得る。以後より先進機へ乗り換えたが、このザクIIはジオンエース文化の原点とされる。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.5,
+    "heightHead": 17.5,
+    "weightEmpty": 56.2,
+    "weightFull": 74.5,
+    "powerOutput": 1020,
+    "thrust": 51600,
+    "sensorRadius": 3200,
+    "armor": { "zh": "超硬钢合金", "ja": "超硬鋼合金" }
+  },
+  "armament": [
+    { "name": { "zh": "120mm 扎古机枪", "ja": "120mmザク・マシンガン" }, "type": "kinetic" },
+    { "name": { "zh": "热能斧", "ja": "ヒートホーク" }, "type": "melee" },
+    { "name": { "zh": "扎古火箭炮", "ja": "ザク・バズーカ" }, "type": "kinetic" }
+  ],
+  "tags": ["thermonuclear", "minovsky"],
+  "pilots": [{ "characterId": "char-aznable", "note": { "zh": "鲁姆会战时的座机", "ja": "ルウム戦役時の搭乗機" } }],
+  "eventIds": ["one-year-war", "battle-of-loum"],
+  "workIds": ["msg-1979"],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#B23A48",
+      "secondary": "#6E2430",
+      "accent": "#E8C87A",
+      "eye": "#FF7A8A",
+      "frame": "#46333A"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" },
+    { "label": "《机动战士高达》MSV 设定资料", "level": "A" }
+  ],
+  "disputed": true,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

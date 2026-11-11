@@ -1,0 +1,89 @@
+{
+  "id": "msz-006-zeta",
+  "modelCode": "MSZ-006",
+  "name": { "zh": "Z 高达", "ja": "Ζガンダム", "en": "Zeta Gundam" },
+  "aliases": ["Z高达", "Zeta", "Ζ", "ゼータガンダム"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "aeug",
+  "canon": "mainline",
+  "firstAppear": { "year": 87, "month": 3, "day": 2, "precision": "day" },
+  "summary": {
+    "zh": "奥古与阿纳海姆合作的 TMS 旗舰机，可在 MS 与巡航形态间变形。它把可动骨架、高达尼姆γ与生物传感器带进了 U.C.0087 的主战场。",
+    "ja": "エゥーゴとアナハイムが共同開発したTMSの旗艦機。MS形態と巡航形態の変形が可能で、ムーバブルフレーム、ガンダリウムγ、バイオセンサーをU.C.0087の主戦場へ持ち込んだ。"
+  },
+  "description": {
+    "zh": [
+      "Z 计划的核心是“一台机体同时解决大气层突入、宇宙战与高机动格斗”。可变骨架让 Z 高达无需外挂 booster 即可单机突入大气层，但变形机构也带来了结构疲劳与维护难题。",
+      "卡缪·维丹驾驶该机经历了格里普斯战役的大部分关键战斗。生物传感器在战斗中多次出现超出规格的响应，这些数据后来被阿纳海姆用于精神感应框架的前期研究。"
+    ],
+    "ja": [
+      "Ζ計画の核心は「一機で大気圏突入、宇宙戦、高機動格闘を同時に解決する」ことだった。可変フレームにより単機での大気圏突入が可能になったが、変形機構は構造疲労と整備性の難題を伴った。",
+      "カミーユ・ビダンはこの機体でグリプス戦役の主要戦闘の大半を戦った。バイオセンサーは戦闘中に度々仕様を超える応答を示し、そのデータは後にアナハイムのサイコフレーム前期研究へ用いられた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 19.85,
+    "heightHead": 18.7,
+    "weightEmpty": 28.7,
+    "weightFull": 62.3,
+    "powerOutput": 2020,
+    "thrust": 112600,
+    "sensorRadius": 14000,
+    "armor": { "zh": "高达尼姆γ合金", "ja": "ガンダリウムγ合金" }
+  },
+  "armament": [
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
+    { "name": { "zh": "腕部榴弹发射器 ×2", "ja": "腕部グレネードランチャー ×2" }, "type": "kinetic" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["gundarium-gamma", "movable-frame", "variable-frame", "biosensor", "beam-weapon"],
+  "pilots": [{ "characterId": "kamille-bidan", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
+  "eventIds": ["gryps-conflict"],
+  "workIds": ["zeta-1985"],
+  "edges": [
+    {
+      "to": "rx-93-nu",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "阿纳海姆系可动骨架与高机动设计经 Z 计划积累，延续至 ν 高达。",
+        "ja": "アナハイム系のムーバブルフレームと高機動設計はΖ計画の蓄積を経てνガンダムへ継承された。"
+      },
+      "sources": [{ "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }]
+    },
+    {
+      "to": "f91",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "可动骨架的小型化路线在 U.C.0123 的 F91 上完成。",
+        "ja": "ムーバブルフレームの小型化路線はU.C.0123のF91で完成した。"
+      },
+      "sources": [{ "label": "《机动战士高达 F91》设定资料", "level": "A" }]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E9EEF3",
+      "secondary": "#2E6FB7",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4B5563"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《机动战士 Z 高达》全 50 话", "level": "S" },
+    { "label": "《机动战士 Z 高达》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

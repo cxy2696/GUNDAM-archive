@@ -1,0 +1,247 @@
+[
+  {
+    "id": "earth-federation",
+    "name": { "zh": "地球联邦", "ja": "地球連邦", "en": "Earth Federation" },
+    "short": "E.F.S.F.",
+    "color": "#3B82F6",
+    "eraIds": ["uc"],
+    "founded": "U.C.0001",
+    "description": {
+      "zh": "成立于 U.C.0001 的地球圈统一政权。它结束了地球上的国家战争，却把殖民地置于不平等的统治结构之下；一年战争后，联邦的官僚化与军备竞赛成为后续冲突的根源。",
+      "ja": "U.C.0001に成立した地球圏の統一政権。地球の国家戦争を終わらせたが、殖民星を不平等な統治構造の下に置いた。一年戦争後の官僚化と軍拡が、その後の紛争の根源となる。"
+    },
+    "motto": { "zh": "以地球圈的统一保障永久和平", "ja": "地球圏の統一による恒久平和" },
+    "relations": [
+      { "targetId": "zeon", "type": "hostility" },
+      { "targetId": "neo-zeon", "type": "hostility" },
+      { "targetId": "titans", "type": "split" }
+    ]
+  },
+  {
+    "id": "zeon",
+    "name": { "zh": "吉翁公国", "ja": "ジオン公国", "en": "Principality of Zeon" },
+    "short": "ZEON",
+    "color": "#7CB342",
+    "eraIds": ["uc"],
+    "founded": "U.C.0058",
+    "dissolved": "U.C.0080",
+    "description": {
+      "zh": "以 Side 3 为本土、由扎比家统治的军事国家。吉翁·戴肯的殖民地独立思想被扎比家转化为征服战争，其 MS 技术与“选良民”意识形态深刻影响了整个宇宙世纪。",
+      "ja": "サイド3を本土とし、ザビ家が統治した軍事国家。ジオン・ダイクンの殖民星独立思想はザビ家によって征服戦争へ転化され、そのMS技術と「選良民」思想は宇宙世紀全体に影響した。"
+    },
+    "motto": { "zh": "吉翁万岁", "ja": "ジオン・ザ・グレート" },
+    "relations": [
+      { "targetId": "earth-federation", "type": "hostility" },
+      { "targetId": "neo-zeon", "type": "succession" }
+    ]
+  },
+  {
+    "id": "titans",
+    "name": { "zh": "提坦斯", "ja": "ティターンズ", "en": "Titans" },
+    "short": "TITANS",
+    "color": "#64748B",
+    "eraIds": ["uc"],
+    "parentId": "earth-federation",
+    "founded": "U.C.0083",
+    "dissolved": "U.C.0088",
+    "description": {
+      "zh": "联邦军内的精英镇压部队，以“地球至上主义”为纲领。它借星尘作战后的恐慌扩张权力，最终在格里普斯战役中把联邦拖入内战。",
+      "ja": "連邦軍内の精鋭鎮圧部隊で、「地球至上主義」を掲げた。スターダスト作戦後の恐怖を利用して権力を拡大し、グリプス戦役で連邦を内戦へ引き込んだ。"
+    },
+    "relations": [
+      { "targetId": "earth-federation", "type": "split" },
+      { "targetId": "aeug", "type": "hostility" }
+    ]
+  },
+  {
+    "id": "aeug",
+    "name": { "zh": "奥古", "ja": "エゥーゴ", "en": "AEUG" },
+    "short": "A.E.U.G.",
+    "color": "#22D3EE",
+    "eraIds": ["uc"],
+    "parentId": "earth-federation",
+    "founded": "U.C.0087",
+    "description": {
+      "zh": "“反地球联邦政府组织”的缩写，由联邦内改革派与阿纳海姆技术人员组成。它以少量高性能 MS 对抗提坦斯，并促成了 Z 计划。",
+      "ja": "「反地球連邦政府組織」の略称。連邦内の改革派とアナハイムの技術者で構成され、少数の高性能MSでティターンズに対抗しΖ計画を成立させた。"
+    },
+    "relations": [
+      { "targetId": "earth-federation", "type": "affiliation" },
+      { "targetId": "titans", "type": "hostility" }
+    ]
+  },
+  {
+    "id": "neo-zeon",
+    "name": { "zh": "新吉翁", "ja": "ネオ・ジオン", "en": "Neo Zeon" },
+    "short": "NEO ZEON",
+    "color": "#A78BFA",
+    "eraIds": ["uc"],
+    "parentId": "zeon",
+    "founded": "U.C.0088",
+    "description": {
+      "zh": "吉翁残党在阿克西斯重建的政权，先后由哈曼·卡恩与夏亚领导。它继承吉翁的殖民地独立话语，却把阿克西斯坠落当作迫使地球赎罪的手段。",
+      "ja": "ジオン残党がアクシズで再建した政権。ハマーン・カーンとシャアが率いた。ジオンの殖民星独立論を継承しつつ、アクシズ落下で地球に贖罪を迫った。"
+    },
+    "relations": [
+      { "targetId": "zeon", "type": "succession" },
+      { "targetId": "earth-federation", "type": "hostility" },
+      { "targetId": "aeug", "type": "hostility" }
+    ]
+  },
+  {
+    "id": "crossbone-vanguard",
+    "name": { "zh": "十字骨先锋", "ja": "クロスボーン・バンガード", "en": "Crossbone Vanguard" },
+    "short": "C.V.",
+    "color": "#F59E0B",
+    "eraIds": ["uc"],
+    "founded": "U.C.0123",
+    "description": {
+      "zh": "由宇宙贵族主义信徒组成的军事组织，试图以“贵族制”重建宇宙秩序。其 MS 采用小型化与生物传感器，是 F91 的直接对手。",
+      "ja": "コスモ贵族主義の信徒による軍事組織。貴族制で宇宙の秩序を再建しようとした。小型化MSとバイオセンサーを採用し、F91の直接の敵となった。"
+    },
+    "relations": [{ "targetId": "earth-federation", "type": "hostility" }]
+  },
+  {
+    "id": "zanscare",
+    "name": { "zh": "赞斯卡尔帝国", "ja": "ザンスカール帝国", "en": "Zanscare Empire" },
+    "short": "ZANSCARE",
+    "color": "#F472B6",
+    "eraIds": ["uc"],
+    "founded": "U.C.0149",
+    "description": {
+      "zh": "以玛丽亚女王为宗教核心的扩张政权，主张以“圣战”统一地球圈。其轮式 MS 与断头台战术让 U.C.0153 的战争呈现出宗教审判式的残酷。",
+      "ja": "マリア女王を宗教的中心とする拡張政権。聖戦による地球圏統一を掲げた。車輪型MSとギロチン戦術により、U.C.0153の戦争は宗教裁判的な残酷さを帯びた。"
+    },
+    "relations": [
+      { "targetId": "earth-federation", "type": "hostility" },
+      { "targetId": "league-militaire", "type": "hostility" }
+    ]
+  },
+  {
+    "id": "league-militaire",
+    "name": { "zh": "神圣军事同盟", "ja": "リガ・ミリティア", "en": "League Militaire" },
+    "short": "L.M.",
+    "color": "#38BDF8",
+    "eraIds": ["uc"],
+    "founded": "U.C.0150",
+    "description": {
+      "zh": "由联邦残存势力与民间志愿者组成的反赞斯卡尔同盟。资源匮乏，却依靠 V 高达的模块化设计以少胜多。",
+      "ja": "連邦残存勢力と民間志願兵による反ザンスカール同盟。資源は乏しいが、Vガンダムのモジュール設計で少数対多数を戦い抜いた。"
+    },
+    "relations": [
+      { "targetId": "zanscare", "type": "hostility" },
+      { "targetId": "earth-federation", "type": "alliance" }
+    ]
+  },
+  {
+    "id": "inglessa-militia",
+    "name": { "zh": "因格莱萨民兵", "ja": "イングレッサ民兵", "en": "Inglessa Militia" },
+    "short": "INGLESSA",
+    "color": "#A3E635",
+    "eraIds": ["cc"],
+    "description": {
+      "zh": "正历时代地球侧的地方民兵组织，在月球回归与军事政变的混乱中守卫自己的土地。罗兰与 Turn A 最初就属于这里。",
+      "ja": "正暦時代の地球側の地方民兵組織。月の帰還と軍事クーデターの混乱の中で自らの土地を守った。ロランとターンAは最初ここに属した。"
+    },
+    "relations": []
+  },
+  {
+    "id": "zaft",
+    "name": { "zh": "扎夫特", "ja": "ザフト", "en": "Z.A.F.T." },
+    "short": "Z.A.F.T.",
+    "color": "#EF4444",
+    "eraIds": ["ce"],
+    "founded": "C.E.65",
+    "description": {
+      "zh": "调整者组成的军事组织，PLANT 的武装力量。它以中子干扰器与高性能 MS 对抗地球联合，内部又被激进派与稳健派的分裂撕扯。",
+      "ja": "コーディネイターによる軍事組織で、PLANTの武力。ニュートロンジャマーと高性能MSで地球連合に対抗したが、内部は急進派と穏健派の分裂に引き裂かれた。"
+    },
+    "relations": [{ "targetId": "omni-enforcer", "type": "hostility" }]
+  },
+  {
+    "id": "orb-union",
+    "name": { "zh": "奥布联合首长国", "ja": "オーブ連合首長国", "en": "Orb Union" },
+    "short": "ORB",
+    "color": "#FBBF24",
+    "eraIds": ["ce"],
+    "description": {
+      "zh": "位于太平洋的岛国，以“不侵略、不介入、不加入”为原则维持中立。其军工企业曙光社掌握独立 MS 技术，也因此成为各方争夺的对象。",
+      "ja": "太平洋の島国。不侵略・不介入・不参加の原則で中立を維持した。军工企業モルゲンレーテが独自のMS技術を持ち、各方の標的となった。"
+    },
+    "relations": []
+  },
+  {
+    "id": "omni-enforcer",
+    "name": { "zh": "地球联合军", "ja": "地球連合軍", "en": "OMNI Enforcer" },
+    "short": "OMNI",
+    "color": "#60A5FA",
+    "eraIds": ["ce"],
+    "description": {
+      "zh": "由主要国家组成的联合军，名义上保护自然人世界。其“蓝色波斯菊”等激进派把对调整者的恐惧转化为灭绝政策。",
+      "ja": "主要国による連合軍。名目上はナチュラルの世界を守る。ブルーコスモスなどの急進派がコーディネイターへの恐怖を絶滅政策へ変えた。"
+    },
+    "relations": [{ "targetId": "zaft", "type": "hostility" }]
+  },
+  {
+    "id": "celestial-being",
+    "name": { "zh": "天上人", "ja": "ソレスタルビーイング", "en": "Celestial Being" },
+    "short": "CB",
+    "color": "#E2E8F0",
+    "eraIds": ["ad"],
+    "description": {
+      "zh": "以“根绝战争”为唯一目标的秘密武装组织，拥有 GN 动力 MS。它以超越国家的暴力介入冲突，却也因此制造了新的对抗。",
+      "ja": "「戦争の根絶」のみを目的とする秘密武装組織で、GNドライヴ搭載MSを持つ。国家を超えた暴力で紛争へ介入し、新たな対立を生んだ。"
+    },
+    "motto": { "zh": "以武力根绝战争", "ja": "武力による戦争の根絶" },
+    "relations": []
+  },
+  {
+    "id": "neo-japan",
+    "name": { "zh": "新日本", "ja": "ネオジャパン", "en": "Neo Japan" },
+    "short": "N.J.",
+    "color": "#F87171",
+    "eraIds": ["fc"],
+    "description": {
+      "zh": "未来世纪的高达武斗会参赛国之一，以日本列岛为母体。多蒙·卡修与神高达代表其出战第十三届大会。",
+      "ja": "未来世紀のガンダムファイト参加国の一つで、日本列島を母体とする。ドモン・カッシュとゴッドガンダムが第13回大会に参戦した。"
+    },
+    "relations": []
+  },
+  {
+    "id": "oz",
+    "name": { "zh": "OZ", "ja": "OZ", "en": "OZ" },
+    "short": "OZ",
+    "color": "#A78BFA",
+    "eraIds": ["ac"],
+    "description": {
+      "zh": "罗姆菲拉财团旗下的军事组织，后发动政变控制地球圈。其“以武力终结战争”的逻辑与五台高达正面冲突。",
+      "ja": "ロームフェラ財団傘下の軍事組織。後にクーデターで地球圏を掌握した。「武力で戦争を終わらせる」論理が五機のガンダムと衝突する。"
+    },
+    "relations": []
+  },
+  {
+    "id": "new-une",
+    "name": { "zh": "新联合国", "ja": "新連邦", "en": "New UNE" },
+    "short": "N.U.N.E.",
+    "color": "#38BDF8",
+    "eraIds": ["aw"],
+    "description": {
+      "zh": "第七次宇宙战争后重建的地球统一政权，对殖民地实施高压统治。其猎杀新人类与掠夺技术的政策催生了新的反抗。",
+      "ja": "第7次宇宙戦争後に再建された地球統一政権で、殖民星を高圧的に統治した。ニュータイプ狩りと技術略奪が新たな抵抗を生んだ。"
+    },
+    "relations": []
+  },
+  {
+    "id": "vist-foundation",
+    "name": { "zh": "毕斯特财团", "ja": "ヴィスト財団", "en": "Vist Foundation" },
+    "short": "VIST",
+    "color": "#94A3B8",
+    "eraIds": ["uc"],
+    "founded": "U.C.0001",
+    "description": {
+      "zh": "掌握联邦经济命脉的财团，也是“拉普拉斯之盒”的世代看守者。它把宪章原始条文当作政治筹码，直到 U.C.0096 被公开。",
+      "ja": "連邦経済の要を握る財団で、「ラプラスの箱」の世代的な管理者。憲章の原条文を政治的取引材料としてきたが、U.C.0096に公開された。"
+    },
+    "relations": [{ "targetId": "earth-federation", "type": "alliance" }]
+  }
+]

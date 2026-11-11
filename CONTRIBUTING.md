@@ -1,0 +1,100 @@
+# Contributing
+
+感谢你愿意参与 GAIA Archive。这个项目同时接受**内容考据**与**工程**贡献，但两者的门槛不同：内容必须可追溯，代码必须可构建。
+
+## 1. 环境
+
+- Node.js ≥ 20.9（推荐 22）
+- pnpm（推荐）或 npm
+- 可选：Python 3（仅 `pnpm preview` 静态预览）
+
+```bash
+git clone <repo>
+cd gaia-archive
+pnpm install
+pnpm dev
+```
+
+## 2. 命令
+
+| 命令 | 作用 |
+| --- | --- |
+| `pnpm dev` | 开发服务器 |
+| `pnpm validate` | schema + 外键 + 谱系 DAG + 双向关联 |
+| `pnpm typecheck` | TypeScript |
+| `pnpm build` | 静态导出到 `out/` |
+| `pnpm preview` | 本地预览 `out/`（python3） |
+
+提交前至少运行 `pnpm validate && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
+
+## 3. 代码贡献
+
+- 语言：TypeScript strict；不使用 `any` 逃避类型（查看器三方 ref 可用 `any` 并注释）。
+- 组件：默认 Server Component；需要状态/浏览器 API 才加 `"use client"`。
+- 内容读取只能在服务端（`src/lib/content.ts`）；客户端只接收纯数据。
+- 样式：使用 `src/app/globals.css` 的 Token 与 `src/styles/` 的类；不要引入第二套设计系统。
+- 提交信息：Conventional Commits
+
+```
+feat(viewer): add orthographic camera preset
+fix(content): correct RX-78-2 thrust source
+docs(governance): clarify B-level source usage
+chore(ci): cache pnpm store
+```
+
+- 不提交 `node_modules/`、`.next/`、`out/`、`.DS_Store`。
+- 不引入官方美术、模型、扫描设定集。
+
+## 4. 内容贡献
+
+先读：
+
+- [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md)
+- [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)
+- [docs/GOVERNANCE.md](docs/GOVERNANCE.md)
+
+最低要求：
+
+1. 每条参数/谱系边有 `sources`；
+2. 缺失参数留 `null`，不估算；
+3. 驾驶员/事件/人物双向回指；
+4. 中日文本的型号、数值、年份一致；
+5. `pnpm validate` 通过；
+6. PR 附出处与页面截图。
+
+## 5. Pull Request
+
+PR 描述请包含：
+
+- 变更类型（feat / fix / content / docs / chore）
+- 影响的条目与页面
+- 出处（作品集数、设定集页码、官方 URL）
+- 截图（机体页含 3D、参数、谱系；移动端如涉及布局）
+- 已知限制/待核项
+
+Review 关注：
+
+- 事实与出处，而不是“看起来像”；
+- 数据是否破坏谱系 DAG 或双向关联；
+- 双语是否一致；
+- 是否引入官方素材或第三方数据库内容；
+- 性能预算（首屏 JS、3D 资产体积）。
+
+## 6. 本地截图（可选）
+
+项目不强制提交截图工具。维护者使用 Chrome DevTools Protocol 或 Playwright 生成 `preview/` 图片；截图应保持 1440px 宽（移动端 390px），不裁剪关键 UI。
+
+## 7. 行为准则
+
+- 对事不对人；考据分歧用出处说话。
+- 不发布剧透警告之外的攻击性内容。
+- 不冒充官方；所有页面保留非官方声明。
+- 发现版权问题优先开 issue，不自行下线他人内容。
+
+## 8. License
+
+提交即表示你同意：
+
+- 代码以 MIT 许可；
+- 原创文本/图表以 CC BY-NC-SA 4.0 许可；
+- 你拥有提交内容的权利，或已获得授权。

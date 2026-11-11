@@ -1,0 +1,90 @@
+{
+  "id": "rx-93-nu",
+  "modelCode": "RX-93",
+  "name": { "zh": "ν 高达", "ja": "νガンダム", "en": "Nu Gundam" },
+  "aliases": ["牛高达", "ν高达", "Nu Gundam", "ニューガンダム"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": { "year": 93, "month": 3, "day": 12, "precision": "day" },
+  "summary": {
+    "zh": "阿姆罗·雷为阿克西斯作战专门定制的 NT 专用机。精神感应框架与六枚飞翼浮游炮，把“驾驶员意识”直接变成了机体的一部分。",
+    "ja": "アムロ・レイがアクシズ作戦のために特注したNT専用機。サイコフレームと六基のフィン・ファンネルにより、「パイロットの意識」を機体の一部へ変えた。"
+  },
+  "description": {
+    "zh": [
+      "ν 高达由阿纳海姆在极短时间内完成，设计上优先保证阿姆罗个人的操作习惯与 Newtype 感知。精神感应框架被嵌入驾驶舱周围，使机体的响应几乎与驾驶员的意图同步。",
+      "飞翼浮游炮既是远程火力，也是可回收的推进与防御单元。U.C.0093 的阿克西斯作战中，该机与沙扎比在要塞内部缠斗，最终以精神感应框架的共鸣阻止了地球直击。"
+    ],
+    "ja": [
+      "νガンダムはアナハイムが極短期間で完成させ、アムロ個人の操作癖とニュータイプ感応を最優先した設計となった。コクピット周辺に組み込まれたサイコフレームにより、機体の応答はパイロットの意図とほぼ同期する。",
+      "フィン・ファンネルは遠隔火力であると同時に、回収可能な推進・防御ユニットでもある。U.C.0093のアクシズ作戦ではサザビーと要塞内部で交戦し、最後はサイコフレームの共振で地球直撃を阻止した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 22.0,
+    "heightHead": 20.0,
+    "weightEmpty": 27.9,
+    "weightFull": 63.0,
+    "powerOutput": 2980,
+    "thrust": 97800,
+    "sensorRadius": 20000,
+    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+  },
+  "armament": [
+    { "name": { "zh": "飞翼浮游炮 ×6", "ja": "フィン・ファンネル ×6" }, "type": "special" },
+    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
+    { "name": { "zh": "超级火箭炮", "ja": "ハイパー・バズーカ" }, "type": "kinetic" },
+    { "name": { "zh": "光束军刀", "ja": "ビームサーベル" }, "type": "melee" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["psychoframe", "funnel", "gundarium", "beam-weapon"],
+  "pilots": [{ "characterId": "amuro-ray", "note": { "zh": "专用机", "ja": "専用機" } }],
+  "eventIds": ["axis-drop"],
+  "workIds": ["cca-1988"],
+  "edges": [
+    {
+      "to": "msn-04-sazabi",
+      "kind": "tech_from",
+      "techTag": "psycommu",
+      "note": {
+        "zh": "联邦与吉翁在赛可缪／精神感应兵器上的竞逐，在新吉翁旗舰上形成对照。",
+        "ja": "連邦とジオンによるサイコミュ／精神感应兵器の競争は、ネオ・ジオンの旗艦機に対照をなした。"
+      },
+      "sources": [{ "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }]
+    },
+    {
+      "to": "rx-0-unicorn",
+      "kind": "tech_from",
+      "techTag": "psychoframe",
+      "note": {
+        "zh": "精神感应框架在独角兽上发展为全身骨架级应用。",
+        "ja": "サイコフレームはユニコーンで全身フレーム級の応用へ発展した。"
+      },
+      "sources": [{ "label": "《机动战士高达 UC》设定资料", "level": "A" }]
+    }
+  ],
+  "viewer": {
+    "head": "fin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E9EEF3",
+      "secondary": "#1F2937",
+      "accent": "#C9A227",
+      "eye": "#7DE3FF",
+      "frame": "#3F4A57"
+    }
+  },
+  "sources": [
+    { "label": "剧场版《机动战士高达 逆袭的夏亚》", "level": "S" },
+    { "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

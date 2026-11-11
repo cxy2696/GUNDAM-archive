@@ -1,0 +1,69 @@
+{
+  "id": "msn-04-sazabi",
+  "modelCode": "MSN-04",
+  "name": { "zh": "沙扎比", "ja": "サザビー", "en": "Sazabi" },
+  "aliases": ["萨扎比", "Sazabi", "サザビー", "夏亚专用机"],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "neo-zeon",
+  "canon": "mainline",
+  "firstAppear": { "year": 93, "month": 3, "day": 12, "precision": "day" },
+  "summary": {
+    "zh": "新吉翁为夏亚打造的 NT 专用重型机。25.6 米的身躯、六枚浮游炮与赛可缪系统，让它在阿克西斯作战中成为 ν 高达最直接的对手。",
+    "ja": "ネオ・ジオンがシャアのために建造したNT専用大型機。25.6mの巨体、六基のファンネル、サイコミュを備え、アクシズ作戦でνガンダムの最大の敵となった。"
+  },
+  "description": {
+    "zh": [
+      "沙扎比是吉翁系 MS 设计哲学的集大成：大出力反应炉、厚重装甲、赛可缪与浮游炮全部堆到单机极限。它的体积与推力都远超联邦同期机体，代价是极高的生产成本。",
+      "夏亚在阿克西斯作战中驾驶该机。浮游炮在要塞内部空间受限，但仍为 ν 高达制造了巨大压力。两台机体最终在精神感应框架的共鸣中一起失去了控制。"
+    ],
+    "ja": [
+      "サザビーはジオン系MS設計思想の集大成である。高出力反応炉、重厚な装甲、サイコミュ、ファンネルを単機の限界まで積み上げた。体積と推力は連邦の同時期機を大きく上回るが、生産コストは極めて高かった。",
+      "シャアはアクシズ作戦でこの機体を駆った。ファンネルは要塞内部では使いにくかったが、それでもνガンダムに大きな圧力を与えた。最後は二機ともサイコフレームの共振の中で制御を失った。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 25.6,
+    "heightHead": 24.0,
+    "weightEmpty": 30.5,
+    "weightFull": 71.2,
+    "powerOutput": 3960,
+    "thrust": 133000,
+    "sensorRadius": 22600,
+    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+  },
+  "armament": [
+    { "name": { "zh": "光束霰弹步枪", "ja": "ビーム・ショット・ライフル" }, "type": "beam" },
+    { "name": { "zh": "浮游炮 ×6", "ja": "ファンネル ×6" }, "type": "special" },
+    { "name": { "zh": "腹部米加粒子炮", "ja": "腹部メガ粒子砲" }, "type": "beam" },
+    { "name": { "zh": "光束军刀", "ja": "ビームサーベル" }, "type": "melee" },
+    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+  ],
+  "tags": ["psycommu", "funnel", "gundarium", "beam-weapon"],
+  "pilots": [{ "characterId": "char-aznable", "note": { "zh": "新吉翁统帅座机", "ja": "ネオ・ジオン総帥の搭乗機" } }],
+  "eventIds": ["axis-drop"],
+  "workIds": ["cca-1988"],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "heavy",
+    "shoulder": "round",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#B3262E",
+      "secondary": "#2A0E12",
+      "accent": "#E3B341",
+      "eye": "#FF6B6B",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    { "label": "剧场版《机动战士高达 逆袭的夏亚》", "level": "S" },
+    { "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

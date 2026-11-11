@@ -1,0 +1,78 @@
+{
+  "id": "ms-06f-zaku-ii",
+  "modelCode": "MS-06F",
+  "name": { "zh": "扎古 II", "ja": "ザクII", "en": "Zaku II" },
+  "aliases": ["扎古", "Zaku", "ザク", "MS-06"],
+  "unitType": "mass_production",
+  "eraId": "uc",
+  "factionId": "zeon",
+  "canon": "mainline",
+  "firstAppear": { "year": 79, "month": 1, "day": 3, "precision": "day" },
+  "summary": {
+    "zh": "吉翁公国的主力量产机，也是“机动战士”这一兵器概念最早成形的载体。单机性能平庸，却以产量与泛用性撑起了整场一年战争。",
+    "ja": "ジオン公国の主力量産機であり、「モビルスーツ」という兵器概念が最初に結実した機体。単機性能は凡庸だが、生産性と汎用性で一年戦争を支えた。"
+  },
+  "description": {
+    "zh": [
+      "MS-06F 是扎古 I 的全面改良型，采用热核反应炉与超硬钢装甲，武装以 120mm 机枪、热能斧与扎古火箭炮为主。它的维护性极好，殖民卫星工厂与前线简易船坞都能完成整备。",
+      "从鲁姆会战到地球降下作战，扎古 II 几乎出现在一年战争的每一条战线上。它不是最强的 MS，却是最能说明吉翁“以量产技术发动战争”这一战略的机体。"
+    ],
+    "ja": [
+      "MS-06FはザクIの全面改良型で、熱核反応炉と超硬鋼装甲を採用。武装は120mmマシンガン、ヒートホーク、ザク・バズーカが中心である。整備性に優れ、殖民星の工場でも前線の簡易ドックでも整備できた。",
+      "ルウム戦役から地球降下作戦まで、ザクIIは一年戦争のほぼ全ての戦線に現れた。最強のMSではないが、ジオンの「量産技術で戦争を起こす」戦略を最もよく示す機体である。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.5,
+    "heightHead": 17.5,
+    "weightEmpty": 58.1,
+    "weightFull": 78.0,
+    "powerOutput": 951,
+    "thrust": 43200,
+    "sensorRadius": 3200,
+    "armor": { "zh": "超硬钢合金", "ja": "超硬鋼合金" }
+  },
+  "armament": [
+    { "name": { "zh": "120mm 扎古机枪", "ja": "120mmザク・マシンガン" }, "type": "kinetic" },
+    { "name": { "zh": "热能斧", "ja": "ヒートホーク" }, "type": "melee" },
+    { "name": { "zh": "扎古火箭炮", "ja": "ザク・バズーカ" }, "type": "kinetic" },
+    { "name": { "zh": "腿部导弹荚舱 ×2", "ja": "脚部ミサイル・ポッド ×2" }, "type": "kinetic" }
+  ],
+  "tags": ["thermonuclear", "minovsky"],
+  "pilots": [],
+  "eventIds": ["one-year-war", "battle-of-loum", "operation-british", "jaburo-assault"],
+  "workIds": ["msg-1979"],
+  "edges": [
+    {
+      "to": "ms-06s-zaku-ii",
+      "kind": "derive_of",
+      "note": {
+        "zh": "指挥官型在 F 型基础上强化反应炉与机动性，并加装角状天线。",
+        "ja": "指揮官型はF型を基に反応炉と機動性を強化し、角状アンテナを追加した。"
+      },
+      "sources": [{ "label": "《机动战士高达》MSV 设定资料", "level": "A" }]
+    }
+  ],
+  "viewer": {
+    "head": "mono",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#4E6B45",
+      "secondary": "#2F4030",
+      "accent": "#C7D2C0",
+      "eye": "#FF5A5F",
+      "frame": "#3A3F3A"
+    }
+  },
+  "sources": [
+    { "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" },
+    { "label": "《机动战士高达》MSV 设定资料", "level": "A" }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}
