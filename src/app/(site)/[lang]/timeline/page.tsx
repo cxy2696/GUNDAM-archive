@@ -45,7 +45,7 @@ export default async function TimelinePage({
               <h1>{dict.timeline.title}</h1>
             </div>
             <div className="page-head__figure" aria-hidden>
-              <span className="mono">07</span>
+              <span className="mono">{String(bundle.eras.length).padStart(2, "0")}</span>
               <span className="micro">ERAS / LANES</span>
             </div>
           </div>

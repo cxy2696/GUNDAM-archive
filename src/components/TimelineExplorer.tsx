@@ -313,9 +313,20 @@ export function TimelineExplorer({
               <p className="tl-drawer__summary">{pick(selected.summary, lang)}</p>
 
               <div className="tl-drawer__block">
+                <span className="micro">{dict.timeline.eventCourse}</span>
+                {selected.detail[lang].map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)} className="tl-drawer__detail">{paragraph}</p>
+                ))}
+              </div>
+
+              <div className="tl-drawer__block">
                 <span className="micro">{dict.timeline.outcome}</span>
                 <p>{pick(selected.outcome, lang)}</p>
               </div>
+
+              <Link href={`/${lang}/events/${selected.id}`} className="btn btn--sm tl-drawer__record">
+                {dict.timeline.openRecord} →
+              </Link>
 
               {selectedPlace && (
                 <div className="tl-drawer__row">

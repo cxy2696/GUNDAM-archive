@@ -172,7 +172,8 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 | `factionIds` | ref[] | — | 参战方 |
 | `machineIds` | ref[] | — | 关联机体 |
 | `characterIds` | ref[] | — | 关联人物 |
-| `summary` | localized | ✓ | |
+| `summary` | localized | ✓ | 一句话概述 |
+| `detail` | `{zh:string[],ja:string[]}` | ✓ | 事件经过的长解释；至少 1 段，建议 2–4 段 |
 | `outcome` | localized | ✓ | 结果 |
 | `canon` | enum | ✓ | |
 | `mainline` | boolean | — | 默认 true，年表“仅主线”过滤 |
@@ -196,6 +197,10 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
 | `id` / `name` | slug / 三语 | |
+| `aliases` | string[] | 别名/称号，默认空 |
+| `age` | localized | 年龄；标“约”的为推定 |
+| `rank` | localized | 军衔 / 身份 |
+| `origin` | localized | 出身地 / 殖民地 |
 | `factionId` | ref | 主所属 |
 | `affiliations[]` | `{factionId,period}` | 多段任期/转阵营 |
 | `eraIds` | ref[] | |
@@ -221,7 +226,7 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 
 ### Tag
 
-`id, name{zh,ja,en}, category, description{zh,ja}`。标签是跨纪元比较的唯一公共语言；新增前先检查是否已有同义标签。
+`id, name{zh,ja,en}, category, description{zh,ja}, detail{zh:string[],ja:string[]}`。`description` 是一句话定义，`detail` 解释来源、机制、代价与历史作用（至少 1 段）。标签是跨纪元比较的唯一公共语言；新增前先检查是否已有同义标签。
 
 ## 9. 单位与换算
 
@@ -237,7 +242,7 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 
 ## 9.1 出处覆盖范围
 
-V1 的 `sources` 覆盖：
+当前版本的 `sources` 覆盖：
 
 | 实体 | 是否强制 `sources` | 说明 |
 | --- | --- | --- |
@@ -258,12 +263,13 @@ V1 的 `sources` 覆盖：
 5. 每条谱系边至少一条出处。
 6. 机体驾驶员 ↔ 人物 `machineIds` 双向。
 7. 机体事件 ↔ 事件 `machineIds` 双向。
-8. 人物事件 ↔ 事件 `characterIds` 双向。
+8. 人物事件 ↔ 事件 `characterIds` 双向；
+9. 每个 Tag 必须有 `detail`，每个 Event 必须有 `detail`，每个 Character 必须有 `age / rank / origin`。
 9. 人物 `affiliations` 的势力必须存在。
 
 ## 11. 资产清单（预留）
 
-未来 glTF 资产使用 `asset-manifest.json`，字段见 [ASSET_PIPELINE.md](ASSET_PIPELINE.md)：`machineSlug, version, scale, bounds, lods[], parts[], materials, animations[], designSheets[]`。V1 的 `viewer` 是 LOD-P 占位；两者通过 `machineSlug` 对应。
+未来 glTF 资产使用 `asset-manifest.json`，字段见 [ASSET_PIPELINE.md](ASSET_PIPELINE.md)：`machineSlug, version, scale, bounds, lods[], parts[], materials, animations[], designSheets[]`。当前的 `viewer` 是 LOD-P 占位；两者通过 `machineSlug` 对应。
 
 ## 12. 版本与迁移
 

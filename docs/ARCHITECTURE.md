@@ -1,18 +1,18 @@
 # 架构与决策记录
 
-> 对应方案书第二章、第四章、第五章。本文记录 **V1 实际实现** 与 **目标架构** 的差异，避免把路线图误读成现状。
+> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（V2.1）** 与 **目标架构** 的差异，避免把路线图误读成现状。
 
 ## 1. 约束与目标
 
-- 全栈 TypeScript，前后端共享类型；V1 先做内容与阅读体验，不先拆服务。
+- 全栈 TypeScript，前后端共享类型；当前阶段先做内容与阅读体验，不先拆服务。
 - 内容与代码分离：新增机体、事件、人物不改页面代码。
 - 可静态托管：无数据库、无服务端运行时也能完整浏览。
 - 构建即校验：内容错误必须阻止发布，而不是运行时 404。
-- 3D 资产走 glTF 2.0 开放标准；V1 用程序化占位资产先跑通交互与数据结构。
+- 3D 资产走 glTF 2.0 开放标准；当前用程序化占位资产先跑通交互与数据结构。
 
 ## 2. 六层模型（as-built / target）
 
-| 层 | 目标（方案书） | V1 实际 | 迁移动作 |
+| 层 | 目标（方案书） | 当前实现 | 迁移动作 |
 | --- | --- | --- | --- |
 | L1 表现层 | Next.js 15 + React 19 + R3F + Tailwind | Next.js 15 App Router + 手写 CSS Token + R3F | 可逐步引入 Tailwind，不改组件 API |
 | L2 应用层 | Server Actions / tRPC / GraphQL | React Server Components + 构建期内容装载 | 详情页聚合查询可换成 GraphQL |
@@ -100,18 +100,18 @@ MechViewer (client)
 
 ## 7. 双语路由
 
-- 路由：`/zh/...` 与 `/ja/...`，`[lang]` 段在 `generateStaticParams` 中固定为两种。
+- 路由：`/zh/...` 与 `/ja/...`，`[lang]` 段在 `generateStaticParams` 中固定为两种；机体、人物、事件、势力各有详情页，`/glossary` 汇总术语，`/chronology` 汇总世纪表。
 - 目录：`app/(site)/[lang]/` 是站点组的 root layout，直接输出 `<html lang="ja">` 或 `zh-CN`；`app/(root)/` 承载 `/` 重定向页。这样每种语言都有正确的 `lang` 属性，而不是在客户端改。
 - 元数据：每页 `alternates.languages` 输出 `zh-CN` / `ja-JP` / `x-default`。
 - 内容：`name` / `summary` / `description` 均为 `{ zh, ja }`；schema 强制双语，避免半成品。
 - 排版：`html lang` + `data-lang` 作用域切换字体栈与断行规则；数值使用统一等宽字体。
 - 切换器：`LanguageSwitch` 同时出现在桌面头部、移动菜单与页脚；切换时保留 path / query / hash，并把 `scrollY` 写入 sessionStorage，由 `ScrollRestore` 在目标页恢复。活动语言有 `aria-current="true"`。
 - 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gundam-lang`，否则按 `navigator.language` 选择 `/zh/` 或 `/ja/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
-- 缺失策略：V1 内容全部双语；若未来出现缺译，按方案书 6.7 的降级规则显示原名 + 提示，不用机翻冒充人工稿。
+- 缺失策略：当前内容全部双语；若未来出现缺译，按方案书 6.7 的降级规则显示原名 + 提示，不用机翻冒充人工稿。
 
 ## 8. 检索
 
-- 构建期生成 347 条索引（147 机体 + 73 人物 + 35 势力 + 50 事件 + 42 作品）。
+- 构建期生成 378 条索引（147 机体 + 73 人物 + 35 势力 + 50 事件 + 42 作品 + 31 技术标签）。
 - 纯客户端评分：精确命中 > 前缀 > 包含；同分时机体优先。
 - 索引字段：中/日/英名、型号、别名、阵营、纪元、摘要关键词。
 - `⌘K` 面板与 `/search` 共用 `searchEntries()`；面板是快速入口，检索页是可分享的完整结果。
@@ -121,14 +121,14 @@ MechViewer (client)
 - `output: "export"`：`out/` 可直接放 CDN；无 Node 运行时。
 - 内容更新 = 重新构建，构建产物文件名带内容哈希，CDN 自然失效。
 - GitHub Pages 项目页通过 `NEXT_PUBLIC_BASE_PATH` 适配子路径。
-- V1 没有 Redis / ISR；对于“内容变更频率低、读多写少”的档案站，这是成本更低的正确选择。
+- 当前没有 Redis / ISR；对于“内容变更频率低、读多写少”的档案站，这是成本更低的正确选择。
 
 ## 10. 决策记录（ADR 摘要）
 
 | 决策 | 选择 | 理由 | 代价 |
 | --- | --- | --- | --- |
 | ADR-001 | 静态导出优先 | 无运行时、CDN 友好、可 GitHub Pages | 无实时写/登录 |
-| ADR-002 | JSON + Zod 作为 V1 数据层 | 内容契约先固定，迁移 DB 成本低 | 无事务/并发编辑 |
+| ADR-002 | JSON + Zod 作为当前数据层 | 内容契约先固定，迁移 DB 成本低 | 无事务/并发编辑 |
 | ADR-003 | 程序化 LOD-P | 先验证交互与 partId 契约，不被美术阻塞 | 观感非最终品质 |
 | ADR-004 | 客户端索引检索 | 数据量小，零后端 | 大数据量需 Meilisearch |
 | ADR-005 | 不用 Tailwind | 视觉系统高度定制，手写 Token 更可控 | 需要维护 CSS |

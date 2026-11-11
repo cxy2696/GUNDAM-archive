@@ -13,6 +13,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
     { href: `/${lang}/tech-tree`, label: dict.nav.techTree },
     { href: `/${lang}/timeline`, label: dict.nav.timeline },
     { href: `/${lang}/chronology`, label: dict.nav.chronology },
+    { href: `/${lang}/glossary`, label: dict.nav.glossary },
     { href: `/${lang}/map`, label: dict.nav.map },
     { href: `/${lang}/archive`, label: dict.nav.archive },
     { href: `/${lang}/about`, label: dict.nav.about },
@@ -44,7 +45,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             <h3 className="micro">DATA</h3>
             <span>{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
             <span>{bundle.eras.length} ERAS / {bundle.tags.length} TAGS</span>
-            <span>DATA CUT · 2026.11.11</span>
+            <span>DATA CUT · 2026.11.12</span>
             <Link href={`/${lang}/about`}>{dict.about.govTitle}</Link>
           </div>
           <div className="footer__col">
@@ -54,7 +55,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>
             <Link href={`/${lang}/about#license`}>{dict.about.licenseTitle}</Link>
-            <span>v1.4.0</span>
+            <span>v2.1.0</span>
           </div>
         </div>
 

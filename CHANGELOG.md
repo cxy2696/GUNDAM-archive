@@ -3,6 +3,25 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [2.1.0] — 2026-11-12
+
+### Added
+
+- **Cockpit HUD**: fixed corner brackets, scanline, pointer-following reticle, live clock/link status, and an inline `HUD` toggle. The HUD is decorative and never blocks pointer input; it is disabled in print and reduced-motion modes.
+- **Reading mode**: `A+ / A−` control persists a larger type scale for body copy, cards, dossiers, drawers and tables.
+- **Glossary page** at `/[lang]/glossary`: 31 controlled technology tags with long explanations, category filters, search, related machines, 12 reading terms and an era quick-reference.
+- **Event dossier pages** at `/[lang]/events/[slug]`: 50 pages with background/course, outcome, participants, machines, characters, sources and previous/next navigation.
+- **Character service record**: age, rank/identity, origin, aliases and a chronological line of piloted machines and related events.
+- **Explanation depth**: every tag now has a `detail` array; every event has a `detail` array; every character has `age`, `rank` and `origin` fields. Validation rejects missing explanations.
+
+### Changed
+
+- Base body type is 16px; machine summaries, dossier text, event text, character bios, glossary cards and tables are larger and higher-contrast.
+- Event drawer now includes the full event explanation and a link to the event dossier.
+- Search now indexes technology tags and links events to their dossier pages.
+- Static pages: 630; search index: 378; events: 50; tags: 31; characters: 73.
+- Version bumped to `2.1.0`.
+
 ## [2.0.0] — 2026-11-12
 
 ### Added

@@ -86,6 +86,10 @@ export type Faction = z.infer<typeof factionSchema>;
 export const characterSchema = z.object({
   id: slug,
   name: z.object({ zh: z.string(), ja: z.string(), en: z.string() }),
+  aliases: z.array(z.string()).default([]),
+  age: localized.optional(),
+  rank: localized.optional(),
+  origin: localized.optional(),
   factionId: slug,
   /** Additional affiliations with a period, used for characters who changed sides. */
   affiliations: z
@@ -144,6 +148,11 @@ export const eventSchema = z.object({
   machineIds: z.array(slug).default([]),
   characterIds: z.array(slug).default([]),
   summary: localized,
+  /** Longer, human-readable explanation of background, course and consequences. */
+  detail: z.object({
+    zh: z.array(z.string()).min(1),
+    ja: z.array(z.string()).min(1),
+  }),
   outcome: localized,
   canon: z.enum(CANON_LEVELS),
   mainline: z.boolean().default(true),
@@ -156,6 +165,11 @@ export const tagSchema = z.object({
   name: z.object({ zh: z.string(), ja: z.string(), en: z.string() }),
   category: z.enum(["armor", "power", "sensor", "weapon", "system", "frame"]),
   description: localized,
+  /** Longer explanation: origin, mechanism, trade-offs and historical role. */
+  detail: z.object({
+    zh: z.array(z.string()).min(1),
+    ja: z.array(z.string()).min(1),
+  }),
 });
 export type Tag = z.infer<typeof tagSchema>;
 
@@ -304,6 +318,22 @@ export function validateBundle(bundle: Bundle): string[] {
     e.factionIds.forEach((id) => checkRef(`event ${e.id}.factionIds`, id, factionIds));
     e.machineIds.forEach((id) => checkRef(`event ${e.id}.machineIds`, id, machineIds));
     e.characterIds.forEach((id) => checkRef(`event ${e.id}.characterIds`, id, characterIds));
+  }
+
+  for (const t of bundle.tags) {
+    if (!t.detail.zh.length || !t.detail.ja.length) {
+      errors.push(`tag ${t.id}: 缺少人类可读的长解释 detail`);
+    }
+  }
+  for (const e of bundle.events) {
+    if (!e.detail.zh.length || !e.detail.ja.length) {
+      errors.push(`event ${e.id}: 缺少人类可读的事件解释 detail`);
+    }
+  }
+  for (const c of bundle.characters) {
+    for (const field of ["age", "rank", "origin"] as const) {
+      if (!c[field]) errors.push(`character ${c.id}: 缺少 ${field}`);
+    }
   }
 
   for (const m of bundle.machines) {

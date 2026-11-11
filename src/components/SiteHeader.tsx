@@ -12,6 +12,7 @@ import {
   SunIcon,
 } from "./Icons";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { HudControls } from "./HudControls";
 import type { Dictionary } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 
@@ -20,6 +21,7 @@ const navItems = [
   { key: "techTree", path: "/tech-tree" },
   { key: "timeline", path: "/timeline" },
   { key: "chronology", path: "/chronology" },
+  { key: "glossary", path: "/glossary" },
   { key: "map", path: "/map" },
   { key: "archive", path: "/archive" },
   { key: "about", path: "/about" },
@@ -103,6 +105,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
               <SearchIcon size={17} />
               <kbd>⌘K</kbd>
             </button>
+            <HudControls lang={lang} dict={dict} className="header__hud" />
             <LanguageSwitch lang={lang} dict={dict} />
             <button
               type="button"
@@ -143,6 +146,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
               {theme === "dark" ? <SunIcon size={16} /> : <MoonIcon size={16} />}
               {theme === "dark" ? dict.common.themeLight : dict.common.themeDark}
             </button>
+            <HudControls lang={lang} dict={dict} className="hud-inline--menu" />
             {menuOpen && <LanguageSwitch lang={lang} dict={dict} className="lang-switch--menu" />}
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { normalizeQuery } from "./format";
 import type { Dictionary } from "./i18n";
 
-export type SearchType = "machine" | "character" | "faction" | "event" | "work";
+export type SearchType = "machine" | "tag" | "character" | "faction" | "event" | "work";
 
 export type SearchEntry = {
   type: SearchType;
@@ -42,7 +42,7 @@ export function searchEntries(
 }
 
 export function groupResults(entries: SearchEntry[]): { type: SearchType; items: SearchEntry[] }[] {
-  const order: SearchType[] = ["machine", "character", "faction", "event", "work"];
+  const order: SearchType[] = ["machine", "tag", "character", "faction", "event", "work"];
   return order
     .map((type) => ({ type, items: entries.filter((e) => e.type === type) }))
     .filter((g) => g.items.length > 0);

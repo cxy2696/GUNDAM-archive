@@ -61,11 +61,23 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
     add({
       type: "event",
       id: e.id,
-      href: `/timeline?e=${e.id}`,
+      href: `/events/${e.id}`,
       title: pick(e.title, lang),
       subtitle: era?.code ?? "",
       meta: `${era?.code ?? ""}${String(e.date.year).padStart(4, "0")}`,
       keywords: [e.title.zh, e.title.ja],
+    });
+  }
+
+  for (const t of bundle.tags) {
+    add({
+      type: "tag",
+      id: t.id,
+      href: `/glossary#tag-${t.id}`,
+      title: pick(t.name, lang),
+      subtitle: t.category.toUpperCase(),
+      meta: `${bundle.machines.filter((m) => m.tags.includes(t.id)).length} MS`,
+      keywords: [t.name.zh, t.name.ja, t.name.en, t.description.zh, t.description.ja],
     });
   }
 

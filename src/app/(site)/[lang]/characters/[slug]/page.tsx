@@ -69,6 +69,26 @@ export default async function CharacterPage({
     })),
   ].filter((item): item is { faction: NonNullable<typeof faction>; period: string | null } => Boolean(item.faction));
 
+  const serviceRows = [
+    ...machines.map((machine) => ({
+      year: machine.firstAppear.year,
+      kind: "MS",
+      title: pick(machine.name, typed),
+      meta: machine.modelCode,
+      href: `/${typed}/machines/${machine.id}`,
+    })),
+    ...events.map((event) => {
+      const eventEra = getEra(event.eraId);
+      return {
+        year: event.date.year,
+        kind: "EVENT",
+        title: pick(event.title, typed),
+        meta: eventEra ? formatStoryDate(event.date, eventEra.code, typed) : String(event.date.year),
+        href: `/${typed}/events/${event.id}`,
+      };
+    }),
+  ].sort((a, b) => a.year - b.year || a.kind.localeCompare(b.kind));
+
   return (
     <>
       <header className="profile-head profile-head--character">
@@ -95,6 +115,11 @@ export default async function CharacterPage({
                 <span>{character.name.en}</span>
                 <span>{character.name.ja}</span>
               </div>
+              {character.aliases.length > 0 && (
+                <p className="profile-head__aliases">
+                  {dict.archive.aliases}: {character.aliases.join(" / ")}
+                </p>
+              )}
               <p className="profile-head__role">{pick(character.role, typed)}</p>
               <div className="tag-row">
                 {affiliations.map((affiliation) => (
@@ -113,6 +138,18 @@ export default async function CharacterPage({
                 <dt className="micro">{dict.archive.affiliation}</dt>
                 <dd>{faction ? pick(faction.name, typed) : "—"}</dd>
               </div>
+              {character.age && (
+                <div>
+                  <dt className="micro">{dict.archive.age}</dt>
+                  <dd>{pick(character.age, typed)}</dd>
+                </div>
+              )}
+              {character.rank && (
+                <div>
+                  <dt className="micro">{dict.archive.rank}</dt>
+                  <dd>{pick(character.rank, typed)}</dd>
+                </div>
+              )}
               <div>
                 <dt className="micro">{dict.machine.era}</dt>
                 <dd>{era ? `${era.code} · ${pick(era.name, typed)}` : "—"}</dd>
@@ -144,7 +181,31 @@ export default async function CharacterPage({
 
           <section className="profile-section">
             <div className="section__top">
-              <span className="micro">02 / {dict.archive.piloted}</span>
+              <span className="micro">02 / {dict.archive.serviceRecord}</span>
+              <span className="mono">{String(serviceRows.length).padStart(2, "0")} RECORDS</span>
+            </div>
+            <p className="profile-section__lead">{dict.archive.serviceRecordLead}</p>
+            <div className="service-list">
+              {serviceRows.length === 0 ? (
+                <p className="profile-empty">—</p>
+              ) : (
+                serviceRows.map((row, index) => (
+                  <Link key={`${row.kind}-${row.href}-${index}`} href={row.href} className="service-row">
+                    <span className="service-row__date mono">{String(row.year).padStart(4, "0")}</span>
+                    <span className={`service-row__kind service-row__kind--${row.kind.toLowerCase()}`}>{row.kind}</span>
+                    <span className="service-row__title">{row.title}</span>
+                    <span className="service-row__meta mono">{row.meta}</span>
+                    <span className="service-row__arrow" aria-hidden>→</span>
+                  </Link>
+                ))
+              )}
+            </div>
+            <p className="fold__note">{dict.archive.profileNote}</p>
+          </section>
+
+          <section className="profile-section">
+            <div className="section__top">
+              <span className="micro">03 / {dict.archive.piloted}</span>
               <span className="mono">{String(machines.length).padStart(2, "0")}</span>
             </div>
             {machines.length === 0 ? (
@@ -168,14 +229,14 @@ export default async function CharacterPage({
 
           <section className="profile-section">
             <div className="section__top">
-              <span className="micro">03 / {dict.machine.events}</span>
+              <span className="micro">04 / {dict.archive.relatedEvents}</span>
               <span className="mono">{String(events.length).padStart(2, "0")}</span>
             </div>
             <div className="event-list">
               {events.map((event) => {
                 const eventEra = getEra(event.eraId);
                 return (
-                  <Link key={event.id} href={`/${typed}/timeline?e=${event.id}`} className="event-row">
+                  <Link key={event.id} href={`/${typed}/events/${event.id}`} className="event-row">
                     <span className="event-row__date mono">
                       {eventEra ? formatStoryDate(event.date, eventEra.code, typed) : ""}
                     </span>
@@ -189,7 +250,7 @@ export default async function CharacterPage({
 
           <section className="profile-section">
             <div className="section__top">
-              <span className="micro">04 / {dict.archive.relations}</span>
+              <span className="micro">05 / {dict.archive.relations}</span>
               <span className="mono">{String(relations.length).padStart(2, "0")}</span>
             </div>
             <div className="rel-list">
@@ -210,6 +271,11 @@ export default async function CharacterPage({
         </div>
 
         <aside className="profile__aside">
+          <div className="profile-aside-card">
+            <span className="micro">{dict.archive.origin} / {dict.archive.rank}</span>
+            {character.origin && <span className="aside-fact">{pick(character.origin, typed)}</span>}
+            {character.rank && <span className="aside-fact">{pick(character.rank, typed)}</span>}
+          </div>
           <div className="profile-aside-card">
             <span className="micro">{dict.archive.affiliation}</span>
             {affiliations.map((affiliation) => (

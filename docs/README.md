@@ -31,7 +31,7 @@
 | [GLOSSARY.md](GLOSSARY.md) | 纪元、字段、工程词的人类可读解释 | 完整字段表、完整设定史 |
 | [GOVERNANCE.md](GOVERNANCE.md) | 来源分级、争议处理、版权、审核角色、AI 规则 | 技术架构、部署命令 |
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | Token、字体、组件、动效、语言切换、可访问性 | 内容事实、数据字段 |
-| [ROADMAP.md](ROADMAP.md) | M0–M5、V1.1、内容批次、风险 | 已实现能力的操作说明 |
+| [ROADMAP.md](ROADMAP.md) | M0–M5、V2.x、内容批次、风险 | 已实现能力的操作说明 |
 | [../CONTRIBUTING.md](../CONTRIBUTING.md) | 开发/内容贡献流程、提交规范、PR 清单 | 内容字段的完整定义 |
 | [../CHANGELOG.md](../CHANGELOG.md) | 版本变更 | 规划中的功能 |
 | [templates/](templates/) | 可复制的机体 JSON、asset-manifest 示例 | 生产数据 |

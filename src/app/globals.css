@@ -1311,3 +1311,373 @@ hr {
     margin-left: 0;
   }
 }
+
+/* ============================================================
+   COCKPIT HUD / 驾驶舱界面
+   Fixed, pointer-transparent frame. The site remains readable
+   with the HUD off; controls persist.
+   ============================================================ */
+
+:root {
+  --hud-x: 50vw;
+  --hud-y: 50vh;
+}
+
+body {
+  font-size: 16px;
+  background:
+    radial-gradient(1100px 680px at 50% -10%, rgba(34, 211, 238, 0.055), transparent 65%),
+    radial-gradient(800px 500px at 100% 100%, rgba(76, 141, 255, 0.035), transparent 70%),
+    var(--bg-base);
+}
+
+[data-theme="light"] {
+  --text-3: #5f7381;
+}
+
+.hud-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  color: var(--cyan);
+  opacity: 0.72;
+}
+
+[data-hud="off"] .hud-layer {
+  display: none;
+}
+
+.hud-layer--inner .hud-rail,
+.hud-layer--inner .hud-side {
+  display: none;
+}
+
+.hud-corner {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-color: color-mix(in srgb, var(--cyan) 55%, transparent);
+  border-style: solid;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.18));
+}
+
+.hud-corner--tl { top: 82px; left: 18px; border-width: 1px 0 0 1px; }
+.hud-corner--tr { top: 82px; right: 18px; border-width: 1px 1px 0 0; }
+.hud-corner--bl { bottom: 18px; left: 18px; border-width: 0 0 1px 1px; }
+.hud-corner--br { bottom: 18px; right: 18px; border-width: 0 1px 1px 0; }
+
+.hud-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -22%;
+  height: 22%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(34, 211, 238, 0.035) 45%,
+    rgba(34, 211, 238, 0.08) 50%,
+    transparent
+  );
+  animation: hud-scan 11s linear infinite;
+}
+
+@keyframes hud-scan {
+  from { transform: translateY(0); }
+  to { transform: translateY(560%); }
+}
+
+.hud-reticle {
+  position: absolute;
+  left: var(--hud-x);
+  top: var(--hud-y);
+  width: 72px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 220ms var(--ease);
+}
+
+.hud-reticle::before,
+.hud-reticle::after {
+  content: "";
+  position: absolute;
+  background: rgba(34, 211, 238, 0.26);
+}
+
+.hud-reticle::before {
+  left: 50%;
+  top: -12px;
+  bottom: -12px;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+.hud-reticle::after {
+  top: 50%;
+  left: -12px;
+  right: -12px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.hud-reticle i {
+  position: absolute;
+  inset: 29px;
+  border: 1px solid rgba(34, 211, 238, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
+}
+
+.hud-rail {
+  position: absolute;
+  left: 78px;
+  right: 78px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: color-mix(in srgb, var(--cyan) 70%, var(--text-3));
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.hud-rail--top { top: 86px; }
+.hud-rail--bottom { bottom: 30px; }
+
+.hud-side {
+  position: absolute;
+  top: 50%;
+  writing-mode: vertical-rl;
+  font-size: 7px;
+  letter-spacing: 0.28em;
+  color: var(--text-3);
+  opacity: 0.55;
+}
+
+.hud-side--left { left: 22px; transform: translateY(-50%) rotate(180deg); }
+.hud-side--right { right: 22px; transform: translateY(-50%); }
+
+.hud-controls {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid var(--line-strong);
+  background: color-mix(in srgb, var(--bg-panel) 88%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.hud-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  height: 28px;
+  padding: 0 9px;
+  border: 1px solid transparent;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  transition: color var(--dur), border-color var(--dur), background var(--dur);
+}
+
+.hud-btn:hover {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+
+.hud-btn.is-active {
+  color: var(--cyan);
+  border-color: var(--cyan-line);
+  background: var(--cyan-soft);
+}
+
+.hud-btn__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.hud-controls__lang {
+  padding: 0 6px;
+  font-size: 7px;
+  color: var(--text-3);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  .hud-rail { left: 40px; right: 40px; font-size: 7px; }
+  .hud-side { display: none; }
+  .hud-corner { width: 30px; height: 30px; }
+  .hud-reticle { display: none; }
+}
+
+@media (max-width: 680px) {
+  .hud-rail { display: none; }
+  .hud-corner--tl, .hud-corner--tr { top: 72px; }
+  .hud-controls { right: 10px; bottom: 10px; }
+  .hud-controls__lang { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hud-scan { animation: none; display: none; }
+  .hud-reticle { display: none; }
+}
+
+@media print {
+  .hud-layer, .hud-controls { display: none !important; }
+}
+
+/* ============================================================
+   READABILITY LAYER
+   The archive is dense; core reading surfaces get larger type
+   and calmer contrast. Decorative micro-labels stay compact.
+   ============================================================ */
+
+.mcard__summary {
+  font-size: 13px;
+  line-height: 1.68;
+  color: var(--text-2);
+  -webkit-line-clamp: 3;
+  min-height: 66px;
+}
+
+.mcard__name { font-size: 21px; }
+.mcard__name em { font-size: 10px; }
+.mcard__code { font-size: 10px; }
+.mcard__foot { font-size: 9px; }
+
+.fold__lead { font-size: 16px; line-height: 1.8; }
+.fold__paragraph { font-size: 14.5px; line-height: 1.95; }
+.fold__note { font-size: 9.5px; }
+
+.spec-row__label { font-size: 10.5px; }
+.spec-row__value { font-size: 13.5px; }
+.spec-row__value.is-missing { font-size: 11.5px; }
+.spec-row__ref { font-size: 8.5px; }
+
+.event-row__title { font-size: 13.5px; }
+.event-row__date { font-size: 9px; }
+.event-row__place { font-size: 9px; }
+
+.profile-paragraph { font-size: 15px; line-height: 1.95; }
+
+.tl-drawer__summary { font-size: 15.5px; line-height: 1.9; }
+.tl-drawer__block p { font-size: 13.5px; line-height: 1.9; }
+.tl-drawer__date { font-size: 10px; }
+
+.search-row__title { font-size: 15px; }
+.search-row__sub { font-size: 11.5px; }
+.search-row__type, .search-row__meta { font-size: 9px; }
+
+.chronology-table td { font-size: 12px; }
+.roster-table td { font-size: 12px; }
+.roster-table td.mono { font-size: 11px; }
+.roster-table__ja { font-size: 10px; }
+
+.tree__tagpanel p { font-size: 13.5px; line-height: 1.8; }
+.tnode b { font-size: 11.5px; }
+
+[data-read="lg"] body { font-size: 17px; }
+[data-read="lg"] .mcard__summary { font-size: 14.5px; min-height: 74px; }
+[data-read="lg"] .mcard__name { font-size: 23px; }
+[data-read="lg"] .fold__lead { font-size: 18px; }
+[data-read="lg"] .fold__paragraph { font-size: 16.5px; }
+[data-read="lg"] .profile-paragraph { font-size: 17px; }
+[data-read="lg"] .event-paragraph { font-size: 17px; }
+[data-read="lg"] .event-lead { font-size: 19px; }
+[data-read="lg"] .tl-drawer__summary { font-size: 17.5px; }
+[data-read="lg"] .tl-drawer__block p { font-size: 15.5px; }
+[data-read="lg"] .event-row__title { font-size: 15px; }
+[data-read="lg"] .spec-row__value { font-size: 15px; }
+[data-read="lg"] .chronology-table td { font-size: 13.5px; }
+[data-read="lg"] .roster-table td { font-size: 13.5px; }
+[data-read="lg"] .glossary-card__summary { font-size: 15px; }
+[data-read="lg"] .glossary-card__detail { font-size: 15.5px; }
+[data-read="lg"] .glossary-reader__item p { font-size: 15.5px; }
+
+/* Inline HUD controls live in the header (desktop) and mobile menu. */
+.hud-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 30px;
+  margin: 0 3px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 60%, transparent);
+}
+
+.hud-inline__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 38px;
+  height: 100%;
+  padding: 0 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  transition: color var(--dur), background var(--dur);
+}
+
+.hud-inline__btn + .hud-inline__btn { border-left: 1px solid var(--line); }
+.hud-inline__btn:hover { color: var(--text); }
+.hud-inline__btn.is-active { color: var(--cyan); background: var(--cyan-soft); }
+
+.hud-inline__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.hud-inline__lang {
+  padding: 0 6px;
+  font-size: 7px;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+}
+
+.hud-inline--menu { display: none; }
+
+@media (max-width: 1080px) {
+  .header__hud { display: none; }
+  .hud-inline--menu { display: inline-flex; height: 32px; margin: 4px 0 0; }
+}
+
+.hud-rail--top { top: 72px; }
+.hud-corner--tl, .hud-corner--tr { top: 74px; }
+
+/* Rails are useful at the top of a page, but must not sit over body text. */
+.hud-rail {
+  transition: opacity 260ms var(--ease);
+}
+
+[data-scrolled="true"] .hud-rail {
+  opacity: 0;
+}
+
+[data-scrolled="true"] .hud-scan {
+  opacity: 0.35;
+}

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildSearchIndex } from "@/lib/search-index";
+import { getBundle } from "@/lib/content";
 import { getDict, isLang } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
 import { ScrollRestore } from "@/components/ScrollRestore";
+import { CockpitHud } from "@/components/CockpitHud";
 import { display, mono } from "@/app/fonts";
 import { themeBootScript } from "@/app/theme-script";
 import "@/app/globals.css";
@@ -73,9 +75,10 @@ export default async function LangLayout({
   const typed = lang as Lang;
   const dict = getDict(typed);
   const entries = buildSearchIndex(typed);
+  const bundle = getBundle();
 
   return (
-    <html lang={typed === "ja" ? "ja" : "zh-CN"} data-theme="dark" suppressHydrationWarning>
+    <html lang={typed === "ja" ? "ja" : "zh-CN"} data-theme="dark" data-hud="on" data-read="std" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
@@ -83,6 +86,7 @@ export default async function LangLayout({
         <div className="site" data-lang={typed}>
           <ScrollRestore />
           <div className="site-bg" aria-hidden />
+          <CockpitHud dict={dict} machineCount={bundle.machines.length} eraCount={bundle.eras.length} />
           <SiteHeader lang={typed} dict={dict} />
           <main id="main" className="main">
             {children}

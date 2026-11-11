@@ -80,6 +80,14 @@ cp docs/templates/machine.template.json content/machines/my-machine.json
 
 武装类型只能是 `beam` / `kinetic` / `melee` / `special`。标签必须来自 `content/tags.json`；没有合适的标签，先提案新增（附定义与出处），不要塞自由文本。
 
+### 2.4.1 事件、人物与技术词条的“长解释”
+
+除了一句话摘要，以下字段现在是必填：
+
+- **Event**：`detail` 至少 1 段，写清背景、经过与影响；事件页会完整展开。
+- **Character**：`age`、`rank`、`origin` 必填；没有可靠资料时写“不详”，不要编造。
+- **Tag**：`detail` 至少 1 段，解释技术来源、机制、代价与历史作用；术语页会展示。
+
 ### 2.5 关联驾驶员、事件、作品
 
 ```json
@@ -192,7 +200,7 @@ pnpm build
 | 日文原名 | 官方写法，不自行简化或音译 |
 | 数值一致 | 中日文本中的型号、年份、数值必须完全一致 |
 | 长度预算 | 固定宽度组件按最长语言预留空间；按钮/标签避免写死宽度 |
-| 不冒充人工 | 机翻必须标记 `mt: true`（后续字段），V1 不接受机翻稿进入 `verified` |
+| 不冒充人工 | 机翻必须标记 `mt: true`（后续字段），当前不接受机翻稿进入 `verified` |
 
 ## 8. Review 清单
 

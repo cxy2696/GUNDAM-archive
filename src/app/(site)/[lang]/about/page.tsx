@@ -74,7 +74,7 @@ const extra = {
       { path: "docs/ASSET_PIPELINE.md", label: "glTF / LOD / manifest 规范" },
       { path: "docs/GOVERNANCE.md", label: "出处分级、争议与版权规则" },
     ],
-    roadmapTitle: "从 V1 到 V1.1",
+    roadmapTitle: "从 V2.0 到 V2.1",
     roadmapNote: "当前版本是“可运行的档案骨架”，不是最终形态。下一步优先接入真实 glTF 资产与后端内容服务。",
     version: "VERSION",
     cut: "DATA CUT",
@@ -99,7 +99,7 @@ const extra = {
       { path: "docs/ASSET_PIPELINE.md", label: "glTF / LOD / manifest 規約" },
       { path: "docs/GOVERNANCE.md", label: "出典区分・係争・著作権ルール" },
     ],
-    roadmapTitle: "V1 から V1.1 へ",
+    roadmapTitle: "V2.0 から V2.1 へ",
     roadmapNote: "現在の版は「動く档案の骨格」であり最終形ではない。次は実glTFアセットとバックエンドのコンテンツサービスを優先する。",
     version: "VERSION",
     cut: "DATA CUT",
@@ -125,7 +125,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ABOUT</span>
-            <span className="mono">V2.0.0 / 2026.11.12</span>
+            <span className="mono">V2.1.0 / 2026.11.12</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -134,7 +134,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 2.0.0</span>
+            <span className="micro">{t.version} 2.1.0</span>
             <span className="micro">{t.cut} 2026.11.12</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
@@ -272,7 +272,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GUNDAM ARCHIVE / V2.0.0</span>
+              <span className="micro">GUNDAM ARCHIVE / V2.1.0</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>
