@@ -3,6 +3,20 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [1.4.0] — 2026-11-11
+
+### Added
+
+- **Chronology page** at `/zh/chronology/` and `/ja/chronology/`: a human-readable 12-era table with years, canon status, machine/event/work counts and links into each era's timeline.
+- **Glossary** (`docs/GLOSSARY.md`): era codes, data fields, engineering terms and reading paths.
+- README “5 分钟读懂” and Japanese “5分でわかる” sections.
+
+### Changed
+
+- Header/footer navigation adds 世纪表; sitemap includes the new route.
+- Static pages: 240; search index: 185.
+- Version bumped to `1.4.0`.
+
 ## [1.3.0] — 2026-11-11
 
 ### Added

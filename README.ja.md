@@ -9,6 +9,13 @@
 
 > 非公式のファン考証プロジェクトです。バンダイナムコ／創通・サンライズとは無関係です。コードは MIT、オリジナルコンテンツは CC BY-NC-SA 4.0。詳細は [NOTICE](NOTICE) を参照してください。
 
+## 5分でわかる
+
+- **これは何か**：JSON駆動の静的ガンダムアーカイブ。機体・紀元・系譜・出典を一つの読みやすい構造にまとめる。
+- **これは何ではないか**：公式資料庫ではなく、5,000件超の全派生型図鑑でもなく、公式デザイン画像も含まない。
+- **どこから読むか**：全紀元の俯瞰は[世紀表](https://cxy2696.github.io/GUNDAM-archive/ja/chronology/)、機体は[機体アーカイブ](https://cxy2696.github.io/GUNDAM-archive/ja/machines/)、更新は[CONTENT_GUIDE](docs/CONTENT_GUIDE.md)。
+- **信頼性**：機体と事件には出典を付す。未確認値は `seed`、係争値は `disputed`。
+
 ![GUNDAM Archive ホーム](preview/home.png)
 
 ## 概要
@@ -25,7 +32,7 @@ GUNDAM Archive は、その知識を**閲覧でき、追跡でき、育てられ
 
 A.A.（アフター・アポカリプス）紀元を追加：XARX-0ガンダムZERO、螺旋ガンダム、『機動戦士ガンダムRG XARX-ZERO』『GUNDAM ROGUE ORBIT』。
 
-収録内容：**49機体 · 12紀元 · 50事件 · 29勢力 · 32人物 · 25作品 · 15地点 · 24技術タグ · 22系譜辺**。`/zh` と `/ja` の二言語、**238ページ**の静的サイト、ビルド時に**185件**の検索索引を生成します。
+収録内容：**49機体 · 12紀元 · 50事件 · 29勢力 · 32人物 · 25作品 · 15地点 · 24技術タグ · 22系譜辺**。`/zh` と `/ja` の二言語、**240ページ**の静的サイト、ビルド時に**185件**の検索索引を生成します。
 
 ## 主な機能
 
@@ -99,6 +106,7 @@ next build (output: export) → out/ → GitHub Pages
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | フィールド、列挙、単位、日付、検証規則 |
 | [docs/ASSET_PIPELINE.md](docs/ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF |
 | [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) | 外部資料源、取込手順、公式画像の権利境界 |
+| [docs/GLOSSARY.md](docs/GLOSSARY.md) | 紀元・フィールド・技術用語の平易な説明 |
 | [docs/GOVERNANCE.md](docs/GOVERNANCE.md) | 出典区分、係争、著作権、レビュー |
 | [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Token、タイポグラフィ、コンポーネント、動き、a11y |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | M0–M5、V1.1、コンテンツバッチ、リスク |

@@ -9,6 +9,13 @@
 
 > 非官方粉丝考据项目，与 Bandai Namco / 创通・Sunrise 无关联。代码 MIT，原创内容 CC BY-NC-SA 4.0。详见 [NOTICE](NOTICE)。
 
+## 5 分钟读懂
+
+- **这是什么**：一个静态的、JSON 驱动的高达档案站，重点是把机体、纪年、谱系和出处放在同一个可读结构里。
+- **这不是什么**：不是官方资料库，不是全 5,000+ 衍生型号的图鉴，也不包含官方设计图。
+- **先看哪里**：想快速理解全系列 → [世纪表](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/)；想查机体 → [机体档案](https://cxy2696.github.io/GUNDAM-archive/zh/machines/)；想改内容 → [CONTENT_GUIDE](docs/CONTENT_GUIDE.md)。
+- **可信度**：机体与事件有出处；未核对参数标 `seed`，冲突标 `disputed`。
+
 ![GUNDAM Archive 首页](preview/home.png)
 
 ## 项目概览
@@ -29,7 +36,7 @@ A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《
 | --- | --- |
 | ![A.A. 纪元年表](preview/aa-era.png) | ![XARX-0](preview/xarx.png) |
 
-当前内容：**49 台机体 · 12 个纪元 · 50 条事件 · 29 个势力 · 32 位人物 · 25 部作品 · 15 个地点 · 24 个受控标签 · 22 条谱系边**；`/zh` 与 `/ja` 双语，共 **238 个静态页面**，构建期生成 185 条检索索引。
+当前内容：**49 台机体 · 12 个纪元 · 50 条事件 · 29 个势力 · 32 位人物 · 25 部作品 · 15 个地点 · 24 个受控标签 · 22 条谱系边**；`/zh` 与 `/ja` 双语，共 **240 个静态页面**，构建期生成 185 条检索索引。
 
 ## 在线访问
 
@@ -39,7 +46,7 @@ A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《
 | **日文站点** | https://cxy2696.github.io/GUNDAM-archive/ja/ |
 | **仓库** | https://github.com/cxy2696/GUNDAM-archive |
 | **Actions** | https://github.com/cxy2696/GUNDAM-archive/actions |
-| **版本** | v1.3.0 |
+| **版本** | v1.4.0 |
 
 站点由 GitHub Actions 静态构建并部署到 GitHub Pages。仓库为 public；如需私有化，可在 Settings → General → Danger Zone 调整。
 
@@ -60,6 +67,10 @@ A.A. 后启示录纪元已加入：XARX-0 高达 ZERO、螺旋高达，以及《
 | 宇宙地图 | 量子形态 |
 | --- | --- |
 | ![宇宙地图](preview/map.png) | ![量子形态](preview/quantum.png) |
+
+| 十二纪元世纪表 |
+| --- |
+| ![世纪表](preview/chronology.png) |
 
 设计与工程图联动见 [preview/design-sheet.png](preview/design-sheet.png)。
 
@@ -137,6 +148,7 @@ next build (output: export) → out/ → GitHub Pages
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | 字段、枚举、单位、日期、校验规则（字段级权威） |
 | [docs/ASSET_PIPELINE.md](docs/ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF、验收 |
 | [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) | 外部资料源、合法接入流程、官方图版权边界 |
+| [docs/GLOSSARY.md](docs/GLOSSARY.md) | 纪元、字段、工程词的人类可读解释 |
 | [docs/GOVERNANCE.md](docs/GOVERNANCE.md) | 来源分级、争议、版权、审核、AI 规则 |
 | [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Token、字体、组件、动效、可访问性 |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | M0–M5、V1.1、内容批次、风险 |

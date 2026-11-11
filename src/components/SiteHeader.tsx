@@ -19,6 +19,7 @@ const navItems = [
   { key: "machines", path: "/machines" },
   { key: "techTree", path: "/tech-tree" },
   { key: "timeline", path: "/timeline" },
+  { key: "chronology", path: "/chronology" },
   { key: "map", path: "/map" },
   { key: "archive", path: "/archive" },
   { key: "about", path: "/about" },

@@ -12,6 +12,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
     { href: `/${lang}/machines`, label: dict.nav.machines },
     { href: `/${lang}/tech-tree`, label: dict.nav.techTree },
     { href: `/${lang}/timeline`, label: dict.nav.timeline },
+    { href: `/${lang}/chronology`, label: dict.nav.chronology },
     { href: `/${lang}/map`, label: dict.nav.map },
     { href: `/${lang}/archive`, label: dict.nav.archive },
     { href: `/${lang}/about`, label: dict.nav.about },
@@ -53,7 +54,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>
             <Link href={`/${lang}/about#license`}>{dict.about.licenseTitle}</Link>
-            <span>v1.3.0</span>
+            <span>v1.4.0</span>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ const base = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUN
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const bundle = getBundle();
-  const staticPaths = ["", "/machines", "/tech-tree", "/timeline", "/map", "/archive", "/search", "/about"];
+  const staticPaths = ["", "/machines", "/tech-tree", "/timeline", "/chronology", "/map", "/archive", "/search", "/about"];
   const lastModified = new Date("2026-11-11T00:00:00.000Z");
 
   const entries: MetadataRoute.Sitemap = [];
