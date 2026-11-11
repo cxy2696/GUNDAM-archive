@@ -1,0 +1,114 @@
+{
+  "id": "rx-178-mk-ii",
+  "modelCode": "RX-178",
+  "name": {
+    "zh": "高达 Mk-II",
+    "ja": "ガンダムMk-II",
+    "en": "Gundam Mk-II"
+  },
+  "aliases": [
+    "Mk-II",
+    "Mk2",
+    "マークツー"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "aeug",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 87,
+    "month": 3,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "提坦斯早期主力试作机，后被奥古夺取，成为 Z 计划的可动骨架验证平台。",
+    "ja": "ティターンズ初期の主力試作機。後にエゥーゴに奪取され、Ζ計画のムーバブルフレーム検証機となった。"
+  },
+  "description": {
+    "zh": [
+      "Mk-II 是联邦军次世代 MS 的先行试作，采用可动骨架与更紧凑的机体结构。它在格里普斯战役中被奥古夺取，直接推动了 Z 高达的开发，也成为卡缪·维丹早期战斗的座机。"
+    ],
+    "ja": [
+      "Mk-IIは連邦軍次世代MSの先行試作で、ムーバブルフレームと紧凑な機体構造を採用した。グリプス戦役でエゥーゴに奪取され、Ζガンダム開発を直接推し進め、カミーユ・ビダンの初期戦闘機ともなった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.5,
+    "heightHead": 18.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "movable-frame",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "zeta-1985"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1F2937",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士 Z 高达》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

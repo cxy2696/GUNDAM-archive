@@ -1,0 +1,113 @@
+{
+  "id": "concept-x-139-turn-x",
+  "modelCode": "CONCEPT-X 6-1-2",
+  "name": {
+    "zh": "Turn X",
+    "ja": "ターンX",
+    "en": "Turn X"
+  },
+  "aliases": [
+    "Turn X",
+    "ターンX",
+    "倒X"
+  ],
+  "unitType": "prototype",
+  "eraId": "cc",
+  "factionId": "moonrace",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2345,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "黑历史时代的机体，与 Turn A 相对，拥有分离合体与月光蝶相关技术。",
+    "ja": "黒歴史時代の機体。ターンAと対をなし、分離合体と月光蝶関連技術を持つ。"
+  },
+  "description": {
+    "zh": [
+      "Turn X 的构造与 Turn A 完全不属于同一技术路线，却共享“终结文明”的能力。它在正历的冲突中被重新启动，提醒人们黑历史并不是过去，而是一种随时可能重演的选择。"
+    ],
+    "ja": [
+      "ターンXの構造はターンAと全く異なる技術路線にありながら、「文明を終わらせる」能力を共有する。正暦の衝突で再起動し、黒歴史が過去ではなく、いつでも繰り返されうる選択であることを示した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 20.0,
+    "heightHead": 20.0,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "分离合体机构",
+        "ja": "分離合体機構"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "月光蝶",
+        "ja": "月光蝶"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "moonlight-butterfly",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "turn-a-1999"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "fin",
+    "build": "heavy",
+    "shoulder": "round",
+    "backpack": "none",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#2B2B2B",
+      "secondary": "#C9A227",
+      "accent": "#22D3EE",
+      "eye": "#FFD166",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《∀高达》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

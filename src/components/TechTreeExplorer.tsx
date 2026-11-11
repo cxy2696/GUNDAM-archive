@@ -23,7 +23,7 @@ export function TechTreeExplorer({
   dict: Dictionary;
 }) {
   const [activeTag, setActiveTag] = useState<string>("all");
-  const layout = useMemo(() => layoutTechTree(machines), [machines]);
+  const layout = useMemo(() => layoutTechTree(machines, eras.map((era) => era.id)), [machines, eras]);
   const usedTags = tags.filter((tag) => machines.some((machine) => machine.tags.includes(tag.id)));
   const tag = tags.find((item) => item.id === activeTag);
   const activeCount = tag ? machines.filter((machine) => machine.tags.includes(tag.id)).length : machines.length;
@@ -33,8 +33,8 @@ export function TechTreeExplorer({
       <div className="tree__toolbar">
         <div className="tree__counts">
           <span className="mono">{String(machines.length).padStart(2, "0")} {dict.tree.nodes}</span>
-          <span className="mono">{String(layout.edges.length).padStart(2, "0")} {dict.tree.edges}</span>
-          <span className="mono">{layout.nodes.filter((node) => node.isolated).length} ISOLATED</span>
+          <span className="mono">{String(layout.edges.length).padStart(2, "0")} {dict.tree.ucEdges}</span>
+          <span className="mono">{layout.nodes.filter((node) => node.isolated).length} {dict.tree.parallel}</span>
         </div>
         <div className="tree__legend" aria-label={dict.tree.legend}>
           <span><i className="line line--derive" />{dict.tree.derive}</span>
@@ -179,7 +179,7 @@ export function TechTreeExplorer({
             <b className="mono">{String(machines.length).padStart(2, "0")}</b>
           </div>
           <div>
-            <span className="micro">{dict.tree.edges}</span>
+            <span className="micro">{dict.tree.ucEdges}</span>
             <b className="mono">{String(layout.edges.length).padStart(2, "0")}</b>
           </div>
           <div>

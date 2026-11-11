@@ -1,0 +1,117 @@
+{
+  "id": "x-ex01-calibarn",
+  "modelCode": "X-EX01",
+  "name": {
+    "zh": "卡利班",
+    "ja": "キャリバーン",
+    "en": "Calibarn"
+  },
+  "aliases": [
+    "Calibarn",
+    "キャリバーン",
+    "卡利班"
+  ],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "benerit",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "GUND 格式的试作机，取消过滤器以追求极限同步，被称为“怪物”的机体。",
+    "ja": "GUNDフォーマットの試作機。フィルターを外し極限の同期を求めた「怪物」と呼ばれる機体。"
+  },
+  "description": {
+    "zh": [
+      "卡利班是 GUND 技术早期的极端产物，没有风灵那样的安全限制，驾驶员必须直接承受数据风暴。斯莱塔在最终战中驾驶它，把“诅咒”变成了选择未来的力量。"
+    ],
+    "ja": [
+      "キャリバーンはGUND技術初期の極端な産物で、エアリアルのような安全制限を持たず、パイロットはデータストームを直接受け止める。スレッタは最終戦でこれに乗り、「呪い」を未来を選ぶ力へ変えた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.9,
+    "heightHead": 18.9,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "可变式光束步枪",
+        "ja": "可変式ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GUND 比特 ×4",
+        "ja": "GUNDビット ×4"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "gundarium",
+    "beam-weapon",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "plant-quetta"
+  ],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F7FA",
+      "secondary": "#6D28D9",
+      "accent": "#22D3EE",
+      "eye": "#7DE3FF",
+      "frame": "#3A4654"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 水星的魔女》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

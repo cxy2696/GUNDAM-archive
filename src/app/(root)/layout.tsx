@@ -5,7 +5,7 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive"),
-  title: "GAIA Archive · 机动战士档案",
+  title: "GUNDAM Archive · 机动战士档案",
   description: "可交互、可追溯的机动战士档案馆。",
 };
 

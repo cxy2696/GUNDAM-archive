@@ -1,0 +1,115 @@
+{
+  "id": "rx-9-narrative",
+  "modelCode": "RX-9",
+  "name": {
+    "zh": "叙述高达",
+    "ja": "ナラティブガンダム",
+    "en": "Narrative Gundam"
+  },
+  "aliases": [
+    "Narrative",
+    "ナラティブ",
+    "RX-9"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 97,
+    "month": 6,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "独角兽系谱的技术验证机，以 A/B 装备换装与精神感应框架测试为核心。",
+    "ja": "ユニコーン系譜の技術検証機。A/B装備の換装とサイコフレームの試験を主目的とする。"
+  },
+  "description": {
+    "zh": [
+      "叙述高达把独角兽的精神感应框架数据用于更轻量的机体，并通过换装适应不同任务。它参与了对“凤凰”的追击，也让联邦重新审视精神感应框架在实战中的不可控性。"
+    ],
+    "ja": [
+      "ナラティブガンダムはユニコーンのサイコフレーム・データをより軽量な機体へ応用し、換装で異なる任務に対応する。フェネクス追撃に参加し、サイコフレームの実戦における制御不能性を連邦に再認識させた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 20.5,
+    "heightHead": 20.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "有线式浮游炮",
+        "ja": "有線式ファンネル"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "psychoframe",
+    "gundarium",
+    "beam-weapon",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "narrative-2018"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#D9DEE5",
+      "secondary": "#6B7280",
+      "accent": "#7C3AED",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "剧场版《机动战士高达 NT》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

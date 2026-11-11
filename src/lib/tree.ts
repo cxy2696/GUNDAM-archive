@@ -50,10 +50,22 @@ function edgePath(from: LayoutNode, to: LayoutNode): string {
  * edge (parallel-universe entries) are parked in a labelled strip at the
  * bottom instead of being forced into the U.C. lineage.
  */
-export function layoutTechTree(machines: Machine[]): TreeLayout {
+export function layoutTechTree(machines: Machine[], eraOrder: string[] = []): TreeLayout {
+  // The globe-spanning graph is reserved for the U.C. lineage. Other
+  // universes use different technologies and calendars, so forcing them into
+  // the same columns produces a fake lineage (and an unreadable canvas).
+  const primary = machines.filter((machine) => machine.eraId === "uc");
+  const secondary = machines
+    .filter((machine) => machine.eraId !== "uc")
+    .sort((a, b) => {
+      const ai = eraOrder.indexOf(a.eraId);
+      const bi = eraOrder.indexOf(b.eraId);
+      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi) || a.firstAppear.year - b.firstAppear.year;
+    });
+
   const incoming = new Map<string, number>();
-  machines.forEach((machine) => incoming.set(machine.id, 0));
-  machines.forEach((machine) =>
+  primary.forEach((machine) => incoming.set(machine.id, 0));
+  primary.forEach((machine) =>
     machine.edges.forEach((edge) => incoming.set(edge.to, (incoming.get(edge.to) ?? 0) + 1)),
   );
 
@@ -71,10 +83,10 @@ export function layoutTechTree(machines: Machine[]): TreeLayout {
     depths.set(id, level);
     return level;
   };
-  machines.forEach((machine) => levelOf(machine.id));
+  primary.forEach((machine) => levelOf(machine.id));
 
   const levels = new Map<number, Machine[]>();
-  for (const machine of machines) {
+  for (const machine of primary) {
     const level = depths.get(machine.id) ?? 0;
     const hasEdge = machine.edges.length > 0 || (incoming.get(machine.id) ?? 0) > 0;
     if (!hasEdge) continue;
@@ -89,11 +101,12 @@ export function layoutTechTree(machines: Machine[]): TreeLayout {
   for (const [level, list] of sortedLevels) {
     list.sort((a, b) => a.firstAppear.year - b.firstAppear.year || a.modelCode.localeCompare(b.modelCode));
     const total = (list.length - 1) * GAP_Y;
+    const startY = Math.max(40, 224 - total / 2);
     list.forEach((machine, index) => {
       const node: LayoutNode = {
         machine,
         x: 150 + level * 226,
-        y: 224 - total / 2 + index * GAP_Y,
+        y: startY + index * GAP_Y,
         depth: level,
         isolated: false,
       };
@@ -102,15 +115,23 @@ export function layoutTechTree(machines: Machine[]): TreeLayout {
     });
   }
 
-  const isolatedMachines = machines.filter((machine) => {
-    const hasEdge = machine.edges.length > 0 || (incoming.get(machine.id) ?? 0) > 0;
-    return !hasEdge;
-  });
+  const isolatedMachines = [
+    ...secondary,
+    ...primary.filter((machine) => {
+      const hasEdge = machine.edges.length > 0 || (incoming.get(machine.id) ?? 0) > 0;
+      return !hasEdge;
+    }),
+  ];
+  // Unconnected / parallel-universe machines are parked in a readable grid.
+  const perRow = 6;
+  const connectedBottom = nodes.length ? Math.max(...nodes.map((node) => node.y + 70)) : 0;
+  const isolatedLabelY = Math.max(600, connectedBottom + 50);
+  const gridStart = isolatedLabelY + 60;
   isolatedMachines.forEach((machine, index) => {
     const node: LayoutNode = {
       machine,
-      x: 200 + index * 226,
-      y: 642,
+      x: 150 + (index % perRow) * 226,
+      y: gridStart + Math.floor(index / perRow) * 96,
       depth: -1,
       isolated: true,
     };
@@ -119,12 +140,12 @@ export function layoutTechTree(machines: Machine[]): TreeLayout {
   });
 
   const edges: LayoutEdge[] = [];
-  for (const machine of machines) {
+  for (const machine of primary) {
     const from = nodeById.get(machine.id);
     if (!from || from.isolated) continue;
     for (const edge of machine.edges) {
       const to = nodeById.get(edge.to);
-      if (!to) continue;
+      if (!to || to.isolated) continue;
       edges.push({
         from,
         to,
@@ -139,5 +160,7 @@ export function layoutTechTree(machines: Machine[]): TreeLayout {
   }
 
   const width = Math.max(1280, ...nodes.map((node) => node.x + 120));
-  return { nodes, edges, width, height: 710, isolatedLabelY: 584 };
+  const isolatedRows = Math.max(1, Math.ceil(isolatedMachines.length / perRow));
+  const height = Math.max(710, gridStart + isolatedRows * 96 + 90);
+  return { nodes, edges, width, height, isolatedLabelY };
 }

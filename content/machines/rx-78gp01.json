@@ -1,0 +1,115 @@
+{
+  "id": "rx-78gp01",
+  "modelCode": "RX-78GP01",
+  "name": {
+    "zh": "高达 GP01 玉帘",
+    "ja": "ガンダムGP01 ゼフィランサス",
+    "en": "Gundam GP01 Zephyranthes"
+  },
+  "aliases": [
+    "GP01",
+    "Zephyranthes",
+    "ゼフィランサス"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 83,
+    "month": 11,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦 GP 系列的一号机，强调陆战与核心战机换装，是 0083 年高达开发计划的起点。",
+    "ja": "連邦GP計画の一号機。陸戦とコア・ファイター換装を重視し、0083年のガンダム開発計画の出発点となった。"
+  },
+  "description": {
+    "zh": [
+      "GP01 以 RX-78 的技术为基础，采用可换装的核心战机与更完整的可动骨架。它在地球圈与吉翁残党的冲突中证明了联邦新一代 MS 的潜力，也暴露了计划在情报与后勤上的脆弱。"
+    ],
+    "ja": [
+      "GP01はRX-78の技術を基に、換装可能なコア・ファイターとより完成度の高いムーバブルフレームを採用した。地球圏でのジオン残党との衝突で連邦新型MSの可能性を示す一方、計画の情報・兵站面の脆さも露呈した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.5,
+    "heightHead": 18.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "90mm 机枪",
+        "ja": "90mmマシンガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "core-block",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "0083-1991"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1F4E9C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "OVA《机动战士高达 0083 星尘的回忆》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

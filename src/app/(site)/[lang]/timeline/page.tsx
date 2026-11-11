@@ -36,7 +36,7 @@ export default async function TimelinePage({
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / CHRONOLOGY</span>
+            <span className="mono">GUNDAM / CHRONOLOGY</span>
             <span className="mono">0001 — 2345</span>
           </div>
           <div className="page-head__title-row">

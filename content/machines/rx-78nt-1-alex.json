@@ -1,0 +1,114 @@
+{
+  "id": "rx-78nt-1-alex",
+  "modelCode": "RX-78NT-1",
+  "name": {
+    "zh": "高达 NT-1",
+    "ja": "ガンダムNT-1",
+    "en": "Gundam NT-1"
+  },
+  "aliases": [
+    "Alex",
+    "NT-1",
+    "アレックス"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 80,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦为 Newtype 驾驶员开发的 RX-78 改良型，以全周天驾驶舱与乔巴姆装甲为特征。",
+    "ja": "連邦がニュータイプ用に開発したRX-78の改良型。全天周モニターとチョバム・アーマーが特徴。"
+  },
+  "description": {
+    "zh": [
+      "NT-1 在 RX-78 的基础上强化了驾驶舱与装甲防护，乔巴姆装甲可在外层被击毁后抛弃。它被送往 Side 6 进行测试，却在一年战争末期卷入一场几乎没有胜利者的战斗。"
+    ],
+    "ja": [
+      "NT-1はRX-78を基にコクピットと装甲防護を強化し、チョバム・アーマーは外層破壊後に投棄できる。サイド6へ試験搬入されたが、一年戦争末期に勝者のほとんどいない戦いへ巻き込まれた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "gundam-0080"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#D94F5C",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "OVA《机动战士高达 0080 口袋里的战争》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -36,7 +36,7 @@ export default async function MachinesPage({
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / INDEX</span>
+            <span className="mono">GUNDAM / INDEX</span>
             <span className="mono">MS-{String(bundle.machines.length).padStart(3, "0")}</span>
           </div>
           <div className="page-head__title-row">

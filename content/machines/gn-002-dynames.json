@@ -1,0 +1,113 @@
+{
+  "id": "gn-002-dynames",
+  "modelCode": "GN-002",
+  "name": {
+    "zh": "力天使高达",
+    "ja": "ガンダムデュナメス",
+    "en": "Gundam Dynames"
+  },
+  "aliases": [
+    "Dynames",
+    "デュナメス",
+    "力天使"
+  ],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2307,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "天上人的远程狙击型高达，以 GN 狙击枪与高精度传感器在战场外缘提供火力。",
+    "ja": "ソレスタルビーイングの遠距離狙撃型ガンダム。GNスナイパーライフルと高精度センサーで戦場外縁から火力を提供する。"
+  },
+  "description": {
+    "zh": [
+      "力天使高达由洛克昂·史特拉托斯驾驶，强调隐蔽、观察与一击命中。它的 GN 盾牌可展开为全身防护，也让“狙击手”在天上人的武力介入中承担了最孤独的观察者角色。"
+    ],
+    "ja": [
+      "デュナメスはロックオン・ストラトスが駆り、隠密・観測・一撃必中を重視した。GNシールドは全身防御へ展開でき、狙撃手はソレスタルビーイングの武力介入において最も孤独な観測者となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.2,
+    "heightHead": 18.2,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 狙击枪",
+        "ja": "GNスナイパーライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "GN 光束军刀 ×2",
+        "ja": "GNビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 火神炮 ×2",
+        "ja": "GNバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#15803D",
+      "accent": "#D4AF37",
+      "eye": "#7CFFB2",
+      "frame": "#3A4654"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 00》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

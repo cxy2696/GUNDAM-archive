@@ -1,0 +1,117 @@
+{
+  "id": "rx-104ff-penelope",
+  "modelCode": "RX-104FF",
+  "name": {
+    "zh": "佩涅罗佩",
+    "ja": "ペーネロペー",
+    "en": "Penelope"
+  },
+  "aliases": [
+    "Penelope",
+    "ペーネロペー",
+    "RX-104FF"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 105,
+    "month": 6,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "联邦军的超大型高机动 MS，以米诺夫斯基飞行装甲与浮游导弹构成压倒性的推进力。",
+    "ja": "連邦軍の超大型高機動MS。ミノフスキー・フライト装甲とファンネル・ミサイルにより圧倒的な推力を得る。"
+  },
+  "description": {
+    "zh": [
+      "佩涅罗佩是联邦军为对抗马夫蒂而投入的旗舰机，体积与推力都远超常规 MS。它与 Ξ 高达在达沃上空展开高速追击战，最终暴露出巨型机在维护与政治上的双重负担。"
+    ],
+    "ja": [
+      "ペーネロペーはマフティーに対抗するため連邦軍が投入した旗艦機で、体積と推力は通常のMSを大きく上回る。Ξガンダムとダバオ上空で高速追撃戦を展開し、巨大機の整備性と政治的な重荷を露呈した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 32.5,
+    "heightHead": 32.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "浮游导弹 ×2",
+        "ja": "ファンネル・ミサイル ×2"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "psychoframe",
+    "gundarium",
+    "funnel",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "hathaway-flash"
+  ],
+  "workIds": [
+    "hathaway-2021"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "binder",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F2F0E8",
+      "secondary": "#D97706",
+      "accent": "#F59E0B",
+      "eye": "#FFD166",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "剧场版《机动战士高达 闪光的哈萨维》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

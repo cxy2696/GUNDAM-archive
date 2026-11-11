@@ -25,7 +25,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             <OrbitMark size={38} />
           </div>
           <div>
-            <div className="footer__name">GAIA ARCHIVE</div>
+            <div className="footer__name">GUNDAM ARCHIVE</div>
             <p className="footer__tagline">{dict.site.tagline}</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>
             <Link href={`/${lang}/about#license`}>{dict.about.licenseTitle}</Link>
-            <span>v1.0.1</span>
+            <span>v1.1.0</span>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
         </div>
       </div>
       <div className="footer__wordmark" aria-hidden>
-        GAIA
+        GUNDAM
       </div>
     </footer>
   );

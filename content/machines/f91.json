@@ -1,13 +1,26 @@
 {
   "id": "f91",
   "modelCode": "F91",
-  "name": { "zh": "高达 F91", "ja": "ガンダムF91", "en": "Gundam F91" },
-  "aliases": ["F91", "F91高达", "ガンダムF91", "西布克专用机"],
+  "name": {
+    "zh": "高达 F91",
+    "ja": "ガンダムF91",
+    "en": "Gundam F91"
+  },
+  "aliases": [
+    "F91",
+    "F91高达",
+    "ガンダムF91",
+    "西布克专用机"
+  ],
   "unitType": "prototype",
   "eraId": "uc",
   "factionId": "earth-federation",
   "canon": "mainline",
-  "firstAppear": { "year": 123, "month": 3, "precision": "month" },
+  "firstAppear": {
+    "year": 123,
+    "month": 3,
+    "precision": "month"
+  },
   "summary": {
     "zh": "联邦小型化 MS 计划的产物。15.5 米级的机身搭载生物传感器与双 VSBR，证明“更小”并不等于“更弱”。",
     "ja": "連邦のMS小型化計画の産物。15.5m級の機体にバイオセンサーと二門のヴェスバーを搭載し、「小さい」ことが「弱い」ではないことを証明した。"
@@ -30,19 +43,70 @@
     "powerOutput": 4250,
     "thrust": 88400,
     "sensorRadius": 25000,
-    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+    "armor": {
+      "zh": "高达尼姆合金",
+      "ja": "ガンダリウム合金"
+    }
   },
   "armament": [
-    { "name": { "zh": "可变速光束步枪 ×2", "ja": "ヴェスバー ×2" }, "type": "beam" },
-    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
-    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "光束盾牌", "ja": "ビームシールド" }, "type": "special" },
-    { "name": { "zh": "火神炮 ×2", "ja": "バルカン ×2" }, "type": "kinetic" }
+    {
+      "name": {
+        "zh": "可变速光束步枪 ×2",
+        "ja": "ヴェスバー ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束盾牌",
+        "ja": "ビームシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
   ],
-  "tags": ["vsbr", "gundarium", "beam-weapon", "movable-frame", "biosensor"],
-  "pilots": [{ "characterId": "seabook-arano", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
-  "eventIds": ["cosmo-babylonia-war"],
-  "workIds": ["f91-1991"],
+  "tags": [
+    "vsbr",
+    "gundarium",
+    "beam-weapon",
+    "movable-frame",
+    "biosensor"
+  ],
+  "pilots": [
+    {
+      "characterId": "seabook-arano",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "cosmo-babylonia-war"
+  ],
+  "workIds": [
+    "f91-1991"
+  ],
   "edges": [
     {
       "to": "lm314v21-v2",
@@ -52,7 +116,12 @@
         "zh": "小型化可动骨架与高输出反应炉的设计路线在 V2 上继续推进。",
         "ja": "小型化ムーバブルフレームと高出力反応炉の設計路線はV2でさらに推し進められた。"
       },
-      "sources": [{ "label": "《机动战士 V 高达》MS 设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《机动战士 V 高达》MS 设定资料",
+          "level": "A"
+        }
+      ]
     }
   ],
   "viewer": {
@@ -71,8 +140,14 @@
     }
   },
   "sources": [
-    { "label": "剧场版《机动战士高达 F91》", "level": "S" },
-    { "label": "《机动战士高达 F91》MS 设定资料", "level": "A" }
+    {
+      "label": "剧场版《机动战士高达 F91》",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达 F91》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

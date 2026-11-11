@@ -29,17 +29,17 @@ export async function generateMetadata({
   const dict = getDict(lang);
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: dict.meta.title, template: `%s · GAIA ARCHIVE` },
+    title: { default: dict.meta.title, template: `%s · GUNDAM ARCHIVE` },
     description: dict.meta.description,
-    applicationName: "GAIA Archive",
-    authors: [{ name: "GAIA Archive contributors" }],
+    applicationName: "GUNDAM Archive",
+    authors: [{ name: "GUNDAM Archive contributors" }],
     keywords: ["Gundam", "机动战士", "高达", "モビルスーツ", "archive", "knowledge graph"],
     openGraph: {
       type: "website",
-      siteName: "GAIA Archive",
+      siteName: "GUNDAM Archive",
       title: dict.meta.title,
       description: dict.meta.description,
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "GAIA Archive" }],
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "GUNDAM Archive" }],
     },
     twitter: { card: "summary_large_image" },
     robots: { index: true, follow: true },

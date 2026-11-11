@@ -13,7 +13,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>404 · GAIA Archive</title>
+<title>404 · GUNDAM Archive</title>
 <meta name="robots" content="noindex">
 <style>
   :root { color-scheme: dark; }
@@ -66,7 +66,7 @@ const html = `<!doctype html>
       <a class="btn" href="${base}/zh/">返回中文首页 →</a>
       <a class="btn ghost" href="${base}/ja/">日本語ホームへ →</a>
     </div>
-    <div class="foot">GAIA ARCHIVE · NON-COMMERCIAL FAN PROJECT</div>
+    <div class="foot">GUNDAM ARCHIVE · NON-COMMERCIAL FAN PROJECT</div>
   </div>
 </body>
 </html>`;

@@ -145,7 +145,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="container hero__rail-wrap">
           <div className="hero__rail-head">
             <span className="micro">{dict.nav.timeline}</span>
-            <span className="micro">0001 — 2345 / 07 ERAS</span>
+            <span className="micro">0001 — 2345 / {String(bundle.eras.length).padStart(2, "0")} ERAS</span>
           </div>
           <EraRail eras={bundle.eras} lang={typed} dict={dict} counts={eraCounts} active="uc" />
         </div>

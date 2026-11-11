@@ -40,7 +40,7 @@ export default async function ArchivePage({ params }: { params: Promise<{ lang: 
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / DOSSIERS</span>
+            <span className="mono">GUNDAM / DOSSIERS</span>
             <span className="mono">FACTIONS / CHARACTERS / WORKS</span>
           </div>
           <div className="page-head__title-row">

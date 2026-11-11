@@ -1,0 +1,114 @@
+{
+  "id": "age-fx",
+  "modelCode": "AGE-FX",
+  "name": {
+    "zh": "高达 AGE-FX",
+    "ja": "ガンダムAGE-FX",
+    "en": "Gundam AGE-FX"
+  },
+  "aliases": [
+    "AGE-FX",
+    "ガンダムAGE-FX"
+  ],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 164,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE 系列的最终机，以 FX 爆发模式与 C 浮游炮进行全方位攻击。",
+    "ja": "AGE系列の最終機。FXバーストモードとCファンネルで全方位攻撃を行う。"
+  },
+  "description": {
+    "zh": [
+      "AGE-FX 由奇奥·明日野驾驶，是 AGE 系统百年数据的集大成。它把浮游炮与高机动格斗结合，试图在维根战争的终点给出“理解”而非“歼灭”的答案。"
+    ],
+    "ja": [
+      "AGE-FXはキオ・アスノが駆り、AGEシステムの百年データを集大成した。ファンネルと高機動格闘を組み合わせ、ヴェイガン戦争の終点に「殲滅」ではなく「理解」の答えを出そうとした。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.5,
+    "heightHead": 18.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "C 浮游炮 ×6",
+        "ja": "Cファンネル ×6"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "gundarium",
+    "beam-weapon",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "binder",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1E3A8A",
+      "accent": "#22D3EE",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 AGE》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

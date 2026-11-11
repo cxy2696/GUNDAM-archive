@@ -1,0 +1,114 @@
+{
+  "id": "asw-g-66-kimaris-vidar",
+  "modelCode": "ASW-G-66",
+  "name": {
+    "zh": "金巴里斯·维达尔",
+    "ja": "キマリス・ヴィダール",
+    "en": "Kimaris Vidar"
+  },
+  "aliases": [
+    "Kimaris Vidar",
+    "キマリス",
+    "金巴里斯"
+  ],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "gjallarhorn",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "加拉尔霍恩骑士机的最终形态，以重装甲、骑枪与高机动推进追击铁华团。",
+    "ja": "ギャラルホルンの騎士機の最終形態。重装甲と騎槍、高機動推進で鉄華団を追撃する。"
+  },
+  "description": {
+    "zh": [
+      "金巴里斯·维达尔由加埃里奥·鲍德温驾驶，保留了金巴里斯系的骑士风格，同时强化了宇宙战与对高达战能力。它与巴巴托斯的多次交锋，把“骑士道”与“生存”两种逻辑摆在同一战场。"
+    ],
+    "ja": [
+      "キマリス・ヴィダールはガエリオ・ボードウィンが駆り、キマリス系の騎士風格を保ちつつ宇宙戦と対ガンダム戦能力を強化した。バルバトスとの度重なる交戦は、「騎士道」と「生存」の二つの論理を同じ戦場に並べた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 19.5,
+    "heightHead": 19.5,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "骑士枪",
+        "ja": "騎士槍"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "导弹 ×2",
+        "ja": "ミサイル ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "heavy",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#2B2B33",
+      "secondary": "#7C3AED",
+      "accent": "#D4AF37",
+      "eye": "#FFD166",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

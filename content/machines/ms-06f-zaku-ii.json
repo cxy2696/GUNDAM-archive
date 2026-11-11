@@ -1,13 +1,27 @@
 {
   "id": "ms-06f-zaku-ii",
   "modelCode": "MS-06F",
-  "name": { "zh": "扎古 II", "ja": "ザクII", "en": "Zaku II" },
-  "aliases": ["扎古", "Zaku", "ザク", "MS-06"],
+  "name": {
+    "zh": "扎古 II",
+    "ja": "ザクII",
+    "en": "Zaku II"
+  },
+  "aliases": [
+    "扎古",
+    "Zaku",
+    "ザク",
+    "MS-06"
+  ],
   "unitType": "mass_production",
   "eraId": "uc",
   "factionId": "zeon",
   "canon": "mainline",
-  "firstAppear": { "year": 79, "month": 1, "day": 3, "precision": "day" },
+  "firstAppear": {
+    "year": 79,
+    "month": 1,
+    "day": 3,
+    "precision": "day"
+  },
   "summary": {
     "zh": "吉翁公国的主力量产机，也是“机动战士”这一兵器概念最早成形的载体。单机性能平庸，却以产量与泛用性撑起了整场一年战争。",
     "ja": "ジオン公国の主力量産機であり、「モビルスーツ」という兵器概念が最初に結実した機体。単機性能は凡庸だが、生産性と汎用性で一年戦争を支えた。"
@@ -30,18 +44,55 @@
     "powerOutput": 951,
     "thrust": 43200,
     "sensorRadius": 3200,
-    "armor": { "zh": "超硬钢合金", "ja": "超硬鋼合金" }
+    "armor": {
+      "zh": "超硬钢合金",
+      "ja": "超硬鋼合金"
+    }
   },
   "armament": [
-    { "name": { "zh": "120mm 扎古机枪", "ja": "120mmザク・マシンガン" }, "type": "kinetic" },
-    { "name": { "zh": "热能斧", "ja": "ヒートホーク" }, "type": "melee" },
-    { "name": { "zh": "扎古火箭炮", "ja": "ザク・バズーカ" }, "type": "kinetic" },
-    { "name": { "zh": "腿部导弹荚舱 ×2", "ja": "脚部ミサイル・ポッド ×2" }, "type": "kinetic" }
+    {
+      "name": {
+        "zh": "120mm 扎古机枪",
+        "ja": "120mmザク・マシンガン"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "热能斧",
+        "ja": "ヒートホーク"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "扎古火箭炮",
+        "ja": "ザク・バズーカ"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "腿部导弹荚舱 ×2",
+        "ja": "脚部ミサイル・ポッド ×2"
+      },
+      "type": "kinetic"
+    }
   ],
-  "tags": ["thermonuclear", "minovsky"],
+  "tags": [
+    "thermonuclear",
+    "minovsky"
+  ],
   "pilots": [],
-  "eventIds": ["one-year-war", "battle-of-loum", "operation-british", "jaburo-assault"],
-  "workIds": ["msg-1979"],
+  "eventIds": [
+    "one-year-war",
+    "battle-of-loum",
+    "operation-british",
+    "jaburo-assault"
+  ],
+  "workIds": [
+    "msg-1979"
+  ],
   "edges": [
     {
       "to": "ms-06s-zaku-ii",
@@ -50,7 +101,12 @@
         "zh": "指挥官型在 F 型基础上强化反应炉与机动性，并加装角状天线。",
         "ja": "指揮官型はF型を基に反応炉と機動性を強化し、角状アンテナを追加した。"
       },
-      "sources": [{ "label": "《机动战士高达》MSV 设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《机动战士高达》MSV 设定资料",
+          "level": "A"
+        }
+      ]
     }
   ],
   "viewer": {
@@ -69,8 +125,14 @@
     }
   },
   "sources": [
-    { "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" },
-    { "label": "《机动战士高达》MSV 设定资料", "level": "A" }
+    {
+      "label": "TV 动画《机动战士高达》第 1—43 话",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达》MSV 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

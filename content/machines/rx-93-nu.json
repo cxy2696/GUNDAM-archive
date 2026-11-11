@@ -1,13 +1,27 @@
 {
   "id": "rx-93-nu",
   "modelCode": "RX-93",
-  "name": { "zh": "ν 高达", "ja": "νガンダム", "en": "Nu Gundam" },
-  "aliases": ["牛高达", "ν高达", "Nu Gundam", "ニューガンダム"],
+  "name": {
+    "zh": "ν 高达",
+    "ja": "νガンダム",
+    "en": "Nu Gundam"
+  },
+  "aliases": [
+    "牛高达",
+    "ν高达",
+    "Nu Gundam",
+    "ニューガンダム"
+  ],
   "unitType": "prototype",
   "eraId": "uc",
   "factionId": "earth-federation",
   "canon": "mainline",
-  "firstAppear": { "year": 93, "month": 3, "day": 12, "precision": "day" },
+  "firstAppear": {
+    "year": 93,
+    "month": 3,
+    "day": 12,
+    "precision": "day"
+  },
   "summary": {
     "zh": "阿姆罗·雷为阿克西斯作战专门定制的 NT 专用机。精神感应框架与六枚飞翼浮游炮，把“驾驶员意识”直接变成了机体的一部分。",
     "ja": "アムロ・レイがアクシズ作戦のために特注したNT専用機。サイコフレームと六基のフィン・ファンネルにより、「パイロットの意識」を機体の一部へ変えた。"
@@ -30,19 +44,69 @@
     "powerOutput": 2980,
     "thrust": 97800,
     "sensorRadius": 20000,
-    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+    "armor": {
+      "zh": "高达尼姆合金",
+      "ja": "ガンダリウム合金"
+    }
   },
   "armament": [
-    { "name": { "zh": "飞翼浮游炮 ×6", "ja": "フィン・ファンネル ×6" }, "type": "special" },
-    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
-    { "name": { "zh": "超级火箭炮", "ja": "ハイパー・バズーカ" }, "type": "kinetic" },
-    { "name": { "zh": "光束军刀", "ja": "ビームサーベル" }, "type": "melee" },
-    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+    {
+      "name": {
+        "zh": "飞翼浮游炮 ×6",
+        "ja": "フィン・ファンネル ×6"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "超级火箭炮",
+        "ja": "ハイパー・バズーカ"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["psychoframe", "funnel", "gundarium", "beam-weapon"],
-  "pilots": [{ "characterId": "amuro-ray", "note": { "zh": "专用机", "ja": "専用機" } }],
-  "eventIds": ["axis-drop"],
-  "workIds": ["cca-1988"],
+  "tags": [
+    "psychoframe",
+    "funnel",
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "amuro-ray",
+      "note": {
+        "zh": "专用机",
+        "ja": "専用機"
+      }
+    }
+  ],
+  "eventIds": [
+    "axis-drop"
+  ],
+  "workIds": [
+    "cca-1988"
+  ],
   "edges": [
     {
       "to": "msn-04-sazabi",
@@ -52,7 +116,12 @@
         "zh": "联邦与吉翁在赛可缪／精神感应兵器上的竞逐，在新吉翁旗舰上形成对照。",
         "ja": "連邦とジオンによるサイコミュ／精神感应兵器の競争は、ネオ・ジオンの旗艦機に対照をなした。"
       },
-      "sources": [{ "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
+          "level": "A"
+        }
+      ]
     },
     {
       "to": "rx-0-unicorn",
@@ -62,7 +131,27 @@
         "zh": "精神感应框架在独角兽上发展为全身骨架级应用。",
         "ja": "サイコフレームはユニコーンで全身フレーム級の応用へ発展した。"
       },
-      "sources": [{ "label": "《机动战士高达 UC》设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《机动战士高达 UC》设定资料",
+          "level": "A"
+        }
+      ]
+    },
+    {
+      "to": "rx-105-xi",
+      "kind": "tech_from",
+      "techTag": "psychoframe",
+      "note": {
+        "zh": "联邦次世代高机动 MS 延续精神感应框架研究。",
+        "ja": "連邦次世代高機動MSはサイコフレーム研究を継承。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
     }
   ],
   "viewer": {
@@ -81,8 +170,14 @@
     }
   },
   "sources": [
-    { "label": "剧场版《机动战士高达 逆袭的夏亚》", "level": "S" },
-    { "label": "《机动战士高达 逆袭的夏亚》MS 设定资料", "level": "A" }
+    {
+      "label": "剧场版《机动战士高达 逆袭的夏亚》",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

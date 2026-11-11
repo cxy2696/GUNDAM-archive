@@ -106,12 +106,12 @@ MechViewer (client)
 - 内容：`name` / `summary` / `description` 均为 `{ zh, ja }`；schema 强制双语，避免半成品。
 - 排版：`html lang` + `data-lang` 作用域切换字体栈与断行规则；数值使用统一等宽字体。
 - 切换器：`LanguageSwitch` 同时出现在桌面头部、移动菜单与页脚；切换时保留 path / query / hash，并把 `scrollY` 写入 sessionStorage，由 `ScrollRestore` 在目标页恢复。活动语言有 `aria-current="true"`。
-- 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gaia-lang`，否则按 `navigator.language` 选择 `/zh/` 或 `/ja/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
+- 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gundam-lang`，否则按 `navigator.language` 选择 `/zh/` 或 `/ja/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
 - 缺失策略：V1 内容全部双语；若未来出现缺译，按方案书 6.7 的降级规则显示原名 + 提示，不用机翻冒充人工稿。
 
 ## 8. 检索
 
-- 构建期生成 78 条索引（12 机体 + 12 人物 + 17 势力 + 23 事件 + 14 作品）。
+- 构建期生成 130 条索引（40 机体 + 12 人物 + 27 势力 + 28 事件 + 23 作品）。
 - 纯客户端评分：精确命中 > 前缀 > 包含；同分时机体优先。
 - 索引字段：中/日/英名、型号、别名、阵营、纪元、摘要关键词。
 - `⌘K` 面板与 `/search` 共用 `searchEntries()`；面板是快速入口，检索页是可分享的完整结果。

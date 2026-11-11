@@ -52,7 +52,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
     const next = theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     try {
-      localStorage.setItem("gaia-theme", next);
+      localStorage.setItem("gundam-theme", next);
     } catch {
       /* private mode */
     }
@@ -66,12 +66,12 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
       </a>
       <header className="header">
         <div className="header__inner">
-          <Link href={`/${lang}`} className="brand" aria-label="GAIA Archive home">
+          <Link href={`/${lang}`} className="brand" aria-label="GUNDAM Archive home">
             <span className="brand__mark">
               <OrbitMark size={30} />
             </span>
             <span className="brand__word">
-              <span className="brand__gaia">GAIA</span>
+              <span className="brand__gundam">GUNDAM</span>
               <span className="brand__archive">ARCHIVE</span>
             </span>
           </Link>
@@ -96,7 +96,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
             <button
               type="button"
               className="icon-btn search-trigger"
-              onClick={() => window.dispatchEvent(new Event("gaia:search"))}
+              onClick={() => window.dispatchEvent(new Event("gundam:search"))}
               aria-label={dict.common.search}
             >
               <SearchIcon size={17} />
@@ -135,7 +135,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
             </Link>
           ))}
           <div className="mobile-menu__footer">
-            <button type="button" className="text-btn" onClick={() => { setMenuOpen(false); window.dispatchEvent(new Event("gaia:search")); }} tabIndex={menuOpen ? 0 : -1}>
+            <button type="button" className="text-btn" onClick={() => { setMenuOpen(false); window.dispatchEvent(new Event("gundam:search")); }} tabIndex={menuOpen ? 0 : -1}>
               <SearchIcon size={16} /> {dict.common.search}
             </button>
             <button type="button" className="text-btn" onClick={toggleTheme} tabIndex={menuOpen ? 0 : -1}>

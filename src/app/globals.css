@@ -2,7 +2,7 @@
 @import "../styles/viewer.css";
 
 /* ============================================================
-   GAIA ARCHIVE — design tokens
+   GUNDAM ARCHIVE — design tokens
    Industrial archive: hairline grids, mono numerals, restrained
    cyan. Every surface is a panel; every panel is 1px, not a shadow.
    ============================================================ */
@@ -560,7 +560,7 @@ hr {
   line-height: 1;
 }
 
-.brand__gaia {
+.brand__gundam {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 600;

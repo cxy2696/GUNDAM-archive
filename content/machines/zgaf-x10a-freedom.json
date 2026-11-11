@@ -1,13 +1,27 @@
 {
   "id": "zgaf-x10a-freedom",
   "modelCode": "ZGMF-X10A",
-  "name": { "zh": "自由高达", "ja": "フリーダムガンダム", "en": "Freedom Gundam" },
-  "aliases": ["Freedom", "自由", "フリーダム", "X10A"],
+  "name": {
+    "zh": "自由高达",
+    "ja": "フリーダムガンダム",
+    "en": "Freedom Gundam"
+  },
+  "aliases": [
+    "Freedom",
+    "自由",
+    "フリーダム",
+    "X10A"
+  ],
   "unitType": "prototype",
   "eraId": "ce",
   "factionId": "orb-union",
   "canon": "parallel",
-  "firstAppear": { "year": 71, "month": 6, "day": 15, "precision": "approximate" },
+  "firstAppear": {
+    "year": 71,
+    "month": 6,
+    "day": 15,
+    "precision": "approximate"
+  },
   "summary": {
     "zh": "ZAFT 开发、后被基拉·大和夺取的高性能机。相转移装甲、翼状推进器与多目标锁定系统，让它成为 C.E.71 战场上最难以击落的机体之一。",
     "ja": "ザフトが開発し、後にキラ・ヤマトに奪取された高性能機。フェイズシフト装甲、翼状推進器、多目標ロックシステムにより、C.E.71の戦場で最も撃墜困難な機体の一つとなった。"
@@ -30,20 +44,85 @@
     "powerOutput": 8826,
     "thrust": null,
     "sensorRadius": null,
-    "armor": { "zh": "相转移装甲", "ja": "フェイズシフト装甲" }
+    "armor": {
+      "zh": "相转移装甲",
+      "ja": "フェイズシフト装甲"
+    }
   },
   "armament": [
-    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
-    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "磁轨炮 ×2", "ja": "レールガン ×2" }, "type": "kinetic" },
-    { "name": { "zh": "等离子集束炮 ×2", "ja": "プラズマ収束砲 ×2" }, "type": "beam" },
-    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "磁轨炮 ×2",
+        "ja": "レールガン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "等离子集束炮 ×2",
+        "ja": "プラズマ収束砲 ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["phase-shift", "beam-weapon", "thermonuclear"],
-  "pilots": [{ "characterId": "kira-yamato", "note": { "zh": "夺取后的主要驾驶员", "ja": "奪取後の主パイロット" } }],
-  "eventIds": ["battle-of-orb"],
-  "workIds": ["seed-2002"],
-  "edges": [],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "kira-yamato",
+      "note": {
+        "zh": "夺取后的主要驾驶员",
+        "ja": "奪取後の主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "battle-of-orb"
+  ],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [
+    {
+      "to": "zgmf-x20a-strike-freedom",
+      "kind": "derive_of",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "强袭自由是自由高达的后继机。",
+        "ja": "ストライクフリーダムはフリーダムの後継機。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",
@@ -60,8 +139,14 @@
     }
   },
   "sources": [
-    { "label": "TV 动画《机动战士高达 SEED》第 1—50 话", "level": "S" },
-    { "label": "《机动战士高达 SEED》MS 设定资料", "level": "A" }
+    {
+      "label": "TV 动画《机动战士高达 SEED》第 1—50 话",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达 SEED》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

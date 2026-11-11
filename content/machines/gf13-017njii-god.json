@@ -1,0 +1,107 @@
+{
+  "id": "gf13-017njii-god",
+  "modelCode": "GF13-017NJII",
+  "name": {
+    "zh": "神高达",
+    "ja": "ゴッドガンダム",
+    "en": "God Gundam"
+  },
+  "aliases": [
+    "God Gundam",
+    "ゴッド",
+    "神"
+  ],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "neo-japan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "第十三届高达武斗会的新日本代表机，以拳法与极限机动为核心，能释放“爆热神威掌”。",
+    "ja": "第13回ガンダムファイトのネオジャパン代表機。拳法と極限機動を軸に、「爆熱ゴッドフィンガー」を放つ。"
+  },
+  "description": {
+    "zh": [
+      "神高达由多蒙·卡修驾驶，设计上放弃传统射击战，转而以格斗与机体同步为核心。它的机动性与拳法招式让武斗会回到“人对人”的决斗逻辑，也把驾驶员的身体推向极限。"
+    ],
+    "ja": [
+      "ゴッドガンダムはドモン・カッシュが駆り、従来の射撃戦を捨てて格闘と機体同調を中心に設計された。その機動と拳法はファイトを「人対人」の決闘へ引き戻し、パイロットの身体を限界まで追い込んだ。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 16.6,
+    "heightHead": 16.6,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "爆热神威掌",
+        "ja": "爆熱ゴッドフィンガー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "none",
+    "shield": false,
+    "colors": {
+      "primary": "#F2F0E8",
+      "secondary": "#C0262D",
+      "accent": "#F5C542",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动武斗传 G 高达》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

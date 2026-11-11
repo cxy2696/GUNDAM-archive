@@ -6,9 +6,9 @@ import { useEffect } from "react";
 export function ScrollRestore() {
   useEffect(() => {
     try {
-      const saved = sessionStorage.getItem("gaia:scroll");
+      const saved = sessionStorage.getItem("gundam:scroll");
       if (!saved) return;
-      sessionStorage.removeItem("gaia:scroll");
+      sessionStorage.removeItem("gundam:scroll");
       const y = Number(saved);
       if (!Number.isFinite(y) || y <= 0) return;
       requestAnimationFrame(() => window.scrollTo({ top: y, behavior: "instant" }));

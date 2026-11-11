@@ -1,13 +1,26 @@
 {
   "id": "lm314v21-v2",
   "modelCode": "LM314V21",
-  "name": { "zh": "V2 高达", "ja": "V2ガンダム", "en": "Victory 2 Gundam" },
-  "aliases": ["V2", "V2高达", "V2ガンダム", "Victory 2"],
+  "name": {
+    "zh": "V2 高达",
+    "ja": "V2ガンダム",
+    "en": "Victory 2 Gundam"
+  },
+  "aliases": [
+    "V2",
+    "V2高达",
+    "V2ガンダム",
+    "Victory 2"
+  ],
   "unitType": "prototype",
   "eraId": "uc",
   "factionId": "league-militaire",
   "canon": "mainline",
-  "firstAppear": { "year": 153, "month": 4, "precision": "month" },
+  "firstAppear": {
+    "year": 153,
+    "month": 4,
+    "precision": "month"
+  },
   "summary": {
     "zh": "神圣军事同盟为对抗赞斯卡尔而投入的最终旗舰机。光之翼让它在米诺夫斯基粒子环境下获得近乎不可能的加速与巡航能力。",
     "ja": "ザンスカールに対抗するためリガ・ミリティアが投入した最終旗艦機。光の翼により、ミノフスキー粒子環境下で不可能に近い加速と巡航能力を得た。"
@@ -30,18 +43,62 @@
     "powerOutput": 7510,
     "thrust": 66750,
     "sensorRadius": 25000,
-    "armor": { "zh": "高达尼姆合金陶瓷复合材料", "ja": "ガンダリウム合金セラミック複合材" }
+    "armor": {
+      "zh": "高达尼姆合金陶瓷复合材料",
+      "ja": "ガンダリウム合金セラミック複合材"
+    }
   },
   "armament": [
-    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
-    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "光束盾牌", "ja": "ビームシールド" }, "type": "special" },
-    { "name": { "zh": "光之翼", "ja": "光の翼" }, "type": "special" }
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束盾牌",
+        "ja": "ビームシールド"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光之翼",
+        "ja": "光の翼"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["wings-of-light", "gundarium", "beam-weapon", "movable-frame"],
-  "pilots": [{ "characterId": "uso-ewin", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
-  "eventIds": ["zanscare-war"],
-  "workIds": ["victory-1993"],
+  "tags": [
+    "wings-of-light",
+    "gundarium",
+    "beam-weapon",
+    "movable-frame"
+  ],
+  "pilots": [
+    {
+      "characterId": "uso-ewin",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "zanscare-war"
+  ],
+  "workIds": [
+    "victory-1993"
+  ],
   "edges": [
     {
       "to": "turn-a",
@@ -50,7 +107,12 @@
         "zh": "设定关联：Turn A 的技术谱系覆盖此前所有纪元，此处表达“黑历史”层面的继承，而非直接技术来源。",
         "ja": "設定上の関連：ターンAの技術系譜はそれ以前の全紀元を覆う。ここは「黒歴史」層での継承を表し、直接の技術的出自ではない。"
       },
-      "sources": [{ "label": "《∀高达》黑历史设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《∀高达》黑历史设定资料",
+          "level": "A"
+        }
+      ]
     }
   ],
   "viewer": {
@@ -69,8 +131,14 @@
     }
   },
   "sources": [
-    { "label": "TV 动画《机动战士 V 高达》全 51 话", "level": "S" },
-    { "label": "《机动战士 V 高达》MS 设定资料", "level": "A" }
+    {
+      "label": "TV 动画《机动战士 V 高达》全 51 话",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士 V 高达》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

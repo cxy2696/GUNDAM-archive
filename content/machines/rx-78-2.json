@@ -1,13 +1,28 @@
 {
   "id": "rx-78-2",
   "modelCode": "RX-78-2",
-  "name": { "zh": "高达", "ja": "ガンダム", "en": "Gundam" },
-  "aliases": ["元祖高达", "白色恶魔", "White Devil", "ガンダム", "RX-78"],
+  "name": {
+    "zh": "高达",
+    "ja": "ガンダム",
+    "en": "Gundam"
+  },
+  "aliases": [
+    "元祖高达",
+    "白色恶魔",
+    "White Devil",
+    "ガンダム",
+    "RX-78"
+  ],
   "unitType": "prototype",
   "eraId": "uc",
   "factionId": "earth-federation",
   "canon": "mainline",
-  "firstAppear": { "year": 79, "month": 9, "day": 18, "precision": "day" },
+  "firstAppear": {
+    "year": 79,
+    "month": 9,
+    "day": 18,
+    "precision": "day"
+  },
   "summary": {
     "zh": "联邦 V 作战的旗舰试作机。月神钛装甲、核心战机与光束步枪的组合，让一台机体足以改变一年战争的走向。",
     "ja": "連邦V作戦の旗艦試作機。ルナチタニウム装甲、コア・ブロック、ビームライフルの組み合わせが、一機で一年戦争の帰趨を変えた。"
@@ -30,19 +45,73 @@
     "powerOutput": 1380,
     "thrust": 55500,
     "sensorRadius": 5700,
-    "armor": { "zh": "月神钛合金", "ja": "ルナチタニウム合金" }
+    "armor": {
+      "zh": "月神钛合金",
+      "ja": "ルナチタニウム合金"
+    }
   },
   "armament": [
-    { "name": { "zh": "60mm 火神炮 ×2", "ja": "60mmバルカン ×2" }, "type": "kinetic" },
-    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "光束步枪", "ja": "ビームライフル" }, "type": "beam" },
-    { "name": { "zh": "超级火箭炮", "ja": "ハイパー・バズーカ" }, "type": "kinetic" },
-    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "超级火箭炮",
+        "ja": "ハイパー・バズーカ"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["luna-titanium", "core-block", "beam-weapon", "thermonuclear"],
-  "pilots": [{ "characterId": "amuro-ray", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
-  "eventIds": ["one-year-war", "operation-odessa", "jaburo-assault", "battle-of-solomon", "battle-of-a-baoa-qu"],
-  "workIds": ["msg-1979"],
+  "tags": [
+    "luna-titanium",
+    "core-block",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [
+    {
+      "characterId": "amuro-ray",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "one-year-war",
+    "operation-odessa",
+    "jaburo-assault",
+    "battle-of-solomon",
+    "battle-of-a-baoa-qu"
+  ],
+  "workIds": [
+    "msg-1979"
+  ],
   "edges": [
     {
       "to": "msz-006-zeta",
@@ -52,7 +121,57 @@
         "zh": "联邦系高达的可动骨架与高机动设计在 Z 计划中延续。",
         "ja": "連邦系ガンダムのムーバブルフレームと高機動設計はΖ計画へ継承された。"
       },
-      "sources": [{ "label": "《机动战士 Z 高达》MS 设定资料", "level": "A" }]
+      "sources": [
+        {
+          "label": "《机动战士 Z 高达》MS 设定资料",
+          "level": "A"
+        }
+      ]
+    },
+    {
+      "to": "rx-78nt-1-alex",
+      "kind": "derive_of",
+      "techTag": "gundarium",
+      "note": {
+        "zh": "联邦 NT 专用改良型以 RX-78-2 为基础。",
+        "ja": "連邦のNT専用改良型はRX-78-2を基盤とする。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    },
+    {
+      "to": "rx-78gp01",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "GP 系列继承 RX-78 的可动骨架与核心战机。",
+        "ja": "GP系列はRX-78のムーバブルフレームとコア・ファイターを継承。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    },
+    {
+      "to": "rx-178-mk-ii",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "联邦次世代机延续 RX-78 的技术路线。",
+        "ja": "連邦次世代機はRX-78の技術路線を継続。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
     }
   ],
   "viewer": {
@@ -71,8 +190,15 @@
     }
   },
   "sources": [
-    { "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" },
-    { "label": "Gundam.INFO 官方机体资料（RX-78-2）", "level": "A", "url": "https://www.gundam.info/" }
+    {
+      "label": "TV 动画《机动战士高达》第 1—43 话",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料（RX-78-2）",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

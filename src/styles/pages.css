@@ -5006,3 +5006,9 @@ a.aside-work:hover {
   font-size: clamp(38px, 5vw, 72px);
   letter-spacing: -0.05em;
 }
+
+[data-lang="ja"] .hero__title {
+  font-size: clamp(32px, 4.6vw, 66px);
+  line-height: 1.06;
+  letter-spacing: -0.06em;
+}

@@ -1,0 +1,114 @@
+{
+  "id": "gx-9901-dx",
+  "modelCode": "GX-9901-DX",
+  "name": {
+    "zh": "高达 Double X",
+    "ja": "ガンダムダブルエックス",
+    "en": "Gundam Double X"
+  },
+  "aliases": [
+    "Double X",
+    "DX",
+    "ダブルエックス"
+  ],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "Gundam X 的后继机，搭载双卫星微波炮，是废土上最具战略威慑力的机体。",
+    "ja": "ガンダムXの後継機。ツインサテライトキャノンを搭載し、廃墟で最も戦略的抑止力を持つ機体。"
+  },
+  "description": {
+    "zh": [
+      "Double X 以两台卫星微波炮和更强的反应炉把“一击改变战局”推到极致，但每次发射都需要庞大的能量与支援。它在加罗特手中既是废土的希望，也是旧战争遗产的定时炸弹。"
+    ],
+    "ja": [
+      "ダブルXは二基のサテライトキャノンと強化された反応炉で「一撃で戦局を変える」力を極限まで高めたが、発射には多大なエネルギーと支援を要する。ガロードの手で廃墟の希望にも、旧戦争遺産の時限爆弾にもなった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.3,
+    "heightHead": 17.3,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双卫星微波炮",
+        "ja": "ツインサテライトキャノン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1E40AF",
+      "accent": "#F59E0B",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

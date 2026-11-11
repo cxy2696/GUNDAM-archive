@@ -8,7 +8,7 @@ export default function RootPage() {
     const base = path.endsWith("/") ? path : path.replace(/[^/]*$/, "");
     let lang = "zh";
     try {
-      const stored = localStorage.getItem("gaia-lang");
+      const stored = localStorage.getItem("gundam-lang");
       if (stored === "zh" || stored === "ja") lang = stored;
       else if ((navigator.language || "").toLowerCase().startsWith("ja")) lang = "ja";
     } catch {
@@ -28,7 +28,7 @@ export default function RootPage() {
             <circle cx="40" cy="40" r="3" fill="currentColor" />
           </svg>
         </div>
-        <p className="micro">GAIA ARCHIVE / INITIALIZING</p>
+        <p className="micro">GUNDAM ARCHIVE / INITIALIZING</p>
         <h1>机动战士档案</h1>
         <p className="boot__note">正在进入档案馆…</p>
         <div className="boot__links">

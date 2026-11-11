@@ -1,0 +1,115 @@
+{
+  "id": "xvx-016-ff-aerial-rebuild",
+  "modelCode": "XVX-016FF",
+  "name": {
+    "zh": "风灵高达 改修型",
+    "ja": "ガンダム・エアリアル改修型",
+    "en": "Gundam Aerial Rebuild"
+  },
+  "aliases": [
+    "Aerial Rebuild",
+    "エアリアル改修型",
+    "风灵改"
+  ],
+  "unitType": "prototype",
+  "eraId": "as",
+  "factionId": "benerit",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "风灵高达的改修型，强化了比特子机与数据风暴控制，外观也更接近完整的 GUND 机体。",
+    "ja": "エアリアルの改修型。ビット子機とデータストーム制御を強化し、外観もより完成されたGUND機体へ近づいた。"
+  },
+  "description": {
+    "zh": [
+      "改修型在保留风灵核心架构的同时，重新平衡了 GUND 连接与机体负担。它不再只是学园决斗的机体，而是企业战争与“高达诅咒”问题的中心。"
+    ],
+    "ja": [
+      "改修型はエアリアルの核心構造を保ちつつ、GUND接続と機体負荷のバランスを取り直した。もはや学園決闘の機体ではなく、企業戦争と「ガンダムの呪い」の中心にある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.9,
+    "heightHead": 18.9,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "比特子机 ×6",
+        "ja": "ビット子機 ×6"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "gundarium",
+    "beam-weapon",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "witch-2022"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#F4F7FA",
+      "secondary": "#1E4FA3",
+      "accent": "#22D3EE",
+      "eye": "#7DE3FF",
+      "frame": "#3A4654"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 水星的魔女》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

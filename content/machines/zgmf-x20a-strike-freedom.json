@@ -1,0 +1,115 @@
+{
+  "id": "zgmf-x20a-strike-freedom",
+  "modelCode": "ZGMF-X20A",
+  "name": {
+    "zh": "强袭自由高达",
+    "ja": "ストライクフリーダムガンダム",
+    "en": "Strike Freedom Gundam"
+  },
+  "aliases": [
+    "Strike Freedom",
+    "ストフリ",
+    "强自"
+  ],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 74,
+    "month": 3,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "自由高达的后继机，以超级龙骑兵与金色骨架实现全方位射击与高机动。",
+    "ja": "フリーダムの後継機。スーパードラグーンと金色のフレームで全方位射撃と高機動を実現する。"
+  },
+  "description": {
+    "zh": [
+      "强袭自由把龙骑兵系统从“实验装备”变成可稳定运用的战术核心。基拉·大和在 C.E.73 的混乱中再次驾驶它介入战场，试图以单机火力阻止双方继续扩大战争。"
+    ],
+    "ja": [
+      "ストライクフリーダムはドラグーン・システムを「実験装備」から安定運用可能な戦術中核へ変えた。キラ・ヤマトはC.E.73の混乱で再びこれに乗り、単機の火力で双方の戦争拡大を止めようとした。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.88,
+    "heightHead": 18.88,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "超级龙骑兵 ×8",
+        "ja": "スーパードラグーン ×8"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪 ×2",
+        "ja": "ビームライフル ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "thermonuclear",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-destiny-2004"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1D4ED8",
+      "accent": "#D4AF37",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 SEED DESTINY》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

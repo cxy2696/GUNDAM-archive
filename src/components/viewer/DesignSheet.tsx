@@ -323,7 +323,7 @@ export function DesignSheet({
       )}
 
       <g className="sheet__annot" aria-hidden>
-        <text x="20" y="542" className="sheet__micro">GAIA ARCHIVE · {machine.modelCode}</text>
+        <text x="20" y="542" className="sheet__micro">GUNDAM ARCHIVE · {machine.modelCode}</text>
         <text x="340" y="542" textAnchor="end" className="sheet__micro">{machine.viewer.build.toUpperCase()} / {machine.viewer.head.toUpperCase()}</text>
       </g>
       </g>
@@ -375,7 +375,7 @@ export function DesignSheet({
         <rect x="610" y="352" width="12" height="12" fill={c.frame} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
 
         <text x="538" y="474" className="sheet__side-label">SOURCE</text>
-        <text x="538" y="488" className="sheet__side-value">GAIA / MS-ARCHIVE</text>
+        <text x="538" y="488" className="sheet__side-value">GUNDAM / MS-ARCHIVE</text>
         <text x="538" y="512" className="sheet__side-label">STATUS</text>
         <text x="538" y="526" className="sheet__side-value">PROCEDURAL / LOD-P</text>
         </g>

@@ -32,7 +32,7 @@ export default async function SearchPage({ params }: { params: Promise<{ lang: s
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / RETRIEVAL</span>
+            <span className="mono">GUNDAM / RETRIEVAL</span>
             <span className="mono">{String(entries.length).padStart(3, "0")} INDEXED</span>
           </div>
           <div className="page-head__title-row">

@@ -1,7 +1,11 @@
 [
   {
     "id": "msg-1979",
-    "title": { "zh": "机动战士高达", "ja": "機動戦士ガンダム", "en": "Mobile Suit Gundam" },
+    "title": {
+      "zh": "机动战士高达",
+      "ja": "機動戦士ガンダム",
+      "en": "Mobile Suit Gundam"
+    },
     "year": 1979,
     "type": "tv",
     "eraId": "uc",
@@ -13,7 +17,11 @@
   },
   {
     "id": "zeta-1985",
-    "title": { "zh": "机动战士 Z 高达", "ja": "機動戦士Ζガンダム", "en": "Mobile Suit Zeta Gundam" },
+    "title": {
+      "zh": "机动战士 Z 高达",
+      "ja": "機動戦士Ζガンダム",
+      "en": "Mobile Suit Zeta Gundam"
+    },
     "year": 1985,
     "type": "tv",
     "eraId": "uc",
@@ -25,7 +33,11 @@
   },
   {
     "id": "zz-1986",
-    "title": { "zh": "机动战士高达 ZZ", "ja": "機動戦士ガンダムZZ", "en": "Mobile Suit Gundam ZZ" },
+    "title": {
+      "zh": "机动战士高达 ZZ",
+      "ja": "機動戦士ガンダムZZ",
+      "en": "Mobile Suit Gundam ZZ"
+    },
     "year": 1986,
     "type": "tv",
     "eraId": "uc",
@@ -37,7 +49,11 @@
   },
   {
     "id": "cca-1988",
-    "title": { "zh": "机动战士高达 逆袭的夏亚", "ja": "機動戦士ガンダム 逆襲のシャア", "en": "Mobile Suit Gundam: Char's Counterattack" },
+    "title": {
+      "zh": "机动战士高达 逆袭的夏亚",
+      "ja": "機動戦士ガンダム 逆襲のシャア",
+      "en": "Mobile Suit Gundam: Char's Counterattack"
+    },
     "year": 1988,
     "type": "movie",
     "eraId": "uc",
@@ -49,7 +65,11 @@
   },
   {
     "id": "0083-1991",
-    "title": { "zh": "机动战士高达 0083 星尘的回忆", "ja": "機動戦士ガンダム0083 STARDUST MEMORY", "en": "Mobile Suit Gundam 0083: Stardust Memory" },
+    "title": {
+      "zh": "机动战士高达 0083 星尘的回忆",
+      "ja": "機動戦士ガンダム0083 STARDUST MEMORY",
+      "en": "Mobile Suit Gundam 0083: Stardust Memory"
+    },
     "year": 1991,
     "type": "ova",
     "eraId": "uc",
@@ -61,7 +81,11 @@
   },
   {
     "id": "f91-1991",
-    "title": { "zh": "机动战士高达 F91", "ja": "機動戦士ガンダムF91", "en": "Mobile Suit Gundam F91" },
+    "title": {
+      "zh": "机动战士高达 F91",
+      "ja": "機動戦士ガンダムF91",
+      "en": "Mobile Suit Gundam F91"
+    },
     "year": 1991,
     "type": "movie",
     "eraId": "uc",
@@ -73,7 +97,11 @@
   },
   {
     "id": "victory-1993",
-    "title": { "zh": "机动战士 V 高达", "ja": "機動戦士Vガンダム", "en": "Mobile Suit Victory Gundam" },
+    "title": {
+      "zh": "机动战士 V 高达",
+      "ja": "機動戦士Vガンダム",
+      "en": "Mobile Suit Victory Gundam"
+    },
     "year": 1993,
     "type": "tv",
     "eraId": "uc",
@@ -85,7 +113,11 @@
   },
   {
     "id": "unicorn-2010",
-    "title": { "zh": "机动战士高达 UC", "ja": "機動戦士ガンダムUC", "en": "Mobile Suit Gundam Unicorn" },
+    "title": {
+      "zh": "机动战士高达 UC",
+      "ja": "機動戦士ガンダムUC",
+      "en": "Mobile Suit Gundam Unicorn"
+    },
     "year": 2010,
     "type": "ova",
     "eraId": "uc",
@@ -97,7 +129,11 @@
   },
   {
     "id": "g-gundam-1994",
-    "title": { "zh": "机动武斗传 G 高达", "ja": "機動武闘伝Gガンダム", "en": "Mobile Fighter G Gundam" },
+    "title": {
+      "zh": "机动武斗传 G 高达",
+      "ja": "機動武闘伝Gガンダム",
+      "en": "Mobile Fighter G Gundam"
+    },
     "year": 1994,
     "type": "tv",
     "eraId": "fc",
@@ -109,7 +145,11 @@
   },
   {
     "id": "wing-1995",
-    "title": { "zh": "新机动战记高达 W", "ja": "新機動戦記ガンダムW", "en": "Mobile Suit Gundam Wing" },
+    "title": {
+      "zh": "新机动战记高达 W",
+      "ja": "新機動戦記ガンダムW",
+      "en": "Mobile Suit Gundam Wing"
+    },
     "year": 1995,
     "type": "tv",
     "eraId": "ac",
@@ -121,7 +161,11 @@
   },
   {
     "id": "x-1996",
-    "title": { "zh": "机动新世纪高达 X", "ja": "機動新世紀ガンダムX", "en": "After War Gundam X" },
+    "title": {
+      "zh": "机动新世纪高达 X",
+      "ja": "機動新世紀ガンダムX",
+      "en": "After War Gundam X"
+    },
     "year": 1996,
     "type": "tv",
     "eraId": "aw",
@@ -133,7 +177,11 @@
   },
   {
     "id": "turn-a-1999",
-    "title": { "zh": "∀高达", "ja": "∀ガンダム", "en": "Turn A Gundam" },
+    "title": {
+      "zh": "∀高达",
+      "ja": "∀ガンダム",
+      "en": "Turn A Gundam"
+    },
     "year": 1999,
     "type": "tv",
     "eraId": "cc",
@@ -145,7 +193,11 @@
   },
   {
     "id": "seed-2002",
-    "title": { "zh": "机动战士高达 SEED", "ja": "機動戦士ガンダムSEED", "en": "Mobile Suit Gundam SEED" },
+    "title": {
+      "zh": "机动战士高达 SEED",
+      "ja": "機動戦士ガンダムSEED",
+      "en": "Mobile Suit Gundam SEED"
+    },
     "year": 2002,
     "type": "tv",
     "eraId": "ce",
@@ -157,7 +209,11 @@
   },
   {
     "id": "00-2007",
-    "title": { "zh": "机动战士高达 00", "ja": "機動戦士ガンダム00", "en": "Mobile Suit Gundam 00" },
+    "title": {
+      "zh": "机动战士高达 00",
+      "ja": "機動戦士ガンダム00",
+      "en": "Mobile Suit Gundam 00"
+    },
     "year": 2007,
     "type": "tv",
     "eraId": "ad",
@@ -165,6 +221,150 @@
     "summary": {
       "zh": "A.D.2307，轨道电梯时代的能源政治。天上人以 GN 动力介入三大阵营的战争。",
       "ja": "A.D.2307、軌道エレベーター時代のエネルギー政治。ソレスタルビーイングがGNドライヴで三大陣営の戦争へ介入する。"
+    }
+  },
+  {
+    "id": "gundam-0080",
+    "title": {
+      "zh": "机动战士高达 0080 口袋里的战争",
+      "ja": "機動戦士ガンダム0080 ポケットの中の戦争",
+      "en": "Mobile Suit Gundam 0080: War in the Pocket"
+    },
+    "year": 1989,
+    "type": "ova",
+    "eraId": "uc",
+    "canon": "mainline",
+    "summary": {
+      "zh": "一年战争末期，Side 6 的少年与联邦 NT-1 实验机卷入一场没有胜利者的战斗。",
+      "ja": "一年戦争末期、サイド6の少年と連邦のNT-1実験機が、勝者のいない戦いに巻き込まれる。"
+    }
+  },
+  {
+    "id": "narrative-2018",
+    "title": {
+      "zh": "机动战士高达 NT",
+      "ja": "機動戦士ガンダムNT",
+      "en": "Mobile Suit Gundam Narrative"
+    },
+    "year": 2018,
+    "type": "movie",
+    "eraId": "uc",
+    "canon": "mainline",
+    "summary": {
+      "zh": "U.C.0097，独角兽事件后的叙述高达与“凤凰”追击战。",
+      "ja": "U.C.0097、ユニコーン事件後のナラティブガンダムと「フェネクス」追撃戦。"
+    }
+  },
+  {
+    "id": "hathaway-2021",
+    "title": {
+      "zh": "机动战士高达 闪光的哈萨维",
+      "ja": "機動戦士ガンダム 閃光のハサウェイ",
+      "en": "Mobile Suit Gundam Hathaway"
+    },
+    "year": 2021,
+    "type": "movie",
+    "eraId": "uc",
+    "canon": "mainline",
+    "summary": {
+      "zh": "U.C.0105，哈萨维以马夫蒂之名对抗联邦的腐败。",
+      "ja": "U.C.0105、ハサウェイがマフティーの名で連邦の腐敗に挑む。"
+    }
+  },
+  {
+    "id": "seed-destiny-2004",
+    "title": {
+      "zh": "机动战士高达 SEED DESTINY",
+      "ja": "機動戦士ガンダムSEED DESTINY",
+      "en": "Mobile Suit Gundam SEED Destiny"
+    },
+    "year": 2004,
+    "type": "tv",
+    "eraId": "ce",
+    "canon": "parallel",
+    "summary": {
+      "zh": "C.E.73，第二次调整者与自然人的战争。命运计划把基因决定论推上政治舞台。",
+      "ja": "C.E.73、二度目のコーディネイターとナチュラルの戦争。デスティニープランが遺伝子決定論を政治の場へ押し出す。"
+    }
+  },
+  {
+    "id": "00-s2-2008",
+    "title": {
+      "zh": "机动战士高达 00 第二季",
+      "ja": "機動戦士ガンダム00 セカンドシーズン",
+      "en": "Mobile Suit Gundam 00 Season 2"
+    },
+    "year": 2008,
+    "type": "tv",
+    "eraId": "ad",
+    "canon": "parallel",
+    "summary": {
+      "zh": "A.D.2312，天上人重组并与变革者、地球联邦的新秩序对抗。",
+      "ja": "A.D.2312、ソレスタルビーイングが再編し、イノベイターと地球連邦の新秩序に対抗する。"
+    }
+  },
+  {
+    "id": "age-2011",
+    "title": {
+      "zh": "机动战士高达 AGE",
+      "ja": "機動戦士ガンダムAGE",
+      "en": "Mobile Suit Gundam AGE"
+    },
+    "year": 2011,
+    "type": "tv",
+    "eraId": "ag",
+    "canon": "parallel",
+    "summary": {
+      "zh": "跨越三代的百年战争。AGE 系统记录战斗并把经验传给下一代。",
+      "ja": "三代にわたる百年戦争。AGEシステムが戦闘を記録し、経験を次代へ継承する。"
+    }
+  },
+  {
+    "id": "reconguista-2014",
+    "title": {
+      "zh": "高达 G 之复国运动",
+      "ja": "ガンダム Gのレコンギスタ",
+      "en": "Gundam Reconguista in G"
+    },
+    "year": 2014,
+    "type": "tv",
+    "eraId": "rc",
+    "canon": "mainline",
+    "summary": {
+      "zh": "R.C.1014，宇宙电梯与光子电池时代的少年少女，重新面对被禁止的宇宙航行。",
+      "ja": "R.C.1014、軌道エレベーターと光子電池の時代の少年少女が、禁じられた宇宙航行と向き合う。"
+    }
+  },
+  {
+    "id": "ibo-2015",
+    "title": {
+      "zh": "机动战士高达 铁血的奥尔芬斯",
+      "ja": "機動戦士ガンダム 鉄血のオルフェンズ",
+      "en": "Mobile Suit Gundam: Iron-Blooded Orphans"
+    },
+    "year": 2015,
+    "type": "tv",
+    "eraId": "pd",
+    "canon": "parallel",
+    "summary": {
+      "zh": "P.D.323，火星少年兵组成的铁华团以一台厄祭战残存机挑战加拉尔霍恩。",
+      "ja": "P.D.323、火星の少年兵で結成された鉄華団が、厄祭戦の残存機でギャラルホルンを挑む。"
+    }
+  },
+  {
+    "id": "witch-2022",
+    "title": {
+      "zh": "机动战士高达 水星的魔女",
+      "ja": "機動戦士ガンダム 水星の魔女",
+      "en": "Mobile Suit Gundam: The Witch from Mercury"
+    },
+    "year": 2022,
+    "type": "tv",
+    "eraId": "as",
+    "canon": "parallel",
+    "summary": {
+      "zh": "A.S.122，水星来的少女进入阿斯提卡西亚学园，GUND 格式化与企业的算计交织。",
+      "ja": "A.S.122、水星から来た少女がアスティカシア学園へ入り、GUNDフォーマットと企業の思惑が交錯する。"
     }
   }
 ]

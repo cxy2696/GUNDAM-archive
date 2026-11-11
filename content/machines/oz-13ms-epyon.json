@@ -1,0 +1,106 @@
+{
+  "id": "oz-13ms-epyon",
+  "modelCode": "OZ-13MS",
+  "name": {
+    "zh": "艾比安",
+    "ja": "エピオン",
+    "en": "Epyon"
+  },
+  "aliases": [
+    "Epyon",
+    "エピオン",
+    "艾比安"
+  ],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "oz",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 195,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "OZ 的决斗用试作机，以零式系统、光束剑与鞭状武器追求近接压制。",
+    "ja": "OZの決闘用試作機。ゼロシステム、ビームソード、鞭状武器で近接制圧を狙う。"
+  },
+  "description": {
+    "zh": [
+      "艾比安舍弃远程火力，把机体做成纯粹的近战兵器。零式系统与驾驶员的攻击性互相放大，使它成为 OZ 内部权力斗争与“战争终结”理念的极端产物。"
+    ],
+    "ja": [
+      "エピオンは遠距離火力を捨て、純粋な近接兵器として設計された。ゼロシステムとパイロットの攻撃性が相互に増幅し、OZ内部の権力闘争と「戦争終結」理念の極端な産物となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.4,
+    "heightHead": 17.4,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束剑",
+        "ja": "ビームソード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "热能鞭",
+        "ja": "ヒートロッド"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "wing-1995"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "standard",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#7F1D1D",
+      "secondary": "#1F2937",
+      "accent": "#E3B341",
+      "eye": "#FF6B6B",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《新机动战记高达 W》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

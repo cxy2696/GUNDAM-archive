@@ -1,0 +1,113 @@
+{
+  "id": "gn-0000-00-raiser",
+  "modelCode": "GN-0000+GNR-010",
+  "name": {
+    "zh": "00 强化模组",
+    "ja": "ダブルオーライザー",
+    "en": "00 Raiser"
+  },
+  "aliases": [
+    "00 Raiser",
+    "ダブルオーライザー",
+    "00R"
+  ],
+  "unitType": "prototype",
+  "eraId": "ad",
+  "factionId": "celestial-being",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 2308,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "00 高达与 0-Raiser 合体后的形态，双太阳炉同步带来超越常规的粒子输出。",
+    "ja": "ダブルオーガンダムと0-ライザーの合体形態。ツインドライヴの同期により通常を超える粒子出力を得る。"
+  },
+  "description": {
+    "zh": [
+      "00 强化模组通过双炉同步与 0-Raiser 的强化部件，把刹那的机体推到理论极限。它不仅能进行高机动格斗，还能以巨大粒子场干涉战场，成为天上人重新介入世界的关键。"
+    ],
+    "ja": [
+      "ダブルオーライザーはツインドライヴの同期と0-ライザーの強化で、刹那の機体を理論限界まで押し上げた。高機動格闘だけでなく巨大な粒子場で戦場へ干渉し、ソレスタルビーイングが再び世界へ介入する鍵となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.3,
+    "heightHead": 18.3,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GN 剑 II ×2",
+        "ja": "GNソードII ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束军刀 ×2",
+        "ja": "GNビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 火神炮 ×2",
+        "ja": "GNバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gn-drive",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "00-s2-2008"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "binder",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1D4ED8",
+      "accent": "#7CFFB2",
+      "eye": "#7CFFB2",
+      "frame": "#3A4654"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 00 第二季》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

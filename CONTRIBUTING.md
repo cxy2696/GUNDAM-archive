@@ -1,6 +1,6 @@
 # Contributing
 
-感谢你愿意参与 GAIA Archive。这个项目同时接受**内容考据**与**工程**贡献，但两者的门槛不同：内容必须可追溯，代码必须可构建。
+感谢你愿意参与 GUNDAM Archive。这个项目同时接受**内容考据**与**工程**贡献，但两者的门槛不同：内容必须可追溯，代码必须可构建。
 
 ## 1. 环境
 
@@ -10,7 +10,7 @@
 
 ```bash
 git clone https://github.com/cxy2696/GUNDAM-archive.git
-cd gaia-archive
+cd gundam-archive
 pnpm install
 pnpm dev
 ```

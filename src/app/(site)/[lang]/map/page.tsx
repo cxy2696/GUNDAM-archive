@@ -32,7 +32,7 @@ export default async function MapPage({ params }: { params: Promise<{ lang: stri
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / ORBITAL</span>
+            <span className="mono">GUNDAM / ORBITAL</span>
             <span className="mono">EARTH SPHERE / L1—L5</span>
           </div>
           <div className="page-head__title-row">

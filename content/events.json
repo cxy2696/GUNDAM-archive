@@ -1,15 +1,39 @@
 [
   {
     "id": "one-year-war",
-    "title": { "zh": "一年战争", "ja": "一年戦争" },
+    "title": {
+      "zh": "一年战争",
+      "ja": "一年戦争"
+    },
     "eraId": "uc",
     "scale": "era",
-    "date": { "year": 79, "month": 1, "day": 3, "precision": "day" },
-    "endDate": { "year": 80, "month": 1, "day": 1, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 1,
+      "day": 3,
+      "precision": "day"
+    },
+    "endDate": {
+      "year": 80,
+      "month": 1,
+      "day": 1,
+      "precision": "day"
+    },
     "placeId": "side-3",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["rx-78-2", "ms-06f-zaku-ii", "ms-06s-zaku-ii"],
-    "characterIds": ["amuro-ray", "char-aznable", "bright-noa"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "rx-78-2",
+      "ms-06f-zaku-ii",
+      "ms-06s-zaku-ii"
+    ],
+    "characterIds": [
+      "amuro-ray",
+      "char-aznable",
+      "bright-noa"
+    ],
     "summary": {
       "zh": "吉翁公国对地球联邦宣战，殖民卫星坠落与鲁姆会战让联邦在开战一个月内失去大半宇宙舰队。战争最终以阿·巴瓦·库陷落与吉翁解体告终。",
       "ja": "ジオン公国が地球連邦へ宣戦。殖民星落下とルウム戦役により、連邦は開戦一ヶ月で宇宙艦隊の大半を失った。戦争はア・バオア・クー陥落とジオン解体で終結する。"
@@ -20,18 +44,39 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 1—43 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 1—43 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "battle-of-loum",
-    "title": { "zh": "鲁姆会战", "ja": "ルウム戦役" },
+    "title": {
+      "zh": "鲁姆会战",
+      "ja": "ルウム戦役"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 1, "day": 15, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 1,
+      "day": 15,
+      "precision": "day"
+    },
     "placeId": "loum",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["ms-06s-zaku-ii", "ms-06f-zaku-ii"],
-    "characterIds": ["char-aznable"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "ms-06s-zaku-ii",
+      "ms-06f-zaku-ii"
+    ],
+    "characterIds": [
+      "char-aznable"
+    ],
     "summary": {
       "zh": "吉翁以 MS 部队对联邦宇宙舰队发动奇袭。夏亚驾驶红色扎古 II 击沉五艘战舰，“红色彗星”之名自此确立。",
       "ja": "ジオンがMS部隊で連邦宇宙艦隊を奇襲。シャアの赤いザクIIが戦艦五隻を撃沈し、「赤い彗星」の名が確立した。"
@@ -42,17 +87,35 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 1 话；《鲁姆会战》设定资料", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 1 话；《鲁姆会战》设定资料",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "operation-british",
-    "title": { "zh": "不列颠作战", "ja": "ブリティッシュ作戦" },
+    "title": {
+      "zh": "不列颠作战",
+      "ja": "ブリティッシュ作戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 1, "day": 31, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 1,
+      "day": 31,
+      "precision": "day"
+    },
     "placeId": "sydney",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["ms-06f-zaku-ii"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "ms-06f-zaku-ii"
+    ],
     "characterIds": [],
     "summary": {
       "zh": "吉翁将改轨的殖民卫星投向联邦总部贾布罗，卫星在轨道调整失败后坠落在澳大利亚悉尼。",
@@ -64,18 +127,38 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 5 话；《一年战争史》相关年表", "level": "A" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 5 话；《一年战争史》相关年表",
+        "level": "A"
+      }
+    ]
   },
   {
     "id": "operation-odessa",
-    "title": { "zh": "敖德萨作战", "ja": "オデッサ作戦" },
+    "title": {
+      "zh": "敖德萨作战",
+      "ja": "オデッサ作戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 11, "day": 7, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 11,
+      "day": 7,
+      "precision": "day"
+    },
     "placeId": "odessa",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["rx-78-2"],
-    "characterIds": ["amuro-ray"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "rx-78-2"
+    ],
+    "characterIds": [
+      "amuro-ray"
+    ],
     "summary": {
       "zh": "联邦为夺回地球资源命脉发动的大规模反攻。RX-78-2 与白色基地队参与突破吉翁矿山基地的防线。",
       "ja": "地球の資源生命線を奪還するため連邦が発動した大規模反攻。RX-78-2とホワイトベース隊がジオンの鉱山基地防衛線突破に参加した。"
@@ -86,18 +169,39 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 25—26 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 25—26 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "jaburo-assault",
-    "title": { "zh": "贾布罗攻略战", "ja": "ジャブロー攻略戦" },
+    "title": {
+      "zh": "贾布罗攻略战",
+      "ja": "ジャブロー攻略戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 11, "day": 30, "precision": "approximate" },
+    "date": {
+      "year": 79,
+      "month": 11,
+      "day": 30,
+      "precision": "approximate"
+    },
     "placeId": "jaburo",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["rx-78-2", "ms-06f-zaku-ii"],
-    "characterIds": ["amuro-ray"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "rx-78-2",
+      "ms-06f-zaku-ii"
+    ],
+    "characterIds": [
+      "amuro-ray"
+    ],
     "summary": {
       "zh": "吉翁地面部队对联邦地下总部发动突袭，试图在联邦反攻前摧毁其指挥链。复杂的地下通道让守军得以逐层抵抗。",
       "ja": "ジオン地上部隊が連邦地下司令部を奇襲し、反攻前に指揮系統を破壊しようとした。複雑な地下通路で守備側が層状に抵抗した。"
@@ -108,18 +212,39 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 29—30 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 29—30 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "battle-of-solomon",
-    "title": { "zh": "所罗门攻略战", "ja": "ソロモン攻略戦" },
+    "title": {
+      "zh": "所罗门攻略战",
+      "ja": "ソロモン攻略戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 12, "day": 24, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 12,
+      "day": 24,
+      "precision": "day"
+    },
     "placeId": "solomon",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["rx-78-2"],
-    "characterIds": ["amuro-ray", "bright-noa"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "rx-78-2"
+    ],
+    "characterIds": [
+      "amuro-ray",
+      "bright-noa"
+    ],
     "summary": {
       "zh": "星一号作战的第一阶段。联邦以太阳能反射镜与舰队炮击压制所罗门，白色基地队负责突破要塞外围。",
       "ja": "星一号作戦の第一段階。連邦が太陽光反射鏡と艦隊砲撃でソロモンを制圧し、ホワイトベース隊が要塞外周突破を担った。"
@@ -130,18 +255,40 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 35—36 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 35—36 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "battle-of-a-baoa-qu",
-    "title": { "zh": "阿·巴瓦·库攻防战", "ja": "ア・バオア・クー攻防戦" },
+    "title": {
+      "zh": "阿·巴瓦·库攻防战",
+      "ja": "ア・バオア・クー攻防戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 79, "month": 12, "day": 31, "precision": "day" },
+    "date": {
+      "year": 79,
+      "month": 12,
+      "day": 31,
+      "precision": "day"
+    },
     "placeId": "a-baoa-qu",
-    "factionIds": ["earth-federation", "zeon"],
-    "machineIds": ["rx-78-2"],
-    "characterIds": ["amuro-ray", "char-aznable", "bright-noa"],
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
+    "machineIds": [
+      "rx-78-2"
+    ],
+    "characterIds": [
+      "amuro-ray",
+      "char-aznable",
+      "bright-noa"
+    ],
     "summary": {
       "zh": "一年战争的最终决战。联邦与吉翁投入全部残余战力，阿姆罗与夏亚在要塞内部展开第一次宿命对决。",
       "ja": "一年戦争の最終決戦。連邦とジオンが残存戦力の全てを投入し、アムロとシャアが要塞内部で最初の宿命の対決を繰り広げた。"
@@ -152,15 +299,31 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达》第 42—43 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达》第 42—43 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "operation-stardust",
-    "title": { "zh": "星尘作战", "ja": "スターダスト作戦" },
+    "title": {
+      "zh": "星尘作战",
+      "ja": "スターダスト作戦"
+    },
     "eraId": "uc",
     "scale": "incident",
-    "date": { "year": 83, "month": 11, "day": 13, "precision": "day" },
-    "factionIds": ["earth-federation", "zeon"],
+    "date": {
+      "year": 83,
+      "month": 11,
+      "day": 13,
+      "precision": "day"
+    },
+    "factionIds": [
+      "earth-federation",
+      "zeon"
+    ],
     "machineIds": [],
     "characterIds": [],
     "summary": {
@@ -173,19 +336,47 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "OVA《机动战士高达 0083 星尘的回忆》全 13 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "OVA《机动战士高达 0083 星尘的回忆》全 13 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "gryps-conflict",
-    "title": { "zh": "格里普斯战役", "ja": "グリプス戦役" },
+    "title": {
+      "zh": "格里普斯战役",
+      "ja": "グリプス戦役"
+    },
     "eraId": "uc",
     "scale": "era",
-    "date": { "year": 87, "month": 3, "day": 2, "precision": "day" },
-    "endDate": { "year": 88, "month": 2, "day": 22, "precision": "day" },
+    "date": {
+      "year": 87,
+      "month": 3,
+      "day": 2,
+      "precision": "day"
+    },
+    "endDate": {
+      "year": 88,
+      "month": 2,
+      "day": 22,
+      "precision": "day"
+    },
     "placeId": "gryps",
-    "factionIds": ["aeug", "titans", "earth-federation"],
-    "machineIds": ["msz-006-zeta"],
-    "characterIds": ["kamille-bidan", "char-aznable", "bright-noa"],
+    "factionIds": [
+      "aeug",
+      "titans",
+      "earth-federation"
+    ],
+    "machineIds": [
+      "msz-006-zeta"
+    ],
+    "characterIds": [
+      "kamille-bidan",
+      "char-aznable",
+      "bright-noa"
+    ],
     "summary": {
       "zh": "提坦斯与奥古围绕殖民卫星激光与地球圈霸权展开的内战。Z 高达、可动骨架与 Newtype 部队在此集中登场。",
       "ja": "ティターンズとエゥーゴがコロニーレーザーと地球圏の覇権を巡って戦った内戦。Ζガンダム、ムーバブルフレーム、ニュータイプ部隊が集中投入された。"
@@ -196,18 +387,36 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士 Z 高达》全 50 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士 Z 高达》全 50 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "dakar-speech",
-    "title": { "zh": "达喀尔演说", "ja": "ダカール演説" },
+    "title": {
+      "zh": "达喀尔演说",
+      "ja": "ダカール演説"
+    },
     "eraId": "uc",
     "scale": "incident",
-    "date": { "year": 87, "month": 8, "day": 16, "precision": "approximate" },
+    "date": {
+      "year": 87,
+      "month": 8,
+      "day": 16,
+      "precision": "approximate"
+    },
     "placeId": "dakar",
-    "factionIds": ["aeug", "earth-federation"],
+    "factionIds": [
+      "aeug",
+      "earth-federation"
+    ],
     "machineIds": [],
-    "characterIds": ["char-aznable"],
+    "characterIds": [
+      "char-aznable"
+    ],
     "summary": {
       "zh": "夏亚以克瓦特罗·巴吉纳的身份闯入联邦临时首都的议会，向全世界直播提坦斯的暴行与联邦的腐败。",
       "ja": "シャアがクワトロ・バジーナとして連邦臨時首都の議会へ乱入し、ティターンズの蛮行と連邦の腐敗を世界へ生中継した。"
@@ -218,18 +427,41 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士 Z 高达》第 37 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士 Z 高达》第 37 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "first-neo-zeon-war",
-    "title": { "zh": "第一次新吉翁战争", "ja": "第一次ネオ・ジオン戦争" },
+    "title": {
+      "zh": "第一次新吉翁战争",
+      "ja": "第一次ネオ・ジオン戦争"
+    },
     "eraId": "uc",
     "scale": "era",
-    "date": { "year": 88, "month": 2, "day": 29, "precision": "approximate" },
-    "endDate": { "year": 89, "month": 1, "day": 17, "precision": "approximate" },
-    "factionIds": ["neo-zeon", "earth-federation"],
+    "date": {
+      "year": 88,
+      "month": 2,
+      "day": 29,
+      "precision": "approximate"
+    },
+    "endDate": {
+      "year": 89,
+      "month": 1,
+      "day": 17,
+      "precision": "approximate"
+    },
+    "factionIds": [
+      "neo-zeon",
+      "earth-federation"
+    ],
     "machineIds": [],
-    "characterIds": ["haman-karn"],
+    "characterIds": [
+      "haman-karn"
+    ],
     "summary": {
       "zh": "哈曼·卡恩率新吉翁从阿克西斯出击，试图在联邦内战后重建吉翁霸权。战争把地球寒冷化作战与殖民卫星激光推向极致。",
       "ja": "ハマーン・カーン率いるネオ・ジオンがアクシズから出撃し、連邦内戦後の混乱でジオンの覇権再建を狙った。地球寒冷化作戦とコロニーレーザーが極限まで用いられた。"
@@ -240,18 +472,41 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达 ZZ》全 47 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 ZZ》全 47 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "axis-drop",
-    "title": { "zh": "阿克西斯坠落作战", "ja": "アクシズ落下作戦" },
+    "title": {
+      "zh": "阿克西斯坠落作战",
+      "ja": "アクシズ落下作戦"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 93, "month": 3, "day": 12, "precision": "day" },
+    "date": {
+      "year": 93,
+      "month": 3,
+      "day": 12,
+      "precision": "day"
+    },
     "placeId": "axis",
-    "factionIds": ["earth-federation", "neo-zeon"],
-    "machineIds": ["rx-93-nu", "msn-04-sazabi"],
-    "characterIds": ["amuro-ray", "char-aznable", "bright-noa"],
+    "factionIds": [
+      "earth-federation",
+      "neo-zeon"
+    ],
+    "machineIds": [
+      "rx-93-nu",
+      "msn-04-sazabi"
+    ],
+    "characterIds": [
+      "amuro-ray",
+      "char-aznable",
+      "bright-noa"
+    ],
     "summary": {
       "zh": "夏亚率新吉翁将阿克西斯推入地球坠落轨道，隆德·贝尔舰队全力拦截。ν 高达与沙扎比在要塞内部展开最终对决。",
       "ja": "シャア率いるネオ・ジオンがアクシズを地球落下軌道へ投入し、ロンド・ベル艦隊が全力で迎撃。νガンダムとサザビーが要塞内部で最終決戦を迎えた。"
@@ -262,18 +517,40 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "剧场版《机动战士高达 逆袭的夏亚》", "level": "S" }]
+    "sources": [
+      {
+        "label": "剧场版《机动战士高达 逆袭的夏亚》",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "laplace-incident",
-    "title": { "zh": "拉普拉斯事件", "ja": "ラプラス事件" },
+    "title": {
+      "zh": "拉普拉斯事件",
+      "ja": "ラプラス事件"
+    },
     "eraId": "uc",
     "scale": "incident",
-    "date": { "year": 96, "month": 1, "day": 3, "precision": "approximate" },
+    "date": {
+      "year": 96,
+      "month": 1,
+      "day": 3,
+      "precision": "approximate"
+    },
     "placeId": "laplace",
-    "factionIds": ["earth-federation", "vist-foundation", "neo-zeon"],
-    "machineIds": ["rx-0-unicorn"],
-    "characterIds": ["banagher-links", "mineva-lao"],
+    "factionIds": [
+      "earth-federation",
+      "vist-foundation",
+      "neo-zeon"
+    ],
+    "machineIds": [
+      "rx-0-unicorn"
+    ],
+    "characterIds": [
+      "banagher-links",
+      "mineva-lao"
+    ],
     "summary": {
       "zh": "毕斯特财团与“带袖的”围绕拉普拉斯之盒展开争夺。独角兽高达在殖民卫星内部首次启动，宪章的原始条文成为各方筹码。",
       "ja": "ヴィスト財団と「袖付き」がラプラスの箱を巡って争奪戦を展開。ユニコーンガンダムが殖民星内部で初起動し、憲章の原条文が各方の取引材料となった。"
@@ -284,18 +561,38 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "OVA《机动战士高达 UC》第 1—7 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "OVA《机动战士高达 UC》第 1—7 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "torrington-assault",
-    "title": { "zh": "托灵顿基地袭击", "ja": "トリントン基地襲撃" },
+    "title": {
+      "zh": "托灵顿基地袭击",
+      "ja": "トリントン基地襲撃"
+    },
     "eraId": "uc",
     "scale": "battle",
-    "date": { "year": 96, "month": 3, "day": 7, "precision": "approximate" },
+    "date": {
+      "year": 96,
+      "month": 3,
+      "day": 7,
+      "precision": "approximate"
+    },
     "placeId": "torrington",
-    "factionIds": ["earth-federation", "neo-zeon"],
-    "machineIds": ["rx-0-unicorn"],
-    "characterIds": ["banagher-links"],
+    "factionIds": [
+      "earth-federation",
+      "neo-zeon"
+    ],
+    "machineIds": [
+      "rx-0-unicorn"
+    ],
+    "characterIds": [
+      "banagher-links"
+    ],
     "summary": {
       "zh": "“带袖的”残党袭击澳大利亚的联邦退役 MS 保管基地，夺取旧吉翁机体。独角兽与巴纳吉被卷入基地防卫战。",
       "ja": "「袖付き」残党がオーストラリアの連邦退役MS保管基地を襲撃し、旧ジオン機を奪取。ユニコーンとバナージが基地防衛戦に巻き込まれた。"
@@ -306,17 +603,36 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "OVA《机动战士高达 UC》第 4 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "OVA《机动战士高达 UC》第 4 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "cosmo-babylonia-war",
-    "title": { "zh": "宇宙巴比伦战争", "ja": "コスモ・バビロニア戦争" },
+    "title": {
+      "zh": "宇宙巴比伦战争",
+      "ja": "コスモ・バビロニア戦争"
+    },
     "eraId": "uc",
     "scale": "era",
-    "date": { "year": 123, "month": 3, "precision": "month" },
-    "factionIds": ["earth-federation", "crossbone-vanguard"],
-    "machineIds": ["f91"],
-    "characterIds": ["seabook-arano"],
+    "date": {
+      "year": 123,
+      "month": 3,
+      "precision": "month"
+    },
+    "factionIds": [
+      "earth-federation",
+      "crossbone-vanguard"
+    ],
+    "machineIds": [
+      "f91"
+    ],
+    "characterIds": [
+      "seabook-arano"
+    ],
     "summary": {
       "zh": "十字骨先锋以宇宙贵族主义为旗号袭击 Frontier Side，联邦军与民间技术员被卷入。F91 在这场短促而激烈的冲突中首次投入实战。",
       "ja": "クロスボーン・バンガードがコスモ贵族主義を掲げてフロンティアサイドを襲撃し、連邦軍と民間技術者が巻き込まれた。F91がこの短く激しい紛争で初の実戦投入を果たす。"
@@ -327,17 +643,37 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "剧场版《机动战士高达 F91》", "level": "S" }]
+    "sources": [
+      {
+        "label": "剧场版《机动战士高达 F91》",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "zanscare-war",
-    "title": { "zh": "赞斯卡尔战争", "ja": "ザンスカール戦争" },
+    "title": {
+      "zh": "赞斯卡尔战争",
+      "ja": "ザンスカール戦争"
+    },
     "eraId": "uc",
     "scale": "era",
-    "date": { "year": 153, "month": 4, "precision": "month" },
-    "factionIds": ["earth-federation", "zanscare", "league-militaire"],
-    "machineIds": ["lm314v21-v2"],
-    "characterIds": ["uso-ewin"],
+    "date": {
+      "year": 153,
+      "month": 4,
+      "precision": "month"
+    },
+    "factionIds": [
+      "earth-federation",
+      "zanscare",
+      "league-militaire"
+    ],
+    "machineIds": [
+      "lm314v21-v2"
+    ],
+    "characterIds": [
+      "uso-ewin"
+    ],
     "summary": {
       "zh": "赞斯卡尔帝国以“玛丽亚主义”发动圣战，神圣军事同盟以 V 高达系列进行游击抵抗。战争把地球圈再次拖入全面动员。",
       "ja": "ザンスカール帝国が「マリア主義」の聖戦を開始し、リガ・ミリティアがVガンダム系列でゲリラ抵抗を展開。地球圏は再び総動員の戦争へ陥った。"
@@ -348,15 +684,28 @@
     },
     "canon": "mainline",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士 V 高达》全 51 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士 V 高达》全 51 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "13th-gundam-fight",
-    "title": { "zh": "第十三届高达武斗会", "ja": "第13回ガンダムファイト" },
+    "title": {
+      "zh": "第十三届高达武斗会",
+      "ja": "第13回ガンダムファイト"
+    },
     "eraId": "fc",
     "scale": "era",
-    "date": { "year": 60, "precision": "year" },
-        "factionIds": ["neo-japan"],
+    "date": {
+      "year": 60,
+      "precision": "year"
+    },
+    "factionIds": [
+      "neo-japan"
+    ],
     "machineIds": [],
     "characterIds": [],
     "summary": {
@@ -369,15 +718,30 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动武斗传 G 高达》全 49 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动武斗传 G 高达》全 49 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "operation-meteor",
-    "title": { "zh": "流星作战", "ja": "オペレーション・メテオ" },
+    "title": {
+      "zh": "流星作战",
+      "ja": "オペレーション・メテオ"
+    },
     "eraId": "ac",
     "scale": "era",
-    "date": { "year": 195, "month": 4, "day": 7, "precision": "day" },
-    "factionIds": ["oz"],
+    "date": {
+      "year": 195,
+      "month": 4,
+      "day": 7,
+      "precision": "day"
+    },
+    "factionIds": [
+      "oz"
+    ],
     "machineIds": [],
     "characterIds": [],
     "summary": {
@@ -390,15 +754,28 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《新机动战记高达 W》第 1—2 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《新机动战记高达 W》第 1—2 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "7th-space-war",
-    "title": { "zh": "第七次宇宙战争", "ja": "第7次宇宙戦争" },
+    "title": {
+      "zh": "第七次宇宙战争",
+      "ja": "第7次宇宙戦争"
+    },
     "eraId": "aw",
     "scale": "era",
-    "date": { "year": 1, "precision": "year" },
-    "factionIds": ["new-une"],
+    "date": {
+      "year": 1,
+      "precision": "year"
+    },
+    "factionIds": [
+      "new-une"
+    ],
     "machineIds": [],
     "characterIds": [],
     "summary": {
@@ -411,17 +788,34 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动新世纪高达 X》第 1 话及背景设定", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动新世纪高达 X》第 1 话及背景设定",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "dark-history",
-    "title": { "zh": "黑历史", "ja": "黒歴史" },
+    "title": {
+      "zh": "黑历史",
+      "ja": "黒歴史"
+    },
     "eraId": "cc",
     "scale": "era",
-    "date": { "year": 2345, "precision": "year" },
-    "factionIds": ["inglessa-militia"],
-    "machineIds": ["turn-a"],
-    "characterIds": ["loran-cehack"],
+    "date": {
+      "year": 2345,
+      "precision": "year"
+    },
+    "factionIds": [
+      "inglessa-militia"
+    ],
+    "machineIds": [
+      "turn-a"
+    ],
+    "characterIds": [
+      "loran-cehack"
+    ],
     "summary": {
       "zh": "正历之前所有高达纪元被统称为“黑历史”。月球与地球的冲突中，Turn A 与月光蝶被重新启动，历史记录再次面临被抹除的风险。",
       "ja": "正暦以前の全てのガンダム紀元は「黒歴史」と呼ばれる。月と地球の衝突の中でターンAと月光蝶が再起動し、歴史記録は再び抹消の危機に晒された。"
@@ -432,15 +826,31 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《∀高达》全 50 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《∀高达》全 50 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "bloody-valentine",
-    "title": { "zh": "血色情人节", "ja": "血のバレンタイン" },
+    "title": {
+      "zh": "血色情人节",
+      "ja": "血のバレンタイン"
+    },
     "eraId": "ce",
     "scale": "incident",
-    "date": { "year": 71, "month": 2, "day": 14, "precision": "day" },
-        "factionIds": ["zaft", "omni-enforcer"],
+    "date": {
+      "year": 71,
+      "month": 2,
+      "day": 14,
+      "precision": "day"
+    },
+    "factionIds": [
+      "zaft",
+      "omni-enforcer"
+    ],
     "machineIds": [],
     "characterIds": [],
     "summary": {
@@ -453,18 +863,39 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达 SEED》第 1 话及背景设定", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 SEED》第 1 话及背景设定",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "battle-of-orb",
-    "title": { "zh": "奥布攻防战", "ja": "オーブ攻防戦" },
+    "title": {
+      "zh": "奥布攻防战",
+      "ja": "オーブ攻防戦"
+    },
     "eraId": "ce",
     "scale": "battle",
-    "date": { "year": 71, "month": 6, "day": 15, "precision": "approximate" },
+    "date": {
+      "year": 71,
+      "month": 6,
+      "day": 15,
+      "precision": "approximate"
+    },
     "placeId": "orb",
-    "factionIds": ["orb-union", "zaft", "omni-enforcer"],
-    "machineIds": ["zgaf-x10a-freedom"],
-    "characterIds": ["kira-yamato"],
+    "factionIds": [
+      "orb-union",
+      "zaft",
+      "omni-enforcer"
+    ],
+    "machineIds": [
+      "zgaf-x10a-freedom"
+    ],
+    "characterIds": [
+      "kira-yamato"
+    ],
     "summary": {
       "zh": "地球联合军要求奥布交出 MS 技术并加入战争，奥布拒绝后遭联合军与 ZAFT 的双重压力。基拉驾驶 Freedom 介入，试图保护奥布的中立。",
       "ja": "地球連合軍がオーブへMS技術の引き渡しと参戦を要求。拒否したオーブは連合軍とザフトの双方から圧力を受けた。キラはフリーダムで介入し、オーブの中立を守ろうとした。"
@@ -475,17 +906,34 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达 SEED》第 23—28 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 SEED》第 23—28 话",
+        "level": "S"
+      }
+    ]
   },
   {
     "id": "celestial-being-intervention",
-    "title": { "zh": "天上人武力介入", "ja": "ソレスタルビーイング武力介入" },
+    "title": {
+      "zh": "天上人武力介入",
+      "ja": "ソレスタルビーイング武力介入"
+    },
     "eraId": "ad",
     "scale": "era",
-    "date": { "year": 2307, "precision": "year" },
-    "factionIds": ["celestial-being"],
-    "machineIds": ["gn-001-exia"],
-    "characterIds": ["setsuna-f-seiei"],
+    "date": {
+      "year": 2307,
+      "precision": "year"
+    },
+    "factionIds": [
+      "celestial-being"
+    ],
+    "machineIds": [
+      "gn-001-exia"
+    ],
+    "characterIds": [
+      "setsuna-f-seiei"
+    ],
     "summary": {
       "zh": "天上人宣布以武力根绝战争，四台 GN 动力高达在全球冲突热点同时介入。三大阵营被迫从互相消耗转向共同应对。",
       "ja": "ソレスタルビーイングが武力による戦争根絶を宣言し、四機のGNドライヴ搭載ガンダムが各地の紛争地へ同時介入。三大陣営は相互消耗から共同対応へ転換を迫られた。"
@@ -496,6 +944,198 @@
     },
     "canon": "parallel",
     "mainline": true,
-    "sources": [{ "label": "TV 动画《机动战士高达 00》第 1—2 话", "level": "S" }]
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 00》第 1—2 话",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "hathaway-flash",
+    "title": {
+      "zh": "马夫蒂起义",
+      "ja": "マフティー蜂起"
+    },
+    "eraId": "uc",
+    "scale": "incident",
+    "date": {
+      "year": 105,
+      "month": 6,
+      "precision": "month"
+    },
+    "factionIds": [
+      "earth-federation"
+    ],
+    "machineIds": [
+      "rx-105-xi",
+      "rx-104ff-penelope"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "U.C.0105，哈萨维以马夫蒂·纳比尤·艾林之名袭击联邦高官，Ξ 高达与佩涅罗佩在达沃上空交战。",
+      "ja": "U.C.0105、ハサウェイがマフティー・ナビーユ・エリンとして連邦高官を襲撃。Ξガンダムとペーネロペーがダバオ上空で交戦する。"
+    },
+    "outcome": {
+      "zh": "起义被镇压，哈萨维被捕并处刑；联邦的腐败并未因此改变。",
+      "ja": "蜂起は鎮圧され、ハサウェイは捕えられ処刑された。連邦の腐敗は変わらなかった。"
+    },
+    "canon": "mainline",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "剧场版《机动战士高达 闪光的哈萨维》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "vagan-war",
+    "title": {
+      "zh": "维根战争",
+      "ja": "ヴェイガン戦争"
+    },
+    "eraId": "ag",
+    "scale": "era",
+    "date": {
+      "year": 115,
+      "precision": "year"
+    },
+    "factionIds": [
+      "federation-age",
+      "vagan"
+    ],
+    "machineIds": [
+      "age-1"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "火星移民维根对地球联邦发动长期战争，AGE-1 在殖民卫星诺拉首次投入实战。",
+      "ja": "火星移民ヴェイガンが地球連邦へ長期戦争を仕掛け、AGE-1がコロニー・ノーラで初の実戦投入を迎える。"
+    },
+    "outcome": {
+      "zh": "战争跨越三代人，最终以维根与联邦的停战与政治重组收场。",
+      "ja": "戦争は三代にわたり、最終的にヴェイガンと連邦の停戦と政治再編で終結する。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 AGE》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "capital-tower",
+    "title": {
+      "zh": "首都塔事件",
+      "ja": "キャピタル・タワー事件"
+    },
+    "eraId": "rc",
+    "scale": "incident",
+    "date": {
+      "year": 1014,
+      "precision": "year"
+    },
+    "factionIds": [
+      "amerian"
+    ],
+    "machineIds": [
+      "g-self"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "R.C.1014，贝尔利与 G-自我在首都塔周边卷入海盗与亚美利亚军的冲突，禁忌的宇宙航行被重新提起。",
+      "ja": "R.C.1014、ベルリとG-セルフがキャピタル・タワー周辺で海賊とアメリア軍の衝突に巻き込まれ、禁じられた宇宙航行が再び問われる。"
+    },
+    "outcome": {
+      "zh": "冲突暴露了光子电池与轨道电梯体系的脆弱，也开启了通往宇宙的新航路。",
+      "ja": "衝突は光子電池と軌道エレベーター体系の脆弱さを露呈し、宇宙への新たな航路を開いた。"
+    },
+    "canon": "mainline",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《高达 G 之复国运动》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "gjallarhorn-coup",
+    "title": {
+      "zh": "加拉尔霍恩政变",
+      "ja": "ギャラルホルン・クーデター"
+    },
+    "eraId": "pd",
+    "scale": "era",
+    "date": {
+      "year": 325,
+      "precision": "year"
+    },
+    "factionIds": [
+      "tekkadan",
+      "gjallarhorn"
+    ],
+    "machineIds": [
+      "asw-g-08-barbatos",
+      "asw-g-01-bael"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "P.D.325，麦克吉利斯以巴耶力之名发动政变，铁华团与加拉尔霍恩在火星与地球间全面冲突。",
+      "ja": "P.D.325、マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面衝突する。"
+    },
+    "outcome": {
+      "zh": "政变失败，铁华团与加拉尔霍恩均付出惨重代价；火星独立进程被迫改写。",
+      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは大きな代償を払った。火星独立の道筋は書き換えられる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "plant-quetta",
+    "title": {
+      "zh": "奎达工厂袭击",
+      "ja": "プラント・クエタ襲撃"
+    },
+    "eraId": "as",
+    "scale": "incident",
+    "date": {
+      "year": 122,
+      "month": 4,
+      "precision": "month"
+    },
+    "factionIds": [
+      "benerit"
+    ],
+    "machineIds": [
+      "xvx-016-aerial",
+      "x-ex01-calibarn"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "A.S.122，奎达工厂遭袭击，风灵高达与卡利班在数据风暴中交锋，GUND 格式化的真相被进一步揭开。",
+      "ja": "A.S.122、プラント・クエタが襲撃され、エアリアルとキャリバーンがデータストームの中で交戦。GUNDフォーマットの真実がさらに明らかになる。"
+    },
+    "outcome": {
+      "zh": "袭击改变了贝纳里特集团的权力平衡，也让 GUND 系统成为公开的政治议题。",
+      "ja": "襲撃はベネリットグループの力関係を変え、GUNDシステムを公然たる政治課題にした。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 水星的魔女》",
+        "level": "S"
+      }
+    ]
   }
 ]

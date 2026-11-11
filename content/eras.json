@@ -2,12 +2,22 @@
   {
     "id": "uc",
     "code": "U.C.",
-    "name": { "zh": "宇宙世纪", "ja": "宇宙世紀", "en": "Universal Century" },
+    "name": {
+      "zh": "宇宙世纪",
+      "ja": "宇宙世紀",
+      "en": "Universal Century"
+    },
     "order": 1,
     "canon": "mainline",
     "color": "#4C8DFF",
-    "span": { "start": 1, "end": 223 },
-    "window": { "start": 79, "end": 96 },
+    "span": {
+      "start": 1,
+      "end": 223
+    },
+    "window": {
+      "start": 79,
+      "end": 96
+    },
     "summary": {
       "zh": "人类大规模移居宇宙殖民地后的主历史。从一年战争到赞斯卡尔战争，MS 技术在此完成了从实弹兵器到精神感应兵器的完整演化。",
       "ja": "人類が宇宙殖民星へ大規模移住した後の主歴史。一年戦争からザンスカール戦争まで、MS技術が実弾兵器からサイコミュ兵器へと進化した時代。"
@@ -20,12 +30,22 @@
   {
     "id": "fc",
     "code": "F.C.",
-    "name": { "zh": "未来世纪", "ja": "未来世紀", "en": "Future Century" },
+    "name": {
+      "zh": "未来世纪",
+      "ja": "未来世紀",
+      "en": "Future Century"
+    },
     "order": 2,
     "canon": "parallel",
     "color": "#F59E0B",
-    "span": { "start": 1, "end": 60 },
-    "window": { "start": 56, "end": 60 },
+    "span": {
+      "start": 1,
+      "end": 60
+    },
+    "window": {
+      "start": 56,
+      "end": 60
+    },
     "summary": {
       "zh": "以四年一度的高达武斗会替代战争的平行纪元。各殖民国家以机体代表争夺霸权，F.C.0060 是第十三届大会的舞台。",
       "ja": "四年に一度のガンダムファイトで戦争を代替する並行紀元。各国が機体の代表を送り、F.C.0060は第13回大会の舞台。"
@@ -34,12 +54,22 @@
   {
     "id": "ac",
     "code": "A.C.",
-    "name": { "zh": "后殖民世纪", "ja": "アフターコロニー", "en": "After Colony" },
+    "name": {
+      "zh": "后殖民世纪",
+      "ja": "アフターコロニー",
+      "en": "After Colony"
+    },
     "order": 3,
     "canon": "parallel",
     "color": "#A78BFA",
-    "span": { "start": 1, "end": 197 },
-    "window": { "start": 195, "end": 197 },
+    "span": {
+      "start": 1,
+      "end": 197
+    },
+    "window": {
+      "start": 195,
+      "end": 197
+    },
     "summary": {
       "zh": "殖民地独立运动与 OZ 军事政变交织的纪元。A.C.0195 的“流星作战”将五台高达送入地球圈，改变了战争形态。",
       "ja": "殖民星独立運動とOZの軍事クーデターが交錯する紀元。A.C.0195の「オペレーション・メテオ」が五機のガンダムを地球圏へ送り込んだ。"
@@ -48,12 +78,22 @@
   {
     "id": "aw",
     "code": "A.W.",
-    "name": { "zh": "战后世纪", "ja": "アフターウォー", "en": "After War" },
+    "name": {
+      "zh": "战后世纪",
+      "ja": "アフターウォー",
+      "en": "After War"
+    },
     "order": 4,
     "canon": "parallel",
     "color": "#34D399",
-    "span": { "start": 1, "end": 15 },
-    "window": { "start": 1, "end": 15 },
+    "span": {
+      "start": 1,
+      "end": 15
+    },
+    "window": {
+      "start": 1,
+      "end": 15
+    },
     "summary": {
       "zh": "第七次宇宙战争使地球人口锐减后的荒芜纪元。A.W.0015，少年加罗特与 Gundam X 在废土上寻找尚未坠落的世界。",
       "ja": "第7次宇宙戦争で地球人口が激減した荒廃の紀元。A.W.0015、少年ガロードとガンダムXがまだ落ちていない世界を探す。"
@@ -62,12 +102,22 @@
   {
     "id": "cc",
     "code": "C.C.",
-    "name": { "zh": "正历", "ja": "正暦", "en": "Correct Century" },
+    "name": {
+      "zh": "正历",
+      "ja": "正暦",
+      "en": "Correct Century"
+    },
     "order": 5,
     "canon": "parallel",
     "color": "#EAB308",
-    "span": { "start": 1, "end": 2345 },
-    "window": { "start": 2343, "end": 2345 },
+    "span": {
+      "start": 1,
+      "end": 2345
+    },
+    "window": {
+      "start": 2343,
+      "end": 2345
+    },
     "summary": {
       "zh": "技术被刻意封存、历史被“黑历史”抹去的遥远未来。C.C.2345，月光蝶与 Turn A 将此前所有纪元的战争记忆一并收束。",
       "ja": "技術が封じられ、歴史が「黒歴史」として消された遠い未来。C.C.2345、月光蝶とターンAがそれまでの全紀元の戦争記憶を収束させる。"
@@ -76,12 +126,22 @@
   {
     "id": "ce",
     "code": "C.E.",
-    "name": { "zh": "宇宙纪", "ja": "コズミック・イラ", "en": "Cosmic Era" },
+    "name": {
+      "zh": "宇宙纪",
+      "ja": "コズミック・イラ",
+      "en": "Cosmic Era"
+    },
     "order": 6,
     "canon": "parallel",
     "color": "#F472B6",
-    "span": { "start": 1, "end": 75 },
-    "window": { "start": 70, "end": 75 },
+    "span": {
+      "start": 1,
+      "end": 75
+    },
+    "window": {
+      "start": 70,
+      "end": 75
+    },
     "summary": {
       "zh": "基因改造人与自然人分裂的纪元。C.E.0070 年代，调整者与地球联合的战争把相转移装甲与中子干扰器推上舞台。",
       "ja": "遺伝子改造人間コーディネイターとナチュラルの分裂した紀元。C.E.0070年代、ザフトと地球連合の戦争がフェイズシフト装甲とニュートロンジャマーを主流にした。"
@@ -90,15 +150,121 @@
   {
     "id": "ad",
     "code": "A.D.",
-    "name": { "zh": "西历", "ja": "西暦", "en": "Anno Domini" },
+    "name": {
+      "zh": "西历",
+      "ja": "西暦",
+      "en": "Anno Domini"
+    },
     "order": 7,
     "canon": "parallel",
     "color": "#60A5FA",
-    "span": { "start": 2000, "end": 2400 },
-    "window": { "start": 2307, "end": 2312 },
+    "span": {
+      "start": 2000,
+      "end": 2400
+    },
+    "window": {
+      "start": 2307,
+      "end": 2312
+    },
     "summary": {
       "zh": "仍使用公元纪年的近未来。化石燃料枯竭后，轨道电梯与太阳光发电成为三大阵营的命脉；A.D.2307，天上人开始武装介入。",
       "ja": "西暦をなお用いる近未来。化石燃料枯渇後、軌道エレベーターと太陽光発電が三大陣営の生命線となり、A.D.2307にソレスタルビーイングが武力介入を開始する。"
+    }
+  },
+  {
+    "id": "ag",
+    "code": "A.G.",
+    "name": {
+      "zh": "先进世代",
+      "ja": "アドバンスド・ジェネレーション",
+      "en": "Advanced Generation"
+    },
+    "order": 8,
+    "canon": "parallel",
+    "color": "#F97316",
+    "span": {
+      "start": 115,
+      "end": 164
+    },
+    "window": {
+      "start": 115,
+      "end": 164
+    },
+    "summary": {
+      "zh": "火星移民与地球联邦长期对立的纪元。AGE 系统让一台机体通过换装跨越百年战争。",
+      "ja": "火星移民と地球連邦の長い対立の紀元。AGEシステムにより、一機の機体が換装で百年の戦争を生き延びる。"
+    }
+  },
+  {
+    "id": "rc",
+    "code": "R.C.",
+    "name": {
+      "zh": "复兴世纪",
+      "ja": "リギルド・センチュリー",
+      "en": "Regild Century"
+    },
+    "order": 9,
+    "canon": "mainline",
+    "color": "#2DD4BF",
+    "span": {
+      "start": 1014,
+      "end": 1015
+    },
+    "window": {
+      "start": 1014,
+      "end": 1015
+    },
+    "summary": {
+      "zh": "宇宙世纪之后的遥远未来。技术被重新分类，轨道电梯与光子电池支撑着新的地球圈秩序。",
+      "ja": "宇宙世紀の遠い未来。技術は再分類され、軌道エレベーターと光子電池が新たな地球圏秩序を支える。"
+    }
+  },
+  {
+    "id": "pd",
+    "code": "P.D.",
+    "name": {
+      "zh": "灾后纪元",
+      "ja": "ポスト・ディザスター",
+      "en": "Post Disaster"
+    },
+    "order": 10,
+    "canon": "parallel",
+    "color": "#FB7185",
+    "span": {
+      "start": 323,
+      "end": 325
+    },
+    "window": {
+      "start": 323,
+      "end": 325
+    },
+    "summary": {
+      "zh": "厄祭战后的世界。亚哈反应堆与机动装甲成为战后秩序的基石，少年兵与佣兵团在火星与地球之间挣扎。",
+      "ja": "厄祭戦後の世界。エイハブ・リアクターとモビルアーマーが戦後秩序の基盤となり、少年兵と傭兵団が火星と地球の間で戦う。"
+    }
+  },
+  {
+    "id": "as",
+    "code": "A.S.",
+    "name": {
+      "zh": "星元",
+      "ja": "アド・ステラ",
+      "en": "Ad Stella"
+    },
+    "order": 11,
+    "canon": "parallel",
+    "color": "#C084FC",
+    "span": {
+      "start": 122,
+      "end": 128
+    },
+    "window": {
+      "start": 122,
+      "end": 123
+    },
+    "summary": {
+      "zh": "企业主导宇宙开发的纪元。GUND 格式化把人体与机体连接，也把诅咒带进了校园与战场。",
+      "ja": "企業が宇宙開発を主導する紀元。GUNDフォーマットは人体と機体を接続し、呪いを学園と戦場へ持ち込む。"
     }
   }
 ]

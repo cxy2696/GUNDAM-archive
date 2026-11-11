@@ -6,7 +6,7 @@ const required = ["eras", "factions", "characters", "works", "places", "events",
 try {
   const bundle = getBundle();
   const counts = Object.fromEntries(required.map((key) => [key, (bundle as any)[key].length]));
-  console.log("GAIA Archive content check");
+  console.log("GUNDAM Archive content check");
   console.log("──────────────────────────");
   for (const [key, value] of Object.entries(counts)) {
     console.log(`${key.padEnd(12)} ${String(value).padStart(3)}`);

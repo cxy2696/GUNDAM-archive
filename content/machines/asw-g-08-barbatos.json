@@ -1,0 +1,109 @@
+{
+  "id": "asw-g-08-barbatos",
+  "modelCode": "ASW-G-08",
+  "name": {
+    "zh": "巴巴托斯",
+    "ja": "バルバトス",
+    "en": "Barbatos"
+  },
+  "aliases": [
+    "Barbatos",
+    "バルバトス",
+    "巴巴托斯"
+  ],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "tekkadan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 323,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代残存的高达型机体，以亚哈反应堆与太刀在火星战场上觉醒。",
+    "ja": "厄祭戦時代の生き残りガンダム。エイハブ・リアクターと太刀で火星の戦場に目覚める。"
+  },
+  "description": {
+    "zh": [
+      "巴巴托斯由三日月·奥格斯驾驶，机体在铁华团的佣兵生活中不断追加装甲与武装。它没有华丽的光束兵器，却以近乎野兽的近接战和亚哈反应堆的持久力成为火星少年的生存工具。"
+    ],
+    "ja": [
+      "バルバトスは三日月・オーガスが駆り、鉄華団の傭兵生活の中で装甲と武装を追加されていく。華やかなビーム兵器を持たず、獣のような近接戦とエイハブ・リアクターの持久力で火星の少年たちの生存手段となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.8,
+    "heightHead": 18.8,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "大型太刀",
+        "ja": "大型太刀"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "滑空炮",
+        "ja": "滑空砲"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "腕部装甲",
+        "ja": "腕部アーマー"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "gjallarhorn-coup"
+  ],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "heavy",
+    "shoulder": "spike",
+    "backpack": "thruster",
+    "weapon": "mace",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1E3A5F",
+      "accent": "#C0262D",
+      "eye": "#FF6B6B",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

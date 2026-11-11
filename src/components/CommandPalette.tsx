@@ -34,10 +34,10 @@ export function CommandPalette({
     };
     const onOpen = () => setOpen(true);
     window.addEventListener("keydown", onKey);
-    window.addEventListener("gaia:search", onOpen);
+    window.addEventListener("gundam:search", onOpen);
     return () => {
       window.removeEventListener("keydown", onKey);
-      window.removeEventListener("gaia:search", onOpen);
+      window.removeEventListener("gundam:search", onOpen);
     };
   }, []);
 
@@ -171,7 +171,7 @@ export function CommandPalette({
             <kbd>ESC</kbd> {dict.common.close}
           </span>
           <span className="palette__count">
-            {results.length > 0 ? `${results.length} ${dict.search.resultCount}` : "GAIA / INDEX"}
+            {results.length > 0 ? `${results.length} ${dict.search.resultCount}` : "GUNDAM / INDEX"}
           </span>
         </div>
       </div>

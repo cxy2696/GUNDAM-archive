@@ -1,0 +1,109 @@
+{
+  "id": "asw-g-01-bael",
+  "modelCode": "ASW-G-01",
+  "name": {
+    "zh": "巴耶力",
+    "ja": "バエル",
+    "en": "Bael"
+  },
+  "aliases": [
+    "Bael",
+    "バエル",
+    "巴耶力"
+  ],
+  "unitType": "prototype",
+  "eraId": "pd",
+  "factionId": "gjallarhorn",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 325,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "厄祭战时代的初代高达之一，象征加拉尔霍恩的创始理念，后被麦克吉利斯夺回。",
+    "ja": "厄祭戦時代の初代ガンダムの一機。ギャラルホルンの創始理念を象徴し、マクギリスによって取り戻される。"
+  },
+  "description": {
+    "zh": [
+      "巴耶力以双剑与高机动性著称，机体本身承载着加拉尔霍恩“正义”叙事的神话。麦克吉利斯试图以它号令组织，却也让一台象征物变成了政治赌注。"
+    ],
+    "ja": [
+      "バエルは双剣と高機動性で知られ、機体そのものがギャラルホルンの「正義」言説の神話を背負う。マクギリスはこれで組織を号令しようとしたが、象徴は政治的な賭け金へ変わった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双剑 ×2",
+        "ja": "双剣 ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "ahab-reactor",
+    "nanolaminate",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "gjallarhorn-coup"
+  ],
+  "workIds": [
+    "ibo-2015"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "saber",
+    "shield": false,
+    "colors": {
+      "primary": "#F2F0E8",
+      "secondary": "#6D28D9",
+      "accent": "#D4AF37",
+      "eye": "#FFD166",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

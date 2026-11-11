@@ -1,0 +1,106 @@
+{
+  "id": "gf13-001nhii-master",
+  "modelCode": "GF13-001NHII",
+  "name": {
+    "zh": "尊者高达",
+    "ja": "マスターガンダム",
+    "en": "Master Gundam"
+  },
+  "aliases": [
+    "Master",
+    "マスター",
+    "尊者"
+  ],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "neo-hong-kong",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "东方不败的专属机体，以拳法与披风般的机动姿态闻名，是神高达最直接的宿敌。",
+    "ja": "東方不敗の専用機。拳法とマントのような機動で知られ、ゴッドガンダムの最大の宿敵。"
+  },
+  "description": {
+    "zh": [
+      "尊者高达与神高达共享武斗会机体的技术基础，但在东方不败手中呈现出更阴狠的格斗风格。它的十二王方牌与暗器式攻击让“武斗”不再只是正面较量，也逼迫多蒙重新理解师徒关系的重量。"
+    ],
+    "ja": [
+      "マスターガンダムはゴッドガンダムと武闘会機体の技術基盤を共有しつつ、東方不敗の手でより苛烈な格闘スタイルを見せた。十二王方牌や暗器じみた攻撃は「武闘」を正面の勝負だけではなくし、ドモンに師弟関係の重みを突きつけた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 16.7,
+    "heightHead": 16.7,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "十二王方牌",
+        "ja": "十二王方牌"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "mono",
+    "build": "standard",
+    "shoulder": "spike",
+    "backpack": "wing",
+    "weapon": "none",
+    "shield": false,
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#7F1D1D",
+      "accent": "#D4AF37",
+      "eye": "#FF6B6B",
+      "frame": "#3B2528"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动武斗传 G 高达》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

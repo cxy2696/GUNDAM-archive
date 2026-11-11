@@ -1,0 +1,114 @@
+{
+  "id": "gat-x105-strike",
+  "modelCode": "GAT-X105",
+  "name": {
+    "zh": "强袭高达",
+    "ja": "ストライクガンダム",
+    "en": "Strike Gundam"
+  },
+  "aliases": [
+    "Strike",
+    "ストライク",
+    "强袭"
+  ],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "orb-union",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 71,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "大西洋联邦与奥布合作开发的 GAT 系列机，以背包换装适应宇宙、空战与炮战。",
+    "ja": "大西洋連邦とオーブが共同開発したGAT系列機。バックパック換装で宇宙・空戦・砲戦に対応する。"
+  },
+  "description": {
+    "zh": [
+      "强袭高达使用相转移装甲与可换装背包，是 C.E.71 战场上最灵活的联合军机体之一。基拉·大和在赫利奥波利斯启动它，并在奥布与联合军的冲突中不断重新定义“该保护什么”。"
+    ],
+    "ja": [
+      "ストライクガンダムはフェイズシフト装甲と換装バックパックを採用し、C.E.71の戦場で最も柔軟な連合軍機の一つとなった。キラ・ヤマトがヘリオポリスで起動し、オーブと連合軍の衝突の中で「何を守るか」を問い続けた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.72,
+    "heightHead": 17.72,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-2002"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2563EB",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 SEED》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

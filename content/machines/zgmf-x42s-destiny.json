@@ -1,0 +1,114 @@
+{
+  "id": "zgmf-x42s-destiny",
+  "modelCode": "ZGMF-X42S",
+  "name": {
+    "zh": "命运高达",
+    "ja": "デスティニーガンダム",
+    "en": "Destiny Gundam"
+  },
+  "aliases": [
+    "Destiny",
+    "デスティニー",
+    "命运"
+  ],
+  "unitType": "prototype",
+  "eraId": "ce",
+  "factionId": "zaft",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 73,
+    "month": 10,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "ZAFT 的次世代旗舰机，以命运-01 背包与光之翼实现高机动与多目标压制。",
+    "ja": "ザフトの次世代旗艦機。デスティニー-01バックパックと光の翼で高機動と多目標制圧を実現する。"
+  },
+  "description": {
+    "zh": [
+      "命运高达把脉冲高达的换装经验整合成一台常驻高机动机体，光之翼与长射程光束炮让它几乎覆盖所有距离。真·飞鸟驾驶它执行 ZAFT 的强硬路线，也把“力量是否等于正义”的问题推到台前。"
+    ],
+    "ja": [
+      "デスティニーはインパルスの換装経験を一機の常時高機動機へ統合し、光の翼と長射程ビーム砲でほぼ全距離をカバーする。シン・アスカがザフトの強硬路線の下で駆り、「力は正義か」という問いを前面に押し出した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.08,
+    "heightHead": 18.08,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "长射程光束炮 ×2",
+        "ja": "長射程ビーム砲 ×2"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "phase-shift",
+    "beam-weapon",
+    "thermonuclear"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "seed-destiny-2004"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#7C3AED",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 SEED DESTINY》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

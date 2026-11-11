@@ -3,14 +3,14 @@ import type { Lang } from "./schema";
 const zh = {
   meta: {
     locale: "zh-CN",
-    title: "GAIA Archive · 机动战士档案",
+    title: "GUNDAM Archive · 机动战士档案",
     description:
       "一座可交互、可追溯的机动战士档案馆：3D 检阅、技术谱系、纪元年表与地球圈地图，机体与事件附出处。",
   },
   site: {
-    name: "GAIA ARCHIVE",
+    name: "GUNDAM ARCHIVE",
     kanji: "机动战士档案",
-    tagline: "把四十年的机体史，收进一座可追溯的档案馆。",
+    tagline: "把高达全系列的机体，收进一座可追溯的档案馆。",
   },
   nav: {
     home: "首页",
@@ -52,8 +52,8 @@ const zh = {
     clear: "清除",
   },
   home: {
-    eyebrow: "MOBILE SUIT ARCHIVE / U.C.0001—0223",
-    titleA: "把四十年的机体史",
+    eyebrow: "MOBILE SUIT ARCHIVE / ALL ERAS 0001—2345",
+    titleA: "把高达全系列机体",
     titleB: "收进一座档案馆。",
     lead: "不是又一个资料站。用 3D 检阅、谱系追溯与纪元定位，把散落在动画、设定集与模型说明书里的知识，重新组织成可以走进去的结构。",
     ctaExplore: "进入机体档案",
@@ -81,7 +81,7 @@ const zh = {
     p3Text: "在纪元泳道与地球圈地图上，看见它参与过的战争、地点与年份。",
     featuredLabel: "02 / 精选档案",
     featuredTitle: "从一台机体开始，读懂一条技术路线。",
-    featuredLead: "首期收录 U.C. 主线与三个平行纪元的 12 台代表机体。每一台都有可交互的 3D 预览与分层设计图。",
+    featuredLead: "全系列 11 个纪元、40 台主线机体已进入档案；每一台都有可交互的 3D 预览与分层设计图。",
     lineageLabel: "03 / 谱系切片",
     lineageTitle: "技术不是一条时间线，而是一张有向图。",
     lineageLead: "从 RX-78-2 到独角兽，可动骨架与精神感应框架沿着不同的边生长；Turn A 则把整张图收进“黑历史”。",
@@ -142,7 +142,7 @@ const zh = {
     special: "特殊",
   },
   machineIndex: {
-    eyebrow: "MACHINE INDEX / 12 ENTRIES",
+    eyebrow: "MACHINE INDEX / ALL ERAS",
     title: "机体档案",
     lead: "按纪元、阵营、技术标签与关键词筛选。每张卡片都指向一份带出处、可追溯谱系与 3D 检阅的完整档案。",
     search: "搜索机体名、型号或别名",
@@ -188,7 +188,7 @@ const zh = {
   tree: {
     eyebrow: "TECH TREE / 技术谱系",
     title: "技术谱系",
-    lead: "一张带技术标签的有向无环图。实线是型号衍生，虚线是跨型号技术来源，灰色粗箭头是任务替代。",
+    lead: "U.C. 主谱系用带技术标签的有向无环图呈现：实线是型号衍生，虚线是跨型号技术来源，灰色粗箭头是任务替代；其他纪元以机体目录并列展示，不伪造跨宇宙血缘。",
     allTags: "全部标签",
     filterHint: "按技术标签高亮",
     legend: "图例",
@@ -197,8 +197,10 @@ const zh = {
     replace: "任务替代",
     nodes: "节点",
     edges: "条边",
-    crossEra: "跨纪元节点",
-    crossEraNote: "Turn A 位于正历，通过“黑历史”设定与 U.C. 谱系相连。Freedom 与 Exia 属于平行纪元，只通过技术标签与主图对话。",
+    ucEdges: "U.C. 边",
+    parallel: "平行",
+    crossEra: "平行纪元 / PARALLEL ERAS",
+    crossEraNote: "U.C. 之外的机体使用不同纪元与技术体系，集中放在下方目录；它们的系谱边仍保留在各自机体页，不强行接入 U.C. 主图。",
     clickHint: "点击节点进入机体档案",
     focus: "聚焦",
     clearFocus: "显示全部",
@@ -315,10 +317,10 @@ const zh = {
   },
   about: {
     eyebrow: "ABOUT / 关于本档案",
-    title: "关于 GAIA Archive",
+    title: "关于 GUNDAM Archive",
     lead: "一个非商业的粉丝考据项目。目标不是复述设定，而是把设定组织成可验证、可追溯、可继续生长的结构。",
     thesisTitle: "为什么做这件事",
-    thesis: "高达系列横跨四十余年，官方与民间资料分散在动画、设定集、模型说明书与社区 Wiki 中。机体参数口径不一、纪元年表彼此割裂，技术演进需要读者在十几部作品之间来回比对。GAIA Archive 用结构而不是篇幅来解决这个问题。",
+    thesis: "高达系列横跨多个纪元与作品，官方与民间资料分散在动画、设定集、模型说明书与社区 Wiki 中。机体参数口径不一、纪元年表彼此割裂，技术演进需要读者在十几部作品之间来回比对。GUNDAM Archive 用结构而不是篇幅来解决这个问题。",
     archTitle: "当前实现",
     arch: "本仓库是 V1 的静态档案应用：Next.js 15 静态导出、内容全部来自 content/ 下的 JSON、构建期通过 zod 校验。3D 查看器使用程序化占位资产，glTF LOD0 可按 asset-manifest 接入而无需改动页面代码。",
     archPoints: {
@@ -395,14 +397,14 @@ const zh = {
 const ja: typeof zh = {
   meta: {
     locale: "ja-JP",
-    title: "GAIA Archive · モビルスーツアーカイブ",
+    title: "GUNDAM Archive · モビルスーツアーカイブ",
     description:
       "インタラクティブで追跡可能なモビルスーツアーカイブ。3D閲覧、技術系譜、紀元年表、地球圏地図。機体・事件に出典付き。",
   },
   site: {
-    name: "GAIA ARCHIVE",
+    name: "GUNDAM ARCHIVE",
     kanji: "モビルスーツアーカイブ",
-    tagline: "四十年の機体史を、追跡可能なアーカイブへ。",
+    tagline: "ガンダム各紀元の機体史を、追跡可能なアーカイブへ。",
   },
   nav: {
     home: "ホーム",
@@ -444,8 +446,8 @@ const ja: typeof zh = {
     clear: "クリア",
   },
   home: {
-    eyebrow: "MOBILE SUIT ARCHIVE / U.C.0001—0223",
-    titleA: "四十年の機体史を",
+    eyebrow: "MOBILE SUIT ARCHIVE / ALL ERAS 0001—2345",
+    titleA: "ガンダム機体史を",
     titleB: "アーカイブへ収める",
     lead: "もう一つの資料サイトではない。3D閲覧、系譜追跡、紀元定位によって、アニメ・設定資料集・模型説明書に散らばった知識を、歩いて入れる構造へ組み直す。",
     ctaExplore: "機体アーカイブへ",
@@ -473,7 +475,7 @@ const ja: typeof zh = {
     p3Text: "紀元の泳道と地球圏地図で、その機体が関わった戦争、場所、年份を見る。",
     featuredLabel: "02 / 精選アーカイブ",
     featuredTitle: "一機から、一本の技術路線を読む。",
-    featuredLead: "第一期はU.C.主線と三つの並行紀元から12機を収録。すべてにインタラクティブ3Dプレビューとレイヤー設計図を用意した。",
+    featuredLead: "全11紀元・40機の主線機体を収録。すべてにインタラクティブ3Dプレビューとレイヤー設計図を用意した。",
     lineageLabel: "03 / 系譜の切片",
     lineageTitle: "技術は一本の時間線ではなく、有向グラフである。",
     lineageLead: "RX-78-2からユニコーンへ、ムーバブルフレームとサイコフレームは別々の辺を伸びる。ターンAはそのグラフ全体を「黒歴史」へ収める。",
@@ -534,7 +536,7 @@ const ja: typeof zh = {
     special: "特殊",
   },
   machineIndex: {
-    eyebrow: "MACHINE INDEX / 12 ENTRIES",
+    eyebrow: "MACHINE INDEX / ALL ERAS",
     title: "機体アーカイブ",
     lead: "紀元、陣営、技術タグ、キーワードで絞り込む。各カードは出典・追跡可能な系譜・3D閲覧を備えた完全なアーカイブへ繋がる。",
     search: "機体名、型式、別名を検索",
@@ -580,7 +582,7 @@ const ja: typeof zh = {
   tree: {
     eyebrow: "TECH TREE / 技術系譜",
     title: "技術系譜",
-    lead: "技術タグ付きの有向非巡回グラフ。実線は型式派生、破線は機種を跨ぐ技術来源、灰色の太矢印は任務代替。",
+    lead: "U.C.の主系譜を技術タグ付きの有向非巡回グラフで示す。実線は型式派生、破線は機種を跨ぐ技術来源、灰色の太矢印は任務代替。他の紀元は機体目録として並べ、宇宙を跨ぐ血縁は捏造しない。",
     allTags: "すべてのタグ",
     filterHint: "技術タグでハイライト",
     legend: "凡例",
@@ -589,8 +591,10 @@ const ja: typeof zh = {
     replace: "任務代替",
     nodes: "ノード",
     edges: "本の辺",
-    crossEra: "紀元を跨ぐノード",
-    crossEraNote: "ターンAは正暦にあり、「黒歴史」設定でU.C.系譜と接続する。フリーダムとエクシアは並行紀元に属し、技術タグのみで主図と対話する。",
+    ucEdges: "U.C.辺",
+    parallel: "並行",
+    crossEra: "並行紀元 / PARALLEL ERAS",
+    crossEraNote: "U.C.以外の機体は異なる紀元と技術体系を持つため、下部の目録にまとめる。系譜辺は各機体ページに残し、U.C.主図へ無理に接続しない。",
     clickHint: "ノードをクリックして機体アーカイブへ",
     focus: "フォーカス",
     clearFocus: "すべて表示",
@@ -707,10 +711,10 @@ const ja: typeof zh = {
   },
   about: {
     eyebrow: "ABOUT / 本アーカイブについて",
-    title: "GAIA Archiveについて",
+    title: "GUNDAM Archiveについて",
     lead: "非商業のファン考証プロジェクト。設定を復唱するのではなく、検証可能で追跡可能、そして成長し続けられる構造へ組み直すことを目的とする。",
     thesisTitle: "なぜ作るのか",
-    thesis: "ガンダムシリーズは四十年以上にわたり、公式・非公式の資料がアニメ、設定資料集、模型説明書、コミュニティWikiへ散在してきた。機体諸元の口径は揃わず、紀元年表は分断され、技術の進化は十数作品を往復しないと追えない。GAIA Archiveは篇幅ではなく構造でこの問題を解く。",
+    thesis: "ガンダムシリーズは複数の紀元と作品にわたり、公式・非公式の資料がアニメ、設定資料集、模型説明書、コミュニティWikiへ散在してきた。機体諸元の口径は揃わず、紀元年表は分断され、技術の進化は十数作品を往復しないと追えない。GUNDAM Archiveは篇幅ではなく構造でこの問題を解く。",
     archTitle: "現在の実装",
     arch: "本リポジトリはV1の静的アーカイブアプリである。Next.js 15の静的書き出し、内容はすべてcontent/以下のJSON、ビルド時にzodで検証する。3Dビューアはプロシージャル暫定アセットを用い、glTF LOD0はasset-manifest経由でページコードを変えずに接続できる。",
     archPoints: {

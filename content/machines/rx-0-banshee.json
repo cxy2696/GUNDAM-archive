@@ -1,0 +1,114 @@
+{
+  "id": "rx-0-banshee",
+  "modelCode": "RX-0[N]",
+  "name": {
+    "zh": "报丧女妖",
+    "ja": "バンシィ",
+    "en": "Banshee"
+  },
+  "aliases": [
+    "Banshee",
+    "报丧女妖",
+    "バンシィ・ノルン"
+  ],
+  "unitType": "prototype",
+  "eraId": "uc",
+  "factionId": "earth-federation",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 96,
+    "month": 1,
+    "precision": "month"
+  },
+  "summary": {
+    "zh": "独角兽二号机，黑色涂装与金色精神感应框架，配备 Armed Armor 系列追加装甲。",
+    "ja": "ユニコーン二号機。黒い塗装と金色のサイコフレームを持ち、アームド・アーマー系の追加装甲を装備する。"
+  },
+  "description": {
+    "zh": [
+      "报丧女妖与独角兽共享 RX-0 的骨架与精神感应框架，但把限制器与武装配置转向更直接的战斗用途。它在拉普拉斯事件中由联邦军驾驶员利迪·马瑟纳斯操控，与独角兽多次正面冲突。"
+    ],
+    "ja": [
+      "バンシィはユニコーンとRX-0のフレームとサイコフレームを共有しつつ、リミッターと武装をより直接的な戦闘用途へ振り向けた。ラプラス事件では連邦軍のリディ・マーセナスが操縦し、ユニコーンと何度も正面衝突した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 21.7,
+    "heightHead": 21.7,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束马格南",
+        "ja": "ビーム・マグナム"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "Armed Armor BS",
+        "ja": "アームド・アーマーBS"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "psychoframe",
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "unicorn-2010"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "unicorn",
+    "build": "heavy",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#1B1F2A",
+      "secondary": "#0B0F14",
+      "accent": "#D4AF37",
+      "eye": "#FFD166",
+      "frame": "#3A3F4A"
+    }
+  },
+  "sources": [
+    {
+      "label": "OVA《机动战士高达 UC》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

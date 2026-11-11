@@ -33,8 +33,8 @@ export function LanguageSwitch({
 
   const remember = (target: Lang) => {
     try {
-      localStorage.setItem("gaia-lang", target);
-      sessionStorage.setItem("gaia:scroll", String(window.scrollY));
+      localStorage.setItem("gundam-lang", target);
+      sessionStorage.setItem("gundam:scroll", String(window.scrollY));
     } catch {
       /* private mode */
     }

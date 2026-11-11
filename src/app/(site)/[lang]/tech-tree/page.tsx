@@ -36,7 +36,7 @@ export default async function TechTreePage({
       <header className="page-head">
         <div className="container">
           <div className="page-head__crumb">
-            <span className="mono">GAIA / LINEAGE</span>
+            <span className="mono">GUNDAM / LINEAGE</span>
             <span className="mono">{String(bundle.machines.reduce((n, m) => n + m.edges.length, 0)).padStart(2, "0")} EDGES</span>
           </div>
           <div className="page-head__title-row">

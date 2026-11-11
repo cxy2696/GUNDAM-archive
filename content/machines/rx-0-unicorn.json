@@ -1,13 +1,27 @@
 {
   "id": "rx-0-unicorn",
   "modelCode": "RX-0",
-  "name": { "zh": "独角兽高达", "ja": "ユニコーンガンダム", "en": "Unicorn Gundam" },
-  "aliases": ["独角兽", "Unicorn", "ユニコーン", "RX-0"],
+  "name": {
+    "zh": "独角兽高达",
+    "ja": "ユニコーンガンダム",
+    "en": "Unicorn Gundam"
+  },
+  "aliases": [
+    "独角兽",
+    "Unicorn",
+    "ユニコーン",
+    "RX-0"
+  ],
   "unitType": "prototype",
   "eraId": "uc",
   "factionId": "earth-federation",
   "canon": "mainline",
-  "firstAppear": { "year": 96, "month": 1, "day": 3, "precision": "day" },
+  "firstAppear": {
+    "year": 96,
+    "month": 1,
+    "day": 3,
+    "precision": "day"
+  },
   "summary": {
     "zh": "毕斯特财团与阿纳海姆秘密开发的“拉普拉斯之盒”钥匙。独角兽模式下的封印装甲，在毁灭模式中让位于全身精神感应框架。",
     "ja": "ヴィスト財団とアナハイムが極秘開発した「ラプラスの箱」の鍵。ユニコーンモードの封印装甲は、デストロイモードで全身のサイコフレームへ置き換わる。"
@@ -30,19 +44,94 @@
     "powerOutput": 3480,
     "thrust": null,
     "sensorRadius": null,
-    "armor": { "zh": "高达尼姆合金", "ja": "ガンダリウム合金" }
+    "armor": {
+      "zh": "高达尼姆合金",
+      "ja": "ガンダリウム合金"
+    }
   },
   "armament": [
-    { "name": { "zh": "光束马格南", "ja": "ビーム・マグナム" }, "type": "beam" },
-    { "name": { "zh": "60mm 火神炮 ×2", "ja": "60mmバルカン ×2" }, "type": "kinetic" },
-    { "name": { "zh": "光束军刀 ×2", "ja": "ビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "专用盾牌", "ja": "専用シールド" }, "type": "special" }
+    {
+      "name": {
+        "zh": "光束马格南",
+        "ja": "ビーム・マグナム"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "60mm 火神炮 ×2",
+        "ja": "60mmバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["psychoframe", "gundarium", "beam-weapon"],
-  "pilots": [{ "characterId": "banagher-links", "note": { "zh": "主要驾驶员", "ja": "主パイロット" } }],
-  "eventIds": ["laplace-incident", "torrington-assault"],
-  "workIds": ["unicorn-2010"],
-  "edges": [],
+  "tags": [
+    "psychoframe",
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "banagher-links",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "laplace-incident",
+    "torrington-assault"
+  ],
+  "workIds": [
+    "unicorn-2010"
+  ],
+  "edges": [
+    {
+      "to": "rx-0-banshee",
+      "kind": "derive_of",
+      "techTag": "psychoframe",
+      "note": {
+        "zh": "报丧女妖为独角兽二号机。",
+        "ja": "バンシィはユニコーン二号機。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    },
+    {
+      "to": "rx-9-narrative",
+      "kind": "tech_from",
+      "techTag": "psychoframe",
+      "note": {
+        "zh": "叙述高达以独角兽的精神感应框架数据开发。",
+        "ja": "ナラティブはユニコーンのサイコフレーム・データで開発。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "unicorn",
     "build": "standard",
@@ -59,8 +148,14 @@
     }
   },
   "sources": [
-    { "label": "OVA《机动战士高达 UC》第 1—7 话", "level": "S" },
-    { "label": "《机动战士高达 UC》MS 设定资料", "level": "A" }
+    {
+      "label": "OVA《机动战士高达 UC》第 1—7 话",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达 UC》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",

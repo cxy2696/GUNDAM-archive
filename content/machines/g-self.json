@@ -1,0 +1,116 @@
+{
+  "id": "g-self",
+  "modelCode": "YG-111",
+  "name": {
+    "zh": "G-自我",
+    "ja": "G-セルフ",
+    "en": "G-Self"
+  },
+  "aliases": [
+    "G-Self",
+    "Gセルフ",
+    "G自我"
+  ],
+  "unitType": "prototype",
+  "eraId": "rc",
+  "factionId": "amerian",
+  "canon": "mainline",
+  "firstAppear": {
+    "year": 1014,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "R.C. 纪元的神秘机体，可通过多种背包换装适应大气层、宇宙与高机动战。",
+    "ja": "R.C.紀元の謎の機体。複数のバックパック換装で大気圏・宇宙・高機動戦に対応する。"
+  },
+  "description": {
+    "zh": [
+      "G-自我由贝尔利·塞纳姆驾驶，机体本身与光子电池、轨道电梯时代的技术禁忌紧密相关。它的换装系统让一台机体覆盖多种战场，也不断追问“谁有资格使用旧时代技术”。"
+    ],
+    "ja": [
+      "G-セルフはベルリ・ゼナムが駆り、機体自体が光子電池と軌道エレベーター時代の技術禁忌に深く関わる。換装システムで一機が多様な戦場を覆い、「旧時代の技術を使う資格は誰にあるのか」を問い続けた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "capital-tower"
+  ],
+  "workIds": [
+    "reconguista-2014"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#0EA5E9",
+      "accent": "#F59E0B",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《高达 G 之复国运动》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

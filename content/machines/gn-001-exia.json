@@ -1,13 +1,25 @@
 {
   "id": "gn-001-exia",
   "modelCode": "GN-001",
-  "name": { "zh": "能天使高达", "ja": "ガンダムエクシア", "en": "Gundam Exia" },
-  "aliases": ["Exia", "能天使", "エクシア", "GN-001"],
+  "name": {
+    "zh": "能天使高达",
+    "ja": "ガンダムエクシア",
+    "en": "Gundam Exia"
+  },
+  "aliases": [
+    "Exia",
+    "能天使",
+    "エクシア",
+    "GN-001"
+  ],
   "unitType": "prototype",
   "eraId": "ad",
   "factionId": "celestial-being",
   "canon": "parallel",
-  "firstAppear": { "year": 2307, "precision": "year" },
+  "firstAppear": {
+    "year": 2307,
+    "precision": "year"
+  },
   "summary": {
     "zh": "天上人的近接战专用高达。GN 动力装置提供的粒子推进与 GN 剑的实体刃，让它在中距离火力之外保留了决定性的白刃战能力。",
     "ja": "ソレスタルビーイングの近接戦専用ガンダム。GNドライヴによる粒子推進とGNソードの実体刃により、中距離火力とは別に決定的な白兵戦能力を保持した。"
@@ -30,19 +42,77 @@
     "powerOutput": null,
     "thrust": null,
     "sensorRadius": null,
-    "armor": { "zh": "E 碳装甲", "ja": "Eカーボン装甲" }
+    "armor": {
+      "zh": "E 碳装甲",
+      "ja": "Eカーボン装甲"
+    }
   },
   "armament": [
-    { "name": { "zh": "GN 剑", "ja": "GNソード" }, "type": "melee" },
-    { "name": { "zh": "GN 光束军刀 ×2", "ja": "GNビームサーベル ×2" }, "type": "melee" },
-    { "name": { "zh": "GN 火神炮 ×2", "ja": "GNバルカン ×2" }, "type": "kinetic" },
-    { "name": { "zh": "GN 盾牌", "ja": "GNシールド" }, "type": "special" }
+    {
+      "name": {
+        "zh": "GN 剑",
+        "ja": "GNソード"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 光束军刀 ×2",
+        "ja": "GNビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "GN 火神炮 ×2",
+        "ja": "GNバルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "GN 盾牌",
+        "ja": "GNシールド"
+      },
+      "type": "special"
+    }
   ],
-  "tags": ["gn-drive", "beam-weapon"],
-  "pilots": [{ "characterId": "setsuna-f-seiei", "note": { "zh": "专用机", "ja": "専用機" } }],
-  "eventIds": ["celestial-being-intervention"],
-  "workIds": ["00-2007"],
-  "edges": [],
+  "tags": [
+    "gn-drive",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "setsuna-f-seiei",
+      "note": {
+        "zh": "专用机",
+        "ja": "専用機"
+      }
+    }
+  ],
+  "eventIds": [
+    "celestial-being-intervention"
+  ],
+  "workIds": [
+    "00-2007"
+  ],
+  "edges": [
+    {
+      "to": "gn-0000-00-raiser",
+      "kind": "tech_from",
+      "techTag": "gn-drive",
+      "note": {
+        "zh": "00 强化模组延续 Exia 的 GN 动力技术。",
+        "ja": "ダブルオーライザーはエクシアのGN動力技術を継承。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",
@@ -59,8 +129,14 @@
     }
   },
   "sources": [
-    { "label": "TV 动画《机动战士高达 00》第 1—25 话", "level": "S" },
-    { "label": "《机动战士高达 00》MS 设定资料", "level": "A" }
+    {
+      "label": "TV 动画《机动战士高达 00》第 1—25 话",
+      "level": "S"
+    },
+    {
+      "label": "《机动战士高达 00》MS 设定资料",
+      "level": "A"
+    }
   ],
   "disputed": false,
   "dataQuality": "seed",
