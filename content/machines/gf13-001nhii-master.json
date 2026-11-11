@@ -84,7 +84,23 @@
   "workIds": [
     "g-gundam-1994"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "jdg-00x-devil",
+      "kind": "tech_from",
+      "techTag": "dg-cell",
+      "note": {
+        "zh": "jdg-00x-devil：恶魔高达的 DG 细胞技术与尊者高达的东方不败流派有关。",
+        "ja": "jdg-00x-devil：デビルガンダムのDG細胞技術はマスターガンダムの東方不敗流派と関わる。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "mono",
     "build": "standard",

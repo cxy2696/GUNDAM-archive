@@ -32,7 +32,12 @@
     "characterIds": [
       "amuro-ray",
       "char-aznable",
-      "bright-noa"
+      "bright-noa",
+      "sayla-mass",
+      "lalah-sune",
+      "yuu-kajima",
+      "chloe-croce",
+      "agar"
     ],
     "summary": {
       "zh": "吉翁公国对地球联邦宣战。鲁姆会战让联邦失去大半宇宙舰队，战争最终以阿·巴瓦·库陷落和吉翁解体结束。",
@@ -335,7 +340,8 @@
     "characterIds": [
       "amuro-ray",
       "char-aznable",
-      "bright-noa"
+      "bright-noa",
+      "sayla-mass"
     ],
     "summary": {
       "zh": "一年战争的最终决战。联邦与吉翁投入全部残余战力，阿姆罗与夏亚在要塞内部首次正面交手。",
@@ -439,7 +445,8 @@
     "characterIds": [
       "kamille-bidan",
       "char-aznable",
-      "bright-noa"
+      "bright-noa",
+      "emma-sheen"
     ],
     "summary": {
       "zh": "提坦斯与奥古围绕殖民卫星激光与地球圈霸权展开的内战。Z 高达、可动骨架与 Newtype 部队在此集中登场。",
@@ -487,7 +494,8 @@
     ],
     "machineIds": [],
     "characterIds": [
-      "char-aznable"
+      "char-aznable",
+      "emma-sheen"
     ],
     "summary": {
       "zh": "夏亚以克瓦特罗·巴吉纳的身份闯入联邦临时首都的议会，向全世界直播提坦斯的暴行与联邦的腐败。",
@@ -743,7 +751,8 @@
       "f91"
     ],
     "characterIds": [
-      "seabook-arano"
+      "seabook-arano",
+      "zabine-chareux"
     ],
     "summary": {
       "zh": "十字骨先锋以宇宙贵族主义为旗号袭击 Frontier Side，联邦军与民间技术员被卷入。F91 在这场短促而激烈的冲突中首次投入实战。",
@@ -835,7 +844,9 @@
       "neo-japan"
     ],
     "machineIds": [],
-    "characterIds": [],
+    "characterIds": [
+      "marbet-fingerhat"
+    ],
     "summary": {
       "zh": "各殖民国家以高达代表进行四年一度的武斗大会，胜者获得殖民霸权。第十三届大会因 Devil Gundam 的失控而偏离规则。",
       "ja": "各国がガンダム代表による四年一度の武闘大会でコロニーの覇権を争う。第13回大会はデビルガンダムの暴走により規則から逸脱した。"
@@ -930,7 +941,8 @@
       "gx-9900-x"
     ],
     "characterIds": [
-      "garrod-ran"
+      "garrod-ran",
+      "jamil-neate"
     ],
     "summary": {
       "zh": "地球与宇宙殖民地之间的全面战争，殖民卫星坠落导致地球人口锐减。战后十五年，世界仍在废土与军阀割据中挣扎。",
@@ -978,7 +990,9 @@
       "concept-x-139-turn-x"
     ],
     "characterIds": [
-      "loran-cehack"
+      "loran-cehack",
+      "gym-ghinghim",
+      "dianna-soreil"
     ],
     "summary": {
       "zh": "正历之前所有高达纪元被统称为“黑历史”。月球与地球的冲突中，Turn A 与月光蝶被重新启动，历史记录再次面临被抹除的风险。",
@@ -1024,7 +1038,11 @@
       "omni-enforcer"
     ],
     "machineIds": [],
-    "characterIds": [],
+    "characterIds": [
+      "yzak-joule",
+      "dearka-elsman",
+      "nicol-amalfi"
+    ],
     "summary": {
       "zh": "地球联合军向 PLANT 的农业殖民地尤尼乌斯 7 发射核弹，造成二十余万调整者死亡。ZAFT 随后以中子干扰器与报复性攻击全面反击。",
       "ja": "地球連合軍がPLANTの農業コロニーユニウス7へ核弾頭を発射し、二十万余のコーディネイターが死亡。ザフトはニュートロンジャマーと報復攻撃で全面反撃に転じた。"
@@ -1074,7 +1092,15 @@
       "zgaf-x10a-freedom"
     ],
     "characterIds": [
-      "kira-yamato"
+      "kira-yamato",
+      "yzak-joule",
+      "dearka-elsman",
+      "nicol-amalfi",
+      "shani-andras",
+      "orga-sabnak",
+      "clotho-buer",
+      "murrue-ramius",
+      "mu-la-flaga"
     ],
     "summary": {
       "zh": "地球联合军要求奥布交出 MS 技术并加入战争，奥布拒绝后遭联合军与 ZAFT 的双重压力。基拉驾驶 Freedom 介入，试图保护奥布的中立。",
@@ -1104,7 +1130,7 @@
   {
     "id": "celestial-being-intervention",
     "title": {
-      "zh": "天上人武力介入",
+      "zh": "天人武力介入",
       "ja": "ソレスタルビーイング武力介入"
     },
     "eraId": "ad",
@@ -1125,11 +1151,11 @@
       "lockon-stratos"
     ],
     "summary": {
-      "zh": "天上人宣布以武力根绝战争，四台 GN 动力高达在全球冲突热点同时介入。三大阵营被迫从互相消耗转向共同应对。",
+      "zh": "天人宣布以武力根绝战争，四台 GN 动力高达在全球冲突热点同时介入。三大阵营被迫从互相消耗转向共同应对。",
       "ja": "ソレスタルビーイングが武力による戦争根絶を宣言し、四機のGNドライヴ搭載ガンダムが各地の紛争地へ同時介入。三大陣営は相互消耗から共同対応へ転換を迫られた。"
     },
     "outcome": {
-      "zh": "三大阵营首次建立联合沟通机制，但天上人的“绝对武力”也被视为新的霸权；GN 技术随后被各方逆向工程。",
+      "zh": "三大阵营首次建立联合沟通机制，但天人的“绝对武力”也被视为新的霸权；GN 技术随后被各方逆向工程。",
       "ja": "三大陣営は初めて共同の交渉枠組みを築いたが、ソレスタルビーイングの「絶対武力」は新たな覇権とも見なされた。GN技術は後に各方で逆解析される。"
     },
     "canon": "parallel",
@@ -1142,7 +1168,7 @@
     ],
     "detail": {
       "zh": [
-        "天上人用四台 GN 动力高达同时介入全球冲突，以压倒性技术优势摧毁交战双方的军队。三大阵营被迫建立联合沟通机制，GN 技术随后被各方逆向工程。"
+        "天人用四台 GN 动力高达同时介入全球冲突，以压倒性技术优势摧毁交战双方的军队。三大阵营被迫建立联合沟通机制，GN 技术随后被各方逆向工程。"
       ],
       "ja": [
         "ソレスタルビーイングは四機のGNドライブ搭載ガンダムで世界各地の紛争へ介入し、圧倒的な技術力で双方の軍を破壊した。三大陣営は連合の通信体制を築き、GN技術は各勢力に逆解析される。"
@@ -1170,7 +1196,8 @@
       "rx-104ff-penelope"
     ],
     "characterIds": [
-      "hathaway-noa"
+      "hathaway-noa",
+      "lane-aim"
     ],
     "summary": {
       "zh": "U.C.0105，哈萨维以马夫蒂·纳比尤·艾林之名袭击联邦高官，Ξ 高达与佩涅罗佩在达沃上空交战。",
@@ -1217,7 +1244,8 @@
       "age-1"
     ],
     "characterIds": [
-      "flit-asuno"
+      "flit-asuno",
+      "woolf-enneacle"
     ],
     "summary": {
       "zh": "火星移民维根对地球联邦发动长期战争，AGE-1 在殖民卫星诺拉首次投入实战。",
@@ -1263,7 +1291,8 @@
       "g-self"
     ],
     "characterIds": [
-      "bellri-zenam"
+      "bellri-zenam",
+      "klim-nick"
     ],
     "summary": {
       "zh": "R.C.1014，贝尔利与 G-自我在首都塔周边卷入海盗与亚美利亚军的冲突，禁忌的宇宙航行被重新提起。",
@@ -1312,7 +1341,9 @@
     ],
     "characterIds": [
       "mikazuki-augus",
-      "mcgillis-fareed"
+      "mcgillis-fareed",
+      "norba-shino",
+      "kudelia-aina-bernstein"
     ],
     "summary": {
       "zh": "P.D.325，麦克吉利斯以巴耶力之名发动政变，铁华团与加拉尔霍恩在火星与地球间全面冲突。",
@@ -1411,7 +1442,8 @@
     ],
     "characterIds": [
       "domon-kasshu",
-      "master-asia"
+      "master-asia",
+      "kyoji-kasshu"
     ],
     "summary": {
       "zh": "第十三届高达武斗会期间，被封印的恶魔高达重新启动，DG 细胞开始侵蚀新宿。",
@@ -1460,7 +1492,8 @@
     ],
     "characterIds": [
       "domon-kasshu",
-      "master-asia"
+      "master-asia",
+      "marbet-fingerhat"
     ],
     "summary": {
       "zh": "神高达与尊者高达在武斗会决赛相遇，师徒二人以拳法决定地球的命运。",
@@ -1510,7 +1543,10 @@
     ],
     "characterIds": [
       "heero-yuy",
-      "zechs-merquise"
+      "zechs-merquise",
+      "odin-bernett",
+      "trant-clark",
+      "treize-khushrenada"
     ],
     "summary": {
       "zh": "OZ 内部政变与白色芬古的崛起把地球圈推向全面战争，飞翼零式与艾比安在轨道上决战。",
@@ -1559,7 +1595,12 @@
       "gw-9800-airmaster"
     ],
     "characterIds": [
-      "garrod-ran"
+      "garrod-ran",
+      "witz-sou",
+      "roybea-loy",
+      "shagia-frost",
+      "olba-frost",
+      "jamil-neate"
     ],
     "summary": {
       "zh": "加罗特在废土上启动高达 X，随后与 Double X、Airmaster 组成小队，挑战新 UNE 的秩序。",
@@ -1606,7 +1647,9 @@
       "turn-a"
     ],
     "characterIds": [
-      "loran-cehack"
+      "loran-cehack",
+      "dianna-soreil",
+      "kihel-heim"
     ],
     "summary": {
       "zh": "月之民结束长期滞留，开始大规模回归地球，与地球居民发生冲突。",
@@ -1655,7 +1698,12 @@
       "zgaf-x10a-freedom"
     ],
     "characterIds": [
-      "kira-yamato"
+      "kira-yamato",
+      "yzak-joule",
+      "dearka-elsman",
+      "murrue-ramius",
+      "mu-la-flaga",
+      "gilbert-durandal"
     ],
     "summary": {
       "zh": "联合军与 ZAFT 在雅金·杜维展开决战，创世纪与核弹把战争推向灭绝边缘。",
@@ -1704,7 +1752,7 @@
       "setsuna-f-seiei"
     ],
     "summary": {
-      "zh": "变革者启动轨道炮 Memento Mori，天上人以 00 强化模组突入摧毁炮台。",
+      "zh": "变革者启动轨道炮 Memento Mori，天人以 00 强化模组突入摧毁炮台。",
       "ja": "イノベイターが軌道砲メメントモリを起動し、ソレスタルビーイングがダブルオーライザーで砲台へ突入する。"
     },
     "outcome": {
@@ -1721,7 +1769,7 @@
     ],
     "detail": {
       "zh": [
-        "变革者启动轨道炮 Memento Mori，试图用超远距离光束摧毁敌方中枢。天上人以 00 强化模组突入摧毁炮台，但“人类是否应被强制统一”的分歧更加尖锐。"
+        "变革者启动轨道炮 Memento Mori，试图用超远距离光束摧毁敌方中枢。天人以 00 强化模组突入摧毁炮台，但“人类是否应被强制统一”的分歧更加尖锐。"
       ],
       "ja": [
         "イノベイターが軌道砲メメント・モリを起動し、超遠距離ビームで敵中枢を破壊しようとした。ソレスタルビーイングがダブルオーライザーで突入して砲台を破壊するが、人類統合を巡る対立は深まる。"
@@ -1893,7 +1941,8 @@
     ],
     "characterIds": [
       "bellri-zenam",
-      "aida-surugan"
+      "aida-surugan",
+      "klim-nick"
     ],
     "summary": {
       "zh": "亚美利亚军与首都军围绕轨道电梯展开决战，G-自我与 G-Lucifer 在宇宙交战。",
@@ -1942,7 +1991,9 @@
     ],
     "characterIds": [
       "mikazuki-augus",
-      "gaelio-bauduin"
+      "gaelio-bauduin",
+      "norba-shino",
+      "kudelia-aina-bernstein"
     ],
     "summary": {
       "zh": "铁华团在埃德蒙顿与加拉尔霍恩交战，巴巴托斯与金巴里斯·维达尔正面冲突。",
@@ -2037,7 +2088,9 @@
       "xvx-016-aerial"
     ],
     "characterIds": [
-      "suletta-mercury"
+      "suletta-mercury",
+      "ericht-samaya",
+      "prospera-mercury"
     ],
     "summary": {
       "zh": "凡娜迪斯机构遭袭击，GUND 格式化与高达开发的秘密被暴力揭开。",
@@ -2084,7 +2137,8 @@
       "xvx-016-ff-aerial-rebuild"
     ],
     "characterIds": [
-      "suletta-mercury"
+      "suletta-mercury",
+      "prospera-mercury"
     ],
     "summary": {
       "zh": "贝纳里特集团启动寂静零号，试图以数据风暴控制地球圈；斯莱塔驾驶卡利班阻止。",
@@ -2181,7 +2235,11 @@
       "gw-9800-airmaster"
     ],
     "characterIds": [
-      "garrod-ran"
+      "garrod-ran",
+      "witz-sou",
+      "roybea-loy",
+      "shagia-frost",
+      "olba-frost"
     ],
     "summary": {
       "zh": "A.W.15，新 UNE 与废土势力在 Fort Severn 周边决战，Double X 与 Airmaster 试图阻止强制统一。",
@@ -2229,7 +2287,8 @@
       "concept-x-139-turn-x"
     ],
     "characterIds": [
-      "loran-cehack"
+      "loran-cehack",
+      "gym-ghinghim"
     ],
     "summary": {
       "zh": "C.C.2345，Turn A 与 Turn X 在黑历史遗产上正面交战，月光蝶第一次被完整释放。",

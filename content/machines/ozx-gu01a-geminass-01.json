@@ -75,7 +75,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "odin-bernett"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "g-unit"

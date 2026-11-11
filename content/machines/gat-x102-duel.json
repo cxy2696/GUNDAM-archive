@@ -75,7 +75,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "yzak-joule"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-2002"

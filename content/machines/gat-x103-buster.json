@@ -68,7 +68,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "dearka-elsman"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-2002"

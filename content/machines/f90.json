@@ -68,7 +68,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "bergh-scred"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "f90"

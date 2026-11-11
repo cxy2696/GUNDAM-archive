@@ -83,7 +83,23 @@
   "workIds": [
     "rg-xarx-zero"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "spiral-gundam",
+      "kind": "tech_from",
+      "techTag": "materialize",
+      "note": {
+        "zh": "spiral-gundam：A.A. 纪元的材质化技术与 RG 计划相关。",
+        "ja": "spiral-gundam：A.A.紀元のマテリアライズ技術はRG計画と関わる。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

@@ -108,6 +108,21 @@
         }
       ],
       "techTag": "gundarium"
+    },
+    {
+      "to": "oz-13ms-epyon",
+      "kind": "tech_from",
+      "techTag": "gundarium",
+      "note": {
+        "zh": "oz-13ms-epyon：艾比安采用 OZ 从高达数据中获得的技术。",
+        "ja": "oz-13ms-epyon：エピオンはOZがガンダムのデータから得た技術を採用する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

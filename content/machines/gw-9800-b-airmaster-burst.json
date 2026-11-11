@@ -67,7 +67,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "witz-sou"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "x-1996"

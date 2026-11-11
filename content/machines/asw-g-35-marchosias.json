@@ -67,7 +67,11 @@
     "alaya-vijnana",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "wistario-afam"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "ibo-urdr-hunt"

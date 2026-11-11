@@ -83,7 +83,23 @@
   "workIds": [
     "age-2011"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "age-fx",
+      "kind": "tech_from",
+      "techTag": "age-system",
+      "note": {
+        "zh": "age-fx：维根与联邦在 AGE 系统上的技术交汇。",
+        "ja": "age-fx：ヴェイガンと連邦のAGEシステム技術の交差点。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "mono",
     "build": "slim",

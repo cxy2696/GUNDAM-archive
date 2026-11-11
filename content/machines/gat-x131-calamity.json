@@ -68,7 +68,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "shani-andras"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-2002"

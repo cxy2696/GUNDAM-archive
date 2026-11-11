@@ -66,7 +66,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "marbet-fingerhat"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "g-gundam-1994"

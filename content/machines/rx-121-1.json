@@ -75,7 +75,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "wes-murphy"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "aoz"

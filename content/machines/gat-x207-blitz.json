@@ -75,7 +75,11 @@
     "beam-weapon",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "nicol-amalfi"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-2002"

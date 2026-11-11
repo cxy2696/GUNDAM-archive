@@ -28,7 +28,8 @@
     "machineIds": [
       "rx-78-2",
       "rx-93-nu",
-      "rx-93-v2"
+      "rx-93-v2",
+      "rx-78-3"
     ],
     "eventIds": [
       "one-year-war",
@@ -660,7 +661,7 @@
     "status": "alive",
     "bio": {
       "zh": [
-        "在战乱地区被天上人收留的少年兵，以“刹那·F·清英”为代号成为高达使者。他驾驶 Exia 执行武力介入，却在每一次介入中被迫重审自己过去的杀戮。",
+        "在战乱地区被天人收留的少年兵，以“刹那·F·清英”为代号成为高达使者。他驾驶 Exia 执行武力介入，却在每一次介入中被迫重审自己过去的杀戮。",
         "A.D.2307 的干预行动让三大阵营首次坐到同一张谈判桌前。刹那本人则从“执行任务的兵器”逐渐转变为试图理解对话可能性的存在。"
       ],
       "ja": [
@@ -687,7 +688,7 @@
       "ja": "約16歳（A.D.2307）"
     },
     "rank": {
-      "zh": "天上人高达使者",
+      "zh": "天人高达使者",
       "ja": "ソレスタルビーイングのガンダムマイスター"
     },
     "origin": {
@@ -1190,7 +1191,7 @@
     "status": "dead",
     "bio": {
       "zh": [
-        "天上人最早的狙击手，把任务与同伴看得同等重要。他的冷静与牺牲，让“武力介入”第一次显露出人的代价。",
+        "天人最早的狙击手，把任务与同伴看得同等重要。他的冷静与牺牲，让“武力介入”第一次显露出人的代价。",
         "洛克昂把对家人的复仇藏在狙击镜后面。他在战斗中照顾队友，也在关键时刻选择替他们挡下攻击。他的死亡让“洛克昂”成为一个代号，而不是一个人的终点；后继者继承了名字，也继承了那份责任。"
       ],
       "ja": [
@@ -1220,7 +1221,7 @@
       "ja": "約24歳（A.D.2307）"
     },
     "rank": {
-      "zh": "天上人狙击手",
+      "zh": "天人狙击手",
       "ja": "ソレスタルビーイングの狙撃手"
     },
     "origin": {
@@ -1248,7 +1249,7 @@
     "bio": {
       "zh": [
         "作为变革者被创造的少年，最初只相信计划与数据。与同伴的相处让他开始理解“人类”的不完美与可能性。",
-        "提耶利亚最初把自己当作“计划的一部分”，难以理解人类的感情。与天上人同伴的相处让他逐渐承认：自己也有想保护的人，也会害怕失去。他的成长是从“执行任务”走向“选择同伴”。"
+        "提耶利亚最初把自己当作“计划的一部分”，难以理解人类的感情。与天人同伴的相处让他逐渐承认：自己也有想保护的人，也会害怕失去。他的成长是从“执行任务”走向“选择同伴”。"
       ],
       "ja": [
         "イノベイターとして生み出された少年。当初は計画とデータだけを信じていた。仲間との時間が、人間の不完全さと可能性への理解を生む。",
@@ -1276,7 +1277,7 @@
       "ja": "外見約20歳（A.D.2307）"
     },
     "rank": {
-      "zh": "天上人高达使者",
+      "zh": "天人高达使者",
       "ja": "ソレスタルビーイングのガンダムマイスター"
     },
     "origin": {
@@ -2996,7 +2997,7 @@
     "status": "alive",
     "bio": {
       "zh": [
-        "天上人的高达驾驶员，拥有“阿雷路亚”与“哈雷路亚”双重人格。他驾驶主天使，后来换乘堕天使与妖天使。",
+        "天人的高达驾驶员，拥有“阿雷路亚”与“哈雷路亚”双重人格。他驾驶主天使，后来换乘堕天使与妖天使。",
         "他的战斗风格在冷静与狂暴之间切换。到了最后，两种人格不再争夺身体，而是学会同时存在。"
       ],
       "ja": [
@@ -3021,7 +3022,7 @@
       "ja": "約24歳（A.D.2307）"
     },
     "rank": {
-      "zh": "天上人高达使者",
+      "zh": "天人高达使者",
       "ja": "ソレスタルビーイングのガンダムマイスター"
     },
     "origin": {
@@ -3766,5 +3767,2088 @@
       "zh": "Celestial Being",
       "ja": "ソレスタルビーイング"
     }
+  },
+  {
+    "id": "sayla-mass",
+    "name": {
+      "zh": "塞拉·玛斯",
+      "ja": "セイラ・マス",
+      "en": "Sayla Mass"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（U.C.0079）",
+      "ja": "約17歳（U.C.0079）"
+    },
+    "rank": {
+      "zh": "地球联邦军曹",
+      "ja": "地球連邦軍曹"
+    },
+    "origin": {
+      "zh": "Side 3",
+      "ja": "サイド3"
+    },
+    "factionId": "earth-federation",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "联邦军驾驶员 / 吉翁·戴肯之女",
+      "ja": "連邦軍パイロット / ジオン・ダイクンの娘"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "吉翁·戴肯的女儿，本名阿尔黛西亚。一年战争期间化名塞拉·玛斯，在白色基地担任通讯员和驾驶员。",
+        "她与夏亚在战场上重逢，却没有站到同一边。战后她离开军队，继续处理戴肯家留下的问题。"
+      ],
+      "ja": [
+        "ジオン・ダイクンの娘で、本名はアルテイシア。一年戦争中はセイラ・マスと名乗り、ホワイトベースで通信士とパイロットを務めた。",
+        "戦場でシャアと再会するが、同じ側には立たなかった。戦後は軍を離れ、ダイクン家の残した問題に向き合う。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "one-year-war",
+      "battle-of-a-baoa-qu"
+    ],
+    "relations": [],
+    "appearances": [
+      "msg-1979"
+    ]
+  },
+  {
+    "id": "lalah-sune",
+    "name": {
+      "zh": "拉拉·辛",
+      "ja": "ララァ・スン",
+      "en": "Lalah Sune"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（U.C.0079）",
+      "ja": "約17歳（U.C.0079）"
+    },
+    "rank": {
+      "zh": "吉翁军 Newtype 驾驶员",
+      "ja": "ジオン軍ニュータイプパイロット"
+    },
+    "origin": {
+      "zh": "印度",
+      "ja": "インド"
+    },
+    "factionId": "zeon",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "弗拉纳冈机构 Newtype / 艾尔美斯驾驶员",
+      "ja": "フラナガン機関のニュータイプ / エルメスパイロット"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "弗拉纳冈机构培养的 Newtype，驾驶艾尔美斯参加一年战争末期的战斗。她能在战斗中感知阿姆罗和夏亚的情绪。",
+        "她在保护夏亚时被阿姆罗击坠。她的死亡让阿姆罗和夏亚都留下了无法消除的裂痕。"
+      ],
+      "ja": [
+        "フラナガン機関で育ったニュータイプ。エルメスで一年戦争末期の戦いに参加し、戦闘中にアムロとシャアの感情を感知した。",
+        "シャアを守ろうとしてアムロに撃墜される。彼女の死は、アムロとシャアの双方に消えない傷を残した。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "one-year-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "msg-1979"
+    ]
+  },
+  {
+    "id": "emma-sheen",
+    "name": {
+      "zh": "艾玛·辛",
+      "ja": "エマ・シーン",
+      "en": "Emma Sheen"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 24 岁（U.C.0087）",
+      "ja": "約24歳（U.C.0087）"
+    },
+    "rank": {
+      "zh": "奥古中尉",
+      "ja": "エゥーゴ中尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "aeug",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "奥古驾驶员 / 高达 Mk-II",
+      "ja": "エゥーゴのパイロット / ガンダムMk-II"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "原提坦斯军官，因反对屠杀平民而转投奥古。她在奥古担任高达 Mk-II 的驾驶员，也是卡缪的战友。",
+        "格里普斯战役末期，她在阻止提坦斯追击时战死。她的选择影响了卡缪对“军人责任”的理解。"
+      ],
+      "ja": [
+        "元ティターンズ将校。民間人虐殺に反対してエゥーゴへ移り、ガンダムMk-IIのパイロットとしてカミーユと共に戦う。",
+        "グリプス戦役末期、ティターンズの追撃を止めようとして戦死。その選択はカミーユの「軍人の責任」の理解に影響を与えた。"
+      ]
+    },
+    "machineIds": [
+      "rx-178-mk-ii"
+    ],
+    "eventIds": [
+      "gryps-conflict",
+      "dakar-speech"
+    ],
+    "relations": [],
+    "appearances": [
+      "zeta-1985"
+    ]
+  },
+  {
+    "id": "yuu-kajima",
+    "name": {
+      "zh": "勇·卡吉玛",
+      "ja": "ユウ・カジマ",
+      "en": "Yuu Kajima"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "地球联邦军少尉",
+      "ja": "地球連邦軍少尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "earth-federation",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "蓝色命运 1 号机驾驶员",
+      "ja": "ブルーディスティニー1号機パイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "联邦陆战队的测试驾驶员，被派去驾驶搭载 EXAM 系统的蓝色命运 1 号机。",
+        "EXAM 系统会侵入驾驶员的意识，他必须在系统失控前结束战斗。战后他离开了前线。"
+      ],
+      "ja": [
+        "連邦陸戦隊のテストパイロット。EXAMシステムを搭載したブルーディスティニー1号機を駆る。",
+        "EXAMはパイロットの意識へ侵入するため、システムの暴走前に戦闘を終えなければならない。戦後は前線を離れた。"
+      ]
+    },
+    "machineIds": [
+      "rx-79bd-1"
+    ],
+    "eventIds": [
+      "one-year-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "blue-destiny"
+    ]
+  },
+  {
+    "id": "chloe-croce",
+    "name": {
+      "zh": "克洛伊·克罗齐",
+      "ja": "クロエ・クローチェ",
+      "en": "Chloe Croce"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "地球联邦军少尉",
+      "ja": "地球連邦軍少尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "earth-federation",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "苍白骑士驾驶员",
+      "ja": "ペイルライダーのパイロット"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "联邦“苍白骑士计划”的驾驶员，负责测试 HADES 系统。",
+        "HADES 会短时间解放机体限制，同时把巨大的信息负荷压到驾驶员身上。她的记录大多被封存。"
+      ],
+      "ja": [
+        "連邦「ペイルライダー計画」のパイロットで、HADESシステムの試験を担当した。",
+        "HADESは短時間だけ機体の制限を解除するが、同時に巨大な情報負荷をパイロットへ押し付ける。彼女の記録は大半が封印された。"
+      ]
+    },
+    "machineIds": [
+      "rx-80pr"
+    ],
+    "eventIds": [
+      "one-year-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "missing-link"
+    ]
+  },
+  {
+    "id": "lane-aim",
+    "name": {
+      "zh": "莱恩·艾姆",
+      "ja": "レーン・エイム",
+      "en": "Lane Aim"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "地球联邦军大尉",
+      "ja": "地球連邦軍大尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "earth-federation",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "佩涅罗佩驾驶员 / 联邦军大尉",
+      "ja": "ペーネロペーのパイロット / 連邦軍大尉"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "联邦军的新人类部队驾驶员，驾驶佩涅罗佩追击马夫蒂。",
+        "他与哈萨维在达沃上空交战，战斗结果没有改变联邦的腐败，也没有让他理解马夫蒂的动机。"
+      ],
+      "ja": [
+        "連邦軍のニュータイプ部隊のパイロット。ペーネロペーでマフティーを追う。",
+        "ダバオ上空でハサウェイと交戦するが、戦果は連邦の腐敗を変えず、マフティーの動機を理解することもなかった。"
+      ]
+    },
+    "machineIds": [
+      "rx-104ff-penelope"
+    ],
+    "eventIds": [
+      "hathaway-flash"
+    ],
+    "relations": [],
+    "appearances": [
+      "hathaway-2021"
+    ]
+  },
+  {
+    "id": "wes-murphy",
+    "name": {
+      "zh": "韦斯·墨菲",
+      "ja": "ウェス・マーフィー",
+      "en": "Wes Murphy"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "提坦斯测试驾驶员",
+      "ja": "ティターンズ・テストパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "titans",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "提坦斯测试驾驶员 / TR 系列",
+      "ja": "ティターンズのテストパイロット / TRシリーズ"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "提坦斯 TR 计划的测试驾驶员，参与海兹尔改与伍德沃特的运用试验。",
+        "TR 系列强调换装和数据采集，他的任务是把实验机体推到极限，再把数据带回技术部门。"
+      ],
+      "ja": [
+        "ティターンズTR計画のテストパイロット。ヘイズル改とウーンドウォートの運用試験に参加した。",
+        "TRシリーズは換装とデータ収集を重視しており、彼の任務は実験機を限界まで使い、データを技術部門へ持ち帰ることだった。"
+      ]
+    },
+    "machineIds": [
+      "rx-121-1",
+      "rx-124"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "aoz"
+    ]
+  },
+  {
+    "id": "zabine-chareux",
+    "name": {
+      "zh": "扎比尼·夏尔",
+      "ja": "ザビネ・シャルー",
+      "en": "Zabine Chareux"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "木星帝国军官",
+      "ja": "木星帝国将校"
+    },
+    "origin": {
+      "zh": "木星圈",
+      "ja": "木星圏"
+    },
+    "factionId": "jupiter-empire",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "木星帝国军官 / X-2 驾驶员",
+      "ja": "木星帝国将校 / X-2パイロット"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "木星帝国的军官，夺取十字骨高达 X-2 后成为托比亚的对手。",
+        "他熟悉 X-1 的设计，因此能针对同型机的弱点作战。他的选择让 X-2 成为一台与 X-1 对立的高达。"
+      ],
+      "ja": [
+        "木星帝国の将校。クロスボーン・ガンダムX-2を奪い、トビアの前に立ちはだかる。",
+        "X-1の設計を知っているため、同型機の弱点を突く戦いができる。彼の選択により、X-2はX-1と対立するガンダムになった。"
+      ]
+    },
+    "machineIds": [
+      "xm-x2"
+    ],
+    "eventIds": [
+      "cosmo-babylonia-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "crossbone"
+    ]
+  },
+  {
+    "id": "agar",
+    "name": {
+      "zh": "阿加尔",
+      "ja": "アガー",
+      "en": "Agar"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "吉翁军曹长",
+      "ja": "ジオン軍曹長"
+    },
+    "origin": {
+      "zh": "Side 3",
+      "ja": "サイド3"
+    },
+    "factionId": "zeon",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "泥岩高达驾驶员 / 吉翁前线",
+      "ja": "マドロックのパイロット / ジオニックフロント"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "吉翁前线部队的驾驶员，在北美战线遭遇联邦的泥岩高达。",
+        "他熟悉联邦 MS 的战术，但泥岩的火力和装甲仍让吉翁小队付出很大代价。"
+      ],
+      "ja": [
+        "ジオニックフロントのパイロット。北米戦線で連邦のマドロックと遭遇する。",
+        "連邦MSの戦術には慣れていたが、マドロックの火力と装甲はジオン小隊に大きな損害を与えた。"
+      ]
+    },
+    "machineIds": [
+      "rx-78-6"
+    ],
+    "eventIds": [
+      "one-year-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "zeonic-front"
+    ]
+  },
+  {
+    "id": "bergh-scred",
+    "name": {
+      "zh": "贝格·斯克莱德",
+      "ja": "ベルフ・スクレッド",
+      "en": "Bergh Scred"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "地球联邦军测试驾驶员",
+      "ja": "地球連邦軍テストパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "earth-federation",
+    "affiliations": [],
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "F90 测试驾驶员",
+      "ja": "F90テストパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "联邦 F90 计划的测试驾驶员，参与 Mission Pack 换装试验。",
+        "F90 的通用骨架要靠大量实战数据调校，他的任务是把不同背包的极限性能测出来。"
+      ],
+      "ja": [
+        "連邦F90計画のテストパイロット。ミッション・パック換装の試験に参加した。",
+        "F90の汎用骨格は実戦データで調整する必要があり、彼の任務は各パックの限界性能を測ることだった。"
+      ]
+    },
+    "machineIds": [
+      "f90"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "f90"
+    ]
+  },
+  {
+    "id": "gym-ghinghim",
+    "name": {
+      "zh": "金·金加纳姆",
+      "ja": "ギム・ギンガナム",
+      "en": "Gym Ghingham"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "月之民大将",
+      "ja": "月の民大将"
+    },
+    "origin": {
+      "zh": "月球",
+      "ja": "月"
+    },
+    "factionId": "moonrace",
+    "affiliations": [],
+    "eraIds": [
+      "cc"
+    ],
+    "role": {
+      "zh": "月之民武将 / Turn X 驾驶员",
+      "ja": "月の武将 / ターンXパイロット"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "月之民的武将，主张用武力让月之民重返地球。",
+        "他驾驶 Turn X 与罗兰的 Turn A 交战，最终被击败。对他而言，战斗是证明自己仍是战士的方式。"
+      ],
+      "ja": [
+        "月の民の武将で、武力による地球回帰を主張した。",
+        "ターンXでローランのターンAと交戦し、敗れる。彼にとって戦いは、自分がまだ戦士であることを示す手段だった。"
+      ]
+    },
+    "machineIds": [
+      "concept-x-139-turn-x"
+    ],
+    "eventIds": [
+      "dark-history",
+      "turn-x-duel"
+    ],
+    "relations": [],
+    "appearances": [
+      "turn-a-1999"
+    ]
+  },
+  {
+    "id": "dianna-soreil",
+    "name": {
+      "zh": "迪安娜·索雷尔",
+      "ja": "ディアナ・ソレル",
+      "en": "Dianna Soreil"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "数百岁（冷冻睡眠）",
+      "ja": "数百年（冷凍睡眠）"
+    },
+    "rank": {
+      "zh": "月之民女王",
+      "ja": "月の民の女王"
+    },
+    "origin": {
+      "zh": "月球",
+      "ja": "月"
+    },
+    "factionId": "moonrace",
+    "affiliations": [],
+    "eraIds": [
+      "cc"
+    ],
+    "role": {
+      "zh": "月之民女王",
+      "ja": "月の民の女王"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "月之民的女王，主导了回归地球的计划。",
+        "她与琪耶尔互换身份后，开始重新理解地球居民的生活。回归计划也受到她个人经历的影响。"
+      ],
+      "ja": [
+        "月の民の女王で、地球回帰計画を主導した。",
+        "キエルと身分を入れ替えた後、地球の住民の生活を理解し始める。回帰計画は単なる政治決定ではなくなった。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "moonrace-return",
+      "dark-history"
+    ],
+    "relations": [],
+    "appearances": [
+      "turn-a-1999"
+    ]
+  },
+  {
+    "id": "kihel-heim",
+    "name": {
+      "zh": "琪耶尔·海姆",
+      "ja": "キエル・ハイム",
+      "en": "Kihel Heim"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（C.C.2345）",
+      "ja": "約17歳（C.C.2345）"
+    },
+    "rank": {
+      "zh": "英格列沙民兵",
+      "ja": "イングレッサ民兵"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "inglessa-militia",
+    "affiliations": [],
+    "eraIds": [
+      "cc"
+    ],
+    "role": {
+      "zh": "英格列沙民兵 / 迪安娜替身",
+      "ja": "イングレッサ民兵 / ディアナの身代わり"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "英格列沙的少女，因长相与迪安娜相同而被卷入月之民的政治。",
+        "她代替迪安娜出现在公开场合，也逐渐理解两个文明之间的误解。"
+      ],
+      "ja": [
+        "イングレッサの少女。ディアナと顔が似ていたため、月の民の政治に巻き込まれる。",
+        "ディアナの代わりに公の場へ立ち、二つの文明の誤解を理解していく。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "moonrace-return"
+    ],
+    "relations": [],
+    "appearances": [
+      "turn-a-1999"
+    ]
+  },
+  {
+    "id": "yzak-joule",
+    "name": {
+      "zh": "伊扎克·玖尔",
+      "ja": "イザーク・ジュール",
+      "en": "Yzak Joule"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（C.E.71）",
+      "ja": "約17歳（C.E.71）"
+    },
+    "rank": {
+      "zh": "ZAFT 红衣",
+      "ja": "ザフト赤服"
+    },
+    "origin": {
+      "zh": "PLANT",
+      "ja": "プラント"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "决斗高达驾驶员 / ZAFT 红衣",
+      "ja": "デュエルパイロット / ザフト赤服"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "ZAFT 的红衣驾驶员，性格急躁，驾驶决斗高达参加 C.E.71 的战争。",
+        "他在地球和雅金·杜维多次与基拉、阿斯兰交手，战后继续留在 ZAFT。"
+      ],
+      "ja": [
+        "ザフトの赤服パイロット。短気な性格で、デュエルガンダムを駆りC.E.71の戦争に参加した。",
+        "地球とヤキン・ドゥーエでキラやアスランと交戦し、戦後もザフトに残る。"
+      ]
+    },
+    "machineIds": [
+      "gat-x102-duel"
+    ],
+    "eventIds": [
+      "bloody-valentine",
+      "battle-of-orb",
+      "battle-jachin-due"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "dearka-elsman",
+    "name": {
+      "zh": "迪亚哥·艾尔斯曼",
+      "ja": "ディアッカ・エルスマン",
+      "en": "Dearka Elsman"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（C.E.71）",
+      "ja": "約17歳（C.E.71）"
+    },
+    "rank": {
+      "zh": "ZAFT 红衣",
+      "ja": "ザフト赤服"
+    },
+    "origin": {
+      "zh": "PLANT",
+      "ja": "プラント"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "暴风高达驾驶员 / ZAFT 红衣",
+      "ja": "バスターパイロット / ザフト赤服"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "ZAFT 的炮击型高达驾驶员，负责暴风高达的远程火力。",
+        "他被俘后与 Archangel 的人员相处，开始怀疑 ZAFT 的宣传。战后他留在拉克丝一方。"
+      ],
+      "ja": [
+        "ザフトの砲撃型ガンダムパイロットで、バスターの遠距離火力を担当した。",
+        "捕虜になった後、アークエンジェルの人々と接してザフトの宣伝を疑い始める。戦後はラクスの側に残った。"
+      ]
+    },
+    "machineIds": [
+      "gat-x103-buster"
+    ],
+    "eventIds": [
+      "bloody-valentine",
+      "battle-of-orb",
+      "battle-jachin-due"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "nicol-amalfi",
+    "name": {
+      "zh": "尼高尔·阿玛菲",
+      "ja": "ニコル・アマルフィ",
+      "en": "Nicol Amalfi"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 15 岁（C.E.71）",
+      "ja": "約15歳（C.E.71）"
+    },
+    "rank": {
+      "zh": "ZAFT 红衣",
+      "ja": "ザフト赤服"
+    },
+    "origin": {
+      "zh": "PLANT",
+      "ja": "プラント"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "迅雷高达驾驶员 / ZAFT 红衣",
+      "ja": "ブリッツパイロット / ザフト赤服"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "ZAFT 最年轻的红衣驾驶员之一，驾驶迅雷高达执行隐身任务。",
+        "他在奥布近海与基拉交战，为保护阿斯兰而被击坠。他的死亡让阿斯兰第一次质疑战争。"
+      ],
+      "ja": [
+        "ザフトの最も若い赤服パイロットの一人で、ブリッツでステルス任務を担当した。",
+        "オーブ近海でキラと交戦し、アスランを守るために撃墜される。彼の死はアスランが戦争を疑う最初の契機になった。"
+      ]
+    },
+    "machineIds": [
+      "gat-x207-blitz"
+    ],
+    "eventIds": [
+      "bloody-valentine",
+      "battle-of-orb"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "shani-andras",
+    "name": {
+      "zh": "夏尼·安德拉斯",
+      "ja": "シャニ・アンドラス",
+      "en": "Shani Andras"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "联合军强化人",
+      "ja": "連合軍強化人間"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "omni-enforcer",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "灾厄高达驾驶员 / 强化人",
+      "ja": "カラミティパイロット / 強化人間"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "联合军强化人部队的驾驶员，驾驶灾厄高达进行火力压制。",
+        "他习惯用药物维持战斗状态，战斗对他来说更像任务而不是选择。"
+      ],
+      "ja": [
+        "連合軍強化人間部隊のパイロットで、カラミティの火力制圧を担当した。",
+        "薬物で戦闘状態を維持しており、戦いは選択ではなく任務に近かった。"
+      ]
+    },
+    "machineIds": [
+      "gat-x131-calamity"
+    ],
+    "eventIds": [
+      "battle-of-orb"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "orga-sabnak",
+    "name": {
+      "zh": "奥尔加·萨布纳克",
+      "ja": "オルガ・サブナック",
+      "en": "Orga Sabnak"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "联合军强化人",
+      "ja": "連合軍強化人間"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "omni-enforcer",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "禁断高达驾驶员 / 强化人",
+      "ja": "フォビドゥンパイロット / 強化人間"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "联合军强化人部队的驾驶员，驾驶禁断高达突破敌方防线。",
+        "他与夏尼、克罗特组成三机编队，负责正面突入和压制。"
+      ],
+      "ja": [
+        "連合軍強化人間部隊のパイロットで、フォビドゥンで敵防線の突破を担当した。",
+        "シャニ、クロトと三機編隊を組み、正面突入と制圧を担った。"
+      ]
+    },
+    "machineIds": [
+      "gat-x252-forbidden"
+    ],
+    "eventIds": [
+      "battle-of-orb"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "clotho-buer",
+    "name": {
+      "zh": "克罗特·布埃尔",
+      "ja": "クロト・ブエル",
+      "en": "Clotho Buer"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "联合军强化人",
+      "ja": "連合軍強化人間"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "omni-enforcer",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "掠夺高达驾驶员 / 强化人",
+      "ja": "レイダーパイロット / 強化人間"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "联合军强化人部队的驾驶员，驾驶掠夺高达进行高速追击。",
+        "他的战斗风格冲动，常在没有掩护的情况下冲入敌阵。"
+      ],
+      "ja": [
+        "連合軍強化人間部隊のパイロットで、レイダーによる高速追撃を担当した。",
+        "戦い方は衝動的で、援護なしに敵陣へ突っ込むことが多かった。"
+      ]
+    },
+    "machineIds": [
+      "gat-x370-raider"
+    ],
+    "eventIds": [
+      "battle-of-orb"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002"
+    ]
+  },
+  {
+    "id": "murrue-ramius",
+    "name": {
+      "zh": "玛琉·拉米亚斯",
+      "ja": "マリュー・ラミアス",
+      "en": "Murrue Ramius"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 26 岁（C.E.71）",
+      "ja": "約26歳（C.E.71）"
+    },
+    "rank": {
+      "zh": "联合军少校",
+      "ja": "連合軍少校"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "omni-enforcer",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "大天使号舰长",
+      "ja": "アークエンジェル艦長"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "大天使号的舰长，在赫利奥波利斯事件后接管战舰。",
+        "她必须在联合军的命令与船员的生存之间做选择，最终脱离联合军，成为独立部队。"
+      ],
+      "ja": [
+        "アークエンジェルの艦長。ヘリオポリス事件後に艦を引き継いだ。",
+        "連合軍の命令と乗員の生存の間で選択を迫られ、最終的に連合軍を離れて独立部隊となる。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "battle-of-orb",
+      "battle-jachin-due"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002",
+      "seed-destiny-2004"
+    ]
+  },
+  {
+    "id": "mu-la-flaga",
+    "name": {
+      "zh": "穆·拉·弗拉加",
+      "ja": "ムウ・ラ・フラガ",
+      "en": "Mu La Flaga"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 28 岁（C.E.71）",
+      "ja": "約28歳（C.E.71）"
+    },
+    "rank": {
+      "zh": "联合军少校",
+      "ja": "連合軍少校"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "omni-enforcer",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "联合军 MA 驾驶员 / 大天使号",
+      "ja": "連合軍MAパイロット / アークエンジェル"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "联合军的 MA 驾驶员，后来加入大天使号。",
+        "他在雅金·杜维为保护战舰而失踪，后来在 SEED DESTINY 中以另一种身份回归。"
+      ],
+      "ja": [
+        "連合軍のMAパイロットで、後にアークエンジェルへ加わる。",
+        "ヤキン・ドゥーエで艦を守るために消息を絶ち、後にSEED DESTINYで別の立場として戻る。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "battle-of-orb",
+      "battle-jachin-due"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-2002",
+      "seed-destiny-2004"
+    ]
+  },
+  {
+    "id": "gilbert-durandal",
+    "name": {
+      "zh": "吉尔伯特·迪兰达尔",
+      "ja": "ギルバート・デュランダル",
+      "en": "Gilbert Durandal"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 32 岁（C.E.73）",
+      "ja": "約32歳（C.E.73）"
+    },
+    "rank": {
+      "zh": "PLANT 议长",
+      "ja": "プラント議長"
+    },
+    "origin": {
+      "zh": "PLANT",
+      "ja": "プラント"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "PLANT 最高评议会议长",
+      "ja": "プラント最高評議会議長"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "PLANT 的最高评议会议长，提出“命运计划”来安排人类的未来。",
+        "他相信基因决定论能消除战争，却把选择权从人类手中拿走。最终在弥赛亚要塞被击败。"
+      ],
+      "ja": [
+        "プラント最高評議会議長で、「デスティニープラン」により人類の未来を配置しようとした。",
+        "遺伝子決定論が戦争をなくすと信じたが、人間から選択肢を奪うことになった。最終的にメサイアで敗れる。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "battle-jachin-due"
+    ],
+    "relations": [],
+    "appearances": [
+      "seed-destiny-2004"
+    ]
+  },
+  {
+    "id": "marbet-fingerhat",
+    "name": {
+      "zh": "玛贝特·芬格哈特",
+      "ja": "マーベット・フィンガーハット",
+      "en": "Marbet Fingerhat"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "新丹麦代表",
+      "ja": "ネオデンマーク代表"
+    },
+    "origin": {
+      "zh": "新丹麦",
+      "ja": "ネオデンマーク"
+    },
+    "factionId": "gundam-fighters",
+    "affiliations": [],
+    "eraIds": [
+      "fc"
+    ],
+    "role": {
+      "zh": "新丹麦代表 / 人鱼高达驾驶员",
+      "ja": "ネオデンマーク代表 / マーメイドガンダムパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "新丹麦的高达斗士，驾驶人鱼高达参加第十三届武斗会。",
+        "她的机体适合水域战，但在陆地上会受到姿态控制系统的限制。"
+      ],
+      "ja": [
+        "ネオデンマークのガンダムファイターで、マーメイドガンダムで第13回大会に参加した。",
+        "水中戦に適した機体だが、陸上では姿勢制御系の制約を受ける。"
+      ]
+    },
+    "machineIds": [
+      "gf13-026nd-mermaid"
+    ],
+    "eventIds": [
+      "13th-gundam-fight",
+      "gundam-fight-final"
+    ],
+    "relations": [],
+    "appearances": [
+      "g-gundam-1994"
+    ]
+  },
+  {
+    "id": "kyoji-kasshu",
+    "name": {
+      "zh": "京二·卡修",
+      "ja": "キョウジ・カッシュ",
+      "en": "Kyoji Kasshu"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "高达研究者",
+      "ja": "ガンダム研究者"
+    },
+    "origin": {
+      "zh": "新日本",
+      "ja": "ネオジャパン"
+    },
+    "factionId": "neo-japan",
+    "affiliations": [],
+    "eraIds": [
+      "fc"
+    ],
+    "role": {
+      "zh": "恶魔高达核心 / 多蒙之兄",
+      "ja": "デビルガンダムの核心 / ドモンの兄"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "多蒙的哥哥，也是恶魔高达计划的研究者。",
+        "他被 DG 细胞吸收，成为恶魔高达的核心。多蒙在武斗会中面对的不只是机体，还有兄长的残留意识。"
+      ],
+      "ja": [
+        "ドモンの兄で、デビルガンダム計画の研究者。",
+        "DG細胞に取り込まれ、デビルガンダムの核心となった。ドモンが武闘会で向き合ったのは機体だけでなく、兄の残した意識でもあった。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "devil-gundam-awakening"
+    ],
+    "relations": [],
+    "appearances": [
+      "g-gundam-1994"
+    ]
+  },
+  {
+    "id": "odin-bernett",
+    "name": {
+      "zh": "奥丁·伯内特",
+      "ja": "オーディン・バーネット",
+      "en": "Odin Bernett"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "殖民地驾驶员",
+      "ja": "コロニーのパイロット"
+    },
+    "origin": {
+      "zh": "殖民地",
+      "ja": "コロニー"
+    },
+    "factionId": "colony-operatives",
+    "affiliations": [],
+    "eraIds": [
+      "ac"
+    ],
+    "role": {
+      "zh": "双子座高达 01 驾驶员",
+      "ja": "ジェミナス01パイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "G-UNIT 计划的殖民地驾驶员，驾驶双子座高达 01。",
+        "他卷入 OZ 内部的权力斗争，必须在殖民地、OZ 与自己的立场之间做选择。"
+      ],
+      "ja": [
+        "G-UNIT計画のコロニー人パイロットで、ジェミナス01を駆る。",
+        "OZ内部の権力闘争に巻き込まれ、コロニー、OZ、自分の立場の間で選択を迫られる。"
+      ]
+    },
+    "machineIds": [
+      "ozx-gu01a-geminass-01"
+    ],
+    "eventIds": [
+      "eve-wars"
+    ],
+    "relations": [],
+    "appearances": [
+      "g-unit"
+    ]
+  },
+  {
+    "id": "trant-clark",
+    "name": {
+      "zh": "特兰特·克拉克",
+      "ja": "トラン・クラーク",
+      "en": "Trant Clark"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "OZ 驾驶员",
+      "ja": "OZパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "oz",
+    "affiliations": [],
+    "eraIds": [
+      "ac"
+    ],
+    "role": {
+      "zh": "格雷普高达驾驶员 / OZ",
+      "ja": "グリープパイロット / OZ"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "OZ 的 G-UNIT 计划驾驶员，驾驶格雷普高达。",
+        "他把机体当作晋升工具，战斗时更在意战果而不是同伴。"
+      ],
+      "ja": [
+        "OZのG-UNIT計画のパイロットで、グリープを駆る。",
+        "機体を出世の道具と考え、戦闘では仲間より戦果を優先する。"
+      ]
+    },
+    "machineIds": [
+      "oz-19masx-griepe"
+    ],
+    "eventIds": [
+      "eve-wars"
+    ],
+    "relations": [],
+    "appearances": [
+      "g-unit"
+    ]
+  },
+  {
+    "id": "treize-khushrenada",
+    "name": {
+      "zh": "特列斯·克舒里纳达",
+      "ja": "トレーズ・クシュリナーダ",
+      "en": "Treize Khushrenada"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 24 岁（A.C.195）",
+      "ja": "約24歳（A.C.195）"
+    },
+    "rank": {
+      "zh": "OZ 总帅",
+      "ja": "OZ総帥"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "oz",
+    "affiliations": [],
+    "eraIds": [
+      "ac"
+    ],
+    "role": {
+      "zh": "OZ 总帅",
+      "ja": "OZ総帥"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "OZ 的总帅，也是 A.C. 纪元最有影响力的政治人物之一。",
+        "他把战争视为保持人类高贵的方式，最终在与白色芬古的决战中战死。"
+      ],
+      "ja": [
+        "OZの総帥で、A.C.紀元で最も影響力のある政治家の一人。",
+        "戦争が人間を高貴にすると信じ、ホワイトファングとの決戦で戦死した。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "eve-wars"
+    ],
+    "relations": [],
+    "appearances": [
+      "wing-1995"
+    ]
+  },
+  {
+    "id": "witz-sou",
+    "name": {
+      "zh": "维茨·苏",
+      "ja": "ウィッツ・スー",
+      "en": "Witz Sou"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 17 岁（A.W.0015）",
+      "ja": "約17歳（A.W.0015）"
+    },
+    "rank": {
+      "zh": "秃鹫驾驶员",
+      "ja": "ヴァルチャーのパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "vulture",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "空中霸王驾驶员 / 秃鹫",
+      "ja": "エアマスターパイロット / ヴァルチャー"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "秃鹫部队的空中霸王驾驶员，擅长高速接敌和侦察。",
+        "他加入加罗特的队伍后，负责从空中掩护地面部队。"
+      ],
+      "ja": [
+        "ヴァルチャーのエアマスターパイロットで、高速接近と偵察を得意とする。",
+        "ガロードの隊に加わり、空中から地上部隊を援護した。"
+      ]
+    },
+    "machineIds": [
+      "gw-9800-airmaster",
+      "gw-9800-b-airmaster-burst"
+    ],
+    "eventIds": [
+      "after-war-awakening",
+      "new-une-final"
+    ],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "roybea-loy",
+    "name": {
+      "zh": "罗比亚·洛伊",
+      "ja": "ロアビィ・ロイ",
+      "en": "Roybea Loy"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 18 岁（A.W.0015）",
+      "ja": "約18歳（A.W.0015）"
+    },
+    "rank": {
+      "zh": "秃鹫驾驶员",
+      "ja": "ヴァルチャーのパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "vulture",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "豹式高达驾驶员 / 秃鹫",
+      "ja": "レオパルドパイロット / ヴァルチャー"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "秃鹫部队的重火力驾驶员，驾驶豹式高达。",
+        "他负责压制和拆除据点，常在队友前方提供火力走廊。"
+      ],
+      "ja": [
+        "ヴァルチャーの重火力パイロットで、レオパルドを駆る。",
+        "制圧と拠点破壊を担当し、味方の前方に火力の回廊を作る。"
+      ]
+    },
+    "machineIds": [
+      "gt-9600-leopard",
+      "gt-9600-d-leopard-destroy"
+    ],
+    "eventIds": [
+      "after-war-awakening",
+      "new-une-final"
+    ],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "shagia-frost",
+    "name": {
+      "zh": "沙基亚·弗罗斯特",
+      "ja": "シャギア・フロスト",
+      "en": "Shagia Frost"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "新 UNE 特务",
+      "ja": "新UN特務"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "new-une",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "维萨戈高达驾驶员 / 新 UNE",
+      "ja": "ヴァサーゴパイロット / 新UN"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "新 UNE 的强化人驾驶员，弗罗斯特兄弟中的哥哥。",
+        "他驾驶维萨戈高达追击加罗特，把战斗当作任务而不是决斗。"
+      ],
+      "ja": [
+        "新UNの強化人間パイロットで、フロスト兄弟の兄。",
+        "ヴァサーゴでガロードを追撃し、戦いを決闘ではなく任務として扱う。"
+      ]
+    },
+    "machineIds": [
+      "nrx-0013-virsago",
+      "nrx-0013-cb-virsago-chest-break"
+    ],
+    "eventIds": [
+      "after-war-awakening",
+      "new-une-final"
+    ],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "olba-frost",
+    "name": {
+      "zh": "奥尔巴·弗罗斯特",
+      "ja": "オルバ・フロスト",
+      "en": "Olba Frost"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "新 UNE 特务",
+      "ja": "新UN特務"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "new-une",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "阿斯塔隆驾驶员 / 新 UNE",
+      "ja": "アシュタロンパイロット / 新UN"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "弗罗斯特兄弟中的弟弟，驾驶可变型阿斯塔隆高达。",
+        "他与沙基亚配合，从高空和轨道发起突袭。"
+      ],
+      "ja": [
+        "フロスト兄弟の弟で、可変型のアシュタロンを駆る。",
+        "シャギアと連携し、高空や軌道から奇襲をかける。"
+      ]
+    },
+    "machineIds": [
+      "nrx-0015-ashtaron"
+    ],
+    "eventIds": [
+      "after-war-awakening",
+      "new-une-final"
+    ],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "jamil-neate",
+    "name": {
+      "zh": "贾米尔·尼特",
+      "ja": "ジャミル・ニート",
+      "en": "Jamil Neate"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 30 岁（A.W.0015）",
+      "ja": "約30歳（A.W.0015）"
+    },
+    "rank": {
+      "zh": "秃鹫舰长",
+      "ja": "ヴァルチャー艦長"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "vulture",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "秃鹫领袖 / 前 GX 驾驶员",
+      "ja": "ヴァルチャーの指導者 / 元GXパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "第七次宇宙战争时期的 GX 驾驶员，战后成为秃鹫部队的领袖。",
+        "他一直在寻找避免战争重演的方法，并把希望寄托在加罗特和蒂法身上。"
+      ],
+      "ja": [
+        "第7次宇宙戦争時のGXパイロットで、戦後はヴァルチャーの指導者となった。",
+        "戦争の再発を防ぐ方法を探し続け、ガロードとティファに希望を託す。"
+      ]
+    },
+    "machineIds": [
+      "gx-9900-x"
+    ],
+    "eventIds": [
+      "7th-space-war",
+      "after-war-awakening"
+    ],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "norba-shino",
+    "name": {
+      "zh": "诺尔巴·西诺",
+      "ja": "ノルバ・シノ",
+      "en": "Norba Shino"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 20 岁（P.D.325）",
+      "ja": "約20歳（P.D.325）"
+    },
+    "rank": {
+      "zh": "铁华团 MS 队员",
+      "ja": "鉄華団MS隊員"
+    },
+    "origin": {
+      "zh": "火星",
+      "ja": "火星"
+    },
+    "factionId": "tekkadan",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "弗劳洛斯驾驶员 / 铁华团",
+      "ja": "フラウロスパイロット / 鉄華団"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "铁华团的 MS 驾驶员，负责弗劳洛斯的远程火力。",
+        "他在埃德蒙顿和火星战线为队友提供掩护，最后在政变中战死。"
+      ],
+      "ja": [
+        "鉄華団のMSパイロットで、フラウロスの遠距離火力を担当した。",
+        "エドモントンと火星戦線で仲間を援護し、最後はクーデターの中で戦死する。"
+      ]
+    },
+    "machineIds": [
+      "asw-g-64-flauros"
+    ],
+    "eventIds": [
+      "edmonton",
+      "gjallarhorn-coup"
+    ],
+    "relations": [],
+    "appearances": [
+      "ibo-2015"
+    ]
+  },
+  {
+    "id": "argi-mirage",
+    "name": {
+      "zh": "阿尔吉·米拉杰",
+      "ja": "アルジ・ミラージュ",
+      "en": "Argi Mirage"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "寻宝者",
+      "ja": "宝探し"
+    },
+    "origin": {
+      "zh": "火星",
+      "ja": "火星"
+    },
+    "factionId": "urdr-hunt",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "阿斯塔罗特驾驶员 / 寻宝者",
+      "ja": "アスタロトパイロット / 宝探し"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "Urdr Hunt 中的寻宝者，驾驶被拆解后重组的阿斯塔罗特。",
+        "他靠旧高达的零件和佣兵经验活动，目标是把厄祭战的遗产换成自己的未来。"
+      ],
+      "ja": [
+        "ウルズハントの宝探しで、解体・再組立されたアスタロトを駆る。",
+        "旧ガンダムの部品と傭兵の経験で活動し、厄祭戦の遺産を自分の未来に変えようとする。"
+      ]
+    },
+    "machineIds": [
+      "asw-g-29-astaroth"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "ibo-urdr-hunt"
+    ]
+  },
+  {
+    "id": "wistario-afam",
+    "name": {
+      "zh": "维斯达里奥·阿法姆",
+      "ja": "ウィスタリオ・アファム",
+      "en": "Wistario Afam"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "寻宝者",
+      "ja": "宝探し"
+    },
+    "origin": {
+      "zh": "火星",
+      "ja": "火星"
+    },
+    "factionId": "urdr-hunt",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "马可西亚斯驾驶员 / 寻宝者",
+      "ja": "マルコシアスパイロット / 宝探し"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "Urdr Hunt 的另一名寻宝者，驾驶马可西亚斯。",
+        "他围绕厄祭战遗产行动，与不同势力争夺旧高达的技术与数据。"
+      ],
+      "ja": [
+        "ウルズハントのもう一人の宝探しで、マルコシアスを駆る。",
+        "厄祭戦の遺産を巡って動き、旧ガンダムの技術とデータを各勢力と争う。"
+      ]
+    },
+    "machineIds": [
+      "asw-g-35-marchosias"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "ibo-urdr-hunt"
+    ]
+  },
+  {
+    "id": "kudelia-aina-bernstein",
+    "name": {
+      "zh": "库德莉亚·蓝那·伯恩斯坦",
+      "ja": "クーデリア・藍那・バーンスタイン",
+      "en": "Kudelia Aina Bernstein"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 16 岁（P.D.325）",
+      "ja": "約16歳（P.D.325）"
+    },
+    "rank": {
+      "zh": "火星独立运动代表",
+      "ja": "火星独立運動の代表"
+    },
+    "origin": {
+      "zh": "火星",
+      "ja": "火星"
+    },
+    "factionId": "tekkadan",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "火星独立运动领袖",
+      "ja": "火星独立運動の指導者"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "火星的独立运动领袖，最初以和平谈判为目标。",
+        "在埃德蒙顿和政变之后，她开始用政治手段争取火星的自治，而不是只依靠铁华团。"
+      ],
+      "ja": [
+        "火星の独立運動の指導者で、当初は和平交渉を目指した。",
+        "エドモントンとクーデターの後、鉄華団だけに頼らず政治的手段で火星の自治を求める。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "edmonton",
+      "gjallarhorn-coup"
+    ],
+    "relations": [],
+    "appearances": [
+      "ibo-2015"
+    ]
+  },
+  {
+    "id": "ericht-samaya",
+    "name": {
+      "zh": "艾莉克特·萨玛雅",
+      "ja": "エリクト・サマヤ",
+      "en": "Ericht Samaya"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详（意识存续于风灵）",
+      "ja": "不明（エアリアルに意識が残る）"
+    },
+    "rank": {
+      "zh": "高达驾驶员",
+      "ja": "ガンダムパイロット"
+    },
+    "origin": {
+      "zh": "水星",
+      "ja": "水星"
+    },
+    "factionId": "vanadis",
+    "affiliations": [],
+    "eraIds": [
+      "as"
+    ],
+    "role": {
+      "zh": "魔灵高达驾驶员 / 斯莱塔之姐",
+      "ja": "ルブリスパイロット / スレッタの姉"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "斯莱塔的姐姐，凡娜迪斯事变中驾驶魔灵高达。",
+        "她的意识后来留在风灵高达里，成为斯莱塔与机体之间的另一层连接。"
+      ],
+      "ja": [
+        "スレッタの姉で、ヴァナディース事変でルブリスを駆った。",
+        "その後、意識はエアリアルの中に残り、スレッタと機体の間にもう一つの接続を作る。"
+      ]
+    },
+    "machineIds": [
+      "gundam-lfrith"
+    ],
+    "eventIds": [
+      "vanadis-incident"
+    ],
+    "relations": [],
+    "appearances": [
+      "witch-prologue",
+      "witch-2022"
+    ]
+  },
+  {
+    "id": "prospera-mercury",
+    "name": {
+      "zh": "普洛斯佩拉·墨丘利",
+      "ja": "プロスペラ・マーキュリー",
+      "en": "Prospera Mercury"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "技术顾问",
+      "ja": "技術顧問"
+    },
+    "origin": {
+      "zh": "水星",
+      "ja": "水星"
+    },
+    "factionId": "vanadis",
+    "affiliations": [],
+    "eraIds": [
+      "as"
+    ],
+    "role": {
+      "zh": "凡娜迪斯幸存者 / 高达公司技术顾问",
+      "ja": "ヴァナディースの生存者 / ガンダム会社技術顧問"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "斯莱塔的母亲，凡娜迪斯事变的幸存者。",
+        "她以技术顾问的身份进入贝纳里特集团，推动寂静零号计划，试图为女儿们争取一个不需要高达的世界。"
+      ],
+      "ja": [
+        "スレッタの母で、ヴァナディース事変の生存者。",
+        "技術顧問としてベネリットグループに入り、クワイエット・ゼロを進める。娘たちにガンダムの不要な世界を残そうとした。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "vanadis-incident",
+      "quiet-zero"
+    ],
+    "relations": [],
+    "appearances": [
+      "witch-2022"
+    ]
+  },
+  {
+    "id": "woolf-enneacle",
+    "name": {
+      "zh": "沃尔夫·恩尼克尔",
+      "ja": "ウルフ・エニアクル",
+      "en": "Woolf Enneacle"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "约 30 岁（A.G.115）",
+      "ja": "約30歳（A.G.115）"
+    },
+    "rank": {
+      "zh": "地球联邦军大尉",
+      "ja": "地球連邦軍大尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "federation-age",
+    "affiliations": [],
+    "eraIds": [
+      "ag"
+    ],
+    "role": {
+      "zh": "联邦王牌驾驶员",
+      "ja": "連邦のエースパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "联邦军的王牌驾驶员，被称为“白色狼”。",
+        "他驾驶 G-Exes 与维根交战，是弗利特在军中的前辈和竞争对手。"
+      ],
+      "ja": [
+        "連邦軍のエースパイロットで、「白い狼」と呼ばれる。",
+        "G-エクセスでヴェイガンと戦い、フリットの先輩でありライバルでもある。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "vagan-war"
+    ],
+    "relations": [],
+    "appearances": [
+      "age-2011"
+    ]
+  },
+  {
+    "id": "klim-nick",
+    "name": {
+      "zh": "克里姆·尼克",
+      "ja": "クリム・ニック",
+      "en": "Klim Nick"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "亚美利亚军中尉",
+      "ja": "アメリ軍中尉"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "amerian",
+    "affiliations": [],
+    "eraIds": [
+      "rc"
+    ],
+    "role": {
+      "zh": "亚美利亚军驾驶员",
+      "ja": "アメリ軍パイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "亚美利亚军的驾驶员，贝尔利的同伴。",
+        "他驾驶 Montero 等机体参加首都塔与满月作战，负责掩护和突击。"
+      ],
+      "ja": [
+        "アメリ軍のパイロットで、ベルリの仲間。",
+        "モンテーロなどでキャピタル・タワーと満月作戦に参加し、援護と突撃を担当した。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [
+      "capital-tower",
+      "full-moon"
+    ],
+    "relations": [],
+    "appearances": [
+      "reconguista-2014"
+    ]
+  },
+  {
+    "id": "sol-ryuune-lange",
+    "name": {
+      "zh": "索尔·琉恩·兰杰",
+      "ja": "ソル・リューネ・ランジュ",
+      "en": "Sol Ryuune L'ange"
+    },
+    "aliases": [],
+    "age": {
+      "zh": "不详",
+      "ja": "不明"
+    },
+    "rank": {
+      "zh": "DSSD 测试驾驶员",
+      "ja": "DSSDテストパイロット"
+    },
+    "origin": {
+      "zh": "地球",
+      "ja": "地球"
+    },
+    "factionId": "dssd",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "观星者高达驾驶员 / DSSD",
+      "ja": "スターゲイザーパイロット / DSSD"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "DSSD 的测试驾驶员，负责观星者高达的深宇宙观测任务。",
+        "观星者原本不是战斗机体，他在 C.E.73 的冲突中被迫用观测设备保护船员。"
+      ],
+      "ja": [
+        "DSSDのテストパイロットで、スターゲイザーの深宇宙観測任務を担当した。",
+        "スターゲイザーは本来戦闘機ではない。C.E.73の衝突で、彼は観測装置を使って乗員を守ることを迫られた。"
+      ]
+    },
+    "machineIds": [
+      "gsx-401fw-stargazer"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "seed-stargazer"
+    ]
   }
 ]

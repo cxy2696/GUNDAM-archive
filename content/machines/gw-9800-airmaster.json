@@ -67,7 +67,11 @@
     "gundarium",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "witz-sou"
+    }
+  ],
   "eventIds": [
     "after-war-awakening",
     "new-une-final"

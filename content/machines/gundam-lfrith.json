@@ -73,7 +73,11 @@
     "beam-weapon",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "ericht-samaya"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "witch-prologue"
@@ -138,6 +142,21 @@
         }
       ],
       "techTag": "gund-format"
+    },
+    {
+      "to": "x-ex01-calibarn",
+      "kind": "tech_from",
+      "techTag": "gund-format",
+      "note": {
+        "zh": "x-ex01-calibarn：卡利班与魔灵同属凡娜迪斯系的 GUND 格式化机体。",
+        "ja": "x-ex01-calibarn：キャリバーンとルブリスはヴァナディース系のGUNDフォーマット機である。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

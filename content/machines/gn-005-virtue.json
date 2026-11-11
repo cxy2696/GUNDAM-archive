@@ -17,7 +17,7 @@
     "precision": "month"
   },
   "summary": {
-    "zh": "天上人的重装高达，以 GN 力场与大口径光束炮进行压制。",
+    "zh": "天人的重装高达，以 GN 力场与大口径光束炮进行压制。",
     "ja": "ソレスタルビーイングの重装ガンダム。GNフィールドと大口径ビーム砲で制圧を行う。"
   },
   "description": {
@@ -99,6 +99,21 @@
         }
       ],
       "techTag": "gn-drive"
+    },
+    {
+      "to": "gn-004-nadleeh",
+      "kind": "derive_of",
+      "techTag": "gn-drive",
+      "note": {
+        "zh": "gn-004-nadleeh：中性高达是德天使的内部形态。",
+        "ja": "gn-004-nadleeh：ナドレはヴァーチェの内部形態である。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

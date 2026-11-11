@@ -86,7 +86,53 @@
   "workIds": [
     "0083-1991"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "rx-78gp02a",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "rx-78gp02a：GP 系列共用可动骨架与核心战机接口。",
+        "ja": "rx-78gp02a：GPシリーズはムーバブルフレームとコア・ファイターインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "rx-78gp03",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "rx-78gp03：GP 系列共用可动骨架与核心战机接口。",
+        "ja": "rx-78gp03：GPシリーズはムーバブルフレームとコア・ファイターインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "rx-78gp04g",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "rx-78gp04g：GP 系列共用可动骨架与核心战机接口。",
+        "ja": "rx-78gp04g：GPシリーズはムーバブルフレームとコア・ファイターインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

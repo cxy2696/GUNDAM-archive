@@ -97,6 +97,21 @@
         }
       ],
       "techTag": "movable-frame"
+    },
+    {
+      "to": "g-lucifer",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "g-lucifer：G-Lucifer 与 G-Arcane 同属亚美利亚系机体。",
+        "ja": "g-lucifer：G-ルシファーはG-アルケインと同じアメリ系の機体である。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

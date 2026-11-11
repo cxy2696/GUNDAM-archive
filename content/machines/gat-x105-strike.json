@@ -121,6 +121,156 @@
         }
       ],
       "techTag": "phase-shift"
+    },
+    {
+      "to": "gat-x102-duel",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x102-duel：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x102-duel：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x103-buster",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x103-buster：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x103-buster：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x207-blitz",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x207-blitz：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x207-blitz：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x303-aegis",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x303-aegis：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x303-aegis：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x131-calamity",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x131-calamity：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x131-calamity：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x252-forbidden",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x252-forbidden：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x252-forbidden：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gat-x370-raider",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "gat-x370-raider：GAT-X 系列共用相转移装甲与光束兵器接口。",
+        "ja": "gat-x370-raider：GAT-Xシリーズはフェイズシフト装甲とビーム兵器のインターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "mbf-p02-astray-red",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "mbf-p02-astray-red：奥布异端系列以 GAT-X 的骨架与数据为基础。",
+        "ja": "mbf-p02-astray-red：オーブのアストレイ系はGAT-Xの骨格とデータを基礎とする。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "mbf-p03-astray-blue",
+      "kind": "tech_from",
+      "techTag": "phase-shift",
+      "note": {
+        "zh": "mbf-p03-astray-blue：奥布异端系列以 GAT-X 的骨架与数据为基础。",
+        "ja": "mbf-p03-astray-blue：オーブのアストレイ系はGAT-Xの骨格とデータを基礎とする。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gsx-401fw-stargazer",
+      "kind": "tech_from",
+      "techTag": "beam-weapon",
+      "note": {
+        "zh": "gsx-401fw-stargazer：C.E. 联邦系的光束与推进技术在观测机上延续。",
+        "ja": "gsx-401fw-stargazer：C.E.連邦系のビーム・推進技術は観測機へ継承された。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

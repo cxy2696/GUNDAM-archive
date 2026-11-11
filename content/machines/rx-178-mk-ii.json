@@ -79,6 +79,9 @@
   "pilots": [
     {
       "characterId": "kamille-bidan"
+    },
+    {
+      "characterId": "emma-sheen"
     }
   ],
   "eventIds": [],

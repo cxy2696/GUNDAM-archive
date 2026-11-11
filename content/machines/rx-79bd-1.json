@@ -75,7 +75,11 @@
     "exam",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "yuu-kajima"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "blue-destiny"

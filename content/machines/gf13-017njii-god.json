@@ -84,7 +84,113 @@
   "workIds": [
     "g-gundam-1994"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "gf13-006na-maxter",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-006na-maxter：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-006na-maxter：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-009nf-rose",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-009nf-rose：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-009nf-rose：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-011nc-dragon",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-011nc-dragon：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-011nc-dragon：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-013nr-bolt",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-013nr-bolt：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-013nr-bolt：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-021ng-spiegel",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-021ng-spiegel：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-021ng-spiegel：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-026nd-mermaid",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-026nd-mermaid：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-026nd-mermaid：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    },
+    {
+      "to": "gf13-050nsw-nobel",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "gf13-050nsw-nobel：第十三届武斗会机体共用机动斗士骨架与热核反应炉。",
+        "ja": "gf13-050nsw-nobel：第13回ガンダムファイトの機体は機動闘士フレームと熱核反応炉を共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

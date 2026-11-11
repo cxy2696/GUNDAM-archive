@@ -83,6 +83,9 @@
         "zh": "主要驾驶员",
         "ja": "主パイロット"
       }
+    },
+    {
+      "characterId": "jamil-neate"
     }
   ],
   "eventIds": [

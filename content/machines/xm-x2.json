@@ -75,7 +75,11 @@
     "beam-weapon",
     "core-block"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "zabine-chareux"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "crossbone"

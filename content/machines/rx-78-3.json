@@ -68,7 +68,15 @@
     "beam-weapon",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "amuro-ray",
+      "note": {
+        "zh": "小说版驾驶员",
+        "ja": "小説版パイロット"
+      }
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "msg-1979"

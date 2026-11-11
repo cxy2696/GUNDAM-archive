@@ -85,6 +85,16 @@ export default async function MachinePage({
     .map((id) => getWork(id))
     .filter((work): work is NonNullable<typeof work> => Boolean(work));
   const lineage = getLineage(machine.id);
+  const techGroups = [
+    { key: "power", label: dict.machine.techPower, tags: tags.filter((tag) => tag.category === "power") },
+    { key: "armor", label: dict.machine.techArmor, tags: tags.filter((tag) => tag.category === "armor") },
+    { key: "frame", label: dict.machine.techFrame, tags: tags.filter((tag) => tag.category === "frame") },
+    { key: "system", label: dict.machine.techSystem, tags: tags.filter((tag) => tag.category === "system" || tag.category === "sensor") },
+    { key: "weapon", label: dict.machine.techWeapon, tags: tags.filter((tag) => tag.category === "weapon") },
+  ];
+  const armamentCounts = (["beam", "kinetic", "melee", "special"] as const)
+    .map((type) => ({ type, count: machine.armament.filter((item) => item.type === type).length }))
+    .filter((item) => item.count > 0);
 
   const index = bundle.machines.findIndex((item) => item.id === machine.id);
   const previous = bundle.machines[(index - 1 + bundle.machines.length) % bundle.machines.length];
@@ -230,9 +240,51 @@ export default async function MachinePage({
             </div>
           </details>
 
-          <details className="fold">
+          <details className="fold" open>
             <summary>
               <span className="fold__index mono">03</span>
+              <span className="fold__title">{dict.machine.techTitle}</span>
+              <span className="fold__count mono">{String(tags.length).padStart(2, "0")} TAGS</span>
+              <ChevronDownIcon size={15} />
+            </summary>
+            <div className="fold__body">
+              <p className="fold__lead">{dict.machine.techLead}</p>
+              <div className="tech-grid">
+                {techGroups.map((group) => (
+                  <div key={group.key} className="tech-card">
+                    <span className="micro">{group.label}</span>
+                    {group.tags.length === 0 ? (
+                      <span className="tech-card__empty">{dict.machine.techEmpty}</span>
+                    ) : (
+                      <div className="tech-tags">
+                        {group.tags.map((tag) => (
+                          <Link key={tag.id} href={`/${typed}/glossary#tag-${tag.id}`} className="tech-tag">
+                            {pick(tag.name, typed)}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <div className="tech-armament">
+                <span className="micro">{dict.machine.techArmament}</span>
+                <div className="tech-armament__rows">
+                  {armamentCounts.map((item) => (
+                    <span key={item.type} className="tech-armament__row">
+                      <i className={`armament-type armament-type--${item.type}`}>{dict.armamentType[item.type]}</i>
+                      <b className="mono">{String(item.count).padStart(2, "0")}</b>
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <p className="fold__note">{dict.machine.techNote}</p>
+            </div>
+          </details>
+
+          <details className="fold">
+            <summary>
+              <span className="fold__index mono">04</span>
               <span className="fold__title">{dict.machine.armament}</span>
               <span className="fold__count mono">{String(machine.armament.length).padStart(2, "0")}</span>
               <ChevronDownIcon size={15} />
@@ -251,7 +303,7 @@ export default async function MachinePage({
 
           <details className="fold" open={pilots.length > 0}>
             <summary>
-              <span className="fold__index mono">04</span>
+              <span className="fold__index mono">05</span>
               <span className="fold__title">{dict.machine.pilots}</span>
               <span className="fold__count mono">{String(pilots.length).padStart(2, "0")}</span>
               <ChevronDownIcon size={15} />
@@ -282,7 +334,7 @@ export default async function MachinePage({
 
           <details className="fold">
             <summary>
-              <span className="fold__index mono">05</span>
+              <span className="fold__index mono">06</span>
               <span className="fold__title">{dict.machine.lineage}</span>
               <ChevronDownIcon size={15} />
             </summary>
@@ -310,7 +362,7 @@ export default async function MachinePage({
 
           <details className="fold">
             <summary>
-              <span className="fold__index mono">06</span>
+              <span className="fold__index mono">07</span>
               <span className="fold__title">{dict.machine.events}</span>
               <span className="fold__count mono">{String(events.length).padStart(2, "0")}</span>
               <ChevronDownIcon size={15} />
@@ -324,7 +376,7 @@ export default async function MachinePage({
                     const eventEra = getEra(event.eraId);
                     const place = event.placeId ? getPlace(event.placeId) : undefined;
                     return (
-                      <Link key={event.id} href={`/${typed}/timeline?e=${event.id}`} className="event-row">
+                      <Link key={event.id} href={`/${typed}/events/${event.id}`} className="event-row">
                         <span className="event-row__date mono">
                           {eventEra ? formatStoryDate(event.date, eventEra.code, typed) : ""}
                         </span>
@@ -340,7 +392,7 @@ export default async function MachinePage({
 
           <details className="fold">
             <summary>
-              <span className="fold__index mono">07</span>
+              <span className="fold__index mono">08</span>
               <span className="fold__title">{dict.machine.sources}</span>
               <span className="fold__count mono">{String(machine.sources.length).padStart(2, "0")}</span>
               <ChevronDownIcon size={15} />

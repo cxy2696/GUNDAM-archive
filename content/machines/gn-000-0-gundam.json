@@ -16,7 +16,7 @@
     "precision": "year"
   },
   "summary": {
-    "zh": "天上人最早的高达，也是所有 GN 驱动系谱的原点。",
+    "zh": "天人最早的高达，也是所有 GN 驱动系谱的原点。",
     "ja": "ソレスタルビーイング最初のガンダム。すべてのGNドライブ系譜の原点である。"
   },
   "description": {
@@ -90,6 +90,21 @@
         }
       ],
       "techTag": "gn-drive"
+    },
+    {
+      "to": "cb-0000g-c-reborns",
+      "kind": "tech_from",
+      "techTag": "gn-drive",
+      "note": {
+        "zh": "cb-0000g-c-reborns：再生高达沿用 0 高达的 GN 驱动器数据。",
+        "ja": "cb-0000g-c-reborns：リボーンズは0ガンダムのGNドライブ・データを継承する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

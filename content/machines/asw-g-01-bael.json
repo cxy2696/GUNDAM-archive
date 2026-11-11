@@ -81,7 +81,23 @@
   "workIds": [
     "ibo-2015"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "asw-g-66-kimaris-vidar",
+      "kind": "tech_from",
+      "techTag": "ahab-reactor",
+      "note": {
+        "zh": "asw-g-66-kimaris-vidar：两机同属厄祭战的高达骨架体系。",
+        "ja": "asw-g-66-kimaris-vidar：二機は厄祭戦のガンダム・フレーム体系に属する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

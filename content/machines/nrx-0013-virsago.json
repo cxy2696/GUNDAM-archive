@@ -67,7 +67,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "shagia-frost"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "x-1996"
@@ -87,6 +91,21 @@
         }
       ],
       "techTag": "movable-frame"
+    },
+    {
+      "to": "nrx-0015-ashtaron",
+      "kind": "tech_from",
+      "techTag": "movable-frame",
+      "note": {
+        "zh": "nrx-0015-ashtaron：两机由弗罗斯特兄弟配套运用，共享可变骨架与火力接口。",
+        "ja": "nrx-0015-ashtaron：二機はフロスト兄弟が組み合わせて運用し、可変フレームと火力インターフェースを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
     }
   ],
   "viewer": {

@@ -67,12 +67,32 @@
     "alaya-vijnana",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "argi-mirage"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "ibo-urdr-hunt"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "asw-g-35-marchosias",
+      "kind": "tech_from",
+      "techTag": "alaya-vijnana",
+      "note": {
+        "zh": "asw-g-35-marchosias：阿斯塔罗特与马可西亚斯同属厄祭战遗产。",
+        "ja": "asw-g-35-marchosias：アスタロトとマルコシアスは厄祭戦の遺産に属する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "slim",

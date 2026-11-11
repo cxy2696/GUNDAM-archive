@@ -68,7 +68,11 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "trant-clark"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "g-unit"

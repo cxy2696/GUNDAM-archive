@@ -77,7 +77,11 @@
     "funnel",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "lane-aim"
+    }
+  ],
   "eventIds": [
     "hathaway-flash"
   ],

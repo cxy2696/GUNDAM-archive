@@ -75,7 +75,11 @@
     "exam",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "chloe-croce"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "missing-link"

@@ -75,7 +75,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "agar"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "zeonic-front"

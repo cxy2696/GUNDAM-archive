@@ -67,7 +67,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "sol-ryuune-lange"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-stargazer"

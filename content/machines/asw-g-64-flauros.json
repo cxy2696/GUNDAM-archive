@@ -67,12 +67,32 @@
     "alaya-vijnana",
     "movable-frame"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "norba-shino"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "ibo-2015"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "asw-g-29-astaroth",
+      "kind": "tech_from",
+      "techTag": "ahab-reactor",
+      "note": {
+        "zh": "asw-g-29-astaroth：弗劳洛斯与阿斯塔罗特共用厄祭战高达的反应炉与骨架。",
+        "ja": "asw-g-29-astaroth：フラウロスとアスタロトは厄祭戦ガンダムのリアクターとフレームを共有する。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "vfin",
     "build": "standard",

@@ -3,6 +3,25 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [2.3.0] — 2026-11-12
+
+### Added
+
+- **41 new characters** (114 total): GAT-X Duel/Buster/Blitz/Calamity/Forbidden/Raider pilots, Leopard/Airmaster/Virsago/Ashtaron pilots, G-UNIT and Gundam X pilots, Blue Destiny/Pale Rider/Penelope/TR-6/Crossbone X-2/Mudrock/F90 pilots, Turn X, Lfrith, Marchosias, Astaroth and Flauros pilots, plus key figures such as Murrue, Mu, Durandal, Dianna, Kihel, Kudelia, Prospera and Woolf.
+- **Technical composition panel** on every machine page: power, armor, frame, systems and armament profile generated from controlled tags and specs, with links to the glossary.
+- **MS lineage completion**: 115 edges (up from 82); every one of the 147 machines now has at least one incoming or outgoing lineage edge.
+
+### Changed
+
+- Chinese name of Celestial Being corrected from “天上人” to **“天人”** across content, UI and documentation.
+- Character count 73 → 114; faction count 35 → 37; static pages 628 → 714; search index 377 → 420.
+- Version bumped to `2.3.0`.
+
+### Fixed
+
+- Filled pilot links for the remaining named machines; only uncrewed or unnamed test units remain without a pilot.
+- Repaired Japanese wording in new lineage notes and character entries.
+
 ## [2.2.0] — 2026-11-12
 
 ### Changed
@@ -10,7 +29,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 - **Editorial pass across all content**: rewrote machine summaries and descriptions, character bios, event explanations and technology entries to remove templated AI-style phrasing. Replaced “不是…而是”, “真正的”, “这台机体”, “故事”, “读者”, “宿命”, “极致”, “见证了” and similar constructions with concrete statements.
 - Event explanations are now shorter and follow a background → course → result structure. Technology entries explain mechanism, trade-off and historical role without rhetorical conclusions.
 - Character biographies are capped at two paragraphs; the separate service record carries the chronological detail.
-- Removed the duplicate “天上人武力介入” event; events are now 49.
+- Removed the duplicate “天人武力介入” event; events are now 49.
 - Static pages: 628; search index: 377.
 
 ### Added
@@ -25,7 +44,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 - Corrected remaining Chinese characters in Japanese text and a few duplicated event references.
 - Corrected the Quetta factory attack participants: Aerial, Lfrith Ur and Lfrith Thorn; Calibarn was not present. Removed Aerial from the Vanadis Incident.
 - Corrected Amuro Ray's age in U.C.0079 to 16.
-- Removed the duplicate “天上人武力介入” event and its stale links.
+- Removed the duplicate “天人武力介入” event and its stale links.
 
 ## [2.1.0] — 2026-11-12
 

@@ -75,7 +75,11 @@
     "moonlight-butterfly",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "gym-ghinghim"
+    }
+  ],
   "eventIds": [
     "dark-history",
     "turn-x-duel"
@@ -83,7 +87,23 @@
   "workIds": [
     "turn-a-1999"
   ],
-  "edges": [],
+  "edges": [
+    {
+      "to": "turn-a",
+      "kind": "tech_from",
+      "techTag": "moonlight-butterfly",
+      "note": {
+        "zh": "turn-a：两台机体同属黑历史技术体系，月光蝶是共同的核心。",
+        "ja": "turn-a：二機は黒歴史の技術体系に属し、月光蝶を共通の核とする。"
+      },
+      "sources": [
+        {
+          "label": "机体谱系整理（作品设定）",
+          "level": "B"
+        }
+      ]
+    }
+  ],
   "viewer": {
     "head": "fin",
     "build": "heavy",

@@ -67,7 +67,11 @@
     "movable-frame",
     "thermonuclear"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "shagia-frost"
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "x-1996"
