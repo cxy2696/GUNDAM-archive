@@ -21,11 +21,12 @@ pnpm dev
 | --- | --- |
 | `pnpm dev` | 开发服务器 |
 | `pnpm validate` | schema + 外键 + 谱系 DAG + 双向关联 |
+| `pnpm docs:check` | 所有 Markdown 本地链接可解析 |
 | `pnpm typecheck` | TypeScript |
 | `pnpm build` | 静态导出到 `out/` |
 | `pnpm preview` | 本地预览 `out/`（python3） |
 
-提交前至少运行 `pnpm validate && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
+提交前至少运行 `pnpm validate && pnpm docs:check && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
 
 ## 3. 代码贡献
 
@@ -33,6 +34,8 @@ pnpm dev
 - 组件：默认 Server Component；需要状态/浏览器 API 才加 `"use client"`。
 - 内容读取只能在服务端（`src/lib/content.ts`）；客户端只接收纯数据。
 - 样式：使用 `src/app/globals.css` 的 Token 与 `src/styles/` 的类；不要引入第二套设计系统。
+- 双语文案：新增 UI 文案必须同时补 `src/lib/i18n.ts` 的 `zh` 与 `ja`；语言切换不得丢失 path / query / hash。
+- 文档：字段表只在 `docs/DATA_DICTIONARY.md` 维护；改 schema 先改字段表，再改指南。文档索引与权威边界见 `docs/README.md`。
 - 提交信息：Conventional Commits
 
 ```

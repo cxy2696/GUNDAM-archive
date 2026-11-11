@@ -11,6 +11,7 @@ import {
   SearchIcon,
   SunIcon,
 } from "./Icons";
+import { LanguageSwitch } from "./LanguageSwitch";
 import type { Dictionary } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 
@@ -45,8 +46,6 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
     };
   }, [menuOpen]);
 
-  const other = lang === "zh" ? "ja" : "zh";
-  const rest = path.replace(new RegExp(`^/${lang}`), "") || "";
   const isActive = (target: string) => path === `/${lang}${target}` || path.startsWith(`/${lang}${target}/`);
 
   const toggleTheme = () => {
@@ -103,23 +102,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
               <SearchIcon size={17} />
               <kbd>⌘K</kbd>
             </button>
-            <div className="lang-toggle" role="group" aria-label={dict.common.language}>
-              <Link
-                href={`/${lang}${rest}`}
-                className={lang === "zh" ? "is-active" : ""}
-                aria-current={lang === "zh" ? "true" : undefined}
-              >
-                中
-              </Link>
-              <span aria-hidden>/</span>
-              <Link
-                href={`/${other}${rest}`}
-                className={lang === "ja" ? "is-active" : ""}
-                aria-current={lang === "ja" ? "true" : undefined}
-              >
-                日
-              </Link>
-            </div>
+            <LanguageSwitch lang={lang} dict={dict} />
             <button
               type="button"
               className="icon-btn theme-toggle"
@@ -159,9 +142,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
               {theme === "dark" ? <SunIcon size={16} /> : <MoonIcon size={16} />}
               {theme === "dark" ? dict.common.themeLight : dict.common.themeDark}
             </button>
-            <Link href={`/${other}${rest}`} className="text-btn" tabIndex={menuOpen ? 0 : -1}>
-              {other === "ja" ? "日本語" : "中文"} <span aria-hidden>→</span>
-            </Link>
+            {menuOpen && <LanguageSwitch lang={lang} dict={dict} className="lang-switch--menu" />}
           </div>
         </div>
       </div>

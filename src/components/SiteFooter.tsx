@@ -3,6 +3,7 @@ import { getBundle } from "@/lib/content";
 import { getDict } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { OrbitMark } from "./Icons";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 export function SiteFooter({ lang }: { lang: Lang }) {
   const dict = getDict(lang);
@@ -52,7 +53,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>
             <Link href={`/${lang}/about#license`}>{dict.about.licenseTitle}</Link>
-            <span>v1.0.0</span>
+            <span>v1.0.1</span>
           </div>
         </div>
 
@@ -62,6 +63,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             <span>{dict.footer.license}</span>
             <span className="footer__sep" aria-hidden>·</span>
             <span>{dict.footer.built}</span>
+            <LanguageSwitch lang={lang} dict={dict} className="lang-switch--footer" />
           </div>
           <p className="footer__note">{dict.footer.sourceNote}</p>
         </div>

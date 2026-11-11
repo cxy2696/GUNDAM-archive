@@ -6,6 +6,7 @@ import type { Lang } from "@/lib/schema";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
+import { ScrollRestore } from "@/components/ScrollRestore";
 import { display, mono } from "@/app/fonts";
 import { themeBootScript } from "@/app/theme-script";
 import "@/app/globals.css";
@@ -80,6 +81,7 @@ export default async function LangLayout({
       </head>
       <body className={`${display.variable} ${mono.variable}`}>
         <div className="site" data-lang={typed}>
+          <ScrollRestore />
           <div className="site-bg" aria-hidden />
           <SiteHeader lang={typed} dict={dict} />
           <main id="main" className="main">

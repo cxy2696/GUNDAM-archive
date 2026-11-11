@@ -121,7 +121,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GAIA / ABOUT</span>
-            <span className="mono">V1.0.0 / 2026.11.11</span>
+            <span className="mono">V1.0.1 / 2026.11.11</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -130,7 +130,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 1.0.0</span>
+            <span className="micro">{t.version} 1.0.1</span>
             <span className="micro">{t.cut} 2026.11.11</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
@@ -268,7 +268,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GAIA ARCHIVE / V1.0.0</span>
+              <span className="micro">GAIA ARCHIVE / V1.0.1</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>

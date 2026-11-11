@@ -22,6 +22,8 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Validate content
         run: pnpm validate
+      - name: Check documentation links
+        run: pnpm docs:check
       - name: Typecheck
         run: pnpm typecheck
       - name: Build static site

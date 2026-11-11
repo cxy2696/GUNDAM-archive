@@ -28,6 +28,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm validate
+      - run: pnpm docs:check
       - name: Build for project page
         run: pnpm build
         env:

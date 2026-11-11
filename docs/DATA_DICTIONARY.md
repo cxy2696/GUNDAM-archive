@@ -13,6 +13,8 @@
 | 出处 | `SourceRef[]`，每项含 `label`、`level`（S/A/B/C）、可选 `url` / `note` |
 | 空值 | 没有数据用 `null` 或省略字段；禁止 0 或估算值 |
 | 公共字段 | 多数实体有 `sources`；机体额外有 `disputed`、`dataQuality`、`updatedAt` |
+| 出处覆盖 | **当前只有 Machine 与 Event 强制 `sources`**；Faction / Character / Work / Place / Tag 尚未逐条挂 `source_refs`，以作品/纪元锚定（M4 补全） |
+| UI 语言 | 界面语言由路由 `/zh` / `/ja` 决定，不写入内容字段；`Localized` 只描述数据本身 |
 
 ## 1. 枚举
 
@@ -232,6 +234,18 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 | 传感器 | m | m | — |
 
 **禁止**在数据层存两份换算值。前端需要英制时在展示层换算，并标注 `converted`。
+
+## 9.1 出处覆盖范围
+
+V1 的 `sources` 覆盖：
+
+| 实体 | 是否强制 `sources` | 说明 |
+| --- | --- | --- |
+| Machine | 是（至少 1 条） | 参数、谱系边、描述依据 |
+| Event | 是（至少 1 条） | 时间、结果、参战方依据 |
+| Faction / Character / Work / Place / Tag | 否（字段未定义） | 目前通过所属作品、纪元与条目关系锚定；UI 不宣称这些条目“逐条附出处” |
+
+这是已知差距，不是“全部条目已可溯源”。M4 的任务包括为这些实体补 `source_refs` 或在界面明确显示覆盖范围。
 
 ## 10. 交叉校验规则
 

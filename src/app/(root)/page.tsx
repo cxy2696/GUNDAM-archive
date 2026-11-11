@@ -6,7 +6,15 @@ export default function RootPage() {
   useEffect(() => {
     const path = window.location.pathname;
     const base = path.endsWith("/") ? path : path.replace(/[^/]*$/, "");
-    window.location.replace(`${base}zh/`);
+    let lang = "zh";
+    try {
+      const stored = localStorage.getItem("gaia-lang");
+      if (stored === "zh" || stored === "ja") lang = stored;
+      else if ((navigator.language || "").toLowerCase().startsWith("ja")) lang = "ja";
+    } catch {
+      /* private mode */
+    }
+    window.location.replace(`${base}${lang}/`);
   }, []);
 
   return (

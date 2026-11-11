@@ -1,6 +1,6 @@
 {
   "name": "gundam-archive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "GAIA Archive — a traceable, bilingual mobile-suit knowledge archive.",
   "license": "MIT",
@@ -10,8 +10,9 @@
     "preview": "python3 -m http.server 4173 --directory out",
     "validate": "tsx scripts/validate-content.ts",
     "typecheck": "tsc --noEmit",
-    "check": "npm run validate && npm run typecheck && npm run build",
-    "postbuild": "node scripts/build-404.mjs"
+    "check": "npm run validate && npm run docs:check && npm run typecheck && npm run build",
+    "postbuild": "node scripts/build-404.mjs",
+    "docs:check": "node scripts/check-docs.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.9",

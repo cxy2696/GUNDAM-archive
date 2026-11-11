@@ -647,25 +647,73 @@ hr {
   padding: 0 9px;
 }
 
-.lang-toggle {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.lang-switch {
+  display: inline-flex;
+  align-items: stretch;
+  height: 28px;
   margin: 0 4px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 60%, transparent);
+}
+
+.lang-switch__option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  padding: 0 7px;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
   color: var(--text-3);
+  transition: color var(--dur), background var(--dur);
 }
 
-.lang-toggle a {
-  padding: 4px 2px;
-  color: var(--text-3);
-  transition: color var(--dur);
+.lang-switch__option + .lang-switch__option {
+  border-left: 1px solid var(--line);
 }
 
-.lang-toggle a:hover,
-.lang-toggle a.is-active {
+.lang-switch__option:hover {
+  color: var(--text);
+}
+
+.lang-switch__option.is-active {
   color: var(--cyan);
+  background: var(--cyan-soft);
+}
+
+.lang-switch__short {
+  display: none;
+}
+
+.lang-switch--menu {
+  height: 32px;
+  margin: 0;
+}
+
+.lang-switch--menu .lang-switch__short {
+  display: none;
+}
+
+.lang-switch--menu .lang-switch__full {
+  display: inline;
+}
+
+.footer__lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: auto;
+}
+
+.footer__lang .micro {
+  font-size: 7px;
+  color: var(--text-3);
+}
+
+.footer__lang .lang-switch {
+  height: 24px;
+  margin: 0;
 }
 
 .menu-btn {
@@ -1144,6 +1192,16 @@ hr {
   .header__status {
     display: none;
   }
+  .header .lang-switch__full {
+    display: none;
+  }
+  .header .lang-switch__short {
+    display: inline;
+  }
+  .header .lang-switch__option {
+    min-width: 26px;
+    padding: 0 5px;
+  }
   .nav__link {
     padding-inline: 9px;
     font-size: 12px;
@@ -1174,8 +1232,7 @@ hr {
     --pad: 20px;
     --header-h: 58px;
   }
-  .search-trigger kbd,
-  .lang-toggle {
+  .search-trigger kbd {
     display: none;
   }
   .header__actions {
@@ -1231,5 +1288,26 @@ hr {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+.lang-switch--footer {
+  height: 24px;
+  margin: 0 0 0 6px;
+  border-color: var(--line);
+}
+
+.lang-switch--footer .lang-switch__option {
+  min-width: 34px;
+  font-size: 7.5px;
+}
+
+.footer__legal .lang-switch--footer {
+  align-self: center;
+}
+
+@media (max-width: 760px) {
+  .footer__legal .lang-switch--footer {
+    margin-left: 0;
   }
 }

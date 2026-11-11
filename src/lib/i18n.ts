@@ -5,7 +5,7 @@ const zh = {
     locale: "zh-CN",
     title: "GAIA Archive · 机动战士档案",
     description:
-      "一座可交互、可追溯的机动战士档案馆：3D 检阅、技术谱系、纪元年表与地球圈地图，全部条目附出处。",
+      "一座可交互、可追溯的机动战士档案馆：3D 检阅、技术谱系、纪元年表与地球圈地图，机体与事件附出处。",
   },
   site: {
     name: "GAIA ARCHIVE",
@@ -65,7 +65,7 @@ const zh = {
       machines: "台收录机体",
       eras: "个纪元年表",
       events: "条关键事件",
-      sourced: "条目附出处",
+      sourced: "机体 / 事件附出处",
     },
     thesisLabel: "01 / 三条主线",
     thesisTitle: "先看见，再追问，最后放回历史。",
@@ -349,7 +349,7 @@ const zh = {
   footer: {
     disclaimer: "非官方粉丝考据项目。高达系列及相关名称、设定归创通・Sunrise / Bandai Namco 所有。",
     license: "代码 MIT · 原创内容 CC BY-NC-SA 4.0",
-    sourceNote: "所有条目附出处与不确定度标记。",
+    sourceNote: "机体与事件附出处；争议条目带不确定度标记。",
     built: "Next.js 15 · React 19 · Three.js",
     backTop: "回到顶部",
   },
@@ -397,7 +397,7 @@ const ja: typeof zh = {
     locale: "ja-JP",
     title: "GAIA Archive · モビルスーツアーカイブ",
     description:
-      "インタラクティブで追跡可能なモビルスーツアーカイブ。3D閲覧、技術系譜、紀元年表、地球圏地図。全項目に出典付き。",
+      "インタラクティブで追跡可能なモビルスーツアーカイブ。3D閲覧、技術系譜、紀元年表、地球圏地図。機体・事件に出典付き。",
   },
   site: {
     name: "GAIA ARCHIVE",
@@ -457,7 +457,7 @@ const ja: typeof zh = {
       machines: "機体を収録",
       eras: "紀元の年表",
       events: "主要事件",
-      sourced: "項目に出典",
+      sourced: "機体・事件に出典",
     },
     thesisLabel: "01 / 三つの主線",
     thesisTitle: "まず見る。次に辿る。最後に歴史へ戻す。",
@@ -741,7 +741,7 @@ const ja: typeof zh = {
   footer: {
     disclaimer: "非公式ファン考証プロジェクト。ガンダムシリーズおよび関連名称・設定は創通・サンライズ / バンダイナムコに帰属する。",
     license: "コード MIT · オリジナル内容 CC BY-NC-SA 4.0",
-    sourceNote: "全項目に出典と不確実性の表示を付す。",
+    sourceNote: "機体・事件に出典を付し、係争項目には不確実性を表示する。",
     built: "Next.js 15 · React 19 · Three.js",
     backTop: "ページ上部へ",
   },

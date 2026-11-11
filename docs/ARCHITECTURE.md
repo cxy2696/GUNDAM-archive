@@ -94,6 +94,7 @@ MechViewer (client)
 ```
 
 - **程序化资产不是最终形态。** `buildMech()` 只消费 `viewer` 配置；未来 `asset-manifest` 提供 GLB 时，`MechStage` 可切换为 `useGLTF`，`partId` 与爆炸轴契约不变。
+- **按需加载**：`MechViewer` 外壳（顶栏、控制台、设计图）立即渲染；只有 `MechStage`（three/R3F）通过 `next/dynamic` 异步加载。机体页首屏 JS 约 116KB，3D chunk 独立下载。
 - **不用后处理链**：量子形态由 emissive/uniform 驱动的粒子、环与菲涅尔球体组合，避免额外 render target；换取低端设备可降级。
 - **状态本地化**：查看器状态不进入全局 store；页面级交互不触发服务端请求。
 
@@ -103,7 +104,9 @@ MechViewer (client)
 - 目录：`app/(site)/[lang]/` 是站点组的 root layout，直接输出 `<html lang="ja">` 或 `zh-CN`；`app/(root)/` 承载 `/` 重定向页。这样每种语言都有正确的 `lang` 属性，而不是在客户端改。
 - 元数据：每页 `alternates.languages` 输出 `zh-CN` / `ja-JP` / `x-default`。
 - 内容：`name` / `summary` / `description` 均为 `{ zh, ja }`；schema 强制双语，避免半成品。
-- 排版：`data-lang` 作用域切换字体栈与断行规则；数值使用统一等宽字体。
+- 排版：`html lang` + `data-lang` 作用域切换字体栈与断行规则；数值使用统一等宽字体。
+- 切换器：`LanguageSwitch` 同时出现在桌面头部、移动菜单与页脚；切换时保留 path / query / hash，并把 `scrollY` 写入 sessionStorage，由 `ScrollRestore` 在目标页恢复。活动语言有 `aria-current="true"`。
+- 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gaia-lang`，否则按 `navigator.language` 选择 `/zh/` 或 `/ja/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
 - 缺失策略：V1 内容全部双语；若未来出现缺译，按方案书 6.7 的降级规则显示原名 + 提示，不用机翻冒充人工稿。
 
 ## 8. 检索
