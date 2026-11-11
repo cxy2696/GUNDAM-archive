@@ -3,6 +3,29 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [1.2.0] — 2026-11-11
+
+### Added
+
+- **11-era mainline completion**: 47 machines, 31 characters, 47 events, 22 lineage edges.
+- Seven machines: Shining, Wing, Gundam X, Airmaster, AGE-2, G-Arcane, G-Lucifer.
+- Nineteen characters: Domon, Master Asia, Heero, Zechs, Garrod, Tiffa, Sochie, Athrun, Lacus, Lockon, Tieria, Flit, Asemu, Bellri, Aida, Mikazuki, Orga, Suletta, Miorine.
+- Twenty events covering F.C., A.C., A.W., C.C., C.E., A.D., A.G., R.C., P.D. and A.S.; every era now has at least three timeline entries.
+- 228 static pages and 175 search entries.
+
+### Changed
+
+- Mobile timeline uses a vertical event list; desktop keeps the local-scale axis.
+- Machine filters collapse to two columns at ≤680px, removing the 360px sort-cutoff.
+- `DATA_SOURCES.md` documents the Biligame index, legal import workflow and the no-official-art policy.
+- “补完” is explicitly scoped to mainline representative content across the 11 named eras, not every variant or side-story unit.
+
+### Known limitations
+
+- Official design images are still not bundled or hotlinked; visuals remain original SVG and procedural LOD-P.
+- Parameters and event outcomes remain `seed` until checked against setting-book pages.
+- 47 events are a curated mainline set, not the complete event history of every work.
+
 ## [1.1.0] — 2026-11-11
 
 ### Changed

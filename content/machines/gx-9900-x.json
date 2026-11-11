@@ -1,0 +1,141 @@
+{
+  "id": "gx-9900-x",
+  "modelCode": "GX-9900",
+  "name": {
+    "zh": "高达 X",
+    "ja": "ガンダムX",
+    "en": "Gundam X"
+  },
+  "aliases": [
+    "GX",
+    "ガンダムX",
+    "X"
+  ],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "第七次宇宙战争时期的高达型机体，搭载卫星微波炮，是废土上少数能改变战局的战略兵器。",
+    "ja": "第7次宇宙戦争期のガンダム。サテライトキャノンを搭載し、廃墟で戦局を変えうる数少ない戦略兵器。"
+  },
+  "description": {
+    "zh": [
+      "高达 X 以核心战机和卫星微波炮为核心，单机即可对殖民卫星或舰队造成战略打击。它在战后被加罗特·兰发现并重新启动，成为废土少年寻找“新世界”的工具。"
+    ],
+    "ja": [
+      "ガンダムXはコア・ファイターとサテライトキャノンを中核とし、単機でコロニーや艦隊へ戦略打撃を与える。戦後、ガロード・ランが発見して再起動し、廃墟の少年が「新しい世界」を探す道具となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 17.1,
+    "heightHead": 17.1,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "卫星微波炮",
+        "ja": "サテライトキャノン"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "garrod-ran",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "7th-space-war",
+    "after-war-awakening"
+  ],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [
+    {
+      "to": "gx-9901-dx",
+      "kind": "derive_of",
+      "techTag": "gundarium",
+      "note": {
+        "zh": "Double X 是高达 X 的后继机。",
+        "ja": "ダブルXはガンダムXの後継機。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1E40AF",
+      "accent": "#F59E0B",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

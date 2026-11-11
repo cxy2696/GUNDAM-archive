@@ -77,7 +77,10 @@
     "core-block"
   ],
   "pilots": [],
-  "eventIds": [],
+  "eventIds": [
+    "after-war-awakening",
+    "new-une-final"
+  ],
   "workIds": [
     "x-1996"
   ],

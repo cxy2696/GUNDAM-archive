@@ -76,7 +76,15 @@
     "gundarium",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "flit-asuno",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
   "eventIds": [
     "vagan-war"
   ],

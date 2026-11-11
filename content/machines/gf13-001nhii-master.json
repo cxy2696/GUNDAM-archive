@@ -68,8 +68,19 @@
     "gundarium",
     "beam-weapon"
   ],
-  "pilots": [],
-  "eventIds": [],
+  "pilots": [
+    {
+      "characterId": "master-asia",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "devil-gundam-awakening",
+    "gundam-fight-final"
+  ],
   "workIds": [
     "g-gundam-1994"
   ],

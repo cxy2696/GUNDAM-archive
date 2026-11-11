@@ -69,8 +69,18 @@
     "beam-weapon",
     "core-block"
   ],
-  "pilots": [],
-  "eventIds": [],
+  "pilots": [
+    {
+      "characterId": "domon-kasshu",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "gundam-fight-final"
+  ],
   "workIds": [
     "g-gundam-1994"
   ],

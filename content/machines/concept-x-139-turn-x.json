@@ -76,7 +76,10 @@
     "beam-weapon"
   ],
   "pilots": [],
-  "eventIds": [],
+  "eventIds": [
+    "dark-history",
+    "turn-x-duel"
+  ],
   "workIds": [
     "turn-a-1999"
   ],

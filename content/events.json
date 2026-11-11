@@ -740,9 +740,13 @@
       "precision": "day"
     },
     "factionIds": [
-      "oz"
+      "oz",
+      "colony-operatives"
     ],
-    "machineIds": [],
+    "machineIds": [
+      "xxxg-01w-wing",
+      "xxxg-00w0-wing-zero"
+    ],
     "characterIds": [],
     "summary": {
       "zh": "五台高达被秘密送往地球，对 OZ 的军事设施发动突袭。殖民地独立组织试图以少数高性能机体扭转战力差距。",
@@ -776,7 +780,9 @@
     "factionIds": [
       "new-une"
     ],
-    "machineIds": [],
+    "machineIds": [
+      "gx-9900-x"
+    ],
     "characterIds": [],
     "summary": {
       "zh": "地球与宇宙殖民地之间的全面战争，殖民卫星坠落导致地球人口锐减。战后十五年，世界仍在废土与军阀割据中挣扎。",
@@ -808,10 +814,12 @@
       "precision": "year"
     },
     "factionIds": [
-      "inglessa-militia"
+      "inglessa-militia",
+      "moonrace"
     ],
     "machineIds": [
-      "turn-a"
+      "turn-a",
+      "concept-x-139-turn-x"
     ],
     "characterIds": [
       "loran-cehack"
@@ -842,7 +850,7 @@
     "eraId": "ce",
     "scale": "incident",
     "date": {
-      "year": 71,
+      "year": 70,
       "month": 2,
       "day": 14,
       "precision": "day"
@@ -1134,6 +1142,720 @@
     "sources": [
       {
         "label": "TV 动画《机动战士高达 水星的魔女》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "devil-gundam-awakening",
+    "title": {
+      "zh": "恶魔高达觉醒",
+      "ja": "デビルガンダム覚醒"
+    },
+    "eraId": "fc",
+    "scale": "incident",
+    "date": {
+      "year": 60,
+      "precision": "year"
+    },
+    "factionIds": [
+      "neo-japan"
+    ],
+    "machineIds": [
+      "gf13-017nj-shining",
+      "gf13-001nhii-master"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "第十三届高达武斗会期间，被封印的恶魔高达重新启动，DG 细胞开始侵蚀新宿。",
+      "ja": "第13回ガンダムファイト中、封印されていたデビルガンダムが再起動し、DG細胞が新宿を侵食し始める。"
+    },
+    "outcome": {
+      "zh": "多蒙与东方不败被迫联手对抗失控的恶魔高达，武斗会的规则被彻底打破。",
+      "ja": "ドモンと東方不敗は失控したデビルガンダムに共闘を強いられ、ファイトの規則は根本から崩れる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动武斗传 G 高达》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "gundam-fight-final",
+    "title": {
+      "zh": "高达武斗会决赛",
+      "ja": "ガンダムファイト決勝"
+    },
+    "eraId": "fc",
+    "scale": "battle",
+    "date": {
+      "year": 60,
+      "precision": "year"
+    },
+    "factionIds": [
+      "neo-japan",
+      "neo-hong-kong"
+    ],
+    "machineIds": [
+      "gf13-017njii-god",
+      "gf13-001nhii-master"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "神高达与尊者高达在武斗会决赛相遇，师徒二人以拳法决定地球的命运。",
+      "ja": "ゴッドガンダムとマスターガンダムが決勝で対峙し、師弟が拳法で地球の命運を決める。"
+    },
+    "outcome": {
+      "zh": "多蒙击败东方不败，但胜利并未消除武斗会制度本身的暴力。",
+      "ja": "ドモンは東方不敗を破るが、勝利は武闘会制度そのものの暴力を消さなかった。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动武斗传 G 高达》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "eve-wars",
+    "title": {
+      "zh": "前夜战争",
+      "ja": "イブ・ウォーズ"
+    },
+    "eraId": "ac",
+    "scale": "era",
+    "date": {
+      "year": 195,
+      "month": 12,
+      "precision": "month"
+    },
+    "factionIds": [
+      "colony-operatives",
+      "oz"
+    ],
+    "machineIds": [
+      "xxxg-00w0-wing-zero",
+      "oz-13ms-epyon"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "OZ 内部政变与白色芬古的崛起把地球圈推向全面战争，飞翼零式与艾比安在轨道上决战。",
+      "ja": "OZ内部のクーデターとホワイトファングの台頭が地球圏を全面戦争へ押し出し、ウイングゼロとエピオンが軌道上で決戦する。"
+    },
+    "outcome": {
+      "zh": "战争以 OZ 解体与殖民地自治的妥协收场，但“以武力终结战争”的循环并未真正结束。",
+      "ja": "戦争はOZ解体と殖民星自治の妥協で終わるが、「武力による戦争終結」の循環は終わらない。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《新机动战记高达 W》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "after-war-awakening",
+    "title": {
+      "zh": "战后高达觉醒",
+      "ja": "戦後ガンダム覚醒"
+    },
+    "eraId": "aw",
+    "scale": "incident",
+    "date": {
+      "year": 15,
+      "precision": "year"
+    },
+    "factionIds": [
+      "vulture",
+      "new-une"
+    ],
+    "machineIds": [
+      "gx-9900-x",
+      "gx-9901-dx",
+      "gw-9800-airmaster"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "加罗特在废土上启动高达 X，随后与 Double X、Airmaster 组成小队，挑战新 UNE 的秩序。",
+      "ja": "ガロードが廃墟でガンダムXを起動し、ダブルX、エアマスターと共に新UNEの秩序へ挑む。"
+    },
+    "outcome": {
+      "zh": "战斗阻止了新 UNE 的强制统一，但废土的“新世界”仍只是开端。",
+      "ja": "戦いは新UNEの強制統一を阻んだが、廃墟の「新しい世界」はまだ始まりに過ぎない。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动新世纪高达 X》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "moonrace-return",
+    "title": {
+      "zh": "月之民回归",
+      "ja": "月の民の回帰"
+    },
+    "eraId": "cc",
+    "scale": "era",
+    "date": {
+      "year": 2345,
+      "precision": "year"
+    },
+    "factionIds": [
+      "moonrace",
+      "inglessa-militia"
+    ],
+    "machineIds": [
+      "turn-a"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "月之民结束长期滞留，开始大规模回归地球，与地球居民发生冲突。",
+      "ja": "月の民が長い滞留を終え、地球へ大規模帰還を開始し、地球住民と衝突する。"
+    },
+    "outcome": {
+      "zh": "回归以战争与谈判交织的方式推进，罗兰成为两边都能对话的少数人。",
+      "ja": "帰還は戦争と交渉の交錯で進み、ロランは双方と対話できる数少ない存在となる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《∀高达》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "battle-jachin-due",
+    "title": {
+      "zh": "雅金·杜维攻防战",
+      "ja": "ヤキン・ドゥーエ攻防戦"
+    },
+    "eraId": "ce",
+    "scale": "battle",
+    "date": {
+      "year": 71,
+      "month": 9,
+      "precision": "month"
+    },
+    "factionIds": [
+      "zaft",
+      "omni-enforcer"
+    ],
+    "machineIds": [
+      "gat-x105-strike",
+      "zgaf-x10a-freedom"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "联合军与 ZAFT 在雅金·杜维展开决战，创世纪与核弹把战争推向灭绝边缘。",
+      "ja": "連合軍とザフトがヤキン・ドゥーエで決戦し、ジェネシスと核弾が戦争を絶滅の淵へ押しやる。"
+    },
+    "outcome": {
+      "zh": "基拉与阿斯兰阻止了创世纪发射，战争以双方疲惫的停战收场。",
+      "ja": "キラとアスランがジェネシス発射を阻止し、戦争は双方疲弊の停戦で終わる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 SEED》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "celestial-intervention",
+    "title": {
+      "zh": "天上人武力介入",
+      "ja": "ソレスタルビーイング武力介入"
+    },
+    "eraId": "ad",
+    "scale": "era",
+    "date": {
+      "year": 2307,
+      "precision": "year"
+    },
+    "factionIds": [
+      "celestial-being"
+    ],
+    "machineIds": [
+      "gn-001-exia",
+      "gn-002-dynames"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "天上人以四台高达对全球冲突进行武力介入，试图用“以战止战”的方式迫使人类统一。",
+      "ja": "ソレスタルビーイングが四機のガンダムで世界の紛争へ武力介入し、「戦争を止める戦争」で人類の統一を迫る。"
+    },
+    "outcome": {
+      "zh": "介入暴露了天上人自身的情报与伦理漏洞，也让世界开始联合对抗他们。",
+      "ja": "介入はソレスタルビーイング自身の情報・倫理の綻びを露呈し、世界を彼らへの共闘へ向かわせた。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 00》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "memento-mori",
+    "title": {
+      "zh": "遗言炮击",
+      "ja": "メメントモリ砲撃"
+    },
+    "eraId": "ad",
+    "scale": "battle",
+    "date": {
+      "year": 2312,
+      "precision": "year"
+    },
+    "factionIds": [
+      "celestial-being"
+    ],
+    "machineIds": [
+      "gn-0000-00-raiser"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "变革者启动轨道炮 Memento Mori，天上人以 00 强化模组突入摧毁炮台。",
+      "ja": "イノベイターが軌道砲メメントモリを起動し、ソレスタルビーイングがダブルオーライザーで砲台へ突入する。"
+    },
+    "outcome": {
+      "zh": "炮台被摧毁，但围绕“人类是否应被强制统一”的分歧更加尖锐。",
+      "ja": "砲台は破壊されたが、「人類は強制的に統一されるべきか」という対立はより先鋭化した。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 00 第二季》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "second-generation",
+    "title": {
+      "zh": "亚瑟姆世代",
+      "ja": "アセムの世代"
+    },
+    "eraId": "ag",
+    "scale": "era",
+    "date": {
+      "year": 140,
+      "precision": "year"
+    },
+    "factionIds": [
+      "federation-age",
+      "vagan"
+    ],
+    "machineIds": [
+      "age-2"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "维根战争进入第二代，亚瑟姆驾驶 AGE-2 在火星与地球圈之间转战。",
+      "ja": "ヴェイガン戦争は第二世代へ入り、アセムがAGE-2で火星と地球圏を転戦する。"
+    },
+    "outcome": {
+      "zh": "战争没有因换代而停止，父子两代对“复仇”的理解开始分裂。",
+      "ja": "戦争は世代交代でも止まらず、父子は「復讐」の意味をめぐって分岐していく。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 AGE》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "third-generation",
+    "title": {
+      "zh": "奇奥世代",
+      "ja": "キオの世代"
+    },
+    "eraId": "ag",
+    "scale": "era",
+    "date": {
+      "year": 164,
+      "precision": "year"
+    },
+    "factionIds": [
+      "federation-age",
+      "vagan"
+    ],
+    "machineIds": [
+      "age-fx",
+      "age-2"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "战争进入第三代，奇奥驾驶 AGE-FX 试图以理解而非歼灭结束维根冲突。",
+      "ja": "戦争は第三世代へ入り、キオがAGE-FXで殲滅ではなく理解による終結を目指す。"
+    },
+    "outcome": {
+      "zh": "AGE-FX 的浮游炮与爆发模式让奇奥得以在混战中传递对话，但和平仍需要政治选择。",
+      "ja": "AGE-FXのファンネルとバーストモードは混戦中の対話を可能にしたが、平和には政治的な選択が残った。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 AGE》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "venus-globe",
+    "title": {
+      "zh": "金星地球圈",
+      "ja": "ヴィーナス・グローブ"
+    },
+    "eraId": "rc",
+    "scale": "incident",
+    "date": {
+      "year": 1014,
+      "precision": "year"
+    },
+    "factionIds": [
+      "amerian"
+    ],
+    "machineIds": [
+      "g-self",
+      "g-arcane"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "贝尔利与艾达追踪海盗，抵达金星地球圈，发现光子电池与宇宙航行被隐藏的历史。",
+      "ja": "ベルリとアイーダが海賊を追ってヴィーナス・グローブへ到達し、光子電池と宇宙航行の隠された歴史を知る。"
+    },
+    "outcome": {
+      "zh": "金星圈的技术与政治真相被带回地球，轨道电梯体系不再稳固。",
+      "ja": "ヴィーナス・グローブの技術と政治の真実が地球へ持ち帰られ、軌道エレベーター体系は揺らぎ始める。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《高达 G 之复国运动》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "full-moon",
+    "title": {
+      "zh": "满月作战",
+      "ja": "フルムーン作戦"
+    },
+    "eraId": "rc",
+    "scale": "battle",
+    "date": {
+      "year": 1014,
+      "precision": "year"
+    },
+    "factionIds": [
+      "amerian"
+    ],
+    "machineIds": [
+      "g-self",
+      "g-lucifer"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "亚美利亚军与首都军围绕轨道电梯展开决战，G-自我与 G-Lucifer 在宇宙交战。",
+      "ja": "アメリア軍と首都軍が軌道エレベーターを巡って決戦し、G-セルフとG-ルシファーが宇宙で交戦する。"
+    },
+    "outcome": {
+      "zh": "战斗暂时阻止了轨道电梯被武器化，但 R.C. 的技术禁忌仍未被真正解决。",
+      "ja": "戦闘は軌道エレベーターの兵器化を一時的に阻んだが、R.C.の技術禁忌は解決されていない。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《高达 G 之复国运动》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "edmonton",
+    "title": {
+      "zh": "埃德蒙顿之战",
+      "ja": "エドモントンの戦い"
+    },
+    "eraId": "pd",
+    "scale": "battle",
+    "date": {
+      "year": 325,
+      "precision": "year"
+    },
+    "factionIds": [
+      "tekkadan",
+      "gjallarhorn"
+    ],
+    "machineIds": [
+      "asw-g-08-barbatos",
+      "asw-g-66-kimaris-vidar"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "铁华团在埃德蒙顿与加拉尔霍恩交战，巴巴托斯与金巴里斯·维达尔正面冲突。",
+      "ja": "鉄華団がエドモントンでギャラルホルンと交戦し、バルバトスとキマリス・ヴィダールが激突する。"
+    },
+    "outcome": {
+      "zh": "铁华团付出惨重代价，但火星独立运动由此获得更大的政治声量。",
+      "ja": "鉄華団は大きな代償を払ったが、火星独立運動はより大きな政治的発言力を得た。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "mars-arc",
+    "title": {
+      "zh": "火星战线",
+      "ja": "火星戦線"
+    },
+    "eraId": "pd",
+    "scale": "era",
+    "date": {
+      "year": 325,
+      "precision": "year"
+    },
+    "factionIds": [
+      "tekkadan",
+      "gjallarhorn"
+    ],
+    "machineIds": [
+      "asw-g-01-bael",
+      "asw-g-08-barbatos"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "麦克吉利斯以巴耶力之名发动政变，铁华团与加拉尔霍恩在火星与地球间全面开战。",
+      "ja": "マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面戦争に入る。"
+    },
+    "outcome": {
+      "zh": "政变失败，铁华团与加拉尔霍恩两败俱伤，火星的独立进程被重新书写。",
+      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは共倒れに近い損害を受け、火星独立の道筋は書き換えられた。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "vanadis-incident",
+    "title": {
+      "zh": "凡娜迪斯事件",
+      "ja": "ヴァナディース事件"
+    },
+    "eraId": "as",
+    "scale": "incident",
+    "date": {
+      "year": 122,
+      "precision": "year"
+    },
+    "factionIds": [
+      "benerit"
+    ],
+    "machineIds": [
+      "xvx-016-aerial"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "凡娜迪斯机构遭袭击，GUND 格式化与高达开发的秘密被暴力揭开。",
+      "ja": "ヴァナディース機関が襲撃され、GUNDフォーマットとガンダム開発の秘密が暴力によって暴かれる。"
+    },
+    "outcome": {
+      "zh": "事件让 GUND 技术被企业体系收编，也为斯莱塔一代的诅咒埋下伏笔。",
+      "ja": "事件はGUND技術を企業体系へ取り込み、スレッタ世代の呪いの伏線となった。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 水星的魔女》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "quiet-zero",
+    "title": {
+      "zh": "寂静零号",
+      "ja": "クワイエット・ゼロ"
+    },
+    "eraId": "as",
+    "scale": "era",
+    "date": {
+      "year": 123,
+      "precision": "year"
+    },
+    "factionIds": [
+      "benerit"
+    ],
+    "machineIds": [
+      "x-ex01-calibarn",
+      "xvx-016-ff-aerial-rebuild"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "贝纳里特集团启动寂静零号，试图以数据风暴控制地球圈；斯莱塔驾驶卡利班阻止。",
+      "ja": "ベネリットグループがクワイエット・ゼロを起動し、データストームで地球圏を制御しようとする。スレッタがキャリバーンで阻止する。"
+    },
+    "outcome": {
+      "zh": "计划被阻止，GUND 技术与企业权力被迫进入新的谈判。",
+      "ja": "計画は阻止され、GUND技術と企業権力は新たな交渉の場へ移る。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动战士高达 水星的魔女》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "marimeia-uprising",
+    "title": {
+      "zh": "玛丽美亚之乱",
+      "ja": "マリーメイアの乱"
+    },
+    "eraId": "ac",
+    "scale": "battle",
+    "date": {
+      "year": 196,
+      "precision": "year"
+    },
+    "factionIds": [
+      "oz",
+      "colony-operatives"
+    ],
+    "machineIds": [
+      "xxxg-00w0-wing-zero",
+      "oz-13ms-epyon"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "A.C.196，玛丽美亚军以 OZ 残党之名发动叛乱，飞翼零式与艾比安再次被投入战场。",
+      "ja": "A.C.196、マリーメイア軍がOZ残党の名で蜂起し、ウイングゼロとエピオンが再び戦場へ投入される。"
+    },
+    "outcome": {
+      "zh": "叛乱被镇压，但“以战争终结战争”的循环仍在继续。",
+      "ja": "反乱は鎮圧されたが、「戦争で戦争を終わらせる」循環は続く。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "OVA《新机动战记高达 W 无尽的华尔兹》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "new-une-final",
+    "title": {
+      "zh": "新 UNE 最终决战",
+      "ja": "新UNE最終決戦"
+    },
+    "eraId": "aw",
+    "scale": "battle",
+    "date": {
+      "year": 15,
+      "precision": "year"
+    },
+    "factionIds": [
+      "new-une",
+      "vulture"
+    ],
+    "machineIds": [
+      "gx-9901-dx",
+      "gw-9800-airmaster"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "A.W.15，新 UNE 与废土势力在 Fort Severn 周边决战，Double X 与 Airmaster 试图阻止强制统一。",
+      "ja": "A.W.15、新UNEと廃墟勢力がフォート・セバーン周辺で決戦し、ダブルXとエアマスターが強制統一を阻もうとする。"
+    },
+    "outcome": {
+      "zh": "新 UNE 的攻势被瓦解，废土暂时保住自治，但新的秩序仍未建立。",
+      "ja": "新UNEの攻勢は崩れ、廃墟は一時的に自治を保つが、新たな秩序はまだ築かれない。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《机动新世纪高达 X》",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "turn-x-duel",
+    "title": {
+      "zh": "Turn X 决战",
+      "ja": "ターンX決戦"
+    },
+    "eraId": "cc",
+    "scale": "battle",
+    "date": {
+      "year": 2345,
+      "precision": "year"
+    },
+    "factionIds": [
+      "moonrace",
+      "inglessa-militia"
+    ],
+    "machineIds": [
+      "turn-a",
+      "concept-x-139-turn-x"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "C.C.2345，Turn A 与 Turn X 在黑历史遗产上正面交战，月光蝶第一次被完整释放。",
+      "ja": "C.C.2345、ターンAとターンXが黒歴史の遺産上で激突し、月光蝶が初めて完全に解放される。"
+    },
+    "outcome": {
+      "zh": "战斗以 Turn X 被击破告终，黑历史的武器再次被埋入地下。",
+      "ja": "戦いはターンXの撃破で終わり、黒歴史の兵器は再び地下へ埋められる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "TV 动画《∀高达》",
         "level": "S"
       }
     ]

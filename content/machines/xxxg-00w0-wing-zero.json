@@ -76,8 +76,20 @@
     "beam-weapon",
     "wings-of-light"
   ],
-  "pilots": [],
-  "eventIds": [],
+  "pilots": [
+    {
+      "characterId": "heero-yuy",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "operation-meteor",
+    "eve-wars",
+    "marimeia-uprising"
+  ],
   "workIds": [
     "wing-1995"
   ],

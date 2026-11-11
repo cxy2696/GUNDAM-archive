@@ -1,0 +1,140 @@
+{
+  "id": "age-2",
+  "modelCode": "AGE-2",
+  "name": {
+    "zh": "高达 AGE-2",
+    "ja": "ガンダムAGE-2",
+    "en": "Gundam AGE-2"
+  },
+  "aliases": [
+    "AGE-2",
+    "ガンダムAGE-2"
+  ],
+  "unitType": "prototype",
+  "eraId": "ag",
+  "factionId": "federation-age",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 140,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "AGE 系统的第二代机体，以高速战与变形机构为核心，由亚瑟姆·明日野驾驶。",
+    "ja": "AGEシステムの第二世代機。高速戦と変形機構を中核とし、アセム・アスノが駆る。"
+  },
+  "description": {
+    "zh": [
+      "AGE-2 把 AGE-1 的换装经验转化为更专门的高速战斗平台，可变形为飞行形态追击维根。它代表战争从弗利特的世代交到亚瑟姆手中，也把父子两代的战术分歧摆上桌面。"
+    ],
+    "ja": [
+      "AGE-2はAGE-1の換装経験を、より専門的な高速戦プラットフォームへ転換した。飛行形態へ変形してヴェイガンを追撃する。戦争がフリットからアセムへ受け継がれる一方、父子の戦術的対立も浮き彫りにした。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.3,
+    "heightHead": 18.3,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "age-system",
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "asemu-asuno",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "second-generation",
+    "third-generation"
+  ],
+  "workIds": [
+    "age-2011"
+  ],
+  "edges": [
+    {
+      "to": "age-fx",
+      "kind": "derive_of",
+      "techTag": "age-system",
+      "note": {
+        "zh": "AGE-FX 继承 AGE-2 的 AGE 系统数据。",
+        "ja": "AGE-FXはAGE-2のAGEシステムデータを継承。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1E40AF",
+      "accent": "#22D3EE",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 AGE》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

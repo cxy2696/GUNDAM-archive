@@ -76,9 +76,19 @@
     "beam-weapon",
     "core-block"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "bellri-zenam",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
   "eventIds": [
-    "capital-tower"
+    "capital-tower",
+    "venus-globe",
+    "full-moon"
   ],
   "workIds": [
     "reconguista-2014"

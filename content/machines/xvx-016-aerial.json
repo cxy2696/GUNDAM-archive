@@ -77,9 +77,18 @@
     "beam-weapon",
     "funnel"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "suletta-mercury",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
   "eventIds": [
-    "plant-quetta"
+    "plant-quetta",
+    "vanadis-incident"
   ],
   "workIds": [
     "witch-2022"

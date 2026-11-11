@@ -76,8 +76,18 @@
     "beam-weapon",
     "thermonuclear"
   ],
-  "pilots": [],
-  "eventIds": [],
+  "pilots": [
+    {
+      "characterId": "kira-yamato",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "battle-jachin-due"
+  ],
   "workIds": [
     "seed-2002"
   ],

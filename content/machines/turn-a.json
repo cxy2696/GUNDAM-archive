@@ -87,7 +87,9 @@
     }
   ],
   "eventIds": [
-    "dark-history"
+    "dark-history",
+    "moonrace-return",
+    "turn-x-duel"
   ],
   "workIds": [
     "turn-a-1999"

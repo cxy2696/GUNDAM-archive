@@ -1,0 +1,115 @@
+{
+  "id": "g-arcane",
+  "modelCode": "YG-111",
+  "name": {
+    "zh": "G-Arcane",
+    "ja": "G-アルケイン",
+    "en": "G-Arcane"
+  },
+  "aliases": [
+    "G-Arcane",
+    "Gアルケイン"
+  ],
+  "unitType": "prototype",
+  "eraId": "rc",
+  "factionId": "amerian",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 1014,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "亚美利亚军的可变型机体，以高机动与光束武器支援 G-自我。",
+    "ja": "アメリア軍の可変機。高機動とビーム兵器でG-セルフを支援する。"
+  },
+  "description": {
+    "zh": [
+      "G-Arcane 由艾达·斯尔冈驾驶，强调机动与护卫，能在大气层内与宇宙中切换形态。它和 G-自我共同面对轨道电梯时代的政治禁忌，也让“军用技术民用化”的矛盾具体化。"
+    ],
+    "ja": [
+      "G-アルケインはアイーダ・スルガンが駆り、機動と護衛を重視する。大気圏内と宇宙で形態を切り替え、G-セルフと共に軌道エレベーター時代の政治禁忌へ向き合う。軍用技術の民用化という矛盾を具体化した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.2,
+    "heightHead": 18.2,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "aida-surugan",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "venus-globe"
+  ],
+  "workIds": [
+    "reconguista-2014"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#0EA5E9",
+      "accent": "#F59E0B",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《高达 G 之复国运动》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

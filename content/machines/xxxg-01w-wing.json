@@ -1,0 +1,124 @@
+{
+  "id": "xxxg-01w-wing",
+  "modelCode": "XXXG-01W",
+  "name": {
+    "zh": "飞翼高达",
+    "ja": "ウイングガンダム",
+    "en": "Wing Gundam"
+  },
+  "aliases": [
+    "Wing",
+    "ウイング",
+    "飞翼"
+  ],
+  "unitType": "prototype",
+  "eraId": "ac",
+  "factionId": "colony-operatives",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 195,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "五台高达中最早投入“流星作战”的机体，可变形为巡航形态，以破坏步枪执行突袭。",
+    "ja": "五機のガンダムで最初に「オペレーション・メテオ」へ投入された機体。巡航形態へ変形し、バスターライフルで強襲する。"
+  },
+  "description": {
+    "zh": [
+      "飞翼高达把变形机构与高火力步枪结合，适合单机突破和快速脱离。它在 A.C.195 的殖民地独立运动中成为 Heero 的初代座机，也奠定了后续零式系谱的战术想象。"
+    ],
+    "ja": [
+      "ウイングは変形機構と高火力ライフルを組み合わせ、単機突破と迅速な離脱を得意とする。A.C.195の殖民星独立運動でヒイロの初代機となり、後のゼロ系譜の戦術的想像力を基礎づけた。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 16.3,
+    "heightHead": 16.3,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "破坏步枪",
+        "ja": "バスターライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "wings-of-light"
+  ],
+  "pilots": [
+    {
+      "characterId": "heero-yuy",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "operation-meteor"
+  ],
+  "workIds": [
+    "wing-1995"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1D4ED8",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《新机动战记高达 W》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

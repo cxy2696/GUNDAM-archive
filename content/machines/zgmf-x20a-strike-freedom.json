@@ -77,7 +77,15 @@
     "thermonuclear",
     "funnel"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "kira-yamato",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
   "eventIds": [],
   "workIds": [
     "seed-destiny-2004"

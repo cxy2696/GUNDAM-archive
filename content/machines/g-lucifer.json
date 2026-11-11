@@ -1,0 +1,108 @@
+{
+  "id": "g-lucifer",
+  "modelCode": "YG-111",
+  "name": {
+    "zh": "G-Lucifer",
+    "ja": "G-ルシファー",
+    "en": "G-Lucifer"
+  },
+  "aliases": [
+    "G-Lucifer",
+    "Gルシファー"
+  ],
+  "unitType": "prototype",
+  "eraId": "rc",
+  "factionId": "amerian",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 1014,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "G-自我的高机动衍生机，以光子电池与浮游武器强化宇宙战能力。",
+    "ja": "G-セルフの高機動派生機。光子電池と浮遊兵器で宇宙戦能力を強化する。"
+  },
+  "description": {
+    "zh": [
+      "G-Lucifer 把 G-自我的换装概念推向更极端的宇宙战配置，浮游炮与高推力背包让它成为轨道电梯防线的核心。它的存在说明 R.C. 的技术禁令并未真正阻止武器化。"
+    ],
+    "ja": [
+      "G-ルシファーはG-セルフの換装概念をより極端な宇宙戦仕様へ押し広げ、ファンネルと高推力バックパックで軌道エレベーター防衛の中核となる。R.C.の技術禁令が武器化を止めていないことを示す機体でもある。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "浮游炮 ×4",
+        "ja": "ファンネル ×4"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "funnel"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "full-moon"
+  ],
+  "workIds": [
+    "reconguista-2014"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "binder",
+    "backpack": "funnel",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#0EA5E9",
+      "accent": "#7C3AED",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《高达 G 之复国运动》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

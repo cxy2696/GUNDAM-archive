@@ -69,7 +69,10 @@
     "beam-weapon"
   ],
   "pilots": [],
-  "eventIds": [],
+  "eventIds": [
+    "eve-wars",
+    "marimeia-uprising"
+  ],
   "workIds": [
     "wing-1995"
   ],

@@ -1,0 +1,133 @@
+{
+  "id": "gf13-017nj-shining",
+  "modelCode": "GF13-017NJ",
+  "name": {
+    "zh": "闪耀高达",
+    "ja": "シャイニングガンダム",
+    "en": "Shining Gundam"
+  },
+  "aliases": [
+    "Shining",
+    "シャイニング",
+    "闪耀"
+  ],
+  "unitType": "prototype",
+  "eraId": "fc",
+  "factionId": "neo-japan",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 60,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "神高达的前代机，以格斗战与“超级模式”为核心，是多蒙·卡修在武斗会初期的座机。",
+    "ja": "ゴッドガンダムの前代機。格闘戦と「スーパーモード」を軸に、ドモン・カッシュがファイト序盤に駆った。"
+  },
+  "description": {
+    "zh": [
+      "闪耀高达把机动武斗的技术路线压缩到一台轻量机体内，超级模式能短时间释放更高出力。它在第十三届高达武斗会中被神高达取代，却仍是理解新日本格斗系谱的起点。"
+    ],
+    "ja": [
+      "シャイニングは機動武闘の技術路線を軽量な一機へ凝縮し、スーパーモードで短時間の高出力を発揮する。第13回ガンダムファイトではゴッドガンダムに主役を譲ったが、ネオジャパン格闘系譜の出発点となった。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 16.2,
+    "heightHead": 16.2,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "闪光指",
+        "ja": "シャイニングフィンガー"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon",
+    "core-block"
+  ],
+  "pilots": [
+    {
+      "characterId": "domon-kasshu",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "devil-gundam-awakening"
+  ],
+  "workIds": [
+    "g-gundam-1994"
+  ],
+  "edges": [
+    {
+      "to": "gf13-017njii-god",
+      "kind": "derive_of",
+      "techTag": "gundarium",
+      "note": {
+        "zh": "神高达由闪耀高达的格斗技术发展而来。",
+        "ja": "ゴッドガンダムはシャイニングの格闘技術から発展した。"
+      },
+      "sources": [
+        {
+          "label": "官方设定资料（待核页码）",
+          "level": "A"
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "none",
+    "shield": false,
+    "colors": {
+      "primary": "#F2F0E8",
+      "secondary": "#C0262D",
+      "accent": "#F5C542",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动武斗传 G 高达》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

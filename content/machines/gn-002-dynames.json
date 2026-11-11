@@ -75,8 +75,18 @@
     "gn-drive",
     "beam-weapon"
   ],
-  "pilots": [],
-  "eventIds": [],
+  "pilots": [
+    {
+      "characterId": "lockon-stratos",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "celestial-intervention"
+  ],
   "workIds": [
     "00-2007"
   ],

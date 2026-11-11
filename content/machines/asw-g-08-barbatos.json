@@ -69,9 +69,19 @@
     "nanolaminate",
     "beam-weapon"
   ],
-  "pilots": [],
+  "pilots": [
+    {
+      "characterId": "mikazuki-augus",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
   "eventIds": [
-    "gjallarhorn-coup"
+    "gjallarhorn-coup",
+    "edmonton",
+    "mars-arc"
   ],
   "workIds": [
     "ibo-2015"

@@ -1,10 +1,19 @@
 [
   {
     "id": "amuro-ray",
-    "name": { "zh": "阿姆罗·雷", "ja": "アムロ・レイ", "en": "Amuro Ray" },
+    "name": {
+      "zh": "阿姆罗·雷",
+      "ja": "アムロ・レイ",
+      "en": "Amuro Ray"
+    },
     "factionId": "earth-federation",
-    "eraIds": ["uc"],
-    "role": { "zh": "RX-78-2 驾驶员 / 隆德·贝尔王牌", "ja": "RX-78-2パイロット / ロンド・ベルエース" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "RX-78-2 驾驶员 / 隆德·贝尔王牌",
+      "ja": "RX-78-2パイロット / ロンド・ベルエース"
+    },
     "status": "missing",
     "bio": {
       "zh": [
@@ -16,24 +25,62 @@
         "U.C.0093、ロンド・ベル隊のMS隊長としてνガンダムを駆り、アクシズ上空でシャアと最終決戦を迎える。公式記録上の結末は「消息不明」。"
       ]
     },
-    "machineIds": ["rx-78-2", "rx-93-nu"],
-    "eventIds": ["one-year-war", "battle-of-solomon", "battle-of-a-baoa-qu", "axis-drop"],
-    "relations": [
-      { "targetId": "char-aznable", "type": "rival" },
-      { "targetId": "bright-noa", "type": "comrade" }
+    "machineIds": [
+      "rx-78-2",
+      "rx-93-nu"
     ],
-    "appearances": ["msg-1979", "cca-1988"]
+    "eventIds": [
+      "one-year-war",
+      "battle-of-solomon",
+      "battle-of-a-baoa-qu",
+      "axis-drop"
+    ],
+    "relations": [
+      {
+        "targetId": "char-aznable",
+        "type": "rival"
+      },
+      {
+        "targetId": "bright-noa",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "msg-1979",
+      "cca-1988"
+    ]
   },
   {
     "id": "char-aznable",
-    "name": { "zh": "夏亚·阿兹纳布尔", "ja": "シャア・アズナブル", "en": "Char Aznable" },
+    "name": {
+      "zh": "夏亚·阿兹纳布尔",
+      "ja": "シャア・アズナブル",
+      "en": "Char Aznable"
+    },
     "factionId": "neo-zeon",
     "affiliations": [
-      { "factionId": "zeon", "period": { "zh": "U.C.0079—0080", "ja": "U.C.0079—0080" } },
-      { "factionId": "aeug", "period": { "zh": "U.C.0087—0088（化名克瓦特罗）", "ja": "U.C.0087—0088（クワトロ名義）" } }
+      {
+        "factionId": "zeon",
+        "period": {
+          "zh": "U.C.0079—0080",
+          "ja": "U.C.0079—0080"
+        }
+      },
+      {
+        "factionId": "aeug",
+        "period": {
+          "zh": "U.C.0087—0088（化名克瓦特罗）",
+          "ja": "U.C.0087—0088（クワトロ名義）"
+        }
+      }
     ],
-    "eraIds": ["uc"],
-    "role": { "zh": "吉翁王牌 / 奥古机师 / 新吉翁统帅", "ja": "ジオンエース / エゥーゴパイロット / ネオ・ジオン総帥" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "吉翁王牌 / 奥古机师 / 新吉翁统帅",
+      "ja": "ジオンエース / エゥーゴパイロット / ネオ・ジオン総帥"
+    },
     "status": "missing",
     "bio": {
       "zh": [
@@ -45,20 +92,47 @@
         "一年戦争後はクワトロ・バジーナとしてエゥーゴに参加し、U.C.0093にはネオ・ジオンを率いた。アクシズ落下で地球に贖罪を迫り、最後はアムロとともにサイコフレームの光の中へ消えた。"
       ]
     },
-    "machineIds": ["ms-06s-zaku-ii", "msn-04-sazabi"],
-    "eventIds": ["battle-of-loum", "battle-of-a-baoa-qu", "dakar-speech", "axis-drop"],
-    "relations": [
-      { "targetId": "amuro-ray", "type": "rival" },
-      { "targetId": "kamille-bidan", "type": "mentor" }
+    "machineIds": [
+      "ms-06s-zaku-ii",
+      "msn-04-sazabi"
     ],
-    "appearances": ["msg-1979", "zeta-1985", "cca-1988"]
+    "eventIds": [
+      "battle-of-loum",
+      "battle-of-a-baoa-qu",
+      "dakar-speech",
+      "axis-drop"
+    ],
+    "relations": [
+      {
+        "targetId": "amuro-ray",
+        "type": "rival"
+      },
+      {
+        "targetId": "kamille-bidan",
+        "type": "mentor"
+      }
+    ],
+    "appearances": [
+      "msg-1979",
+      "zeta-1985",
+      "cca-1988"
+    ]
   },
   {
     "id": "kamille-bidan",
-    "name": { "zh": "卡缪·维丹", "ja": "カミーユ・ビダン", "en": "Kamille Bidan" },
+    "name": {
+      "zh": "卡缪·维丹",
+      "ja": "カミーユ・ビダン",
+      "en": "Kamille Bidan"
+    },
     "factionId": "aeug",
-    "eraIds": ["uc"],
-    "role": { "zh": "Z 高达驾驶员 / 强化人", "ja": "Ζガンダムパイロット / 強化人間" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "Z 高达驾驶员 / 强化人",
+      "ja": "Ζガンダムパイロット / 強化人間"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -70,20 +144,41 @@
         "グリプス戦役末期、シロッコとのサイコ・レゾナンスで深い精神的損傷を受けた。戦後も治療が続くが、その戦闘データは後の機体開発に重要な参照となった。"
       ]
     },
-    "machineIds": ["msz-006-zeta"],
-    "eventIds": ["gryps-conflict"],
-    "relations": [
-      { "targetId": "char-aznable", "type": "mentor" },
-      { "targetId": "bright-noa", "type": "comrade" }
+    "machineIds": [
+      "msz-006-zeta"
     ],
-    "appearances": ["zeta-1985"]
+    "eventIds": [
+      "gryps-conflict"
+    ],
+    "relations": [
+      {
+        "targetId": "char-aznable",
+        "type": "mentor"
+      },
+      {
+        "targetId": "bright-noa",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "zeta-1985"
+    ]
   },
   {
     "id": "haman-karn",
-    "name": { "zh": "哈曼·卡恩", "ja": "ハマーン・カーン", "en": "Haman Karn" },
+    "name": {
+      "zh": "哈曼·卡恩",
+      "ja": "ハマーン・カーン",
+      "en": "Haman Karn"
+    },
     "factionId": "neo-zeon",
-    "eraIds": ["uc"],
-    "role": { "zh": "阿克西斯摄政 / 新吉翁统帅", "ja": "アクシズ摂政 / ネオ・ジオン総帥" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "阿克西斯摄政 / 新吉翁统帅",
+      "ja": "アクシズ摂政 / ネオ・ジオン総帥"
+    },
     "status": "dead",
     "bio": {
       "zh": [
@@ -96,16 +191,34 @@
       ]
     },
     "machineIds": [],
-    "eventIds": ["first-neo-zeon-war"],
-    "relations": [{ "targetId": "mineva-lao", "type": "mentor" }],
-    "appearances": ["zz-1986"]
+    "eventIds": [
+      "first-neo-zeon-war"
+    ],
+    "relations": [
+      {
+        "targetId": "mineva-lao",
+        "type": "mentor"
+      }
+    ],
+    "appearances": [
+      "zz-1986"
+    ]
   },
   {
     "id": "bright-noa",
-    "name": { "zh": "布莱德·诺亚", "ja": "ブライト・ノア", "en": "Bright Noa" },
+    "name": {
+      "zh": "布莱德·诺亚",
+      "ja": "ブライト・ノア",
+      "en": "Bright Noa"
+    },
     "factionId": "earth-federation",
-    "eraIds": ["uc"],
-    "role": { "zh": "白色基地舰长 / 隆德·贝尔司令", "ja": "ホワイトベース艦長 / ロンド・ベル司令" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "白色基地舰长 / 隆德·贝尔司令",
+      "ja": "ホワイトベース艦長 / ロンド・ベル司令"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -118,19 +231,42 @@
       ]
     },
     "machineIds": [],
-    "eventIds": ["one-year-war", "battle-of-a-baoa-qu", "axis-drop"],
-    "relations": [
-      { "targetId": "amuro-ray", "type": "comrade" },
-      { "targetId": "kamille-bidan", "type": "comrade" }
+    "eventIds": [
+      "one-year-war",
+      "battle-of-a-baoa-qu",
+      "axis-drop"
     ],
-    "appearances": ["msg-1979", "zeta-1985", "cca-1988"]
+    "relations": [
+      {
+        "targetId": "amuro-ray",
+        "type": "comrade"
+      },
+      {
+        "targetId": "kamille-bidan",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "msg-1979",
+      "zeta-1985",
+      "cca-1988"
+    ]
   },
   {
     "id": "banagher-links",
-    "name": { "zh": "巴纳吉·林克斯", "ja": "バナージ・リンクス", "en": "Banagher Links" },
+    "name": {
+      "zh": "巴纳吉·林克斯",
+      "ja": "バナージ・リンクス",
+      "en": "Banagher Links"
+    },
     "factionId": "vist-foundation",
-    "eraIds": ["uc"],
-    "role": { "zh": "独角兽高达驾驶员 / 工业学校学生", "ja": "ユニコーンガンダムパイロット / 工業学校生" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "独角兽高达驾驶员 / 工业学校学生",
+      "ja": "ユニコーンガンダムパイロット / 工業学校生"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -142,20 +278,47 @@
         "U.C.0096、ミネバとともに憲章の原条文を公開し、ヴィスト財団と連邦軍の双方による「箱」の政治利用を拒否した。"
       ]
     },
-    "machineIds": ["rx-0-unicorn"],
-    "eventIds": ["laplace-incident", "torrington-assault"],
-    "relations": [{ "targetId": "mineva-lao", "type": "admiration" }],
-    "appearances": ["unicorn-2010"]
+    "machineIds": [
+      "rx-0-unicorn"
+    ],
+    "eventIds": [
+      "laplace-incident",
+      "torrington-assault"
+    ],
+    "relations": [
+      {
+        "targetId": "mineva-lao",
+        "type": "admiration"
+      }
+    ],
+    "appearances": [
+      "unicorn-2010"
+    ]
   },
   {
     "id": "mineva-lao",
-    "name": { "zh": "米涅瓦·劳", "ja": "ミネバ・ラオ", "en": "Mineva Lao" },
+    "name": {
+      "zh": "米涅瓦·劳",
+      "ja": "ミネバ・ラオ",
+      "en": "Mineva Lao"
+    },
     "factionId": "neo-zeon",
     "affiliations": [
-      { "factionId": "zeon", "period": { "zh": "U.C.0079—0088（作为扎比家遗孤）", "ja": "U.C.0079—0088（ザビ家の遺児として）" } }
+      {
+        "factionId": "zeon",
+        "period": {
+          "zh": "U.C.0079—0088（作为扎比家遗孤）",
+          "ja": "U.C.0079—0088（ザビ家の遺児として）"
+        }
+      }
     ],
-    "eraIds": ["uc"],
-    "role": { "zh": "扎比家遗孤 / 拉普拉斯之盒关键人", "ja": "ザビ家の遺児 / ラプラスの箱の鍵" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "扎比家遗孤 / 拉普拉斯之盒关键人",
+      "ja": "ザビ家の遺児 / ラプラスの箱の鍵"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -168,19 +331,38 @@
       ]
     },
     "machineIds": [],
-    "eventIds": ["laplace-incident"],
-    "relations": [
-      { "targetId": "banagher-links", "type": "admiration" },
-      { "targetId": "haman-karn", "type": "mentor" }
+    "eventIds": [
+      "laplace-incident"
     ],
-    "appearances": ["unicorn-2010"]
+    "relations": [
+      {
+        "targetId": "banagher-links",
+        "type": "admiration"
+      },
+      {
+        "targetId": "haman-karn",
+        "type": "mentor"
+      }
+    ],
+    "appearances": [
+      "unicorn-2010"
+    ]
   },
   {
     "id": "seabook-arano",
-    "name": { "zh": "西布克·阿诺", "ja": "シーブック・アノー", "en": "Seabook Arno" },
+    "name": {
+      "zh": "西布克·阿诺",
+      "ja": "シーブック・アノー",
+      "en": "Seabook Arno"
+    },
     "factionId": "earth-federation",
-    "eraIds": ["uc"],
-    "role": { "zh": "F91 驾驶员 / 殖民地技术员", "ja": "F91パイロット / コロニー技術者" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "F91 驾驶员 / 殖民地技术员",
+      "ja": "F91パイロット / コロニー技術者"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -192,17 +374,32 @@
         "U.C.0123の紛争後も技術者として活動。その戦闘記録は連邦の小型MSとバイオセンサー評価の重要資料となった。"
       ]
     },
-    "machineIds": ["f91"],
-    "eventIds": ["cosmo-babylonia-war"],
+    "machineIds": [
+      "f91"
+    ],
+    "eventIds": [
+      "cosmo-babylonia-war"
+    ],
     "relations": [],
-    "appearances": ["f91-1991"]
+    "appearances": [
+      "f91-1991"
+    ]
   },
   {
     "id": "uso-ewin",
-    "name": { "zh": "胡索·艾宾", "ja": "ウッソ・エヴィン", "en": "Üso Ewin" },
+    "name": {
+      "zh": "胡索·艾宾",
+      "ja": "ウッソ・エヴィン",
+      "en": "Üso Ewin"
+    },
     "factionId": "league-militaire",
-    "eraIds": ["uc"],
-    "role": { "zh": "V2 高达驾驶员 / 少年游击队员", "ja": "V2ガンダムパイロット / 少年ゲリラ" },
+    "eraIds": [
+      "uc"
+    ],
+    "role": {
+      "zh": "V2 高达驾驶员 / 少年游击队员",
+      "ja": "V2ガンダムパイロット / 少年ゲリラ"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -214,17 +411,32 @@
         "U.C.0153の戦争後、軍を離れ民間へ戻る。その体験は宇宙世紀後期の「少年兵の常態化」を最も直接に証言するものとされる。"
       ]
     },
-    "machineIds": ["lm314v21-v2"],
-    "eventIds": ["zanscare-war"],
+    "machineIds": [
+      "lm314v21-v2"
+    ],
+    "eventIds": [
+      "zanscare-war"
+    ],
     "relations": [],
-    "appearances": ["victory-1993"]
+    "appearances": [
+      "victory-1993"
+    ]
   },
   {
     "id": "loran-cehack",
-    "name": { "zh": "罗兰·塞亚克", "ja": "ロラン・セアック", "en": "Loran Cehack" },
+    "name": {
+      "zh": "罗兰·塞亚克",
+      "ja": "ロラン・セアック",
+      "en": "Loran Cehack"
+    },
     "factionId": "inglessa-militia",
-    "eraIds": ["cc"],
-    "role": { "zh": "Turn A 驾驶员 / 月之民", "ja": "ターンAパイロット / 月の民" },
+    "eraIds": [
+      "cc"
+    ],
+    "role": {
+      "zh": "Turn A 驾驶员 / 月之民",
+      "ja": "ターンAパイロット / 月の民"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -236,17 +448,32 @@
         "軍事クーデターと月の帰還の混乱の中でターンAのパイロットとなる。月光蝶が「黒歴史」を繰り返す危険を前に、人と人がやり直せることを信じた。"
       ]
     },
-    "machineIds": ["turn-a"],
-    "eventIds": ["dark-history"],
+    "machineIds": [
+      "turn-a"
+    ],
+    "eventIds": [
+      "dark-history"
+    ],
     "relations": [],
-    "appearances": ["turn-a-1999"]
+    "appearances": [
+      "turn-a-1999"
+    ]
   },
   {
     "id": "kira-yamato",
-    "name": { "zh": "基拉·大和", "ja": "キラ・ヤマト", "en": "Kira Yamato" },
+    "name": {
+      "zh": "基拉·大和",
+      "ja": "キラ・ヤマト",
+      "en": "Kira Yamato"
+    },
     "factionId": "orb-union",
-    "eraIds": ["ce"],
-    "role": { "zh": "Freedom 驾驶员 / 调整者", "ja": "フリーダムパイロット / コーディネイター" },
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "Freedom 驾驶员 / 调整者",
+      "ja": "フリーダムパイロット / コーディネイター"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -258,17 +485,34 @@
         "C.E.71の戦争後期、双方の殺戮を止めるため戦場へ介入。戦争を終わらせることはできなかったが、「第三勢力の武力介入」をC.E.世界の新たな政治変数とした。"
       ]
     },
-    "machineIds": ["zgaf-x10a-freedom"],
-    "eventIds": ["battle-of-orb"],
+    "machineIds": [
+      "zgaf-x10a-freedom",
+      "gat-x105-strike",
+      "zgmf-x20a-strike-freedom"
+    ],
+    "eventIds": [
+      "battle-of-orb"
+    ],
     "relations": [],
-    "appearances": ["seed-2002"]
+    "appearances": [
+      "seed-2002"
+    ]
   },
   {
     "id": "setsuna-f-seiei",
-    "name": { "zh": "刹那·F·清英", "ja": "刹那・F・セイエイ", "en": "Setsuna F. Seiei" },
+    "name": {
+      "zh": "刹那·F·清英",
+      "ja": "刹那・F・セイエイ",
+      "en": "Setsuna F. Seiei"
+    },
     "factionId": "celestial-being",
-    "eraIds": ["ad"],
-    "role": { "zh": "Exia 驾驶员 / 高达使者", "ja": "エクシアパイロット / ガンダムマイスター" },
+    "eraIds": [
+      "ad"
+    ],
+    "role": {
+      "zh": "Exia 驾驶员 / 高达使者",
+      "ja": "エクシアパイロット / ガンダムマイスター"
+    },
     "status": "alive",
     "bio": {
       "zh": [
@@ -280,9 +524,711 @@
         "A.D.2307の介入により三大陣営は初めて同じ交渉の場に着いた。刹那自身は「任務を遂行する兵器」から、対話の可能性を理解しようとする存在へと変わりつつある。"
       ]
     },
-    "machineIds": ["gn-001-exia"],
-    "eventIds": ["celestial-being-intervention"],
+    "machineIds": [
+      "gn-001-exia",
+      "gn-0000-00-raiser"
+    ],
+    "eventIds": [
+      "celestial-being-intervention"
+    ],
     "relations": [],
-    "appearances": ["00-2007"]
+    "appearances": [
+      "00-2007"
+    ]
+  },
+  {
+    "id": "domon-kasshu",
+    "name": {
+      "zh": "多蒙·卡修",
+      "ja": "ドモン・カッシュ",
+      "en": "Domon Kasshu"
+    },
+    "factionId": "neo-japan",
+    "affiliations": [],
+    "eraIds": [
+      "fc"
+    ],
+    "role": {
+      "zh": "神高达驾驶员 / 新日本代表",
+      "ja": "ゴッドガンダムパイロット / ネオジャパン代表"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "为寻找被冰封的父亲与失踪的哥哥，多蒙驾驶闪耀高达参加第十三届高达武斗会；在与东方不败的师徒对决中，他逐渐理解“武斗”并不只是胜负。"
+      ],
+      "ja": [
+        "凍結された父と失踪した兄を探すため、ドモンはシャイニングガンダムで第13回ガンダムファイトに参加する。東方不敗との師弟対決を通じ、「武闘」が勝敗だけではないことを学ぶ。"
+      ]
+    },
+    "machineIds": [
+      "gf13-017nj-shining",
+      "gf13-017njii-god"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "master-asia",
+        "type": "mentor"
+      }
+    ],
+    "appearances": [
+      "g-gundam-1994"
+    ]
+  },
+  {
+    "id": "master-asia",
+    "name": {
+      "zh": "东方不败",
+      "ja": "東方不敗",
+      "en": "Master Asia"
+    },
+    "factionId": "neo-hong-kong",
+    "affiliations": [],
+    "eraIds": [
+      "fc"
+    ],
+    "role": {
+      "zh": "尊者高达驾驶员 / 前代武斗冠军",
+      "ja": "マスターガンダムパイロット / 前回王者"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "曾与多蒙之父并肩作战的武斗家，也是多蒙的授业恩师。他驾驶尊者高达阻挡弟子，试图用自己的方式拯救被污染的地球。"
+      ],
+      "ja": [
+        "ドモンの父と共に戦った武闘家であり、ドモンの師匠。マスターガンダムで弟子の前に立ち、汚染された地球を自らの方法で救おうとした。"
+      ]
+    },
+    "machineIds": [
+      "gf13-001nhii-master"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "g-gundam-1994"
+    ]
+  },
+  {
+    "id": "heero-yuy",
+    "name": {
+      "zh": "希罗·尤尔",
+      "ja": "ヒイロ・ユイ",
+      "en": "Heero Yuy"
+    },
+    "factionId": "colony-operatives",
+    "affiliations": [],
+    "eraIds": [
+      "ac"
+    ],
+    "role": {
+      "zh": "飞翼高达 / 飞翼零式驾驶员",
+      "ja": "ウイング / ウイングゼロパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "被派往地球执行“流星作战”的少年兵，习惯把任务置于生命之上。与莉莉娜的相遇让他开始质疑“以战争终结战争”的逻辑。"
+      ],
+      "ja": [
+        "「オペレーション・メテオ」のため地球へ送られた少年兵。任務を命より優先する。リリーナとの出会いが「戦争で戦争を終わらせる」論理への疑問を生む。"
+      ]
+    },
+    "machineIds": [
+      "xxxg-01w-wing",
+      "xxxg-00w0-wing-zero"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "zechs-merquise",
+        "type": "rival"
+      }
+    ],
+    "appearances": [
+      "wing-1995"
+    ]
+  },
+  {
+    "id": "zechs-merquise",
+    "name": {
+      "zh": "泽克斯·马其士",
+      "ja": "ゼクス・マーキス",
+      "en": "Zechs Merquise"
+    },
+    "factionId": "oz",
+    "affiliations": [],
+    "eraIds": [
+      "ac"
+    ],
+    "role": {
+      "zh": "OZ 王牌 / 艾比安驾驶员",
+      "ja": "OZエース / エピオンパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "化名泽克斯的米利亚尔特·匹斯克拉夫特，在 OZ 与白色芬古之间摇摆。他驾驶艾比安追求“以最强武力终结战争”的道路。"
+      ],
+      "ja": [
+        "ゼクス・マーキスとして知られるミリアルド・ピースクラフト。OZとホワイトファングの間で揺れ、エピオンで「最強の武力による戦争終結」を求める。"
+      ]
+    },
+    "machineIds": [
+      "oz-13ms-epyon"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "wing-1995"
+    ]
+  },
+  {
+    "id": "garrod-ran",
+    "name": {
+      "zh": "加罗特·兰",
+      "ja": "ガロード・ラン",
+      "en": "Garrod Ran"
+    },
+    "factionId": "vulture",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "高达 X / Double X 驾驶员",
+      "ja": "ガンダムX / ダブルXパイロット"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "废土上的少年拾荒者，靠一台旧式 MS 与直觉生存。遇到蒂法后，他被卷入新 UNE 与废土势力的战争，并逐渐成为“新世界”的寻找者。"
+      ],
+      "ja": [
+        "廃墟の少年スカベンジャー。旧式MSと直感で生き延びてきた。ティファと出会い、新UNEと廃墟勢力の戦争に巻き込まれ、「新しい世界」を探す者となる。"
+      ]
+    },
+    "machineIds": [
+      "gx-9900-x",
+      "gx-9901-dx"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "tiffa-adill",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "tiffa-adill",
+    "name": {
+      "zh": "蒂法·亚迪尔",
+      "ja": "ティファ・アディール",
+      "en": "Tiffa Adill"
+    },
+    "factionId": "vulture",
+    "affiliations": [],
+    "eraIds": [
+      "aw"
+    ],
+    "role": {
+      "zh": "Newtype 导航 / 废土幸存者",
+      "ja": "ニュータイプ・ナビゲーター / 廃墟の生存者"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "拥有强感知能力的少女，被新 UNE 视为研究对象。她的预知与对战争的恐惧，让加罗特不断追问“力量应该用来保护什么”。"
+      ],
+      "ja": [
+        "強い感応能力を持つ少女。新UNEに研究対象として狙われる。予知と戦争への恐怖が、ガロードに「力は何を守るためにあるのか」を問わせる。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "x-1996"
+    ]
+  },
+  {
+    "id": "sochie-heim",
+    "name": {
+      "zh": "苏西·海姆",
+      "ja": "ソシエ・ハイム",
+      "en": "Sochie Heim"
+    },
+    "factionId": "inglessa-militia",
+    "affiliations": [],
+    "eraIds": [
+      "cc"
+    ],
+    "role": {
+      "zh": "英格列沙民兵 / 罗兰的同伴",
+      "ja": "イングレッサ民兵 / ロランの仲間"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "英格列沙家的女儿，在月之民回归的混乱中加入民兵。她对罗兰的情感与对“月球人”的敌意，构成 C.C. 纪元最私人的战争视角。"
+      ],
+      "ja": [
+        "イングレッサ家の娘。月の民の回帰による混乱の中で民兵に加わる。ロランへの想いと「月の人」への敵意が、C.C.紀元の最も私的な戦争視点となる。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "turn-a-1999"
+    ]
+  },
+  {
+    "id": "athrun-zala",
+    "name": {
+      "zh": "阿斯兰·萨拉",
+      "ja": "アスラン・ザラ",
+      "en": "Athrun Zala"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "ZAFT 王牌 / 调整者",
+      "ja": "ザフトエース / コーディネイター"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "基拉的幼年好友，也是 ZAFT 的精英驾驶员。他在血缘、国家与友情之间反复选择，试图找到不靠歼灭维持和平的道路。"
+      ],
+      "ja": [
+        "キラの幼なじみで、ザフトのエリートパイロット。血縁・国家・友情の間で選択を繰り返し、殲滅によらない平和の道を探す。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "seed-2002",
+      "seed-destiny-2004"
+    ]
+  },
+  {
+    "id": "lacus-clyne",
+    "name": {
+      "zh": "拉克丝·克莱因",
+      "ja": "ラクス・クライン",
+      "en": "Lacus Clyne"
+    },
+    "factionId": "zaft",
+    "affiliations": [],
+    "eraIds": [
+      "ce"
+    ],
+    "role": {
+      "zh": "PLANT 歌姬 / 克莱因派领袖",
+      "ja": "プラントの歌姫 / クライン派指導者"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "以歌声与政治判断影响战局的 PLANT 名门之女。她不像驾驶员那样直接战斗，却通过组织、信息与象征力量改变战争方向。"
+      ],
+      "ja": [
+        "歌と政治的判断で戦局に影響を与えるプラントの名家の娘。パイロットとして直接戦うのではなく、組織・情報・象徴の力で戦争の方向を変える。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "seed-2002",
+      "seed-destiny-2004"
+    ]
+  },
+  {
+    "id": "lockon-stratos",
+    "name": {
+      "zh": "洛克昂·史特拉托斯",
+      "ja": "ロックオン・ストラトス",
+      "en": "Lockon Stratos"
+    },
+    "factionId": "celestial-being",
+    "affiliations": [],
+    "eraIds": [
+      "ad"
+    ],
+    "role": {
+      "zh": "力天使高达驾驶员 / 狙击手",
+      "ja": "デュナメスパイロット / 狙撃手"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "天上人最早的狙击手，把任务与同伴看得同等重要。他的冷静与牺牲，让“武力介入”第一次显露出人的代价。"
+      ],
+      "ja": [
+        "ソレスタルビーイング最初の狙撃手。任務と仲間を同じ重さで扱う。その冷静さと犠牲が、「武力介入」に初めて人的代償を刻んだ。"
+      ]
+    },
+    "machineIds": [
+      "gn-002-dynames"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "setsuna-f-seiei",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "00-2007"
+    ]
+  },
+  {
+    "id": "tieria-erde",
+    "name": {
+      "zh": "提耶利亚·厄德",
+      "ja": "ティエリア・エルデ",
+      "en": "Tieria Erde"
+    },
+    "factionId": "celestial-being",
+    "affiliations": [],
+    "eraIds": [
+      "ad"
+    ],
+    "role": {
+      "zh": "德天使高达驾驶员 / 变革者",
+      "ja": "ヴァーチェパイロット / イノベイター"
+    },
+    "status": "unknown",
+    "bio": {
+      "zh": [
+        "作为变革者被创造的少年，最初只相信计划与数据。与同伴的相处让他开始理解“人类”的不完美与可能性。"
+      ],
+      "ja": [
+        "イノベイターとして生み出された少年。当初は計画とデータだけを信じていた。仲間との時間が、人間の不完全さと可能性への理解を生む。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "setsuna-f-seiei",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "00-2007",
+      "00-s2-2008"
+    ]
+  },
+  {
+    "id": "flit-asuno",
+    "name": {
+      "zh": "弗利特·明日野",
+      "ja": "フリット・アスノ",
+      "en": "Flit Asuno"
+    },
+    "factionId": "federation-age",
+    "affiliations": [],
+    "eraIds": [
+      "ag"
+    ],
+    "role": {
+      "zh": "AGE-1 驾驶员 / 联邦司令",
+      "ja": "AGE-1パイロット / 連邦司令"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "在维根袭击中失去母亲的少年，靠 AGE 系统与 AGE-1 走上战场。他的复仇心与对联邦的失望，贯穿了 A.G. 纪元的百年战争。"
+      ],
+      "ja": [
+        "ヴェイガンの襲撃で母を失った少年。AGEシステムとAGE-1で戦場に立つ。復讐心と連邦への失望が、A.G.紀元の百年戦争を貫く。"
+      ]
+    },
+    "machineIds": [
+      "age-1"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "asemu-asuno",
+        "type": "family"
+      }
+    ],
+    "appearances": [
+      "age-2011"
+    ]
+  },
+  {
+    "id": "asemu-asuno",
+    "name": {
+      "zh": "亚瑟姆·明日野",
+      "ja": "アセム・アスノ",
+      "en": "Asemu Asuno"
+    },
+    "factionId": "federation-age",
+    "affiliations": [],
+    "eraIds": [
+      "ag"
+    ],
+    "role": {
+      "zh": "AGE-2 驾驶员 / 联邦军官",
+      "ja": "AGE-2パイロット / 連邦軍人"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "弗利特的儿子，却不愿重复父亲的战争。他驾驶 AGE-2 追击维根，也在敌我之间寻找“不是复仇”的战斗理由。"
+      ],
+      "ja": [
+        "フリットの息子だが、父の戦争を繰り返すことを拒む。AGE-2でヴェイガンを追い、敵味方の間で「復讐ではない」戦う理由を探す。"
+      ]
+    },
+    "machineIds": [
+      "age-2"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "age-2011"
+    ]
+  },
+  {
+    "id": "bellri-zenam",
+    "name": {
+      "zh": "贝尔利·塞纳姆",
+      "ja": "ベルリ・ゼナム",
+      "en": "Bellri Zenam"
+    },
+    "factionId": "amerian",
+    "affiliations": [],
+    "eraIds": [
+      "rc"
+    ],
+    "role": {
+      "zh": "G-自我驾驶员 / 首都军候补",
+      "ja": "G-セルフパイロット / 首都軍候補"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "在轨道电梯与光子电池秩序中长大的少年，因一次海盗袭击启动 G-自我。他的身份与血统，让 R.C. 的政治禁忌变成个人问题。"
+      ],
+      "ja": [
+        "軌道エレベーターと光子電池の秩序の中で育った少年。海賊襲撃をきっかけにG-セルフを起動する。その出自が、R.C.の政治的禁忌を個人の問題へ変える。"
+      ]
+    },
+    "machineIds": [
+      "g-self"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "aida-surugan",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "reconguista-2014"
+    ]
+  },
+  {
+    "id": "aida-surugan",
+    "name": {
+      "zh": "艾达·斯尔冈",
+      "ja": "アイーダ・スルガン",
+      "en": "Aida Surugan"
+    },
+    "factionId": "amerian",
+    "affiliations": [],
+    "eraIds": [
+      "rc"
+    ],
+    "role": {
+      "zh": "G-Arcane 驾驶员 / 亚美利亚军",
+      "ja": "G-アルケインパイロット / アメリア軍"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "亚美利亚军的驾驶员，也是贝尔利的同伴。她在战场与政治之间保持清醒，试图阻止各方把轨道电梯变成新的武器。"
+      ],
+      "ja": [
+        "アメリア軍のパイロットで、ベルリの仲間。戦場と政治の間で冷静さを保ち、軌道エレベーターが新たな武器になることを防ごうとする。"
+      ]
+    },
+    "machineIds": [
+      "g-arcane"
+    ],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "reconguista-2014"
+    ]
+  },
+  {
+    "id": "mikazuki-augus",
+    "name": {
+      "zh": "三日月·奥格斯",
+      "ja": "三日月・オーガス",
+      "en": "Mikazuki Augus"
+    },
+    "factionId": "tekkadan",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "巴巴托斯驾驶员 / 铁华团王牌",
+      "ja": "バルバトスパイロット / 鉄華団エース"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "火星的少年兵，把奥尔加的命令视为生存的全部。巴巴托斯在他手中像野兽一样战斗，也让他逐渐失去对身体与未来的控制。"
+      ],
+      "ja": [
+        "火星の少年兵。オルガの命令を生存のすべてとする。バルバトスは彼の手で獣のように戦い、身体と未来の制御を少しずつ奪っていく。"
+      ]
+    },
+    "machineIds": [
+      "asw-g-08-barbatos"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "orga-itsuka",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "ibo-2015"
+    ]
+  },
+  {
+    "id": "orga-itsuka",
+    "name": {
+      "zh": "奥尔加·伊兹卡",
+      "ja": "オルガ・イツカ",
+      "en": "Orga Itsuka"
+    },
+    "factionId": "tekkadan",
+    "affiliations": [],
+    "eraIds": [
+      "pd"
+    ],
+    "role": {
+      "zh": "铁华团团长 / 火星独立运动",
+      "ja": "鉄華団団長 / 火星独立運動"
+    },
+    "status": "dead",
+    "bio": {
+      "zh": [
+        "铁华团的创立者，把少年们从底层带上火星的政治舞台。他的判断与野心让铁华团迅速壮大，也把他们推向加拉尔霍恩的正面冲突。"
+      ],
+      "ja": [
+        "鉄華団の創設者。底辺の少年たちを火星の政治舞台へ引き上げる。その判断と野心が組織を急成長させ、ギャラルホルンとの正面衝突へ導く。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "ibo-2015"
+    ]
+  },
+  {
+    "id": "suletta-mercury",
+    "name": {
+      "zh": "斯莱塔·墨丘利",
+      "ja": "スレッタ・マーキュリー",
+      "en": "Suletta Mercury"
+    },
+    "factionId": "benerit",
+    "affiliations": [],
+    "eraIds": [
+      "as"
+    ],
+    "role": {
+      "zh": "风灵 / 卡利班驾驶员 / 阿斯提卡西亚学生",
+      "ja": "エアリアル / キャリバーンパイロット / アスティカシア学生"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "从水星来到阿斯提卡西亚学园的少女，驾驶风灵高达参加决斗。她与米奥莉奈的婚约、GUND 格式化的秘密，让她从“乡下人”变成企业战争的中心。"
+      ],
+      "ja": [
+        "水星からアスティカシア学園へ来た少女。エアリアルで決闘に参加する。ミオリネとの婚約とGUNDフォーマットの秘密が、彼女を企業戦争の中心へ押し出す。"
+      ]
+    },
+    "machineIds": [
+      "xvx-016-aerial",
+      "xvx-016-ff-aerial-rebuild",
+      "x-ex01-calibarn"
+    ],
+    "eventIds": [],
+    "relations": [
+      {
+        "targetId": "miorine-rembran",
+        "type": "comrade"
+      }
+    ],
+    "appearances": [
+      "witch-2022"
+    ]
+  },
+  {
+    "id": "miorine-rembran",
+    "name": {
+      "zh": "米奥莉奈·伦布兰",
+      "ja": "ミオリネ・レンブラン",
+      "en": "Miorine Rembran"
+    },
+    "factionId": "benerit",
+    "affiliations": [],
+    "eraIds": [
+      "as"
+    ],
+    "role": {
+      "zh": "贝纳里特集团千金 / 高达公司社长",
+      "ja": "ベネリットグループ令嬢 / ガンダム社社長"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "贝纳里特集团总裁之女，不愿成为企业联姻的工具。她与斯莱塔共同创立高达公司，试图把 GUND 技术从诅咒变成可选择的力量。"
+      ],
+      "ja": [
+        "ベネリットグループ総裁の娘。企業婚の道具になることを拒む。スレッタと共にガンダム社を立ち上げ、GUND技術を呪いから選択可能な力へ変えようとする。"
+      ]
+    },
+    "machineIds": [],
+    "eventIds": [],
+    "relations": [],
+    "appearances": [
+      "witch-2022"
+    ]
   }
 ]

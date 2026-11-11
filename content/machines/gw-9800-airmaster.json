@@ -1,0 +1,108 @@
+{
+  "id": "gw-9800-airmaster",
+  "modelCode": "GW-9800",
+  "name": {
+    "zh": "高达 Airmaster",
+    "ja": "ガンダムエアマスター",
+    "en": "Gundam Airmaster"
+  },
+  "aliases": [
+    "Airmaster",
+    "エアマスター"
+  ],
+  "unitType": "prototype",
+  "eraId": "aw",
+  "factionId": "vulture",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 15,
+    "month": 1,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "以空战与变形为核心的废土高达，能切换飞行形态执行侦察与火力支援。",
+    "ja": "空戦と変形を中核とする廃墟のガンダム。飛行形態へ切り替え、偵察と火力支援を行う。"
+  },
+  "description": {
+    "zh": [
+      "Airmaster 的设计强调速度与视野，双管步枪和变形翼让它适合在废土上快速接敌。它与 Leopard、X 组成一支小型佣兵队伍，体现战后高达被“再利用”的生存逻辑。"
+    ],
+    "ja": [
+      "エアマスターは速度と視界を重視し、二連ライフルと変形翼で廃墟の戦場を快速に駆ける。レオパルド、Xと共に小規模傭兵隊を組み、戦後のガンダムが「再利用」される生存論理を体現した。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 16.8,
+    "heightHead": 16.8,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "双管光束步枪",
+        "ja": "二連ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀",
+        "ja": "ビームサーベル"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "火神炮 ×2",
+        "ja": "バルカン ×2"
+      },
+      "type": "kinetic"
+    }
+  ],
+  "tags": [
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "after-war-awakening",
+    "new-une-final"
+  ],
+  "workIds": [
+    "x-1996"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "block",
+    "backpack": "wing",
+    "weapon": "rifle",
+    "shield": false,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#0F766E",
+      "accent": "#F59E0B",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}
