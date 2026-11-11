@@ -23,6 +23,7 @@
 | [CONTENT_GUIDE.md](CONTENT_GUIDE.md) | 新增/修改机体、事件、人物、势力、作品的步骤；双语与审校清单 | schema 类型定义、API 设计 |
 | [DATA_DICTIONARY.md](DATA_DICTIONARY.md) | 字段、枚举、单位、日期、关联、校验规则 | 操作步骤、路线图 |
 | [ASSET_PIPELINE.md](ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF、验收 | 内容 JSON 字段 |
+| [DATA_SOURCES.md](DATA_SOURCES.md) | 外部资料源、接入流程、官方图版权边界 | 具体机体参数、图片文件 |
 | [GOVERNANCE.md](GOVERNANCE.md) | 来源分级、争议处理、版权、审核角色、AI 规则 | 技术架构、部署命令 |
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | Token、字体、组件、动效、语言切换、可访问性 | 内容事实、数据字段 |
 | [ROADMAP.md](ROADMAP.md) | M0–M5、V1.1、内容批次、风险 | 已实现能力的操作说明 |

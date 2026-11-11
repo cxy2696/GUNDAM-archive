@@ -129,3 +129,12 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 ## 9. 版权
 
 不得使用官方模型、扫描件或他人提取的资产。V1 的程序化几何与未来资产均应为自制或明确授权；2D 设计图标注“同人绘制，非官方设定图”。详见 [GOVERNANCE.md](GOVERNANCE.md)。
+
+
+## 官方设计图与外部图片
+
+- 不把官方设计图、扫描设定集、模型包装图或他人二次上传的图片放进 `public/` 或 `content/`。
+- 不热链外部 Wiki 图床；页面必须能离线构建。
+- 只接受授权素材、自绘素材或明确可再使用的 CC 素材；manifest 必须包含 `license`、`credit`、`sourceUrl`。
+- 未登记授权的图片不得进入构建；`pnpm validate` / review 应拒绝。
+- 当前机体视觉是自绘 SVG 与程序化 LOD-P，不是官方设计图。外部索引只用于事实核对，见 [DATA_SOURCES](DATA_SOURCES.md)。

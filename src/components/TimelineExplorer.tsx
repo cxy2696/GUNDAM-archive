@@ -248,6 +248,32 @@ export function TimelineExplorer({
                   ))}
                 </div>
               </div>
+
+              {/* Mobile gets a vertical, collision-free event list instead of
+                  squeezing a 1,000-year axis into 360px. */}
+              <div className="tl-mobile" aria-label={`${pick(era.name, lang)} events`}>
+                {[...rows]
+                  .sort((a, b) => a.left - b.left)
+                  .map(({ event }) => (
+                    <button
+                      key={event.id}
+                      type="button"
+                      className={`tl-mobile__event tl-mobile__event--${event.scale} ${selectedId === event.id ? "is-selected" : ""}`}
+                      onClick={() => setSelectedId(event.id)}
+                      aria-expanded={selectedId === event.id}
+                    >
+                      <span className="tl-mobile__date mono">
+                        {String(event.date.year).padStart(4, "0")}
+                        {event.date.month ? `.${String(event.date.month).padStart(2, "0")}` : ""}
+                      </span>
+                      <span className="tl-mobile__body">
+                        <b>{pick(event.title, lang)}</b>
+                        <span className="micro">{event.scale.toUpperCase()}</span>
+                      </span>
+                      <span aria-hidden>→</span>
+                    </button>
+                  ))}
+              </div>
             </section>
           );
         })}

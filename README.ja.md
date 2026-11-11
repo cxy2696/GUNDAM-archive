@@ -96,6 +96,7 @@ next build (output: export) → out/ → GitHub Pages
 | [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | コンテンツ追加、二言語、レビュー、よくあるエラー |
 | [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | フィールド、列挙、単位、日付、検証規則 |
 | [docs/ASSET_PIPELINE.md](docs/ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF |
+| [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) | 外部資料源、取込手順、公式画像の権利境界 |
 | [docs/GOVERNANCE.md](docs/GOVERNANCE.md) | 出典区分、係争、著作権、レビュー |
 | [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Token、タイポグラフィ、コンポーネント、動き、a11y |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | M0–M5、V1.1、コンテンツバッチ、リスク |
@@ -107,6 +108,7 @@ next build (output: export) → out/ → GitHub Pages
 ## 既知の境界
 
 - **範囲**：現在は**40機の主線ガンダム系機体**を11紀元にわたり収録しています。文字通りの全派生型・外伝・ゲームオリジナル機ではありません。B3/B4の目録で継続補完します。
+- **公式デザイン画像は収録しません**。現在のビジュアルは自作SVG／プロシージャル3Dで、公式画像・設定集スキャン・Wiki画像の転載や直リンクは行いません。詳細は [DATA_SOURCES](docs/DATA_SOURCES.md)。
 - **3DはプロシージャルLOD-Pの暫定アセット**です。公式モデルでも最終glTFでもありません。部位・組立軸・分解順は `partId` で整理済みで、LOD0接続時にビューアを書き換える必要はありません。
 - **データはシードデータ**です。公開資料に基づきますが、設定資料集の頁まで逐項確認していません。UIには `seed` / `disputed` を表示します。
 - **出典の網羅性は未完成**です。機体と事件には `sources` がありますが、勢力・人物・作品・地点・タグは作品への紐付けのみで、項目ごとの `source_refs` は未整備です（M4）。
