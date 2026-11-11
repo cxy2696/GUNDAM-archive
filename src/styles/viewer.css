@@ -760,31 +760,26 @@
   fill: rgba(232, 239, 245, 0.78);
 }
 
-.viewer-skeleton {
-  position: relative;
-  height: clamp(470px, 64vh, 720px);
+.viewer__canvas-skeleton {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
   background:
-    radial-gradient(circle at 50% 44%, rgba(34, 211, 238, 0.08), transparent 52%),
+    radial-gradient(circle at 50% 45%, rgba(34, 211, 238, 0.07), transparent 52%),
     var(--stage-bg);
-  border: 1px solid var(--line-strong);
-  color: var(--cyan);
-  overflow: hidden;
 }
 
-.viewer-skeleton i {
-  position: absolute;
-  width: 44%;
-  aspect-ratio: 1;
-  border: 1px dashed rgba(34, 211, 238, 0.16);
-  border-radius: 50%;
-  animation: boot-spin 12s linear infinite;
+.viewer__canvas-skeleton i {
+  width: 160px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--cyan), transparent);
+  animation: viewer-load 1.3s var(--ease) infinite;
 }
 
-.viewer-skeleton .micro {
+.viewer__canvas-skeleton .micro {
   color: var(--text-3);
 }

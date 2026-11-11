@@ -22,7 +22,7 @@ import {
   type SpecField,
 } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
-import { ViewerLoader } from "@/components/viewer/ViewerLoader";
+import { MechViewer } from "@/components/viewer/MechViewer";
 import { MachineCard } from "@/components/MachineCard";
 import { ChevronDownIcon, ArrowRightIcon, ArrowUpRightIcon } from "@/components/Icons";
 
@@ -171,7 +171,7 @@ export default async function MachinePage({
 
       <div className="dossier container">
         <div className="dossier__viewer">
-          <ViewerLoader machine={machine} lang={typed} labels={dict.viewer} />
+          <MechViewer machine={machine} lang={typed} labels={dict.viewer} />
           <p className="dossier__asset-note micro">{dict.machine.assetNote}</p>
         </div>
 

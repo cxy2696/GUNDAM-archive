@@ -1,12 +1,23 @@
 "use client";
 
 import { Component, useEffect, useState, type ReactNode } from "react";
+import dynamic from "next/dynamic";
 import type { Machine } from "@/lib/schema";
 import type { Lang } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
 import { DesignSheet } from "./DesignSheet";
-import { MechStage, type ViewName } from "./MechStage";
+import type { ViewName } from "./MechStage";
 import { PART_LABELS, type PartId } from "./model";
+
+const MechStage = dynamic(() => import("./MechStage").then((module) => module.MechStage), {
+  ssr: false,
+  loading: () => (
+    <div className="viewer__canvas-skeleton">
+      <span className="micro">LOADING 3D ENGINE</span>
+      <i />
+    </div>
+  ),
+});
 
 class ViewerBoundary extends Component<
   { children: ReactNode; fallback: ReactNode },

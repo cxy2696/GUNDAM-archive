@@ -7,7 +7,7 @@ import { dateFraction, formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { EraRail } from "@/components/EraRail";
 import { MachineCard } from "@/components/MachineCard";
-import { ViewerLoader } from "@/components/viewer/ViewerLoader";
+import { MechViewer } from "@/components/viewer/MechViewer";
 import { ArrowRightIcon, CrosshairIcon, GlobeIcon, GraphIcon } from "@/components/Icons";
 
 export async function generateMetadata({
@@ -133,7 +133,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               <b className="mono">LUNA TITANIUM</b>
               <i />
             </div>
-            <ViewerLoader machine={hero} lang={typed} labels={dict.viewer} hero />
+            <MechViewer machine={hero} lang={typed} labels={dict.viewer} hero />
             <div className="hero__caption">
               <span className="mono">{hero.modelCode}</span>
               <span>{pick(hero.name, typed)}</span>
