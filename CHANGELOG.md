@@ -3,6 +3,30 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [2.2.0] — 2026-11-12
+
+### Changed
+
+- **Editorial pass across all content**: rewrote machine summaries and descriptions, character bios, event explanations and technology entries to remove templated AI-style phrasing. Replaced “不是…而是”, “真正的”, “这台机体”, “故事”, “读者”, “宿命”, “极致”, “见证了” and similar constructions with concrete statements.
+- Event explanations are now shorter and follow a background → course → result structure. Technology entries explain mechanism, trade-off and historical role without rhetorical conclusions.
+- Character biographies are capped at two paragraphs; the separate service record carries the chronological detail.
+- Removed the duplicate “天上人武力介入” event; events are now 49.
+- Static pages: 628; search index: 377.
+
+### Added
+
+- `docs/EDITORIAL.md`: house style, banned templates, length limits, fact/uncertainty rules and before/after examples.
+- `scripts/check-language.mjs` and `npm run language:check`: CI gate for high-frequency AI templates, overlong summaries and paragraphs.
+- CI and Pages workflows now run the language check.
+
+### Fixed
+
+- Repaired several machine and character sentences that had become ungrammatical during the editorial rewrite.
+- Corrected remaining Chinese characters in Japanese text and a few duplicated event references.
+- Corrected the Quetta factory attack participants: Aerial, Lfrith Ur and Lfrith Thorn; Calibarn was not present. Removed Aerial from the Vanadis Incident.
+- Corrected Amuro Ray's age in U.C.0079 to 16.
+- Removed the duplicate “天上人武力介入” event and its stale links.
+
 ## [2.1.0] — 2026-11-12
 
 ### Added
@@ -19,7 +43,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 - Base body type is 16px; machine summaries, dossier text, event text, character bios, glossary cards and tables are larger and higher-contrast.
 - Event drawer now includes the full event explanation and a link to the event dossier.
 - Search now indexes technology tags and links events to their dossier pages.
-- Static pages: 630; search index: 378; events: 50; tags: 31; characters: 73.
+- Static pages: 628; search index: 377; events: 49; tags: 31; characters: 73.
 - Version bumped to `2.1.0`.
 
 ## [2.0.0] — 2026-11-12

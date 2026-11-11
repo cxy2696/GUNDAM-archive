@@ -22,6 +22,7 @@
 | [../README.md](../README.md) | 项目入口、在线地址、快速开始、能力概览 | 字段级定义、完整审校流程 |
 | [../README.ja.md](../README.ja.md) | 日本語の概要・起動方法 | 中国語の詳細仕様 |
 | [CHRONOLOGY.md](CHRONOLOGY.md) | 十二纪元世纪表、逐纪元速查、阅读顺序 | 字段定义、完整设定史 |
+| [EDITORIAL.md](EDITORIAL.md) | 编辑风格、禁用模板句、事实与长度规则 | 字段枚举、具体设定参数 |
 | [MACHINE_COVERAGE.md](MACHINE_COVERAGE.md) | “全机体”的收录规则、覆盖矩阵、明确不包含什么 | 具体参数、逐条出处 |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | 六层模型、目录边界、数据流、查看器、部署、ADR、迁移 | 字段表、逐条内容规范 |
 | [CONTENT_GUIDE.md](CONTENT_GUIDE.md) | 新增/修改机体、事件、人物、势力、作品的步骤；双语与审校清单 | schema 类型定义、API 设计 |
@@ -44,6 +45,7 @@
 | 知道收了哪些机体 | [MACHINE_COVERAGE](MACHINE_COVERAGE.md) | [CHRONOLOGY](CHRONOLOGY.md) |
 | 新增一台机体 | [CONTENT_GUIDE](CONTENT_GUIDE.md) 第 2 节 | [DATA_DICTIONARY](DATA_DICTIONARY.md) 的 Machine / Edge |
 | 改一个字段 | `src/lib/schema.ts` | [DATA_DICTIONARY](DATA_DICTIONARY.md) |
+| 改一段文字 | [EDITORIAL](EDITORIAL.md) | `npm run language:check` |
 | 判断出处能不能用 | [GOVERNANCE](GOVERNANCE.md) | [DATA_SOURCES](DATA_SOURCES.md) |
 | 接 3D 资产 | [ASSET_PIPELINE](ASSET_PIPELINE.md) | `docs/templates/asset-manifest.example.json` |
 | 看版本计划 | [ROADMAP](ROADMAP.md) | [../CHANGELOG.md](../CHANGELOG.md) |

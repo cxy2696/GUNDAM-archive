@@ -8,7 +8,7 @@
 | --- | --- |
 | ID | 小写 slug：`^[a-z0-9]+(?:-[a-z0-9]+)*$`，2–64 字符。作为文件名、URL 与外键 |
 | 多语言 | `Localized = { zh: string; ja: string }`；`LocalizedOptional = { zh: string; ja?: string }` |
-| 时间 | 故事内相对年 + 月/日 + `precision`；不存绝对时间戳 |
+| 时间 | 剧内相对年 + 月/日 + `precision`；不存绝对时间戳 |
 | 单位 | 米、吨、千瓦、千克力（kgf）、米 |
 | 出处 | `SourceRef[]`，每项含 `label`、`level`（S/A/B/C）、可选 `url` / `note` |
 | 空值 | 没有数据用 `null` 或省略字段；禁止 0 或估算值 |
@@ -91,11 +91,11 @@
 | `canon` | `mainline\|parallel` | ✓ | 主历史或平行 |
 | `color` | hex | ✓ | 泳道颜色 |
 | `span` | `{start,end}` | ✓ | 全史范围 |
-| `window` | `{start,end}` | ✓ | 默认叙事窗口（年表聚焦） |
+| `window` | `{start,end}` | ✓ | 默认剧情窗口（年表聚焦） |
 | `summary` | localized | ✓ | 纪元简介 |
 | `note` | localized | — | 补充说明 |
 
-U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示叙事窗口，可切换全史。
+U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示剧情窗口，可切换全史。
 
 ## 4. Machine
 
@@ -109,7 +109,7 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 | 分类 | `eraId` | ref Era | ✓ | 主纪元 |
 | 分类 | `factionId` | ref Faction | ✓ | 主阵营 |
 | 分类 | `canon` | enum | ✓ | 正史层级 |
-| 分类 | `firstAppear` | StoryDate | ✓ | 故事内首战/首登场 |
+| 分类 | `firstAppear` | StoryDate | ✓ | 剧内首战/首登场 |
 | 文本 | `summary` | localized | ✓ | 一句话定位 |
 | 文本 | `description` | `{zh:string[],ja:string[]}` | ✓ | 段落数组，便于增量翻译 |
 | 参数 | `specs.heightOverall` | number\|null | — | 全高，米 |

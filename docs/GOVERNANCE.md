@@ -11,7 +11,7 @@
 | **B** | 社区 Wiki、论坛整理、模型店资料 | **只作为线索**，必须回溯到 S/A 原文后才能录入 |
 | **C** | 个人博客、视频解说、社交媒体 | 不录入数据，可作为写作参考 |
 
-**当前覆盖（V2.1）**：只有 `Machine` 与 `Event` 强制 `sources`。`Faction` / `Character` / `Work` / `Place` / `Tag` 目前通过作品与纪元锚定，尚未逐条挂 `source_refs`。文案与 README 不得把这种情况说成“全部条目附出处”；补全计划见 ROADMAP 的 M4。
+**当前覆盖（V2.2）**：只有 `Machine` 与 `Event` 强制 `sources`。`Faction` / `Character` / `Work` / `Place` / `Tag` 目前通过作品与纪元锚定，尚未逐条挂 `source_refs`。文案与 README 不得把这种情况说成“全部条目附出处”；补全计划见 ROADMAP 的 M4。
 
 红线：
 

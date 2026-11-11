@@ -22,11 +22,12 @@ pnpm dev
 | `pnpm dev` | 开发服务器 |
 | `pnpm validate` | schema + 外键 + 谱系 DAG + 双向关联 |
 | `pnpm docs:check` | 所有 Markdown 本地链接可解析 |
+| `pnpm language:check` | 扫描模板句、AI 腔与过长段落 |
 | `pnpm typecheck` | TypeScript |
 | `pnpm build` | 静态导出到 `out/` |
 | `pnpm preview` | 本地预览 `out/`（python3） |
 
-提交前至少运行 `pnpm validate && pnpm docs:check && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
+提交前至少运行 `pnpm validate && pnpm docs:check && pnpm language:check && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
 
 ## 3. 代码贡献
 
@@ -56,6 +57,7 @@ chore(ci): cache pnpm store
 - [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md)：具体填写步骤
 - [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)：字段与枚举
 - [docs/GOVERNANCE.md](docs/GOVERNANCE.md)：出处分级与版权边界
+- [docs/EDITORIAL.md](docs/EDITORIAL.md)：语言风格、禁用模板句与长度规则
 
 最低要求：
 

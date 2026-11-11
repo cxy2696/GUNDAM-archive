@@ -24,6 +24,8 @@ jobs:
         run: pnpm validate
       - name: Check documentation links
         run: pnpm docs:check
+      - name: Check editorial language
+        run: pnpm language:check
       - name: Typecheck
         run: pnpm typecheck
       - name: Build static site
