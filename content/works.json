@@ -366,5 +366,37 @@
       "zh": "A.S.122，水星来的少女进入阿斯提卡西亚学园，GUND 格式化与企业的算计交织。",
       "ja": "A.S.122、水星から来た少女がアスティカシア学園へ入り、GUNDフォーマットと企業の思惑が交錯する。"
     }
+  },
+  {
+    "id": "rg-xarx-zero",
+    "title": {
+      "zh": "机动战士高达 RG XARX-ZERO",
+      "ja": "機動戦士ガンダムRG XARX-ZERO",
+      "en": "Mobile Suit Gundam RG XARX-ZERO"
+    },
+    "year": 2027,
+    "type": "tv",
+    "eraId": "aa",
+    "canon": "parallel",
+    "summary": {
+      "zh": "A.A.45 年，月面少年阿兹米·雷在 Apocalypse 的日常中醒来，驾驶 XARX-0 高达 ZERO 面对被技术遗产改变的世界。",
+      "ja": "A.A.45年、月面の少年アズミ・レイがアポカリプスの日常の中で目覚め、XARX-0ガンダムZEROで技術遺産に変わった世界へ挑む。"
+    }
+  },
+  {
+    "id": "gundam-rogue-orbit",
+    "title": {
+      "zh": "GUNDAM 异轨征途",
+      "ja": "GUNDAM ROGUE ORBIT",
+      "en": "GUNDAM ROGUE ORBIT"
+    },
+    "year": 2027,
+    "type": "game",
+    "eraId": "aa",
+    "canon": "parallel",
+    "summary": {
+      "zh": "在 A.A. 纪元的地球圈遗迹中，玩家驾驶螺旋高达穿越废弃轨道，对抗未知的自我增殖威胁。",
+      "ja": "A.A.紀元の地球圏遺跡を舞台に、プレイヤーは螺旋ガンダムで放棄軌道を駆け、未知の自己増殖脅威へ挑む。"
+    }
   }
 ]

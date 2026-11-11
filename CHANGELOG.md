@@ -3,6 +3,21 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [1.3.0] — 2026-11-11
+
+### Added
+
+- **A.A. (After Apocalypse)** era, set between the Apocalypse and A.A.45.
+- Two A.A. works: *Mobile Suit Gundam RG XARX-ZERO* (TV, 2027) and *GUNDAM ROGUE ORBIT* (game, 2027).
+- Two A.A. machines: XARX-0 Gundam Zero and Spiral Gundam.
+- One A.A. character (Azumi Rei) and three A.A. events: A.A. Year One, Azumi's awakening, and the Rogue Orbit contact.
+- 49 machines, 32 characters, 50 events, 29 factions, 25 works, 24 tags, 22 lineage edges; 238 pages and 185 search entries.
+
+### Changed
+
+- Era count is now 12; all eras have at least two machines and three events, and most have two or more characters (A.A. currently has one: Azumi Rei).
+- A.A. uses the same `seed` policy: unknown specs stay null; no official art is bundled.
+
 ## [1.2.0] — 2026-11-11
 
 ### Added

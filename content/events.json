@@ -1859,5 +1859,113 @@
         "level": "S"
       }
     ]
+  },
+  {
+    "id": "apocalypse-year-one",
+    "title": {
+      "zh": "A.A.元年",
+      "ja": "A.A.元年"
+    },
+    "eraId": "aa",
+    "scale": "era",
+    "date": {
+      "year": 1,
+      "precision": "year"
+    },
+    "factionIds": [
+      "lunar-survivors"
+    ],
+    "machineIds": [],
+    "characterIds": [],
+    "summary": {
+      "zh": "三项外来技术带来繁荣后暴走，Apocalypse 出现；人类在三个月攻防后放弃地球。",
+      "ja": "三つの外来技術が繁栄をもたらした後、アポカリプスが出現。三か月の攻防の末、人類は地球を放棄する。"
+    },
+    "outcome": {
+      "zh": "人类把这一年记为 A.A. 元年，地球圈进入月面/殖民地幸存时代。",
+      "ja": "人類はこの年をA.A.元年と記録し、地球圏は月面・コロニー生存の時代へ入る。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "官方《机动战士高达 RG XARX-ZERO》故事简介",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "azumi-awakening",
+    "title": {
+      "zh": "阿兹米觉醒",
+      "ja": "アズミの覚醒"
+    },
+    "eraId": "aa",
+    "scale": "incident",
+    "date": {
+      "year": 45,
+      "precision": "year"
+    },
+    "factionIds": [
+      "lunar-survivors"
+    ],
+    "machineIds": [
+      "xarx-0-gundam-zero"
+    ],
+    "characterIds": [
+      "azumi-rei"
+    ],
+    "summary": {
+      "zh": "A.A.45 年，阿兹米·雷在月面醒来，XARX-0 高达 ZERO 启动。",
+      "ja": "A.A.45年、アズミ・レイが月面で目覚め、XARX-0ガンダムZEROが起動する。"
+    },
+    "outcome": {
+      "zh": "少年与“被修订的高达”相遇，RG 计划的故事开始。",
+      "ja": "少年と「改訂されたガンダム」の出会いにより、RG計画の物語が始まる。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "官方《机动战士高达 RG XARX-ZERO》故事简介",
+        "level": "S"
+      }
+    ]
+  },
+  {
+    "id": "rogue-orbit-contact",
+    "title": {
+      "zh": "异轨接触",
+      "ja": "ローグ・オービット接触"
+    },
+    "eraId": "aa",
+    "scale": "battle",
+    "date": {
+      "year": 45,
+      "precision": "year"
+    },
+    "factionIds": [
+      "lunar-survivors"
+    ],
+    "machineIds": [
+      "spiral-gundam"
+    ],
+    "characterIds": [],
+    "summary": {
+      "zh": "螺旋高达在废弃轨道执行任务时遭遇未知的自我增殖威胁，船员被迫在碎片带中突围。",
+      "ja": "螺旋ガンダムが放棄軌道で未知の自己増殖脅威と遭遇し、クルーはデブリ帯での突破を迫られる。"
+    },
+    "outcome": {
+      "zh": "战斗让船员确认 Apocalypse 的威胁已扩散到轨道遗迹。",
+      "ja": "戦闘により、アポカリプスの脅威が軌道遺跡へ拡散していることが確認される。"
+    },
+    "canon": "parallel",
+    "mainline": true,
+    "sources": [
+      {
+        "label": "游戏《GUNDAM 异轨征途》官方资料",
+        "level": "S"
+      }
+    ]
   }
 ]

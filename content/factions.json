@@ -627,5 +627,41 @@
       "ja": "未来世紀のガンダムファイト参加国の一つ。東方不敗とマスターガンダムが代表を務めた。"
     },
     "relations": []
+  },
+  {
+    "id": "lunar-survivors",
+    "name": {
+      "zh": "月面幸存者",
+      "ja": "月面サバイバーズ",
+      "en": "Lunar Survivors"
+    },
+    "short": "LUNAR",
+    "color": "#F43F5E",
+    "eraIds": [
+      "aa"
+    ],
+    "description": {
+      "zh": "地球放弃后留在月面与殖民地的幸存者社群，在 Apocalypse 的日常威胁下重建生活。",
+      "ja": "地球放棄後に月面とコロニーへ残った生存者コミュニティ。アポカリプスの日常的脅威の中で生活を再建する。"
+    },
+    "relations": []
+  },
+  {
+    "id": "rogue-orbit-crew",
+    "name": {
+      "zh": "异轨征途船员",
+      "ja": "ローグ・オービット",
+      "en": "Rogue Orbit Crew"
+    },
+    "short": "ROGUE",
+    "color": "#22D3EE",
+    "eraIds": [
+      "aa"
+    ],
+    "description": {
+      "zh": "在废弃轨道与月面之间行动的独立船员，驾驶螺旋高达对抗未知威胁。",
+      "ja": "放棄軌道と月面の間を動く独立船団。螺旋ガンダムで未知の脅威に対抗する。"
+    },
+    "relations": []
   }
 ]

@@ -1,0 +1,116 @@
+{
+  "id": "xarx-0-gundam-zero",
+  "modelCode": "XARX-0",
+  "name": {
+    "zh": "高达 ZERO",
+    "ja": "ガンダムZERO",
+    "en": "Gundam Zero"
+  },
+  "aliases": [
+    "XARX-0",
+    "XARX-ZERO",
+    "ガンダムゼロ"
+  ],
+  "unitType": "prototype",
+  "eraId": "aa",
+  "factionId": "lunar-survivors",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 45,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "A.A.45 年，阿兹米·雷在月面启动的 XARX-0 高达 ZERO；机体与“材质化”技术及 Apocalypse 遗产直接相关。",
+    "ja": "A.A.45年、アズミ・レイが月面で起動したXARX-0ガンダムZERO。機体は「マテリアライズ」技術とアポカリプスの遺産に直結する。"
+  },
+  "description": {
+    "zh": [
+      "XARX-0 是 RG 计划中“被修订的高达”的起点。它的装甲、武装与材质化系统都没有完整公开，机体本身像一段尚未被解释的技术遗产；阿兹米必须在 Apocalypse 的日常中重新定义它。"
+    ],
+    "ja": [
+      "XARX-0はRG計画における「改訂されたガンダム」の出発点。装甲・武装・マテリアライズ系統の全容は公開されておらず、機体そのものが未解釈の技術遺産である。アズミはアポカリプスの日常の中で、その意味を定義し直さねばならない。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "专用盾牌",
+        "ja": "専用シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "materialize",
+    "gundarium",
+    "beam-weapon"
+  ],
+  "pilots": [
+    {
+      "characterId": "azumi-rei",
+      "note": {
+        "zh": "主要驾驶员",
+        "ja": "主パイロット"
+      }
+    }
+  ],
+  "eventIds": [
+    "azumi-awakening"
+  ],
+  "workIds": [
+    "rg-xarx-zero"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "standard",
+    "shoulder": "block",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#1D4ED8",
+      "accent": "#E5484D",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "TV 动画《机动战士高达 RG XARX-ZERO》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

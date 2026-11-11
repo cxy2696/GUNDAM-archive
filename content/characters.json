@@ -1230,5 +1230,41 @@
     "appearances": [
       "witch-2022"
     ]
+  },
+  {
+    "id": "azumi-rei",
+    "name": {
+      "zh": "阿兹米·雷",
+      "ja": "アズミ・レイ",
+      "en": "Azumi Rei"
+    },
+    "factionId": "lunar-survivors",
+    "affiliations": [],
+    "eraIds": [
+      "aa"
+    ],
+    "role": {
+      "zh": "XARX-0 驾驶员 / 月面少年",
+      "ja": "XARX-0パイロット / 月面の少年"
+    },
+    "status": "alive",
+    "bio": {
+      "zh": [
+        "A.A.45 年，阿兹米在月面醒来。他出生在 Apocalypse 已成为日常的世界，对“地球”只有资料与传闻；XARX-0 把他从幸存者的日常推入 RG 计划的中心。"
+      ],
+      "ja": [
+        "A.A.45年、アズミは月面で目覚める。アポカリプスが日常となった世界で生まれ、「地球」を知らずに育った。XARX-0は彼を生存者の日常からRG計画の中心へ押し出す。"
+      ]
+    },
+    "machineIds": [
+      "xarx-0-gundam-zero"
+    ],
+    "eventIds": [
+      "azumi-awakening"
+    ],
+    "relations": [],
+    "appearances": [
+      "rg-xarx-zero"
+    ]
   }
 ]

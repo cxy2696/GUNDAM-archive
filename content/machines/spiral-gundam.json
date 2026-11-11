@@ -1,0 +1,107 @@
+{
+  "id": "spiral-gundam",
+  "modelCode": "SPIRAL",
+  "name": {
+    "zh": "螺旋高达",
+    "ja": "螺旋ガンダム",
+    "en": "Spiral Gundam"
+  },
+  "aliases": [
+    "Spiral",
+    "螺旋",
+    "スパイラル"
+  ],
+  "unitType": "prototype",
+  "eraId": "aa",
+  "factionId": "rogue-orbit-crew",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 45,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "《GUNDAM 异轨征途》的主角机，以螺旋状推进与近接机动穿越废弃轨道。",
+    "ja": "「GUNDAM ROGUE ORBIT」の主役機。螺旋状の推進と近接機動で放棄軌道を駆ける。"
+  },
+  "description": {
+    "zh": [
+      "螺旋高达的设计强调“在遗迹中穿行”而非正面决战，推进器与装甲围绕废弃轨道的碎片环境调整。它把 A.A. 纪元的技术遗产转化为一台可操作的生存工具，也让玩家在轨道废墟中重新理解“高达”的意义。"
+    ],
+    "ja": [
+      "螺旋ガンダムは正面決戦ではなく「遺跡を駆け抜ける」ことを重視し、推進器と装甲を放棄軌道のデブリ環境に合わせて調整した。A.A.紀元の技術遺産を操作可能な生存手段へ変え、プレイヤーは軌道廃墟で「ガンダム」の意味を問い直す。"
+    ]
+  },
+  "specs": {
+    "heightOverall": null,
+    "heightHead": null,
+    "weightEmpty": null,
+    "weightFull": null,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "螺旋光束步枪",
+        "ja": "スパイラル・ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "光束军刀 ×2",
+        "ja": "ビームサーベル ×2"
+      },
+      "type": "melee"
+    },
+    {
+      "name": {
+        "zh": "推进盾",
+        "ja": "ブースターシールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "materialize",
+    "beam-weapon"
+  ],
+  "pilots": [],
+  "eventIds": [
+    "rogue-orbit-contact"
+  ],
+  "workIds": [
+    "gundam-rogue-orbit"
+  ],
+  "edges": [],
+  "viewer": {
+    "head": "vfin",
+    "build": "slim",
+    "shoulder": "wing",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#0EA5E9",
+      "accent": "#F43F5E",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "游戏《GUNDAM 异轨征途》官方设定资料",
+      "level": "S"
+    },
+    {
+      "label": "Gundam.INFO 官方机体资料",
+      "level": "A",
+      "url": "https://www.gundam.info/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}
