@@ -1,6 +1,6 @@
 # GUNDAM Archive · 机动战士档案
 
-[中文](README.md) ｜ [日本語](README.ja.md) ｜ [在线站点](https://cxy2696.github.io/GUNDAM-archive/zh/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [运营手册](docs/OPERATIONS.md)
+[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [在线站点](https://cxy2696.github.io/GUNDAM-archive/zh/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [运营手册](docs/OPERATIONS.md)
 
 > 可交互、可追溯、可运营的高达全系列档案。  
 > 12 纪元宇宙地图（2D/3D）· 3D 关联图谱 · 技术谱系 · 双语静态站
@@ -15,7 +15,7 @@
 
 站点是纯静态的 Next.js 导出：内容用 JSON 维护、Zod 在构建期校验，页面带中日双语、3D 机体查看器、技术谱系、纪元年表、2D/3D 宇宙地图与关系图谱。新增一条内容不需要改页面代码；一次 `pnpm check` 会同时检查内容、文档、类型、语言、链接与全部导出路由。
 
-当前版本：**v3.1.1**（2026-11-12）。  
+当前版本：**v3.1.2**（2026-11-12）。  
 当前快照：**148 台机体 · 12 个纪元 · 114 位人物 · 42 部作品 · 69 条事件 · 82 个势力 · 32 个受控标签 · 116 条谱系边 · 156 个地图节点**；`/zh` 与 `/ja` 双语，共 **854 个静态页面**、**487 条检索索引**、**846 条 sitemap 路由**。
 
 ## 30 秒读懂

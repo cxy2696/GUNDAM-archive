@@ -1,6 +1,6 @@
 # GUNDAM Archive · モビルスーツアーカイブ
 
-[中文](README.md) ｜ [日本語](README.ja.md) ｜ [ライブサイト](https://cxy2696.github.io/GUNDAM-archive/ja/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [運用手順](docs/OPERATIONS.md)
+[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [ライブサイト](https://cxy2696.github.io/GUNDAM-archive/ja/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [運用手順](docs/OPERATIONS.md)
 
 > 閲覧でき、追跡でき、運用できるガンダム全紀元アーカイブ。  
 > 12紀元の宇宙地図（2D/3D）· 3D関連グラフ · 技術系譜 · 中／日バイリンガル静的サイト
@@ -15,7 +15,7 @@
 
 サイトは完全静的な Next.js 書き出しです。内容は JSON で管理し、Zod がビルド時に検証します。日本語／中国語の二言語、3D機体ビューア、技術系譜、紀元年表、2D/3D宇宙地図、関連グラフを備え、内容の追加にページコードの変更は不要です。`pnpm check` が内容・文書・型・言語・リンク・全エクスポートルートをまとめて検査します。
 
-現在のバージョン：**v3.1.1**（2026-11-12）。  
+現在のバージョン：**v3.1.2**（2026-11-12）。  
 現在のスナップショット：**148機体 · 12紀元 · 114人物 · 42作品 · 69事件 · 82勢力 · 32技術タグ · 116系譜辺 · 156地図ノード**。`/zh` と `/ja` の二言語で **854ページ**、**487件**の検索索引、**846本**の sitemap ルート。
 
 ## 5分でわかる

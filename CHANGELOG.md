@@ -3,6 +3,18 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [3.1.2] — 2026-11-12
+
+### Added
+
+- **English documentation edition**: `README.en.md` (full project overview) and `docs/README.en.md` (documentation authority/index); language links added to Chinese/Japanese READMEs and the Chinese docs index.
+- English snapshot and version checks added to `docs:check`.
+
+### Changed
+
+- GitHub Actions upgraded to Node 24 runtimes, removing the Node 20 deprecation warnings: `actions/checkout@v7`, `actions/setup-node@v7`, `pnpm/action-setup@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`.
+- Version bumped to `3.1.2`; site pages remain 854, search entries 487, events 69.
+
 ## [3.1.1] — 2026-11-12
 
 ### Documentation and operability

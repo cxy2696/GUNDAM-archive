@@ -125,7 +125,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ABOUT</span>
-            <span className="mono">V3.1.1 / 2026.11.12</span>
+            <span className="mono">V3.1.2 / 2026.11.12</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -134,7 +134,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 3.1.1</span>
+            <span className="micro">{t.version} 3.1.2</span>
             <span className="micro">{t.cut} 2026.11.12</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
@@ -272,7 +272,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GUNDAM ARCHIVE / V3.1.1</span>
+              <span className="micro">GUNDAM ARCHIVE / V3.1.2</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>

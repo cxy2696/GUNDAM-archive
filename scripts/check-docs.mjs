@@ -43,9 +43,11 @@ const errors = [];
 const requiredDocs = [
   "README.md",
   "README.ja.md",
+  "README.en.md",
   "CHANGELOG.md",
   "CONTRIBUTING.md",
   "docs/README.md",
+  "docs/README.en.md",
   "docs/ARCHITECTURE.md",
   "docs/OPERATIONS.md",
   "docs/CONTENT_GUIDE.md",
@@ -69,6 +71,8 @@ const readme = readText("README.md");
 const changelog = readText("CHANGELOG.md");
 const roadmap = readText("docs/ROADMAP.md");
 const docsIndex = readText("docs/README.md");
+const readmeEn = readText("README.en.md");
+const docsIndexEn = readText("docs/README.en.md");
 
 const counts = {
   machines: fs.readdirSync(path.join(root, "content/machines")).filter((file) => file.endsWith(".json")).length,
@@ -100,12 +104,29 @@ for (const [needle, label] of expected) {
   if (!readme.includes(needle)) errors.push(`README is missing the current ${label}: "${needle}"`);
 }
 
+const expectedEn = [
+  [`${counts.machines} machines`, "machine count"],
+  [`${counts.eras} eras`, "era count"],
+  [`${counts.characters} characters`, "character count"],
+  [`${counts.works} works`, "work count"],
+  [`${counts.events} events`, "event count"],
+  [`${counts.factions} factions`, "faction count"],
+  [`${counts.tags} controlled tags`, "tag count"],
+  [`${counts.edges} lineage edges`, "lineage edge count"],
+  [`${counts.atlasNodes} atlas nodes`, "atlas node count"],
+];
+for (const [needle, label] of expectedEn) {
+  if (!readmeEn.includes(needle)) errors.push(`README.en is missing the current ${label}: "${needle}"`);
+}
+
 if (!readme.includes(`v${pkg.version}`)) errors.push(`README does not mention package version v${pkg.version}`);
+if (!readmeEn.includes(`v${pkg.version}`)) errors.push(`README.en does not mention package version v${pkg.version}`);
 if (!changelog.includes(`## [${pkg.version}]`)) errors.push(`CHANGELOG has no section for version ${pkg.version}`);
 if (!roadmap.includes(`v${pkg.version}`)) errors.push(`ROADMAP does not mention package version v${pkg.version}`);
 if (!docsIndex.includes("OPERATIONS.md")) errors.push("docs/README.md does not link the operations runbook");
+if (!docsIndexEn.includes("OPERATIONS.md")) errors.push("docs/README.en.md does not link the operations runbook");
 
-for (const file of ["README.md", "README.ja.md"]) {
+for (const file of ["README.md", "README.ja.md", "README.en.md"]) {
   const headings = readText(file).match(/^## .+$/gm) ?? [];
   const duplicates = headings.filter((heading, index) => headings.indexOf(heading) !== index);
   if (duplicates.length > 0) {
