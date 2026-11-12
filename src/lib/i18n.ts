@@ -5,7 +5,7 @@ const zh = {
     locale: "zh-CN",
     title: "GUNDAM Archive · 机动战士档案",
     description:
-      "一座可交互、可追溯的机动战士档案馆：3D 检阅、技术谱系、纪元年表与地球圈地图，机体与事件附出处。",
+      "可交互、可追溯的机动战士档案：12 纪元宇宙地图（2D/3D）、3D 关联图谱、技术谱系与 69 条事件，附出处与中日双语。",
   },
   site: {
     name: "GUNDAM ARCHIVE",
@@ -660,7 +660,7 @@ const ja: typeof zh = {
     locale: "ja-JP",
     title: "GUNDAM Archive · モビルスーツアーカイブ",
     description:
-      "インタラクティブで追跡可能なモビルスーツアーカイブ。3D閲覧、技術系譜、紀元年表、地球圏地図。機体・事件に出典付き。",
+      "12紀元の宇宙地図（2D/3D）、3D関連グラフ、技術系譜、69の事件を収録したモビルスーツアーカイブ。出典・中日バイリンガル付き。",
   },
   site: {
     name: "GUNDAM ARCHIVE",

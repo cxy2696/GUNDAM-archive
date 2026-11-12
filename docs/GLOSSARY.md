@@ -30,7 +30,7 @@
 | A.G. | 先进世代 | アドバンスド・ジェネレーション | 0115–0164 | 9 | AGE 系统与维根战争 |
 | R.C. | 复兴世纪 | リギルド・センチュリー | 1014–1015 | 5 | 轨道电梯与光子电池 |
 | P.D. | 灾后纪元 | ポスト・ディザスター | 0323–0325 | 11 | 厄祭战后的火星与地球 |
-| A.S. | 星元 | アド・ステラ | 0122–0128 | 9 | 企业、GUND 格式化 |
+| A.S. | 星元 | アド・ステラ | 0122–0128 | 10 | 企业、GUND 格式化 |
 | A.A. | 后启示录 | アフター・アポカリプス | 0001–0045 | 2 | 本站原创扩展，不计入 11 个正史纪元 |
 
 完整世纪表：[docs/CHRONOLOGY.md](CHRONOLOGY.md)；在线版：[世纪表](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/)。
@@ -59,6 +59,13 @@
 | manifest | 资产清单；记录 LOD、partId、许可、来源 |
 | `seed` 数据 | 已整理但尚未逐项核对到设定集页码的内容 |
 | 静态导出 | `next build` 生成 `out/`，不需要 Node 运行时 |
+| Atlas | 12 纪元的宇宙地图数据（`content/atlas.json`）；2D/3D 共用节点 |
+| Lagrange 点 | 地月系统的 L1–L5；殖民地归属按纪元设定，不按现实比例 |
+| 关联图 | 由实体引用派生的分区图；不写进 JSON，2D/3D 共用 `GraphData` |
+| `ZoomFrame` | 地图/图谱/年轮的缩放+全屏容器；全屏挂到 `body` |
+| `TextZoom` | 世纪表文字缩放；只改字号，不缩放布局 |
+| 检索索引 | 构建期生成、按需 fetch 的 `search-index.{zh,ja}.json` |
+| 链接/路由审计 | `links:check` 查站内 href/锚点；`routes:check` 查 sitemap 导出 |
 
 ## 4. 阅读路径
 
@@ -68,4 +75,4 @@
 - 想接资产：[ASSET_PIPELINE](ASSET_PIPELINE.md) → [DATA_SOURCES](DATA_SOURCES.md)
 - 想了解边界：[GOVERNANCE](GOVERNANCE.md) → [ROADMAP](ROADMAP.md)
 
-> 本项目只维护“可核对的主线档案”，不声称已收录 5,000+ 全衍生型号；外部索引见 [DATA_SOURCES](DATA_SOURCES.md)。
+> 本项目只维护“可核对的主线档案”，不声称已收录 5,000+ 全衍生型号；外部索引见 [DATA_SOURCES](DATA_SOURCES.md)。部署与回滚见 [OPERATIONS](OPERATIONS.md)。

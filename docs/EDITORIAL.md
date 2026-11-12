@@ -1,6 +1,6 @@
 # 编辑风格：准确、简短、可读
 
-> 本页是内容编辑的**语言门禁**。目标是**准确、简短、可读**。`content/` 下的中日文本与 `src/lib/i18n.ts` 的界面文案都遵守这套规则；`npm run language:check` 会在 CI 中检查高频 AI 腔。
+> 本页是内容编辑的**语言门禁**。目标是**准确、简短、可读**。`content/` 下的中日文本与 `src/lib/i18n.ts` 的界面文案都遵守这套规则；`pnpm language:check` 会在 CI 中检查高频 AI 腔。
 
 ## 1. 三条优先级
 
@@ -70,6 +70,6 @@
 - [ ] 没有替使用者下结论
 - [ ] 年龄/军衔/年份有出处或标“约/不详”
 - [ ] 中日文型号、数值、年份一致
-- [ ] `npm run language:check` 通过
+- [ ] `pnpm language:check` 通过
 
 相关：[CONTENT_GUIDE](CONTENT_GUIDE.md) · [GOVERNANCE](GOVERNANCE.md) · [DATA_DICTIONARY](DATA_DICTIONARY.md)

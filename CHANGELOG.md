@@ -3,6 +3,20 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [3.1.1] — 2026-11-12
+
+### Documentation and operability
+
+- Rewrote README/README.ja around a current project description; removed duplicate reading sections and stale counts.
+- Added [OPERATIONS.md](docs/OPERATIONS.md): release flow, GitHub Pages topology, monitoring, rollback, troubleshooting, permissions and periodic maintenance.
+- Added a documentation ownership/update matrix and authority order to `docs/README.md`; DESIGN_SYSTEM rewritten for v3.1 tokens and components, removing the obsolete v2 console/palette notes.
+- Condensed `docs/ROADMAP.md` to current release + next plan + compact release history; detailed history stays in this CHANGELOG.
+- Reordered `docs/DATA_DICTIONARY.md` (Atlas, asset manifest, derived data, migration), added Atlas/routes and derived-data rules.
+- Updated CONTENT_GUIDE (Atlas workflow), CHRONOLOGY (69 events + per-era event counts), MACHINE_COVERAGE, GLOSSARY (A.S. count, project terms), GOVERNANCE and EDITORIAL for v3.1.
+- Extended `docs:check` to verify required documents, package version, canonical content counts and duplicate README headings.
+- Updated package/GitHub/site metadata descriptions.
+- Version bumped to `3.1.1`; pages 854; index 487; events 69; no content-count changes.
+
 ## [3.1.0] — 2026-11-12
 
 ### Added

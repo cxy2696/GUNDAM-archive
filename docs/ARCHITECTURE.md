@@ -1,6 +1,6 @@
 # 架构与决策记录
 
-> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（V2.2）** 与 **目标架构** 的差异，避免把路线图误读成现状。
+> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.1）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. 约束与目标
 
@@ -19,7 +19,7 @@
 | L3 服务层 | NestJS + Zod | **构建期校验** + 纯函数领域逻辑 | 内容服务独立为 NestJS 模块 |
 | L4 数据层 | PostgreSQL 16 + JSONB | `content/*.json` + Zod | Repository 接口后接 Drizzle/Prisma |
 | L5 资产层 | 对象存储 + CDN + 图片服务 | 程序化 LOD-P + 本地 SVG/字体 | 接 glTF LOD0、KTX2、CDN |
-| L6 运营层 | Admin + OpenTelemetry + Sentry | `validate` 脚本 + GitHub Actions | Admin、审计日志、监控 |
+| L6 运营层 | Admin + OpenTelemetry + Sentry | `validate` / `docs:check` / `links:check` / `routes:check` + GitHub Actions | Admin、审计日志、APM |
 
 **边界原则**：页面只依赖 `src/lib/content.ts` 暴露的查询函数；未来换数据库时，页面不需要知道 SQL。查看器只依赖 `Machine.viewer` 与 `asset-manifest` 契约，不直接读内容文件。
 
@@ -56,7 +56,15 @@ next build (output: export) → out/ → CDN
 | `src/lib/format.ts` | 日期、单位、归一化 | 不读文件 |
 | `src/lib/tree.ts` | 谱系布局 | 不改数据 |
 | `src/lib/search.ts` | 纯检索评分 | 不读文件（客户端安全） |
-| `src/lib/search-index.ts` | 从 Bundle 生成索引 | 只允许服务端导入 |
+| `src/lib/search-index.ts` | 从 Bundle 生成索引 | 只允许服务端/构建脚本导入 |
+| `src/lib/geo.ts` | 2D/3D 地图投影 | 不写内容 |
+| `src/lib/graph.ts` | 从实体引用生成关系图数据 | 不写回 JSON |
+| `src/lib/world-land.ts` | 简化世界陆地轮廓（Natural Earth） | 只读数据 |
+| `src/components/atlas/` | 2D/3D 宇宙地图 | 不直接读文件 |
+| `src/components/graph/` | 2D/3D 关联图 | 不直接读文件 |
+| `src/components/ui/` | ZoomFrame / TextZoom | 不写内容 |
+| `src/styles/` | Token 之外的页面样式 | 不复制设计 Token |
+| `scripts/check-*.mjs` | 链接/路由文档审计 | 不改生产数据 |
 | `src/components/viewer/` | 3D / 2D 查看器 | 不直接读内容文件 |
 | `src/app/(site)/[lang]/` | 路由、元数据、页面拼装 | 不重复实现领域规则 |
 | `scripts/validate-content.ts` | CI 门禁 | 不写生产数据 |
@@ -111,17 +119,19 @@ MechViewer (client)
 
 ## 8. 检索
 
-- 构建期生成 487 条索引（148 机体 + 114 人物 + 82 势力 + 69 事件 + 42 作品 + 32 技术标签）。
+- 构建期生成 **487 条**索引（148 机体 + 114 人物 + 82 势力 + 69 事件 + 42 作品 + 32 技术标签），写入 `public/search-index.{zh,ja}.json`；页面按需 fetch，不把索引内联进每个页面。
 - 纯客户端评分：精确/前缀 > 多词命中 > 包含 > 拉丁拼写近似；同分时按类型加权。
 - 索引字段：中/日/英名、型号、别名、驾驶员、阵营、纪元、摘要、技术标签与详情首段。
-- `⌘K` 面板与 `/search` 共用 `searchEntries()`；面板是快速入口，检索页是可分享的完整结果。
+- `⌘K` 面板与 `/search` 共用 `searchEntries()`；面板是快速入口，检索页是可分享的完整结果（`?q=`）。
+- `scripts/build-search-index.ts` 由 `predev` / `prebuild` 自动执行；`NEXT_PUBLIC_BASE_PATH` 会带入 fetch 路径。
 
 ## 9. 部署与缓存
 
 - `output: "export"`：`out/` 可直接放 CDN；无 Node 运行时。
 - 内容更新 = 重新构建，构建产物文件名带内容哈希，CDN 自然失效。
-- GitHub Pages 项目页通过 `NEXT_PUBLIC_BASE_PATH` 适配子路径。
+- GitHub Pages 项目页通过 `NEXT_PUBLIC_BASE_PATH` 适配子路径；CI/Pages 在构建后跑 `links:check` 与 `routes:check`。
 - 当前没有 Redis / ISR；对于“内容变更频率低、读多写少”的档案站，这是成本更低的正确选择。
+- 发布、监控、回滚与排障见 [OPERATIONS](OPERATIONS.md)。
 
 ## 10. 决策记录（ADR 摘要）
 
@@ -130,7 +140,7 @@ MechViewer (client)
 | ADR-001 | 静态导出优先 | 无运行时、CDN 友好、可 GitHub Pages | 无实时写/登录 |
 | ADR-002 | JSON + Zod 作为当前数据层 | 内容契约先固定，迁移 DB 成本低 | 无事务/并发编辑 |
 | ADR-003 | 程序化 LOD-P | 先验证交互与 partId 契约，不被美术阻塞 | 观感非最终品质 |
-| ADR-004 | 客户端索引检索 | 数据量小，零后端 | 大数据量需 Meilisearch |
+| ADR-004 | 构建期索引 + 按需 JSON | 数据量小、零后端、首屏轻 | 大数据量需 Meilisearch |
 | ADR-005 | 不用 Tailwind | 视觉系统高度定制，手写 Token 更可控 | 需要维护 CSS |
 | ADR-006 | 每台机体一个 JSON | PR 冲突小、评审边界清晰 | 读取时需合并 |
 
@@ -144,12 +154,12 @@ MechViewer (client)
 
 迁移不需要改页面组件、查看器或 schema；只需要换 `content.ts` 的实现与部署方式。
 
-## 12. v3 座舱外壳、宇宙地图与关系图
+## 12. v3.1 座舱外壳、宇宙地图与关系图
 
-- **座舱外壳**：`src/styles/cockpit.css` 定义金属边框、舱盖背景、侧 MFD 与操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
+- **座舱外壳**：`src/styles/cockpit.css` 与 `glass.css` 定义毛玻璃白框、舱盖背景、侧 MFD 与可收起操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
 - **宇宙地图**：`content/atlas.json` 是唯一数据源，`src/lib/geo.ts` 负责 2D 正交投影与 3D 坐标，`Atlas2D` 用 SVG，`Atlas3D` 用 R3F + CanvasTexture 生成地球贴图；二者共享同一批节点与选中状态。2D 的 Lagrange 位置由 `lagrangeOrbit()` 从地月几何推导，表面点由 `globePoint()` 投影；3D 只把距离压缩，不改变归属。
 - **关系图**：`src/lib/graph.ts` 从实体引用生成 `GraphData`（中心节点、分区节点、边），`RelationGraph` 负责放射布局、分组弧、碰撞规避与文本索引。图形是纯派生数据，不写入 JSON；新增实体只需补引用，页面自动获得图。
 - **3D 纪元年轮**：`components/chronology/EraWheel3D.tsx` 以机体数决定环半径、以 `order` 决定高度；`EraDemo` 负责选择、URL 同步与 12 列分布图。
 - **缩放与全屏**：`ZoomFrame` 负责地图、纪元年轮、关联图与 3D 视图的缩放与全屏（全屏用 portal 挂到 `body`，避免被座舱的 `backdrop-filter` 限制）；`TextZoom` 用 CSS 变量放大世纪表文字而不改变布局。
 - **3D 关联图**：`RelationGraph3D` 复用 `GraphData`，把分组节点放在放射状三维层，边用曲线连接，支持旋转、缩放、标签开关与点击跳转；所有 `RelationGraph` 实例都能在 2D/3D 间切换。
-- **构建校验**：`scripts/check-links.mjs` 在 build 后遍历 `out/**/*.html`，校验站内 href、目录式 URL 与 `#fragment`；`npm run check` 串起内容、文档、类型、语言、构建、链接与路由七道门；GitHub Pages 构建使用 `NEXT_PUBLIC_BASE_PATH`，审计脚本会自动识别 `/仓库名` 前缀。
+- **构建校验**：`scripts/check-links.mjs` 遍历 `out/**/*.html`，校验站内 href、目录式 URL 与 `#fragment`；`scripts/check-routes.mjs` 校验 sitemap 中每条路由都有带 `<title>` 与 `<main>` 的导出页；`scripts/check-docs.mjs` 校验文档链接、必需文件、版本与数量快照；`pnpm check` 串起七道门。GitHub Pages 使用 `/GUNDAM-archive` 基路径，审计脚本会自动识别前缀。

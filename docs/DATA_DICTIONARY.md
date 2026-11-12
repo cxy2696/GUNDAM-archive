@@ -1,6 +1,6 @@
 # 数据字典
 
-> 代码中的唯一真相源是 `src/lib/schema.ts`。本文是给人读的镜像；两者冲突时以 schema 为准。
+> 版本：v3.1.1（2026-11-12）。代码中的唯一真相源是 `src/lib/schema.ts`；本文是给人读的镜像，两者冲突时以 schema 为准。
 
 ## 0. 通用约定
 
@@ -84,7 +84,7 @@
 
 | 字段 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| `id` | slug | ✓ | `uc` / `fc` / `ac` / `aw` / `cc` / `ce` / `ad` |
+| `id` | slug | ✓ | `uc` / `fc` / `ac` / `aw` / `cc` / `ce` / `ad` / `ag` / `rc` / `pd` / `as` / `aa` |
 | `code` | string | ✓ | `U.C.` 等 |
 | `name` | `{zh,ja,en}` | ✓ | 三语名称 |
 | `order` | number | ✓ | 时间轴/泳道顺序 |
@@ -240,9 +240,9 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 
 **禁止**在数据层存两份换算值。前端需要英制时在展示层换算，并标注 `converted`。
 
-## 9.1 出处覆盖范围
+### 9.1 出处覆盖范围
 
-当前版本的 `sources` 覆盖：
+当前 v3.1 的 `sources` 覆盖：
 
 | 实体 | 是否强制 `sources` | 说明 |
 | --- | --- | --- |
@@ -264,20 +264,11 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 6. 机体驾驶员 ↔ 人物 `machineIds` 双向。
 7. 机体事件 ↔ 事件 `machineIds` 双向。
 8. 人物事件 ↔ 事件 `characterIds` 双向；
-9. 每个 Tag 必须有 `detail`，每个 Event 必须有 `detail`，每个 Character 必须有 `age / rank / origin`。
-9. 人物 `affiliations` 的势力必须存在。
+9. 每个 Tag 必须有 `detail`，每个 Event 必须有 `detail`，每个 Character 必须有 `age / rank / origin`；
+10. 人物 `affiliations` 的势力必须存在；
+11. 地图每个纪元必须有图，节点/航线引用存在，Lagrange 有 orbit，地球/月球有经纬度。
 
-## 11. 资产清单（预留）
-
-未来 glTF 资产使用 `asset-manifest.json`，字段见 [ASSET_PIPELINE.md](ASSET_PIPELINE.md)：`machineSlug, version, scale, bounds, lods[], parts[], materials, animations[], designSheets[]`。当前的 `viewer` 是 LOD-P 占位；两者通过 `machineSlug` 对应。
-
-## 12. 版本与迁移
-
-- 内容变更以 Git 提交为版本；每次发布打 tag。
-- 未来 `content_version` 快照保留历史版本，`?v=` 查询历史。
-- ULID 是目标数据库主键；当前内容层用 slug 作为外键，迁移时映射，不改变 URL。
-
-## 11.5 宇宙地图（atlas.json）
+## 11. 宇宙地图（atlas.json）
 
 `content/atlas.json` 是数组，每项对应一个 `eraId`。字段：
 
@@ -289,8 +280,31 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 - `earth` / `moon` 必须有 `lat` / `lng`；`lagrange` 必须有 `orbit`（L1–L5）；`earthorbit` 用 `distance` + `angle` 表示未分配拉格朗日点的地球轨道；`deep` 用 `distance` + `angle` 表示远域。
 - `priority` 1 = 始终标注，2 = 有空间时标注，3 = 只在列表中出现。
 - `kind` 为 `capital | city | colony | station | fortress | battlefield | elevator | region | fleet`。
-- 轨道距离是压缩示意；`geography` 必须写明该纪元的编制依据（如 U.C. 0084 年重编），`sources` 必填。
+- 轨道距离是压缩示意；`geography` 必须写明该纪元的编制依据（如 U.C. 0084 年重编），`sources` 至少 1 条。
 - 章节校验会检查：每个纪元必须有图；节点/航线引用的 faction / place 必须存在；Lagrange 节点必须有 orbit；地球/月球节点必须有经纬度。
 
-`routes[]`：`from, to, kind(supply|invasion|migration), label?`，用于 2D/3D 的航道弧线。
+`routes[]`：`from, to, kind(supply|invasion|migration), label?`，用于 2D/3D 的航道弧线；两端必须指向已存在节点。
 
+## 12. 资产清单（预留）
+
+未来 glTF 资产使用 `asset-manifest.json`，字段见 [ASSET_PIPELINE.md](ASSET_PIPELINE.md)：`machineSlug, version, scale, bounds, lods[], parts[], materials, animations[], designSheets[]`。当前的 `viewer` 是 LOD-P 占位；两者通过 `machineSlug` 对应。
+
+## 13. 派生数据（不落 JSON）
+
+以下结构在构建/渲染时生成，不写入 `content/`：
+
+| 数据 | 生成位置 | 说明 |
+| --- | --- | --- |
+| 谱系布局 | `src/lib/tree.ts` | 从 `edges` + 代际计算坐标，不持久化 |
+| 关联图 | `src/lib/graph.ts` | 从实体引用生成中心/分组/边，2D/3D 共用 |
+| 检索索引 | `scripts/build-search-index.ts` | 写入 `public/search-index.{zh,ja}.json`，按需 fetch |
+| 地图投影 | `src/lib/geo.ts` | 经纬度/轨道 → 2D/3D 坐标 |
+| 统计/分布 | 页面与服务端查询 | 机体数、事件数、纪元分布，不在 JSON 冗余 |
+
+新增实体只需补引用；派生图与索引会自动更新。不要在内容里手写图坐标或索引条目。
+
+## 14. 版本与迁移
+
+- 内容变更以 Git 提交为版本；每次发布打 tag。
+- 未来 `content_version` 快照保留历史版本，`?v=` 查询历史。
+- ULID 是目标数据库主键；当前内容层用 slug 作为外键，迁移时映射，不改变 URL。

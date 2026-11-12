@@ -62,11 +62,11 @@ U.C. 横跨 0223 年、二十多部作品，机体谱系最长；F.C. 只有一�
 ## 5. 如何验证“补全”不是口号
 
 ```bash
-npm run validate      # schema、外键、谱系无环、双向关联
-npm run typecheck
-npm run build         # 148 台机体的静态页面全部生成
-npm run links:check   # 站内链接与锚点
-npm run routes:check  # sitemap 路由完整性
+pnpm validate         # schema、外键、谱系无环、双向关联
+pnpm typecheck
+pnpm build            # 148 台机体的静态页面全部生成
+pnpm links:check      # 站内链接与锚点
+pnpm routes:check     # sitemap 路由完整性
 ```
 
 打开 `/zh/chronology/`，页面底部有**按纪元分组的全机体总表**；每台机体都能点进详情页，查看势力、初登场、作品、武装、谱系边与出处。数量、名称、年份都由内容数据生成，不靠手工表格对齐。
@@ -77,6 +77,8 @@ npm run routes:check  # sitemap 路由完整性
 2. 复制 `docs/templates/machine.template.json` 到 `content/machines/<slug>.json`。
 3. 填写 `eraId`、`factionId`、`workIds`、`sources`；没有的参数写 `null`。
 4. 如有驾驶员，补 `content/characters.json` 的 `machineIds` 并保持双向。
-5. 跑 `npm run validate && npm run build`，再更新本页与 `docs/CHRONOLOGY.md` 的计数。
+5. 跑 `pnpm check`，再更新本页、README 与 `docs/CHRONOLOGY.md` 的计数。
+
+运营与回滚见 [OPERATIONS](OPERATIONS.md)；字段与 Atlas 见 [DATA_DICTIONARY](DATA_DICTIONARY.md)。
 
 相关文档：[世纪表](CHRONOLOGY.md) · [内容指南](CONTENT_GUIDE.md) · [数据字典](DATA_DICTIONARY.md) · [来源与版权](DATA_SOURCES.md)

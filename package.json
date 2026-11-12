@@ -1,8 +1,8 @@
 {
   "name": "gundam-archive",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": true,
-  "description": "GUNDAM Archive — a traceable, bilingual mobile-suit knowledge archive.",
+  "description": "GUNDAM Archive — an interactive, traceable mobile-suit archive with a 12-era 2D/3D atlas, 3D relationship graphs, bilingual content and static export.",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

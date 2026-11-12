@@ -1,6 +1,6 @@
 # 内容生产指南
 
-> 面向内容编辑、考据贡献者与 Review 者。工程实现见 [ARCHITECTURE.md](ARCHITECTURE.md)，字段逐项定义见 [DATA_DICTIONARY.md](DATA_DICTIONARY.md)。
+> 面向内容编辑、考据贡献者与 Review 者。当前快照：148 机体 / 69 事件 / 82 势力 / 114 人物。工程实现见 [ARCHITECTURE.md](ARCHITECTURE.md)，字段逐项定义见 [DATA_DICTIONARY.md](DATA_DICTIONARY.md)，发布流程见 [OPERATIONS.md](OPERATIONS.md)。
 
 ## 0. 三条硬规则
 
@@ -30,6 +30,7 @@
 | 地点 | `content/places.json` | 地球坐标或拉格朗日点 |
 | 技术标签 | `content/tags.json` | 受控词表，先加标签再用 |
 | 纪元 | `content/eras.json` | 注册表，含 `span` / `window` |
+| 宇宙地图 | `content/atlas.json` | 每个纪元一项；节点、航线、地理说明、出处 |
 
 ## 2. 新增一台机体（10 分钟）
 
@@ -151,14 +152,23 @@ cp docs/templates/machine.template.json content/machines/my-machine.json
 ### 2.9 校验
 
 ```bash
-pnpm validate
-pnpm typecheck
-pnpm build
+pnpm check        # validate → docs → typecheck → language → build → links → routes
 ```
 
-校验通过后再开 PR。若只改文本，至少跑 `validate`。
+`pnpm check` 会重新生成检索索引、构建 854 个页面，并审计站内链接与全部 sitemap 路由。若只改文本，至少跑 `pnpm validate && pnpm language:check`。
+
+## 2.10 新增/修正宇宙地图
+
+1. 在 `content/atlas.json` 找到对应 `eraId`，没有则新增一项。
+2. 每个纪元必须有 `geography`（中文+日文）、`sources`、`bodies`、`focus`、`nodes`、`routes`。
+3. `anchor` 为 `earth | moon | mars | venus | jupiter | lagrange | earthorbit | deep`；`earth`/`moon` 必须有 `lat`/`lng`，`lagrange` 必须有 `orbit`。
+4. 节点引用的 `factionId` / `placeId` 必须存在；航线两端必须指向已有节点。
+5. 轨道距离是压缩示意，不宣称真实比例；U.C. 0084 年重编、C.E. 的 L3/L4/L5 等设定差异写进 `geography`，不要静默改图。
+6. 字段与校验见 [DATA_DICTIONARY](DATA_DICTIONARY.md) 第 11 节；2D/3D 共用同一批节点。
 
 ## 3. 新增事件
+
+当前 69 条，按 `era` / `battle` / `incident` 分级。
 
 1. 在 `content/events.json` 加对象，`id` 唯一。
 2. `date` 使用 `{ year, month?, day?, precision }`；`precision` 为 `year|month|day|approximate`。
@@ -167,7 +177,7 @@ pnpm build
 5. `factionIds` / `machineIds` / `characterIds` 必须存在，且相关条目要回指。
 6. `sources` 至少一条。
 
-事件时间会同时进入年表与相关机体/人物/势力页；不要把“一年战争”这种时代级事件与“某次遭遇战”混在同一粒度。
+事件时间会同时进入年表与相关机体/人物/势力页；不要把“一年战争”这种时代级事件与“某次遭遇战”混在同一粒度。新增事件应尽量给 2 段 `detail`：第一段背景/经过，第二段结果/影响。
 
 ## 4. 新增人物
 
@@ -211,8 +221,9 @@ pnpm build
 - [ ] 驾驶员/事件/人物双向回指
 - [ ] `sources` 至少一条；争议条目已标 `disputed`
 - [ ] `dataQuality` 与核对程度匹配
-- [ ] `pnpm validate`、`pnpm typecheck`、`pnpm build` 通过
-- [ ] PR 附页面截图（机体页需含 3D 与参数区）
+- [ ] `pnpm check` 全部通过（含链接与路由审计）
+- [ ] README/README.ja 数量快照、CHRONOLOGY、MACHINE_COVERAGE 已同步
+- [ ] PR 附页面截图（机体页需含 3D 与参数区；地图/图谱改动附 2D/3D）
 
 ## 9. 常见错误
 
@@ -237,5 +248,6 @@ docs(content): add Gelgoog production note
 
 1. 新增/修改的条目列表；
 2. 出处截图或页码；
-3. 页面截图（机体页含 3D、参数、谱系）；
-4. 若涉及争议，列出各方说法。
+3. 页面截图（机体页含 3D、参数、谱系；地图/图谱附 2D/3D）；
+4. 若涉及争议，列出各方说法；
+5. 已同步的文档与数量快照。

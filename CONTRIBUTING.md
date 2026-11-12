@@ -39,7 +39,7 @@ pnpm dev
 - 内容读取只能在服务端（`src/lib/content.ts`）；客户端只接收纯数据。
 - 样式：使用 `src/app/globals.css` 的 Token 与 `src/styles/` 的类；不要引入第二套设计系统。
 - 双语文案：新增 UI 文案必须同时补 `src/lib/i18n.ts` 的 `zh` 与 `ja`；语言切换不得丢失 path / query / hash。
-- 文档：字段表只在 `docs/DATA_DICTIONARY.md` 维护；改 schema 先改字段表，再改指南。文档索引与权威边界见 `docs/README.md`。
+- 文档：字段表只在 `docs/DATA_DICTIONARY.md` 维护；改 schema 先改字段表，再改指南。文档索引与权威边界见 `docs/README.md`，发布/回滚见 `docs/OPERATIONS.md`。
 - 提交信息：Conventional Commits
 
 ```
@@ -61,6 +61,7 @@ chore(ci): cache pnpm store
 - [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)：字段与枚举
 - [docs/GOVERNANCE.md](docs/GOVERNANCE.md)：出处分级与版权边界
 - [docs/EDITORIAL.md](docs/EDITORIAL.md)：语言风格、禁用模板句与长度规则
+- [docs/OPERATIONS.md](docs/OPERATIONS.md)：发布、监控、回滚与排障
 
 最低要求：
 
@@ -70,7 +71,8 @@ chore(ci): cache pnpm store
 4. 中日文本的型号、数值、年份一致；
 5. `pnpm validate` 通过；
 6. 同步 `docs/MACHINE_COVERAGE.md` 与 `docs/CHRONOLOGY.md` 的计数；
-7. PR 附出处与页面截图。
+7. PR 附出处与页面截图；地图/图谱改动附 2D/3D 截图；
+8. 同步 README/CHRONOLOGY/MACHINE_COVERAGE 的数量快照，跑 `pnpm check`。
 
 ## 5. Pull Request
 
