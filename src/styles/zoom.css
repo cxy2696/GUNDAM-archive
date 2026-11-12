@@ -1,0 +1,215 @@
+/* ============================================================
+   ZOOM FRAME — floating zoom controls for maps, charts, graphs
+   ============================================================ */
+
+.zoom-frame {
+  position: relative;
+}
+
+.zoom-frame__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-height: 32px;
+  padding: 3px 2px 5px;
+}
+
+.zoom-frame__label {
+  margin-right: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.zoom-frame__keys {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 4px;
+  background: rgba(5, 12, 22, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.zoom-frame__keys button {
+  width: 28px;
+  height: 26px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 2px;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.zoom-frame__keys button:hover {
+  color: var(--cyan);
+  border-color: var(--cyan-line);
+  background: rgba(99, 230, 255, 0.08);
+}
+
+.zoom-frame__keys > span {
+  min-width: 42px;
+  text-align: center;
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+
+.zoom-frame__scroll {
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.zoom-frame__scale {
+  transform-origin: top left;
+  transition: transform 160ms var(--ease);
+}
+
+.zoom-frame.is-full {
+  position: fixed;
+  inset: 0;
+  z-index: 240;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 18px 18px;
+  background:
+    radial-gradient(900px 600px at 50% 0%, rgba(154, 134, 255, 0.14), transparent 65%),
+    #03070f;
+}
+
+.zoom-frame.is-full .zoom-frame__bar {
+  flex: none;
+}
+
+.zoom-frame.is-full .zoom-frame__scroll {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #040912;
+}
+
+.zoom-frame.is-full .zoom-frame__label {
+  color: var(--cyan);
+}
+
+@media (max-width: 760px) {
+  .zoom-frame__bar {
+    min-height: 30px;
+  }
+  .zoom-frame__keys button {
+    width: 26px;
+    height: 24px;
+  }
+  .zoom-frame__label {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* text-only zoom for tables */
+.text-zoom {
+  position: relative;
+}
+
+.text-zoom__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-height: 34px;
+  padding: 2px 0 6px;
+}
+
+.text-zoom__bar > span {
+  margin-right: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.text-zoom__bar > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 4px;
+  background: rgba(5, 12, 22, 0.78);
+}
+
+.text-zoom__bar button {
+  min-width: 32px;
+  height: 26px;
+  padding: 0 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 2px;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.text-zoom__bar button:hover {
+  color: var(--cyan);
+  border-color: var(--cyan-line);
+}
+
+.text-zoom__bar span.mono {
+  min-width: 44px;
+  text-align: center;
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+
+.text-zoom .chronology-table td,
+.text-zoom .chronology-table th,
+.text-zoom .roster-table td,
+.text-zoom .roster-table th {
+  font-size: calc(14.5px * var(--text-zoom, 1));
+}
+
+.text-zoom .chronology-table td.mono,
+.text-zoom .chronology-table th.mono,
+.text-zoom .roster-table td.mono {
+  font-size: calc(13.5px * var(--text-zoom, 1));
+}
+
+.text-zoom .roster-table__ja,
+.text-zoom .roster-table__meta {
+  font-size: calc(12px * var(--text-zoom, 1));
+}
+
+/* fullscreen should actually use the viewport */
+.zoom-frame.is-full .zoom-frame__scroll {
+  height: calc(100vh - 96px);
+}
+
+.zoom-frame.is-full .zoom-frame__scale {
+  height: 100%;
+}
+
+.zoom-frame.is-full .atlas-stage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoom-frame.is-full .atlas-stage .atlas3d,
+.zoom-frame.is-full .atlas-stage .atlas2d {
+  flex: 1;
+  min-height: 0;
+}
+
+.zoom-frame.is-full .atlas3d {
+  height: 100%;
+}
+
+.zoom-frame.is-full .atlas2d__svg {
+  height: 100%;
+  width: 100%;
+}

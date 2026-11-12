@@ -69,7 +69,22 @@ export default async function MachinesPage({
         </div>
       </header>
       <MachineExplorer
-        machines={bundle.machines}
+        machines={bundle.machines.map(
+          ({ id, modelCode, name, canon, eraId, factionId, summary, specs, tags, viewer, aliases, firstAppear }) => ({
+            id,
+            modelCode,
+            name,
+            canon,
+            eraId,
+            factionId,
+            summary,
+            specs,
+            tags,
+            viewer,
+            aliases,
+            firstAppear,
+          }),
+        )}
         eras={bundle.eras}
         factions={bundle.factions}
         tags={bundle.tags}

@@ -73,7 +73,9 @@
       "characterId": "dearka-elsman"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-heliopolis"
+  ],
   "workIds": [
     "seed-2002"
   ],

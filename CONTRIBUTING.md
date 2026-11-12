@@ -24,10 +24,13 @@ pnpm dev
 | `pnpm docs:check` | 所有 Markdown 本地链接可解析 |
 | `pnpm language:check` | 扫描模板句、AI 腔与过长段落 |
 | `pnpm typecheck` | TypeScript |
-| `pnpm build` | 静态导出到 `out/` |
+| `pnpm build` | 静态导出到 `out/`（先自动生成检索索引） |
+| `pnpm links:check` | 构建后校验所有站内链接与 `#fragment` |
+| `pnpm routes:check` | 构建后校验 sitemap 中每条路由都有可打开的 HTML |
+| `pnpm check` | 上述内容、文档、类型、语言、构建、链接、路由门禁串联 |
 | `pnpm preview` | 本地预览 `out/`（python3） |
 
-提交前至少运行 `pnpm validate && pnpm docs:check && pnpm language:check && pnpm typecheck`；改页面/查看器再跑 `pnpm build`。
+提交前至少运行 `pnpm check`；若只改文档，可先跑 `pnpm docs:check && pnpm language:check`。
 
 ## 3. 代码贡献
 

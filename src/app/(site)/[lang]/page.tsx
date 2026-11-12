@@ -134,6 +134,30 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               <i />
             </div>
             <MechViewer machine={hero} lang={typed} labels={dict.viewer} hero />
+            <div className="hero__mfd-grid" aria-hidden />
+            <div className="hero__mfd-specs" aria-hidden>
+              <div className="hero__mfd-col">
+                <span className="micro">FRAME</span>
+                <b className="mono">LOD-P</b>
+                <span className="micro">ARMOR</span>
+                <b>{hero.specs.armor ? pick(hero.specs.armor, typed) : "N/A"}</b>
+                <span className="micro">POWER</span>
+                <b className="mono">{hero.specs.powerOutput ? `${hero.specs.powerOutput} kW` : "N/A"}</b>
+                <span className="micro">TAGS</span>
+                <b className="mono">{String(hero.tags.length).padStart(2, "0")}</b>
+              </div>
+              <div className="hero__mfd-col hero__mfd-col--right">
+                <span className="micro">HEIGHT</span>
+                <b className="mono">{hero.specs.heightOverall ? `${hero.specs.heightOverall.toFixed(1)} M` : "N/A"}</b>
+                <span className="micro">WEIGHT</span>
+                <b className="mono">{hero.specs.weightFull ? `${hero.specs.weightFull.toFixed(1)} T` : "N/A"}</b>
+                <span className="micro">THRUST</span>
+                <b className="mono">{hero.specs.thrust ? `${hero.specs.thrust} KGF` : "N/A"}</b>
+                <span className="micro">SYNC</span>
+                <b className="mono">99.8%</b>
+              </div>
+            </div>
+
             <div className="hero__caption">
               <span className="mono">{hero.modelCode}</span>
               <span>{pick(hero.name, typed)}</span>

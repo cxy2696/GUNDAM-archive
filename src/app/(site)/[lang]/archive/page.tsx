@@ -5,6 +5,8 @@ import { getBundle } from "@/lib/content";
 import { getDict, isLang, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { FactionEmblem, CharacterMark } from "@/components/Emblems";
+import { FactionGraphExplorer } from "@/components/archive/FactionGraphExplorer";
+import { buildEraFactionGraph, type GraphData } from "@/lib/graph";
 
 export async function generateMetadata({
   params,
@@ -34,6 +36,11 @@ export default async function ArchivePage({ params }: { params: Promise<{ lang: 
       a.name[typed].localeCompare(b.name[typed], typed === "ja" ? "ja" : "zh"),
   );
   const works = [...bundle.works].sort((a, b) => a.year - b.year);
+  const factionGraphs: Record<string, GraphData> = {};
+  for (const era of bundle.eras) {
+    const graph = buildEraFactionGraph(era.id, bundle, typed, dict);
+    if (graph) factionGraphs[era.id] = graph;
+  }
 
   return (
     <>
@@ -74,6 +81,8 @@ export default async function ArchivePage({ params }: { params: Promise<{ lang: 
       </header>
 
       <div className="archive-page container">
+        <FactionGraphExplorer eras={bundle.eras} graphs={factionGraphs} lang={typed} dict={dict} />
+
         <section id="factions" className="archive-section">
           <div className="section__top">
             <span className="micro">01 / {dict.archive.factions}</span>

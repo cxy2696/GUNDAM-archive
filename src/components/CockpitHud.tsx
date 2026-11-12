@@ -64,29 +64,42 @@ export function CockpitHud({
 
   return (
     <>
+      <div className="canopy" aria-hidden="true">
+        <span className="canopy__planet" />
+        <span className="canopy__hull" />
+        <span className="canopy__wall canopy__wall--l" />
+        <span className="canopy__wall canopy__wall--r" />
+        <span className="canopy__beam canopy__beam--a" />
+        <span className="canopy__beam canopy__beam--b" />
+        <span className="canopy__deck" />
+        <span className="canopy__glare" />
+        <span className="canopy__vignette" />
+      </div>
+
       <div className={`hud-layer ${isHome ? "" : "hud-layer--inner"}`.trim()} aria-hidden="true">
         <span className="hud-corner hud-corner--tl" />
         <span className="hud-corner hud-corner--tr" />
         <span className="hud-corner hud-corner--bl" />
         <span className="hud-corner hud-corner--br" />
-        <span className="cockpit-canopy" />
-        <span className="cockpit-side cockpit-side--left"><i>MFD-01 / TACTICAL</i></span>
-        <span className="cockpit-side cockpit-side--right"><i>MFD-02 / SENSOR</i></span>
-        <span className="cockpit-console" />
         <span className="hud-scan" />
-        <span className="hud-reticle"><i /></span>
+        <span className="hud-reticle">
+          <i />
+        </span>
         <div className="hud-rail hud-rail--top">
           <span>GUNDAM ARCHIVE / COCKPIT LINK</span>
-          <span>{time} / SYS NOMINAL</span>
+          <span>
+            {time} / SYS NOMINAL
+          </span>
         </div>
         <div className="hud-rail hud-rail--bottom">
-          <span>MS {String(machineCount).padStart(3, "0")} / ERA {String(eraCount).padStart(2, "0")}</span>
+          <span>
+            MS {String(machineCount).padStart(3, "0")} / ERA {String(eraCount).padStart(2, "0")}
+          </span>
           <span>FCS ONLINE / {dict.common.hudLink}</span>
         </div>
-        <div className="hud-side hud-side--left">ORBIT / 00</div>
-        <div className="hud-side hud-side--right">FRAME / LOD-P</div>
+        <div className="hud-side hud-side--left">ORBIT / 00 — CANOPY VIEW</div>
+        <div className="hud-side hud-side--right">FRAME / LOD-P — MAIN MFD</div>
       </div>
-
     </>
   );
 }

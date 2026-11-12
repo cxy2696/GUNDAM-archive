@@ -80,7 +80,10 @@
       "characterId": "mikazuki-augus"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "hashmal-awakening",
+    "battle-of-vingolf"
+  ],
   "workIds": [
     "ibo-2015"
   ],

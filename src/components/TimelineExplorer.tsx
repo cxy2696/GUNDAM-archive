@@ -37,15 +37,19 @@ function eraEventRows(events: EventRecord[], domain: [number, number]) {
   const sorted = [...events].sort((a, b) => dateFraction(a.date) - dateFraction(b.date));
   const rowEnds: number[] = [];
   return sorted.map((event) => {
-    const left = ((dateFraction(event.date) - domain[0]) / (domain[1] - domain[0])) * 100;
-    let row = rowEnds.findIndex((end) => left > end + 14);
+    const raw = ((dateFraction(event.date) - domain[0]) / (domain[1] - domain[0])) * 100;
+    // Keep labels away from both edges so they cannot pile up at 96%.
+    const left = 6 + (Math.min(100, Math.max(0, raw)) / 100) * 88;
+    const width = 17;
+    let row = rowEnds.findIndex((end) => left > end + width);
     if (row === -1) {
       row = rowEnds.length;
       rowEnds.push(left);
     } else {
       rowEnds[row] = left;
     }
-    return { event, left, row };
+    const align = left > 79 ? "end" : left < 21 ? "start" : "center";
+    return { event, left, raw, row, align };
   });
 }
 
@@ -140,7 +144,7 @@ export function TimelineExplorer({
           era,
           domain,
           rows,
-          height: Math.max(144, 66 + (maxRow + 1) * 38),
+          height: Math.max(168, 86 + (maxRow + 1) * 54),
           step: tickStep(domain, tickMode),
         };
       }),
@@ -247,7 +251,7 @@ export function TimelineExplorer({
                   ))}
                 </div>
 
-                {rows.map(({ event, left, row }) => {
+                {rows.map(({ event, left, row, align }) => {
                   const end = event.endDate ? dateFraction(event.endDate) : null;
                   const width = end ? Math.max(0.5, ((end - dateFraction(event.date)) / (domain[1] - domain[0])) * 100) : 0;
                   const isSelected = selectedId === event.id;
@@ -262,8 +266,8 @@ export function TimelineExplorer({
                       )}
                       <button
                         type="button"
-                        className={`tl-event tl-event--${event.scale} ${isSelected ? "is-selected" : ""}`}
-                        style={{ left: `${Math.min(96, Math.max(4, left))}%`, top: 28 + row * 38 }}
+                        className={`tl-event tl-event--${event.scale} tl-event--align-${align} ${isSelected ? "is-selected" : ""}`}
+                        style={{ left: `${left}%`, top: 30 + row * 54 }}
                         onClick={() => setSelectedId(event.id)}
                         aria-expanded={isSelected}
                       >

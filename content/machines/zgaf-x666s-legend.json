@@ -80,7 +80,9 @@
       "characterId": "rey-za-burrel"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-messiah"
+  ],
   "workIds": [
     "seed-destiny-2004"
   ],

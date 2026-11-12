@@ -86,7 +86,9 @@
       }
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-messiah"
+  ],
   "workIds": [
     "seed-destiny-2004"
   ],

@@ -1,6 +1,23 @@
 import Link from "next/link";
 import { pick, type Dictionary } from "@/lib/i18n";
 import type { Era, Faction, Lang, Machine } from "@/lib/schema";
+
+/** The subset of a machine record the card actually renders. */
+export type MachineCardData = Pick<
+  Machine,
+  | "id"
+  | "modelCode"
+  | "name"
+  | "canon"
+  | "eraId"
+  | "factionId"
+  | "summary"
+  | "specs"
+  | "tags"
+  | "viewer"
+  | "aliases"
+  | "firstAppear"
+>;
 import { MechGlyph } from "./MechGlyph";
 
 export function MachineCard({
@@ -12,7 +29,7 @@ export function MachineCard({
   index,
   large = false,
 }: {
-  machine: Machine;
+  machine: MachineCardData;
   era?: Era;
   faction?: Faction;
   lang: Lang;

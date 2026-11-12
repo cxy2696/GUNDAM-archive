@@ -80,7 +80,10 @@
       "characterId": "allelujah-haptism"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "operation-fallen-angels",
+    "operation-gundam-capture"
+  ],
   "workIds": [
     "00-2007"
   ],

@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
   assetPrefix: basePath || undefined,
   images: { unoptimized: true },
   reactStrictMode: true,
+  devIndicators: false,
   poweredByHeader: false,
   outputFileTracingRoot: process.cwd(),
 };

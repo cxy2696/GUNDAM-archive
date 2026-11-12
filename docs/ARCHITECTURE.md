@@ -111,9 +111,9 @@ MechViewer (client)
 
 ## 8. 检索
 
-- 构建期生成 438 条索引（148 机体 + 114 人物 + 51 势力 + 51 事件 + 42 作品 + 32 技术标签）。
-- 纯客户端评分：精确命中 > 前缀 > 包含；同分时机体优先。
-- 索引字段：中/日/英名、型号、别名、阵营、纪元、摘要关键词。
+- 构建期生成 487 条索引（148 机体 + 114 人物 + 82 势力 + 69 事件 + 42 作品 + 32 技术标签）。
+- 纯客户端评分：精确/前缀 > 多词命中 > 包含 > 拉丁拼写近似；同分时按类型加权。
+- 索引字段：中/日/英名、型号、别名、驾驶员、阵营、纪元、摘要、技术标签与详情首段。
 - `⌘K` 面板与 `/search` 共用 `searchEntries()`；面板是快速入口，检索页是可分享的完整结果。
 
 ## 9. 部署与缓存
@@ -143,3 +143,13 @@ MechViewer (client)
 5. 查看器资产切换到 `machine_asset` + 签名 URL；manifest 契约不变。
 
 迁移不需要改页面组件、查看器或 schema；只需要换 `content.ts` 的实现与部署方式。
+
+## 12. v3 座舱外壳、宇宙地图与关系图
+
+- **座舱外壳**：`src/styles/cockpit.css` 定义金属边框、舱盖背景、侧 MFD 与操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
+- **宇宙地图**：`content/atlas.json` 是唯一数据源，`src/lib/geo.ts` 负责 2D 正交投影与 3D 坐标，`Atlas2D` 用 SVG，`Atlas3D` 用 R3F + CanvasTexture 生成地球贴图；二者共享同一批节点与选中状态。2D 的 Lagrange 位置由 `lagrangeOrbit()` 从地月几何推导，表面点由 `globePoint()` 投影；3D 只把距离压缩，不改变归属。
+- **关系图**：`src/lib/graph.ts` 从实体引用生成 `GraphData`（中心节点、分区节点、边），`RelationGraph` 负责放射布局、分组弧、碰撞规避与文本索引。图形是纯派生数据，不写入 JSON；新增实体只需补引用，页面自动获得图。
+- **3D 纪元年轮**：`components/chronology/EraWheel3D.tsx` 以机体数决定环半径、以 `order` 决定高度；`EraDemo` 负责选择、URL 同步与 12 列分布图。
+- **缩放与全屏**：`ZoomFrame` 负责地图、纪元年轮、关联图与 3D 视图的缩放与全屏（全屏用 portal 挂到 `body`，避免被座舱的 `backdrop-filter` 限制）；`TextZoom` 用 CSS 变量放大世纪表文字而不改变布局。
+- **3D 关联图**：`RelationGraph3D` 复用 `GraphData`，把分组节点放在放射状三维层，边用曲线连接，支持旋转、缩放、标签开关与点击跳转；所有 `RelationGraph` 实例都能在 2D/3D 间切换。
+- **构建校验**：`scripts/check-links.mjs` 在 build 后遍历 `out/**/*.html`，校验站内 href、目录式 URL 与 `#fragment`；`npm run check` 串起内容、文档、类型、语言、构建、链接与路由七道门；GitHub Pages 构建使用 `NEXT_PUBLIC_BASE_PATH`，审计脚本会自动识别 `/仓库名` 前缀。

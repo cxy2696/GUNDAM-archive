@@ -80,7 +80,9 @@
       "characterId": "tieria-erde"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "operation-gundam-capture"
+  ],
   "workIds": [
     "00-2007"
   ],

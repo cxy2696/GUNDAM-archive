@@ -244,8 +244,69 @@ export const machineSchema = z.object({
 });
 export type Machine = z.infer<typeof machineSchema>;
 
+/* ------------------------------------------------------------------
+   ATLAS — per-era universe geography for the 2D / 3D map.
+   Positions are schematic: Lagrange assignments and relative order
+   follow the setting, distances are compressed for legibility.
+   ------------------------------------------------------------------ */
+
+export const ATLAS_ANCHORS = ["earth", "moon", "mars", "venus", "jupiter", "lagrange", "earthorbit", "deep"] as const;
+export const ATLAS_KINDS = [
+  "capital",
+  "city",
+  "colony",
+  "station",
+  "fortress",
+  "battlefield",
+  "elevator",
+  "region",
+  "fleet",
+] as const;
+
+export const atlasNodeSchema = z.object({
+  id: slug,
+  name: localized,
+  kind: z.enum(ATLAS_KINDS),
+  anchor: z.enum(ATLAS_ANCHORS),
+  orbit: z.enum(["L1", "L2", "L3", "L4", "L5"]).optional(),
+  /** Degrees around the Earth–Moon plane for Lagrange / deep anchors. */
+  angle: z.number().min(0).max(360).optional(),
+  /** Surface coordinates for earth / moon / planet anchors. */
+  lat: z.number().min(-90).max(90).optional(),
+  lng: z.number().min(-180).max(180).optional(),
+  /** Distance from Earth in Earth radii, used by the far anchors. */
+  distance: z.number().positive().optional(),
+  factionId: slug.optional(),
+  placeId: slug.optional(),
+  note: localized.optional(),
+  /** 1 = always label, 2 = label on focus, 3 = list only. */
+  priority: z.number().int().min(1).max(3).default(2),
+});
+export type AtlasNode = z.infer<typeof atlasNodeSchema>;
+
+export const atlasRouteSchema = z.object({
+  from: slug,
+  to: slug,
+  kind: z.enum(["supply", "invasion", "migration"]),
+  label: localized.optional(),
+});
+
+export const atlasEraSchema = z.object({
+  eraId: slug,
+  bodies: z.array(z.enum(["earth", "moon", "mars", "venus", "jupiter"])).min(1),
+  /** Orthographic globe centre used by the 2D Earth view. */
+  focus: z.object({ lon: z.number(), lat: z.number() }).default({ lon: 105, lat: 20 }),
+  nodes: z.array(atlasNodeSchema).min(3),
+  routes: z.array(atlasRouteSchema).default([]),
+  geography: localized,
+  layoutNote: localized.optional(),
+  sources: z.array(sourceRef).min(1),
+});
+export type AtlasEra = z.infer<typeof atlasEraSchema>;
+
 export const bundleSchema = z.object({
   eras: z.array(eraSchema).min(1),
+  atlas: z.array(atlasEraSchema).min(1),
   factions: z.array(factionSchema),
   characters: z.array(characterSchema),
   works: z.array(workSchema),
@@ -274,6 +335,7 @@ export function validateBundle(bundle: Bundle): string[] {
   uniq("events", bundle.events.map((e) => e.id));
   uniq("tags", bundle.tags.map((t) => t.id));
   uniq("machines", bundle.machines.map((m) => m.id));
+  uniq("atlas", bundle.atlas.map((a) => a.eraId));
 
   const eraIds = new Set(bundle.eras.map((e) => e.id));
   const factionIds = new Set(bundle.factions.map((f) => f.id));
@@ -333,6 +395,28 @@ export function validateBundle(bundle: Bundle): string[] {
   for (const c of bundle.characters) {
     for (const field of ["age", "rank", "origin"] as const) {
       if (!c[field]) errors.push(`character ${c.id}: 缺少 ${field}`);
+    }
+  }
+
+  const atlasEraIds = new Set(bundle.atlas.map((a) => a.eraId));
+  for (const era of bundle.eras) {
+    if (!atlasEraIds.has(era.id)) errors.push(`atlas: 缺少纪元 ${era.id} 的地图`);
+  }
+  for (const map of bundle.atlas) {
+    checkRef(`atlas ${map.eraId}.eraId`, map.eraId, eraIds);
+    const nodeIds = new Set(map.nodes.map((node) => node.id));
+    if (nodeIds.size !== map.nodes.length) errors.push(`atlas ${map.eraId}: 节点 id 重复`);
+    for (const node of map.nodes) {
+      if (node.factionId) checkRef(`atlas ${map.eraId}.${node.id}.factionId`, node.factionId, factionIds);
+      if (node.placeId) checkRef(`atlas ${map.eraId}.${node.id}.placeId`, node.placeId, placeIds);
+      if (node.anchor === "lagrange" && !node.orbit) errors.push(`atlas ${map.eraId}.${node.id}: Lagrange 节点缺少 orbit`);
+      if ((node.anchor === "earth" || node.anchor === "moon") && (node.lat === undefined || node.lng === undefined)) {
+        errors.push(`atlas ${map.eraId}.${node.id}: 地表节点缺少 lat/lng`);
+      }
+    }
+    for (const route of map.routes) {
+      checkRef(`atlas ${map.eraId}.routes.from`, route.from, nodeIds);
+      checkRef(`atlas ${map.eraId}.routes.to`, route.to, nodeIds);
     }
   }
 

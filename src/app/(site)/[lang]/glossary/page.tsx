@@ -5,6 +5,8 @@ import { getBundle } from "@/lib/content";
 import { getDict, isLang, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { GlossaryExplorer } from "@/components/GlossaryExplorer";
+import { GlossaryGraphTools } from "@/components/glossary/GlossaryGraphTools";
+import { buildTagGraph, type GraphData } from "@/lib/graph";
 
 export async function generateMetadata({
   params,
@@ -32,6 +34,11 @@ export default async function GlossaryPage({ params }: { params: Promise<{ lang:
   const bundle = getBundle();
   const eras = [...bundle.eras].sort((a, b) => a.order - b.order);
   const usedTags = bundle.tags.filter((tag) => bundle.machines.some((machine) => machine.tags.includes(tag.id)));
+  const graphs: Record<string, GraphData> = {};
+  for (const tag of usedTags) {
+    const graph = buildTagGraph(tag.id, bundle, typed, dict);
+    if (graph) graphs[tag.id] = graph;
+  }
   const reader = [
     { title: dict.glossary.reader.canon, text: dict.glossary.reader.canonText },
     { title: dict.glossary.reader.seed, text: dict.glossary.reader.seedText },
@@ -88,7 +95,15 @@ export default async function GlossaryPage({ params }: { params: Promise<{ lang:
       <div className="glossary-page container">
         <section className="glossary-section">
           <div className="section__top">
-            <span className="micro">01 / {dict.glossary.erasTitle}</span>
+            <span className="micro">01 / {dict.graph.tagMap}</span>
+            <span className="mono">{String(usedTags.length).padStart(2, "0")} TAGS</span>
+          </div>
+          <GlossaryGraphTools tags={usedTags} machines={bundle.machines} graphs={graphs} lang={typed} dict={dict} />
+        </section>
+
+        <section className="glossary-section">
+          <div className="section__top">
+            <span className="micro">02 / {dict.glossary.erasTitle}</span>
             <span className="mono">{String(eras.length).padStart(2, "0")}</span>
           </div>
           <p className="glossary-section__lead">{dict.glossary.erasLead}</p>
@@ -106,7 +121,7 @@ export default async function GlossaryPage({ params }: { params: Promise<{ lang:
 
         <section className="glossary-section">
           <div className="section__top">
-            <span className="micro">02 / {dict.glossary.techTitle}</span>
+            <span className="micro">03 / {dict.glossary.techTitle}</span>
             <span className="mono">{String(usedTags.length).padStart(2, "0")}</span>
           </div>
           <p className="glossary-section__lead">{dict.glossary.techLead}</p>
@@ -115,7 +130,7 @@ export default async function GlossaryPage({ params }: { params: Promise<{ lang:
 
         <section className="glossary-section">
           <div className="section__top">
-            <span className="micro">03 / {dict.glossary.readerTitle}</span>
+            <span className="micro">04 / {dict.glossary.readerTitle}</span>
             <span className="mono">12</span>
           </div>
           <p className="glossary-section__lead">{dict.glossary.readerLead}</p>

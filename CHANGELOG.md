@@ -3,6 +3,44 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [3.1.0] — 2026-11-12
+
+### Added
+
+- **Cockpit shell v3**: metal bezel, canopy viewport, screen chrome strip, side MFD rails on wide displays, and a fixed console deck with era drive, signal distribution, target queue and auxiliary keys. The console collapses to a drawer on phones.
+- **Readable type scale**: every label, table cell, tag and micro-heading was lifted out of the 6–10px range; body copy is 17px, `.micro` 12px, labels 12.5–14px, and the large reading mode goes further. All layout tracks were widened to match.
+- **12-era orbital atlas** (`/[lang]/map`): 156 map nodes across 12 charts, each with a 2D tactical plot and a 3D WebGL globe, switchable per era. Includes Lagrange rings, a rotatable orthographic Earth, a surface inset map for Earth sites, route arcs, faction ownership, event links and per-era sources.
+- **Canonical geography pass**: U.C. uses the One Year War (pre-0084) Side layout with the 0084 three-way reassignment documented; C.E. PLANT at L5, Heliopolis/Artemis at L3 and Mendel at L4; A.D. the Union Amazon tower, HRL Tenchū and AEU La Tour; R.C. the Venus–Moon–Earth energy chain; P.D. Vingolf on the ocean and A.W. Cloud Nine at L3. Distances are compressed and labelled as schematic.
+- **Faction roster expanded 57 → 82**, adding Anaheim Electronics, the Sleeves, Delaz Fleet, Buch Concern, Romefeller Foundation, Mariemaia Army, Freeden crew, Dianna Counter, Gingham Corps, Junk Guild, Serpent Tail, Logos, Bisidian, Zalam/Euba, Venus Globe, G-IT Corps, Seven Stars, Turbines, Cathedra, Jeturk, and three A.A. organisations. Every era now has at least five factions.
+- **3D era wheel** on the chronology page: twelve glowing rings sized by machine count and ordered by century, click-to-select, auto-rotate, reset, a live detail panel and a 12-column machine distribution chart.
+- **Relationship clusters**: a shared radial graph on machine, character, event, faction and glossary pages, with grouped sectors, relation-type colours, a text index and links on every node. Character relations grew from 18 to 97 characters (185 new edges).
+- **Archive faction graph**: per-century political map with alliance/hostility/succession/split edges, member counts and era tabs.
+- **Glossary index tools**: a category bubble map ("检索导图") sized by machine usage, plus an association tree for the selected term.
+- **Tech tree browsing**: search by name/model code, zoom −/+/fit, generation bands, hover-to-focus on direct relations, and all twelve era tabs wrap on desktop.
+- **Search upgrade**: indexes pilots, aliases, summaries, details, factions, technologies and works; exact/prefix/token scoring, a Latin fuzzy pass, type weights, URL-synced queries, quick-access entries and era shortcuts.
+- **Model detail pass**: added chest seams, cockpit hatch, shoulder verniers, elbow/forearm plates, knee guards, shin vents, ankle actuators, backpack nozzles, head cheek vents and extra panel accents to the procedural viewer.
+- **Event roster 51 → 69**: Heliopolis, Spitbreak, Messiah, Fallen Angels, the Dort uprising, Vingolf, Hashmal, Quinharbor, Asticassia, Libra, Sanc Kingdom, Cloud Nine, the Dianna Counter landing, Nora, Sankt Porto and the Shuffle Alliance, plus 20 key events extended with a second factual paragraph (Chinese + Japanese). Event list rows now reserve enough width for full dates.
+
+### Changed
+
+- Navigation, typography, tables and cards now share the cockpit MFD visual language; the old thin-cyan industrial style is retired.
+- Timeline event labels reserve edge margins, support left/right anchoring and use 54px rows, eliminating the pile-up at the right edge of dense lanes.
+- `.event-row` date columns widened to 106px so dates no longer run into titles.
+- Orb corrected from Okinawa to the South Pacific (Solomon Islands); Loum moved to L1 and Solomon to L5 to match the canonical U.C. layout.
+- **Frosted floating frame layer**: main screen, map/graph/century stages and the console are mounted in translucent white glass frames with soft halos; MFD rails and console cards are staggered, hover-lifted and the console can hide to free reading space.
+- **ZoomFrame / TextZoom**: every map, 3D globe, era wheel and relation graph, plus the tech tree, has −/+/reset/fullscreen; chronology tables have A−/A+ text scaling.
+- **3D relation graphs**: every RelationGraph instance can switch 2D/3D, with orbit, auto-rotate, label toggle and click-through nodes.
+- **Route audit and CI gates**: `routes:check` validates every sitemap URL; CI and Pages run `links:check` and `routes:check`, and use pnpm 10 for the lockfile-v9 build.
+- Version bumped to `3.1.0`; faction count 82; character relation coverage 97/114; search index 487; atlas nodes 156; 854 static pages; event count 69.
+
+### Fixed
+
+- Atlas 2D label collisions, Earth/Moon body-label overlap, and the missing surface inset on the far hemisphere.
+- 3D atlas label overlap, camera occlusion of orbital nodes, and the label/legend overlap at the bottom of the globe.
+- Character graph group captions now reserve space so node labels do not overprint them.
+- Duplicate tag counts in the tech-tree chip row.
+- `search?q=` state now updates as the query changes, so results are shareable.
+
 ## [2.3.0] — 2026-11-12
 
 ### Added

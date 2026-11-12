@@ -1,6 +1,6 @@
 {
   "name": "gundam-archive",
-  "version": "2.3.0",
+  "version": "3.1.0",
   "private": true,
   "description": "GUNDAM Archive — a traceable, bilingual mobile-suit knowledge archive.",
   "license": "MIT",
@@ -10,10 +10,14 @@
     "preview": "python3 -m http.server 4173 --directory out",
     "validate": "tsx scripts/validate-content.ts",
     "typecheck": "tsc --noEmit",
-    "check": "npm run validate && npm run docs:check && npm run typecheck && npm run language:check && npm run build",
+    "check": "npm run validate && npm run docs:check && npm run typecheck && npm run language:check && npm run build && npm run links:check && npm run routes:check",
     "postbuild": "node scripts/build-404.mjs",
     "docs:check": "node scripts/check-docs.mjs",
-    "language:check": "node scripts/check-language.mjs"
+    "language:check": "node scripts/check-language.mjs",
+    "links:check": "node scripts/check-links.mjs",
+    "prebuild": "tsx scripts/build-search-index.ts",
+    "predev": "tsx scripts/build-search-index.ts",
+    "routes:check": "node scripts/check-routes.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.9",

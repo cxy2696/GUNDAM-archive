@@ -72,7 +72,9 @@
       "characterId": "lauda-neill"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-asticassia"
+  ],
   "workIds": [
     "witch-2022"
   ],

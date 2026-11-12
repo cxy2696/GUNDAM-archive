@@ -5,6 +5,8 @@ import { getBundle } from "@/lib/content";
 import { getDict, isLang, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { ChronologyConsole } from "@/components/ChronologyConsole";
+import { EraDemo } from "@/components/chronology/EraDemo";
+import { TextZoom } from "@/components/ui/TextZoom";
 
 export async function generateMetadata({
   params,
@@ -83,12 +85,22 @@ export default async function ChronologyPage({
         dict={dict}
       />
 
+      <EraDemo
+        eras={eras}
+        machines={bundle.machines}
+        works={bundle.works}
+        events={bundle.events}
+        lang={typed}
+        dict={dict}
+      />
+
       <section className="chronology-table-section" aria-labelledby="era-overview-title">
         <div className="chronology-section-head">
           <span className="micro">01 / OVERVIEW</span>
           <h2 id="era-overview-title">{dict.chronology.tableTitle}</h2>
           <p>{dict.chronology.tableLead}</p>
         </div>
+        <TextZoom label={dict.chronology.tableTitle}>
         <div className="chronology-table-scroll">
           <table className="chronology-table">
             <thead>
@@ -125,6 +137,7 @@ export default async function ChronologyPage({
             </tbody>
           </table>
         </div>
+        </TextZoom>
       </section>
 
       <section className="chronology-roster" aria-labelledby="roster-title">
@@ -133,6 +146,7 @@ export default async function ChronologyPage({
           <h2 id="roster-title">{dict.chronology.rosterTitle}</h2>
           <p>{dict.chronology.rosterLead}</p>
         </div>
+        <TextZoom label={dict.chronology.rosterTitle} initial={1}>
         <div className="roster-groups">
           {eras.map((era, index) => {
             const machines = bundle.machines
@@ -186,6 +200,7 @@ export default async function ChronologyPage({
             );
           })}
         </div>
+        </TextZoom>
       </section>
 
       <section className="chronology-note">

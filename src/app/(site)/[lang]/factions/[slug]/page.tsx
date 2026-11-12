@@ -7,6 +7,8 @@ import { formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { CharacterMark, FactionEmblem } from "@/components/Emblems";
 import { MachineCard } from "@/components/MachineCard";
+import { RelationGraph } from "@/components/graph/RelationGraph";
+import { buildFactionGraph } from "@/lib/graph";
 
 export const dynamicParams = false;
 
@@ -61,6 +63,7 @@ export default async function FactionPage({
     .filter((event) => event.factionIds.includes(faction.id))
     .sort((a, b) => a.date.year - b.date.year);
   const works = bundle.works.filter((work) => work.eraId === faction.eraIds[0]);
+  const graph = buildFactionGraph(faction.id, bundle, typed, dict);
 
   return (
     <>
@@ -268,6 +271,12 @@ export default async function FactionPage({
           </div>
         </aside>
       </div>
+
+      <section className="relation-section">
+        <div className="container">
+          {graph && <RelationGraph data={graph} dict={dict} title={`${pick(faction.name, typed)} · ${dict.graph.title}`} />}
+        </div>
+      </section>
     </>
   );
 }

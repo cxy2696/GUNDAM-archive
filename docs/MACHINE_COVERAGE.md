@@ -65,6 +65,8 @@ U.C. 横跨 0223 年、二十多部作品，机体谱系最长；F.C. 只有一�
 npm run validate      # schema、外键、谱系无环、双向关联
 npm run typecheck
 npm run build         # 148 台机体的静态页面全部生成
+npm run links:check   # 站内链接与锚点
+npm run routes:check  # sitemap 路由完整性
 ```
 
 打开 `/zh/chronology/`，页面底部有**按纪元分组的全机体总表**；每台机体都能点进详情页，查看势力、初登场、作品、武装、谱系边与出处。数量、名称、年份都由内容数据生成，不靠手工表格对齐。

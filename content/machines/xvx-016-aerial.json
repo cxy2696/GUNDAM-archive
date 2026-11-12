@@ -88,7 +88,8 @@
     }
   ],
   "eventIds": [
-    "plant-quetta"
+    "plant-quetta",
+    "quinharbor-incident"
   ],
   "workIds": [
     "witch-2022"

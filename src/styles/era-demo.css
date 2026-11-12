@@ -1,0 +1,397 @@
+/* ============================================================
+   CHRONOLOGY / 3D ERA WHEEL + DISTRIBUTION
+   ============================================================ */
+
+.era-demo {
+  margin: 36px 0 46px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 182, 72, 0.28);
+}
+
+.era-demo__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.era-demo__head .eyebrow {
+  margin-bottom: 10px;
+}
+
+.era-demo__head h2 {
+  font-size: clamp(28px, 3.4vw, 44px);
+  letter-spacing: -0.03em;
+}
+
+.era-demo__head > p {
+  color: var(--text-2);
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+.era-demo__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.era-demo__stage {
+  position: relative;
+  min-height: 480px;
+  border: 1px solid var(--line-strong);
+  background:
+    radial-gradient(700px 420px at 50% 45%, rgba(120, 90, 255, 0.14), transparent 70%),
+    linear-gradient(180deg, #060d1c, #030710);
+  box-shadow: inset 0 0 0 1px rgba(99, 230, 255, 0.05), inset 0 0 80px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.era-demo__stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, rgba(255, 182, 72, 0.55) 0 1px, transparent 1px 14px);
+  opacity: 0.65;
+  z-index: 2;
+}
+
+.era-wheel {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+.era-wheel canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.era-wheel__fallback {
+  display: grid;
+  place-items: center;
+  height: 480px;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
+
+.era-wheel__label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 3px 8px;
+  border: 1px solid rgba(99, 230, 255, 0.22);
+  background: rgba(3, 9, 20, 0.8);
+  color: var(--text-2);
+  font-size: 11.5px;
+  line-height: 1.3;
+  white-space: nowrap;
+  pointer-events: none;
+  backdrop-filter: blur(3px);
+}
+
+.era-wheel__label.is-active {
+  border-color: var(--amber);
+  color: #fff;
+  box-shadow: 0 0 18px rgba(255, 182, 72, 0.24);
+}
+
+.era-wheel__code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.era-wheel__name {
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+
+.era-wheel__count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(170, 205, 225, 0.6);
+}
+
+.era-wheel__axis-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: rgba(170, 205, 225, 0.35);
+  pointer-events: none;
+}
+
+.era-wheel__hint {
+  position: absolute;
+  left: 12px;
+  bottom: 9px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: rgba(170, 205, 225, 0.5);
+  pointer-events: none;
+}
+
+.era-demo__controls {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+}
+
+.era-demo__controls .chip {
+  height: 34px;
+  background: rgba(5, 12, 24, 0.8);
+  font-size: 12px;
+}
+
+.era-demo__panel {
+  position: relative;
+  padding: 16px 18px 18px;
+  border: 1px solid var(--line-strong);
+  background:
+    radial-gradient(120% 80% at 30% 0%, color-mix(in srgb, var(--era, var(--cyan)) 12%, transparent), transparent 60%),
+    linear-gradient(180deg, #081226, #050a17);
+  overflow: hidden;
+}
+
+.era-demo__panel::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--era, var(--cyan)) 16%, transparent), transparent 65%);
+  pointer-events: none;
+}
+
+.era-demo__panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(99, 230, 255, 0.16);
+  color: var(--amber);
+}
+
+.era-demo__panel-head .mono {
+  color: var(--text-3);
+}
+
+.era-demo__code {
+  margin-top: 14px;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  color: var(--era, var(--cyan));
+  line-height: 1;
+}
+
+.era-demo__panel h3 {
+  margin-top: 6px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.era-demo__summary {
+  margin-top: 10px;
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.era-demo__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.era-demo__meta dt {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.era-demo__meta dd {
+  margin-top: 3px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.era-demo__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.era-demo__stats > div {
+  padding: 8px 6px;
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.era-demo__stats b {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.era-demo__stats span {
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.era-demo__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.era-bars {
+  margin-top: 18px;
+  padding: 14px 16px 12px;
+  border: 1px solid var(--line);
+  background: rgba(8, 15, 30, 0.5);
+}
+
+.era-bars__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+}
+
+.era-bars__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.era-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 4px 2px;
+  border: 1px solid transparent;
+  transition: background var(--dur), border-color var(--dur);
+}
+
+.era-bar:hover,
+.era-bar.is-active {
+  background: rgba(99, 230, 255, 0.05);
+  border-color: color-mix(in srgb, var(--era, var(--cyan)) 40%, transparent);
+}
+
+.era-bar__value {
+  font-size: 11.5px;
+  color: var(--text-2);
+  text-align: center;
+}
+
+.era-bar__track {
+  display: flex;
+  align-items: flex-end;
+  height: 88px;
+  background: linear-gradient(180deg, transparent, rgba(120, 180, 220, 0.06));
+  border-bottom: 1px solid color-mix(in srgb, var(--era, var(--cyan)) 50%, transparent);
+}
+
+.era-bar__track i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--era, var(--cyan)) 80%, transparent), color-mix(in srgb, var(--era, var(--cyan)) 24%, transparent));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--era, var(--cyan)) 25%, transparent);
+  opacity: 0.8;
+}
+
+.era-bar.is-active .era-bar__track i {
+  opacity: 1;
+}
+
+.era-bar__code {
+  font-size: 10.5px;
+  color: var(--era, var(--cyan));
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.era-bar__name {
+  font-size: 11px;
+  color: var(--text-3);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1180px) {
+  .era-demo__body {
+    grid-template-columns: 1fr;
+  }
+  .era-demo__stage,
+  .era-wheel,
+  .era-wheel__fallback {
+    min-height: 420px;
+    height: 420px;
+  }
+  .era-bars__grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    row-gap: 10px;
+  }
+  .era-bar__track {
+    height: 64px;
+  }
+}
+
+@media (max-width: 760px) {
+  .era-demo__head {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .era-demo__stage,
+  .era-wheel,
+  .era-wheel__fallback {
+    height: 360px;
+    min-height: 360px;
+  }
+  .era-bars__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .era-demo__panel {
+    padding: 14px;
+  }
+}
+/* the era wheel should sit in the upper half of its frame */
+.era-wheel canvas {
+  margin-top: -8px;
+}
+@media (min-width: 1181px) {
+  .era-demo__stage,
+  .era-wheel,
+  .era-wheel__fallback {
+    min-height: 560px;
+    height: 560px;
+  }
+}

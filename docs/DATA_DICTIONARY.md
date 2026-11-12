@@ -276,3 +276,21 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 - 内容变更以 Git 提交为版本；每次发布打 tag。
 - 未来 `content_version` 快照保留历史版本，`?v=` 查询历史。
 - ULID 是目标数据库主键；当前内容层用 slug 作为外键，迁移时映射，不改变 URL。
+
+## 11.5 宇宙地图（atlas.json）
+
+`content/atlas.json` 是数组，每项对应一个 `eraId`。字段：
+
+`eraId, bodies, focus{lon,lat}, nodes[], routes[], geography{zh,ja}, layoutNote?, sources[]`。
+
+`nodes[]`：`id, name{zh,ja}, kind, anchor, orbit?, angle?, lat?, lng?, distance?, factionId?, placeId?, note?, priority`。
+
+- `anchor` 为 `earth | moon | mars | venus | jupiter | lagrange | earthorbit | deep`。
+- `earth` / `moon` 必须有 `lat` / `lng`；`lagrange` 必须有 `orbit`（L1–L5）；`earthorbit` 用 `distance` + `angle` 表示未分配拉格朗日点的地球轨道；`deep` 用 `distance` + `angle` 表示远域。
+- `priority` 1 = 始终标注，2 = 有空间时标注，3 = 只在列表中出现。
+- `kind` 为 `capital | city | colony | station | fortress | battlefield | elevator | region | fleet`。
+- 轨道距离是压缩示意；`geography` 必须写明该纪元的编制依据（如 U.C. 0084 年重编），`sources` 必填。
+- 章节校验会检查：每个纪元必须有图；节点/航线引用的 faction / place 必须存在；Lagrange 节点必须有 orbit；地球/月球节点必须有经纬度。
+
+`routes[]`：`from, to, kind(supply|invasion|migration), label?`，用于 2D/3D 的航道弧线。
+

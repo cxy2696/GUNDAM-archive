@@ -8,18 +8,26 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
   const bundle = getBundle();
   const entries: SearchEntry[] = [];
 
-  const add = (entry: Omit<SearchEntry, "haystack">) => {
+  const add = (entry: Omit<SearchEntry, "haystack" | "keywords"> & { keywords: string[] }) => {
+    const { keywords, ...rest } = entry;
     entries.push({
-      ...entry,
+      ...rest,
       haystack: normalizeQuery(
-        [entry.title, entry.subtitle, entry.meta, ...entry.keywords].join(" "),
-      ),
+        [entry.title, entry.subtitle, entry.meta, ...keywords].join(" "),
+      ).slice(0, 900),
     });
   };
 
   for (const m of bundle.machines) {
     const era = bundle.eras.find((e) => e.id === m.eraId);
     const faction = bundle.factions.find((f) => f.id === m.factionId);
+    const pilots = m.pilots
+      .map((pilot) => bundle.characters.find((character) => character.id === pilot.characterId))
+      .filter((item): item is NonNullable<typeof item> => Boolean(item));
+    const tagNames = m.tags
+      .map((id) => bundle.tags.find((tag) => tag.id === id))
+      .filter((item): item is NonNullable<typeof item> => Boolean(item))
+      .flatMap((tag) => [tag.name.zh, tag.name.ja, tag.name.en]);
     add({
       type: "machine",
       id: m.id,
@@ -27,7 +35,20 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(m.name, lang),
       subtitle: m.modelCode,
       meta: `${era?.code ?? ""} · ${faction ? pick(faction.name, lang) : ""}`,
-      keywords: [m.name.zh, m.name.ja, m.name.en, m.modelCode, ...m.aliases],
+      keywords: [
+        m.name.zh,
+        m.name.ja,
+        m.name.en,
+        m.modelCode,
+        ...m.aliases,
+        ...pilots.flatMap((pilot) => [pilot.name.zh, pilot.name.ja, pilot.name.en]),
+        ...tagNames,
+        era?.code ?? "",
+        era ? pick(era.name, lang) : "",
+        faction ? pick(faction.name, lang) : "",
+        pick(m.summary, lang),
+        ...(lang === "ja" ? m.summary.zh ? [m.summary.zh] : [] : m.summary.ja ? [m.summary.ja] : []),
+      ],
     });
   }
 
@@ -40,7 +61,16 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(c.name, lang),
       subtitle: pick(c.role, lang),
       meta: faction ? pick(faction.name, lang) : "",
-      keywords: [c.name.zh, c.name.ja, c.name.en],
+      keywords: [
+        c.name.zh,
+        c.name.ja,
+        c.name.en,
+        ...c.aliases,
+        pick(c.role, lang),
+        c.origin ? pick(c.origin, lang) : "",
+        c.rank ? pick(c.rank, lang) : "",
+        ...c.bio[lang].slice(0, 1),
+      ],
     });
   }
 
@@ -52,7 +82,7 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(f.name, lang),
       subtitle: f.short,
       meta: f.founded ?? "",
-      keywords: [f.name.zh, f.name.ja, f.name.en, f.short],
+      keywords: [f.name.zh, f.name.ja, f.name.en, f.short, pick(f.description, lang), f.motto ? pick(f.motto, lang) : ""],
     });
   }
 
@@ -65,7 +95,19 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(e.title, lang),
       subtitle: era?.code ?? "",
       meta: `${era?.code ?? ""}${String(e.date.year).padStart(4, "0")}`,
-      keywords: [e.title.zh, e.title.ja],
+      keywords: [
+        e.title.zh,
+        e.title.ja,
+        pick(e.summary, lang),
+        ...e.factionIds.flatMap((id) => {
+          const faction = bundle.factions.find((item) => item.id === id);
+          return faction ? [pick(faction.name, lang), faction.short] : [];
+        }),
+        ...e.machineIds.flatMap((id) => {
+          const machine = bundle.machines.find((item) => item.id === id);
+          return machine ? [pick(machine.name, lang), machine.modelCode] : [];
+        }),
+      ],
     });
   }
 
@@ -77,7 +119,16 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(t.name, lang),
       subtitle: t.category.toUpperCase(),
       meta: `${bundle.machines.filter((m) => m.tags.includes(t.id)).length} MS`,
-      keywords: [t.name.zh, t.name.ja, t.name.en, t.description.zh, t.description.ja],
+      keywords: [
+        t.name.zh,
+        t.name.ja,
+        t.name.en,
+        t.description.zh,
+        t.description.ja,
+        t.category,
+        ...t.detail.zh.slice(0, 1),
+        ...t.detail.ja.slice(0, 1),
+      ],
     });
   }
 
@@ -89,7 +140,7 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       title: pick(w.title, lang),
       subtitle: String(w.year),
       meta: pick(w.title, lang === "zh" ? "ja" : "zh"),
-      keywords: [w.title.zh, w.title.ja, w.title.en, String(w.year)],
+      keywords: [w.title.zh, w.title.ja, w.title.en, String(w.year), pick(w.summary, lang)],
     });
   }
 

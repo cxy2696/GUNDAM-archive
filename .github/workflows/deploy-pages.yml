@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
         with:
-          version: 11
+          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -37,6 +37,14 @@ jobs:
           # For a user page (owner.github.io) or custom domain, set this to "".
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
           NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+      - name: Audit internal links and fragments
+        run: pnpm links:check
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+      - name: Audit every exported route
+        run: pnpm routes:check
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

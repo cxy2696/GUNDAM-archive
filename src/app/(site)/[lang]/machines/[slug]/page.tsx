@@ -24,6 +24,8 @@ import {
 import type { Lang } from "@/lib/schema";
 import { MechViewer } from "@/components/viewer/MechViewer";
 import { MachineCard } from "@/components/MachineCard";
+import { RelationGraph } from "@/components/graph/RelationGraph";
+import { buildMachineGraph } from "@/lib/graph";
 import { ChevronDownIcon, ArrowRightIcon, ArrowUpRightIcon } from "@/components/Icons";
 
 export const dynamicParams = false;
@@ -95,6 +97,8 @@ export default async function MachinePage({
   const armamentCounts = (["beam", "kinetic", "melee", "special"] as const)
     .map((type) => ({ type, count: machine.armament.filter((item) => item.type === type).length }))
     .filter((item) => item.count > 0);
+
+  const graph = buildMachineGraph(machine.id, bundle, typed, dict);
 
   const index = bundle.machines.findIndex((item) => item.id === machine.id);
   const previous = bundle.machines[(index - 1 + bundle.machines.length) % bundle.machines.length];
@@ -437,6 +441,12 @@ export default async function MachinePage({
           </details>
         </div>
       </div>
+
+      <section className="relation-section">
+        <div className="container">
+          {graph && <RelationGraph data={graph} dict={dict} title={`${pick(machine.name, typed)} · ${dict.graph.title}`} />}
+        </div>
+      </section>
 
       <section className="related">
         <div className="container">

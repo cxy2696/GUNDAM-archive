@@ -2,17 +2,18 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { groupResults, searchEntries, type SearchEntry } from "@/lib/search";
 import type { Dictionary } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { SearchIcon } from "./Icons";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function CommandPalette({
-  entries,
   lang,
   dict,
 }: {
-  entries: SearchEntry[];
   lang: Lang;
   dict: Dictionary;
 }) {
@@ -20,9 +21,31 @@ export function CommandPalette({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
+  const [entries, setEntries] = useState<SearchEntry[]>([]);
+  const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const results = useMemo(() => searchEntries(entries, query, dict, 15), [entries, query, dict]);
   const groups = useMemo(() => groupResults(results), [results]);
+
+  useEffect(() => {
+    if (!open || entries.length > 0) return;
+    let alive = true;
+    setLoading(true);
+    fetch(`${BASE_PATH}/search-index.${lang}.json`)
+      .then((response) => (response.ok ? response.json() : Promise.reject(new Error("index unavailable"))))
+      .then((data: SearchEntry[]) => {
+        if (alive) {
+          setEntries(data);
+          setLoading(false);
+        }
+      })
+      .catch(() => {
+        if (alive) setLoading(false);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [open, entries.length, lang]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -113,7 +136,7 @@ export function CommandPalette({
 
         {!query ? (
           <div className="palette__empty">
-            <p className="micro">{dict.search.hint}</p>
+            <p className="micro">{loading ? "LOADING INDEX…" : dict.search.hint}</p>
             <div className="palette__chips">
               {["RX-78-2", "ν", "Zaku", "U.C.0079"].map((chip) => (
                 <button key={chip} type="button" onClick={() => setQuery(chip)} tabIndex={open ? 0 : -1}>
@@ -124,7 +147,7 @@ export function CommandPalette({
           </div>
         ) : results.length === 0 ? (
           <div className="palette__empty">
-            <p className="palette__noresult">{dict.search.noResults}</p>
+            <p className="palette__noresult">{loading ? "LOADING INDEX…" : dict.search.noResults}</p>
             <p className="micro">{dict.search.noResultsHint}</p>
           </div>
         ) : (
@@ -170,6 +193,11 @@ export function CommandPalette({
           <span>
             <kbd>ESC</kbd> {dict.common.close}
           </span>
+          {query ? (
+            <Link href={`/${lang}/search?q=${encodeURIComponent(query)}`} className="palette__all">
+              {lang === "zh" ? "查看全部结果" : "すべての結果"} →
+            </Link>
+          ) : null}
           <span className="palette__count">
             {results.length > 0 ? `${results.length} ${dict.search.resultCount}` : "GUNDAM / INDEX"}
           </span>

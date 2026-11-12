@@ -80,7 +80,9 @@
       "characterId": "yzak-joule"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-heliopolis"
+  ],
   "workIds": [
     "seed-2002"
   ],

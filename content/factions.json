@@ -1037,5 +1037,914 @@
       "zh": "C.C. 卢吉亚纳地区的民兵，卷入月之民回归后的冲突。",
       "ja": "C.C.ルジアナ地方の民兵。月の民の回帰後の衝突に巻き込まれる。"
     }
+  },
+  {
+    "id": "teiwaz",
+    "name": {
+      "zh": "提瓦兹",
+      "ja": "テイワズ",
+      "en": "Teiwaz"
+    },
+    "short": "TEIWAZ",
+    "color": "#0EA5E9",
+    "eraIds": [
+      "pd"
+    ],
+    "description": {
+      "zh": "以木星圈为后盾的宇宙企业联合，掌控运输、废铁与佣兵网络。它表面维持中立，实际以航线与债务把火星与地球圈绑在自己的账本上。",
+      "ja": "木星圏を後ろ盾とする宇宙企業連合。輸送、スクラップ、傭兵網を握る。表向きは中立を保ちつつ、航路と債務で火星と地球圏を自らの帳簿に縛り付ける。"
+    },
+    "motto": {
+      "zh": "航线就是主权",
+      "ja": "航路こそ主権"
+    },
+    "relations": [
+      {
+        "targetId": "tekkadan",
+        "type": "alliance"
+      },
+      {
+        "targetId": "gjallarhorn",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "barton-foundation",
+    "name": {
+      "zh": "巴顿财团",
+      "ja": "バートン財団",
+      "en": "Barton Foundation"
+    },
+    "short": "BARTON",
+    "color": "#7C3AED",
+    "eraIds": [
+      "ac"
+    ],
+    "dissolved": "A.C.0197",
+    "description": {
+      "zh": "德基姆·巴顿在幕后经营的财团，借玛丽梅亚·匹斯克拉夫特的名义集结旧 OZ 势力。它把殖民地独立战争包装成“正统继承”，实际上是为了夺回地球圈的主导权。",
+      "ja": "デキム・バートンが背後で運営する財団。マリーメイア・ピースクラフトの名で旧OZ勢力を集める。コロニー独立戦争を「正統継承」に読み替え、地球圏の主導権奪還を狙った。"
+    },
+    "relations": [
+      {
+        "targetId": "white-fang",
+        "type": "split"
+      },
+      {
+        "targetId": "oz",
+        "type": "succession"
+      },
+      {
+        "targetId": "sanc-kingdom",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "sra",
+    "name": {
+      "zh": "宇宙革命军",
+      "ja": "宇宙革命軍",
+      "en": "Space Revolutionary Army"
+    },
+    "short": "SRA",
+    "color": "#EF4444",
+    "eraIds": [
+      "aw"
+    ],
+    "dissolved": "A.W.0001",
+    "description": {
+      "zh": "第七次宇宙战争中的宇宙侧军队，以殖民卫星独立为旗号对地球发动全面战争。战争结束后主力溃散，残部散落在各殖民卫星与废土据点。",
+      "ja": "第7次宇宙戦争における宇宙側の軍。コロニー独立を掲げて地球へ全面戦争を仕掛けた。終戦後に主力は崩壊し、残部は各コロニーと廃土の拠点へ散った。"
+    },
+    "relations": [
+      {
+        "targetId": "new-une",
+        "type": "hostility"
+      },
+      {
+        "targetId": "vulture",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "madorna",
+    "name": {
+      "zh": "马多纳工坊",
+      "ja": "マドーナ工房",
+      "en": "Madorna Workshop"
+    },
+    "short": "MADORNA",
+    "color": "#F59E0B",
+    "eraIds": [
+      "ag"
+    ],
+    "description": {
+      "zh": "在殖民卫星间移动的 MS 工坊，擅长把旧世代机体改装成可战状态。它不隶属于任何阵营，靠维修与定制合同在百年战争里活下来。",
+      "ja": "コロニー間を移動するMS工房。旧世代機を戦える状態に改修する技術を持つ。どの陣営にも属さず、修理と特注契約で百年戦争を生き延びた。"
+    },
+    "relations": [
+      {
+        "targetId": "federation-age",
+        "type": "alliance"
+      },
+      {
+        "targetId": "vagan",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "gondwan",
+    "name": {
+      "zh": "贡德万",
+      "ja": "ゴンドワン",
+      "en": "Gondwan"
+    },
+    "short": "GONDWAN",
+    "color": "#F97316",
+    "eraIds": [
+      "rc"
+    ],
+    "description": {
+      "zh": "横跨非洲与南亚的旧大陆势力，以陆上资源与人口规模支撑首都军的远征。它的贵族网络与轨道电梯经济互相依赖，也互相牵制。",
+      "ja": "アフリカから南アジアにまたがる旧大陸の勢力。陸上の資源と人口規模で首都軍の遠征を支える。貴族網と軌道エレベーター経済は互いに依存し、互いに牽制し合う。"
+    },
+    "relations": [
+      {
+        "targetId": "capital-army",
+        "type": "alliance"
+      },
+      {
+        "targetId": "amerian",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "space-assembly-league",
+    "name": {
+      "zh": "太空议会",
+      "ja": "スペースアセンブリ・リーグ",
+      "en": "Space Assembly League"
+    },
+    "short": "SAL",
+    "color": "#22D3EE",
+    "eraIds": [
+      "as"
+    ],
+    "description": {
+      "zh": "由宇宙殖民势力组成的议会，负责前线登记、航道与军事调停。它不直接统治企业，却握有承认或冻结前线主权的权限。",
+      "ja": "宇宙コロニー勢力による議会。フロント登録、航路、軍事調停を担う。企業を直接統治しないが、フロント主権を承認・凍結する権限を持つ。"
+    },
+    "relations": [
+      {
+        "targetId": "benerit",
+        "type": "hostility"
+      },
+      {
+        "targetId": "gund-arm-inc",
+        "type": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "anaheim-electronics",
+    "name": {
+      "zh": "阿纳海姆电子",
+      "ja": "アナハイム・エレクトロニクス",
+      "en": "Anaheim Electronics"
+    },
+    "short": "ANAHEIM",
+    "color": "#1E3A8A",
+    "eraIds": [
+      "uc"
+    ],
+    "description": {
+      "zh": "U.C. 时代规模最大的军工企业，总部位于月面都市冯·布朗。一年战争后它吸收吉翁系技术人员，主导 GP 计划、Z 计划与独角兽的机体开发；由于同时向联邦与反联邦势力供货，它被称作“死亡商人”。",
+      "ja": "U.C.時代最大の軍需企業で、本社は月面都市フォン・ブラウン。一年戦争後にジオン系の技術者を吸収し、GP計画、Ζ計画、ユニコーンの開発を主導した。連邦と反連邦の双方へ機体を供給したため、「死の商人」と呼ばれる。"
+    },
+    "relations": [
+      {
+        "targetId": "earth-federation",
+        "type": "alliance"
+      },
+      {
+        "targetId": "vist-foundation",
+        "type": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "sleeves",
+    "name": {
+      "zh": "带袖的",
+      "ja": "袖付き",
+      "en": "The Sleeves"
+    },
+    "short": "SLEEVES",
+    "color": "#9F1239",
+    "eraIds": [
+      "uc"
+    ],
+    "description": {
+      "zh": "U.C.0090 年代集结的新吉翁残党，因机体袖口的纹章而被称为“带袖的”。领袖弗尔·伏朗托以“夏亚再世”之名活动；U.C.0096 年，它袭击托灵顿基地，并介入“拉普拉斯之盒”的争夺。",
+      "ja": "U.C.0090年代に集まったネオ・ジオンの残党。機体の袖口の紋章から「袖付き」と呼ばれる。指導者フル・フロンタルは「シャアの再来」を名乗り、U.C.0096にトリントン基地を襲撃して「ラプラスの箱」の争奪に加わった。"
+    },
+    "relations": [
+      {
+        "targetId": "neo-zeon",
+        "type": "succession"
+      },
+      {
+        "targetId": "earth-federation",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "delaz-fleet",
+    "name": {
+      "zh": "迪拉兹舰队",
+      "ja": "デラーズ・フリート",
+      "en": "Delaz Fleet"
+    },
+    "short": "DELAZ",
+    "color": "#4D7C0F",
+    "eraIds": [
+      "uc"
+    ],
+    "founded": "U.C.0080",
+    "dissolved": "U.C.0083",
+    "description": {
+      "zh": "一年战争后拒绝投降的吉翁残党舰队，由迪拉兹中将率领，藏身于暗礁宙域。U.C.0083 年它夺取联邦的 GP02A，用核弹袭击联邦观舰式，并把殖民卫星砸向北美；作战失败后舰队覆灭，吉翁残党的抵抗转入地下。",
+      "ja": "一年戦争後に降伏を拒んだジオンの残党艦隊。デラーズ中将が率い、暗礁宙域に潜んだ。U.C.0083に連邦のGP02Aを奪って核攻撃を行い、コロニーを北米へ落下させた。作戦の失敗後、艦隊は壊滅し、残党の抵抗は地下へ移る。"
+    },
+    "relations": [
+      {
+        "targetId": "zeon",
+        "type": "succession"
+      },
+      {
+        "targetId": "earth-federation",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "buch-concern",
+    "name": {
+      "zh": "布赫财团",
+      "ja": "ブッフ・コンツェルン",
+      "en": "Buch Concern"
+    },
+    "short": "BUCH",
+    "color": "#6B21A8",
+    "eraIds": [
+      "uc"
+    ],
+    "description": {
+      "zh": "以重工业与军工起家的财团，旗下布赫航空生产民用 MS，暗中为罗纳家与十字骨先锋提供资金与机体。U.C.0123 年它把生产线转作军用，支撑宇宙巴比伦的建立；财团与罗纳家的关系一直藏在民用机械的交易背后。",
+      "ja": "重工業と軍需で財を成した財団。傘下のブッフ・エアロダイナミクスは民間用MSを生産し、ロナ家とクロスボーン・バンガードへ資金と機体を密かに供給した。U.C.0123には生産ラインを軍用へ転換し、コスモ・バビロニアの建国を支える。財団とロナ家の関係は、民間機械の取引の背後に隠されていた。"
+    },
+    "relations": [
+      {
+        "targetId": "crossbone-vanguard",
+        "type": "alliance"
+      },
+      {
+        "targetId": "earth-federation",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "junk-guild",
+    "name": {
+      "zh": "废品商公会",
+      "ja": "ジャンク屋組合",
+      "en": "Junk Guild"
+    },
+    "short": "JUNK",
+    "color": "#14B8A6",
+    "eraIds": [
+      "ce"
+    ],
+    "description": {
+      "zh": "在 C.E. 时代以打捞、回收与修理为业的中立技术者组织，罗·裘尔用它回收的异端高达骨架造出红色机。它不隶属任何阵营，靠接单在联合与扎夫特之间穿行；C.E.73 年曾试图阻止尤尼乌斯七号残骸坠落，与 LOGOS 的幻痛部队正面冲突。",
+      "ja": "C.E.時代に回収、再利用、修理を業とする中立の技術者組織。ロウ・ギュールは回収したアストレイの骨格からレッドフレームを作り上げた。どの陣営にも属さず、依頼で連合とZ.A.F.T.の間を行き来する。C.E.73にはユニウスセブンの残骸落下を止めようとし、ロゴスのファントムペインと交戦した。"
+    },
+    "relations": [
+      {
+        "targetId": "serpent-tail",
+        "type": "alliance"
+      },
+      {
+        "targetId": "logos",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "serpent-tail",
+    "name": {
+      "zh": "蛇尾佣兵团",
+      "ja": "サーペントテール",
+      "en": "Serpent Tail"
+    },
+    "short": "SERPENT",
+    "color": "#84CC16",
+    "eraIds": [
+      "ce"
+    ],
+    "founded": "C.E.70",
+    "description": {
+      "zh": "以盖·村云为首的少数精锐佣兵组织，母舰是一艘扎夫特的罗拉西亚级战舰。成员多来自旧扎夫特与联合，接单不分阵营，但拒绝违反道义的委托；部队规模只有数人，个人战力在各方阵营中都有口碑，异端高达蓝色机是他们的招牌。",
+      "ja": "ガイ・ムラクモを頭とする少数精鋭の傭兵組織。母艦はザフトのローラシア級艦である。旧ザフトや連合の出身者が集まり、依頼は陣営を選ばないが、道義に反する仕事は断る。人数は少ないが各員の戦力は各方勢力から認められ、アストレイ ブルーフレームが部隊の象徴となっている。"
+    },
+    "relations": [
+      {
+        "targetId": "junk-guild",
+        "type": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "logos",
+    "name": {
+      "zh": "LOGOS",
+      "ja": "ロゴス",
+      "en": "LOGOS"
+    },
+    "short": "LOGOS",
+    "color": "#1E40AF",
+    "eraIds": [
+      "ce"
+    ],
+    "description": {
+      "zh": "由地球联合的军工与政商人物组成的秘密组织，通过武器交易与战争维持利益。它在 C.E.73 年支持蓝色宇宙与幻痛部队，推动对 PLANT 的强硬路线；成员名单被公开后，组织随吉普利尔之死瓦解。",
+      "ja": "地球連合の軍需産業と政商の人物で構成された秘密組織。武器取引と戦争で利を得る。C.E.73にはブルーコスモスとファントムペインを支援し、プラントへの強硬策を推し進めた。メンバー名簿の公開後、ジブリールの死とともに崩壊する。"
+    },
+    "relations": [
+      {
+        "targetId": "blue-cosmos",
+        "type": "alliance"
+      },
+      {
+        "targetId": "zaft",
+        "type": "hostility"
+      },
+      {
+        "targetId": "junk-guild",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "romefeller-foundation",
+    "name": {
+      "zh": "罗姆菲拉财团",
+      "ja": "ロームフェラ財団",
+      "en": "Romefeller Foundation"
+    },
+    "short": "ROME",
+    "color": "#6D28D9",
+    "eraIds": [
+      "ac"
+    ],
+    "description": {
+      "zh": "以欧洲贵族与军工资本为核心的地球圈支配组织，OZ 是其军事执行机关。A.C.195 年它借 OZ 政变接管各国，用军事管制与殖民地镇压维持霸权；白色獠牙的独立战争与高达驾驶员的反击让这套统治在同年瓦解。",
+      "ja": "欧州の貴族と軍需資本を中核とする地球圏の支配組織。OZはその軍事執行機関である。A.C.195にOZのクーデターで各国を掌握し、軍事統制とコロニー弾圧で覇権を保ったが、ホワイトファングの独立戦争とガンダムパイロットの反撃で同年に崩れる。"
+    },
+    "relations": [
+      {
+        "targetId": "oz",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "white-fang",
+        "type": "hostility"
+      },
+      {
+        "targetId": "colony-operatives",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "mariemaia-army",
+    "name": {
+      "zh": "玛丽美亚军",
+      "ja": "マリーメイア軍",
+      "en": "Mariemaia Army"
+    },
+    "short": "M.ARMY",
+    "color": "#BE123C",
+    "eraIds": [
+      "ac"
+    ],
+    "founded": "A.C.196",
+    "description": {
+      "zh": "A.C.196 年由德基姆·巴顿扶植玛丽美亚组成的武装，以“OZ 残党”的名义占领殖民卫星 X-18999 与布鲁塞尔。它用毒蛇系列 MS 与要塞守备队对抗高达驾驶员，并借玛丽美亚的血统主张地球圈的统治权。",
+      "ja": "A.C.196、デキム・バートンがマリーメイアを擁して組織した武装勢力。「OZ残党」の名でコロニーX-18999とブリュッセルを占拠した。サーペント系MSと要塞守備隊でガンダムパイロットに対抗し、マリーメイアの血統で地球圏の統治権を主張する。"
+    },
+    "relations": [
+      {
+        "targetId": "barton-foundation",
+        "type": "succession"
+      },
+      {
+        "targetId": "colony-operatives",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "freeden-crew",
+    "name": {
+      "zh": "自由号船员",
+      "ja": "フリーデン乗員",
+      "en": "Freeden Crew"
+    },
+    "short": "FREEDEN",
+    "color": "#F97316",
+    "eraIds": [
+      "aw"
+    ],
+    "parentId": "vulture",
+    "description": {
+      "zh": "A.W.0015 在北美废土活动的秃鹫陆上战舰，由前联邦 Newtype 驾驶员贾米尔·尼特担任舰长。加罗特与蒂法加入后，船员一边接打捞委托，一边躲避新 UNE 的追捕；自由号在撞击新 UNE 要塞时损毁，船员随后转乘北美抵抗军建造的宇宙战舰。",
+      "ja": "A.W.0015、北米の廃土で活動するヴァルチャーの陸上戦艦。元連邦のニュータイプ搭乗員ジャミル・ニートが艦長を務める。ガロードとティファを迎えた後は、回収の依頼をこなしながら新UNEの追跡をかわした。フリーデンは新UNEの要塞へ突撃して損壊し、乗員は北米レジスタンスが建造した宇宙戦艦へ移る。"
+    },
+    "relations": [
+      {
+        "targetId": "vulture",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "new-une",
+        "type": "hostility"
+      },
+      {
+        "targetId": "sra",
+        "type": "hostility"
+      },
+      {
+        "targetId": "north-american-resistance",
+        "type": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "north-american-resistance",
+    "name": {
+      "zh": "北美抵抗军",
+      "ja": "北米レジスタンス",
+      "en": "North American Resistance"
+    },
+    "short": "N.A.R.F.",
+    "color": "#A16207",
+    "eraIds": [
+      "aw"
+    ],
+    "description": {
+      "zh": "新 UNE 高压统治下在北美形成的反联邦民兵网络，由旧联邦军人与地方自治团体拼成。它为自由号船员建造了能突入宇宙的战舰“自由号 II”，并接应被新 UNE 追捕的秃鹫船员；据点之间没有统一指挥，靠无线电与信使协调行动。",
+      "ja": "新UNEの高圧統治に対して北米で生まれた反連邦民兵の網。旧連邦軍人と地方自治体が結び合わさって作られた。フリーデン号の乗員のために宇宙へ出られる戦艦「フリーデンII」を建造し、新UNEに追われるヴァルチャーの乗員を収容した。拠点間に統一指揮はなく、無線と使者で連絡を取り合う。"
+    },
+    "relations": [
+      {
+        "targetId": "new-une",
+        "type": "hostility"
+      },
+      {
+        "targetId": "vulture",
+        "type": "alliance"
+      },
+      {
+        "targetId": "freeden-crew",
+        "type": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "bisidian",
+    "name": {
+      "zh": "比西迪安",
+      "ja": "ビシディアン",
+      "en": "Bisidian"
+    },
+    "short": "BISIDIAN",
+    "color": "#0E7490",
+    "eraIds": [
+      "ag"
+    ],
+    "description": {
+      "zh": "A.G. 纪元的宇宙海盗团，船长“艾殊”的真实身份是联邦王牌亚瑟姆·明日野。它以劫掠与维根勾连的联邦舰队为目标，在战争末期支援奇奥；战后把船队改组成资源探查企业，为火星与地球圈的重建寻找矿源。",
+      "ja": "A.G.紀元の宇宙海賊団。船長「アッシュ」の正体は連邦のエース、アセム・アスノである。ヴェイガンと結びついた連邦艦隊を襲い、戦争末期にはキオを支援した。戦後は船団を資源探査企業へ改組し、火星と地球圏の復興に必要な鉱脈を探す。"
+    },
+    "relations": [
+      {
+        "targetId": "federation-age",
+        "type": "hostility"
+      },
+      {
+        "targetId": "vagan",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "zalam-union",
+    "name": {
+      "zh": "扎拉姆联合",
+      "ja": "ザラム連合",
+      "en": "Zalam Union"
+    },
+    "short": "ZALAM",
+    "color": "#C2410C",
+    "eraIds": [
+      "ag"
+    ],
+    "description": {
+      "zh": "殖民卫星法丹内的旧国家派阀之一，由唐·博亚基领导，主张小政府与殖民地自治。它与艾乌巴为行政路线争斗数百年，双方都保有自己的 MS 与舰艇；A.G.115 维根攻入法丹时，它与联邦军、艾乌巴首次联手。",
+      "ja": "コロニー・ファーデーン内の旧国家派閥の一つ。ドン・ボヤージが率い、小さな政府とコロニーの自治を主張する。エウバとは数百年にわたり行政路線を争い、双方が独自のMSと艦艇を保っていた。A.G.115にヴェイガンがファーデーンへ侵攻すると、連邦軍とエウバと初めて手を組む。"
+    },
+    "relations": [
+      {
+        "targetId": "euba-alliance",
+        "type": "hostility"
+      },
+      {
+        "targetId": "federation-age",
+        "type": "alliance"
+      },
+      {
+        "targetId": "vagan",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "euba-alliance",
+    "name": {
+      "zh": "艾乌巴同盟",
+      "ja": "エウバ同盟",
+      "en": "Euba Alliance"
+    },
+    "short": "EUBA",
+    "color": "#15803D",
+    "eraIds": [
+      "ag"
+    ],
+    "description": {
+      "zh": "法丹殖民卫星内的另一旧国家派阀，由拉克特·艾尔法梅领导，主张大政府与管理主义，与扎拉姆争夺殖民地的管理权。双方都保有自己的 MS 与舰艇；维根入侵后，它接受弗利特的调停，与扎拉姆组成共同战线。",
+      "ja": "ファーデーン・コロニー内のもう一つの旧国家派閥。ラクト・エルファメルが率い、大きな政府と管理主義を唱え、ザラムとコロニーの管理権を争う。双方が独自のMSと艦艇を保つ。ヴェイガンの侵攻後、フリットの調停を受け入れてザラムと共同戦線を組んだ。"
+    },
+    "relations": [
+      {
+        "targetId": "zalam-union",
+        "type": "hostility"
+      },
+      {
+        "targetId": "federation-age",
+        "type": "alliance"
+      },
+      {
+        "targetId": "vagan",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "venus-globe",
+    "name": {
+      "zh": "金星地球圈",
+      "ja": "ビーナス・グロゥブ",
+      "en": "Venus Globe"
+    },
+    "short": "VENUS",
+    "color": "#CA8A04",
+    "eraIds": [
+      "rc"
+    ],
+    "description": {
+      "zh": "金星圈的国家，靠光子电池的生产与供给维持地球圈的技术限制体制。首都罗萨里奥·滕的赫尔墨斯财团总裁拉·古掌管电池流通，反对激进的地球回归；R.C.1014 年梅格法纳号抵达后，它被迫在复国派与地球侧之间选择立场。",
+      "ja": "金星圏の国家。フォトン・バッテリーの生産と供給で地球圏の技術制限体制を支える。首都ロザリオ・テンのヘルメス財団総裁ラ・グーが電池の流通を握り、急進的な地球回帰に反対する。R.C.1014にメガファウナが到着すると、レコンギスタ派と地球側の間で立場を選ぶことを迫られた。"
+    },
+    "relations": [
+      {
+        "targetId": "git-corps",
+        "type": "split"
+      }
+    ]
+  },
+  {
+    "id": "git-corps",
+    "name": {
+      "zh": "吉特团",
+      "ja": "ジット団",
+      "en": "G-IT Corps"
+    },
+    "short": "G-IT",
+    "color": "#9333EA",
+    "eraIds": [
+      "rc"
+    ],
+    "description": {
+      "zh": "金星地球圈内的激进派，主张立即执行地球回归“复国计划”，与主张谈判的赫尔墨斯财团对立。它由吉特实验室的技术保全局掌管，把实验室的新造机投入实战；部队试图夺取光子电池运输船，并以高性能 MS 追击梅格法纳号。",
+      "ja": "ビーナス・グロゥブ内の急進派。地球回帰「レコンギスタ」の即時実行を主張し、交渉路線のヘルメス財団と対立する。ジット・ラボラトリィの技術保全局が取り仕切り、同ラボの新型機を実戦へ投入する。フォトン・バッテリーの輸送船を奪おうと、メガファウナを高性能MSで追撃した。"
+    },
+    "relations": [
+      {
+        "targetId": "venus-globe",
+        "type": "split"
+      },
+      {
+        "targetId": "amerian",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "dianna-counter",
+    "name": {
+      "zh": "迪安娜回归军",
+      "ja": "ディアナ・カウンター",
+      "en": "Dianna Counter"
+    },
+    "short": "DIANNA",
+    "color": "#8B5CF6",
+    "eraIds": [
+      "cc"
+    ],
+    "parentId": "moonrace",
+    "founded": "C.C.2345",
+    "description": {
+      "zh": "月之民为大规模回归地球派出的先锋部队，由迪安娜·索雷尔女王统率，哈利·奥德指挥亲卫队。它在美洲大陆登陆并接收旧领地，与因格莱萨、卢吉亚纳的民兵爆发冲突；金加纳姆的叛乱把月之民推向内战，迪安娜回归军也在 C.C.2345 分裂为支持女王与主张强攻的两派。",
+      "ja": "月の民による大規模な地球回帰のため送り込まれた先遣軍。ディアナ・ソレル女王が統率し、ハリー・オードが親衛隊を指揮する。アメリカ大陸に上陸して旧領の接収を進め、イングレッサとルジアナの民兵と衝突した。ギンガナムの反乱は月の民を内戦へ導き、ディアナ・カウンターもC.C.2345に女王派と強攻派へ分裂した。"
+    },
+    "relations": [
+      {
+        "targetId": "moonrace",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "inglessa-militia",
+        "type": "hostility"
+      },
+      {
+        "targetId": "luzianna-militia",
+        "type": "hostility"
+      },
+      {
+        "targetId": "gingham-corps",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "gingham-corps",
+    "name": {
+      "zh": "金加纳姆队",
+      "ja": "ギンガナム隊",
+      "en": "Gingham Corps"
+    },
+    "short": "GHINGHAM",
+    "color": "#DC2626",
+    "eraIds": [
+      "cc"
+    ],
+    "founded": "C.C.2345",
+    "dissolved": "C.C.2345",
+    "description": {
+      "zh": "月之民主战派将领金·金加纳姆率领的部队，主张以武力完成地球回归。他夺取黑历史机体 Turn X，同时向迪安娜·索雷尔与地球民兵开战；C.C.2345 的最终决战在月光蝶展开的战场上结束。",
+      "ja": "月の民の主戦派武将ギム・ギンガナムが率いる部隊。武力による地球回帰の完遂を主張する。黒歴史の機体ターンXを奪い、ディアナ・ソレルと地球民兵の双方に戦いを挑んだ。C.C.2345の最終決戦は月光蝶の広がる戦場で終わる。"
+    },
+    "relations": [
+      {
+        "targetId": "moonrace",
+        "type": "split"
+      },
+      {
+        "targetId": "dianna-counter",
+        "type": "hostility"
+      },
+      {
+        "targetId": "inglessa-militia",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "seven-stars",
+    "name": {
+      "zh": "七星家",
+      "ja": "セブンスターズ",
+      "en": "Seven Stars"
+    },
+    "short": "SEVEN",
+    "color": "#6366F1",
+    "eraIds": [
+      "pd"
+    ],
+    "parentId": "gjallarhorn",
+    "dissolved": "P.D.325",
+    "description": {
+      "zh": "加拉尔霍恩的七个创始家族，三百余年间掌握其议席与人事。家族排名由厄祭战中击破机动装甲的功绩决定，勋章即“七星”；P.D.325 年伊修、法里德、库赞三家的当主在战事中死亡，体制随之解散。",
+      "ja": "ギャラルホルンの七つの創始家門。三百年余りにわたり議席と人事を握った。家門の序列は厄祭戦でモビルアーマーを撃破した功績で決まり、その勲章が「セブンスターズ」である。P.D.325、イシュー、ファリド、クジャンの三家の当主が戦死し、体制は解体した。"
+    },
+    "relations": [
+      {
+        "targetId": "gjallarhorn",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "tekkadan",
+        "type": "hostility"
+      },
+      {
+        "targetId": "teiwaz",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "turbines",
+    "name": {
+      "zh": "塔宾斯",
+      "ja": "タービンズ",
+      "en": "Turbines"
+    },
+    "short": "TURBINES",
+    "color": "#EC4899",
+    "eraIds": [
+      "pd"
+    ],
+    "parentId": "teiwaz",
+    "description": {
+      "zh": "提瓦兹的运输部门下属组织，由名濑·塔宾率领，在木星圈以武斗派闻名。它以强袭装甲舰为母舰，由名濑的家人与部下组成；收留铁华团后为其提供母舰与补给，P.D.325 年被贾斯利陷害，遭伊奥克·库赞的舰队围剿，名濑战死。",
+      "ja": "テイワズの輸送部門を担う下部組織。名瀬・タービンが率い、木星圏では武闘派として知られる。強襲装甲艦を母艦とし、名瀬の家族と部下で構成される。鉄華団を迎え入れて母艦と補給を提供したが、P.D.325にはジャスレイの罠でダインスレイフ密輸の濡れ衣を着せられ、イオク・クジャンの艦隊に囲まれて名瀬は戦死する。"
+    },
+    "relations": [
+      {
+        "targetId": "teiwaz",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "tekkadan",
+        "type": "alliance"
+      },
+      {
+        "targetId": "gjallarhorn",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "cathedra",
+    "name": {
+      "zh": "圣堂",
+      "ja": "カテドラ",
+      "en": "Cathedra"
+    },
+    "short": "CATHEDRA",
+    "color": "#0F766E",
+    "eraIds": [
+      "as"
+    ],
+    "description": {
+      "zh": "MS 开发评议会下设的监察机关，负责审查 MS 开发的程序与伦理，德林·伦布兰任总代表。它以 GUND 格式化的人体负担为由取缔高达，A.S.122 年把多米尼克斯队收为直辖部队，直接介入集团与学园的冲突。",
+      "ja": "MS開発評議会の下に置かれた監察機関。MS開発の手続きと倫理を審査し、デリング・レンブラムが総代表を務める。GUNDフォーマットの人体への負担を理由にガンダムを禁じ、A.S.122にはドミニコス隊を直轄部隊として学園と企業の衝突に投入した。"
+    },
+    "relations": [
+      {
+        "targetId": "benerit",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "dawn-of-fold",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "jeturk-heavy-machinery",
+    "name": {
+      "zh": "杰特克重机",
+      "ja": "ジェタルク重機",
+      "en": "Jeturk Heavy Machinery"
+    },
+    "short": "JETURK",
+    "color": "#EA580C",
+    "eraIds": [
+      "as"
+    ],
+    "parentId": "benerit",
+    "description": {
+      "zh": "贝纳里特集团三大分支之一，主营 MS 制造，由杰特克家经营。它开发了达利尔巴尔德与战骑高达，把学园决斗当作机体性能的展示场；古尔·杰特克在家族与决斗中几度起落，杰特克的经营方向也随之摇摆。",
+      "ja": "ベネリットグループの三大分支の一つ。MS製造を主力とし、ジェタルク家が経営する。ダリルバルデとシュバルゼッテを開発し、学園の決闘を機体性能の見せ場としてきた。グエル・ジェタルクが家門と決闘で立場を揺らすたび、会社の経営方針も揺れる。"
+    },
+    "relations": [
+      {
+        "targetId": "benerit",
+        "type": "affiliation"
+      },
+      {
+        "targetId": "dawn-of-fold",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "rg-plan",
+    "name": {
+      "zh": "RG 计划",
+      "ja": "RG計画",
+      "en": "RG Plan"
+    },
+    "short": "RG PLAN",
+    "color": "#2563EB",
+    "eraIds": [
+      "aa"
+    ],
+    "description": {
+      "zh": "A.A. 纪元围绕“被修订的高达”运作的技术计划，XARX-0 是其起点。计划的执行者没有公开，月面档案与旧军工部门的记录互相矛盾；机体型号与战史被一并改写，阿兹米·雷启动 XARX-0 时，无法确认自己拿到的是哪一场战争的遗产。",
+      "ja": "A.A.紀元、「改訂されたガンダム」を巡って動く技術計画。XARX-0がその起点である。執行者は公開されておらず、月面の記録と旧軍需部門の記録は互いに食い違う。機体の型式と戦史が共に書き換えられ、アズミ・レイはXARX-0の起動時に、どちらの戦争の遺産なのか確認できない。"
+    },
+    "relations": [
+      {
+        "targetId": "lunar-survivors",
+        "type": "alliance"
+      },
+      {
+        "targetId": "apocalypse",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "apocalypse",
+    "name": {
+      "zh": "Apocalypse",
+      "ja": "アポカリプス",
+      "en": "Apocalypse"
+    },
+    "short": "APOC",
+    "color": "#3F6212",
+    "eraIds": [
+      "aa"
+    ],
+    "founded": "A.A.0001",
+    "description": {
+      "zh": "A.A.元年在三项外来技术暴走中出现的自我增殖生态，把地球改造成无法居住的区域。它没有指挥机构，也没有谈判对象；材质化技术为它的增殖提供物理基础。A.A.45 年，它的复制体已扩散到废弃轨道，成为月面与殖民地幸存者日常面对的环境威胁。",
+      "ja": "A.A.元年、三つの外来技術の暴走で現れた自己増殖生態。地球を居住不能の区域へ変えた。指揮機構も交渉相手も持たず、マテリアライズ技術が増殖の物理的基盤を与えている。A.A.45には複製体が放棄軌道へ拡散し、月面とコロニーの生存者にとって日常的な環境脅威となった。"
+    },
+    "relations": [
+      {
+        "targetId": "lunar-survivors",
+        "type": "hostility"
+      },
+      {
+        "targetId": "rogue-orbit-crew",
+        "type": "hostility"
+      },
+      {
+        "targetId": "rg-plan",
+        "type": "hostility"
+      },
+      {
+        "targetId": "materialize-union",
+        "type": "hostility"
+      }
+    ]
+  },
+  {
+    "id": "materialize-union",
+    "name": {
+      "zh": "材质化工坊联合",
+      "ja": "マテリアライズ工房連合",
+      "en": "Materialize Workshops Union"
+    },
+    "short": "MATERIAL",
+    "color": "#0891B2",
+    "eraIds": [
+      "aa"
+    ],
+    "description": {
+      "zh": "A.A. 纪元由月面与殖民地工坊组成的材质化技术联合，掌握影像物质化所需的模板与能源配给。它为幸存者生产工具、零件与武器，也用模板封锁维持议价权；Apocalypse 的复制体多次从工坊的误用中产生，联合因此设下严格的报废规程。",
+      "ja": "A.A.紀元、月面とコロニーの工房が集まって作ったマテリアライズ技術の連合。映像の物質化に必要なテンプレートとエネルギー配給を握る。生存者向けに工具、部品、武器を作る一方、テンプレートの囲い込みで交渉力を保つ。アポカリプスの複製体は工房の誤用からも生まれ、連合は厳しい廃棄規程を設けた。"
+    },
+    "relations": [
+      {
+        "targetId": "lunar-survivors",
+        "type": "alliance"
+      },
+      {
+        "targetId": "apocalypse",
+        "type": "hostility"
+      }
+    ]
   }
 ]

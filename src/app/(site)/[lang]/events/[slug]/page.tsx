@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelationGraph } from "@/components/graph/RelationGraph";
+import { buildEventGraph } from "@/lib/graph";
 import { notFound } from "next/navigation";
 import { getBundle, getEvent, getEra, getFaction, getMachine, getPlace, getCharacter } from "@/lib/content";
 import { getDict, isLang, pick } from "@/lib/i18n";
@@ -58,6 +60,7 @@ export default async function EventPage({
   const index = eraEvents.findIndex((item) => item.id === event.id);
   const previous = index > 0 ? eraEvents[index - 1] : null;
   const next = index >= 0 && index < eraEvents.length - 1 ? eraEvents[index + 1] : null;
+  const graph = buildEventGraph(event.id, bundle, typed, dict);
 
   const scaleLabel =
     event.scale === "era" ? dict.timeline.scaleEra : event.scale === "battle" ? dict.timeline.scaleBattle : dict.timeline.scaleIncident;
@@ -228,6 +231,12 @@ export default async function EventPage({
           </div>
         </aside>
       </div>
+
+      <section className="relation-section">
+        <div className="container">
+          {graph && <RelationGraph data={graph} dict={dict} title={`${pick(event.title, typed)} · ${dict.graph.title}`} />}
+        </div>
+      </section>
     </>
   );
 }

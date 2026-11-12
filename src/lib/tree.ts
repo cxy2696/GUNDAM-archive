@@ -1,9 +1,17 @@
 import type { Machine } from "./schema";
 
+/** The compact machine record the tree needs; strips prose, sources and specs. */
+export type TreeMachine = Pick<
+  Machine,
+  "id" | "modelCode" | "name" | "eraId" | "factionId" | "firstAppear" | "tags" | "aliases"
+> & {
+  edges: { to: string; kind: TreeEdgeKind; techTag?: string }[];
+};
+
 export type TreeEdgeKind = "derive_of" | "tech_from" | "replace";
 
 export type LayoutNode = {
-  machine: Machine;
+  machine: TreeMachine;
   x: number;
   y: number;
   depth: number;
@@ -15,7 +23,6 @@ export type LayoutEdge = {
   to: LayoutNode;
   kind: TreeEdgeKind;
   techTag?: string;
-  note: { zh: string; ja: string };
   d: string;
   labelX: number;
   labelY: number;
@@ -29,8 +36,8 @@ export type TreeLayout = {
   isolatedLabelY: number;
 };
 
-const NODE_W = 200;
-const GAP_Y = 126;
+const NODE_W = 220;
+const GAP_Y = 146;
 
 function edgePath(from: LayoutNode, to: LayoutNode): string {
   const x1 = from.x + NODE_W / 2;
@@ -50,11 +57,11 @@ function edgePath(from: LayoutNode, to: LayoutNode): string {
  * edge (parallel-universe entries) are parked in a labelled strip at the
  * bottom instead of being forced into the U.C. lineage.
  */
-export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], eraId = "uc"): TreeLayout {
+export function layoutTechTree(machines: TreeMachine[], eraOrder: string[] = [], eraId = "uc"): TreeLayout {
   // Each era has its own technology base. Layout one era at a time instead
   // of forcing every universe into the U.C. tree.
   const primary = machines.filter((machine) => machine.eraId === eraId);
-  const secondary: Machine[] = [];
+  const secondary: TreeMachine[] = [];
 
   const incoming = new Map<string, number>();
   primary.forEach((machine) => incoming.set(machine.id, 0));
@@ -78,7 +85,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
   };
   primary.forEach((machine) => levelOf(machine.id));
 
-  const levels = new Map<number, Machine[]>();
+  const levels = new Map<number, TreeMachine[]>();
   for (const machine of primary) {
     const level = depths.get(machine.id) ?? 0;
     const hasEdge = machine.edges.length > 0 || (incoming.get(machine.id) ?? 0) > 0;
@@ -98,7 +105,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
     list.forEach((machine, index) => {
       const node: LayoutNode = {
         machine,
-        x: 160 + level * 252,
+        x: 180 + level * 286,
         y: startY + index * GAP_Y,
         depth: level,
         isolated: false,
@@ -117,14 +124,14 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
   ];
   void eraOrder;
   // Unconnected / parallel-universe machines are parked in a readable grid.
-  const perRow = 6;
+  const perRow = 5;
   const connectedBottom = nodes.length ? Math.max(...nodes.map((node) => node.y + 70)) : 0;
   const isolatedLabelY = Math.max(600, connectedBottom + 50);
   const gridStart = isolatedLabelY + 60;
   isolatedMachines.forEach((machine, index) => {
     const node: LayoutNode = {
       machine,
-      x: 160 + (index % perRow) * 252,
+      x: 180 + (index % perRow) * 286,
       y: gridStart + Math.floor(index / perRow) * 96,
       depth: -1,
       isolated: true,
@@ -145,7 +152,6 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
         to,
         kind: edge.kind,
         techTag: edge.techTag,
-        note: edge.note,
         d: edgePath(from, to),
         labelX: (from.x + to.x) / 2,
         labelY: (from.y + to.y) / 2 - 8,
@@ -153,7 +159,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
     }
   }
 
-  const width = Math.max(1280, ...nodes.map((node) => node.x + 120));
+  const width = Math.max(1320, ...nodes.map((node) => node.x + 140));
   const isolatedRows = Math.max(1, Math.ceil(isolatedMachines.length / perRow));
   const height = Math.max(710, gridStart + isolatedRows * 96 + 90);
   return { nodes, edges, width, height, isolatedLabelY };

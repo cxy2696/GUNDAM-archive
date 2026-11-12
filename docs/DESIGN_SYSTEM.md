@@ -2,6 +2,15 @@
 
 > 视觉不是“堆发光线条”。工业科技风来自三个可执行约定：**结构可见、信息分层、克制发光**。所有 Token 定义在 `src/app/globals.css`，页面样式在 `src/styles/`。
 
+
+> **V3.1 座舱覆盖（2026-11-12）**：本文第 1–3 节的旧 token 是 v2 的历史记录；当前实现以 `src/app/globals.css` 顶部的 v3 变量与 `src/styles/cockpit.css` 为准。
+>
+> - **色板**：`--bg-base #03060e` / `--bg-panel #08101f` / `--text #e9f4f1` / `--text-2 #aec2cf` / `--text-3 #8ba1b2`；强调色为 `--cyan #63e6ff`（交互）、`--holo #9a86ff`（技术/分类）、`--amber #ffb648`（状态/标题）、`--red #ff5d6c`（敌对/危险）、`--green #5ce6a6`（在线/同盟）。
+> - **金属边框**：`--frame-hi #d2dbd3` / `--frame-1 #b2bfb6` / `--frame-2 #8d9b92` / `--frame-3 #68756d` / `--frame-4 #48534c`，只用于主屏边框、MFD 卡与操纵台，不用于大面积背景。
+> - **字体阶梯**：10.5 / 11.5 / 12 / 12.5 / 13 / 13.5 / 14 / 14.5 / 15.5 / 16.5 / 17 / 18.5 / 20 / 21 / 23 / 25 / 29 / 31 / 35 / 37 / 42 / 44 / 60 px；正文 17px（大字模式 20px），`.micro` 12px，`.eyebrow` 12px，`.tag` 11.5px，`.chip` 13px，按钮 13.5px。
+> - **外壳尺寸**：头部 76px、操纵台 168px（≤1500px 为 138px，≤1180px 为 122px，≤980px 隐藏并改为抽屉）、侧栏 138px（≥1760px）、主屏最大 1560px。
+> - **新组件**：`.cockpit-screen`（金属边框 + 内屏）、`.screen-chrome`、`.mfd-rail/.mfd-panel`、`.console-card`、`.relation-graph`、`.atlas2d/.atlas3d`、`.era-wheel`、`.tag-map`。所有装饰层 `pointer-events: none`，不阻塞正文交互。
+
 ## 1. 颜色 Token
 
 | Token | 深色 | 浅色 | 用途 |

@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import type { Era, Faction, Lang, Machine, Tag } from "@/lib/schema";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { Era, Faction, Lang, Tag } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
-import { layoutTechTree } from "@/lib/tree";
+import { layoutTechTree, type TreeMachine } from "@/lib/tree";
 
 export function TechTreeExplorer({
   machines,
@@ -15,7 +15,7 @@ export function TechTreeExplorer({
   lang,
   dict,
 }: {
-  machines: Machine[];
+  machines: TreeMachine[];
   eras: Era[];
   factions: Faction[];
   tags: Tag[];
@@ -24,6 +24,26 @@ export function TechTreeExplorer({
 }) {
   const [activeTag, setActiveTag] = useState<string>("all");
   const [activeEra, setActiveEra] = useState<string>("uc");
+  const [hovered, setHovered] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [zoom, setZoom] = useState(1);
+  const [expanded, setExpanded] = useState(false);
+  const viewportRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setExpanded(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = expanded ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [expanded]);
   const availableMachines = useMemo(
     () => machines.filter((machine) => machine.eraId === activeEra),
     [machines, activeEra],
@@ -37,6 +57,36 @@ export function TechTreeExplorer({
   const activeCount = tag ? availableMachines.filter((machine) => machine.tags.includes(tag.id)).length : availableMachines.length;
   const activeEraRecord = eras.find((era) => era.id === activeEra);
   const hasIsolated = layout.nodes.some((node) => node.isolated);
+  const levels = [...new Set(layout.nodes.filter((node) => !node.isolated).map((node) => node.depth))].sort((a, b) => a - b);
+  const q = query.trim().toLowerCase();
+  const matchesQuery = (machine: TreeMachine) => {
+    if (!q) return true;
+    return [machine.name.zh, machine.name.ja, machine.name.en, machine.modelCode, ...machine.aliases]
+      .join(" ")
+      .toLowerCase()
+      .includes(q);
+  };
+  const matchedCount = availableMachines.filter(matchesQuery).length;
+  const connected = useMemo(() => {
+    if (!hovered) return null;
+    const set = new Set<string>([hovered]);
+    layout.edges.forEach((edge) => {
+      if (edge.from.machine.id === hovered) set.add(edge.to.machine.id);
+      if (edge.to.machine.id === hovered) set.add(edge.from.machine.id);
+    });
+    return set;
+  }, [hovered, layout.edges]);
+
+  useEffect(() => {
+    setZoom(1);
+    setQuery("");
+  }, [activeEra]);
+
+  const fit = () => {
+    const el = viewportRef.current;
+    if (!el) return;
+    setZoom(Math.max(0.42, Math.min(1, (el.clientWidth - 24) / layout.width)));
+  };
 
   return (
     <div className="tree-page container">
@@ -50,6 +100,29 @@ export function TechTreeExplorer({
           <span><i className="line line--derive" />{dict.tree.derive}</span>
           <span><i className="line line--tech" />{dict.tree.techFrom}</span>
           <span><i className="line line--replace" />{dict.tree.replace}</span>
+        </div>
+      </div>
+
+      <div className="tree__tools">
+        <label className="tree__search">
+          <span className="sr-only">{dict.tree.searchPlaceholder}</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder={dict.tree.searchPlaceholder}
+          />
+          {q && <span className="tree__search-count mono">{matchedCount} / {availableMachines.length}</span>}
+        </label>
+        <span className="micro tree__focus-hint">{dict.tree.focusHint}</span>
+        <div className="tree__zoom">
+          <button type="button" onClick={() => setZoom((value) => Math.max(0.42, +(value - 0.1).toFixed(2)))} aria-label={dict.tree.zoomOut}>−</button>
+          <span className="mono">{Math.round(zoom * 100)}%</span>
+          <button type="button" onClick={() => setZoom((value) => Math.min(1.5, +(value + 0.1).toFixed(2)))} aria-label={dict.tree.zoomIn}>＋</button>
+          <button type="button" className="chip" onClick={fit}>{dict.tree.fit}</button>
+          <button type="button" onClick={() => setExpanded((value) => !value)} aria-label={expanded ? dict.common.close : "Fullscreen"}>
+            {expanded ? "×" : "⛶"}
+          </button>
         </div>
       </div>
 
@@ -94,8 +167,20 @@ export function TechTreeExplorer({
         </div>
       </div>
 
-      <div className="tree__viewport">
-        <div className={`tree__stage ${activeTag !== "all" ? "is-filtered" : ""}`} style={{ width: layout.width, height: layout.height }}>
+      <div className={`tree__viewport ${expanded ? "is-expanded" : ""}`} ref={viewportRef}>
+        <div className="tree__zoom-box" style={{ width: layout.width * zoom, height: layout.height * zoom }}>
+        <div
+          className={`tree__stage ${activeTag !== "all" ? "is-filtered" : ""}`}
+          style={{ width: layout.width, height: layout.height, transform: `scale(${zoom})` }}
+        >
+          <div className="tree__levels" aria-hidden>
+            {levels.map((level) => (
+              <span key={level} className="tree__level" style={{ left: 180 + level * 286 }}>
+                <i />
+                <b>{dict.tree.generation} {String(level + 1).padStart(2, "0")}</b>
+              </span>
+            ))}
+          </div>
           <div className="tree__band" style={{ left: 70, width: 230 }}>
             <span className="micro">ORIGIN / 原型</span>
           </div>
@@ -116,7 +201,9 @@ export function TechTreeExplorer({
               </marker>
             </defs>
             {layout.edges.map((edge, index) => {
-              const dim = activeTag !== "all" && edge.techTag !== activeTag;
+              const dim =
+                (activeTag !== "all" && edge.techTag !== activeTag) ||
+                Boolean(connected && !connected.has(edge.from.machine.id) && !connected.has(edge.to.machine.id));
               const tag = tags.find((item) => item.id === edge.techTag);
               const label =
                 edge.kind === "derive_of"
@@ -151,7 +238,10 @@ export function TechTreeExplorer({
           {layout.nodes.map(({ machine, x, y, isolated }) => {
             const era = eras.find((item) => item.id === machine.eraId);
             const faction = factions.find((item) => item.id === machine.factionId);
-            const dim = activeTag !== "all" && !machine.tags.includes(activeTag);
+            const dim =
+              (activeTag !== "all" && !machine.tags.includes(activeTag)) ||
+              (q.length > 0 && !matchesQuery(machine)) ||
+              Boolean(connected && !connected.has(machine.id));
             return (
               <Link
                 key={machine.id}
@@ -164,6 +254,8 @@ export function TechTreeExplorer({
                   "--era": era?.color ?? "var(--cyan)",
                 } as React.CSSProperties}
                 title={`${machine.modelCode} · ${pick(machine.name, lang)}`}
+                onMouseEnter={() => setHovered(machine.id)}
+                onMouseLeave={() => setHovered((current) => (current === machine.id ? null : current))}
               >
                 <span className="tnode__bar" />
                 <span className="tnode__top">
@@ -177,6 +269,7 @@ export function TechTreeExplorer({
               </Link>
             );
           })}
+        </div>
         </div>
       </div>
 

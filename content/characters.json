@@ -48,6 +48,10 @@
       {
         "targetId": "bright-noa",
         "type": "comrade"
+      },
+      {
+        "targetId": "sayla-mass",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -130,6 +134,14 @@
       {
         "targetId": "kamille-bidan",
         "type": "mentor"
+      },
+      {
+        "targetId": "sayla-mass",
+        "type": "family"
+      },
+      {
+        "targetId": "lalah-sune",
+        "type": "admiration"
       }
     ],
     "appearances": [
@@ -191,6 +203,10 @@
       {
         "targetId": "bright-noa",
         "type": "comrade"
+      },
+      {
+        "targetId": "emma-sheen",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -243,6 +259,10 @@
       {
         "targetId": "mineva-lao",
         "type": "mentor"
+      },
+      {
+        "targetId": "judau-ashta",
+        "type": "rival"
       }
     ],
     "appearances": [
@@ -304,6 +324,22 @@
       {
         "targetId": "kamille-bidan",
         "type": "comrade"
+      },
+      {
+        "targetId": "sayla-mass",
+        "type": "comrade"
+      },
+      {
+        "targetId": "hathaway-noa",
+        "type": "family"
+      },
+      {
+        "targetId": "emma-sheen",
+        "type": "comrade"
+      },
+      {
+        "targetId": "judau-ashta",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -361,6 +397,10 @@
       {
         "targetId": "mineva-lao",
         "type": "admiration"
+      },
+      {
+        "targetId": "marida-cruz",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -426,6 +466,10 @@
       {
         "targetId": "haman-karn",
         "type": "mentor"
+      },
+      {
+        "targetId": "marida-cruz",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -575,9 +619,23 @@
     "eventIds": [
       "dark-history",
       "moonrace-return",
-      "turn-x-duel"
+      "turn-x-duel",
+      "dianna-counter-landing"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "sochie-heim",
+        "type": "comrade"
+      },
+      {
+        "targetId": "dianna-soreil",
+        "type": "comrade"
+      },
+      {
+        "targetId": "gym-ghinghim",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "turn-a-1999"
     ],
@@ -627,9 +685,44 @@
     ],
     "eventIds": [
       "battle-of-orb",
-      "battle-jachin-due"
+      "battle-jachin-due",
+      "battle-of-heliopolis",
+      "battle-of-messiah"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "athrun-zala",
+        "type": "comrade"
+      },
+      {
+        "targetId": "lacus-clyne",
+        "type": "comrade"
+      },
+      {
+        "targetId": "cagalli-yula-athha",
+        "type": "family"
+      },
+      {
+        "targetId": "shinn-asuka",
+        "type": "rival"
+      },
+      {
+        "targetId": "gilbert-durandal",
+        "type": "rival"
+      },
+      {
+        "targetId": "murrue-ramius",
+        "type": "comrade"
+      },
+      {
+        "targetId": "mu-la-flaga",
+        "type": "comrade"
+      },
+      {
+        "targetId": "rau-le-creuset",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ],
@@ -680,9 +773,28 @@
     ],
     "eventIds": [
       "celestial-being-intervention",
-      "memento-mori"
+      "memento-mori",
+      "operation-gundam-capture",
+      "operation-fallen-angels"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "lockon-stratos",
+        "type": "comrade"
+      },
+      {
+        "targetId": "tieria-erde",
+        "type": "comrade"
+      },
+      {
+        "targetId": "allelujah-haptism",
+        "type": "comrade"
+      },
+      {
+        "targetId": "ribbons-almark",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "00-2007"
     ],
@@ -732,12 +844,45 @@
     ],
     "eventIds": [
       "devil-gundam-awakening",
-      "gundam-fight-final"
+      "gundam-fight-final",
+      "shuffle-alliance-awakening"
     ],
     "relations": [
       {
         "targetId": "master-asia",
         "type": "mentor"
+      },
+      {
+        "targetId": "kyoji-kasshu",
+        "type": "family"
+      },
+      {
+        "targetId": "rain-mikamura",
+        "type": "comrade"
+      },
+      {
+        "targetId": "schwarz-bruder",
+        "type": "mentor"
+      },
+      {
+        "targetId": "allenby-beardsley",
+        "type": "rival"
+      },
+      {
+        "targetId": "chibodee-crocket",
+        "type": "comrade"
+      },
+      {
+        "targetId": "george-de-sand",
+        "type": "comrade"
+      },
+      {
+        "targetId": "argo-gulskii",
+        "type": "comrade"
+      },
+      {
+        "targetId": "sai-saici",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -788,9 +933,15 @@
     ],
     "eventIds": [
       "devil-gundam-awakening",
-      "gundam-fight-final"
+      "gundam-fight-final",
+      "shuffle-alliance-awakening"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "mentor"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -841,12 +992,30 @@
     "eventIds": [
       "operation-meteor",
       "eve-wars",
-      "marimeia-uprising"
+      "marimeia-uprising",
+      "battle-of-libra",
+      "sanc-kingdom-crisis"
     ],
     "relations": [
       {
         "targetId": "zechs-merquise",
         "type": "rival"
+      },
+      {
+        "targetId": "duo-maxwell",
+        "type": "comrade"
+      },
+      {
+        "targetId": "trowa-barton",
+        "type": "comrade"
+      },
+      {
+        "targetId": "quatre-raberba-winner",
+        "type": "comrade"
+      },
+      {
+        "targetId": "chang-wufei",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -897,9 +1066,20 @@
     ],
     "eventIds": [
       "eve-wars",
-      "marimeia-uprising"
+      "marimeia-uprising",
+      "battle-of-libra",
+      "sanc-kingdom-crisis"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "heero-yuy",
+        "type": "rival"
+      },
+      {
+        "targetId": "treize-khushrenada",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "wing-1995"
     ],
@@ -951,12 +1131,33 @@
     "eventIds": [
       "7th-space-war",
       "after-war-awakening",
-      "new-une-final"
+      "new-une-final",
+      "cloud-nine-uprising"
     ],
     "relations": [
       {
         "targetId": "tiffa-adill",
         "type": "comrade"
+      },
+      {
+        "targetId": "jamil-neate",
+        "type": "mentor"
+      },
+      {
+        "targetId": "witz-sou",
+        "type": "comrade"
+      },
+      {
+        "targetId": "roybea-loy",
+        "type": "comrade"
+      },
+      {
+        "targetId": "shagia-frost",
+        "type": "rival"
+      },
+      {
+        "targetId": "olba-frost",
+        "type": "rival"
       }
     ],
     "appearances": [
@@ -1003,8 +1204,15 @@
       ]
     },
     "machineIds": [],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "cloud-nine-uprising"
+    ],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "x-1996"
     ],
@@ -1049,8 +1257,19 @@
       ]
     },
     "machineIds": [],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "dianna-counter-landing"
+    ],
+    "relations": [
+      {
+        "targetId": "loran-cehack",
+        "type": "comrade"
+      },
+      {
+        "targetId": "kihel-heim",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "turn-a-1999"
     ],
@@ -1100,11 +1319,33 @@
       "zgaf-x19a-infinite-justice"
     ],
     "eventIds": [
-      "break-the-world"
+      "break-the-world",
+      "battle-of-heliopolis",
+      "battle-of-messiah"
     ],
     "relations": [
       {
         "targetId": "kira-yamato",
+        "type": "comrade"
+      },
+      {
+        "targetId": "cagalli-yula-athha",
+        "type": "comrade"
+      },
+      {
+        "targetId": "shinn-asuka",
+        "type": "rival"
+      },
+      {
+        "targetId": "lacus-clyne",
+        "type": "comrade"
+      },
+      {
+        "targetId": "nicol-amalfi",
+        "type": "comrade"
+      },
+      {
+        "targetId": "yzak-joule",
         "type": "comrade"
       }
     ],
@@ -1153,10 +1394,16 @@
       ]
     },
     "machineIds": [],
-    "eventIds": [],
+    "eventIds": [
+      "battle-of-messiah"
+    ],
     "relations": [
       {
         "targetId": "kira-yamato",
+        "type": "comrade"
+      },
+      {
+        "targetId": "athrun-zala",
         "type": "comrade"
       }
     ],
@@ -1210,11 +1457,21 @@
       "gn-010-zabanya"
     ],
     "eventIds": [
-      "celestial-being-intervention"
+      "celestial-being-intervention",
+      "operation-gundam-capture",
+      "operation-fallen-angels"
     ],
     "relations": [
       {
         "targetId": "setsuna-f-seiei",
+        "type": "comrade"
+      },
+      {
+        "targetId": "tieria-erde",
+        "type": "comrade"
+      },
+      {
+        "targetId": "allelujah-haptism",
         "type": "comrade"
       }
     ],
@@ -1266,10 +1523,21 @@
       "gn-005-virtue",
       "gn-008-seravee"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "operation-gundam-capture",
+      "operation-fallen-angels"
+    ],
     "relations": [
       {
         "targetId": "setsuna-f-seiei",
+        "type": "comrade"
+      },
+      {
+        "targetId": "lockon-stratos",
+        "type": "comrade"
+      },
+      {
+        "targetId": "allelujah-haptism",
         "type": "comrade"
       }
     ],
@@ -1323,12 +1591,21 @@
       "age-1-sparrow"
     ],
     "eventIds": [
-      "vagan-war"
+      "vagan-war",
+      "battle-of-nora"
     ],
     "relations": [
       {
         "targetId": "asemu-asuno",
         "type": "family"
+      },
+      {
+        "targetId": "kio-asuno",
+        "type": "family"
+      },
+      {
+        "targetId": "woolf-enneacle",
+        "type": "comrade"
       }
     ],
     "appearances": [
@@ -1383,7 +1660,20 @@
       "second-generation",
       "third-generation"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "flit-asuno",
+        "type": "family"
+      },
+      {
+        "targetId": "kio-asuno",
+        "type": "family"
+      },
+      {
+        "targetId": "zeheart-galette",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "age-2011"
     ],
@@ -1434,11 +1724,16 @@
     "eventIds": [
       "capital-tower",
       "venus-globe",
-      "full-moon"
+      "full-moon",
+      "battle-of-sankt-porto"
     ],
     "relations": [
       {
         "targetId": "aida-surugan",
+        "type": "family"
+      },
+      {
+        "targetId": "klim-nick",
         "type": "comrade"
       }
     ],
@@ -1492,9 +1787,19 @@
     ],
     "eventIds": [
       "venus-globe",
-      "full-moon"
+      "full-moon",
+      "battle-of-sankt-porto"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "bellri-zenam",
+        "type": "family"
+      },
+      {
+        "targetId": "klim-nick",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "reconguista-2014"
     ],
@@ -1546,11 +1851,26 @@
     "eventIds": [
       "gjallarhorn-coup",
       "edmonton",
-      "mars-arc"
+      "mars-arc",
+      "dort-uprising",
+      "battle-of-vingolf",
+      "hashmal-awakening"
     ],
     "relations": [
       {
         "targetId": "orga-itsuka",
+        "type": "comrade"
+      },
+      {
+        "targetId": "akihiro-altland",
+        "type": "comrade"
+      },
+      {
+        "targetId": "kudelia-aina-bernstein",
+        "type": "comrade"
+      },
+      {
+        "targetId": "norba-shino",
         "type": "comrade"
       }
     ],
@@ -1598,8 +1918,28 @@
       ]
     },
     "machineIds": [],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "dort-uprising",
+      "battle-of-vingolf"
+    ],
+    "relations": [
+      {
+        "targetId": "mikazuki-augus",
+        "type": "comrade"
+      },
+      {
+        "targetId": "akihiro-altland",
+        "type": "comrade"
+      },
+      {
+        "targetId": "kudelia-aina-bernstein",
+        "type": "comrade"
+      },
+      {
+        "targetId": "mcgillis-fareed",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ],
@@ -1651,12 +1991,26 @@
     "eventIds": [
       "plant-quetta",
       "vanadis-incident",
-      "quiet-zero"
+      "quiet-zero",
+      "quinharbor-incident",
+      "battle-of-asticassia"
     ],
     "relations": [
       {
         "targetId": "miorine-rembran",
         "type": "comrade"
+      },
+      {
+        "targetId": "prospera-mercury",
+        "type": "family"
+      },
+      {
+        "targetId": "ericht-samaya",
+        "type": "family"
+      },
+      {
+        "targetId": "guel-jeturk",
+        "type": "rival"
       }
     ],
     "appearances": [
@@ -1703,8 +2057,16 @@
       ]
     },
     "machineIds": [],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "quinharbor-incident",
+      "battle-of-asticassia"
+    ],
+    "relations": [
+      {
+        "targetId": "suletta-mercury",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ],
@@ -1752,7 +2114,8 @@
       "xarx-0-gundam-zero"
     ],
     "eventIds": [
-      "azumi-awakening"
+      "azumi-awakening",
+      "xarx-zero-awakening"
     ],
     "relations": [],
     "appearances": [
@@ -1803,7 +2166,12 @@
       "rx-78gp03"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "anavel-gato",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "0083-1991"
     ],
@@ -1851,7 +2219,12 @@
       "rx-78gp02a"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kou-uraki",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "0083-1991"
     ],
@@ -2044,7 +2417,12 @@
       "xm-x1"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "zabine-chareux",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "crossbone"
     ],
@@ -2092,7 +2470,12 @@
       "rx-0-phenex"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "jona-bashta",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "unicorn-2010"
     ],
@@ -2141,7 +2524,12 @@
       "rx-9-c"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "rita-bernal",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "narrative-2018"
     ],
@@ -2188,8 +2576,15 @@
     "machineIds": [
       "gf13-050nsw-nobel"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "shuffle-alliance-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2236,8 +2631,15 @@
     "machineIds": [
       "gf13-006na-maxter"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "shuffle-alliance-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2284,8 +2686,15 @@
     "machineIds": [
       "gf13-009nf-rose"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "shuffle-alliance-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2332,8 +2741,15 @@
     "machineIds": [
       "gf13-013nr-bolt"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "shuffle-alliance-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2380,8 +2796,15 @@
     "machineIds": [
       "gf13-011nc-dragon"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "shuffle-alliance-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2429,7 +2852,12 @@
       "gf13-021ng-spiegel"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "mentor"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2477,7 +2905,12 @@
       "gf13-003nel-rising"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ],
@@ -2526,7 +2959,12 @@
       "xxxg-01d2-deathscythe-hell"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "heero-yuy",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "wing-1995",
       "endless-waltz"
@@ -2576,7 +3014,12 @@
       "xxxg-01h2-heavyarms-custom"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "heero-yuy",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "wing-1995",
       "endless-waltz"
@@ -2626,7 +3069,12 @@
       "xxxg-01sr2-sandrock-custom"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "heero-yuy",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "wing-1995",
       "endless-waltz"
@@ -2676,7 +3124,16 @@
       "xxxg-01s2-altron"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "heero-yuy",
+        "type": "comrade"
+      },
+      {
+        "targetId": "treize-khushrenada",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "wing-1995",
       "endless-waltz"
@@ -2726,9 +3183,23 @@
       "zgmf-x42s-destiny"
     ],
     "eventIds": [
-      "break-the-world"
+      "break-the-world",
+      "battle-of-messiah"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "rival"
+      },
+      {
+        "targetId": "athrun-zala",
+        "type": "rival"
+      },
+      {
+        "targetId": "rey-za-burrel",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-destiny-2004"
     ],
@@ -2775,8 +3246,19 @@
     "machineIds": [
       "mbf-02-strike-rouge"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "battle-of-heliopolis"
+    ],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "family"
+      },
+      {
+        "targetId": "athrun-zala",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ],
@@ -2824,9 +3306,19 @@
       "zgaf-x666s-legend"
     ],
     "eventIds": [
-      "break-the-world"
+      "break-the-world",
+      "battle-of-messiah"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "shinn-asuka",
+        "type": "comrade"
+      },
+      {
+        "targetId": "gilbert-durandal",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "seed-destiny-2004"
     ],
@@ -2874,7 +3366,12 @@
       "mbf-p02-astray-red"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "gai-murakumo",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "seed-astray"
     ],
@@ -2922,7 +3419,12 @@
       "mbf-p03-astray-blue"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "lowe-guele",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "seed-astray"
     ],
@@ -3019,8 +3521,24 @@
       "gn-007-arios",
       "gn-011-harute"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "operation-gundam-capture",
+      "operation-fallen-angels"
+    ],
+    "relations": [
+      {
+        "targetId": "setsuna-f-seiei",
+        "type": "comrade"
+      },
+      {
+        "targetId": "lockon-stratos",
+        "type": "comrade"
+      },
+      {
+        "targetId": "tieria-erde",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "00-2007",
       "00-s2-2008",
@@ -3073,7 +3591,16 @@
     "eventIds": [
       "third-generation"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "flit-asuno",
+        "type": "family"
+      },
+      {
+        "targetId": "asemu-asuno",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "age-2011"
     ],
@@ -3121,7 +3648,12 @@
       "gundam-legilis"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "asemu-asuno",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "age-2011"
     ],
@@ -3170,9 +3702,19 @@
     ],
     "eventIds": [
       "gjallarhorn-coup",
-      "mars-arc"
+      "mars-arc",
+      "battle-of-vingolf"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "orga-itsuka",
+        "type": "comrade"
+      },
+      {
+        "targetId": "gaelio-bauduin",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ],
@@ -3220,9 +3762,15 @@
       "asw-g-66-kimaris-vidar"
     ],
     "eventIds": [
-      "edmonton"
+      "edmonton",
+      "battle-of-vingolf"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "mcgillis-fareed",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ],
@@ -3271,8 +3819,24 @@
       "asw-g-11-gusion-rebake",
       "asw-g-11-gusion-rebake-full-city"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "dort-uprising",
+      "hashmal-awakening"
+    ],
+    "relations": [
+      {
+        "targetId": "mikazuki-augus",
+        "type": "comrade"
+      },
+      {
+        "targetId": "orga-itsuka",
+        "type": "comrade"
+      },
+      {
+        "targetId": "norba-shino",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ],
@@ -3319,8 +3883,20 @@
     "machineIds": [
       "gundam-darilbalde"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "quinharbor-incident",
+      "battle-of-asticassia"
+    ],
+    "relations": [
+      {
+        "targetId": "lauda-neill",
+        "type": "family"
+      },
+      {
+        "targetId": "suletta-mercury",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ],
@@ -3368,7 +3944,12 @@
       "gundam-schwarzette"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "guel-jeturk",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ],
@@ -3466,7 +4047,16 @@
     "eventIds": [
       "plant-quetta"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "suletta-mercury",
+        "type": "admiration"
+      },
+      {
+        "targetId": "norea-du-noc",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ],
@@ -3516,7 +4106,12 @@
     "eventIds": [
       "plant-quetta"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "sophie-pulone",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ],
@@ -3564,7 +4159,16 @@
       "msz-010-zz"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "bright-noa",
+        "type": "comrade"
+      },
+      {
+        "targetId": "haman-karn",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "zz-1986"
     ],
@@ -3614,7 +4218,20 @@
     "eventIds": [
       "hathaway-flash"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "bright-noa",
+        "type": "family"
+      },
+      {
+        "targetId": "amuro-ray",
+        "type": "admiration"
+      },
+      {
+        "targetId": "lane-aim",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "hathaway-2021"
     ],
@@ -3662,7 +4279,16 @@
       "rx-0-banshee"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "banagher-links",
+        "type": "comrade"
+      },
+      {
+        "targetId": "mineva-lao",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "unicorn-2010"
     ],
@@ -3709,8 +4335,20 @@
     "machineIds": [
       "zgaf-x13a-providence"
     ],
-    "eventIds": [],
-    "relations": [],
+    "eventIds": [
+      "battle-of-heliopolis",
+      "operation-spitbreak"
+    ],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "rival"
+      },
+      {
+        "targetId": "mu-la-flaga",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ],
@@ -3759,7 +4397,12 @@
       "gn-000-0-gundam"
     ],
     "eventIds": [],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "setsuna-f-seiei",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "00-2007",
       "00-s2-2008"
@@ -3822,7 +4465,20 @@
       "one-year-war",
       "battle-of-a-baoa-qu"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "amuro-ray",
+        "type": "comrade"
+      },
+      {
+        "targetId": "char-aznable",
+        "type": "family"
+      },
+      {
+        "targetId": "bright-noa",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "msg-1979"
     ]
@@ -3871,7 +4527,12 @@
     "eventIds": [
       "one-year-war"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "char-aznable",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "msg-1979"
     ]
@@ -3923,7 +4584,16 @@
       "gryps-conflict",
       "dakar-speech"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kamille-bidan",
+        "type": "comrade"
+      },
+      {
+        "targetId": "bright-noa",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "zeta-1985"
     ]
@@ -4076,7 +4746,12 @@
     "eventIds": [
       "hathaway-flash"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "hathaway-noa",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "hathaway-2021"
     ]
@@ -4177,7 +4852,12 @@
     "eventIds": [
       "cosmo-babylonia-war"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "tobia-arronax",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "crossbone"
     ]
@@ -4329,7 +5009,12 @@
       "dark-history",
       "turn-x-duel"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "loran-cehack",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "turn-a-1999"
     ]
@@ -4377,9 +5062,19 @@
     "machineIds": [],
     "eventIds": [
       "moonrace-return",
-      "dark-history"
+      "dark-history",
+      "dianna-counter-landing"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "loran-cehack",
+        "type": "comrade"
+      },
+      {
+        "targetId": "kihel-heim",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "turn-a-1999"
     ]
@@ -4428,7 +5123,16 @@
     "eventIds": [
       "moonrace-return"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "sochie-heim",
+        "type": "family"
+      },
+      {
+        "targetId": "dianna-soreil",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "turn-a-1999"
     ]
@@ -4481,7 +5185,16 @@
       "battle-of-orb",
       "battle-jachin-due"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "athrun-zala",
+        "type": "comrade"
+      },
+      {
+        "targetId": "dearka-elsman",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4534,7 +5247,12 @@
       "battle-of-orb",
       "battle-jachin-due"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "yzak-joule",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4586,7 +5304,12 @@
       "bloody-valentine",
       "battle-of-orb"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "athrun-zala",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4637,7 +5360,16 @@
     "eventIds": [
       "battle-of-orb"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "orga-sabnak",
+        "type": "comrade"
+      },
+      {
+        "targetId": "clotho-buer",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4688,7 +5420,16 @@
     "eventIds": [
       "battle-of-orb"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "shani-andras",
+        "type": "comrade"
+      },
+      {
+        "targetId": "clotho-buer",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4739,7 +5480,16 @@
     "eventIds": [
       "battle-of-orb"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "shani-andras",
+        "type": "comrade"
+      },
+      {
+        "targetId": "orga-sabnak",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002"
     ]
@@ -4787,9 +5537,20 @@
     "machineIds": [],
     "eventIds": [
       "battle-of-orb",
-      "battle-jachin-due"
+      "battle-jachin-due",
+      "battle-of-heliopolis",
+      "operation-spitbreak"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "comrade"
+      },
+      {
+        "targetId": "mu-la-flaga",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "seed-2002",
       "seed-destiny-2004"
@@ -4838,9 +5599,23 @@
     "machineIds": [],
     "eventIds": [
       "battle-of-orb",
-      "battle-jachin-due"
+      "battle-jachin-due",
+      "battle-of-heliopolis"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "comrade"
+      },
+      {
+        "targetId": "murrue-ramius",
+        "type": "comrade"
+      },
+      {
+        "targetId": "rau-le-creuset",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "seed-2002",
       "seed-destiny-2004"
@@ -4888,9 +5663,19 @@
     },
     "machineIds": [],
     "eventIds": [
-      "battle-jachin-due"
+      "battle-jachin-due",
+      "battle-of-messiah"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "kira-yamato",
+        "type": "rival"
+      },
+      {
+        "targetId": "rey-za-burrel",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "seed-destiny-2004"
     ]
@@ -4991,7 +5776,12 @@
     "eventIds": [
       "devil-gundam-awakening"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "domon-kasshu",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "g-gundam-1994"
     ]
@@ -5042,7 +5832,12 @@
     "eventIds": [
       "eve-wars"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "trant-clark",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "g-unit"
     ]
@@ -5093,7 +5888,12 @@
     "eventIds": [
       "eve-wars"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "odin-bernett",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "g-unit"
     ]
@@ -5140,9 +5940,20 @@
     },
     "machineIds": [],
     "eventIds": [
-      "eve-wars"
+      "eve-wars",
+      "battle-of-libra",
+      "sanc-kingdom-crisis"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "zechs-merquise",
+        "type": "comrade"
+      },
+      {
+        "targetId": "chang-wufei",
+        "type": "rival"
+      }
+    ],
     "appearances": [
       "wing-1995"
     ]
@@ -5195,7 +6006,12 @@
       "after-war-awakening",
       "new-une-final"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "x-1996"
     ]
@@ -5248,7 +6064,12 @@
       "after-war-awakening",
       "new-une-final"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "x-1996"
     ]
@@ -5301,7 +6122,16 @@
       "after-war-awakening",
       "new-une-final"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "rival"
+      },
+      {
+        "targetId": "olba-frost",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "x-1996"
     ]
@@ -5353,7 +6183,16 @@
       "after-war-awakening",
       "new-une-final"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "rival"
+      },
+      {
+        "targetId": "shagia-frost",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "x-1996"
     ]
@@ -5403,9 +6242,15 @@
     ],
     "eventIds": [
       "7th-space-war",
-      "after-war-awakening"
+      "after-war-awakening",
+      "cloud-nine-uprising"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "garrod-ran",
+        "type": "mentor"
+      }
+    ],
     "appearances": [
       "x-1996"
     ]
@@ -5457,7 +6302,16 @@
       "edmonton",
       "gjallarhorn-coup"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "mikazuki-augus",
+        "type": "comrade"
+      },
+      {
+        "targetId": "akihiro-altland",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ]
@@ -5603,9 +6457,19 @@
     "machineIds": [],
     "eventIds": [
       "edmonton",
-      "gjallarhorn-coup"
+      "gjallarhorn-coup",
+      "dort-uprising"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "mikazuki-augus",
+        "type": "comrade"
+      },
+      {
+        "targetId": "orga-itsuka",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "ibo-2015"
     ]
@@ -5654,9 +6518,19 @@
       "gundam-lfrith"
     ],
     "eventIds": [
-      "vanadis-incident"
+      "vanadis-incident",
+      "battle-of-asticassia"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "suletta-mercury",
+        "type": "family"
+      },
+      {
+        "targetId": "prospera-mercury",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "witch-prologue",
       "witch-2022"
@@ -5705,9 +6579,20 @@
     "machineIds": [],
     "eventIds": [
       "vanadis-incident",
-      "quiet-zero"
+      "quiet-zero",
+      "quinharbor-incident",
+      "battle-of-asticassia"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "suletta-mercury",
+        "type": "family"
+      },
+      {
+        "targetId": "ericht-samaya",
+        "type": "family"
+      }
+    ],
     "appearances": [
       "witch-2022"
     ]
@@ -5756,7 +6641,12 @@
     "eventIds": [
       "vagan-war"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "flit-asuno",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "age-2011"
     ]
@@ -5806,7 +6696,16 @@
       "capital-tower",
       "full-moon"
     ],
-    "relations": [],
+    "relations": [
+      {
+        "targetId": "bellri-zenam",
+        "type": "comrade"
+      },
+      {
+        "targetId": "aida-surugan",
+        "type": "comrade"
+      }
+    ],
     "appearances": [
       "reconguista-2014"
     ]

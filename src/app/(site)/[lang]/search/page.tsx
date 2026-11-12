@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDict, isLang } from "@/lib/i18n";
-import { buildSearchIndex } from "@/lib/search-index";
+import { getBundle } from "@/lib/content";
 import type { Lang } from "@/lib/schema";
 import { SearchPageClient } from "@/components/SearchPageClient";
 
@@ -25,7 +25,10 @@ export default async function SearchPage({ params }: { params: Promise<{ lang: s
   if (!isLang(lang)) notFound();
   const typed = lang as Lang;
   const dict = getDict(typed);
-  const entries = buildSearchIndex(typed);
+  const bundle = getBundle();
+  const indexedCount =
+    bundle.machines.length + bundle.characters.length + bundle.factions.length + bundle.events.length + bundle.tags.length + bundle.works.length;
+  const eras = bundle.eras.map((era) => ({ id: era.id, code: era.code, name: era.name, color: era.color }));
 
   return (
     <>
@@ -33,7 +36,7 @@ export default async function SearchPage({ params }: { params: Promise<{ lang: s
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / RETRIEVAL</span>
-            <span className="mono">{String(entries.length).padStart(3, "0")} INDEXED</span>
+            <span className="mono">{String(indexedCount).padStart(3, "0")} INDEXED</span>
           </div>
           <div className="page-head__title-row">
             <div>
@@ -50,7 +53,7 @@ export default async function SearchPage({ params }: { params: Promise<{ lang: s
           </div>
         </div>
       </header>
-      <SearchPageClient entries={entries} lang={typed} dict={dict} />
+      <SearchPageClient indexedCount={indexedCount} eras={eras} lang={typed} dict={dict} />
     </>
   );
 }

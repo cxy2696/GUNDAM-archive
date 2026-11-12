@@ -80,7 +80,9 @@
       "characterId": "tieria-erde"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "operation-fallen-angels"
+  ],
   "workIds": [
     "00-2007"
   ],

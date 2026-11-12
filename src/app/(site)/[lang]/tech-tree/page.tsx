@@ -69,7 +69,17 @@ export default async function TechTreePage({
         </div>
       </header>
       <TechTreeExplorer
-        machines={bundle.machines}
+        machines={bundle.machines.map(({ id, modelCode, name, eraId, factionId, firstAppear, tags, aliases, edges }) => ({
+          id,
+          modelCode,
+          name,
+          eraId,
+          factionId,
+          firstAppear,
+          tags,
+          aliases,
+          edges: edges.map(({ to, kind, techTag }) => ({ to, kind, techTag })),
+        }))}
         eras={bundle.eras}
         factions={bundle.factions}
         tags={bundle.tags}

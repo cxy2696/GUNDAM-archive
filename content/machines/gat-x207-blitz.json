@@ -80,7 +80,9 @@
       "characterId": "nicol-amalfi"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "battle-of-heliopolis"
+  ],
   "workIds": [
     "seed-2002"
   ],

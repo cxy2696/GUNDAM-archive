@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Era, Faction, Lang, Machine, Tag } from "@/lib/schema";
+import type { Era, Faction, Lang, Tag } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
 import { normalizeQuery } from "@/lib/format";
-import { MachineCard } from "./MachineCard";
+import { MachineCard, type MachineCardData } from "./MachineCard";
 import { SearchIcon } from "./Icons";
 
 type SortKey = "timeline" | "name" | "height";
@@ -17,7 +17,7 @@ export function MachineExplorer({
   lang,
   dict,
 }: {
-  machines: Machine[];
+  machines: MachineCardData[];
   eras: Era[];
   factions: Faction[];
   tags: Tag[];

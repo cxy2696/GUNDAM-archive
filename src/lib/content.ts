@@ -2,9 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import {
+  atlasEraSchema,
   bundleSchema,
   machineSchema,
   validateBundle,
+  type AtlasEra,
   type Bundle,
   type Machine,
 } from "./schema";
@@ -59,6 +61,7 @@ export function getBundle(): Bundle {
 
   const bundle = bundleSchema.parse({
     eras: readArray("eras.json", bundleSchema.shape.eras.element),
+    atlas: readArray("atlas.json", atlasEraSchema),
     factions: readArray("factions.json", bundleSchema.shape.factions.element),
     characters: readArray("characters.json", bundleSchema.shape.characters.element),
     works: readArray("works.json", bundleSchema.shape.works.element),
@@ -92,6 +95,14 @@ export function getBundle(): Bundle {
 
   cached = bundle;
   return bundle;
+}
+
+export function getAtlas(): AtlasEra[] {
+  return getBundle().atlas;
+}
+
+export function getAtlasEra(eraId: string): AtlasEra | undefined {
+  return getBundle().atlas.find((entry) => entry.eraId === eraId);
 }
 
 export function getMachine(id: string): Machine | undefined {

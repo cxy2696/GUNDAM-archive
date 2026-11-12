@@ -6,3 +6,7 @@ next-env.d.ts
 .DS_Store
 .env*.local
 .preview/
+
+# generated at build time
+public/search-index.zh.json
+public/search-index.ja.json

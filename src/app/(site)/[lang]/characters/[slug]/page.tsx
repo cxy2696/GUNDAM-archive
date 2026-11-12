@@ -7,6 +7,8 @@ import { formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { CharacterMark } from "@/components/Emblems";
 import { MachineCard } from "@/components/MachineCard";
+import { RelationGraph } from "@/components/graph/RelationGraph";
+import { buildCharacterGraph } from "@/lib/graph";
 
 export const dynamicParams = false;
 
@@ -68,6 +70,8 @@ export default async function CharacterPage({
       period: pick(affiliation.period, typed),
     })),
   ].filter((item): item is { faction: NonNullable<typeof faction>; period: string | null } => Boolean(item.faction));
+
+  const graph = buildCharacterGraph(character.id, bundle, typed, dict);
 
   const serviceRows = [
     ...machines.map((machine) => ({
@@ -313,6 +317,12 @@ export default async function CharacterPage({
           </div>
         </aside>
       </div>
+
+      <section className="relation-section">
+        <div className="container">
+          {graph && <RelationGraph data={graph} dict={dict} title={`${pick(character.name, typed)} · ${dict.graph.title}`} />}
+        </div>
+      </section>
     </>
   );
 }

@@ -71,14 +71,14 @@
 
 .viewer__index {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12.5px;
   letter-spacing: 0.14em;
   color: var(--cyan);
   white-space: nowrap;
 }
 
 .viewer__name {
-  font-size: 12px;
+  font-size: 14.5px;
   color: var(--text-2);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -90,7 +90,7 @@
   align-items: center;
   gap: 14px;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--text-3);
   white-space: nowrap;
@@ -146,7 +146,7 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -202,7 +202,7 @@
 
 .viewer__loading > span {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.16em;
   color: var(--text-3);
 }
@@ -244,7 +244,7 @@
   border: 1px solid var(--cyan-line);
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   backdrop-filter: blur(8px);
   pointer-events: none;
@@ -259,7 +259,7 @@
 
 .viewer__part-id {
   color: var(--text-3);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.12em;
 }
 
@@ -269,7 +269,7 @@
   bottom: 14px;
   z-index: 5;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.28);
   pointer-events: none;
@@ -307,7 +307,7 @@
   height: 28px;
   padding: 0 10px;
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12.5px;
   letter-spacing: 0.06em;
   color: var(--text-3);
   transition: color var(--dur), background var(--dur);
@@ -374,7 +374,7 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-3);
@@ -382,7 +382,7 @@
 
 .slider__head .mono {
   color: var(--cyan);
-  font-size: 9px;
+  font-size: 12.5px;
   letter-spacing: 0.02em;
 }
 
@@ -437,7 +437,7 @@
   align-self: flex-end;
   height: 26px;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-3);
@@ -516,14 +516,14 @@
 
 .sheet__micro {
   font-family: var(--font-mono);
-  font-size: 6.2px;
+  font-size: 10.5px;
   letter-spacing: 0.1em;
   fill: rgba(232, 239, 245, 0.35);
 }
 
 .sheet__dim {
   font-family: var(--font-mono);
-  font-size: 6px;
+  font-size: 10.5px;
   letter-spacing: 0.06em;
   fill: rgba(34, 211, 238, 0.7);
 }
@@ -621,7 +621,7 @@
   bottom: 12px;
   z-index: 4;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
@@ -636,7 +636,7 @@
   align-items: center;
   gap: 8px;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   color: rgba(255, 255, 255, 0.35);
   pointer-events: none;
@@ -697,7 +697,7 @@
   }
   .viewer__toggles button {
     padding-inline: 6px;
-    font-size: 8px;
+    font-size: 12px;
   }
   .viewer__console-row--sliders {
     gap: 14px;
@@ -748,14 +748,14 @@
 
 .sheet__side-label {
   font-family: var(--font-mono);
-  font-size: 6px;
+  font-size: 10.5px;
   letter-spacing: 0.12em;
   fill: rgba(34, 211, 238, 0.62);
 }
 
 .sheet__side-value {
   font-family: var(--font-mono);
-  font-size: 7px;
+  font-size: 11px;
   letter-spacing: 0.04em;
   fill: rgba(232, 239, 245, 0.78);
 }
