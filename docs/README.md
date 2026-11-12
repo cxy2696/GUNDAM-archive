@@ -3,7 +3,7 @@
 [中文](README.md) ｜ [English](README.en.md)
 
 > 文档按“唯一职责”维护，避免同一事实在多处漂移。  
-> 当前发布：v3.1.2 · 2026-11-12。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
+> 当前发布：v3.1.3 · 2026-11-12。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
 
 ## 1. 权威顺序
 
@@ -85,10 +85,11 @@
 - 检查必需文档存在（README、README.ja、CHANGELOG、CONTRIBUTING、本页、ARCHITECTURE、OPERATIONS、CONTENT_GUIDE、DATA_DICTIONARY、DESIGN_SYSTEM、ROADMAP、GOVERNANCE、EDITORIAL、CHRONOLOGY、MACHINE_COVERAGE、GLOSSARY、ASSET_PIPELINE、DATA_SOURCES）；
 - 检查 package.json 版本出现在 README 与 CHANGELOG；
 - 用 `content/` 的真实数量校验 README 的快照（机体/纪元/人物/作品/事件/势力/标签/谱系边/地图节点）；
+- 检查 `preview/` 没有未被文档引用的孤儿截图；
 - 检查 README/README.ja 没有重复章节标题；
 - 检查文档索引包含 OPERATIONS 链接。
 
-构建后还会运行 `links:check` 与 `routes:check`；完整门禁是 `pnpm check`。文档里出现的命令必须能在当前仓库直接运行。
+`content:audit` 另行检查重复文本/名称/关系/出处与事件摘要复述。构建后还会运行 `links:check` 与 `routes:check`；完整门禁是 `pnpm check`。文档里出现的命令必须能在当前仓库直接运行。
 
 ## 7. 更新规则
 

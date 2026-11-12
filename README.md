@@ -15,7 +15,7 @@
 
 站点是纯静态的 Next.js 导出：内容用 JSON 维护、Zod 在构建期校验，页面带中日双语、3D 机体查看器、技术谱系、纪元年表、2D/3D 宇宙地图与关系图谱。新增一条内容不需要改页面代码；一次 `pnpm check` 会同时检查内容、文档、类型、语言、链接与全部导出路由。
 
-当前版本：**v3.1.2**（2026-11-12）。  
+当前版本：**v3.1.3**（2026-11-12）。  
 当前快照：**148 台机体 · 12 个纪元 · 114 位人物 · 42 部作品 · 69 条事件 · 82 个势力 · 32 个受控标签 · 116 条谱系边 · 156 个地图节点**；`/zh` 与 `/ja` 双语，共 **854 个静态页面**、**487 条检索索引**、**846 条 sitemap 路由**。
 
 ## 30 秒读懂
@@ -54,25 +54,6 @@
 6. **想改内容**：从 [CONTENT_GUIDE](docs/CONTENT_GUIDE.md) 开始；新增机体不需要改页面代码。
 
 ![GUNDAM Archive 首页](preview/home.png)
-
-## 项目概览
-
-高达系列横跨多个纪元与作品，资料分散在动画、设定集、模型说明书与社区 Wiki 中。机体参数口径不一、纪元年表彼此割裂，技术演进往往要翻十几部作品才能比对。
-
-GUNDAM Archive 把散落的知识组织成**可交互、可追溯、可继续生长**的结构：
-
-| 主线 | 用户问题 | 对应能力 |
-| --- | --- | --- |
-| **检阅** Inspect | 这台机体长什么样？由哪些部件构成？ | 3D 查看器、爆炸拆解、分件高亮、量子形态、2D 分层设计图 |
-| **追溯** Trace | 它从哪里来？后来变成了什么？ | 带技术标签的有向无环谱系，三种边类型，每条边附出处 |
-| **定位** Locate | 它在哪一年、哪场战争、哪个地点出现？ | 12 纪元泳道年表、2D/3D 宇宙地图、事件抽屉与事件档案 |
-| **关联** Relate | 谁驾驶它？和哪些人/势力/事件有关？ | 人物、势力、事件、术语的关联集群与 3D 关系图 |
-
-A.A. 后启示录是本仓库的原创扩展纪元：XARX-0 高达 ZERO、螺旋高达，以及《机动战士高达 RG XARX-ZERO》《GUNDAM 异轨征途》两部作品；它与 11 个正史纪元分开阅读。
-
-| A.A. 年表 | XARX-0 高达 ZERO |
-| --- | --- |
-| ![A.A. 纪元年表](preview/aa-era.png) | ![XARX-0](preview/xarx.png) |
 
 ## 界面
 
@@ -176,24 +157,19 @@ content/*.json ──Zod──▶ src/lib/content.ts ──▶ Server Components
 
 ## 文档与运营
 
-| 文档 | 职责 |
+| 入口 | 职责 |
 | --- | --- |
-| [docs/README](docs/README.md) | 文档索引、权威顺序、维护矩阵 |
-| [docs/OPERATIONS](docs/OPERATIONS.md) | 发布、回滚、监控、排障、周期维护 |
-| [docs/ARCHITECTURE](docs/ARCHITECTURE.md) | 分层、数据流、查看器、部署、ADR |
-| [docs/CONTENT_GUIDE](docs/CONTENT_GUIDE.md) | 内容新增/修改、双语、审校清单 |
-| [docs/DATA_DICTIONARY](docs/DATA_DICTIONARY.md) | 字段、枚举、Atlas、校验规则 |
-| [docs/DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md) | Token、座舱外壳、图表、无障碍、动效 |
-| [docs/ROADMAP](docs/ROADMAP.md) / [CHANGELOG](CHANGELOG.md) | 下一步 / 已发布变更 |
-| [docs/CHRONOLOGY](docs/CHRONOLOGY.md) / [GLOSSARY](docs/GLOSSARY.md) | 纪元速查 / 术语解释 |
-| [docs/MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md) | 收录边界与覆盖矩阵 |
-| [CONTRIBUTING](CONTRIBUTING.md) | 贡献流程、命令、PR 清单 |
+| [docs/README](docs/README.md) | 完整文档索引、权威顺序、维护矩阵 |
+| [docs/OPERATIONS](docs/OPERATIONS.md) | 发布、回滚、监控、排障 |
+| [docs/CONTENT_GUIDE](docs/CONTENT_GUIDE.md) / [DATA_DICTIONARY](docs/DATA_DICTIONARY.md) | 内容新增 / 字段定义 |
+| [docs/ARCHITECTURE](docs/ARCHITECTURE.md) / [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md) | 工程架构 / 视觉系统 |
+| [ROADMAP](docs/ROADMAP.md) / [CHANGELOG](CHANGELOG.md) / [CONTRIBUTING](CONTRIBUTING.md) | 计划 / 变更 / 贡献 |
 
 ## 质量门禁与运营
 
 `pnpm check` 串起七道门：
 
-1. **内容**：`validate` 检查 schema、外键、谱系 DAG、双向回指、解释字段；
+1. **内容**：`validate` 检查 schema、外键、谱系 DAG、双向回指、解释字段；`content:audit` 检查重复文本/名称/关系/出处与摘要复述；
 2. **文档**：`docs:check` 检查 Markdown 链接、必需文档、版本与数量快照；
 3. **类型**：`typecheck`；
 4. **语言**：`language:check` 扫描模板句、过长摘要/段落；

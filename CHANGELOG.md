@@ -3,6 +3,18 @@
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
+## [3.1.3] — 2026-11-12
+
+### Changed
+
+- Removed dead `OrbitalMap` / `EraFactionMap` components (518 lines) and their unused `.era-map` CSS; the live atlas uses `AtlasExplorer` only.
+- Removed 6 unreferenced preview images (~3.8 MB) and added an orphan-preview check to `docs:check`.
+- Consolidated duplicated README/JA/GLOSSARY/ROADMAP sections: README 235→211 lines, JA 145→139, GLOSSARY 78→65, ROADMAP 61→50.
+- Rewrote 11 event openings so summaries no longer repeat the first detail paragraph; all event overlap now below 50%.
+- Added `content:audit`: duplicate names/summaries/paragraphs/relations/sources and summary/detail echo detection.
+- Added `check:prebuild` and simplified CI to one `pnpm check` parity gate; Pages runs `check:prebuild` before the base-path build.
+- Version bumped to `3.1.3`; content counts unchanged (854 pages / 487 search entries / 69 events).
+
 ## [3.1.2] — 2026-11-12
 
 ### Added

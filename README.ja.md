@@ -15,7 +15,7 @@
 
 サイトは完全静的な Next.js 書き出しです。内容は JSON で管理し、Zod がビルド時に検証します。日本語／中国語の二言語、3D機体ビューア、技術系譜、紀元年表、2D/3D宇宙地図、関連グラフを備え、内容の追加にページコードの変更は不要です。`pnpm check` が内容・文書・型・言語・リンク・全エクスポートルートをまとめて検査します。
 
-現在のバージョン：**v3.1.2**（2026-11-12）。  
+現在のバージョン：**v3.1.3**（2026-11-12）。  
 現在のスナップショット：**148機体 · 12紀元 · 114人物 · 42作品 · 69事件 · 82勢力 · 32技術タグ · 116系譜辺 · 156地図ノード**。`/zh` と `/ja` の二言語で **854ページ**、**487件**の検索索引、**846本**の sitemap ルート。
 
 ## 5分でわかる
@@ -112,20 +112,14 @@ content/*.json ──Zod──▶ src/lib/content.ts ──▶ Server Components
 
 | ドキュメント | 内容 |
 | --- | --- |
+| 入口 | 役割 |
+| --- | --- |
 | [docs/README.md](docs/README.md) | ドキュメント索引・権威の境界・更新ルール |
 | [docs/OPERATIONS.md](docs/OPERATIONS.md) | 公開、ロールバック、監視、障害対応、定期保守 |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 六層モデル、データフロー、ビューア、デプロイ、ADR |
-| [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | コンテンツ追加、二言語、レビュー |
-| [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md) | フィールド、列挙、Atlas、検証規則 |
-| [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Token、コックピット、グラフ、a11y、動き |
-| [docs/CHRONOLOGY.md](docs/CHRONOLOGY.md) | 十二紀元の世紀表・紀元別速覧 |
-| [docs/MACHINE_COVERAGE.md](docs/MACHINE_COVERAGE.md) | 収録規則・カバレッジ・含まないもの |
-| [docs/ASSET_PIPELINE.md](docs/ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF |
-| [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) | 外部資料源、取込手順、公式画像の権利境界 |
-| [docs/GLOSSARY.md](docs/GLOSSARY.md) | 紀元・フィールド・技術用語の平易な説明 |
-| [docs/GOVERNANCE.md](docs/GOVERNANCE.md) | 出典区分、係争、著作権、レビュー |
-| [docs/ROADMAP.md](docs/ROADMAP.md) / [CHANGELOG.md](CHANGELOG.md) | 次の計画／変更履歴 |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | 開発・コンテンツ貢献の手順 |
+| [CONTENT_GUIDE](docs/CONTENT_GUIDE.md) / [DATA_DICTIONARY](docs/DATA_DICTIONARY.md) | コンテンツ追加／フィールド定義 |
+| [ARCHITECTURE](docs/ARCHITECTURE.md) / [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md) | アーキテクチャ／視覚システム |
+| [CHRONOLOGY](docs/CHRONOLOGY.md) / [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md) | 世紀表／収録範囲 |
+| [ROADMAP](docs/ROADMAP.md) / [CHANGELOG](CHANGELOG.md) / [CONTRIBUTING](CONTRIBUTING.md) | 計画／変更履歴／貢献 |
 
 > ドキュメントは中国語を主言語とします。日本語はこのREADMEとサイトUIで提供します。フィールド表はDATA_DICTIONARYだけに置き、他の文書では繰り返しません。
 

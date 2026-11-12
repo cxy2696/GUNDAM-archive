@@ -20,19 +20,7 @@ jobs:
           cache: pnpm
       - name: Install
         run: pnpm install --frozen-lockfile
-      - name: Validate content
-        run: pnpm validate
-      - name: Check documentation links
-        run: pnpm docs:check
-      - name: Check editorial language
-        run: pnpm language:check
-      - name: Typecheck
-        run: pnpm typecheck
-      - name: Build static site
-        run: pnpm build
+      - name: Verify content, docs, types, build, links and routes
+        run: pnpm check
         env:
           NEXT_PUBLIC_SITE_URL: https://cxy2696.github.io/GUNDAM-archive
-      - name: Audit internal links and fragments
-        run: pnpm links:check
-      - name: Audit every exported route
-        run: pnpm routes:check

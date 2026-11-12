@@ -66,6 +66,14 @@ for (const file of requiredDocs) {
   if (!fs.existsSync(path.join(root, file))) errors.push(`missing required document: ${file}`);
 }
 
+const previewDir = path.join(root, "preview");
+if (fs.existsSync(previewDir)) {
+  const markdownText = files.map((file) => fs.readFileSync(file, "utf8")).join("\n");
+  for (const image of fs.readdirSync(previewDir).filter((file) => file.endsWith(".png"))) {
+    if (!markdownText.includes(`preview/${image}`)) errors.push(`unreferenced preview image: preview/${image}`);
+  }
+}
+
 const pkg = readJson("package.json");
 const readme = readText("README.md");
 const changelog = readText("CHANGELOG.md");

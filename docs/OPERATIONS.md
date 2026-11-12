@@ -14,8 +14,8 @@
 | 部署分支 | `main` |
 | 构建方式 | `next build` + `output: "export"` → `out/` |
 | 子路径 | `NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive` |
-| CI | `.github/workflows/ci.yml`：校验、类型、语言、构建、链接、路由 |
-| 部署 | `.github/workflows/deploy-pages.yml`：同样的门禁 + Pages 上传与发布 |
+| CI | `.github/workflows/ci.yml`：一条 `pnpm check`（内容/反冗余/文档/类型/语言/构建/链接/路由） |
+| 部署 | `.github/workflows/deploy-pages.yml`：`check:prebuild` + 基路径构建 + 链接/路由审计 + Pages 发布 |
 
 站点没有后端、数据库或管理后台；所有更新都是 **改内容/代码 → 校验 → 构建 → 推送 → GitHub Actions 发布**。
 
@@ -26,7 +26,8 @@
 pnpm dev                  # 预览（会自动生成检索索引）
 
 # 2. 提交前跑完整门禁
-pnpm check                # validate → docs → typecheck → language → build → links → routes
+pnpm check                # content → docs → typecheck → language → build → links → routes
+pnpm check:prebuild       # 只跑内容/反冗余/文档/类型/语言（CI 与本地共用）
 
 # 3. 提交并推送
 git add -A
@@ -36,8 +37,8 @@ git push origin main
 
 推送后：
 
-1. **CI** 先跑一遍同样的门禁；
-2. **Deploy GitHub Pages** 用 `NEXT_PUBLIC_BASE_PATH` 构建，审计链接与路由，再上传 `out/`；
+1. **CI** 跑一条 `pnpm check`，与本地完全一致；
+2. **Deploy GitHub Pages** 先跑 `check:prebuild`，再用 `NEXT_PUBLIC_BASE_PATH` 构建，审计链接与路由，最后上传 `out/`；
 3. 两个 workflow 都成功，线上才会更新。
 
 发布后做 3 条 smoke check：

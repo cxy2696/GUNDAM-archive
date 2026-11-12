@@ -15,7 +15,7 @@
 
 The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese/Japanese routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.1.2** (2026-11-12).  
+Current version: **v3.1.3** (2026-11-12).  
 Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh` and `/ja` site has **854 static pages**, **487 search entries** and **846 sitemap routes**.
 
 ## 30-second overview
@@ -160,7 +160,7 @@ The **canonical documentation is Chinese**; this English README is the internati
 
 `pnpm check` runs seven gates:
 
-1. **Content** — schema, foreign keys, lineage DAG, bidirectional links, explanation fields.
+1. **Content** — schema, foreign keys, lineage DAG, bidirectional links, explanation fields, plus a redundancy audit for duplicate names/text/relations/sources and echoed summaries.
 2. **Docs** — Markdown links, required documents, version and content-count snapshots.
 3. **Types** — `typecheck`.
 4. **Language** — template phrases, overlong summaries/paragraphs.

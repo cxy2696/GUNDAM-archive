@@ -27,9 +27,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm validate
-      - run: pnpm docs:check
-      - run: pnpm language:check
+      - name: Prebuild checks
+        run: pnpm check:prebuild
       - name: Build for project page
         run: pnpm build
         env:

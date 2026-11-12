@@ -21,13 +21,15 @@ pnpm dev
 | --- | --- |
 | `pnpm dev` | 开发服务器 |
 | `pnpm validate` | schema + 外键 + 谱系 DAG + 双向关联 |
-| `pnpm docs:check` | 所有 Markdown 本地链接可解析 |
+| `pnpm content:audit` | 反冗余审计：重复文本/名称/关系/出处、事件摘要复述 |
+| `pnpm docs:check` | Markdown 链接、必需文件、版本/数量快照、重复标题、孤儿截图 |
 | `pnpm language:check` | 扫描模板句、AI 腔与过长段落 |
 | `pnpm typecheck` | TypeScript |
 | `pnpm build` | 静态导出到 `out/`（先自动生成检索索引） |
 | `pnpm links:check` | 构建后校验所有站内链接与 `#fragment` |
 | `pnpm routes:check` | 构建后校验 sitemap 中每条路由都有可打开的 HTML |
-| `pnpm check` | 上述内容、文档、类型、语言、构建、链接、路由门禁串联 |
+| `pnpm check:prebuild` | 内容、反冗余、文档、类型、语言（不构建） |
+| `pnpm check` | 上述门禁 + 构建 + 链接 + 路由 |
 | `pnpm preview` | 本地预览 `out/`（python3） |
 
 提交前至少运行 `pnpm check`；若只改文档，可先跑 `pnpm docs:check && pnpm language:check`。
