@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "扎古 II 的指挥官型，因夏亚·阿兹纳布尔的红色涂装与鲁姆战果而成为一年战争最具辨识度的机体之一。",
-    "ja": "ザクIIの指揮官型。シャア・アズナブルの赤い塗装とルウムでの戦果により、一年戦争で最も識別度の高い機体の一つとなった。"
+    "ja": "ザクIIの指揮官型。シャア・アズナブルの赤い塗装とルウムでの戦果により、一年戦争で最も識別度の高い機体の一つとなった。",
+    "en": "The commander type of the Zaku II, one of the most recognizable machines of the One Year War because of Char Aznable's red paint and his results at Loum."
   },
   "description": {
     "zh": [
@@ -34,6 +35,10 @@
     "ja": [
       "S型はF型から反応炉出力と関節応答を高め、指揮官識別用の角状アンテナを追加した。シャア機の高コントラストな赤い塗装は、戦場での戦術標識であると同時に心理戦の道具でもあった。",
       "ルウム戦役でシャアはこの機体により連邦戦艦五隻を撃沈し、「赤い彗星」の名を得る。以後より先進機へ乗り換えたが、このザクIIはジオンエース文化の原点とされる。"
+    ],
+    "en": [
+      "The S type raises reactor output and joint response over the F type and adds a horn antenna to mark commander status. Char's machine uses high-contrast red-pink paint, making it both a tactical marker and a psychological weapon on the battlefield.",
+      "At the Battle of Loum, Char sank five Federation warships in this machine, earning the name 'Red Comet'. He later switched to more advanced machines, but this Zaku II is still regarded as the origin of Zeon ace culture."
     ]
   },
   "specs": {
@@ -46,28 +51,32 @@
     "sensorRadius": 3200,
     "armor": {
       "zh": "超硬钢合金",
-      "ja": "超硬鋼合金"
+      "ja": "超硬鋼合金",
+      "en": "Super-Hard Steel Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "120mm 扎古机枪",
-        "ja": "120mmザク・マシンガン"
+        "ja": "120mmザク・マシンガン",
+        "en": "120mm Zaku Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "热能斧",
-        "ja": "ヒートホーク"
+        "ja": "ヒートホーク",
+        "en": "Heat Hawk"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "扎古火箭炮",
-        "ja": "ザク・バズーカ"
+        "ja": "ザク・バズーカ",
+        "en": "Zaku Bazooka"
       },
       "type": "kinetic"
     }
@@ -111,11 +120,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士高达》第 1—43 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 1–43"
     },
     {
       "label": "《机动战士高达》MSV 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam MSV setting materials"
     }
   ],
   "disputed": true,

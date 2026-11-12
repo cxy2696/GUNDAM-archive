@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { GlossaryExplorer } from "@/components/GlossaryExplorer";
 import { GlossaryGraphTools } from "@/components/glossary/GlossaryGraphTools";
@@ -21,7 +21,7 @@ export async function generateMetadata({
     description: dict.glossary.lead,
     alternates: {
       canonical: `/${lang}/glossary/`,
-      languages: { "zh-CN": "/zh/glossary/", "ja-JP": "/ja/glossary/" },
+      languages: languageAlternates("/glossary"),
     },
   };
 }

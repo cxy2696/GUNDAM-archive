@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "神意高达的后继机，以改良龙骑兵与光束盾进行全方位战。",
-    "ja": "プロヴィデンスの後継機。改良ドラグーンとビームシールドで全方位戦を行う。"
+    "ja": "プロヴィデンスの後継機。改良ドラグーンとビームシールドで全方位戦を行う。",
+    "en": "The successor to the Providence Gundam, fighting all-range with improved DRAGOONs and a beam shield."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "レジェンドはプロヴィデンスのドラグーン概念を継承しつつ、システムを小型化・安定化した。背部のドラグーンはより素早く再配置され、持続的な多角度制圧を行う。",
       "特定のパイロットのために用意された機体であることに変わりはない。技術が複雑になるほど、戦場と自分の限界を同時に理解する者が求められる。"
+    ],
+    "en": [
+      "The Legend Gundam inherits the Providence's DRAGOON concept but makes the system smaller and more stable. The DRAGOONs on its backpack can reposition faster, forming sustained multi-angle suppression.",
+      "It is still a machine prepared for a specific pilot. The more complex the technology, the more one person must understand both the battlefield and their own limits."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "龙骑兵系统",
-        "ja": "ドラグーン・システム"
+        "ja": "ドラグーン・システム",
+        "en": "DRAGOON System"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     }
@@ -105,12 +114,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED DESTINY》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED Destiny\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

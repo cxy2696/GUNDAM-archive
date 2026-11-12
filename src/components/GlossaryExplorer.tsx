@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Era, Lang, Machine, Tag } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
-import { pick } from "@/lib/i18n";
+import { pick, pickList } from "@/lib/i18n";
 
 const CATEGORY_ORDER = ["frame", "armor", "power", "sensor", "weapon", "system"] as const;
 
@@ -123,7 +123,7 @@ export function GlossaryExplorer({
                 <h3>{pick(tag.name, lang)}</h3>
                 <span className="glossary-card__en">{tag.name.en}</span>
                 <p className="glossary-card__summary">{pick(tag.description, lang)}</p>
-                {tag.detail[lang].map((paragraph) => (
+                {pickList(tag.detail, lang).map((paragraph) => (
                   <p key={paragraph.slice(0, 24)} className="glossary-card__detail">{paragraph}</p>
                 ))}
                 <div className="glossary-card__foot">

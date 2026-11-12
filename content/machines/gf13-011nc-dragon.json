@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新中国的代表机体，以龙爪与火焰放射进行贴身格斗。",
-    "ja": "ネオチャイナの代表機。ドラゴン・クローと火炎放射で密着格闘を戦う。"
+    "ja": "ネオチャイナの代表機。ドラゴン・クローと火炎放射で密着格闘を戦う。",
+    "en": "Neo China's representative machine, fighting at close quarters with dragon claws and flame throwers."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ドラゴンガンダムの動きは武術の擒拿と寸勁を模している。前腕からドラゴン・クローがせり出し、胸部と肩には短距離の火炎放射器を隠す。",
       "ガンダムファイトでは自ら距離を詰めることが多い。中遠距離は浪費であり、勝負を決めるのは最初の掴みに耐えられるかどうかだ。"
+    ],
+    "en": [
+      "The Dragon Gundam's movements imitate the grappling and one-inch power strikes of martial arts. Its forearms can extend dragon claws, and short-range flame throwers are hidden in its chest and shoulders.",
+      "In the Gundam Fight it often closes the distance on its own. For the Dragon Gundam, medium and long range are a waste; what decides the match is whether the opponent can survive the first grip."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "龙爪",
-        "ja": "ドラゴン・クロー"
+        "ja": "ドラゴン・クロー",
+        "en": "Dragon Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火焰放射",
-        "ja": "火炎放射"
+        "ja": "火炎放射",
+        "en": "Flame Thrower"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束长枪",
-        "ja": "ビームランス"
+        "ja": "ビームランス",
+        "en": "Beam Glaive"
       },
       "type": "beam"
     }
@@ -94,12 +102,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

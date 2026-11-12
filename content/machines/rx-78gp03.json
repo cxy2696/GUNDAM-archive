@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "由核心机 Stamen 与武器库 Orchis 组成的机动要塞，联邦 GP 计划的火力顶点。",
-    "ja": "コア機スターメンと武器庫オーキスからなる機動要塞。連邦GP計画の火力の頂点。"
+    "ja": "コア機スターメンと武器庫オーキスからなる機動要塞。連邦GP計画の火力の頂点。",
+    "en": "A mobile fortress made of the core machine Stamen and the weapon container Orchis, the firepower peak of the Federation's GP plan."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "GP03は単独のコクピットではなく、「ガンダムを武器庫に収める」ためのシステムである。スターメンが制御を担い、オーキスが推力・ミサイル・大型ビーム砲を供給する。合体後は小型艦に近い。",
       "その火力は単独で艦隊を制圧できるほどだが、巨大な輪郭は最も目立つ標的にもなる。デンドロビウムの浪漫は、パイロットが数百の目標を同時に処理する現実の上に成り立っている。"
+    ],
+    "en": [
+      "The GP03 is not a single cockpit but a whole scheme of 'putting a Gundam inside a weapons container'. The Stamen controls, while the Orchis provides propulsion, missiles and a large beam cannon; combined, it is more like a small warship.",
+      "Its firepower is enough to suppress a fleet alone, but its huge silhouette also makes it the most obvious target. The Dendrobium's firepower rests on the reality that the pilot must handle hundreds of targets at once."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "大型光束炮",
-        "ja": "大型ビーム砲"
+        "ja": "大型ビーム砲",
+        "en": "Large Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "微型导弹仓",
-        "ja": "マイクロ・ミサイル・ポッド"
+        "ja": "マイクロ・ミサイル・ポッド",
+        "en": "Micro Missile Pod"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "I 力场发生器",
-        "ja": "Iフィールド・ジェネレーター"
+        "ja": "Iフィールド・ジェネレーター",
+        "en": "I-Field Generator"
       },
       "type": "special"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 0083 星尘的回忆》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 0083: Stardust Memory\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

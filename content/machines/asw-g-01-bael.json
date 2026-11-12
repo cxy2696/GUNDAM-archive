@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "厄祭战时代的初代高达之一，象征加拉尔霍恩的创始理念，后被麦克吉利斯夺回。",
-    "ja": "厄祭戦時代の初代ガンダムの一機。ギャラルホルンの創始理念を象徴し、マクギリスによって取り戻される。"
+    "ja": "厄祭戦時代の初代ガンダムの一機。ギャラルホルンの創始理念を象徴し、マクギリスによって取り戻される。",
+    "en": "One of the first Gundams from the Calamity War era, symbolizing Gjallarhorn's founding ideals, later reclaimed by McGillis."
   },
   "description": {
     "zh": [
@@ -30,11 +31,14 @@
     ],
     "ja": [
       "バエルは双剣と高機動性で知られ、機体そのものがギャラルホルンの「正義」言説の神話を背負う。マクギリスはこれで組織を号令しようとしたが、象徴は政治的な賭け金へ変わった。"
+    ],
+    "en": [
+      "Bael is known for its twin swords and high mobility; the machine itself carries the myth Gjallarhorn tells about 'justice'. McGillis tried to use it to command the organization, but also turned a symbol into a political gamble."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": null,
     "powerOutput": null,
@@ -45,21 +49,24 @@
     {
       "name": {
         "zh": "双剑 ×2",
-        "ja": "双剣 ×2"
+        "ja": "双剣 ×2",
+        "en": "Twin Sword ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -94,7 +101,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -116,13 +124,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

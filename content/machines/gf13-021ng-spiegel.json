@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新德国的代表机体，以镜面干扰与忍者式格斗术作战。",
-    "ja": "ネオドイツの代表機。鏡面による妨害と忍者式の格闘術で戦う。"
+    "ja": "ネオドイツの代表機。鏡面による妨害と忍者式の格闘術で戦う。",
+    "en": "Neo Germany's representative machine, fighting with mirror interference and ninja-style martial arts."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ガンダムシュピーゲルは全身を鏡面装甲で覆い、動きは極めて軽い。相手の視界、レーダー反射、心理的な予測を同時に乱し、予想外の角度から踏み込む。",
       "正面から戦うことは少ない。その美学は「見えない拳」にある。相手が気づいた時には、戦いは終わっている。"
+    ],
+    "en": [
+      "The Gundam Spiegel is covered in mirror armor and moves very lightly. It disrupts the opponent's sight, radar reflections and expectations all at once, then cuts in from an unexpected angle.",
+      "The machine rarely fights head-on. Its aesthetic is 'the invisible fist'—by the time the opponent realizes, the fight is over."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "镜片浮游炮",
-        "ja": "シュピーゲル・ビット"
+        "ja": "シュピーゲル・ビット",
+        "en": "Spiegel Bit"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "手里剑",
-        "ja": "シュリケン"
+        "ja": "シュリケン",
+        "en": "Shuriken"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "格斗术",
-        "ja": "格闘術"
+        "ja": "格闘術",
+        "en": "Martial Arts"
       },
       "type": "melee"
     }
@@ -94,12 +102,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

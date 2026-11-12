@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "流星作战的五台高达之一，以中国武术与龙爪进行近身战。",
-    "ja": "オペレーション・メテオの五機のガンダムの一機。中国武術とドラゴンクローで近接戦を戦う。"
+    "ja": "オペレーション・メテオの五機のガンダムの一機。中国武術とドラゴンクローで近接戦を戦う。",
+    "en": "One of the five Gundams of Operation Meteor, fighting at close range with Chinese martial arts and dragon claws."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "シェンロンガンダムの動きには武術のリズムがある。右腕のドラゴンクローで掴み、火炎放射で相手を近距離に固定する。",
       "チャン・ウーフェイにとって、この機体は道具ではなく「正義」を証明する武器である。だからこそ、常に最前線へ飛び込む。"
+    ],
+    "en": [
+      "The Shenlong Gundam's movements carry a clear martial-arts rhythm. Its right arm can extend a dragon claw; after a grip it follows with flame emission, pinning the opponent at close range.",
+      "For Chang Wufei, the machine is a weapon he uses to prove 'justice', not a tool. Because of that, it always charges to the very front."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束长枪",
-        "ja": "ビームグレイブ"
+        "ja": "ビームグレイブ",
+        "en": "Beam Glaive"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "龙爪",
-        "ja": "ドラゴンクロー"
+        "ja": "ドラゴンクロー",
+        "en": "Dragon Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火焰放射",
-        "ja": "火炎放射"
+        "ja": "火炎放射",
+        "en": "Flame Thrower"
       },
       "type": "special"
     }
@@ -88,7 +96,8 @@
       "sources": [
         {
           "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing: Endless Waltz mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gundarium"
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达 W》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

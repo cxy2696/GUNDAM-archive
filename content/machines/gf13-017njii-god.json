@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "第十三届高达武斗会的新日本代表机，以拳法与极限机动为核心，能释放“爆热神威掌”。",
-    "ja": "第13回ガンダムファイトのネオジャパン代表機。拳法と最大限機動を軸に、「爆熱ゴッドフィンガー」を放つ。"
+    "ja": "第13回ガンダムファイトのネオジャパン代表機。拳法と最大限機動を軸に、「爆熱ゴッドフィンガー」を放つ。",
+    "en": "Neo Japan's representative machine in the 13th Gundam Fight, built around fists and extreme mobility, able to unleash the 'Bakunetsu God Finger'."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ゴッドガンダムはドモン・カッシュが駆り、従来の射撃戦を捨てて格闘と機体同調を中心に設計された。その機動と拳法はファイトを「人対人」の決闘へ引き戻し、パイロットの身体を限界まで追い込んだ。"
+    ],
+    "en": [
+      "The God Gundam is piloted by Domon Kasshu, and its design abandons traditional shooting combat in favor of close combat and synchronization with the machine. Its mobility and fist techniques return the Gundam Fight to a 'person against person' duel logic, and push the pilot's body to its limit."
     ]
   },
   "specs": {
@@ -45,21 +49,24 @@
     {
       "name": {
         "zh": "爆热神威掌",
-        "ja": "爆熱ゴッドフィンガー"
+        "ja": "爆熱ゴッドフィンガー",
+        "en": "Bakunetsu God Finger"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -97,7 +104,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -112,7 +120,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -127,7 +136,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -142,7 +152,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -157,7 +168,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -172,7 +184,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -187,7 +200,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -209,13 +223,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动武斗传 G 高达》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动武斗传 G 高达》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Fighter G Gundam\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

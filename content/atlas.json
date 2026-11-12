@@ -14,7 +14,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -24,14 +25,16 @@
         "factionId": "earth-federation",
         "note": {
           "zh": "地球联邦的本土。贾布罗、加州基地、敖德萨与月面工业带共同构成联邦的战争机器。",
-          "ja": "地球連邦の本土。ジャブロー、カリフォルニア・ベース、オデッサ、月面工業帯が連邦の戦争を支える。"
+          "ja": "地球連邦の本土。ジャブロー、カリフォルニア・ベース、オデッサ、月面工業帯が連邦の戦争を支える。",
+          "en": "The Earth Federation's home territory. Jaburo, California Base, Odessa and the lunar industrial belt together form the Federation's war machine."
         }
       },
       {
         "id": "jaburo",
         "name": {
           "zh": "贾布罗",
-          "ja": "ジャブロー"
+          "ja": "ジャブロー",
+          "en": "Jaburo"
         },
         "kind": "city",
         "anchor": "earth",
@@ -42,14 +45,16 @@
         "placeId": "jaburo",
         "note": {
           "zh": "亚马逊盆地地下的联邦军总司令部。",
-          "ja": "アマゾン盆地地下の連邦軍総司令部。"
+          "ja": "アマゾン盆地地下の連邦軍総司令部。",
+          "en": "The Federation Forces' supreme headquarters beneath the Amazon Basin."
         }
       },
       {
         "id": "california-base",
         "name": {
           "zh": "加州基地",
-          "ja": "カリフォルニア・ベース"
+          "ja": "カリフォルニア・ベース",
+          "en": "California Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -62,7 +67,8 @@
         "id": "odessa",
         "name": {
           "zh": "敖德萨",
-          "ja": "オデッサ"
+          "ja": "オデッサ",
+          "en": "Odessa"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -73,14 +79,16 @@
         "placeId": "odessa",
         "note": {
           "zh": "黑海北岸的矿业基地，吉翁在地球上最大的资源据点。",
-          "ja": "黒海北岸の鉱山基地。ジオンの地球上最大の資源拠点。"
+          "ja": "黒海北岸の鉱山基地。ジオンの地球上最大の資源拠点。",
+          "en": "A mining base on the northern shore of the Black Sea, Zeon's largest resource stronghold on Earth."
         }
       },
       {
         "id": "sydney",
         "name": {
           "zh": "悉尼",
-          "ja": "シドニー"
+          "ja": "シドニー",
+          "en": "Sydney"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -90,14 +98,16 @@
         "placeId": "sydney",
         "note": {
           "zh": "不列颠作战中殖民卫星的坠落点。",
-          "ja": "ブリティッシュ作戦でコロニーが落下した地点。"
+          "ja": "ブリティッシュ作戦でコロニーが落下した地点。",
+          "en": "The impact point of a colony drop during Operation British."
         }
       },
       {
         "id": "dakar",
         "name": {
           "zh": "达喀尔",
-          "ja": "ダカール"
+          "ja": "ダカール",
+          "en": "Dakar"
         },
         "kind": "city",
         "anchor": "earth",
@@ -110,7 +120,8 @@
         "id": "torrington",
         "name": {
           "zh": "托灵顿",
-          "ja": "トリントン"
+          "ja": "トリントン",
+          "en": "Torrington"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -123,7 +134,8 @@
         "id": "side-7",
         "name": {
           "zh": "Side 7 / 诺亚",
-          "ja": "サイド7 / ノア"
+          "ja": "サイド7 / ノア",
+          "en": "Side 7 / Noa"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -133,14 +145,16 @@
         "placeId": "side-7",
         "note": {
           "zh": "L3 的中立殖民卫星群，联邦 V 作战的秘密工厂。",
-          "ja": "L3の中立コロニー群。連邦V作戦の極秘工場。"
+          "ja": "L3の中立コロニー群。連邦V作戦の極秘工場。",
+          "en": "A neutral colony cluster at L3, and the secret factory for the Federation's Operation V."
         }
       },
       {
         "id": "luna-ii",
         "name": {
           "zh": "月神二号",
-          "ja": "ルナツー"
+          "ja": "ルナツー",
+          "en": "Luna II"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -149,14 +163,16 @@
         "factionId": "earth-federation",
         "note": {
           "zh": "L3 的小行星军事基地，联邦宇宙军的整备中枢。",
-          "ja": "L3の小惑星軍事基地。連邦宇宙軍の整備中枢。"
+          "ja": "L3の小惑星軍事基地。連邦宇宙軍の整備中枢。",
+          "en": "An asteroid military base at L3, the maintenance hub of the Federation Space Force."
         }
       },
       {
         "id": "side-5-loum",
         "name": {
           "zh": "Side 5 / 鲁姆",
-          "ja": "サイド5 / ルウム"
+          "ja": "サイド5 / ルウム",
+          "en": "Side 5 / Loum"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -166,14 +182,16 @@
         "placeId": "loum",
         "note": {
           "zh": "鲁姆会战所在宙域。0079 年时 Side 5 位于 L1。",
-          "ja": "ルウム戦役の宙域。0079年時点でサイド5はL1にある。"
+          "ja": "ルウム戦役の宙域。0079年時点でサイド5はL1にある。",
+          "en": "The space area of the Battle of Loum. In 0079, Side 5 was located at L1."
         }
       },
       {
         "id": "side-3",
         "name": {
           "zh": "Side 3 / 慕佐",
-          "ja": "サイド3 / ムンゾ"
+          "ja": "サイド3 / ムンゾ",
+          "en": "Side 3 / Munzo"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -183,14 +201,16 @@
         "placeId": "side-3",
         "note": {
           "zh": "吉翁公国本土，位于月球背侧的 L2。",
-          "ja": "ジオン公国本土。月の裏側のL2にある。"
+          "ja": "ジオン公国本土。月の裏側のL2にある。",
+          "en": "The Principality of Zeon's homeland, at L2 on the far side of the Moon."
         }
       },
       {
         "id": "a-baoa-qu",
         "name": {
           "zh": "阿·巴瓦·库",
-          "ja": "ア・バオア・クー"
+          "ja": "ア・バオア・クー",
+          "en": "A Baoa Qu"
         },
         "kind": "fortress",
         "anchor": "lagrange",
@@ -200,14 +220,16 @@
         "placeId": "a-baoa-qu",
         "note": {
           "zh": "Side 3 的门户要塞，一年战争的最终决战地。",
-          "ja": "サイド3の門戸を守る要塞。一年戦争の最終決戦地。"
+          "ja": "サイド3の門戸を守る要塞。一年戦争の最終決戦地。",
+          "en": "The gateway fortress to Side 3, and the final battleground of the One Year War."
         }
       },
       {
         "id": "solomon",
         "name": {
           "zh": "所罗门 / 金平岛",
-          "ja": "ソロモン / コンペイ島"
+          "ja": "ソロモン / コンペイ島",
+          "en": "Solomon / Konpei Island"
         },
         "kind": "fortress",
         "anchor": "lagrange",
@@ -217,14 +239,16 @@
         "placeId": "solomon",
         "note": {
           "zh": "L5 旧 Side 1 宙域的小行星要塞，宇宙攻击军前线基地。",
-          "ja": "L5の旧サイド1宙域にある小惑星要塞。宇宙攻撃軍の前線基地。"
+          "ja": "L5の旧サイド1宙域にある小惑星要塞。宇宙攻撃軍の前線基地。",
+          "en": "An asteroid fortress in the old Side 1 space area at L5, the front-line base of the Space Attack Force."
         }
       },
       {
         "id": "gryps",
         "name": {
           "zh": "格里普斯",
-          "ja": "グリプス"
+          "ja": "グリプス",
+          "en": "Gryps"
         },
         "kind": "fortress",
         "anchor": "lagrange",
@@ -234,14 +258,16 @@
         "placeId": "gryps",
         "note": {
           "zh": "提坦斯改造的殖民卫星巨炮要塞。",
-          "ja": "ティターンズが改造したコロニーレーザー要塞。"
+          "ja": "ティターンズが改造したコロニーレーザー要塞。",
+          "en": "A colony converted by the Titans into a giant cannon fortress."
         }
       },
       {
         "id": "side-1",
         "name": {
           "zh": "Side 1 / 扎恩",
-          "ja": "サイド1 / ザーン"
+          "ja": "サイド1 / ザーン",
+          "en": "Side 1 / Zahn"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -253,7 +279,8 @@
         "id": "side-4",
         "name": {
           "zh": "Side 4 / 摩尔",
-          "ja": "サイド4 / ムーア"
+          "ja": "サイド4 / ムーア",
+          "en": "Side 4 / Moore"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -264,7 +291,8 @@
         "id": "side-2",
         "name": {
           "zh": "Side 2 / 哈提",
-          "ja": "サイド2 / ハッテ"
+          "ja": "サイド2 / ハッテ",
+          "en": "Side 2 / Hatte"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -275,7 +303,8 @@
         "id": "side-6",
         "name": {
           "zh": "Side 6 / 里亚",
-          "ja": "サイド6 / リーア"
+          "ja": "サイド6 / リーア",
+          "en": "Side 6 / Riah"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -286,7 +315,8 @@
         "id": "axis",
         "name": {
           "zh": "阿克西斯",
-          "ja": "アクシズ"
+          "ja": "アクシズ",
+          "en": "Axis"
         },
         "kind": "station",
         "anchor": "deep",
@@ -297,14 +327,16 @@
         "placeId": "axis",
         "note": {
           "zh": "小行星带中的吉翁残党要塞。",
-          "ja": "小惑星帯のジオン残党要塞。"
+          "ja": "小惑星帯のジオン残党要塞。",
+          "en": "A Zeon remnant fortress in the asteroid belt."
         }
       },
       {
         "id": "von-braun",
         "name": {
           "zh": "冯·布朗",
-          "ja": "フォン・ブラウン"
+          "ja": "フォン・ブラウン",
+          "en": "Von Braun"
         },
         "kind": "city",
         "anchor": "moon",
@@ -314,14 +346,16 @@
         "placeId": "von-braun",
         "note": {
           "zh": "月面最大城市与阿纳海姆的军工中心。",
-          "ja": "月面最大の都市。アナハイムの軍需拠点。"
+          "ja": "月面最大の都市。アナハイムの軍需拠点。",
+          "en": "The largest city on the Moon and Anaheim's military-industrial center."
         }
       },
       {
         "id": "grenada",
         "name": {
           "zh": "格拉纳达",
-          "ja": "グラナダ"
+          "ja": "グラナダ",
+          "en": "Granada"
         },
         "kind": "city",
         "anchor": "moon",
@@ -330,7 +364,8 @@
         "lng": -28,
         "note": {
           "zh": "月面北半球的城市，吉翁与联邦都曾在此设厂。",
-          "ja": "月面北半球の都市。ジオンと連邦の双方が工場を置いた。"
+          "ja": "月面北半球の都市。ジオンと連邦の双方が工場を置いた。",
+          "en": "A city in the Moon's northern hemisphere, where both Zeon and the Federation once built factories."
         }
       }
     ],
@@ -374,11 +409,13 @@
     ],
     "geography": {
       "zh": "0079—0083 的编制是：L1 为 Side 5（鲁姆），L2 为 Side 3 与阿·巴瓦·库，L3 为 Side 7 与月神二号，L4 为 Side 2、6，L5 为 Side 1、4 与所罗门。0084 年 Side 4/5/6 三向重编：Side 4→L1、Side 5→L4、Side 6→L5。吉翁以 L2 的 Side 3 为本土，阿·巴瓦·库、所罗门与月面格拉纳达构成其防卫线。",
-      "ja": "0079—0083年の配置は、L1がサイド5（ルウム）、L2がサイド3とア・バオア・クー、L3がサイド7とルナツー、L4がサイド2・6、L5がサイド1・4とソロモン。0084年にサイド4/5/6が再編され、サイド4→L1、サイド5→L4、サイド6→L5となる。ジオンはL2のサイド3を本土とし、ア・バオア・クー、ソロモン、月面グラナダが防衛線をなす。"
+      "ja": "0079—0083年の配置は、L1がサイド5（ルウム）、L2がサイド3とア・バオア・クー、L3がサイド7とルナツー、L4がサイド2・6、L5がサイド1・4とソロモン。0084年にサイド4/5/6が再編され、サイド4→L1、サイド5→L4、サイド6→L5となる。ジオンはL2のサイド3を本土とし、ア・バオア・クー、ソロモン、月面グラナダが防衛線をなす。",
+      "en": "The 0079-0083 arrangement is: L1 is Side 5 (Loum), L2 is Side 3 and A Baoa Qu, L3 is Side 7 and Luna II, L4 is Sides 2 and 6, L5 is Sides 1 and 4 and Solomon. In 0084, Sides 4/5/6 were reorganized three ways: Side 4 to L1, Side 5 to L4, Side 6 to L5. Zeon's homeland is Side 3 at L2, and A Baoa Qu, Solomon and lunar Granada form its defense line."
     },
     "layoutNote": {
       "zh": "本图采用一年战争（0079—0083）编制；0084 年后的番号变化写在说明里，不混用两套位置。",
-      "ja": "本図は一年戦争（0079—0083）の配置。0084年以降の再編は説明に記し、二つの配置を混在させない。"
+      "ja": "本図は一年戦争（0079—0083）の配置。0084年以降の再編は説明に記し、二つの配置を混在させない。",
+      "en": "This map uses the One Year War (0079-0083) arrangement; number changes after 0084 are described in the notes, and the two sets of positions are not mixed."
     },
     "sources": [
       {
@@ -407,7 +444,8 @@
         "id": "earth",
         "name": {
           "zh": "地球",
-          "ja": "地球"
+          "ja": "地球",
+          "en": "Earth"
         },
         "kind": "region",
         "anchor": "earth",
@@ -417,14 +455,16 @@
         "factionId": "gundam-fighters",
         "note": {
           "zh": "被保留为武斗会擂台的地球。每四年，各国代表在地表与殖民星之间往返。",
-          "ja": "ガンダムファイトの舞台として残された地球。四年ごとに各国代表が地表とコロニーを往復する。"
+          "ja": "ガンダムファイトの舞台として残された地球。四年ごとに各国代表が地表とコロニーを往復する。",
+          "en": "Earth, preserved as the arena for the Gundam Fight. Every four years, each nation's representatives travel between the surface and the colonies."
         }
       },
       {
         "id": "hong-kong",
         "name": {
           "zh": "香港 / 维多利亚港",
-          "ja": "香港 / ビクトリア・ハーバー"
+          "ja": "香港 / ビクトリア・ハーバー",
+          "en": "Hong Kong / Victoria Harbour"
         },
         "kind": "city",
         "anchor": "earth",
@@ -434,14 +474,16 @@
         "factionId": "neo-hong-kong",
         "note": {
           "zh": "第十三届武斗会决赛的主办城市。",
-          "ja": "第13回ファイト決勝の開催都市。"
+          "ja": "第13回ファイト決勝の開催都市。",
+          "en": "The host city of the 13th Gundam Fight finals."
         }
       },
       {
         "id": "victoria-peak",
         "name": {
           "zh": "太平山顶",
-          "ja": "ビクトリア・ピーク"
+          "ja": "ビクトリア・ピーク",
+          "en": "Victoria Peak"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -453,7 +495,8 @@
         "id": "guyana",
         "name": {
           "zh": "圭亚那高地",
-          "ja": "ギアナ高地"
+          "ja": "ギアナ高地",
+          "en": "Guiana Highlands"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -462,14 +505,16 @@
         "lng": -59,
         "note": {
           "zh": "恶魔高达的埋藏地。",
-          "ja": "デビルガンダムが眠る地。"
+          "ja": "デビルガンダムが眠る地。",
+          "en": "The burial site of the Devil Gundam."
         }
       },
       {
         "id": "shinjuku",
         "name": {
           "zh": "新宿",
-          "ja": "新宿"
+          "ja": "新宿",
+          "en": "Shinjuku"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -481,7 +526,8 @@
         "id": "lantau",
         "name": {
           "zh": "大屿山",
-          "ja": "ランタオ島"
+          "ja": "ランタオ島",
+          "en": "Lantau Island"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -493,7 +539,8 @@
         "id": "neo-japan",
         "name": {
           "zh": "新日本",
-          "ja": "ネオジャパン"
+          "ja": "ネオジャパン",
+          "en": "Neo Japan"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -503,14 +550,16 @@
         "factionId": "neo-japan",
         "note": {
           "zh": "以日本列岛轮廓建造的殖民星国家，多蒙与东方不败的出身地。",
-          "ja": "日本列島の形に造られたコロニー国家。ドモンと東方不敗の出身地。"
+          "ja": "日本列島の形に造られたコロニー国家。ドモンと東方不敗の出身地。",
+          "en": "A colony nation built in the outline of the Japanese archipelago, and the home of Domon and Master Asia."
         }
       },
       {
         "id": "neo-hong-kong",
         "name": {
           "zh": "新香港",
-          "ja": "ネオホンコン"
+          "ja": "ネオホンコン",
+          "en": "Neo Hong Kong"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -520,14 +569,16 @@
         "factionId": "neo-hong-kong",
         "note": {
           "zh": "以香港为原型、承办决赛的殖民星国家。",
-          "ja": "香港を模したコロニー国家。決勝を開催する。"
+          "ja": "香港を模したコロニー国家。決勝を開催する。",
+          "en": "A colony nation modeled on Hong Kong that hosted the finals."
         }
       },
       {
         "id": "neo-america",
         "name": {
           "zh": "新美国",
-          "ja": "ネオアメリカ"
+          "ja": "ネオアメリカ",
+          "en": "Neo America"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -537,14 +588,16 @@
         "factionId": "neo-america",
         "note": {
           "zh": "五角星造型、内置地标复制品的殖民星国家。",
-          "ja": "五芒星の形をしたコロニー国家。名所の複製を内部に持つ。"
+          "ja": "五芒星の形をしたコロニー国家。名所の複製を内部に持つ。",
+          "en": "A colony nation shaped like a five-pointed star, with copies of landmarks built inside."
         }
       },
       {
         "id": "neo-france",
         "name": {
           "zh": "新法国",
-          "ja": "ネオフランス"
+          "ja": "ネオフランス",
+          "en": "Neo France"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -556,7 +609,8 @@
         "id": "neo-germany",
         "name": {
           "zh": "新德国",
-          "ja": "ネオドイツ"
+          "ja": "ネオドイツ",
+          "en": "Neo Germany"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -568,7 +622,8 @@
         "id": "neo-china",
         "name": {
           "zh": "新中国",
-          "ja": "ネオチャイナ"
+          "ja": "ネオチャイナ",
+          "en": "Neo China"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -599,11 +654,13 @@
     ],
     "geography": {
       "zh": "未来世纪没有可考的拉格朗日分配：各“殖民星国家”是以本国文化造型建造的地球轨道都市，地球则是四年一度高达武斗的擂台。地图表现为地球轨道上的一组国家节点，加地球表面的赛点城市。",
-      "ja": "未来世紀にはラグランジュ分配の公式設定がない。各「コロニー国家」は自国の文化をかたどった地球軌道都市で、地球は四年に一度のガンダムファイトの舞台となる。地図は地球軌道上の国家ノードと地表の試合都市で構成する。"
+      "ja": "未来世紀にはラグランジュ分配の公式設定がない。各「コロニー国家」は自国の文化をかたどった地球軌道都市で、地球は四年に一度のガンダムファイトの舞台となる。地図は地球軌道上の国家ノードと地表の試合都市で構成する。",
+      "en": "The Future Century has no documented Lagrange assignment: each 'colony nation' is an Earth-orbit city built in the style of its own national culture, and Earth is the arena for the Gundam Fight held once every four years. The map shows a set of national nodes in Earth orbit plus match cities on Earth's surface."
     },
     "layoutNote": {
       "zh": "殖民星国家的轨道位置在官方设定中未说明，本图按地球轨道等距示意，不代表官方轨道。",
-      "ja": "コロニー国家の軌道位置は公式に未設定。本図は地球軌道上に等間隔で模式配置したもので、公式軌道ではない。"
+      "ja": "コロニー国家の軌道位置は公式に未設定。本図は地球軌道上に等間隔で模式配置したもので、公式軌道ではない。",
+      "en": "The orbital positions of the colony nations are not stated in official settings; this map shows them at equal spacing in Earth orbit and does not represent official orbits."
     },
     "sources": [
       {
@@ -614,7 +671,8 @@
       {
         "label": "未来世紀 — Wikipedia",
         "level": "B",
-        "url": "https://ja.wikipedia.org/wiki/%E6%9C%AA%E6%9D%A5%E4%B8%96%E7%B4%80"
+        "url": "https://ja.wikipedia.org/wiki/%E6%9C%AA%E6%9D%A5%E4%B8%96%E7%B4%80",
+        "labelEn": "Future Century — Wikipedia (Japanese)"
       }
     ]
   },
@@ -633,7 +691,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -643,14 +702,16 @@
         "factionId": "oz",
         "note": {
           "zh": "由统一联合、OZ 与罗姆菲勒财团控制的地球。",
-          "ja": "統一連合、OZ、ロームフェラ財団が支配する地球。"
+          "ja": "統一連合、OZ、ロームフェラ財団が支配する地球。",
+          "en": "Earth, controlled by the United Earth Sphere Alliance, OZ and the Romfeller Foundation."
         }
       },
       {
         "id": "sanc",
         "name": {
           "zh": "桑克王国",
-          "ja": "サンクキングダム"
+          "ja": "サンクキングダム",
+          "en": "Sanc Kingdom"
         },
         "kind": "region",
         "anchor": "earth",
@@ -660,14 +721,16 @@
         "factionId": "sanc-kingdom",
         "note": {
           "zh": "北欧的完全和平主义小国，莉莉娜重建的和平象征。",
-          "ja": "北欧の完全平和主義の小国。リリーナが再建した平和の象徴。"
+          "ja": "北欧の完全平和主義の小国。リリーナが再建した平和の象徴。",
+          "en": "A small, fully pacifist nation in Northern Europe, and the symbol of peace that Relena rebuilt."
         }
       },
       {
         "id": "lake-victoria",
         "name": {
           "zh": "维多利亚湖基地",
-          "ja": "ヴィクトリア湖基地"
+          "ja": "ヴィクトリア湖基地",
+          "en": "Lake Victoria Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -677,14 +740,16 @@
         "factionId": "oz",
         "note": {
           "zh": "东非的 OZ 特殊部队训练基地。",
-          "ja": "東アフリカのOZ特殊部隊訓練基地。"
+          "ja": "東アフリカのOZ特殊部隊訓練基地。",
+          "en": "An OZ special forces training base in East Africa."
         }
       },
       {
         "id": "corsica",
         "name": {
           "zh": "科西嘉基地",
-          "ja": "コルシカ基地"
+          "ja": "コルシカ基地",
+          "en": "Corsica Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -697,7 +762,8 @@
         "id": "colony-l1",
         "name": {
           "zh": "L1 殖民星群",
-          "ja": "L1コロニー群"
+          "ja": "L1コロニー群",
+          "en": "L1 Colony Cluster"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -708,7 +774,8 @@
         "id": "colony-l2",
         "name": {
           "zh": "L2 殖民星群",
-          "ja": "L2コロニー群"
+          "ja": "L2コロニー群",
+          "en": "L2 Colony Cluster"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -719,7 +786,8 @@
         "id": "colony-l3",
         "name": {
           "zh": "L3·X-18999",
-          "ja": "L3・X-18999"
+          "ja": "L3・X-18999",
+          "en": "L3 / X-18999"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -728,14 +796,16 @@
         "factionId": "barton-foundation",
         "note": {
           "zh": "巴顿财团与玛丽梅亚军据守的殖民卫星。",
-          "ja": "バートン財団とマリーメイア軍が拠るコロニー。"
+          "ja": "バートン財団とマリーメイア軍が拠るコロニー。",
+          "en": "A colony held by the Barton Foundation and the Mariemaia Army."
         }
       },
       {
         "id": "colony-l4",
         "name": {
           "zh": "L4 殖民星群",
-          "ja": "L4コロニー群"
+          "ja": "L4コロニー群",
+          "en": "L4 Colony Cluster"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -743,14 +813,16 @@
         "orbit": "L4",
         "note": {
           "zh": "温纳家所在的 L4 殖民星群。",
-          "ja": "ウィナー家が拠るL4コロニー群。"
+          "ja": "ウィナー家が拠るL4コロニー群。",
+          "en": "The L4 colony cluster where the Winner family lives."
         }
       },
       {
         "id": "colony-l5",
         "name": {
           "zh": "L5·A0206",
-          "ja": "L5・A0206"
+          "ja": "L5・A0206",
+          "en": "L5 / A0206"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -761,7 +833,8 @@
         "id": "barge",
         "name": {
           "zh": "巴尔吉要塞",
-          "ja": "宇宙要塞バルジ"
+          "ja": "宇宙要塞バルジ",
+          "en": "Balgio Fortress"
         },
         "kind": "fortress",
         "anchor": "moon",
@@ -771,14 +844,16 @@
         "factionId": "oz",
         "note": {
           "zh": "月球附近 OZ 的宇宙要塞。",
-          "ja": "月近傍にあるOZの宇宙要塞。"
+          "ja": "月近傍にあるOZの宇宙要塞。",
+          "en": "An OZ space fortress near the Moon."
         }
       },
       {
         "id": "oz-moon",
         "name": {
           "zh": "OZ 月面基地",
-          "ja": "OZ月面基地"
+          "ja": "OZ月面基地",
+          "en": "OZ Lunar Base"
         },
         "kind": "station",
         "anchor": "moon",
@@ -791,7 +866,8 @@
         "id": "mo-ii",
         "name": {
           "zh": "MO-II 资源卫星",
-          "ja": "MO-II"
+          "ja": "MO-II",
+          "en": "MO-II Resource Satellite"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -800,14 +876,16 @@
         "distance": 1.35,
         "note": {
           "zh": "地球轨道上的资源卫星，五台高达的补给点之一。",
-          "ja": "地球軌道の資源衛星。五機のガンダムの補給点の一つ。"
+          "ja": "地球軌道の資源衛星。五機のガンダムの補給点の一つ。",
+          "en": "A resource satellite in Earth orbit, and one of the supply points for the five Gundams."
         }
       },
       {
         "id": "libra",
         "name": {
           "zh": "天秤座",
-          "ja": "リーブラ"
+          "ja": "リーブラ",
+          "en": "Libra"
         },
         "kind": "fortress",
         "anchor": "lagrange",
@@ -816,14 +894,16 @@
         "factionId": "white-fang",
         "note": {
           "zh": "白色芬古的殖民卫星炮台，流星作战后的决战舞台。",
-          "ja": "ホワイトファングのコロニーレーザー要塞。流星作戦後の決戦舞台。"
+          "ja": "ホワイトファングのコロニーレーザー要塞。流星作戦後の決戦舞台。",
+          "en": "White Fang's colony cannon battery, and the final battlefield after Operation Meteor."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -863,11 +943,13 @@
     ],
     "geography": {
       "zh": "后殖民纪元把殖民星按 L1–L5 五个群编号，五台高达分别来自这五个群；地球侧由统一联合、OZ 与罗姆菲勒财团控制，北欧的桑克王国是唯一的完全和平主义飞地。",
-      "ja": "アフターコロニーではコロニーがL1–L5の五群に分かれ、五機のガンダムがそれぞれの群から来る。地球側は統一連合、OZ、ロームフェラ財団が支配し、北欧のサンクキングダムが唯一の完全平和主義の飛地となる。"
+      "ja": "アフターコロニーではコロニーがL1–L5の五群に分かれ、五機のガンダムがそれぞれの群から来る。地球側は統一連合、OZ、ロームフェラ財団が支配し、北欧のサンクキングダムが唯一の完全平和主義の飛地となる。",
+      "en": "The After Colony era numbers the colonies as five clusters, L1-L5, and the five Gundams come from these five clusters; the Earth side is controlled by the United Earth Sphere Alliance, OZ and the Romfeller Foundation, and the Sanc Kingdom in Northern Europe is the only fully pacifist enclave."
     },
     "layoutNote": {
       "zh": "L1–L5 的殖民地群按拉格朗日点分布；巴尔吉要塞置于月球附近，MO-II 在地球轨道。",
-      "ja": "L1–L5のコロニー群はラグランジュ点に配置。バルジは月近傍、MO-IIは地球軌道に置いた。"
+      "ja": "L1–L5のコロニー群はラグランジュ点に配置。バルジは月近傍、MO-IIは地球軌道に置いた。",
+      "en": "The L1-L5 colony clusters are distributed at the Lagrange points; Balgio Fortress is placed near the Moon, and MO-II is in Earth orbit."
     },
     "sources": [
       {
@@ -897,7 +979,8 @@
         "id": "earth",
         "name": {
           "zh": "地球",
-          "ja": "地球"
+          "ja": "地球",
+          "en": "Earth"
         },
         "kind": "region",
         "anchor": "earth",
@@ -907,14 +990,16 @@
         "factionId": "new-une",
         "note": {
           "zh": "第七次宇宙战争后支离破碎的地球，散落着新联邦与地方势力。",
-          "ja": "第7次宇宙戦争後に分裂した地球。新連邦と地方勢力が点在する。"
+          "ja": "第7次宇宙戦争後に分裂した地球。新連邦と地方勢力が点在する。",
+          "en": "Earth, shattered after the 7th Space War, with the new Federation and local forces scattered across it."
         }
       },
       {
         "id": "fort-severn",
         "name": {
           "zh": "塞文堡",
-          "ja": "フォート・セバーン"
+          "ja": "フォート・セバーン",
+          "en": "Fort Severn"
         },
         "kind": "city",
         "anchor": "earth",
@@ -924,14 +1009,16 @@
         "factionId": "new-une",
         "note": {
           "zh": "北美山区的自治据点，废土上少数维持秩序的城市。",
-          "ja": "北米山間部の自治拠点。廃土で数少ない秩序を保つ都市。"
+          "ja": "北米山間部の自治拠点。廃土で数少ない秩序を保つ都市。",
+          "en": "An autonomous stronghold in the mountains of North America, one of the few cities that kept order in the wasteland."
         }
       },
       {
         "id": "zonder-epta",
         "name": {
           "zh": "桑德·艾普塔",
-          "ja": "ゾンダー・エプタ"
+          "ja": "ゾンダー・エプタ",
+          "en": "Zonder Epta"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -940,14 +1027,16 @@
         "lng": 165,
         "note": {
           "zh": "太平洋上的小岛，具体位置为作品虚构。",
-          "ja": "太平洋の小島。位置は作品上の架空設定。"
+          "ja": "太平洋の小島。位置は作品上の架空設定。",
+          "en": "A small island in the Pacific; its exact location is fictional in the work."
         }
       },
       {
         "id": "northerbell",
         "name": {
           "zh": "诺森贝尔联合王国",
-          "ja": "ノーザンベル"
+          "ja": "ノーザンベル",
+          "en": "United Kingdom of Northerbell"
         },
         "kind": "region",
         "anchor": "earth",
@@ -956,14 +1045,16 @@
         "lng": 10,
         "note": {
           "zh": "欧洲残存的旧王国。",
-          "ja": "ヨーロッパに残る旧王国。"
+          "ja": "ヨーロッパに残る旧王国。",
+          "en": "An old kingdom surviving in Europe."
         }
       },
       {
         "id": "cloud-9",
         "name": {
           "zh": "云九",
-          "ja": "クラウド9"
+          "ja": "クラウド9",
+          "en": "Cloud 9"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -972,14 +1063,16 @@
         "factionId": "sra",
         "note": {
           "zh": "宇宙革命军的本土殖民星群，位于月球背面方向的 L3，约 1200 万人。",
-          "ja": "宇宙革命軍の本土コロニー群。月の裏側方向のL3にあり、約1200万人が暮らす。"
+          "ja": "宇宙革命軍の本土コロニー群。月の裏側方向のL3にあり、約1200万人が暮らす。",
+          "en": "The Space Revolutionary Army's home colony cluster, at L3 in the direction of the far side of the Moon, with about 12 million people."
         }
       },
       {
         "id": "krechimas",
         "name": {
           "zh": "克雷奇马斯宫",
-          "ja": "クレチマス宮殿"
+          "ja": "クレチマス宮殿",
+          "en": "Krechimas Palace"
         },
         "kind": "capital",
         "anchor": "lagrange",
@@ -988,14 +1081,16 @@
         "factionId": "sra",
         "note": {
           "zh": "云九内的革命军中枢。",
-          "ja": "クラウド9内にある革命軍の中枢。"
+          "ja": "クラウド9内にある革命軍の中枢。",
+          "en": "The revolutionary army's nerve center inside Cloud 9."
         }
       },
       {
         "id": "dome",
         "name": {
           "zh": "D.O.M.E.",
-          "ja": "D.O.M.E."
+          "ja": "D.O.M.E.",
+          "en": "D.O.M.E."
         },
         "kind": "station",
         "anchor": "moon",
@@ -1004,14 +1099,16 @@
         "lng": 0,
         "note": {
           "zh": "月面的旧联邦 Newtype 设施，也是卫星加农炮的微波送电点。",
-          "ja": "月面の旧連邦ニュータイプ施設。サテライトキャノンの送電点でもある。"
+          "ja": "月面の旧連邦ニュータイプ施設。サテライトキャノンの送電点でもある。",
+          "en": "An old Federation Newtype facility on the lunar surface, and the microwave transmission point for the satellite cannon."
         }
       },
       {
         "id": "debris",
         "name": {
           "zh": "第七次宇宙战争残骸带",
-          "ja": "第7次宇宙戦争残骸帯"
+          "ja": "第7次宇宙戦争残骸帯",
+          "en": "7th Space War Debris Belt"
         },
         "kind": "battlefield",
         "anchor": "deep",
@@ -1020,14 +1117,16 @@
         "distance": 2.7,
         "note": {
           "zh": "殖民卫星坠落留下的残骸带。",
-          "ja": "コロニー落下で生じた残骸帯。"
+          "ja": "コロニー落下で生じた残骸帯。",
+          "en": "A debris belt left by falling colonies."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -1058,11 +1157,13 @@
     ],
     "geography": {
       "zh": "战后纪元是“地球残破、宇宙集权”的结构：宇宙革命军以 L3 的云九为本土，地球侧只剩新联邦与零散势力；月球上的 D.O.M.E. 因微波输电成为双方争夺的焦点。",
-      "ja": "アフターウォーは「地球の崩壊と宇宙の集権」の構造。宇宙革命軍はL3のクラウド9を本土とし、地球側には新連邦と小勢力が残る。月面のD.O.M.E.はマイクロ波送電の要として争奪される。"
+      "ja": "アフターウォーは「地球の崩壊と宇宙の集権」の構造。宇宙革命軍はL3のクラウド9を本土とし、地球側には新連邦と小勢力が残る。月面のD.O.M.E.はマイクロ波送電の要として争奪される。",
+      "en": "The After War era has a structure of 'a ruined Earth and a centralized space power': the Space Revolutionary Army's homeland is Cloud 9 at L3, and only the new Federation and scattered forces remain on the Earth side; D.O.M.E. on the Moon becomes the focus of both sides' contest because of microwave power transmission."
     },
     "layoutNote": {
       "zh": "云九位于 L3（与初代 Side 7 同位置），D.O.M.E. 在月球正面。",
-      "ja": "クラウド9はL3（初代サイド7と同じ位置）、D.O.M.E.は月の表側にある。"
+      "ja": "クラウド9はL3（初代サイド7と同じ位置）、D.O.M.E.は月の表側にある。",
+      "en": "Cloud 9 is at L3 (the same position as the original Side 7), and D.O.M.E. is on the near side of the Moon."
     },
     "sources": [
       {
@@ -1073,7 +1174,8 @@
       {
         "label": "アフターウォーの勢力 — Wikipedia",
         "level": "B",
-        "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%95%E3%82%BF%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%81%AE%E5%8B%A2%E5%8A%9B"
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%95%E3%82%BF%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%81%AE%E5%8B%A2%E5%8A%9B",
+        "labelEn": "After War factions — Wikipedia (Japanese)"
       }
     ]
   },
@@ -1092,7 +1194,8 @@
         "id": "earth",
         "name": {
           "zh": "地球",
-          "ja": "地球"
+          "ja": "地球",
+          "en": "Earth"
         },
         "kind": "region",
         "anchor": "earth",
@@ -1102,14 +1205,16 @@
         "factionId": "inglessa-militia",
         "note": {
           "zh": "技术退回到蒸汽与电力时代的地球。北美大陆被重划为因格莱萨、卢贾纳等领地。",
-          "ja": "蒸気と電力の時代まで後退した地球。北米大陸はイングレッサ、ルジアーナなどに再編された。"
+          "ja": "蒸気と電力の時代まで後退した地球。北米大陸はイングレッサ、ルジアーナなどに再編された。",
+          "en": "Earth, whose technology has fallen back to the age of steam and electricity. The North American continent has been redivided into territories such as Inglessa and Luziana."
         }
       },
       {
         "id": "nocis",
         "name": {
           "zh": "诺克斯",
-          "ja": "ノックス"
+          "ja": "ノックス",
+          "en": "Nocis"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1119,14 +1224,16 @@
         "factionId": "inglessa-militia",
         "note": {
           "zh": "因格莱萨领地的城市，罗兰与苏茜的故乡。",
-          "ja": "イングレッサ領の都市。ロランとソシエの故郷。"
+          "ja": "イングレッサ領の都市。ロランとソシエの故郷。",
+          "en": "A city in the Inglessa territory, and the hometown of Loran and Sochie."
         }
       },
       {
         "id": "vicinity",
         "name": {
           "zh": "比西尼提",
-          "ja": "ビシニティ"
+          "ja": "ビシニティ",
+          "en": "Vicinity"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1138,7 +1245,8 @@
         "id": "hughes",
         "name": {
           "zh": "休斯港",
-          "ja": "ヒューズ港"
+          "ja": "ヒューズ港",
+          "en": "Hughes Harbor"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1151,7 +1259,8 @@
         "id": "central-daeton",
         "name": {
           "zh": "中央代顿",
-          "ja": "セントラル・デイトン"
+          "ja": "セントラル・デイトン",
+          "en": "Central Daeton"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1163,7 +1272,8 @@
         "id": "sealaga",
         "name": {
           "zh": "西拉加",
-          "ja": "シーラガ"
+          "ja": "シーラガ",
+          "en": "Sealaga"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1175,7 +1285,8 @@
         "id": "myani",
         "name": {
           "zh": "米亚尼",
-          "ja": "ミアニ"
+          "ja": "ミアニ",
+          "en": "Myani"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1187,7 +1298,8 @@
         "id": "lost-mountain",
         "name": {
           "zh": "失落山",
-          "ja": "ロストマウンテン"
+          "ja": "ロストマウンテン",
+          "en": "Lost Mountain"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1196,14 +1308,16 @@
         "lng": -100,
         "note": {
           "zh": "散落各地的黑历史遗迹，Turn A 与 Turn X 的技术源头。",
-          "ja": "各地に散る黒歴史の遺跡。ターンAとターンXの技術的源流。"
+          "ja": "各地に散る黒歴史の遺跡。ターンAとターンXの技術的源流。",
+          "en": "Dark History ruins scattered across various places, and the source of Turn A and Turn X technology."
         }
       },
       {
         "id": "genganam",
         "name": {
           "zh": "月面都市根加南",
-          "ja": "ゲンガナム"
+          "ja": "ゲンガナム",
+          "en": "Genganam"
         },
         "kind": "capital",
         "anchor": "moon",
@@ -1213,14 +1327,16 @@
         "factionId": "moonrace",
         "note": {
           "zh": "月之民的王都，迪安娜女王的宫廷所在。",
-          "ja": "ムーンレィスの王都。ディアナ女王の宮廷がある。"
+          "ja": "ムーンレィスの王都。ディアナ女王の宮廷がある。",
+          "en": "The royal capital of the Moonrace, and the site of Queen Dianna's court."
         }
       },
       {
         "id": "manupichi",
         "name": {
           "zh": "马纽皮奇",
-          "ja": "マニューピチ"
+          "ja": "マニューピチ",
+          "en": "Maniupich"
         },
         "kind": "city",
         "anchor": "moon",
@@ -1230,14 +1346,16 @@
         "factionId": "moonrace",
         "note": {
           "zh": "保留黑历史记忆的非机械化月面城市。",
-          "ja": "黒歴史の記憶を保つ非機械化の月面都市。"
+          "ja": "黒歴史の記憶を保つ非機械化の月面都市。",
+          "en": "A non-mechanized lunar city that preserves the memory of the Dark History."
         }
       },
       {
         "id": "mistletoe",
         "name": {
           "zh": "槲寄生",
-          "ja": "ミスルトゥ"
+          "ja": "ミスルトゥ",
+          "en": "Mistletoe"
         },
         "kind": "colony",
         "anchor": "deep",
@@ -1246,14 +1364,16 @@
         "distance": 2.6,
         "note": {
           "zh": "月球势力曾依赖的小行星殖民星，最早在宇宙中栽培作物。",
-          "ja": "月の勢力が依存した小惑星コロニー。宇宙での作物栽培の初期拠点。"
+          "ja": "月の勢力が依存した小惑星コロニー。宇宙での作物栽培の初期拠点。",
+          "en": "An asteroid colony once relied on by the lunar forces, where crops were first cultivated in space."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -1285,11 +1405,13 @@
     ],
     "geography": {
       "zh": "正历的地球已无现代国家，北美大陆被重划为因格莱萨、卢贾纳等领地；月球方面的穆恩雷伊斯以根加南为都，经地球回归作战降下。地图是低技术地球领地与高技术在月球的二元结构。",
-      "ja": "正暦の地球に現代国家はなく、北米大陸はイングレッサやルジアーナに再編されている。ムーンレィスはゲンガナムを都とし、地球回帰作戦で降下する。低技術の地球領地と高技術の月という二重構造の地図となる。"
+      "ja": "正暦の地球に現代国家はなく、北米大陸はイングレッサやルジアーナに再編されている。ムーンレィスはゲンガナムを都とし、地球回帰作戦で降下する。低技術の地球領地と高技術の月という二重構造の地図となる。",
+      "en": "In the Correct Century, Earth no longer has modern nations; the North American continent has been redivided into territories such as Inglessa and Luziana; on the Moon, Genganam is the capital of the Moonrace, who descend via the Earth Return Operation. The map shows a dual structure of low-technology Earth territories and high technology on the Moon."
     },
     "layoutNote": {
       "zh": "北美领地按作品中的相对方位排列；月面城市的位置为示意。",
-      "ja": "北米領地は作品中の相対方位に配置。月面都市の位置は模式化。"
+      "ja": "北米領地は作品中の相対方位に配置。月面都市の位置は模式化。",
+      "en": "The North American territories are arranged by their relative positions in the work; the positions of lunar cities are indicative."
     },
     "sources": [
       {
@@ -1319,7 +1441,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -1329,14 +1452,16 @@
         "factionId": "omni-enforcer",
         "note": {
           "zh": "地球联合与蓝色宇宙的根据地。",
-          "ja": "地球連合とブルーコスモスの根拠地。"
+          "ja": "地球連合とブルーコスモスの根拠地。",
+          "en": "The Earth Sphere, base of the Earth Alliance and Blue Cosmos."
         }
       },
       {
         "id": "orb",
         "name": {
           "zh": "奥布联合酋长国",
-          "ja": "オーブ連合首長国"
+          "ja": "オーブ連合首長国",
+          "en": "Orb Union"
         },
         "kind": "capital",
         "anchor": "earth",
@@ -1347,14 +1472,16 @@
         "placeId": "orb",
         "note": {
           "zh": "南太平洋所罗门群岛一带的中立岛国，曙光社的 MS 工厂所在地。",
-          "ja": "南太平洋ソロモン諸島付近の中立島国。モルゲンレーテのMS工場がある。"
+          "ja": "南太平洋ソロモン諸島付近の中立島国。モルゲンレーテのMS工場がある。",
+          "en": "A neutral island nation in the Solomon Islands area of the South Pacific, and the site of Morgenroete's MS factory."
         }
       },
       {
         "id": "josha",
         "name": {
           "zh": "JOSH-A",
-          "ja": "ジョシュア"
+          "ja": "ジョシュア",
+          "en": "JOSH-A"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1364,14 +1491,16 @@
         "factionId": "omni-enforcer",
         "note": {
           "zh": "阿拉斯加的联合军总部。",
-          "ja": "アラスカの連合軍総司令部。"
+          "ja": "アラスカの連合軍総司令部。",
+          "en": "The Alliance forces headquarters in Alaska."
         }
       },
       {
         "id": "panama",
         "name": {
           "zh": "巴拿马宇宙港",
-          "ja": "パナマ宇宙港"
+          "ja": "パナマ宇宙港",
+          "en": "Panama Spaceport"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1384,7 +1513,8 @@
         "id": "victoria",
         "name": {
           "zh": "维多利亚基地",
-          "ja": "ヴィクトリア基地"
+          "ja": "ヴィクトリア基地",
+          "en": "Victoria Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1394,14 +1524,16 @@
         "factionId": "zaft",
         "note": {
           "zh": "澳大利亚的联合军宇宙港，CE70 年代被 ZAFT 攻占。",
-          "ja": "オーストラリアの連合軍宇宙港。C.E.70年代にザフトが占領。"
+          "ja": "オーストラリアの連合軍宇宙港。C.E.70年代にザフトが占領。",
+          "en": "An Alliance spaceport in Australia, captured by ZAFT in the CE70s."
         }
       },
       {
         "id": "carpentaria",
         "name": {
           "zh": "卡彭塔利亚基地",
-          "ja": "カーペンタリア基地"
+          "ja": "カーペンタリア基地",
+          "en": "Carpentaria Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1414,7 +1546,8 @@
         "id": "gibraltar",
         "name": {
           "zh": "直布罗陀基地",
-          "ja": "ジブラルタル基地"
+          "ja": "ジブラルタル基地",
+          "en": "Gibraltar Base"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1427,7 +1560,8 @@
         "id": "aprilius",
         "name": {
           "zh": "阿普里利乌斯一号 / PLANT",
-          "ja": "アプリリウス・ワン / プラント"
+          "ja": "アプリリウス・ワン / プラント",
+          "en": "Aprilius One / PLANT"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -1436,14 +1570,16 @@
         "factionId": "zaft",
         "note": {
           "zh": "L5 的 PLANT 首都，十二个月名城市群的议会所在地。",
-          "ja": "L5のプラント首都。12の月名都市群の議会所在地。"
+          "ja": "L5のプラント首都。12の月名都市群の議会所在地。",
+          "en": "The PLANT capital at L5, seat of the council of the twelve month-named city clusters."
         }
       },
       {
         "id": "junius7",
         "name": {
           "zh": "尤尼乌斯七号",
-          "ja": "ジュニウス・セブン"
+          "ja": "ジュニウス・セブン",
+          "en": "Junius Seven"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -1452,14 +1588,16 @@
         "factionId": "zaft",
         "note": {
           "zh": "CE70 年被核攻击摧毁的农业殖民卫星。",
-          "ja": "C.E.70年に核攻撃で破壊された農業コロニー。"
+          "ja": "C.E.70年に核攻撃で破壊された農業コロニー。",
+          "en": "An agricultural colony destroyed by a nuclear attack in CE70."
         }
       },
       {
         "id": "heliopolis",
         "name": {
           "zh": "海利欧波利斯",
-          "ja": "ヘリオポリス"
+          "ja": "ヘリオポリス",
+          "en": "Heliopolis"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -1468,14 +1606,16 @@
         "factionId": "orb-union",
         "note": {
           "zh": "奥布在 L3 的资源殖民卫星，GAT-X 系列的开发地。",
-          "ja": "オーブのL3資源コロニー。GAT-Xシリーズの開発地。"
+          "ja": "オーブのL3資源コロニー。GAT-Xシリーズの開発地。",
+          "en": "Orb's resource colony at L3, and the development site of the GAT-X series."
         }
       },
       {
         "id": "artemis",
         "name": {
           "zh": "阿尔忒弥斯要塞",
-          "ja": "アルテミス"
+          "ja": "アルテミス",
+          "en": "Artemis Fortress"
         },
         "kind": "fortress",
         "anchor": "lagrange",
@@ -1484,14 +1624,16 @@
         "factionId": "omni-enforcer",
         "note": {
           "zh": "欧亚联邦在 L3 的小行星要塞，装备光波防御罩。",
-          "ja": "ユーラシア連邦のL3小惑星要塞。光波防御シールドを装備する。"
+          "ja": "ユーラシア連邦のL3小惑星要塞。光波防御シールドを装備する。",
+          "en": "A Eurasian Federation asteroid fortress at L3, equipped with a light-wave defense shield."
         }
       },
       {
         "id": "mendel",
         "name": {
           "zh": "孟德尔",
-          "ja": "メンデル"
+          "ja": "メンデル",
+          "en": "Mendel"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -1499,14 +1641,16 @@
         "orbit": "L4",
         "note": {
           "zh": "L4 的废弃殖民卫星，基因研究与克鲁泽的过去埋藏于此。",
-          "ja": "L4の放棄コロニー。遺伝子研究とクルーゼの過去が眠る。"
+          "ja": "L4の放棄コロニー。遺伝子研究とクルーゼの過去が眠る。",
+          "en": "An abandoned colony at L4, where genetic research and Rau Le Creuset's past are buried."
         }
       },
       {
         "id": "world-tree",
         "name": {
           "zh": "世界树",
-          "ja": "ワールドツリー"
+          "ja": "ワールドツリー",
+          "en": "World Tree"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -1514,14 +1658,16 @@
         "orbit": "L1",
         "note": {
           "zh": "L1 的中立空间站，DSSD 与观星者计划的中继点。",
-          "ja": "L1の中立ステーション。DSSDとスターゲイザー計画の中継点。"
+          "ja": "L1の中立ステーション。DSSDとスターゲイザー計画の中継点。",
+          "en": "A neutral space station at L1, and a relay point for DSSD and the Stargazer project."
         }
       },
       {
         "id": "copernicus",
         "name": {
           "zh": "哥白尼市",
-          "ja": "コペルニクス"
+          "ja": "コペルニクス",
+          "en": "Copernicus City"
         },
         "kind": "city",
         "anchor": "moon",
@@ -1530,14 +1676,16 @@
         "lng": 20,
         "note": {
           "zh": "月球唯一的民用城市，CE71 年双方会谈地。",
-          "ja": "月で唯一の民用都市。C.E.71年に両軍の会談が行われた。"
+          "ja": "月で唯一の民用都市。C.E.71年に両軍の会談が行われた。",
+          "en": "The Moon's only civilian city, and the site of negotiations between the two sides in CE71."
         }
       },
       {
         "id": "ptolemaeus",
         "name": {
           "zh": "托勒密基地",
-          "ja": "プトレマイオス"
+          "ja": "プトレマイオス",
+          "en": "Ptolemaeus Base"
         },
         "kind": "station",
         "anchor": "moon",
@@ -1547,14 +1695,16 @@
         "factionId": "omni-enforcer",
         "note": {
           "zh": "月球托勒密环形山的联合宇宙军总部。",
-          "ja": "月のプトレマイオス・クレーターにある連合宇宙軍本部。"
+          "ja": "月のプトレマイオス・クレーターにある連合宇宙軍本部。",
+          "en": "The Alliance space force headquarters at Ptolemaeus Crater on the Moon."
         }
       },
       {
         "id": "arzachel",
         "name": {
           "zh": "阿尔扎切尔基地",
-          "ja": "アルザケル"
+          "ja": "アルザケル",
+          "en": "Arzachel Base"
         },
         "kind": "station",
         "anchor": "moon",
@@ -1604,11 +1754,13 @@
     ],
     "geography": {
       "zh": "C.E. 的地球圈以 L5 的 PLANT 与地球联合为核心：L3 是奥布资源卫星海利欧波利斯与欧亚要塞阿尔忒弥斯，L4 是孟德尔等旧殖民地；月球上哥白尼为民用中立城，托勒密为联合宇宙军总部。",
-      "ja": "C.E.の地球圏はL5のプラントと地球連合を軸に、L3にオーブのヘリオポリスとユーラシアのアルテミス、L4にメンデルなどの旧コロニーが置かれる。月面ではコペルニクスが民用中立都市、プトレマイオスが連合宇宙軍本部となる。"
+      "ja": "C.E.の地球圏はL5のプラントと地球連合を軸に、L3にオーブのヘリオポリスとユーラシアのアルテミス、L4にメンデルなどの旧コロニーが置かれる。月面ではコペルニクスが民用中立都市、プトレマイオスが連合宇宙軍本部となる。",
+      "en": "The C.E. Earth Sphere centers on PLANT at L5 and the Earth Alliance: L3 holds Orb's resource satellite Heliopolis and the Eurasian fortress Artemis, L4 holds old colonies such as Mendel; on the Moon, Copernicus is a civilian neutral city and Ptolemaeus is the Alliance space force headquarters."
     },
     "layoutNote": {
       "zh": "PLANT 在 L5、海利欧波利斯与阿尔忒弥斯在 L3、孟德尔在 L4；奥布位于南太平洋。",
-      "ja": "プラントはL5、ヘリオポリスとアルテミスはL3、メンデルはL4。オーブは南太平洋にある。"
+      "ja": "プラントはL5、ヘリオポリスとアルテミスはL3、メンデルはL4。オーブは南太平洋にある。",
+      "en": "PLANT is at L5, Heliopolis and Artemis are at L3, and Mendel is at L4; Orb is in the South Pacific."
     },
     "sources": [
       {
@@ -1638,7 +1790,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -1648,14 +1801,16 @@
         "factionId": "union",
         "note": {
           "zh": "化石燃料枯竭后，三大阵营围绕三座赤道轨道电梯重新划分势力范围。",
-          "ja": "化石燃料枯渇後、三陣営が赤道の三基の軌道エレベーターを軸に勢力を再編した。"
+          "ja": "化石燃料枯渇後、三陣営が赤道の三基の軌道エレベーターを軸に勢力を再編した。",
+          "en": "After fossil fuels ran out, the three blocs redrew their spheres of influence around the three equatorial orbital elevators."
         }
       },
       {
         "id": "tower-union",
         "name": {
           "zh": "联合轨道电梯“塔”",
-          "ja": "ユニオン・タワー"
+          "ja": "ユニオン・タワー",
+          "en": "Union Orbital Elevator 'Tower'"
         },
         "kind": "elevator",
         "anchor": "earth",
@@ -1665,14 +1820,16 @@
         "factionId": "union",
         "note": {
           "zh": "联合在南美亚马逊上游的轨道电梯，顶端连接同步轨道站。",
-          "ja": "南米アマゾン上流にあるユニオンの軌道エレベーター。頂部は静止軌道駅に接続する。"
+          "ja": "南米アマゾン上流にあるユニオンの軌道エレベーター。頂部は静止軌道駅に接続する。",
+          "en": "The Union's orbital elevator in the upper Amazon of South America, whose top connects to a geostationary station."
         }
       },
       {
         "id": "tenchu",
         "name": {
           "zh": "人革联“天柱”",
-          "ja": "天柱"
+          "ja": "天柱",
+          "en": "HRL Orbital Elevator 'Tenchu'"
         },
         "kind": "elevator",
         "anchor": "earth",
@@ -1682,14 +1839,16 @@
         "factionId": "human-reform-league",
         "note": {
           "zh": "人革联在西太平洋瑙鲁附近建造的轨道电梯。",
-          "ja": "人革連が西太平洋ナウル付近に建造した軌道エレベーター。"
+          "ja": "人革連が西太平洋ナウル付近に建造した軌道エレベーター。",
+          "en": "The orbital elevator built by the Human Reform League near Nauru in the western Pacific."
         }
       },
       {
         "id": "la-tour",
         "name": {
           "zh": "AEU“拉图尔”",
-          "ja": "ラ・トゥール"
+          "ja": "ラ・トゥール",
+          "en": "AEU Orbital Elevator 'La Tour'"
         },
         "kind": "elevator",
         "anchor": "earth",
@@ -1699,14 +1858,16 @@
         "factionId": "aeu",
         "note": {
           "zh": "AEU 在维多利亚湖以西的轨道电梯。",
-          "ja": "AEUがヴィクトリア湖の西に建造した軌道エレベーター。"
+          "ja": "AEUがヴィクトリア湖の西に建造した軌道エレベーター。",
+          "en": "The AEU's orbital elevator west of Lake Victoria."
         }
       },
       {
         "id": "azadistan",
         "name": {
           "zh": "阿扎迪斯坦",
-          "ja": "アザディスタン"
+          "ja": "アザディスタン",
+          "en": "Azadistan"
         },
         "kind": "region",
         "anchor": "earth",
@@ -1716,14 +1877,16 @@
         "factionId": "human-reform-league",
         "note": {
           "zh": "中东的产油国，轨道电梯经济下的旧能源国家。",
-          "ja": "中東の産油国。軌道エレベーター経済下の旧エネルギー国家。"
+          "ja": "中東の産油国。軌道エレベーター経済下の旧エネルギー国家。",
+          "en": "An oil-producing country in the Middle East, an old energy state under the orbital elevator economy."
         }
       },
       {
         "id": "krugis",
         "name": {
           "zh": "库尔吉斯",
-          "ja": "クルジス"
+          "ja": "クルジス",
+          "en": "Krugis"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1733,14 +1896,16 @@
         "factionId": "human-reform-league",
         "note": {
           "zh": "中东的内战地区，刹那的出身地。",
-          "ja": "中東の内戦地域。刹那の出身地。"
+          "ja": "中東の内戦地域。刹那の出身地。",
+          "en": "A civil-war region in the Middle East, and Setsuna's birthplace."
         }
       },
       {
         "id": "tokyo",
         "name": {
           "zh": "东京",
-          "ja": "東京"
+          "ja": "東京",
+          "en": "Tokyo"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1753,7 +1918,8 @@
         "id": "orbital-ring",
         "name": {
           "zh": "轨道环",
-          "ja": "オービタルリング"
+          "ja": "オービタルリング",
+          "en": "Orbital Ring"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -1762,14 +1928,16 @@
         "distance": 1.28,
         "note": {
           "zh": "赤道上空约一万公里的太阳能发电环。",
-          "ja": "赤道上空約1万kmの太陽光発電リング。"
+          "ja": "赤道上空約1万kmの太陽光発電リング。",
+          "en": "A solar power generation ring about 10,000 km above the equator."
         }
       },
       {
         "id": "krung-thep",
         "name": {
           "zh": "克伦泰普",
-          "ja": "クルーンテープ"
+          "ja": "クルーンテープ",
+          "en": "Krung Thep"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -1778,14 +1946,16 @@
         "factionId": "celestial-being",
         "note": {
           "zh": "天人的资源小行星基地，隐藏在 L1 的暗礁宙域。",
-          "ja": "ソレスタルビーイングの資源小惑星基地。L1の暗礁宙域に隠れる。"
+          "ja": "ソレスタルビーイングの資源小惑星基地。L1の暗礁宙域に隠れる。",
+          "en": "Celestial Being's resource asteroid base, hidden in the Shoal Zone at L1."
         }
       },
       {
         "id": "veda",
         "name": {
           "zh": "维达",
-          "ja": "ヴェーダ"
+          "ja": "ヴェーダ",
+          "en": "Veda"
         },
         "kind": "station",
         "anchor": "moon",
@@ -1795,14 +1965,16 @@
         "factionId": "celestial-being",
         "note": {
           "zh": "天人量子计算机维达的终端，位于月面深处。",
-          "ja": "ソレスタルビーイングの量子コンピュータ、ヴェーダの端末。月面深部にある。"
+          "ja": "ソレスタルビーイングの量子コンピュータ、ヴェーダの端末。月面深部にある。",
+          "en": "The terminal of Celestial Being's quantum computer Veda, located deep beneath the lunar surface."
         }
       },
       {
         "id": "memento-mori",
         "name": {
           "zh": "记忆女神",
-          "ja": "メメントモリ"
+          "ja": "メメントモリ",
+          "en": "Memento Mori"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -1812,14 +1984,16 @@
         "factionId": "a-laws",
         "note": {
           "zh": "A-LAWS 的轨道激光站，可对地表目标实施定点打击。",
-          "ja": "A-LAWSの軌道レーザー局。地上目標への精密攻撃が可能。"
+          "ja": "A-LAWSの軌道レーザー局。地上目標への精密攻撃が可能。",
+          "en": "An A-LAWS orbital laser station capable of pinpoint strikes on surface targets."
         }
       },
       {
         "id": "celestial-being",
         "name": {
           "zh": "天人母舰",
-          "ja": "ソレスタルビーイング母艦"
+          "ja": "ソレスタルビーイング母艦",
+          "en": "Celestial Being Mothership"
         },
         "kind": "fleet",
         "anchor": "deep",
@@ -1851,17 +2025,20 @@
     ],
     "geography": {
       "zh": "西历没有 Side：三座赤道轨道电梯把地球圈分成联合、人革联与 AEU 三大势力圈。联合的“塔”在南美，人革联的“天柱”在西太平洋，AEU 的“拉图尔”在非洲；一万公里与三万五千公里处各有一道轨道环。",
-      "ja": "西暦にサイドはない。赤道の三基の軌道エレベーターが、ユニオン、人革連、AEUの三大勢力圏を形成する。ユニオンの「タワー」は南米、人革連の「天柱」は西太平洋、AEUの「ラ・トゥール」はアフリカにあり、1万kmと3万5千kmに軌道リングが巡る。"
+      "ja": "西暦にサイドはない。赤道の三基の軌道エレベーターが、ユニオン、人革連、AEUの三大勢力圏を形成する。ユニオンの「タワー」は南米、人革連の「天柱」は西太平洋、AEUの「ラ・トゥール」はアフリカにあり、1万kmと3万5千kmに軌道リングが巡る。",
+      "en": "The Anno Domini era has no Sides: three equatorial orbital elevators divide the Earth Sphere into the Union, the Human Reform League and the AEU blocs. The Union's 'Tower' is in South America, the HRL's 'Tenchu' in the western Pacific, and the AEU's 'La Tour' in Africa; there is an orbital ring at 10,000 km and another at 35,000 km."
     },
     "layoutNote": {
       "zh": "电梯基座按赤道真实经度排列；轨道环与高轨道站为示意。",
-      "ja": "エレベーター基部は赤道の実経度に配置。軌道リングと高軌道駅は模式化。"
+      "ja": "エレベーター基部は赤道の実経度に配置。軌道リングと高軌道駅は模式化。",
+      "en": "The elevator bases are arranged by their real equatorial longitudes; the orbital rings and high-orbit stations are indicative."
     },
     "sources": [
       {
         "label": "機動戦士ガンダム00 — Wikipedia",
         "level": "B",
-        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A000"
+        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A000",
+        "labelEn": "Mobile Suit Gundam 00 — Wikipedia (Japanese)"
       },
       {
         "label": "Gundam 00 official story",
@@ -1886,7 +2063,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -1896,14 +2074,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "地球联邦的本土。银杯条约后联邦去军事化，但行政与军事中枢仍在地球圈。",
-          "ja": "地球連邦の本土。銀の杯条約で非軍事化されたが、行政と軍事の中枢は地球圏に残る。"
+          "ja": "地球連邦の本土。銀の杯条約で非軍事化されたが、行政と軍事の中枢は地球圏に残る。",
+          "en": "The Earth Federation's home territory. After the Silver Chalice Treaty the Federation demilitarized, but its administrative and military core remains in the Earth Sphere."
         }
       },
       {
         "id": "big-ring",
         "name": {
           "zh": "巨轮",
-          "ja": "ビッグリング"
+          "ja": "ビッグリング",
+          "en": "Big Ring"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -1913,14 +2093,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "赤道上空 500 公里的环状空间站，联邦总部。",
-          "ja": "赤道上空500kmの環状ステーション。連邦本部。"
+          "ja": "赤道上空500kmの環状ステーション。連邦本部。",
+          "en": "A ring-shaped space station 500 km above the equator, and the Federation headquarters."
         }
       },
       {
         "id": "olivernotes",
         "name": {
           "zh": "奥利巴诺斯",
-          "ja": "オリバーノーツ"
+          "ja": "オリバーノーツ",
+          "en": "Olivernotes"
         },
         "kind": "city",
         "anchor": "earth",
@@ -1930,14 +2112,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "北美城市，AGE 系统的最初测试地。",
-          "ja": "北米の都市。AGEシステムの最初の試験地。"
+          "ja": "北米の都市。AGEシステムの最初の試験地。",
+          "en": "A North American city, and the first test site of the AGE System."
         }
       },
       {
         "id": "rostroulan",
         "name": {
           "zh": "罗斯特罗兰",
-          "ja": "ロストロウラン"
+          "ja": "ロストロウラン",
+          "en": "Rostroulan"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -1947,14 +2131,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "南美丛林中的地下基地，联邦的贾布罗式要塞。",
-          "ja": "南米ジャングルの地下基地。連邦のジャブローに相当する要塞。"
+          "ja": "南米ジャングルの地下基地。連邦のジャブローに相当する要塞。",
+          "en": "An underground base in the South American jungle, the Federation's Jaburo-style fortress."
         }
       },
       {
         "id": "brucia",
         "name": {
           "zh": "布露西亚",
-          "ja": "ブルーシア"
+          "ja": "ブルーシア",
+          "en": "Brucia"
         },
         "kind": "capital",
         "anchor": "earth",
@@ -1964,14 +2150,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "联邦政府首都，具体位置未公开。",
-          "ja": "連邦政府の首都。正確な位置は非公開。"
+          "ja": "連邦政府の首都。正確な位置は非公開。",
+          "en": "The federal government's capital; its exact location has not been disclosed."
         }
       },
       {
         "id": "nora",
         "name": {
           "zh": "诺拉",
-          "ja": "ノーラ"
+          "ja": "ノーラ",
+          "en": "Nora"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -1981,14 +2169,16 @@
         "factionId": "federation-age",
         "note": {
           "zh": "被维根摧毁的殖民卫星，菲利特的起点。",
-          "ja": "ヴェイガンに破壊されたコロニー。フリットの出発点。"
+          "ja": "ヴェイガンに破壊されたコロニー。フリットの出発点。",
+          "en": "A colony destroyed by the Vagan, and Flit's starting point."
         }
       },
       {
         "id": "ambat",
         "name": {
           "zh": "安巴特",
-          "ja": "アンバット"
+          "ja": "アンバット",
+          "en": "Ambat"
         },
         "kind": "fortress",
         "anchor": "earthorbit",
@@ -1998,14 +2188,16 @@
         "factionId": "vagan",
         "note": {
           "zh": "被 UE 夺取的旧联邦小行星要塞。",
-          "ja": "UEに奪取された旧連邦の小惑星要塞。"
+          "ja": "UEに奪取された旧連邦の小惑星要塞。",
+          "en": "An old Federation asteroid fortress seized by the UE."
         }
       },
       {
         "id": "lagamis",
         "name": {
           "zh": "拉·格拉米斯",
-          "ja": "ラ・グラミス"
+          "ja": "ラ・グラミス",
+          "en": "Lagamis"
         },
         "kind": "fortress",
         "anchor": "earthorbit",
@@ -2015,14 +2207,16 @@
         "factionId": "vagan",
         "note": {
           "zh": "维根的地球圈宇宙要塞。",
-          "ja": "ヴェイガンの地球圏宇宙要塞。"
+          "ja": "ヴェイガンの地球圏宇宙要塞。",
+          "en": "The Vagan's Earth Sphere space fortress."
         }
       },
       {
         "id": "mars",
         "name": {
           "zh": "火星圈",
-          "ja": "火星圏"
+          "ja": "火星圏",
+          "en": "Mars Sphere"
         },
         "kind": "region",
         "anchor": "mars",
@@ -2032,14 +2226,16 @@
         "factionId": "vagan",
         "note": {
           "zh": "维根的故乡。火星移民在资源与政治的双重剥夺下走向独立战争。",
-          "ja": "ヴェイガンの故郷。資源と政治の二重の剥奪が独立戦争へ向かわせた。"
+          "ja": "ヴェイガンの故郷。資源と政治の二重の剥奪が独立戦争へ向かわせた。",
+          "en": "The Vagan's homeland. Under the double deprivation of resources and politics, Mars immigrants moved toward a war of independence."
         }
       },
       {
         "id": "second-moon",
         "name": {
           "zh": "第二月球",
-          "ja": "セカンドムーン"
+          "ja": "セカンドムーン",
+          "en": "Second Moon"
         },
         "kind": "station",
         "anchor": "mars",
@@ -2049,14 +2245,16 @@
         "factionId": "vagan",
         "note": {
           "zh": "漂浮在火星卫星轨道上的移动殖民要塞，可转用于地球侵攻。",
-          "ja": "火星衛星軌道を浮遊する移動コロニー要塞。地球侵攻に転用できる。"
+          "ja": "火星衛星軌道を浮遊する移動コロニー要塞。地球侵攻に転用できる。",
+          "en": "A mobile colony fortress floating in Mars satellite orbit, which can be converted for an invasion of Earth."
         }
       },
       {
         "id": "luna-base",
         "name": {
           "zh": "月面基地",
-          "ja": "ルナベース"
+          "ja": "ルナベース",
+          "en": "Luna Base"
         },
         "kind": "station",
         "anchor": "moon",
@@ -2069,7 +2267,8 @@
         "id": "sargasso",
         "name": {
           "zh": "萨尔加索残骸带",
-          "ja": "サルガッソー残骸帯"
+          "ja": "サルガッソー残骸帯",
+          "en": "Sargasso Debris Belt"
         },
         "kind": "battlefield",
         "anchor": "deep",
@@ -2100,11 +2299,13 @@
     ],
     "geography": {
       "zh": "A.G. 的地球圈是地球联邦与火星圈维根的两极对峙：联邦总部是赤道上空 500 公里的环状站“巨轮”，维根则以火星卫星轨道上可移动的“第二月球”为根据地，后方直指地球。",
-      "ja": "A.G.の地球圏は地球連邦と火星圏ヴェイガンの二極対峙。連邦本部は赤道上空500kmの環状ステーション「ビッグリング」、ヴェイガンは火星衛星軌道を移動する「セカンドムーン」を拠点に地球を窺う。"
+      "ja": "A.G.の地球圏は地球連邦と火星圏ヴェイガンの二極対峙。連邦本部は赤道上空500kmの環状ステーション「ビッグリング」、ヴェイガンは火星衛星軌道を移動する「セカンドムーン」を拠点に地球を窺う。",
+      "en": "The A.G. Earth Sphere is a bipolar confrontation between the Earth Federation and the Mars Sphere Vagan: the Federation headquarters is the 'Big Ring', a ring station 500 km above the equator, while the Vagan are based at the movable 'Second Moon' in Mars satellite orbit, pointing directly back at Earth."
     },
     "layoutNote": {
       "zh": "火星与地球的距离为示意；地球轨道站按轨道高度排列，不套用拉格朗日点。",
-      "ja": "火星と地球の距離は模式化。地球軌道の拠点は高度順に並べ、ラグランジュ点は用いない。"
+      "ja": "火星と地球の距離は模式化。地球軌道の拠点は高度順に並べ、ラグランジュ点は用いない。",
+      "en": "The distance between Mars and Earth is indicative; Earth orbital stations are arranged by orbital altitude, without applying Lagrange points."
     },
     "sources": [
       {
@@ -2115,7 +2316,8 @@
       {
         "label": "機動戦士ガンダムAGE — Wikipedia",
         "level": "B",
-        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0AGE"
+        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0AGE",
+        "labelEn": "Mobile Suit Gundam AGE — Wikipedia (Japanese)"
       }
     ]
   },
@@ -2135,7 +2337,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2145,14 +2348,16 @@
         "factionId": "capital-army",
         "note": {
           "zh": "复兴世纪的地球。轨道电梯与光子电池支撑着脆弱的经济秩序。",
-          "ja": "リギルド・センチュリーの地球。軌道エレベーターと光子電池が脆い経済秩序を支える。"
+          "ja": "リギルド・センチュリーの地球。軌道エレベーターと光子電池が脆い経済秩序を支える。",
+          "en": "Earth in the Regild Century. Orbital elevators and photon batteries sustain a fragile economic order."
         }
       },
       {
         "id": "capital-tower",
         "name": {
           "zh": "中枢塔",
-          "ja": "キャピタル・タワー"
+          "ja": "キャピタル・タワー",
+          "en": "Capital Tower"
         },
         "kind": "elevator",
         "anchor": "earth",
@@ -2162,14 +2367,16 @@
         "factionId": "capital-army",
         "note": {
           "zh": "全长约八万公里、设 144 个“坚果”站的中枢轨道电梯。",
-          "ja": "全長約8万km、144の「ナット」駅を持つ中枢軌道エレベーター。"
+          "ja": "全長約8万km、144の「ナット」駅を持つ中枢軌道エレベーター。",
+          "en": "A central orbital elevator about 80,000 km long, with 144 'nut' stations."
         }
       },
       {
         "id": "sankt-porto",
         "name": {
           "zh": "圣波特",
-          "ja": "ザンクト・ポルト"
+          "ja": "ザンクト・ポルト",
+          "en": "Sankt Porto"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -2179,14 +2386,16 @@
         "factionId": "capital-army",
         "note": {
           "zh": "中枢塔顶端的圣域与光子电池唯一受入口。",
-          "ja": "キャピタル・タワー頂上の聖域。光子電池の唯一の受入口。"
+          "ja": "キャピタル・タワー頂上の聖域。光子電池の唯一の受入口。",
+          "en": "The sanctuary at the top of the Capital Tower and the sole receiving point for photon batteries."
         }
       },
       {
         "id": "bclover",
         "name": {
           "zh": "大四叶城",
-          "ja": "ビッグ・クローバー"
+          "ja": "ビッグ・クローバー",
+          "en": "B-Clover"
         },
         "kind": "city",
         "anchor": "earth",
@@ -2199,7 +2408,8 @@
         "id": "capital-territory",
         "name": {
           "zh": "首都特区",
-          "ja": "キャピタル・テリトリィ"
+          "ja": "キャピタル・テリトリィ",
+          "en": "Capital Territory"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2209,14 +2419,16 @@
         "factionId": "capital-army",
         "note": {
           "zh": "从加勒比延伸到亚马逊的城邦，中枢塔的管辖地。",
-          "ja": "カリブからアマゾンに広がる都市国家。キャピタル・タワーの管轄地。"
+          "ja": "カリブからアマゾンに広がる都市国家。キャピタル・タワーの管轄地。",
+          "en": "A city-state stretching from the Caribbean to the Amazon, under the jurisdiction of the Capital Tower."
         }
       },
       {
         "id": "ameria",
         "name": {
           "zh": "亚美利亚",
-          "ja": "アメリア"
+          "ja": "アメリア",
+          "en": "Ameria"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2226,14 +2438,16 @@
         "factionId": "amerian",
         "note": {
           "zh": "北美大陆的联邦加盟国，贝尔利与艾达的出身地。",
-          "ja": "北米大陸の連邦加盟国。ベルリとアイーダの出身地。"
+          "ja": "北米大陸の連邦加盟国。ベルリとアイーダの出身地。",
+          "en": "A federated nation in North America, and the birthplace of Bellri and Aida."
         }
       },
       {
         "id": "gondwan",
         "name": {
           "zh": "贡德万",
-          "ja": "ゴンドワン"
+          "ja": "ゴンドワン",
+          "en": "Gondwan"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2243,14 +2457,16 @@
         "factionId": "gondwan",
         "note": {
           "zh": "南方大陆的旧势力圈，首都军的重要支持者。",
-          "ja": "南方大陸の旧勢力圏。首都軍の重要支持者。"
+          "ja": "南方大陸の旧勢力圏。首都軍の重要支持者。",
+          "en": "An old sphere of influence on the southern continent, and an important supporter of the Capital Army."
         }
       },
       {
         "id": "towasanga",
         "name": {
           "zh": "永贺",
-          "ja": "トワサンガ"
+          "ja": "トワサンガ",
+          "en": "Towasanga"
         },
         "kind": "colony",
         "anchor": "moon",
@@ -2260,14 +2476,16 @@
         "factionId": "towasanga",
         "note": {
           "zh": "月球背面的殖民国家，光子电池的中转站与 U.C. 技术的残存者。",
-          "ja": "月の裏側にあるコロニー国家。光子電池の中継点であり、U.C.技術の残存者。"
+          "ja": "月の裏側にあるコロニー国家。光子電池の中継点であり、U.C.技術の残存者。",
+          "en": "A colony nation on the far side of the Moon, a transshipment point for photon batteries, and a survivor of U.C. technology."
         }
       },
       {
         "id": "venus-globe",
         "name": {
           "zh": "金星地球圈",
-          "ja": "ビーナス・グロゥブ"
+          "ja": "ビーナス・グロゥブ",
+          "en": "Venus Globe"
         },
         "kind": "colony",
         "anchor": "venus",
@@ -2276,14 +2494,16 @@
         "lng": 0,
         "note": {
           "zh": "金星轨道上的殖民圈，光子电池的生产地。",
-          "ja": "金星軌道上のコロニー圏。光子電池の生産地。"
+          "ja": "金星軌道上のコロニー圏。光子電池の生産地。",
+          "en": "A colony sphere in Venus orbit, and the production site of photon batteries."
         }
       },
       {
         "id": "rosario",
         "name": {
           "zh": "罗萨里奥·十",
-          "ja": "ロザリオ・テン"
+          "ja": "ロザリオ・テン",
+          "en": "Rosario Ten"
         },
         "kind": "capital",
         "anchor": "venus",
@@ -2293,14 +2513,16 @@
         "factionId": "capital-army",
         "note": {
           "zh": "金星地球圈的首都，赫尔墨斯财团的本部。",
-          "ja": "金星地球圏の首都。ヘルメス財団の本部。"
+          "ja": "金星地球圏の首都。ヘルメス財団の本部。",
+          "en": "The capital of the Venus Globe, and the headquarters of the Hermes Foundation."
         }
       },
       {
         "id": "shirano5",
         "name": {
           "zh": "希拉诺 5",
-          "ja": "シラノ-5"
+          "ja": "シラノ-5",
+          "en": "Shirano 5"
         },
         "kind": "colony",
         "anchor": "venus",
@@ -2312,7 +2534,8 @@
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -2343,11 +2566,13 @@
     ],
     "geography": {
       "zh": "R.C. 的地球圈沿一条轴线组织：金星圈生产光子电池，月球背面的永贺中转，地球的首都特区用中枢塔垄断落地流通。地图的核心是“金星—月球—地球”的能源链，而非拉格朗日点。",
-      "ja": "R.C.の地球圏は一本の軸で組織される。金星圏が光子電池を生産し、月の裏のトワサンガが中継し、地球のキャピタル・テリトリィがキャピタル・タワーで流通を独占する。中心はラグランジュ点ではなく「金星—月—地球」のエネルギー連鎖である。"
+      "ja": "R.C.の地球圏は一本の軸で組織される。金星圏が光子電池を生産し、月の裏のトワサンガが中継し、地球のキャピタル・テリトリィがキャピタル・タワーで流通を独占する。中心はラグランジュ点ではなく「金星—月—地球」のエネルギー連鎖である。",
+      "en": "The R.C. Earth Sphere is organized along a single axis: the Venus Globe produces photon batteries, Towasanga on the far side of the Moon transships them, and the Earth's Capital Territory monopolizes ground-side distribution through the Capital Tower. The core of the map is the 'Venus-Moon-Earth' energy chain, not the Lagrange points."
     },
     "layoutNote": {
       "zh": "中枢塔立于首都特区；永贺置于月球背面，金星圈在外侧。",
-      "ja": "キャピタル・タワーはキャピタル・テリトリィに立ち、トワサンガは月の裏側、金星圏は外側に置いた。"
+      "ja": "キャピタル・タワーはキャピタル・テリトリィに立ち、トワサンガは月の裏側、金星圏は外側に置いた。",
+      "en": "The Capital Tower stands in the Capital Territory; Towasanga is placed on the far side of the Moon, and the Venus Globe on the outside."
     },
     "sources": [
       {
@@ -2358,7 +2583,8 @@
       {
         "label": "首都特区 — 高达WIKI",
         "level": "B",
-        "url": "https://gundam.huijiwiki.com/wiki/%E9%A6%96%E9%83%BD%E7%89%B9%E5%8C%BA"
+        "url": "https://gundam.huijiwiki.com/wiki/%E9%A6%96%E9%83%BD%E7%89%B9%E5%8C%BA",
+        "labelEn": "Capital Territory — Gundam WIKI (Chinese)"
       }
     ]
   },
@@ -2378,7 +2604,8 @@
         "id": "earth",
         "name": {
           "zh": "地球圈",
-          "ja": "地球圏"
+          "ja": "地球圏",
+          "en": "Earth Sphere"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2388,14 +2615,16 @@
         "factionId": "gjallarhorn",
         "note": {
           "zh": "被四个经济圈分割的地球。加拉尔霍恩以维持秩序为名驻扎各圈。",
-          "ja": "四つの経済圏に分割された地球。ギャラルホルンが秩序維持の名目で駐留する。"
+          "ja": "四つの経済圏に分割された地球。ギャラルホルンが秩序維持の名目で駐留する。",
+          "en": "Earth, divided among the four economic blocs. Gjallarhorn is stationed in each bloc in the name of maintaining order."
         }
       },
       {
         "id": "vingolf",
         "name": {
           "zh": "维恩戈尔夫",
-          "ja": "ヴィーンゴールヴ"
+          "ja": "ヴィーンゴールヴ",
+          "en": "Vingolf"
         },
         "kind": "station",
         "anchor": "earth",
@@ -2405,14 +2634,16 @@
         "factionId": "gjallarhorn",
         "note": {
           "zh": "加拉尔霍恩的海上浮岛总部，刻意置于任何经济圈之外。",
-          "ja": "ギャラルホルンの海上メガフロート本部。どの経済圏にも属さない海上に置かれた。"
+          "ja": "ギャラルホルンの海上メガフロート本部。どの経済圏にも属さない海上に置かれた。",
+          "en": "Gjallarhorn's maritime floating island headquarters, deliberately placed outside any economic bloc."
         }
       },
       {
         "id": "edmonton",
         "name": {
           "zh": "埃德蒙顿",
-          "ja": "エドモントン"
+          "ja": "エドモントン",
+          "en": "Edmonton"
         },
         "kind": "city",
         "anchor": "earth",
@@ -2422,14 +2653,16 @@
         "factionId": "gjallarhorn",
         "note": {
           "zh": "阿布拉乌经济圈的城市，铁华团在此与加拉尔霍恩交战。",
-          "ja": "アーブラウ経済圏の都市。鉄華団がギャラルホルンと交戦した。"
+          "ja": "アーブラウ経済圏の都市。鉄華団がギャラルホルンと交戦した。",
+          "en": "A city in the Arbrau economic bloc, where Tekkadan fought Gjallarhorn."
         }
       },
       {
         "id": "arbrau",
         "name": {
           "zh": "阿布拉乌",
-          "ja": "アーブラウ"
+          "ja": "アーブラウ",
+          "en": "Arbrau"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2442,7 +2675,8 @@
         "id": "sau",
         "name": {
           "zh": "南美联合",
-          "ja": "SAU"
+          "ja": "SAU",
+          "en": "South American Union"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2454,7 +2688,8 @@
         "id": "africa",
         "name": {
           "zh": "非洲联合",
-          "ja": "アフリカン・ユニオン"
+          "ja": "アフリカン・ユニオン",
+          "en": "African Union"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2466,7 +2701,8 @@
         "id": "oceania",
         "name": {
           "zh": "大洋洲联邦",
-          "ja": "オセアニア連邦"
+          "ja": "オセアニア連邦",
+          "en": "Oceania Federation"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2478,7 +2714,8 @@
         "id": "chryse",
         "name": {
           "zh": "克律塞",
-          "ja": "クリュセ"
+          "ja": "クリュセ",
+          "en": "Chryse"
         },
         "kind": "city",
         "anchor": "mars",
@@ -2488,14 +2725,16 @@
         "factionId": "tekkadan",
         "note": {
           "zh": "火星克律塞平原的独立城市，铁华团与库德莉亚的起点。",
-          "ja": "火星クリュセ平原の独立都市。鉄華団とクーデリアの出発点。"
+          "ja": "火星クリュセ平原の独立都市。鉄華団とクーデリアの出発点。",
+          "en": "An independent city on the Chryse Planitia of Mars, and the starting point for Tekkadan and Kudelia."
         }
       },
       {
         "id": "mars",
         "name": {
           "zh": "火星",
-          "ja": "火星"
+          "ja": "火星",
+          "en": "Mars"
         },
         "kind": "region",
         "anchor": "mars",
@@ -2504,14 +2743,16 @@
         "lng": -40,
         "note": {
           "zh": "被四个经济圈分割统治的殖民地行星，独立运动在此萌芽。",
-          "ja": "四つの経済圏に分割統治された植民惑星。独立運動が芽生えた。"
+          "ja": "四つの経済圏に分割統治された植民惑星。独立運動が芽生えた。",
+          "en": "A colony planet divided among the four economic blocs, where the independence movement took root."
         }
       },
       {
         "id": "mars-branch",
         "name": {
           "zh": "火星支队",
-          "ja": "火星支部"
+          "ja": "火星支部",
+          "en": "Mars Branch"
         },
         "kind": "station",
         "anchor": "mars",
@@ -2524,7 +2765,8 @@
         "id": "arianrhod",
         "name": {
           "zh": "月外缘轨道舰队",
-          "ja": "月外縁軌道統合艦隊"
+          "ja": "月外縁軌道統合艦隊",
+          "en": "Arianrhod Fleet"
         },
         "kind": "station",
         "anchor": "moon",
@@ -2534,14 +2776,16 @@
         "factionId": "gjallarhorn",
         "note": {
           "zh": "加拉尔霍恩的月球轨道舰队，负责地球圈外缘的巡逻。",
-          "ja": "ギャラルホルンの月軌道艦隊。地球圏外縁の哨戒を担う。"
+          "ja": "ギャラルホルンの月軌道艦隊。地球圏外縁の哨戒を担う。",
+          "en": "Gjallarhorn's lunar orbit fleet, responsible for patrolling the outer edge of the Earth Sphere."
         }
       },
       {
         "id": "dort",
         "name": {
           "zh": "多特殖民地群",
-          "ja": "ドルトコロニー群"
+          "ja": "ドルトコロニー群",
+          "en": "Dort Colony Cluster"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -2550,14 +2794,16 @@
         "distance": 1.9,
         "note": {
           "zh": "非洲联合的多特公司经营的八座工业殖民卫星。",
-          "ja": "アフリカン・ユニオンのドルト社が運営する八つの工業コロニー。"
+          "ja": "アフリカン・ユニオンのドルト社が運営する八つの工業コロニー。",
+          "en": "Eight industrial colonies operated by the Dort Company of the African Union."
         }
       },
       {
         "id": "satellite-base",
         "name": {
           "zh": "卫星基地",
-          "ja": "サテライトベース"
+          "ja": "サテライトベース",
+          "en": "Satellite Base"
         },
         "kind": "station",
         "anchor": "earthorbit",
@@ -2570,7 +2816,8 @@
         "id": "saisei",
         "name": {
           "zh": "再生",
-          "ja": "サイセイ"
+          "ja": "サイセイ",
+          "en": "Saisei"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2579,14 +2826,16 @@
         "factionId": "teiwaz",
         "note": {
           "zh": "提瓦兹的据点殖民卫星，废铁商与佣兵的中转站。",
-          "ja": "テイワズの拠点コロニー。スクラップ商と傭兵の中継地。"
+          "ja": "テイワズの拠点コロニー。スクラップ商と傭兵の中継地。",
+          "en": "A colony used as a base by Teiwaz, and a waypoint for scrap dealers and mercenaries."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -2626,17 +2875,20 @@
     ],
     "geography": {
       "zh": "P.D. 的地球圈是“四大经济圈＋火星”的殖民结构：末日号角以海上浮岛维恩戈尔夫为本部、以月外缘轨道舰队巡逻，火星则被四个经济圈分割统治。多特殖民地群的拉格朗日归属在官方资料中没有固定说法。",
-      "ja": "P.D.の地球圏は「四つの経済圏＋火星」の植民構造。ギャラルホルンは海上メガフロートのヴィーンゴールヴを本部とし、月外縁軌道艦隊で哨戒する。火星は四経済圏に分割統治され、ドルトコロニー群のラグランジュ所属は公式に確定していない。"
+      "ja": "P.D.の地球圏は「四つの経済圏＋火星」の植民構造。ギャラルホルンは海上メガフロートのヴィーンゴールヴを本部とし、月外縁軌道艦隊で哨戒する。火星は四経済圏に分割統治され、ドルトコロニー群のラグランジュ所属は公式に確定していない。",
+      "en": "The P.D. Earth Sphere is a colonial structure of 'four economic blocs plus Mars': Gjallarhorn is headquartered on the maritime floating island Vingolf and patrols with its outer lunar orbit fleet, while Mars is divided among the four economic blocs. Official materials give no fixed Lagrange assignment for the Dort colonies."
     },
     "layoutNote": {
       "zh": "维恩戈尔夫为海上浮岛，用示意坐标；多特的位置标注为“轨道未公开”。",
-      "ja": "ヴィーンゴールヴは海上メガフロートのため模式座標。ドルトは「軌道非公開」として扱う。"
+      "ja": "ヴィーンゴールヴは海上メガフロートのため模式座標。ドルトは「軌道非公開」として扱う。",
+      "en": "Vingolf is a maritime floating island, shown with indicative coordinates; Dort is marked as 'orbit undisclosed'."
     },
     "sources": [
       {
         "label": "機動戦士ガンダム 鉄血のオルフェンズ — Wikipedia",
         "level": "B",
-        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0_%E9%89%84%E8%A1%80%E3%81%AE%E3%82%AA%E3%83%AB%E3%83%95%E3%82%A7%E3%83%B3%E3%82%BA"
+        "url": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%A6%E5%A3%AB%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0_%E9%89%84%E8%A1%80%E3%81%AE%E3%82%AA%E3%83%AB%E3%83%95%E3%82%A7%E3%83%B3%E3%82%BA",
+        "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans — Wikipedia (Japanese)"
       },
       {
         "label": "Post Disaster — Gundam Wiki",
@@ -2662,7 +2914,8 @@
         "id": "earth",
         "name": {
           "zh": "地球（亚细亚区）",
-          "ja": "地球（アジア圏）"
+          "ja": "地球（アジア圏）",
+          "en": "Earth (Asia Region)"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2672,14 +2925,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "被前端企业当作代理战场的地球。亚细亚区与地球圈企业在此争夺权益。",
-          "ja": "フロント企業の代理戦場とされた地球。アジア圏と地球圏企業が権益を争う。"
+          "ja": "フロント企業の代理戦場とされた地球。アジア圏と地球圏企業が権益を争う。",
+          "en": "Earth, used by front-line corporations as a proxy battlefield. The Asia Region and Earth Sphere corporations contend for interests here."
         }
       },
       {
         "id": "quinharbor",
         "name": {
           "zh": "昆港",
-          "ja": "クイン・ハーバー"
+          "ja": "クイン・ハーバー",
+          "en": "Quinharbor"
         },
         "kind": "city",
         "anchor": "earth",
@@ -2689,14 +2944,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "贝纳里特使节团遇袭的地球城市，位置为作品虚构。",
-          "ja": "ベネリット使節団が襲撃された地球の都市。位置は作品上の架空設定。"
+          "ja": "ベネリット使節団が襲撃された地球の都市。位置は作品上の架空設定。",
+          "en": "The Earth city where the Benerit delegation was attacked; its location is fictional in the work."
         }
       },
       {
         "id": "front73",
         "name": {
           "zh": "前线 73 区 / 阿斯提卡西亚",
-          "ja": "フロント73区 / アスティカシア"
+          "ja": "フロント73区 / アスティカシア",
+          "en": "Front 73 / Asticassia"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2705,14 +2962,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "贝纳里特集团在 L4 的学园殖民卫星，决斗与 MS 开发的舞台。",
-          "ja": "ベネリットグループのL4学園コロニー。決闘とMS開発の舞台。"
+          "ja": "ベネリットグループのL4学園コロニー。決闘とMS開発の舞台。",
+          "en": "The Benerit Group's school colony at L4, the stage for duels and MS development."
         }
       },
       {
         "id": "benerit-hq",
         "name": {
           "zh": "贝纳里特本社前线",
-          "ja": "ベネリット本社フロント"
+          "ja": "ベネリット本社フロント",
+          "en": "Benerit Group HQ Front"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2721,14 +2980,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "贝纳里特集团 157 家企业的总部前线。",
-          "ja": "ベネリットグループ157社の本社フロント。"
+          "ja": "ベネリットグループ157社の本社フロント。",
+          "en": "The headquarters front of the Benerit Group's 157 companies."
         }
       },
       {
         "id": "gund-arm",
         "name": {
           "zh": "GUND-ARM 本部",
-          "ja": "ガンドアーム本部"
+          "ja": "ガンドアーム本部",
+          "en": "GUND-ARM HQ"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -2737,14 +2998,16 @@
         "factionId": "gund-arm-inc",
         "note": {
           "zh": "米奥莉奈与斯莱塔创立的地球侧 MS 企业。",
-          "ja": "ミオリネとスレッタが設立した地球側MS企業。"
+          "ja": "ミオリネとスレッタが設立した地球側MS企業。",
+          "en": "The Earth-side MS company founded by Miorine and Suletta."
         }
       },
       {
         "id": "plant-quetta",
         "name": {
           "zh": "克塔工厂",
-          "ja": "プラント・クエタ"
+          "ja": "プラント・クエタ",
+          "en": "Quetta Plant"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -2753,14 +3016,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "贝纳里特在 L2 卫星群的大型开发设施。",
-          "ja": "ベネリットのL2衛星群にある大型開発施設。"
+          "ja": "ベネリットのL2衛星群にある大型開発施設。",
+          "en": "Benerit's large development facility in the L2 satellite cluster."
         }
       },
       {
         "id": "quiet-zero",
         "name": {
           "zh": "寂静零号",
-          "ja": "クワイエット・ゼロ"
+          "ja": "クワイエット・ゼロ",
+          "en": "Quiet Zero"
         },
         "kind": "station",
         "anchor": "lagrange",
@@ -2769,14 +3034,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "以 Permet 构筑的要塞级设施，L2 军事空域的核心。",
-          "ja": "パーメットで構築された要塞級施設。L2軍事空域の中核。"
+          "ja": "パーメットで構築された要塞級施設。L2軍事空域の中核。",
+          "en": "A fortress-class facility built with Permet, the core of the L2 military airspace."
         }
       },
       {
         "id": "assembly-league",
         "name": {
           "zh": "太空议会 L2 舰队",
-          "ja": "スペースアセンブリ・リーグ L2艦隊"
+          "ja": "スペースアセンブリ・リーグ L2艦隊",
+          "en": "Space Assembly League L2 Fleet"
         },
         "kind": "fleet",
         "anchor": "lagrange",
@@ -2785,14 +3052,16 @@
         "factionId": "space-assembly-league",
         "note": {
           "zh": "太空议会驻 L2 的舰队，负责前线登记与军事调停。",
-          "ja": "スペースアセンブリ・リーグのL2艦隊。フロント登録と軍事調停を担う。"
+          "ja": "スペースアセンブリ・リーグのL2艦隊。フロント登録と軍事調停を担う。",
+          "en": "The Space Assembly League's fleet stationed at L2, responsible for front registration and military mediation."
         }
       },
       {
         "id": "l1-bloc",
         "name": {
           "zh": "L1 企业圈",
-          "ja": "L1企業群"
+          "ja": "L1企業群",
+          "en": "L1 Corporate Bloc"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2800,14 +3069,16 @@
         "orbit": "L1",
         "note": {
           "zh": "L1 的竞争企业群，具体名称未公开。",
-          "ja": "L1の競合企業群。名称は非公開。"
+          "ja": "L1の競合企業群。名称は非公開。",
+          "en": "The competing corporate group at L1; specific names have not been disclosed."
         }
       },
       {
         "id": "folkvang",
         "name": {
           "zh": "福尔克万",
-          "ja": "フォールクヴァング"
+          "ja": "フォールクヴァング",
+          "en": "Folkvang"
         },
         "kind": "colony",
         "anchor": "earthorbit",
@@ -2817,14 +3088,16 @@
         "factionId": "vanadis",
         "note": {
           "zh": "瓦纳迪斯研究所的小行星前线，《PROLOGUE》的舞台。",
-          "ja": "ヴァナディース研究所の小惑星フロント。「PROLOGUE」の舞台。"
+          "ja": "ヴァナディース研究所の小惑星フロント。「PROLOGUE」の舞台。",
+          "en": "The Vanadis Institute's asteroid front, and the stage of PROLOGUE."
         }
       },
       {
         "id": "mercury",
         "name": {
           "zh": "佩比·哥伦布 23",
-          "ja": "ペビ・コロンボ23"
+          "ja": "ペビ・コロンボ23",
+          "en": "Pebi Columbus 23"
         },
         "kind": "station",
         "anchor": "deep",
@@ -2833,14 +3106,16 @@
         "distance": 2.2,
         "note": {
           "zh": "水星轨道的前端基地，Permet 与稀有金属的采掘点。",
-          "ja": "水星軌道のフロント基地。パーメットと希少金属の採掘点。"
+          "ja": "水星軌道のフロント基地。パーメットと希少金属の採掘点。",
+          "en": "A front-line base in Mercury orbit, and a mining site for Permet and rare metals."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月面矿区",
-          "ja": "月面"
+          "ja": "月面",
+          "en": "Lunar Mining Area"
         },
         "kind": "station",
         "anchor": "moon",
@@ -2850,14 +3125,16 @@
         "factionId": "benerit",
         "note": {
           "zh": "Permet 的月面采掘区。",
-          "ja": "パーメットの月面採掘区。"
+          "ja": "パーメットの月面採掘区。",
+          "en": "The lunar mining area for Permet."
         }
       },
       {
         "id": "jupiter",
         "name": {
           "zh": "木星圈",
-          "ja": "木星圏"
+          "ja": "木星圏",
+          "en": "Jupiter Sphere"
         },
         "kind": "region",
         "anchor": "jupiter",
@@ -2866,7 +3143,8 @@
         "lng": 0,
         "note": {
           "zh": "木星圈企业掌握稀有金属与推进剂，是学园机体的上游供应链。",
-          "ja": "木星圏企業は希少金属と推進剤を握り、学園機体の上流サプライチェーンとなる。"
+          "ja": "木星圏企業は希少金属と推進剤を握り、学園機体の上流サプライチェーンとなる。",
+          "en": "Jupiter Sphere corporations control rare metals and propellant, and are the upstream supply chain for the school's mobile suits."
         }
       }
     ],
@@ -2892,11 +3170,13 @@
     ],
     "geography": {
       "zh": "A.S. 的地球圈以企业为政治单位：L4 是贝纳里特集团的本社与学园，L2 是克塔工厂与“寂静零号”所在的军事化空域，地球则沦为各前线企业的代理战场。",
-      "ja": "A.S.の地球圏は企業を政治単位とする。L4にベネリットグループの本社と学園、L2にプラント・クエタと「クワイエット・ゼロ」が置かれる軍事空域、地球はフロント企業の代理戦場となる。"
+      "ja": "A.S.の地球圏は企業を政治単位とする。L4にベネリットグループの本社と学園、L2にプラント・クエタと「クワイエット・ゼロ」が置かれる軍事空域、地球はフロント企業の代理戦場となる。",
+      "en": "The A.S. Earth Sphere uses corporations as political units: L4 holds the Benerit Group's headquarters and the school, L2 holds the Quetta Plant and the militarized airspace where Quiet Zero is located, and Earth has become a proxy battlefield for the front-line corporations."
     },
     "layoutNote": {
       "zh": "学园与本社在 L4，克塔工厂与寂静零号在 L2；地球城市为虚构位置。",
-      "ja": "学園と本社はL4、プラント・クエタとクワイエット・ゼロはL2。地球の都市は架空の位置。"
+      "ja": "学園と本社はL4、プラント・クエタとクワイエット・ゼロはL2。地球の都市は架空の位置。",
+      "en": "The school and headquarters are at L4, the Quetta Plant and Quiet Zero at L2; Earth cities have fictional positions."
     },
     "sources": [
       {
@@ -2907,7 +3187,8 @@
       {
         "label": "アスティカシア高等専門学園 — srw wiki",
         "level": "B",
-        "url": "https://srw.m.wiki.cre.jp/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%AB%E3%82%B7%E3%82%A2%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E5%9C%92"
+        "url": "https://srw.m.wiki.cre.jp/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%AB%E3%82%B7%E3%82%A2%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E5%9C%92",
+        "labelEn": "Asticassia School of Technology — srw wiki (Japanese)"
       }
     ]
   },
@@ -2926,7 +3207,8 @@
         "id": "earth",
         "name": {
           "zh": "地球",
-          "ja": "地球"
+          "ja": "地球",
+          "en": "Earth"
         },
         "kind": "region",
         "anchor": "earth",
@@ -2935,14 +3217,16 @@
         "lng": 100,
         "note": {
           "zh": "被“Apocalypse”生态覆盖而放弃的母星。站点原创设定，非官方纪元。",
-          "ja": "「アポカリプス」に覆われ放棄された母星。本サイト独自設定で、公式紀元ではない。"
+          "ja": "「アポカリプス」に覆われ放棄された母星。本サイト独自設定で、公式紀元ではない。",
+          "en": "The home planet, abandoned after being covered by the 'Apocalypse' ecology. A site-original setting, not an official era."
         }
       },
       {
         "id": "moon",
         "name": {
           "zh": "月球",
-          "ja": "月"
+          "ja": "月",
+          "en": "Moon"
         },
         "kind": "region",
         "anchor": "moon",
@@ -2952,14 +3236,16 @@
         "factionId": "lunar-survivors",
         "note": {
           "zh": "月面幸存者的据点，孩子们在 A.A.45 年从这里醒来。",
-          "ja": "月面生存者の拠点。A.A.45年に子どもたちがここで目覚めた。"
+          "ja": "月面生存者の拠点。A.A.45年に子どもたちがここで目覚めた。",
+          "en": "A stronghold of lunar survivors; the children awoke here in A.A.45."
         }
       },
       {
         "id": "luna-ark",
         "name": {
           "zh": "月面方舟",
-          "ja": "ルナ・アーク"
+          "ja": "ルナ・アーク",
+          "en": "Lunar Ark"
         },
         "kind": "station",
         "anchor": "moon",
@@ -2969,14 +3255,16 @@
         "factionId": "lunar-survivors",
         "note": {
           "zh": "月面的冷冻休眠设施，保存着旧文明的技术与人员。",
-          "ja": "月面の冷凍休眠施設。旧文明の技術と人員を保存する。"
+          "ja": "月面の冷凍休眠施設。旧文明の技術と人員を保存する。",
+          "en": "A cryogenic hibernation facility on the Moon, preserving the technology and personnel of the old civilization."
         }
       },
       {
         "id": "colony-l4",
         "name": {
           "zh": "L4 幸存殖民星",
-          "ja": "L4残存コロニー"
+          "ja": "L4残存コロニー",
+          "en": "L4 Survivor Colony"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2988,7 +3276,8 @@
         "id": "colony-l5",
         "name": {
           "zh": "L5 漂流群",
-          "ja": "L5漂流群"
+          "ja": "L5漂流群",
+          "en": "L5 Drifting Cluster"
         },
         "kind": "colony",
         "anchor": "lagrange",
@@ -2999,7 +3288,8 @@
         "id": "roque-orbit",
         "name": {
           "zh": "异轨船团",
-          "ja": "異軌船団"
+          "ja": "異軌船団",
+          "en": "Roque Orbit Flotilla"
         },
         "kind": "fleet",
         "anchor": "deep",
@@ -3009,14 +3299,16 @@
         "factionId": "rogue-orbit-crew",
         "note": {
           "zh": "在废弃轨道间航行的拾荒船团。",
-          "ja": "廃軌道を航行する拾い屋船団。"
+          "ja": "廃軌道を航行する拾い屋船団。",
+          "en": "A scavenger flotilla sailing among abandoned orbits."
         }
       },
       {
         "id": "xarx-site",
         "name": {
           "zh": "XARX 遗迹",
-          "ja": "XARX遺跡"
+          "ja": "XARX遺跡",
+          "en": "XARX Ruins"
         },
         "kind": "battlefield",
         "anchor": "earth",
@@ -3025,14 +3317,16 @@
         "lng": 130,
         "note": {
           "zh": "地表上的旧文明遗迹，XARX-0 的启动坐标。",
-          "ja": "地表の旧文明遺跡。XARX-0の起動座標。"
+          "ja": "地表の旧文明遺跡。XARX-0の起動座標。",
+          "en": "Ruins of the old civilization on the surface, and the activation coordinates of XARX-0."
         }
       },
       {
         "id": "deep-gate",
         "name": {
           "zh": "外太阳系门",
-          "ja": "外太陽系ゲート"
+          "ja": "外太陽系ゲート",
+          "en": "Outer Solar System Gate"
         },
         "kind": "station",
         "anchor": "deep",
@@ -3063,11 +3357,13 @@
     ],
     "geography": {
       "zh": "A.A. 是本站的原创扩展纪元，官方没有可对照的地球圈设定。地图只借用既有的地月框架作为版式约定，所有节点均标注为非官方，不应与正史地理混读。",
-      "ja": "A.A.は本サイト独自の拡張紀元で、公式の地球圏設定は存在しない。地図は既存の地球—月フレームを版式上の約束として借用したもので、全ノードは非公式として扱い、正史地理と混読しない。"
+      "ja": "A.A.は本サイト独自の拡張紀元で、公式の地球圏設定は存在しない。地図は既存の地球—月フレームを版式上の約束として借用したもので、全ノードは非公式として扱い、正史地理と混読しない。",
+      "en": "A.A. is this site's original expanded era; there is no official Earth Sphere setting to compare with. The map borrows the existing Earth-Moon framework only as a layout convention, and all nodes are marked as unofficial and should not be read together with mainline geography."
     },
     "layoutNote": {
       "zh": "全部节点为站内原创；沿用拉格朗日框架只为版式统一。",
-      "ja": "全ノードは本サイト独自。ラグランジュ枠は版式統一のために借用した。"
+      "ja": "全ノードは本サイト独自。ラグランジュ枠は版式統一のために借用した。",
+      "en": "All nodes are original to this site; the Lagrange framework is used only for layout consistency."
     },
     "sources": [
       {

@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "联邦为 Newtype 驾驶员开发的 RX-78 改良型，以全周天驾驶舱与乔巴姆装甲为特征。",
-    "ja": "連邦がニュータイプ用に開発したRX-78の改良型。全天周モニターとチョバム・アーマーが特徴。"
+    "ja": "連邦がニュータイプ用に開発したRX-78の改良型。全天周モニターとチョバム・アーマーが特徴。",
+    "en": "An improved RX-78 developed by the Federation for Newtype pilots, characterized by a panoramic cockpit and Chobham armor."
   },
   "description": {
     "zh": [
@@ -30,11 +31,14 @@
     ],
     "ja": [
       "NT-1はRX-78を基にコクピットと装甲防護を強化し、チョバム・アーマーは外層破壊後に投棄できる。サイド6へ試験搬入されたが、一年戦争末期に勝者のほとんどいない戦いへ巻き込まれた。"
+    ],
+    "en": [
+      "The NT-1 strengthens the cockpit and armor protection on the RX-78 basis, and the Chobham armor can be discarded after the outer layer is destroyed. It was sent to Side 6 for testing, but was drawn into a battle with almost no winners at the end of the One Year War."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": null,
     "powerOutput": null,
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -103,13 +111,19 @@
   },
   "sources": [
     {
-      "label": "OVA《机动战士高达 0080 口袋里的战争》官方设定资料",
-      "level": "S"
+      "label": "OVA《机动战士高达 0080 口袋里的战争》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "OVA \"Mobile Suit Gundam 0080: War in the Pocket\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

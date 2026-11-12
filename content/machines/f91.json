@@ -23,7 +23,8 @@
   },
   "summary": {
     "zh": "联邦小型化 MS 计划的产物。15.5 米级的机身搭载生物传感器与双 VSBR，证明“更小”并不等于“更弱”。",
-    "ja": "連邦のMS小型化計画の産物。15.5m級の機体にバイオセンサーと二門のヴェスバーを搭載し、「小さい」ことが「弱い」ではないことを証明した。"
+    "ja": "連邦のMS小型化計画の産物。15.5m級の機体にバイオセンサーと二門のヴェスバーを搭載し、「小さい」ことが「弱い」ではないことを証明した。",
+    "en": "The product of the Federation's miniaturized MS program. A 15.5-meter-class frame with a bio-sensor and twin VSBRs proves that 'smaller' does not mean 'weaker'."
   },
   "description": {
     "zh": [
@@ -33,6 +34,10 @@
     "ja": [
       "F91は反応炉、装甲、推進系を15m級へ圧縮しつつ、ビームシールドと高機動戦能力を維持した。バイオセンサーはパイロットの生理反応を読み取り、最大限状態で一時的に機体制御のリミッターを解除する。",
       "シーブック・アノーはフロンティアサイドの紛争でこの機体を駆った。F91の実戦データは連邦に小型化路線の実現可能性を確信させたが、バイオセンサーのパイロット精神状態への依存も露呈させた。"
+    ],
+    "en": [
+      "The F91 compresses the reactor, armor and propulsion into a 15-meter class while keeping the beam shield and high-mobility combat capability. The bio-sensor reads the pilot's physiological reactions and briefly releases the machine's control limits in extreme conditions.",
+      "Seabook Arno piloted it in the conflict at Frontier Side. The F91's combat data convinced the Federation that miniaturization was viable, and also exposed the bio-sensor's dependence on the pilot's mental state."
     ]
   },
   "specs": {
@@ -45,42 +50,48 @@
     "sensorRadius": 25000,
     "armor": {
       "zh": "高达尼姆合金",
-      "ja": "ガンダリウム合金"
+      "ja": "ガンダリウム合金",
+      "en": "Gundarium Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "可变速光束步枪 ×2",
-        "ja": "ヴェスバー ×2"
+        "ja": "ヴェスバー ×2",
+        "en": "Variable Speed Beam Rifle ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束盾牌",
-        "ja": "ビームシールド"
+        "ja": "ビームシールド",
+        "en": "Beam Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -120,7 +131,8 @@
       "sources": [
         {
           "label": "《机动战士 V 高达》MS 设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Victory Gundam MS setting materials"
         }
       ]
     },
@@ -134,7 +146,8 @@
       "sources": [
         {
           "label": "《机动战士海盗高达》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Crossbone Gundam mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -158,11 +171,13 @@
   "sources": [
     {
       "label": "剧场版《机动战士高达 F91》",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Theatrical film \"Mobile Suit Gundam F91\""
     },
     {
       "label": "《机动战士高达 F91》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam F91 MS setting materials"
     }
   ],
   "disputed": false,

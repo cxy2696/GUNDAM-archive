@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "古辛重锻的最终改修型，追加副臂与城市战装备。",
-    "ja": "グシオンリベイクの最終改修型。サブアームと市街戦装備を追加した。"
+    "ja": "グシオンリベイクの最終改修型。サブアームと市街戦装備を追加した。",
+    "en": "The final rework of Gusion Rebake, adding sub-arms and city-combat equipment."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "フルシティは市街地やコロニー内部での戦闘に最適化された。サブアームは盾と武器を同時に扱い、狭い空間でも火力を保つ。",
       "グシオンの重厚感を残しつつ、もはや鈍重ではない。限られた資源の中で、古いガンダムを限界まで使い続けた鉄華団の証明である。"
+    ],
+    "en": [
+      "The Full City was optimized for fighting inside cities and colonies. Its sub-arms can operate a shield and a weapon at the same time, letting it keep up firepower in narrow spaces.",
+      "The machine keeps Gusion's bulk but is no longer clumsy. It is proof that Tekkadan, with limited resources, could push an old Gundam to its limit again and again."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "锤矛",
-        "ja": "メイス"
+        "ja": "メイス",
+        "en": "Mace"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "长步枪",
-        "ja": "ロングライフル"
+        "ja": "ロングライフル",
+        "en": "Long Rifle"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "副臂",
-        "ja": "サブアーム"
+        "ja": "サブアーム",
+        "en": "Sub-arm"
       },
       "type": "special"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

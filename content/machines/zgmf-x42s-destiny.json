@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "ZAFT 的次世代旗舰机，以命运-01 背包与光之翼实现高机动与多目标压制。",
-    "ja": "ザフトの次世代旗艦機。デスティニー-01バックパックと光の翼で高機動と多目標制圧を実現する。"
+    "ja": "ザフトの次世代旗艦機。デスティニー-01バックパックと光の翼で高機動と多目標制圧を実現する。",
+    "en": "ZAFT's next-generation flagship, achieving high mobility and multi-target suppression with the Fatum-01 pack and the Wings of Light."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "デスティニーはインパルスの換装経験を一機の常時高機動機へ統合し、光の翼と長射程ビーム砲でほぼ全距離をカバーする。シン・アスカがザフトの強硬路線の下で駆り、「力は正義か」という問いを前面に押し出した。"
+    ],
+    "en": [
+      "The Destiny Gundam integrates the Impulse Gundam's equipment-swap experience into a permanently high-mobility machine; the Wings of Light and long-range beam cannons let it cover almost every range. Shinn Asuka piloted it to carry out ZAFT's hardline course, bringing the question of whether power equals justice to the foreground."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "长射程光束炮 ×2",
-        "ja": "長射程ビーム砲 ×2"
+        "ja": "長射程ビーム砲 ×2",
+        "en": "Long-range Beam Cannon ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -105,13 +113,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 SEED DESTINY》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 SEED DESTINY》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam SEED Destiny\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

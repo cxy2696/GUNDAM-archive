@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "古辛经过铁华团改装后的形态，兼顾火力与近战。",
-    "ja": "鉄華団によって改修されたグシオン。火力と近接戦を両立する。"
+    "ja": "鉄華団によって改修されたグシオン。火力と近接戦を両立する。",
+    "en": "Gusion's form after Tekkadan's modification, balancing firepower and close combat."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "リベイクはグシオンを重装水中機から、より汎用的な戦闘形態へ改修した。装甲は再配置され、腕の可動域が広がり、長距離ライフルが追加された。",
       "昭弘・アルトランドが駆る時、この機体は単なる「戦利品」ではなく、鉄華団自身の戦力になる。"
+    ],
+    "en": [
+      "The Rebake turned Gusion from a heavy underwater machine into a more general combat form. The armor was redistributed, the arms gained a wider range of motion, and a long rifle was added.",
+      "When Akihiro Altland piloted it, the machine had already gone from spoils of war to a fighting asset of Tekkadan's own."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "锤矛",
-        "ja": "メイス"
+        "ja": "メイス",
+        "en": "Mace"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "长步枪",
-        "ja": "ロングライフル"
+        "ja": "ロングライフル",
+        "en": "Long Rifle"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -88,7 +96,8 @@
       "sources": [
         {
           "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "alaya-vijnana"
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新俄罗斯的代表机体，以重力锤与厚重装甲进行力量压制。",
-    "ja": "ネオロシアの代表機。グラビティ・ハンマーと厚い装甲で力を押し付ける。"
+    "ja": "ネオロシアの代表機。グラビティ・ハンマーと厚い装甲で力を押し付ける。",
+    "en": "Neo Russia's representative machine, applying force with a gravity hammer and heavy armor."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ボルトガンダムの輪郭は動く要塞のようだ。主武装は質量を変えられるグラビティ・ハンマーで、振り下ろした際の慣性は相手ごと地面を掘り返す。",
       "必要なのは力だけではない。至近距離で重心と着点を見極める経験である。この機体は「重さ」を戦術に変える。"
+    ],
+    "en": [
+      "The Bolt Gundam's silhouette is like a moving fortress. Its main weapon is a gravity hammer that can change mass; the momentum of a swing is enough to flip an opponent and the ground together.",
+      "Piloting it requires not only strength but experience in judging the center of gravity and the landing point at extremely close range. It is a machine that turns 'weight' into tactics."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "重力锤",
-        "ja": "グラビティ・ハンマー"
+        "ja": "グラビティ・ハンマー",
+        "en": "Gravity Hammer"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "钻头",
-        "ja": "ドリル"
+        "ja": "ドリル",
+        "en": "Drill"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮",
-        "ja": "バルカン"
+        "ja": "バルカン",
+        "en": "Vulcan"
       },
       "type": "kinetic"
     }
@@ -93,12 +101,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

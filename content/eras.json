@@ -20,11 +20,13 @@
     },
     "summary": {
       "zh": "人类大规模移居宇宙殖民地后的主历史。从一年战争到赞斯卡尔战争，MS 技术在此完成了从实弹兵器到精神感应兵器的完整演化。",
-      "ja": "人類が宇宙コロニーへ大規模移住した後の主歴史。一年戦争からザンスカール戦争まで、MS技術が実弾兵器からサイコミュ兵器へと進化した時代。"
+      "ja": "人類が宇宙コロニーへ大規模移住した後の主歴史。一年戦争からザンスカール戦争まで、MS技術が実弾兵器からサイコミュ兵器へと進化した時代。",
+      "en": "The main history after humanity moved in large numbers to space colonies. From the One Year War to the Zanscare War, mobile suit technology completes its full evolution from projectile weapons to psycommu weapons."
     },
     "note": {
       "zh": "年表默认聚焦 U.C.0079—0096 的讲述窗口；全史跨度为 U.C.0001—0223。",
-      "ja": "年表は既定でU.C.0079—0096の経緯期間を表示。全史はU.C.0001—0223。"
+      "ja": "年表は既定でU.C.0079—0096の経緯期間を表示。全史はU.C.0001—0223。",
+      "en": "The timeline by default focuses on the U.C. 0079–0096 window; the full history spans U.C. 0001–0223."
     }
   },
   {
@@ -48,7 +50,8 @@
     },
     "summary": {
       "zh": "以四年一度的高达武斗会替代战争的平行纪元。各殖民国家以机体代表争夺霸权，F.C.0060 是第十三届大会的舞台。",
-      "ja": "四年に一度のガンダムファイトで戦争を代替する並行紀元。各国が機体の代表を送り、F.C.0060は第13回大会の舞台。"
+      "ja": "四年に一度のガンダムファイトで戦争を代替する並行紀元。各国が機体の代表を送り、F.C.0060は第13回大会の舞台。",
+      "en": "A parallel era in which a Gundam Fight every four years replaces war. Colonial nations compete for hegemony with representative machines; F.C. 0060 is the stage of the 13th tournament."
     }
   },
   {
@@ -72,7 +75,8 @@
     },
     "summary": {
       "zh": "殖民地独立运动与 OZ 军事政变交织的纪元。A.C.0195 的“流星作战”将五台高达送入地球圈，改变了战争形态。",
-      "ja": "コロニー独立運動とOZの軍事クーデターが交錯する紀元。A.C.0195の「オペレーション・メテオ」が五機のガンダムを地球圏へ送り込んだ。"
+      "ja": "コロニー独立運動とOZの軍事クーデターが交錯する紀元。A.C.0195の「オペレーション・メテオ」が五機のガンダムを地球圏へ送り込んだ。",
+      "en": "An era shaped by the colonial independence movement and OZ's military coup. Operation Meteor in A.C. 0195 sends five Gundams into the Earth Sphere and changes the shape of war."
     }
   },
   {
@@ -96,7 +100,8 @@
     },
     "summary": {
       "zh": "第七次宇宙战争使地球人口锐减后的荒芜纪元。A.W.0015，少年加罗特与 Gundam X 在废土上寻找尚未坠落的世界。",
-      "ja": "第7次宇宙戦争で地球人口が激減した荒廃の紀元。A.W.0015、少年ガロードとガンダムXがまだ落ちていない世界を探す。"
+      "ja": "第7次宇宙戦争で地球人口が激減した荒廃の紀元。A.W.0015、少年ガロードとガンダムXがまだ落ちていない世界を探す。",
+      "en": "A desolate era left by the 7th Space War, which sharply reduced Earth's population. In A.W. 0015, the boy Garrod and the Gundam X search the wasteland for a world that has not yet fallen."
     }
   },
   {
@@ -120,7 +125,8 @@
     },
     "summary": {
       "zh": "技术被刻意封存、历史被“黑历史”抹去的遥远未来。C.C.2345，月光蝶与 Turn A 将此前所有纪元的战争记忆一并收束。",
-      "ja": "技術が封じられ、歴史が「黒歴史」として消された遠い未来。C.C.2345、月光蝶とターンAがそれまでの全紀元の戦争記憶を収束させる。"
+      "ja": "技術が封じられ、歴史が「黒歴史」として消された遠い未来。C.C.2345、月光蝶とターンAがそれまでの全紀元の戦争記憶を収束させる。",
+      "en": "A distant future in which technology is deliberately sealed away and history is erased under the name \"Dark History\". In C.C. 2345, the Moonlight Butterfly and the Turn A gather the war memories of every earlier era."
     }
   },
   {
@@ -144,7 +150,8 @@
     },
     "summary": {
       "zh": "基因改造人与自然人分裂的纪元。C.E.0070 年代，调整者与地球联合的战争把相转移装甲与中子干扰器推上舞台。",
-      "ja": "遺伝子改造人間コーディネイターとナチュラルの分裂した紀元。C.E.0070年代、ザフトと地球連合の戦争がフェイズシフト装甲とニュートロンジャマーを主流にした。"
+      "ja": "遺伝子改造人間コーディネイターとナチュラルの分裂した紀元。C.E.0070年代、ザフトと地球連合の戦争がフェイズシフト装甲とニュートロンジャマーを主流にした。",
+      "en": "An era split between genetically modified people and Naturals. In the C.E. 0070s, war between Coordinators and the Earth Alliance brings phase shift armor and neutron jammers to the fore."
     }
   },
   {
@@ -168,7 +175,8 @@
     },
     "summary": {
       "zh": "仍使用公元纪年的近未来。化石燃料枯竭后，轨道电梯与太阳光发电成为三大阵营的命脉；A.D.2307，天人开始武装介入。",
-      "ja": "西暦をなお用いる近未来。化石燃料枯渇後、軌道エレベーターと太陽光発電が三大陣営の生命線となり、A.D.2307にソレスタルビーイングが武力介入を開始する。"
+      "ja": "西暦をなお用いる近未来。化石燃料枯渇後、軌道エレベーターと太陽光発電が三大陣営の生命線となり、A.D.2307にソレスタルビーイングが武力介入を開始する。",
+      "en": "The near future, still using the Anno Domini calendar. After fossil fuels run out, orbital elevators and solar power become the lifelines of the three major blocs; in A.D. 2307, Celestial Being begins armed intervention."
     }
   },
   {
@@ -192,7 +200,8 @@
     },
     "summary": {
       "zh": "火星移民与地球联邦长期对立的纪元。AGE 系统让一台机体通过换装跨越百年战争。",
-      "ja": "火星移民と地球連邦の長い対立の紀元。AGEシステムにより、一機の機体が換装で百年の戦争を生き延びる。"
+      "ja": "火星移民と地球連邦の長い対立の紀元。AGEシステムにより、一機の機体が換装で百年の戦争を生き延びる。",
+      "en": "An era of long confrontation between Martian settlers and the Earth Federation. The AGE System lets one machine cross a hundred-year war through equipment swaps."
     }
   },
   {
@@ -216,7 +225,8 @@
     },
     "summary": {
       "zh": "宇宙世纪之后的遥远未来。技术被重新分类，轨道电梯与光子电池支撑着新的地球圈秩序。",
-      "ja": "宇宙世紀の遠い未来。技術は再分類され、軌道エレベーターと光子電池が新たな地球圏秩序を支える。"
+      "ja": "宇宙世紀の遠い未来。技術は再分類され、軌道エレベーターと光子電池が新たな地球圏秩序を支える。",
+      "en": "A distant future after the Universal Century. Technology is reclassified, and orbital elevators and photon batteries support a new Earth Sphere order."
     }
   },
   {
@@ -240,7 +250,8 @@
     },
     "summary": {
       "zh": "厄祭战后的世界。亚哈反应堆与机动装甲成为战后秩序的基石，少年兵与佣兵团在火星与地球之间挣扎。",
-      "ja": "厄祭戦後の世界。エイハブ・リアクターとモビルアーマーが戦後秩序の基盤となり、少年兵と傭兵団が火星と地球の間で戦う。"
+      "ja": "厄祭戦後の世界。エイハブ・リアクターとモビルアーマーが戦後秩序の基盤となり、少年兵と傭兵団が火星と地球の間で戦う。",
+      "en": "The world after the Calamity War. Ahab reactors and mobile armors become the foundation of the postwar order, and child soldiers and mercenary groups struggle between Mars and Earth."
     }
   },
   {
@@ -264,7 +275,8 @@
     },
     "summary": {
       "zh": "企业主导宇宙开发的纪元。GUND 格式化把人体与机体连接，也把诅咒带进了校园与战场。",
-      "ja": "企業が宇宙開発を主導する紀元。GUNDフォーマットは人体と機体を接続し、呪いを学園と戦場へ持ち込む。"
+      "ja": "企業が宇宙開発を主導する紀元。GUNDフォーマットは人体と機体を接続し、呪いを学園と戦場へ持ち込む。",
+      "en": "An era in which corporations lead space development. GUND Format links the human body and the machine and brings a curse into the school and the battlefield."
     }
   },
   {
@@ -288,7 +300,8 @@
     },
     "summary": {
       "zh": "太阳系外传来的三项技术使人类繁荣，也带来了暴走的自我增殖生态“Apocalypse”。地球被放弃后，月面与殖民地的孩子们在 A.A.45 年醒来。",
-      "ja": "太陽系外からもたらされた三つの技術が人類を繁栄させ、暴走する自己増殖生態系「アポカリプス」を生んだ。地球放棄後のA.A.45年、月面とコロニーの子どもたちが目覚める。"
+      "ja": "太陽系外からもたらされた三つの技術が人類を繁栄させ、暴走する自己増殖生態系「アポカリプス」を生んだ。地球放棄後のA.A.45年、月面とコロニーの子どもたちが目覚める。",
+      "en": "Three technologies from beyond the solar system bring humanity prosperity and also bring the runaway self-replicating ecology called the \"Apocalypse\". After Earth is abandoned, the children of the Moon and the colonies wake in A.A. 45."
     }
   }
 ]

@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "流星作战的五台高达之一，以压倒性弹幕进行火力压制。",
-    "ja": "オペレーション・メテオの五機のガンダムの一機。圧倒的な弾幕で火力制圧を行う。"
+    "ja": "オペレーション・メテオの五機のガンダムの一機。圧倒的な弾幕で火力制圧を行う。",
+    "en": "One of the five Gundams of Operation Meteor, suppressing with overwhelming barrage."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムヘビーアームズの設計には「弾薬を節約する」という発想がほとんどない。ツイン・ガトリング、肩のミサイル・ポッド、胸部バルカンで一帯を一瞬で火の海に変える。",
       "弱点は再装填と近接である。パイロットのトロワ・バートンは最小の動作で最大の射撃を重ね、戦場を精密な火力計算の問題として扱った。"
+    ],
+    "en": [
+      "The Heavyarms' design barely has a concept of 'saving ammunition'. Its twin gatling, shoulder missile pods and chest vulcans can turn an area into a sea of fire in a very short time.",
+      "Its weaknesses are reloading and close range. Pilot Trowa Barton therefore habitually completes the most shooting with the fewest movements, treating the battlefield as a firepower problem that must be calculated precisely."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "双管加特林",
-        "ja": "ツイン・ガトリング"
+        "ja": "ツイン・ガトリング",
+        "en": "Twin Gatling"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "导弹仓",
-        "ja": "ミサイル・ポッド"
+        "ja": "ミサイル・ポッド",
+        "en": "Missile Pod"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "军刀",
-        "ja": "アーミーナイフ"
+        "ja": "アーミーナイフ",
+        "en": "Army Knife"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -94,7 +103,8 @@
       "sources": [
         {
           "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing: Endless Waltz mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gundarium"
@@ -118,12 +128,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达 W》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

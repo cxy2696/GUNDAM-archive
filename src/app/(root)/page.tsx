@@ -9,8 +9,9 @@ export default function RootPage() {
     let lang = "zh";
     try {
       const stored = localStorage.getItem("gundam-lang");
-      if (stored === "zh" || stored === "ja") lang = stored;
+      if (stored === "zh" || stored === "ja" || stored === "en") lang = stored;
       else if ((navigator.language || "").toLowerCase().startsWith("ja")) lang = "ja";
+      else if ((navigator.language || "").toLowerCase().startsWith("en")) lang = "en";
     } catch {
       /* private mode */
     }
@@ -29,12 +30,14 @@ export default function RootPage() {
           </svg>
         </div>
         <p className="micro">GUNDAM ARCHIVE / INITIALIZING</p>
-        <h1>机动战士档案</h1>
-        <p className="boot__note">正在进入档案馆…</p>
+        <h1>GUNDAM ARCHIVE</h1>
+        <p className="boot__note">Opening the archive…</p>
         <div className="boot__links">
           <a href="zh/">中文</a>
           <span aria-hidden>/</span>
           <a href="ja/">日本語</a>
+          <span aria-hidden>/</span>
+          <a href="en/">English</a>
         </div>
       </div>
     </main>

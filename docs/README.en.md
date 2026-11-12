@@ -2,7 +2,7 @@
 
 [中文](README.md) ｜ [English](README.en.md) ｜ [Project README](../README.en.md)
 
-> This is the English entry point for the documentation. The **Chinese documents are canonical**; English pages summarize the map, authority order and maintenance rules, and link to the canonical detail. Release: v3.1.3 · 2026-11-12.
+> This is the English entry point for the documentation. The **Chinese documents are canonical**; English pages summarize the map, authority order and maintenance rules, and link to the canonical detail. Release: v3.2.0 · 2026-11-12.
 
 ## 1. Authority order
 

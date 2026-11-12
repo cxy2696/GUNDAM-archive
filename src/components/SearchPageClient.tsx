@@ -7,18 +7,11 @@ import type { Lang } from "@/lib/schema";
 import { groupResults, searchEntries, type SearchEntry, type SearchType } from "@/lib/search";
 import { SearchIcon } from "./Icons";
 
-const suggestions = [
-  "RX-78-2",
-  "ν",
-  "独角兽",
-  "Zaku",
-  "U.C.0079",
-  "精神感应框架",
-  "天人",
-  "铁华团",
-  "GUND-BIT",
-  "アムロ",
-];
+const suggestions: Record<Lang, string[]> = {
+  zh: ["RX-78-2", "ν", "独角兽", "Zaku", "U.C.0079", "精神感应框架", "天人", "铁华团", "GUND-BIT", "アムロ"],
+  ja: ["RX-78-2", "ν", "ユニコーン", "ザク", "U.C.0079", "サイコフレーム", "ソレスタルビーイング", "鉄華団", "GUND-BIT", "アムロ"],
+  en: ["RX-78-2", "ν", "Unicorn", "Zaku", "U.C.0079", "psycoframe", "Celestial Being", "Tekkadan", "GUND-BIT", "Amuro"],
+};
 
 const QUICK_IDS = [
   "rx-78-2",
@@ -40,7 +33,7 @@ export function SearchPageClient({
   dict,
 }: {
   indexedCount: number;
-  eras: { id: string; code: string; name: { zh: string; ja: string }; color: string }[];
+  eras: { id: string; code: string; name: { zh: string; ja: string; en?: string }; color: string }[];
   lang: Lang;
   dict: Dictionary;
 }) {
@@ -138,7 +131,7 @@ export function SearchPageClient({
         <div className="search-page__empty">
           <p className="micro">{loading ? "LOADING INDEX…" : dict.search.hint}</p>
           <div className="search-page__suggestions">
-            {suggestions.map((suggestion) => (
+            {suggestions[lang].map((suggestion) => (
               <button key={suggestion} type="button" onClick={() => setQuery(suggestion)}>
                 {suggestion}
               </button>
@@ -147,7 +140,7 @@ export function SearchPageClient({
           {quickEntries.length > 0 && (
             <div className="search-page__quick">
               <div className="search-page__quick-head">
-                <span className="micro">QUICK ACCESS / 快速入口</span>
+                <span className="micro">{lang === "zh" ? "QUICK ACCESS / 快速入口" : lang === "ja" ? "QUICK ACCESS / クイックアクセス" : "QUICK ACCESS / INDEX"}</span>
                 <span className="mono">{indexedCount} INDEXED</span>
               </div>
               {quickEntries.map((entry) => (
@@ -165,7 +158,7 @@ export function SearchPageClient({
               {eras.map((era) => (
                 <Link key={era.id} href={`/${lang}/chronology?era=${era.id}`} className="chip" style={{ "--era": era.color } as React.CSSProperties}>
                   <span className="mono">{era.code}</span>
-                  {era.name[lang] ?? era.name.zh}
+                  {era.name[lang] ?? era.name.en ?? era.name.zh}
                 </Link>
               ))}
             </div>

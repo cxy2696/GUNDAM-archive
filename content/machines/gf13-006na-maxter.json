@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新美国的代表机体，拳击与橄榄球装备合一的近战型高达。",
-    "ja": "ネオアメリカの代表機。ボクシングとアメリカンフットボールの装備を併せ持つ近接型ガンダム。"
+    "ja": "ネオアメリカの代表機。ボクシングとアメリカンフットボールの装備を併せ持つ近接型ガンダム。",
+    "en": "Neo America's representative machine, a close-combat Gundam combining boxing and football equipment."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ガンダムマックスターは「スポーツ」を機体構造に直接書き込んでいる。肩の装甲はアメリカンフットボールの防具のようで、前腕はナックルへ展開し、腰にはリボルバーを下げる。",
       "戦い方は非常に直接的だ。接近し、耐え、一発の重い拳で終わらせる。ネオアメリカの観客はその隠しのない力を好んだ。"
+    ],
+    "en": [
+      "The Maxter Gundam writes 'sport' directly into its structure: shoulder armor like football pads, forearms that unfold into boxing gloves, and revolvers mounted at the waist.",
+      "Its fighting method is very direct: close in, take the hit, then end it with one heavy punch. Neo America's audience loves that undisguised strength."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "拳套",
-        "ja": "ナックル・ガード"
+        "ja": "ナックル・ガード",
+        "en": "Knuckle"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "左轮手枪 ×2",
-        "ja": "リボルバー ×2"
+        "ja": "リボルバー ×2",
+        "en": "Revolver ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮",
-        "ja": "バルカン"
+        "ja": "バルカン",
+        "en": "Vulcan"
       },
       "type": "kinetic"
     }
@@ -100,12 +109,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

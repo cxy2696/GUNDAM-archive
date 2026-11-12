@@ -1,9 +1,9 @@
 # GUNDAM Archive · 机动战士档案
 
-[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [在线站点](https://cxy2696.github.io/GUNDAM-archive/zh/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [运营手册](docs/OPERATIONS.md)
+[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [中文站](https://cxy2696.github.io/GUNDAM-archive/zh/) · [日本語サイト](https://cxy2696.github.io/GUNDAM-archive/ja/) · [English site](https://cxy2696.github.io/GUNDAM-archive/en/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [运营手册](docs/OPERATIONS.md)
 
 > 可交互、可追溯、可运营的高达全系列档案。  
-> 12 纪元宇宙地图（2D/3D）· 3D 关联图谱 · 技术谱系 · 双语静态站
+> 12 纪元宇宙地图（2D/3D）· 3D 关联图谱 · 技术谱系 · 中 / 日 / 英三语静态站
 
 **Next.js 15 · React 19 · TypeScript · Three.js / R3F · Zod · 静态导出 · JSON 驱动**
 
@@ -13,10 +13,10 @@
 
 **GUNDAM Archive** 是一个可交互、可追溯、可运营的机动战士知识档案。它把横跨 12 个纪元、42 部作品的机体、人物、事件、势力与技术词条整理成可逐条打开、可回到出处的结构，而不是再做一个静态资料页。
 
-站点是纯静态的 Next.js 导出：内容用 JSON 维护、Zod 在构建期校验，页面带中日双语、3D 机体查看器、技术谱系、纪元年表、2D/3D 宇宙地图与关系图谱。新增一条内容不需要改页面代码；一次 `pnpm check` 会同时检查内容、文档、类型、语言、链接与全部导出路由。
+站点是纯静态的 Next.js 导出：内容用 JSON 维护、Zod 在构建期校验，页面带中 / 日 / 英三语、3D 机体查看器、技术谱系、纪元年表、2D/3D 宇宙地图与关系图谱。新增一条内容不需要改页面代码；一次 `pnpm check` 会同时检查内容、文档、类型、语言、链接与全部导出路由。
 
-当前版本：**v3.1.3**（2026-11-12）。  
-当前快照：**148 台机体 · 12 个纪元 · 114 位人物 · 42 部作品 · 69 条事件 · 82 个势力 · 32 个受控标签 · 116 条谱系边 · 156 个地图节点**；`/zh` 与 `/ja` 双语，共 **854 个静态页面**、**487 条检索索引**、**846 条 sitemap 路由**。
+当前版本：**v3.2.0**（2026-11-12）。  
+当前快照：**148 台机体 · 12 个纪元 · 114 位人物 · 42 部作品 · 69 条事件 · 82 个势力 · 32 个受控标签 · 116 条谱系边 · 156 个地图节点**；`/zh`、`/ja` 与 `/en` 三语，共 **1277 个静态页面**、**487 条/语言检索索引**、**1269 条 sitemap 路由**。
 
 ## 30 秒读懂
 
@@ -26,6 +26,19 @@
 - **怎么改**：内容在 `content/`，说明在 [CONTENT_GUIDE](docs/CONTENT_GUIDE.md)；发布/回滚/排障在 [OPERATIONS](docs/OPERATIONS.md)。
 
 > **范围**：收录 11 个正史纪元的高达型主线机体与核心外传机体，另保留 2 台 A.A. 原创扩展。不是 5,000+ 全衍生型号图鉴，也不含官方设计图。收录规则见 [MACHINE_COVERAGE](docs/MACHINE_COVERAGE.md)。
+
+## 这次更新（V3.2）
+
+| 区域 | 现在是什么 |
+| --- | --- |
+| **英语站点** | 新增 `/en`：148 台机体、114 位人物、69 条事件、82 个势力、32 条术语、42 部作品、12 个纪元、15 个地点、156 个地图节点全部有英文；事件标题与出处也英文化 |
+| **英语文案** | 首页、导航、检索提示、空状态改为直接、口语化的英文，不再逐句直译 |
+| **战术磷光 UI** | 以绿色 CRT 座舱为参考：墨绿 MFD 边框、扫描线、英雄区圆形瞄准镜、左右遥测栏、更密的读数 |
+| **更快浏览** | 机体索引筛选写入 URL（era / faction / tag / canon / sort / q），新增正史层级分段筛选与 `/` 聚焦检索 |
+| **更快检索** | 命令面板增加类型分面、结果计数、最近查询与 `/` 快捷键；希腊字母 ν 可用 `nu` 搜到 |
+| **模型细节** | 全部机体增加颈环、面颊通风口、驾驶舱接缝、肩部喷口、前臂面板、手指、膝/踝作动筒、鞋底、背包燃料罐、喷口、盾牌包边与武器瞄具；舞台增加方位刻度、距离环与身高标尺 |
+| **设计图** | 增加武装清单、出力/推力/传感器读数与材质色槽，保留正视、分件图和测量标注 |
+| **资料修正** | 清除全部“待核页码”占位；A.A. 原创设定改为 C 级非官方来源；模糊的“官方设定资料”改成正片/公开资料表述；所有出处补英文标签 |
 
 ## 这次更新（V3.1）
 
@@ -85,7 +98,7 @@
 | --- | --- |
 | ![关系档案](preview/archive.png) | ![移动端](preview/mobile.png) |
 
-设计与工程图联动见 [preview/design-sheet.png](preview/design-sheet.png)。
+英文检索界面见 [preview/search.png](preview/search.png)；设计与工程图联动见 [preview/design-sheet.png](preview/design-sheet.png)。
 
 ## 核心能力
 
@@ -101,7 +114,7 @@
 - **事件档案**：69 个事件都有经过/结果与独立档案页，包含参战方、关联机体、人物、出处与前后事件。
 - **术语与技术词条**：32 个受控技术标签逐条解释，按装甲/动力/传感/武器/系统/骨架分类筛选；另有检索导图、关联树与 12 个阅读术语。
 - **驾驶舱 HUD 与阅读模式**：HUD 开关、扫描线、准星、链路状态；`A+ / A−` 切换大字模式，正文与卡片同步放大。
-- **中日双语**：`/zh` 与 `/ja` 路由，hreflang/canonical；桌面、移动端与页脚均可切换，保留路径、查询串、锚点与滚动位置。
+- **中 / 日 / 英三语**：`/zh`、`/ja` 与 `/en` 路由，hreflang/canonical；桌面、移动端与页脚均可切换，保留路径、查询串、锚点与滚动位置。
 
 ## 快速开始
 
@@ -173,7 +186,7 @@ content/*.json ──Zod──▶ src/lib/content.ts ──▶ Server Components
 2. **文档**：`docs:check` 检查 Markdown 链接、必需文档、版本与数量快照；
 3. **类型**：`typecheck`；
 4. **语言**：`language:check` 扫描模板句、过长摘要/段落；
-5. **构建**：`build` 生成 854 个静态页并生成检索索引；
+5. **构建**：`build` 生成 1277 个静态页并生成三语检索索引；
 6. **链接**：`links:check` 校验全部站内 href 与 `#fragment`；
 7. **路由**：`routes:check` 校验 sitemap 中每条路由都有带 `<title>` 与 `<main>` 的导出 HTML。
 
@@ -208,4 +221,4 @@ CI 与 Pages 都执行上述门禁；Pages 额外用 `NEXT_PUBLIC_BASE_PATH` 做
 
 ---
 
-**English tl;dr** — GUNDAM Archive is an unofficial, non-commercial, bilingual mobile-suit knowledge archive. It is a static Next.js 15 app with JSON content validated by Zod, a 12-era 2D/3D orbital atlas, 3D relationship graphs, a procedural Three.js viewer, a DAG tech tree, and 69 events. Content is data, not code: add JSON, run `pnpm check`. Code is MIT; original content is CC BY-NC-SA 4.0.
+**English tl;dr** — GUNDAM Archive is an unofficial, non-commercial, trilingual mobile-suit knowledge archive. It is a static Next.js 15 app with JSON content validated by Zod, a 12-era 2D/3D orbital atlas, 3D relationship graphs, a procedural Three.js viewer, a DAG tech tree, and 69 events. Content is data, not code: add JSON, run `pnpm check`. Code is MIT; original content is CC BY-NC-SA 4.0.

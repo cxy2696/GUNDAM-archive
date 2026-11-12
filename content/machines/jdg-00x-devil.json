@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "由 DG 细胞驱动的自我增殖机体，第十三届武斗会的真正威胁。",
-    "ja": "DG細胞で駆動する自己増殖機体。第13回ガンダムファイトの真の脅威。"
+    "ja": "DG細胞で駆動する自己増殖機体。第13回ガンダムファイトの真の脅威。",
+    "en": "A self-propagating machine driven by DG Cells, and the true threat of the 13th Gundam Fight."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "デビルガンダムは図面通りに完成した兵器ではない。DG細胞が絶えず侵食・再構成・増殖を繰り返し、理論上、固定された最終形態を持たない。",
       "機械と生物を侵食し、敗れた機体を自らの部品へ変える。ガンダムファイトにとって、リングに現れるべきではないもの——試合を装った生態災害である。"
+    ],
+    "en": [
+      "The Devil Gundam is not a weapon completed from blueprints. It is continuously devoured, reorganized and multiplied by DG Cells, and in theory has no fixed final form.",
+      "It can infest machines and living things, turning defeated mobile suits into its own parts. For the Gundam Fight, it is something that should not appear in the ring—an ecological disaster disguised as a tournament."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "触手",
-        "ja": "触手"
+        "ja": "触手",
+        "en": "Tentacle"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束炮",
-        "ja": "ビーム砲"
+        "ja": "ビーム砲",
+        "en": "Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "DG 细胞侵食",
-        "ja": "DG細胞侵食"
+        "ja": "DG細胞侵食",
+        "en": "DG Cell Infestation"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "自我再生",
-        "ja": "自己再生"
+        "ja": "自己再生",
+        "en": "Self-Regeneration"
       },
       "type": "special"
     }
@@ -97,12 +106,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

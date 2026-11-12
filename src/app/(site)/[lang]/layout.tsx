@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
-import type { Lang } from "@/lib/schema";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
+import { LANGS, type Lang } from "@/lib/schema";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
@@ -22,13 +22,14 @@ import "@/styles/graph.css";
 import "@/styles/tag-map.css";
 import "@/styles/glass.css";
 import "@/styles/zoom.css";
+import "@/styles/tactical.css";
 
 export const dynamicParams = false;
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive";
 
 export function generateStaticParams() {
-  return [{ lang: "zh" }, { lang: "ja" }];
+  return LANGS.map((lang) => ({ lang }));
 }
 
 export async function generateMetadata({
@@ -45,7 +46,7 @@ export async function generateMetadata({
     description: dict.meta.description,
     applicationName: "GUNDAM Archive",
     authors: [{ name: "GUNDAM Archive contributors" }],
-    keywords: ["Gundam", "机动战士", "高达", "モビルスーツ", "archive", "knowledge graph"],
+    keywords: ["Gundam", "mobile suit", "机动战士", "高达", "モビルスーツ", "archive", "knowledge graph"],
     openGraph: {
       type: "website",
       siteName: "GUNDAM Archive",
@@ -57,17 +58,13 @@ export async function generateMetadata({
     robots: { index: true, follow: true },
     alternates: {
       canonical: `/${lang}/`,
-      languages: {
-        "zh-CN": "/zh/",
-        "ja-JP": "/ja/",
-        "x-default": "/zh/",
-      },
+      languages: languageAlternates(),
     },
   };
 }
 
 export const viewport = {
-  themeColor: "#03060e",
+  themeColor: "#020805",
   colorScheme: "dark light" as const,
   width: "device-width",
   initialScale: 1,
@@ -132,7 +129,7 @@ export default async function LangLayout({
   ].filter((item): item is { kind: string; label: string; meta: string; href: string } => Boolean(item));
 
   return (
-    <html lang={typed === "ja" ? "ja" : "zh-CN"} data-theme="dark" data-hud="on" data-read="std" suppressHydrationWarning>
+    <html lang={typed === "ja" ? "ja" : typed === "en" ? "en" : "zh-CN"} data-theme="dark" data-hud="on" data-read="std" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
@@ -151,7 +148,7 @@ export default async function LangLayout({
                   <div className="screen-chrome" aria-hidden>
                     <span>MFD-00 / MAIN DISPLAY</span>
                     <span className="screen-chrome__mid">
-                      GUNDAM ARCHIVE · {typed === "ja" ? "日本版" : "中文版"} · {bundle.eras.length} ERAS
+                      GUNDAM ARCHIVE · {typed === "ja" ? "日本版" : typed === "en" ? "ENGLISH EDITION" : "中文版"} · {bundle.eras.length} ERAS
                     </span>
                     <span className="screen-chrome__live">● LINK STABLE</span>
                   </div>

@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "00 高达的最终形态，以量子爆发寻求对话而非歼灭。",
-    "ja": "ダブルオーガンダムの最終形態。量子バーストによる対話を模索し、殲滅を選ばない。"
+    "ja": "ダブルオーガンダムの最終形態。量子バーストによる対話を模索し、殲滅を選ばない。",
+    "en": "The final form of the 00 Gundam, seeking dialogue rather than annihilation through Quantum Burst."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ダブルオークアンタは「より強いダブルオー」ではない。設計目標は「戦闘に勝つこと」から「相手を理解すること」へ移り、GNソードVとクアンタムバーストはELSとの接触のために用意された。",
       "劇場版の最後、刹那は最強の一撃で戦争を終わらせず、意識を種の境界へ越えさせた。この機体は00系譜の答えである。"
+    ],
+    "en": [
+      "The 00 Qan[T] is not a stronger 00. Its design goal shifts from 'winning the battle' to 'understanding the other side'; the GN Sword V and Quantum Burst are both prepared for contact with the ELS.",
+      "At the end of the movie, Setsuna does not end the war with the strongest blow; he chooses to let consciousness cross the boundary between species. The machine thus becomes the answer of the entire 00 lineage."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "GN 剑 V",
-        "ja": "GNソードV"
+        "ja": "GNソードV",
+        "en": "GN Sword V"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 光束枪",
-        "ja": "GNビームガン"
+        "ja": "GNビームガン",
+        "en": "GN Beam Gun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "量子爆发",
-        "ja": "クアンタムバースト"
+        "ja": "クアンタムバースト",
+        "en": "Quantum Burst"
       },
       "type": "special"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达00 先驱者的觉醒》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

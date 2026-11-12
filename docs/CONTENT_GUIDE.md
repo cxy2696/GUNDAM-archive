@@ -201,7 +201,7 @@ pnpm check        # validate → docs → typecheck → language → build → l
 - `canon`：`mainline|side_story|parallel|game_original`。
 - 作品是设定差异的锚点：同一参数在不同作品中冲突时，在 `disputed` + `sources` 中说明，不要删掉其中一方。
 
-## 7. 双语规则
+## 7. 三语规则
 
 | 规则 | 说明 |
 | --- | --- |

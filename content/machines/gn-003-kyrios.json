@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "天人的可变型高达，以 MA 形态进行高速侦察与突袭。",
-    "ja": "ソレスタルビーイングの可変型ガンダム。MA形態で高速偵察と突撃を行う。"
+    "ja": "ソレスタルビーイングの可変型ガンダム。MA形態で高速偵察と突撃を行う。",
+    "en": "Celestial Being's transformable Gundam, using its MA form for high-speed reconnaissance and raids."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "キュリオスはソレスタルビーイングの最も地味な仕事を担う。侵入し、観測し、人を連れ帰る。MA形態は長距離高速移動に適し、MS形態でも十分な格闘能力を保つ。",
       "四機の天使の中では「乗り物」に最も近い。だがその地味さこそが、情報と救出任務で代替不能な存在にしている。"
+    ],
+    "en": [
+      "The Kyrios handles the work Celestial Being most often overlooks: get in, observe, bring people out. Its MA form suits long-distance high-speed movement, while its MS form keeps enough close-combat ability.",
+      "Among the four Gundams, it is the most like a 'vehicle'. But that low profile makes it irreplaceable in intelligence and rescue missions."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "变形 MA 形态",
-        "ja": "MA形態"
+        "ja": "MA形態",
+        "en": "MA Transformation"
       },
       "type": "special"
     }
@@ -98,7 +107,8 @@
       "sources": [
         {
           "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 Season 2 mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gn-drive"
@@ -122,12 +132,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 00》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 00\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

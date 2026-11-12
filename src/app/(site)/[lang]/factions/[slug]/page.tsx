@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle, getEra, getFaction } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import { formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { CharacterMark, FactionEmblem } from "@/components/Emblems";
@@ -30,7 +30,7 @@ export async function generateMetadata({
     description: pick(faction.description, lang),
     alternates: {
       canonical: `/${lang}/factions/${faction.id}/`,
-      languages: { "zh-CN": `/zh/factions/${faction.id}/`, "ja-JP": `/ja/factions/${faction.id}/` },
+      languages: languageAlternates(`/factions/${faction.id}`),
     },
   };
 }

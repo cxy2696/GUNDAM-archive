@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { FactionEmblem, CharacterMark } from "@/components/Emblems";
 import { FactionGraphExplorer } from "@/components/archive/FactionGraphExplorer";
@@ -19,7 +19,7 @@ export async function generateMetadata({
   return {
     title: dict.archive.title,
     description: dict.archive.lead,
-    alternates: { canonical: `/${lang}/archive/`, languages: { "zh-CN": "/zh/archive/", "ja-JP": "/ja/archive/" } },
+    alternates: { canonical: `/${lang}/archive/`, languages: languageAlternates("/archive/") },
   };
 }
 

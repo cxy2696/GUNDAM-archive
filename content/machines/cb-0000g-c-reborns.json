@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "变革者的旗舰机体，可在高达与 MA 形态间切换。",
-    "ja": "イノベイターの旗艦機。ガンダムとMAの形態を切り替えられる。"
+    "ja": "イノベイターの旗艦機。ガンダムとMAの形態を切り替えられる。",
+    "en": "The Innovators' flagship machine, able to switch between Gundam and MA forms."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "リボーンズガンダムはリボンズ・アルマークが自らのために用意した機体である。ガンダムとMAの二形態を持ち、火力・機動・防御のすべてが「単機で戦局を決める」ことに向かう。",
       "その名は皮肉である。「再生」の名を持つ機体は、旧秩序を終わらせるために使われた。リボンズは自分を新たな起点と信じ、戦場は別の答えを出した。"
+    ],
+    "en": [
+      "Reborns Gundam is the machine Ribbons Almark prepared for himself. It has both Gundam and MA forms, with firepower, mobility and defense all aimed at 'one machine deciding the battle'.",
+      "Its name is ironic: a machine named 'Reborns' was ultimately used to end the old order. Ribbons believed he was a new beginning, and the battlefield gave a different answer."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "GN 光束步枪",
-        "ja": "GNビームライフル"
+        "ja": "GNビームライフル",
+        "en": "GN Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 爪",
-        "ja": "GNクロー"
+        "ja": "GNクロー",
+        "en": "GN Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "变形 MA 形态",
-        "ja": "MA形態"
+        "ja": "MA形態",
+        "en": "MA Transformation"
       },
       "type": "special"
     }
@@ -102,9 +111,12 @@
   },
   "sources": [
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

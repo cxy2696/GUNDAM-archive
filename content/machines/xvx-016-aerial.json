@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "新世开发的风灵高达，以 GUND 格式化与比特子机实现高同步与全方位攻击。",
-    "ja": "新世開発のガンダム・エアリアル。GUNDフォーマットとビット子機で高同期と全方位攻撃を実現する。"
+    "ja": "新世開発のガンダム・エアリアル。GUNDフォーマットとビット子機で高同期と全方位攻撃を実現する。",
+    "en": "The Gundam Aerial developed by Shin Sei, achieving high synchronization and all-range attack with GUND Format and bit units."
   },
   "description": {
     "zh": [
@@ -30,11 +31,14 @@
     ],
     "ja": [
       "エアリアルはスレッタ・マーキュリーが駆り、機体とパイロットのGUND接続は通常のMSを大きく超える。ビット子機はファンネルでありデータ端末でもあり、「機体に意志はあるのか」を学園決闘の外へ押し広げた。"
+    ],
+    "en": [
+      "The Gundam Aerial is piloted by Suletta Mercury, and the GUND connection between machine and pilot far exceeds a normal MS. The bit units are both funnels and data terminals, making 'does the machine have a will' a larger question than the academy duels."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": null,
     "powerOutput": null,
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "比特子机 ×6",
-        "ja": "ビット子機 ×6"
+        "ja": "ビット子機 ×6",
+        "en": "Bit ×6"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -105,8 +113,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     }
@@ -128,13 +139,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 水星的魔女》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 水星的魔女》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import { getBundle } from "@/lib/content";
 import type { Lang } from "@/lib/schema";
 import { SearchPageClient } from "@/components/SearchPageClient";
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: dict.search.title,
     description: dict.search.lead,
-    alternates: { canonical: `/${lang}/search/`, languages: { "zh-CN": "/zh/search/", "ja-JP": "/ja/search/" } },
+    alternates: { canonical: `/${lang}/search/`, languages: languageAlternates("/search/") },
   };
 }
 

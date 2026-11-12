@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "空中霸王高达的强化形态，飞行性能与火力同步提升。",
-    "ja": "ガンダムエアマスターの強化形態。飛行性能と火力を同時に高めた。"
+    "ja": "ガンダムエアマスターの強化形態。飛行性能と火力を同時に高めた。",
+    "en": "An enhanced form of the Airmaster, improving flight performance and firepower together."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "バーストはエアマスターの高空優勢をさらに押し上げる。肩部と背部の翼状ユニットは再設計され、一度の急降下で照準・発射・離脱を完了できる。",
       "長期の格闘には向かない。パイロットは最初の進入角度を信じなければならない。二度目の機会はほとんど来ないからだ。"
+    ],
+    "en": [
+      "The Burst pushes the Airmaster's high-altitude advantage further. The wing units on its shoulders and back were redesigned to complete lock-on, firing and withdrawal in a single dive.",
+      "It is not suited to long dogfights. The pilot must trust the first approach angle, because a second chance often does not come."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "导弹",
-        "ja": "ミサイル"
+        "ja": "ミサイル",
+        "en": "Missile"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "火神炮",
-        "ja": "バルカン"
+        "ja": "バルカン",
+        "en": "Vulcan"
       },
       "type": "kinetic"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

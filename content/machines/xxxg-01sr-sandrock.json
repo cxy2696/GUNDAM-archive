@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "流星作战的五台高达之一，以沙漠战与近身格斗见长。",
-    "ja": "オペレーション・メテオの五機のガンダムの一機。砂漠戦と近接格闘に長ける。"
+    "ja": "オペレーション・メテオの五機のガンダムの一機。砂漠戦と近接格闘に長ける。",
+    "en": "One of the five Gundams of Operation Meteor, known for desert combat and close-quarters fighting."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムサンドロックの装甲と関節は砂塵環境に合わせて特別に処理されている。主武装は二本のヒートショーテルで、戦い方は騎兵に近い。素早く切り込み、断ち、離脱する。",
       "五機の中では「誰かを守るため」に造られた機体の印象が最も強い。カトル・ラバーバ・ウィナーの戦う動機も、他の誰よりも柔らかい。"
+    ],
+    "en": [
+      "The Sandrock Gundam's armor and joints were specially treated for dusty environments. Its main weapons are two heat shotels, and its fighting style is close to cavalry: cut in fast, cut, then break away.",
+      "Among the five Gundams, it is the one that most resembles a machine built to 'protect someone'. Quatre Raberba Winner's motive for fighting was also always softer than the others."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "热弯刀 ×2",
-        "ja": "ヒートショーテル ×2"
+        "ja": "ヒートショーテル ×2",
+        "en": "Heat Shotel ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -87,7 +95,8 @@
       "sources": [
         {
           "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing: Endless Waltz mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gundarium"
@@ -111,12 +120,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达 W》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

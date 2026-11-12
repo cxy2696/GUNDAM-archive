@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "奥布异端高达的三号机，由佣兵盖·村云驾驶，以战术武装著称。",
-    "ja": "オーブのアストレイ3号機。傭兵ガイ・ムラクモが駆り、タクティカルアームズで知られる。"
+    "ja": "オーブのアストレイ3号機。傭兵ガイ・ムラクモが駆り、タクティカルアームズで知られる。",
+    "en": "The third Astray Gundam of Orb, piloted by the mercenary Gai Murakumo and known for its tactical arms."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ブルーフレームは傭兵に使われるアストレイである。タクティカルアームズは複数の武器を一つのモジュールに統合し、不確実な戦場で素早く切り替えられる。",
       "レッドフレームの冒険的な気質とは違い、ブルーフレームは冷静で職業的だ。出撃のたびに、目標・経路・離脱点が契約書のように整理されている。"
+    ],
+    "en": [
+      "The Blue Frame is an Astray Gundam used by a mercenary. Its Tactical Arms integrates several weapons into one module, suited to rapid switching on an uncertain battlefield.",
+      "Unlike the Red Frame's adventurous character, the Blue Frame is calmer and more professional. Each sortie is like a contract: target, route, extraction point, clear without excess emotion."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "战术武装",
-        "ja": "タクティカルアームズ"
+        "ja": "タクティカルアームズ",
+        "en": "Tactical Arms"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮",
-        "ja": "バルカン"
+        "ja": "バルカン",
+        "en": "Vulcan"
       },
       "type": "kinetic"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "《机动战士高达SEED ASTRAY》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam SEED Astray original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

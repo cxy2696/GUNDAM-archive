@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "以二号机数据修复的第三台 RX-78，采用低可视度涂装并优化了磁涂层。",
-    "ja": "2号機のデータで復旧した3番目のRX-78。低視認性塗装とマグネット・コーティングの最適化が施された。"
+    "ja": "2号機のデータで復旧した3番目のRX-78。低視認性塗装とマグネット・コーティングの最適化が施された。",
+    "en": "The third RX-78, restored from Unit 2's data, with low-visibility paint and an improved magnetic coating."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "G-3はRX-78-2の戦闘データを基に再構成された3番目の同型機である。灰色がかった青の塗装と改良された関節応答は、白い英雄というより技術検証機の印象を与える。",
       "一年戦争の帰趨を変えたわけではないが、RX-78の骨格がより高強度の機動戦術に耐えうることを示し、後の連邦系ガンダムの調整に参照を残した。"
+    ],
+    "en": [
+      "The G-3 is the third machine of the same type, reassembled on the basis of the RX-78-2's combat data. Its gray-blue paint and improved joint response make it look more like a technology demonstrator than the white hero on a poster.",
+      "It did not change the final course of the One Year War, but it proved that the RX-78 frame could accommodate higher-intensity maneuver tactics, leaving a reference for the tuning of later Federation Gundams."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     }
@@ -100,12 +108,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

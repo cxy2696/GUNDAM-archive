@@ -6,7 +6,7 @@ import type { Lang } from "@/lib/schema";
 export type RailEra = {
   id: string;
   code: string;
-  name: { zh: string; ja: string };
+  name: { zh: string; ja: string; en: string };
   color: string;
   machineCount: number;
   eventCount: number;
@@ -63,20 +63,20 @@ export function CockpitRails({
               <svg viewBox="0 0 120 120" width="104" height="104" role="presentation">
                 <defs>
                   <radialGradient id="rail-radar" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="rgba(99,230,255,0.25)" />
-                    <stop offset="70%" stopColor="rgba(99,230,255,0.03)" />
-                    <stop offset="100%" stopColor="rgba(99,230,255,0)" />
+                    <stop offset="0%" stopColor="rgba(88,255,157,0.25)" />
+                    <stop offset="70%" stopColor="rgba(88,255,157,0.03)" />
+                    <stop offset="100%" stopColor="rgba(88,255,157,0)" />
                   </radialGradient>
                 </defs>
-                <circle cx="60" cy="60" r="56" fill="url(#rail-radar)" stroke="rgba(99,230,255,0.22)" />
-                <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(99,230,255,0.18)" strokeDasharray="2 5" />
-                <circle cx="60" cy="60" r="20" fill="none" stroke="rgba(99,230,255,0.18)" strokeDasharray="2 5" />
-                <path d="M60 4 L60 116 M4 60 L116 60" stroke="rgba(99,230,255,0.12)" />
-                <path d="M60 60 L60 8 A52 52 0 0 1 104 34 Z" fill="rgba(99,230,255,0.14)" />
-                <circle cx="82" cy="42" r="2.6" fill="#9a86ff" />
-                <circle cx="38" cy="70" r="2.2" fill="#ffb648" />
-                <circle cx="72" cy="86" r="2.2" fill="#63e6ff" />
-                <circle cx="60" cy="60" r="3.2" fill="#63e6ff" />
+                <circle cx="60" cy="60" r="56" fill="url(#rail-radar)" stroke="rgba(88,255,157,0.26)" />
+                <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(88,255,157,0.2)" strokeDasharray="2 5" />
+                <circle cx="60" cy="60" r="20" fill="none" stroke="rgba(88,255,157,0.2)" strokeDasharray="2 5" />
+                <path d="M60 4 L60 116 M4 60 L116 60" stroke="rgba(88,255,157,0.14)" />
+                <path d="M60 60 L60 8 A52 52 0 0 1 104 34 Z" fill="rgba(88,255,157,0.16)" />
+                <circle cx="82" cy="42" r="2.6" fill="#b4ff6a" />
+                <circle cx="38" cy="70" r="2.2" fill="#d8ff63" />
+                <circle cx="72" cy="86" r="2.2" fill="#58ff9d" />
+                <circle cx="60" cy="60" r="3.2" fill="#58ff9d" />
               </svg>
             </div>
             <div className="mfd-readout">

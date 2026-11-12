@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新瑞典的代表机体，以体操般的机动与光束缎带进行近身战。",
-    "ja": "ネオスウェーデンの代表機。体操のような機動とビームリボンで近接戦を戦う。"
+    "ja": "ネオスウェーデンの代表機。体操のような機動とビームリボンで近接戦を戦う。",
+    "en": "Neo Sweden's representative machine, fighting at close range with gymnastic mobility and a beam ribbon."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ノーベルガンダムの外観は歴代の参加機の中でも際立って細い。厚い装甲を捨てて機動性を最大限まで高め、ビームリボンと拳でリング上の距離を支配する。",
       "コクピット周辺には女性的な意匠が残るが、外見に騙されてはいけない。ガンダムファイトの規則の下、この機体はMSの力学に反するような連続ターンと蹴りを繰り出す。"
+    ],
+    "en": [
+      "The Nobel Gundam's shape looks especially slender among the machines of past tournaments. It gives up heavy armor, pushes mobility to the limit, and uses a beam ribbon and punches to control distance in the ring.",
+      "Its cockpit area has an obvious feminine design, but do not be fooled by the appearance: under Gundam Fight rules the machine can perform consecutive turns and kicks that almost defy MS mechanics."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束缎带",
-        "ja": "ビームリボン"
+        "ja": "ビームリボン",
+        "en": "Beam Ribbon"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "诺贝尔拳",
-        "ja": "ノーベル・パンチ"
+        "ja": "ノーベル・パンチ",
+        "en": "Nobel Punch"
       },
       "type": "melee"
     }
@@ -94,12 +102,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

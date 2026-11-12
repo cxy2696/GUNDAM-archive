@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "凡娜迪斯机构以魔灵为基础开发的量产试作型，背部装有 GUND-BIT 大型发射器。",
-    "ja": "ヴァナディース機関がルブリスを基に開発した量産試作型。背部にGUNDビット大型ランチャーを備える。"
+    "ja": "ヴァナディース機関がルブリスを基に開発した量産試作型。背部にGUNDビット大型ランチャーを備える。",
+    "en": "A mass-production prototype developed by Vanadis from the Lfrith, with a large GUND-BIT launcher on its back."
   },
   "description": {
     "zh": [
@@ -25,11 +26,14 @@
     ],
     "ja": [
       "試作型はルブリスのGUNDフォーマットインターフェースを継承し、背部の大型ランチャーでGUNDビットを搭載・投射する。後のエアリアルより原始的な実験機に近い。"
+    ],
+    "en": [
+      "The pre-production model uses the Lfrith's GUND Format interface, and the large launcher on its back carries and deploys GUND-BITs. It is closer to the original experimental machine than the later Aerial."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": 49.1,
     "powerOutput": null,
@@ -40,21 +44,24 @@
     {
       "name": {
         "zh": "GUND-BIT 大型发射器 ×2",
-        "ja": "GUNDビット大型ランチャー ×2"
+        "ja": "GUNDビット大型ランチャー ×2",
+        "en": "GUND-BIT Large Launcher ×2"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -83,7 +90,8 @@
         {
           "label": "《机动战士高达 水星的魔女 PROLOGUE》官方机体页",
           "level": "S",
-          "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/"
+          "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury PROLOGUE official mobile suit page"
         }
       ]
     }
@@ -107,7 +115,8 @@
     {
       "label": "《机动战士高达 水星的魔女 PROLOGUE》官方机体页",
       "level": "S",
-      "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/"
+      "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/",
+      "labelEn": "Mobile Suit Gundam: The Witch from Mercury PROLOGUE official mobile suit page"
     }
   ],
   "disputed": false,

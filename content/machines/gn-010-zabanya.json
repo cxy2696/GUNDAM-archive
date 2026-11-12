@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "智天使高达的后继机，以大量浮游盾与枪械进行全方位射击。",
-    "ja": "ケルディムの後継機。多数のシールドビットと銃器で全方位射撃を行う。"
+    "ja": "ケルディムの後継機。多数のシールドビットと銃器で全方位射撃を行う。",
+    "en": "The successor to the Cherudim, firing in all directions with many shield bits and guns."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ザバーニャは「狙撃」を「弾幕」へ拡張した。シールドビットは防御だけでなく銃器を搭載し、戦場に移動し続ける火力網を作る。",
       "ロックオンは依然として最も冷静な射手だが、この機体は同時により多くの目標を扱える。技術の進歩は、より大きな責任でもある。"
+    ],
+    "en": [
+      "The Zabanya expands 'sniping' into 'barrage'. Its shield bits can defend and also mount guns, forming a moving web of fire on the battlefield.",
+      "Lockon is still the calmest shooter, but the machine lets him handle more targets at once. Technical progress also means greater responsibility."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "GN 手枪 ×2",
-        "ja": "GNピストル ×2"
+        "ja": "GNピストル ×2",
+        "en": "GN Pistol ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 浮游盾",
-        "ja": "GNシールドビット"
+        "ja": "GNシールドビット",
+        "en": "GN Shield Bit"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "GN 步枪",
-        "ja": "GNライフル"
+        "ja": "GNライフル",
+        "en": "GN Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "浮游炮",
-        "ja": "ファンネル"
+        "ja": "ファンネル",
+        "en": "Funnel"
       },
       "type": "special"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达00 先驱者的觉醒》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

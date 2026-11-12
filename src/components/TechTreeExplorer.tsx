@@ -191,10 +191,10 @@ export function TechTreeExplorer({
           <svg className="tree__edges" viewBox={`0 0 ${layout.width} ${layout.height}`} aria-hidden>
             <defs>
               <marker id="tt-arrow-derive" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                <path d="M0 0 L8 4 L0 8 z" fill="#22d3ee" />
+                <path d="M0 0 L8 4 L0 8 z" fill="#58ff9d" />
               </marker>
               <marker id="tt-arrow-tech" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                <path d="M0 0 L8 4 L0 8 z" fill="#a78bfa" />
+                <path d="M0 0 L8 4 L0 8 z" fill="#b4ff6a" />
               </marker>
               <marker id="tt-arrow-replace" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
                 <path d="M0 0 L8 4 L0 8 z" fill="#64748b" />

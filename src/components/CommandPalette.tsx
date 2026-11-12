@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { groupResults, searchEntries, type SearchEntry } from "@/lib/search";
+import { groupResults, searchEntries, type SearchEntry, type SearchType } from "@/lib/search";
 import type { Dictionary } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { SearchIcon } from "./Icons";
@@ -23,9 +23,16 @@ export function CommandPalette({
   const [active, setActive] = useState(0);
   const [entries, setEntries] = useState<SearchEntry[]>([]);
   const [loading, setLoading] = useState(false);
+  const [typeFilter, setTypeFilter] = useState<SearchType | "all">("all");
+  const [recent, setRecent] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
-  const results = useMemo(() => searchEntries(entries, query, dict, 15), [entries, query, dict]);
+  const allResults = useMemo(() => searchEntries(entries, query, dict, 40), [entries, query, dict]);
+  const results = useMemo(
+    () => (typeFilter === "all" ? allResults : allResults.filter((entry) => entry.type === typeFilter)).slice(0, 18),
+    [allResults, typeFilter],
+  );
   const groups = useMemo(() => groupResults(results), [results]);
+  const types: SearchType[] = ["machine", "character", "event", "tag", "faction", "work"];
 
   useEffect(() => {
     if (!open || entries.length > 0) return;
@@ -53,6 +60,14 @@ export function CommandPalette({
         event.preventDefault();
         setOpen((value) => !value);
       }
+      if (event.key === "/" && !open) {
+        const target = event.target as HTMLElement | null;
+        const typing = target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
+        if (!typing) {
+          event.preventDefault();
+          setOpen(true);
+        }
+      }
       if (event.key === "Escape") setOpen(false);
     };
     const onOpen = () => setOpen(true);
@@ -62,7 +77,7 @@ export function CommandPalette({
       window.removeEventListener("keydown", onKey);
       window.removeEventListener("gundam:search", onOpen);
     };
-  }, []);
+  }, [open]);
 
   useEffect(() => {
     if (!open) {
@@ -71,6 +86,13 @@ export function CommandPalette({
     }
     setQuery("");
     setActive(0);
+    setTypeFilter("all");
+    try {
+      const stored = localStorage.getItem("gundam-recent-searches");
+      setRecent(stored ? (JSON.parse(stored) as string[]).slice(0, 5) : []);
+    } catch {
+      setRecent([]);
+    }
     document.body.style.overflow = "hidden";
     const timer = window.setTimeout(() => inputRef.current?.focus(), 30);
     return () => {
@@ -81,10 +103,19 @@ export function CommandPalette({
 
   useEffect(() => {
     setActive(0);
-  }, [query]);
+  }, [query, typeFilter]);
 
   const go = (entry: SearchEntry) => {
     setOpen(false);
+    if (query.trim()) {
+      const next = [query.trim(), ...recent.filter((item) => item !== query.trim())].slice(0, 5);
+      setRecent(next);
+      try {
+        localStorage.setItem("gundam-recent-searches", JSON.stringify(next));
+      } catch {
+        /* private mode */
+      }
+    }
     router.push(`/${lang}${entry.href}`);
   };
 
@@ -144,6 +175,18 @@ export function CommandPalette({
                 </button>
               ))}
             </div>
+            {recent.length > 0 && (
+              <div className="palette__recent">
+                <span className="micro">RECENT / 最近</span>
+                <div className="palette__chips">
+                  {recent.map((chip) => (
+                    <button key={chip} type="button" onClick={() => setQuery(chip)} tabIndex={open ? 0 : -1}>
+                      {chip}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         ) : results.length === 0 ? (
           <div className="palette__empty">
@@ -152,6 +195,33 @@ export function CommandPalette({
           </div>
         ) : (
           <div className="palette__results">
+            <div className="palette__facets" role="group" aria-label={dict.search.filters}>
+              <button
+                type="button"
+                className={typeFilter === "all" ? "is-active" : ""}
+                onClick={() => setTypeFilter("all")}
+                tabIndex={open ? 0 : -1}
+              >
+                {dict.search.allTypes}
+                <span>{String(allResults.length).padStart(2, "0")}</span>
+              </button>
+              {types.map((type) => {
+                const count = allResults.filter((entry) => entry.type === type).length;
+                return (
+                  <button
+                    key={type}
+                    type="button"
+                    className={typeFilter === type ? "is-active" : ""}
+                    onClick={() => setTypeFilter(type)}
+                    disabled={count === 0}
+                    tabIndex={open ? 0 : -1}
+                  >
+                    {dict.search.groups[type]}
+                    <span>{String(count).padStart(2, "0")}</span>
+                  </button>
+                );
+              })}
+            </div>
             {groups.map((group) => (
               <div key={group.type} className="palette__group">
                 <div className="palette__group-label">
@@ -185,22 +255,23 @@ export function CommandPalette({
         <div className="palette__footer">
           <span>
             <kbd>↑</kbd>
-            <kbd>↓</kbd> {lang === "zh" ? "选择" : "選択"}
+            <kbd>↓</kbd> {lang === "zh" ? "选择" : lang === "ja" ? "選択" : "Select"}
           </span>
           <span>
-            <kbd>↵</kbd> {lang === "zh" ? "打开" : "開く"}
+            <kbd>↵</kbd> {lang === "zh" ? "打开" : lang === "ja" ? "開く" : "Open"}
           </span>
           <span>
             <kbd>ESC</kbd> {dict.common.close}
           </span>
           {query ? (
             <Link href={`/${lang}/search?q=${encodeURIComponent(query)}`} className="palette__all">
-              {lang === "zh" ? "查看全部结果" : "すべての結果"} →
+              {lang === "zh" ? "查看全部结果" : lang === "ja" ? "すべての結果" : "See all results"} →
             </Link>
           ) : null}
           <span className="palette__count">
             {results.length > 0 ? `${results.length} ${dict.search.resultCount}` : "GUNDAM / INDEX"}
           </span>
+          <span className="palette__slash"><kbd>/</kbd> {dict.search.openPalette}</span>
         </div>
       </div>
     </div>

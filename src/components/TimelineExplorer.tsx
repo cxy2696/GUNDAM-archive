@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { Character, Era, EventRecord, Faction, Lang, Machine, Place } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
-import { pick } from "@/lib/i18n";
+import { pick, pickList, sourceLabel } from "@/lib/i18n";
 import { dateFraction, formatStoryDate } from "@/lib/format";
 
 type TickMode = "year" | "decade" | "century";
@@ -360,7 +360,7 @@ export function TimelineExplorer({
 
               <div className="tl-drawer__block">
                 <span className="micro">{dict.timeline.eventCourse}</span>
-                {selected.detail[lang].map((paragraph) => (
+                {pickList(selected.detail, lang).map((paragraph) => (
                   <p key={paragraph.slice(0, 24)} className="tl-drawer__detail">{paragraph}</p>
                 ))}
               </div>
@@ -428,7 +428,7 @@ export function TimelineExplorer({
                 <span className="micro">{dict.common.source}</span>
                 {selected.sources.map((source) => (
                   <span key={source.label} className="tl-source">
-                    <b>{source.level}</b> {source.label}
+                    <b>{source.level}</b> {sourceLabel(source, lang)}
                   </span>
                 ))}
               </div>

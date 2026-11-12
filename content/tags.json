@@ -9,7 +9,8 @@
     "category": "armor",
     "description": {
       "zh": "联邦在 Side 7 秘密开发的钛基复合装甲，对实弹与早期光束均有极高耐受。因 RX-78-2 的战绩而被吉翁称为“高达合金”。",
-      "ja": "サイド7で極秘開発されたチタン系複合装甲。実弾と初期ビームの双方に高い耐性を持ち、RX-78-2の戦果からジオン側に「ガンダリウム」と呼ばれた。"
+      "ja": "サイド7で極秘開発されたチタン系複合装甲。実弾と初期ビームの双方に高い耐性を持ち、RX-78-2の戦果からジオン側に「ガンダリウム」と呼ばれた。",
+      "en": "A titanium-based composite armor secretly developed by the Federation at Side 7, highly resistant to both solid rounds and early beam weapons. Because of the RX-78-2's record, Zeon called it 'Gundam alloy'."
     },
     "detail": {
       "zh": [
@@ -17,6 +18,9 @@
       ],
       "ja": [
         "ルナチタニウムは連邦がサイド7のV作戦で使ったチタン系複合装甲。当時の超硬鋼より軽く、実弾に強く、初期のビームにも一定の耐性があった。ジオン兵はこれを「ガンダム合金」と呼んだ。"
+      ],
+      "en": [
+        "Luna Titanium is the titanium-based composite armor the Federation used in Operation V at Side 7. It was lighter and more bullet-resistant than the super-hard steel of the time, and had some resistance to early beam weapons. Zeon soldiers therefore called it 'Gundam alloy'."
       ]
     }
   },
@@ -30,7 +34,8 @@
     "category": "armor",
     "description": {
       "zh": "月神钛合金的改进型，重量更轻、耐热与耐冲击更强。U.C.0087 之后成为高性能试作机的标准装甲。",
-      "ja": "ルナチタニウムの改良型。軽量かつ耐熱・耐衝撃性に優れ、U.C.0087以降の高性能試作機の標準装甲となった。"
+      "ja": "ルナチタニウムの改良型。軽量かつ耐熱・耐衝撃性に優れ、U.C.0087以降の高性能試作機の標準装甲となった。",
+      "en": "An improved form of Luna Titanium, lighter and more resistant to heat and impact. From U.C.0087 it became the standard armor of high-performance prototypes."
     },
     "detail": {
       "zh": [
@@ -38,6 +43,9 @@
       ],
       "ja": [
         "ガンダリウムはルナチタニウムの改良型で、軽量化と耐熱・耐衝撃性の向上を両立した。U.C.0087前後には連邦とエゥーゴの高性能試作機の標準装甲となる。加工難度とコストが高く、全面採用したガンダムは限られた。"
+      ],
+      "en": [
+        "Gundarium is an improved Luna Titanium that cuts weight while raising heat and impact resistance. Around U.C.0087 it became the standard armor of Federation and AEUG high-performance prototypes. Machining is difficult and costs are high, so few Gundams used it throughout."
       ]
     }
   },
@@ -51,7 +59,8 @@
     "category": "armor",
     "description": {
       "zh": "阿克西斯系技术路线发展出的可变骨架专用合金，兼顾强度与可动部件的疲劳寿命，是 Z 计划的材料基础。",
-      "ja": "アクシズ系技術から発展した可変フレーム用合金。強度と可動部の疲労寿命を両立し、Ζ計画の材料基盤となった。"
+      "ja": "アクシズ系技術から発展した可変フレーム用合金。強度と可動部の疲労寿命を両立し、Ζ計画の材料基盤となった。",
+      "en": "An alloy developed along Axis technology lines for variable frames, balancing strength with the fatigue life of moving parts. It is the material basis of the Z Project."
     },
     "detail": {
       "zh": [
@@ -59,6 +68,9 @@
       ],
       "ja": [
         "ガンダリウムγはアクシズが可変フレーム用に開発した合金。変形のたびに関節が曲げと捻りを受けるため、結晶粒制御と表面処理で疲労寿命を延ばした。Ζ計画やネオ・ジオンの高性能可変機を支えた。"
+      ],
+      "en": [
+        "Gundarium Gamma is an alloy Axis developed for variable frames. Each transformation repeatedly bends and twists the joints, so the gamma alloy extends fatigue life through grain control and surface treatment. It supported the Z Project and Neo Zeon's high-performance variable machines."
       ]
     }
   },
@@ -72,7 +84,8 @@
     "category": "frame",
     "description": {
       "zh": "把装甲与承力结构分离、以内部骨架支撑机体的设计。它让 MS 获得接近人体的动作幅度，也是可变机与后来小型化的前提。",
-      "ja": "装甲と構造材を分離し、内部フレームで機体を支える設計。人間に近い可動域を実現し、可変機とその後の小型化の前提となった。"
+      "ja": "装甲と構造材を分離し、内部フレームで機体を支える設計。人間に近い可動域を実現し、可変機とその後の小型化の前提となった。",
+      "en": "A design that separates armor from the load-bearing structure and supports the machine on an internal frame. It gave MS a range of motion close to the human body, and was the precondition for variable machines and later miniaturization."
     },
     "detail": {
       "zh": [
@@ -80,6 +93,9 @@
       ],
       "ja": [
         "ムーバブルフレームは装甲と主構造を分け、フレームが支持と駆動を担う。肩・肘・股・膝の大きな動作が可能になり、可変機、換装バックパック、小型化の前提となる。フレームが露出すると損傷しやすく、整備には装甲を外す必要がある。"
+      ],
+      "en": [
+        "The movable frame separates armor from the load-bearing structure, with the frame carrying and driving the machine. The suit can then make large movements at shoulder, elbow, hip, and knee, and this also provided the basis for variable machines, swap backpacks, and miniaturization. The cost is that an exposed frame is easily damaged, and armor must be removed for maintenance."
       ]
     }
   },
@@ -93,7 +109,8 @@
     "category": "frame",
     "description": {
       "zh": "通过分段骨架与锁定机构在 MS 与巡航形态间切换的结构。Z 高达是首台实用化的 TMS，变形时间与结构强度始终是取舍。",
-      "ja": "分割フレームとロック機構によりMS形態と巡航形態を切り替える構造。Ζガンダムは初の実用TMSで、変形時間と構造強度の両立が課題だった。"
+      "ja": "分割フレームとロック機構によりMS形態と巡航形態を切り替える構造。Ζガンダムは初の実用TMSで、変形時間と構造強度の両立が課題だった。",
+      "en": "A structure that switches between MS and cruising forms through a segmented frame and locking mechanisms. The Z Gundam was the first practical TMS, and transformation time and structural strength were always the trade-off."
     },
     "detail": {
       "zh": [
@@ -101,6 +118,9 @@
       ],
       "ja": [
         "可変フレームは分割構造とロック機構で、MSと巡航形態を切り替える。Ζガンダムは脚・腕・バックパックを再構成してウェーブライダーとなり、大気圏突入と高速巡航を得た。変形時間、構造強度、故障率は常にトレードオフになる。"
+      ],
+      "en": [
+        "The variable frame uses a segmented structure and locking mechanisms to switch the machine between MS and cruising forms. The Z Gundam reassembles legs, arms, and backpack into a waverider, gaining atmospheric entry and high-speed cruise. Transformation time, structural strength, and failure rate are always the trade-off."
       ]
     }
   },
@@ -114,7 +134,8 @@
     "category": "frame",
     "description": {
       "zh": "把驾驶舱做成可独立飞行的核心战机，与机体上下部件合体。初衷是提高驾驶员生还率，却也让机体结构更复杂。",
-      "ja": "コクピットを単独飛行可能なコア・ファイターとし、機体上下とドッキングさせる方式。パイロット生存率向上が目的だが、構造は複雑化した。"
+      "ja": "コクピットを単独飛行可能なコア・ファイターとし、機体上下とドッキングさせる方式。パイロット生存率向上が目的だが、構造は複雑化した。",
+      "en": "A system that makes the cockpit a core fighter able to fly on its own, then docks it with the upper and lower parts of the machine. The aim was to raise pilot survival, but it also made the frame more complex."
     },
     "detail": {
       "zh": [
@@ -122,6 +143,9 @@
       ],
       "ja": [
         "コア・ブロック・システムはコクピットを単独飛行できるコア・ファイターにし、機体の上下ブロックと合体させる。機体が撃破されてもパイロットが脱出できるのが目的だ。機体は三ブロックに分かれ、構造が複雑になり、合体機構も弱点になる。"
+      ],
+      "en": [
+        "The Core Block System makes the cockpit a core fighter that can fly independently, then docks it with the upper and lower halves of the machine. The aim is for the pilot to escape if the machine is destroyed. The cost is a body split into three sections, a more complex structure, and a docking mechanism that is itself a weak point."
       ]
     }
   },
@@ -135,7 +159,8 @@
     "category": "power",
     "description": {
       "zh": "MS 的标准动力源。以米诺夫斯基粒子约束等离子体，输出可驱动光束兵器；一旦失去冷却，反应炉本身就是一枚炸弹。",
-      "ja": "MSの標準動力源。ミノフスキー粒子でプラズマを拘束し、ビーム兵器を駆動できる出力を持つ。冷却を失えば炉そのものが爆弾となる。"
+      "ja": "MSの標準動力源。ミノフスキー粒子でプラズマを拘束し、ビーム兵器を駆動できる出力を持つ。冷却を失えば炉そのものが爆弾となる。",
+      "en": "The standard power source of MS. Minovsky particles confine the plasma, and the output can drive beam weapons; if cooling is lost, the reactor is itself a bomb."
     },
     "detail": {
       "zh": [
@@ -143,6 +168,9 @@
       ],
       "ja": [
         "熱核反応炉はミノフスキー粒子で高温プラズマを閉じ込め、推力とビーム兵器へエネルギーを供給する。反応炉のエネルギーは大きく、冷却が失われたり貫かれたりすれば機体ごと爆発する。MS戦が至近距離で終わりやすい理由の一つである。"
+      ],
+      "en": [
+        "The thermonuclear reactor uses Minovsky particles to confine high-temperature plasma and supplies energy to thrusters and beam weapons. The reactor stores enormous energy, and if cooling fails or it is breached, the whole machine becomes a bomb. This is one reason MS combat often ends at extremely close range."
       ]
     }
   },
@@ -156,7 +184,8 @@
     "category": "power",
     "description": {
       "zh": "在低能量状态下散布可阻断电磁波，使雷达与无线电失效；高能量压缩后可形成光束。它同时定义了 MS 战争的信息环境与武器形态。",
-      "ja": "低エネルギー状態で散布すると電磁波を遮断し、レーダーと無線を無効化する。高エネルギー圧縮でビームを形成し、MS戦争の情報環境と武器形態を規定した。"
+      "ja": "低エネルギー状態で散布すると電磁波を遮断し、レーダーと無線を無効化する。高エネルギー圧縮でビームを形成し、MS戦争の情報環境と武器形態を規定した。",
+      "en": "Scattered at low energy it blocks electromagnetic waves, disabling radar and radio; compressed at high energy it forms beams. It defined both the information environment and the weapon forms of MS warfare."
     },
     "detail": {
       "zh": [
@@ -164,6 +193,9 @@
       ],
       "ja": [
         "ミノフスキー粒子は低エネルギーで電磁波を遮断し、レーダーと無線を無効化するため、MSは近距離戦を強いられる。高エネルギーで圧縮すればビーム兵器の中核になる。散布濃度と地形が戦場を左右し、指揮官は散布そのものを戦術として扱う。"
+      ],
+      "en": [
+        "Minovsky particles block electromagnetic waves at low energy, disabling radar and radio so that MS can only fight at close range. Compressed at high energy, they also become the core of beam weapons. Scattering density and terrain directly affect the battlefield, and commanders often treat the scattering itself as a tactic."
       ]
     }
   },
@@ -177,7 +209,8 @@
     "category": "weapon",
     "description": {
       "zh": "以米诺夫斯基粒子压缩形成的高能束。对传统装甲近乎穿透，迫使装甲技术与 I 力场、光束盾等防御手段同步演进。",
-      "ja": "ミノフスキー粒子を圧縮した高エネルギービーム。従来装甲をほぼ貫通し、装甲技術とIフィールド・ビームシールドの進化を促した。"
+      "ja": "ミノフスキー粒子を圧縮した高エネルギービーム。従来装甲をほぼ貫通し、装甲技術とIフィールド・ビームシールドの進化を促した。",
+      "en": "A high-energy beam formed by compressed Minovsky particles. It nearly passes through conventional armor, forcing armor technology and defenses such as I-fields and beam shields to evolve alongside it."
     },
     "detail": {
       "zh": [
@@ -185,6 +218,9 @@
       ],
       "ja": [
         "ビーム兵器はミノフスキー粒子を高エネルギー束に圧縮し、従来装甲をはるかに貫通する。防御技術はIフィールド、ビームシールド、耐ビームコーティングへ移行した。連射は電力と放熱の負担が大きく、口径より射撃のタイミングが重要になる。"
+      ],
+      "en": [
+        "Beam weapons compress Minovsky particles into a high-energy beam whose penetration far exceeds solid rounds against conventional armor. Defense therefore shifted to I-fields, beam shields, and beam-resistant coatings. Sustained fire brings power and heat-dissipation loads, and the moment of firing often matters more than caliber."
       ]
     }
   },
@@ -198,7 +234,8 @@
     "category": "weapon",
     "description": {
       "zh": "由赛可缪远程操控的小型光束炮，可脱离本体从多角度射击。对驾驶员的空间认知与精神负荷极高，是新人类兵器的代表。",
-      "ja": "サイコミュで遠隔操作する小型ビーム砲。本体から分離して多角的に射撃できるが、パイロットの空間認識と精神的負荷が非常に高い。"
+      "ja": "サイコミュで遠隔操作する小型ビーム砲。本体から分離して多角的に射撃できるが、パイロットの空間認識と精神的負荷が非常に高い。",
+      "en": "A small beam cannon remotely controlled by psycommu that can detach from the machine and fire from multiple angles. The spatial load and mental strain on the pilot are extreme; it is the representative Newtype weapon."
     },
     "detail": {
       "zh": [
@@ -206,6 +243,9 @@
       ],
       "ja": [
         "ファンネルはサイコミュで遠隔操作する小型ビーム砲で、本体から離れて多方向から射撃できる。パイロットは複数の視点、距離、タイミングを同時に処理する必要があり、精神的負荷が高い。ニュータイプや強化人間向けの装備である。"
+      ],
+      "en": [
+        "Funnels are small beam cannons remotely controlled by psycommu that detach from the machine and fire from several directions. The pilot must handle multiple viewpoints, ranges, and timings at once, a heavy mental load. They are therefore issued mostly to Newtypes or enhanced humans."
       ]
     }
   },
@@ -219,7 +259,8 @@
     "category": "system",
     "description": {
       "zh": "把新人类发出的脑波转换为机械指令的系统。它让浮游炮与精神感应机体成为可能，也让驾驶员的意识直接暴露在战争之中。",
-      "ja": "ニュータイプの脳波を機械指令へ変換するシステム。ファンネルとサイコミュ機を可能にし、パイロットの意識を戦争へ直接晒した。"
+      "ja": "ニュータイプの脳波を機械指令へ変換するシステム。ファンネルとサイコミュ機を可能にし、パイロットの意識を戦争へ直接晒した。",
+      "en": "A system that converts the brain waves of a Newtype into machine commands. It made funnels and psycommu-controlled machines possible, and also exposed the pilot's mind directly to war."
     },
     "detail": {
       "zh": [
@@ -227,6 +268,9 @@
       ],
       "ja": [
         "サイコミュはニュータイプの脳波を機械指令へ変換し、機体やファンネルを意識に直接応答させる。全方位遠隔攻撃を可能にする一方、恐怖や敵意まで増幅されうる。読心術ではなく、人間の知覚を機械へ接続する高リスクなインターフェースである。"
+      ],
+      "en": [
+        "Psycommu converts a Newtype's brain waves into machine commands, so the machine or funnels respond directly to thought. It enables all-direction remote attack, and also lets the pilot's fear and hostility be amplified by the system. It is a high-risk interface that plugs human perception into a machine, not telepathy."
       ]
     }
   },
@@ -240,7 +284,8 @@
     "category": "system",
     "description": {
       "zh": "把赛可缪回路以金属晶格形式嵌入骨架的技术。它大幅提升机体的响应速度，并在极端条件下引发“精神感应共鸣”等超常现象。",
-      "ja": "サイコミュ回路を金属格子としてフレームに組み込む技術。機体応答を大幅に高め、最大限状態では「サイコ・レゾナンス」と呼ばれる現象を引き起こす。"
+      "ja": "サイコミュ回路を金属格子としてフレームに組み込む技術。機体応答を大幅に高め、最大限状態では「サイコ・レゾナンス」と呼ばれる現象を引き起こす。",
+      "en": "A technology that embeds psycommu circuits into the frame as a metal lattice. It greatly raises the machine's response speed and, under extreme conditions, produces anomalies such as psychoframe resonance."
     },
     "detail": {
       "zh": [
@@ -248,6 +293,9 @@
       ],
       "ja": [
         "サイコフレームはサイコミュ回路を機体フレームに埋め込む技術で、外付け機器ではない。パイロットの意図がほぼ遅延なく駆動部へ伝わり、応答性が大きく上がる。最大限状態では意識と共鳴し、諸元を超える現象を起こす。"
+      ],
+      "en": [
+        "The psychoframe embeds psycommu circuits in the machine's frame rather than as external equipment. The pilot's intention reaches the drive sections with almost no delay, greatly improving response. In extreme cases the frame resonates with consciousness and produces phenomena beyond specification."
       ]
     }
   },
@@ -261,7 +309,8 @@
     "category": "sensor",
     "description": {
       "zh": "读取驾驶员生理反应以辅助机体制御的准赛可缪系统。它不要求完整的新人类能力，却会在高负荷战斗中放大驾驶员的情绪。",
-      "ja": "パイロットの生理反応を読み取り機体制御を補助する準サイコミュ。完全なニュータイプ能力を必要としないが、高負荷戦闘では感情を増幅する。"
+      "ja": "パイロットの生理反応を読み取り機体制御を補助する準サイコミュ。完全なニュータイプ能力を必要としないが、高負荷戦闘では感情を増幅する。",
+      "en": "A quasi-psycommu system that reads the pilot's physiological reactions to assist machine control. It does not require full Newtype ability, but it amplifies the pilot's emotions in high-load combat."
     },
     "detail": {
       "zh": [
@@ -269,6 +318,9 @@
       ],
       "ja": [
         "バイオセンサーは脈拍、呼吸、脳波を読み取り、機体制御を補助する。完全なニュータイプ能力を必要としないため、サイコミュより量産しやすい。高負荷戦闘では恐怖や怒りが機体の動きとして増幅される。"
+      ],
+      "en": [
+        "The bio-sensor reads pulse, breathing, and brain waves and uses that data to assist machine control. It does not require full Newtype ability, so it is easier to mass-produce than psycommu. In high-load combat, however, fear and anger are amplified into the machine's movements."
       ]
     }
   },
@@ -282,7 +334,8 @@
     "category": "system",
     "description": {
       "zh": "把新人类人格数据装入机体的战斗辅助系统，能预判对手动作。代价是系统人格与驾驶员意识的持续冲突。",
-      "ja": "ニュータイプの人格データを機体へ搭載した戦闘補助システム。敵の動きを予測できるが、システム人格とパイロットの意識が衝突し続ける。"
+      "ja": "ニュータイプの人格データを機体へ搭載した戦闘補助システム。敵の動きを予測できるが、システム人格とパイロットの意識が衝突し続ける。",
+      "en": "A combat support system that loads Newtype personality data into the machine and can predict an opponent's moves. The cost is constant conflict between the system's personality and the pilot's consciousness."
     },
     "detail": {
       "zh": [
@@ -290,6 +343,9 @@
       ],
       "ja": [
         "EXAMシステムはニュータイプの人格データを機体に搭載し、敵の動きを予測して射撃・格闘精度を高める。起動時には頭部が赤くなり、パイロットは別の意識が制御を奪おうとするのを感じる。火器管制コンピュータではなく、機械に封じられたニュータイプの人格である。"
+      ],
+      "en": [
+        "The EXAM System loads a Newtype's personality data into the machine to predict enemy movements and improve shooting and melee accuracy. The head turns red when it activates, and the pilot feels another consciousness fighting for control. It is a Newtype personality sealed inside a machine, not a fire-control computer."
       ]
     }
   },
@@ -303,7 +359,8 @@
     "category": "armor",
     "description": {
       "zh": "通电后装甲分子排列改变，可抵御实弹；代价是极高的电力消耗。C.E. 系机体因此把“何时通电”本身当作战术判断。",
-      "ja": "通電により装甲分子配列を変化させ実弾を防ぐ。電力消費が激しく、C.E.系機体では「いつ通電するか」が戦術判断となる。"
+      "ja": "通電により装甲分子配列を変化させ実弾を防ぐ。電力消費が激しく、C.E.系機体では「いつ通電するか」が戦術判断となる。",
+      "en": "When powered, the armor's molecular arrangement changes and it can withstand solid rounds; the cost is very high power consumption. C.E. machines therefore treat the question of when to power it as a tactical decision."
     },
     "detail": {
       "zh": [
@@ -311,6 +368,9 @@
       ],
       "ja": [
         "フェイズシフト装甲は通電で分子配列を変え、実弾を止める硬質層を作る。運動エネルギー弾には有効だが、ビーム防御は限定的で、消費電力が大きい。C.E.系機体は通電のタイミングを判断しなければならない。"
+      ],
+      "en": [
+        "Phase Shift Armor changes its molecular arrangement when powered, forming a hard layer that stops solid rounds. It is effective against kinetic rounds, limited against beams, and draws a great deal of power. C.E. machines therefore have to judge when to power it."
       ]
     }
   },
@@ -324,7 +384,8 @@
     "category": "power",
     "description": {
       "zh": "以拓扑缺陷产生 GN 粒子的半永久动力源。粒子可形成光束、推进与防护，也使机体在雷达上呈现特殊反应。",
-      "ja": "トポロジカル欠陥からGN粒子を生み出す半永久動力源。粒子はビーム・推進・防御に用いられ、機体はレーダー上に特異反応を示す。"
+      "ja": "トポロジカル欠陥からGN粒子を生み出す半永久動力源。粒子はビーム・推進・防御に用いられ、機体はレーダー上に特異反応を示す。",
+      "en": "A semi-permanent power source that produces GN particles from a topological defect. The particles can form beams, propulsion, and protection, and also give the machine a distinctive radar signature."
     },
     "detail": {
       "zh": [
@@ -332,6 +393,9 @@
       ],
       "ja": [
         "GNドライブはトポロジカル欠陥を利用して真空からGN粒子を生み、理論上は半永久的に動く。GN粒子はビーム、推進、防御に使え、搭載機はレーダー上に特異な反応を示す。ソレスタルビーイングの技術的優位の源だが、ドライブの数は極めて少ない。"
+      ],
+      "en": [
+        "The GN Drive uses a topological defect to produce GN particles from vacuum and can theoretically run semi-permanently. GN particles can form beams, propulsion, and protection, and give equipped machines a distinctive radar signature. Celestial Being's technical edge comes from this, but drives are extremely few."
       ]
     }
   },
@@ -345,7 +409,8 @@
     "category": "system",
     "description": {
       "zh": "V2 高达的米诺夫斯基推进系统展开时形成的巨大光幕。它同时承担推进、姿态控制与防御功能，是 U.C.0153 最尖端的机动技术。",
-      "ja": "V2ガンダムのミノフスキー推進システムが展開時に形成する巨大な光幕。推進、姿勢制御、防御を同時に担い、U.C.0153で最も先端の機動技術である。"
+      "ja": "V2ガンダムのミノフスキー推進システムが展開時に形成する巨大な光幕。推進、姿勢制御、防御を同時に担い、U.C.0153で最も先端の機動技術である。",
+      "en": "The huge curtain of light formed when the Victory 2 Gundam's Minovsky drive system deploys. It serves as propulsion, attitude control, and defense at once, and is the most advanced mobility technology of U.C.0153."
     },
     "detail": {
       "zh": [
@@ -353,6 +418,9 @@
       ],
       "ja": [
         "光の翼はV2ガンダムのミノフスキー推進システムが展開する光幕。推進、姿勢制御、防御を同時に担い、展開時には探知と通信も妨害する。代償は大きなエネルギー消費とパイロットへの負荷である。"
+      ],
+      "en": [
+        "The Wings of Light are the curtain of light formed when the Victory 2 Gundam's Minovsky drive system deploys. They serve as propulsion, attitude control, and defense at the same time, and also interfere with detection and communications when deployed. The cost is enormous energy consumption and pilot load."
       ]
     }
   },
@@ -366,7 +434,8 @@
     "category": "system",
     "description": {
       "zh": "纳米机械群展开成的蝶翼状分解场，能把文明产物还原到分子级。它既是 Turn A 的最终兵器，也是“黑历史”被封印的原因。",
-      "ja": "ナノマシン群が展開する蝶型の分解フィールド。文明の産物を分子レベルまで還元する。ターンAの最終兵器であり、「黒歴史」封印の原因でもある。"
+      "ja": "ナノマシン群が展開する蝶型の分解フィールド。文明の産物を分子レベルまで還元する。ターンAの最終兵器であり、「黒歴史」封印の原因でもある。",
+      "en": "A butterfly-wing-shaped decomposition field spread by a swarm of nanomachines that can reduce the products of civilization to the molecular level. It is both the Turn A's ultimate weapon and the reason the Black History was sealed."
     },
     "detail": {
       "zh": [
@@ -374,6 +443,9 @@
       ],
       "ja": [
         "月光蝶はターンAの背部から展開するナノマシン群で、蝶の羽のような形をとる。触れた文明の産物を分子レベルまで分解するため、通常兵器ではない。黒歴史が封印された大きな理由は、これが地球圏の技術基盤を消したことにある。"
+      ],
+      "en": [
+        "The Moonlight Butterfly is a swarm of nanomachines deployed from the Turn A's back, shaped like butterfly wings. It can decompose the products of civilization it touches to the molecular level, so it is not a conventional weapon. The Black History was sealed in large part because it once erased the technological base of the Earth Sphere."
       ]
     }
   },
@@ -387,7 +459,8 @@
     "category": "weapon",
     "description": {
       "zh": "可切换高威力与高连射两种模式的光束炮。为解决光束盾普及后的穿透问题而开发，是小型化时代火力设计的代表。",
-      "ja": "高威力と高連射を切り替えられるビーム砲。ビームシールド普及後の貫通問題を解決するため開発され、小型化時代の火力設計を代表する。"
+      "ja": "高威力と高連射を切り替えられるビーム砲。ビームシールド普及後の貫通問題を解決するため開発され、小型化時代の火力設計を代表する。",
+      "en": "A beam cannon that can switch between high-power and high-rate modes. It was developed to solve the penetration problem after beam shields spread, and represents firepower design in the miniaturization era."
     },
     "detail": {
       "zh": [
@@ -395,6 +468,9 @@
       ],
       "ja": [
         "ヴェスバーは高威力・低連射と低威力・高連射を切り替えられる。ビームシールド普及後の「貫けない」問題への答えで、まず連射で牽制し、適切な瞬間に高威力へ切り替える。F91やクロスボーン系が採用した。"
+      ],
+      "en": [
+        "The Variable Speed Beam Rifle switches between high power with a low rate of fire and low power with a high rate of fire. It targets the 'cannot penetrate' problem after beam shields spread: suppress with rapid fire, then switch to high power in the right window. The F91 and the Crossbone series both use this approach."
       ]
     }
   },
@@ -408,7 +484,8 @@
     "category": "power",
     "description": {
       "zh": "P.D. 纪元 MS 的动力源，产生亚哈粒子并支撑机体运动；无法轻易关闭。",
-      "ja": "P.D.紀元MSの動力源。エイハブ粒子を生み出し機体を動かすが、容易には停止できない。"
+      "ja": "P.D.紀元MSの動力源。エイハブ粒子を生み出し機体を動かすが、容易には停止できない。",
+      "en": "The power source of P.D. era MS, producing Ahab particles and supporting the machine's movement; it cannot be shut down easily."
     },
     "detail": {
       "zh": [
@@ -416,6 +493,9 @@
       ],
       "ja": [
         "エイハブ・リアクターはP.D.紀元のMSの動力源で、エイハブ粒子からエネルギーと推力を得る。簡単には停止できず、破壊されれば激しく爆発する。ギャラルホルンはリアクターと厄祭戦の遺産を管理して秩序を保つ。"
+      ],
+      "en": [
+        "The Ahab reactor is the power source of P.D. era MS, producing energy and thrust through Ahab particles. It cannot be shut down easily and often explodes violently when destroyed. Gjallarhorn maintains order by managing reactors and the legacy of the Calamity War."
       ]
     }
   },
@@ -429,7 +509,8 @@
     "category": "armor",
     "description": {
       "zh": "P.D. 纪元用于抵御光束的层状装甲，靠纳米级结构分散能量。",
-      "ja": "P.D.紀元でビームを防ぐ層状装甲。ナノ構造でエネルギーを分散させる。"
+      "ja": "P.D.紀元でビームを防ぐ層状装甲。ナノ構造でエネルギーを分散させる。",
+      "en": "A layered armor used in the P.D. era to resist beams, dispersing energy through nanoscale structure."
     },
     "detail": {
       "zh": [
@@ -437,6 +518,9 @@
       ],
       "ja": [
         "ナノラミネート装甲は多数のナノ層で構成され、ビームのエネルギーを層間へ分散して貫通を減らす。P.D.のMSがビーム兵器に対して生存性を保つ理由だが、層が損傷すれば再塗布が必要で、整備の頻度が高い。"
+      ],
+      "en": [
+        "Nanolaminate armor is made of multiple nanoscale layers that spread beam energy between layers and reduce penetration. It lets P.D. MS survive against beam weapons, but damaged layers must be recoated, so maintenance is frequent."
       ]
     }
   },
@@ -450,7 +534,8 @@
     "category": "system",
     "description": {
       "zh": "A.S. 纪元把人体神经与机体直连的技术，提升响应速度，也给驾驶员带来数据风暴。",
-      "ja": "A.S.紀元に人体神経と機体を直結する技術。応答性を高めるが、パイロットにデータストームをもたらす。"
+      "ja": "A.S.紀元に人体神経と機体を直結する技術。応答性を高めるが、パイロットにデータストームをもたらす。",
+      "en": "A technology of the A.S. era that links the human nervous system directly to the machine, raising response speed and inflicting data storms on the pilot."
     },
     "detail": {
       "zh": [
@@ -458,6 +543,9 @@
       ],
       "ja": [
         "GUNDフォーマットは人体の神経と機体を直接接続し、パイロットが身体のようにMSを操作できるようにする。もとは医療・義肢の技術で、軍事利用によって高リスクなインターフェースになった。接続が深いほど応答は良くなるが、データストームの身体への負担も大きい。"
+      ],
+      "en": [
+        "The GUND-Format connects the human nervous system directly to the machine, letting the pilot control the MS as if it were their own body. It was originally for medicine and prosthetics, and became a high-risk interface once weaponized. The deeper the connection, the better the response, and the greater the damage from data storms."
       ]
     }
   },
@@ -471,7 +559,8 @@
     "category": "system",
     "description": {
       "zh": "A.G. 纪元的学习型战斗系统，记录战斗数据并生成新的换装与武装。",
-      "ja": "A.G.紀元の学習型戦闘システム。戦闘データを記録し、新しい換装と武装を生成する。"
+      "ja": "A.G.紀元の学習型戦闘システム。戦闘データを記録し、新しい換装と武装を生成する。",
+      "en": "A learning combat system of the A.G. era that records combat data and generates new wear parts and armaments."
     },
     "detail": {
       "zh": [
@@ -479,6 +568,9 @@
       ],
       "ja": [
         "AGEシステムはパイロットの操作、敵の動き、戦場データを記録し、新しい換装・武装を生成する。AGE-1のタイタス、スパロー、AGE-2のダブルバレット、AGE-3の各形態はこの系統から生まれた。システムは学習するが、最終的な選択は人間が行う。"
+      ],
+      "en": [
+        "The AGE System records the pilot's inputs, enemy behavior, and battlefield data, and generates new wear and armaments from them. The AGE-1's Titus and Sparrow, the AGE-2's Double Bullet, and the AGE-3's various forms all come from this system. The system learns, but people still make the final choice."
       ]
     }
   },
@@ -492,7 +584,8 @@
     "category": "system",
     "description": {
       "zh": "A.A. 纪元的三项外来技术之一，能把影像直接物质化，也是 Apocalypse 暴走的源头之一。",
-      "ja": "A.A.紀元の三つの外来技術の一つ。イメージを直接物質化し、アポカリプス暴走の源の一つでもある。"
+      "ja": "A.A.紀元の三つの外来技術の一つ。イメージを直接物質化し、アポカリプス暴走の源の一つでもある。",
+      "en": "One of the three alien technologies of the A.A. era, able to materialize images directly; also one of the sources of the Apocalypse outbreak."
     },
     "detail": {
       "zh": [
@@ -500,6 +593,9 @@
       ],
       "ja": [
         "マテリアライズは映像やデータを直接実体へ変換する。月面やコロニーの生存者は工具、部品、武器の再建に使い、アポカリプスはこれによって自己増殖の物理的基盤を得た。エネルギーとテンプレートが必要で、誤用は制御不能な複製体を生む。"
+      ],
+      "en": [
+        "Materialize turns images or data directly into physical matter. Lunar and colonial survivors use it to rebuild tools, parts, and weapons quickly, and Apocalypse uses it to gain the physical basis for self-propagation. It needs energy and templates, and misuse produces runaway copies."
       ]
     }
   },
@@ -513,7 +609,8 @@
     "category": "weapon",
     "description": {
       "zh": "分离式光束炮与空间认识能力结合的远程兵器，常见于 ZAFT 系高达。",
-      "ja": "分離式ビーム砲と空間認識能力を組み合わせた遠隔兵器。ザフト系ガンダムに多い。"
+      "ja": "分離式ビーム砲と空間認識能力を組み合わせた遠隔兵器。ザフト系ガンダムに多い。",
+      "en": "A remote weapon combining separable beam cannons with spatial awareness ability, common on ZAFT-line Gundams."
     },
     "detail": {
       "zh": [
@@ -521,6 +618,9 @@
       ],
       "ja": [
         "ドラグーン・システムは複数のビーム砲を分離可能な浮遊ユニットにし、空間認識能力者が遠隔操作する。各ユニットが独立して照準・射撃でき、広域で十字火網を作る。プロヴィデンス、レジェンド、ストライクフリーダムが採用した。"
+      ],
+      "en": [
+        "The DRAGOON System turns several beam cannons into separable remote units controlled by a spatial-awareness user. Each unit can aim and fire independently, forming crossfire over a wide area. Providence, Legend, and Strike Freedom all use this system."
       ]
     }
   },
@@ -534,7 +634,8 @@
     "category": "system",
     "description": {
       "zh": "以三倍粒子消耗换取短时间性能跃升的 GN 驱动器过载模式。",
-      "ja": "三倍の粒子消費と引き換えに短時間の性能向上を得るGNドライブの過負荷モード。"
+      "ja": "三倍の粒子消費と引き換えに短時間の性能向上を得るGNドライブの過負荷モード。",
+      "en": "A GN Drive overload mode that trades triple particle consumption for a short jump in performance."
     },
     "detail": {
       "zh": [
@@ -542,6 +643,9 @@
       ],
       "ja": [
         "トランザムはGNドライブの過負荷モードで、短時間だけ粒子放出量を三倍にする。速度、出力、防御が同時に上がるが、持続時間は短く、終了後は性能が明確に低下する。パイロットは起動のタイミングを判断しなければならない。"
+      ],
+      "en": [
+        "Trans-Am is an overload mode of the GN Drive that raises particle release to three times normal for a short time. Speed, output, and defense all rise at once, but it lasts only briefly and performance drops sharply afterward. The pilot must judge when to activate it."
       ]
     }
   },
@@ -555,7 +659,8 @@
     "category": "system",
     "description": {
       "zh": "将人体神经与机体直接连接的厄祭战时代接口，代价是身体不可逆的负担。",
-      "ja": "人体の神経を機体へ直接接続する厄祭戦時代のインターフェース。代償は身体への不可逆な負担。"
+      "ja": "人体の神経を機体へ直接接続する厄祭戦時代のインターフェース。代償は身体への不可逆な負担。",
+      "en": "An interface of the Calamity War era that connects the human nervous system directly to the machine, at the cost of an irreversible burden on the body."
     },
     "detail": {
       "zh": [
@@ -563,6 +668,9 @@
       ],
       "ja": [
         "阿頼耶識システムは人体の神経と機体を接続し、手動操作なしで機体の姿勢や目標を感知させる。厄祭戦時代の火星に起源があり、手術リスクが高い。接続が深いほど知覚は鋭くなるが、痛みとデータ負荷が身体へ直接返る。"
+      ],
+      "en": [
+        "The Alaya-Vijnana System connects the human nervous system to the machine, letting the pilot sense the suit's posture and targets without manual controls. It originated on Mars in the Calamity War era, and the surgery is high-risk. The deeper the connection, the stronger the perception, and the more directly pain and data load return to the body."
       ]
     }
   },
@@ -576,7 +684,8 @@
     "category": "system",
     "description": {
       "zh": "以 GN 粒子形成的高密度防护场，可偏转光束与实弹。",
-      "ja": "GN粒子で形成する高密度の防護場。ビームや実弾を偏向する。"
+      "ja": "GN粒子で形成する高密度の防護場。ビームや実弾を偏向する。",
+      "en": "A high-density protective field formed from GN particles that can deflect beams and solid rounds."
     },
     "detail": {
       "zh": [
@@ -584,6 +693,9 @@
       ],
       "ja": [
         "GNフィールドは高密度のGN粒子で防護場を作り、ビームと実弾を偏向する。強度は粒子出力と発生器の数に依存するため、重装機に向く。高エネルギー攻撃を受け続けると粒子を急速に消費し、発生器を狙われれば穴が生じる。"
+      ],
+      "en": [
+        "The GN Field uses high-density GN particles to form a protective field that can deflect beams and solid rounds. Its strength depends on particle output and the number of generators, so heavy machines are better suited to carry it. Sustained high-energy attacks quickly consume particles, and the field develops gaps when a generator is hit."
       ]
     }
   },
@@ -597,7 +709,8 @@
     "category": "system",
     "description": {
       "zh": "恶魔高达的自我增殖细胞，能侵蚀机械与生物，把受损部位重新组合成新的形态。",
-      "ja": "デビルガンダムの自己増殖細胞。機械と生物を侵食し、損傷部位を新たな形態へ組み替える。"
+      "ja": "デビルガンダムの自己増殖細胞。機械と生物を侵食し、損傷部位を新たな形態へ組み替える。",
+      "en": "The self-propagating cells of the Devil Gundam, able to erode machinery and living things and reassemble damaged parts into new forms."
     },
     "detail": {
       "zh": [
@@ -605,6 +718,9 @@
       ],
       "ja": [
         "DG細胞はデビルガンダムの自己増殖細胞で、機械と生物を侵食し、取り込んだ部品を組み替える。デビルガンダムは補給線を必要とせず、戦場の残骸が部品になる。DG細胞はパイロットの意識も侵し、「進化」を強迫へ変える。"
+      ],
+      "en": [
+        "DG Cells are the self-propagating cells of the Devil Gundam. They erode machinery and living things and reassemble the parts they absorb. The Devil Gundam therefore needs no conventional supply line; battlefield wreckage is its parts. DG Cells also erode the pilot's consciousness, turning 'evolution' into compulsion."
       ]
     }
   },
@@ -618,7 +734,8 @@
     "category": "system",
     "description": {
       "zh": "使雷达与光学探测失效的隐身系统，死神高达系列的核心装备。",
-      "ja": "レーダーと光学探知を無効化するステルス・システム。デスサイズ系の核心装備。"
+      "ja": "レーダーと光学探知を無効化するステルス・システム。デスサイズ系の核心装備。",
+      "en": "A stealth system that disables radar and optical detection, the core equipment of the Deathscythe line."
     },
     "detail": {
       "zh": [
@@ -626,6 +743,9 @@
       ],
       "ja": [
         "ハイパー・ジャマーはレーダーと光学探知を無効化し、敵の視界から機体を消す。デスサイズはこれで目標へ接近し、反応される前に一撃離脱を完了する。尾炎、音、物理的接触までは消せず、近距離では発見される可能性がある。"
+      ],
+      "en": [
+        "The Hyper Jammer disables radar and optical detection, making the machine vanish from the enemy's view. The Deathscythe uses it to close on a target and finish a hit-and-run before the opponent can react. It does not remove exhaust flames, sound, or physical contact, so the machine can still be found at close range."
       ]
     }
   },
@@ -639,7 +759,8 @@
     "category": "system",
     "description": {
       "zh": "用微粒在机体周围形成光学迷彩或防护层的技术，迅雷高达的隐身核心。",
-      "ja": "微粒子で機体周囲に光学迷彩や防護層を形成する技術。ブリッツガンダムのステルス核心。"
+      "ja": "微粒子で機体周囲に光学迷彩や防護層を形成する技術。ブリッツガンダムのステルス核心。",
+      "en": "A technology that forms optical camouflage or a protective layer around the machine with fine particles, the stealth core of the Blitz Gundam."
     },
     "detail": {
       "zh": [
@@ -647,6 +768,9 @@
       ],
       "ja": [
         "ミラージュコロイドは微粒子で機体周囲に光学迷彩を作り、短時間の防護層にもなる。ブリッツはこれでステルス奇襲を行うが、稼働中はフェイズシフト装甲を使えない。短時間の侵入と離脱に向く。"
+      ],
+      "en": [
+        "Mirage Colloid uses fine particles to form optical camouflage around the machine and can briefly form a protective layer. The Blitz Gundam uses it for stealth raids, but Phase Shift Armor cannot be used at the same time while the system runs. It suits short infiltration and escape."
       ]
     }
   },
@@ -660,7 +784,8 @@
     "category": "system",
     "description": {
       "zh": "把驾驶员的神经、意识或生理反应接入机体控制的技术与职业统称。",
-      "ja": "パイロットの神経、意識、生理反応を機体制御へ接続する技術と職能の総称。"
+      "ja": "パイロットの神経、意識、生理反応を機体制御へ接続する技術と職能の総称。",
+      "en": "The collective term for technologies and roles that connect a pilot's nerves, consciousness, or physiological reactions to machine control."
     },
     "detail": {
       "zh": [
@@ -670,6 +795,10 @@
       "ja": [
         "サイコミュ、サイコフレーム、GUNDフォーマット、阿頼耶識、EXAM、バイオセンサーがこれに含まれる。人間の知覚を機械へ直接接続し、反応時間を短縮する。",
         "代償として、パイロットの意識と身体が機体の負荷に晒される。紀元ごとに実装は異なるが、人間と機械の間に完全な境界がない点は共通する。"
+      ],
+      "en": [
+        "Psycommu, the psychoframe, the GUND-Format, Alaya-Vijnana, EXAM, and the bio-sensor all belong to this category. They plug human perception directly into the machine and shorten reaction time.",
+        "The cost is that the pilot's consciousness and body are both exposed to the machine's load. Each era implements it differently; the common point is that there is no longer a complete interface between human and machine."
       ]
     }
   }

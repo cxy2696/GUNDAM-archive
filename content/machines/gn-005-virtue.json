@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "天人的重装高达，以 GN 力场与大口径光束炮进行压制。",
-    "ja": "ソレスタルビーイングの重装ガンダム。GNフィールドと大口径ビーム砲で制圧を行う。"
+    "ja": "ソレスタルビーイングの重装ガンダム。GNフィールドと大口径ビーム砲で制圧を行う。",
+    "en": "Celestial Being's heavy-assault Gundam, suppressing with a GN Field and a large-caliber beam cannon."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ヴァーチェの外観は歩く要塞のようだ。GNフィールドはビームを偏向し、GNバズーカは一度の射撃で陣地を消し飛ばす。",
       "重量と火力は一つの戦術へ向かう。最前線に立ち、仲間の代わりに最初の一撃を受ける。ティエリアにとって、それは機体の役割であり心理的な重荷でもあった。"
+    ],
+    "en": [
+      "The Virtue looks like a walking fortress. Its GN Field can deflect beams, and its GN Bazooka can flatten a position in one shot.",
+      "Its weight and firepower both point to one tactic: stand at the very front and take the first round of attacks for teammates. For Tieria, this is both the machine's role and a psychological burden."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "GN 火箭炮",
-        "ja": "GNバズーカ"
+        "ja": "GNバズーカ",
+        "en": "GN Bazooka"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 光束炮",
-        "ja": "GNビーム砲"
+        "ja": "GNビーム砲",
+        "en": "GN Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "GN 力场",
-        "ja": "GNフィールド"
+        "ja": "GNフィールド",
+        "en": "GN Field"
       },
       "type": "special"
     }
@@ -97,7 +106,8 @@
       "sources": [
         {
           "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 Season 2 mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gn-drive"
@@ -113,7 +123,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -136,12 +147,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 00》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 00\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "厄祭战时代的高达，以厚重装甲与锤矛进行水下与近身战。",
-    "ja": "厄祭戦時代のガンダム。厚い装甲とメイスで水中・近接戦を行う。"
+    "ja": "厄祭戦時代のガンダム。厚い装甲とメイスで水中・近接戦を行う。",
+    "en": "A Gundam from the Calamity War era, fighting underwater and at close range with heavy armor and a mace."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "グシオンは他のガンダムより丸く、重い輪郭を持つ。装甲は追加の殻のようで、水中や低重力環境での衝撃に耐える。",
       "当初はブルワーズに所属し、後に鉄華団へ奪われた。機体自体は変わらない。変わったのは、操縦する者とその理由である。"
+    ],
+    "en": [
+      "Gusion's silhouette is rounder and heavier than other Gundams. Its armor is like an extra shell, suited to absorbing impacts underwater or in low gravity.",
+      "It first belonged to Brewers and was later taken by Tekkadan. The machine itself did not change; what changed were the people piloting it and their reasons."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "锤矛",
-        "ja": "メイス"
+        "ja": "メイス",
+        "en": "Mace"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "机枪",
-        "ja": "マシンガン"
+        "ja": "マシンガン",
+        "en": "Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -88,7 +96,8 @@
       "sources": [
         {
           "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "alaya-vijnana"
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

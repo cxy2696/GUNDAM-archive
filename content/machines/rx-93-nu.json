@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "阿姆罗·雷为阿克西斯作战专门定制的 NT 专用机。精神感应框架与六枚飞翼浮游炮，把“驾驶员意识”直接变成了机体的一部分。",
-    "ja": "アムロ・レイがアクシズ作戦のために特注したNT専用機。サイコフレームと六基のフィン・ファンネルにより、「パイロットの意識」を機体の一部へ変えた。"
+    "ja": "アムロ・レイがアクシズ作戦のために特注したNT専用機。サイコフレームと六基のフィン・ファンネルにより、「パイロットの意識」を機体の一部へ変えた。",
+    "en": "The Newtype-use machine Amuro Ray had specially built for the Axis operation. Its psycho-frame and six fin funnels turn the pilot's consciousness directly into part of the machine."
   },
   "description": {
     "zh": [
@@ -34,54 +35,64 @@
     "ja": [
       "νガンダムはアナハイムが極短期間で完成させ、アムロ個人の操作癖とニュータイプ感応を最優先した設計となった。コクピット周辺に組み込まれたサイコフレームにより、機体の応答はパイロットの意図とほぼ同期する。",
       "フィン・ファンネルは遠隔火力であると同時に、回収可能な推進・防御ユニットでもある。U.C.0093のアクシズ作戦ではサザビーと要塞内部で交戦し、最後はサイコフレームの共振で地球直撃を阻止した。"
+    ],
+    "en": [
+      "The Nu Gundam was completed by Anaheim in an extremely short time, with priority given to Amuro's personal operating habits and Newtype perception. The psycho-frame was embedded around the cockpit, making the machine's response almost synchronous with the pilot's intent.",
+      "The fin funnels are both long-range firepower and recoverable propulsion and defense units. In the Axis operation of U.C.0093, the machine fought the Sazabi inside the fortress, and finally stopped the direct strike on Earth through the resonance of the psycho-frame."
     ]
   },
   "specs": {
-    "heightOverall": 22.0,
-    "heightHead": 20.0,
+    "heightOverall": 22,
+    "heightHead": 20,
     "weightEmpty": 27.9,
-    "weightFull": 63.0,
+    "weightFull": 63,
     "powerOutput": 2980,
     "thrust": 97800,
     "sensorRadius": 20000,
     "armor": {
       "zh": "高达尼姆合金",
-      "ja": "ガンダリウム合金"
+      "ja": "ガンダリウム合金",
+      "en": "Gundarium Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "飞翼浮游炮 ×6",
-        "ja": "フィン・ファンネル ×6"
+        "ja": "フィン・ファンネル ×6",
+        "en": "Fin Funnel ×6"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "超级火箭炮",
-        "ja": "ハイパー・バズーカ"
+        "ja": "ハイパー・バズーカ",
+        "en": "Hyper Bazooka"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -121,7 +132,8 @@
       "sources": [
         {
           "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Gundam: Char's Counterattack MS setting materials"
         }
       ]
     },
@@ -136,7 +148,8 @@
       "sources": [
         {
           "label": "《机动战士高达 UC》设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Gundam Unicorn setting materials"
         }
       ]
     },
@@ -150,8 +163,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     },
@@ -165,7 +181,8 @@
       "sources": [
         {
           "label": "《机动战士高达 逆袭的夏亚 贝托蒂嘉的子嗣》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Char's Counterattack - Beltorchika's Children mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "funnel"
@@ -189,11 +206,13 @@
   "sources": [
     {
       "label": "剧场版《机动战士高达 逆袭的夏亚》",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Theatrical film \"Mobile Suit Gundam: Char's Counterattack\""
     },
     {
       "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam: Char's Counterattack MS setting materials"
     }
   ],
   "disputed": false,

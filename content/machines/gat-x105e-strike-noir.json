@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军第 81 独立机动群的黑衣强袭，以双短枪进行近距压制。",
-    "ja": "地球連合軍第81独立機動群の黒衣のストライク。二丁のショートガンで近距離制圧を行う。"
+    "ja": "地球連合軍第81独立機動群の黒衣のストライク。二丁のショートガンで近距離制圧を行う。",
+    "en": "The Earth Alliance 81st Independent Mobile Group's black Strike, suppressing at close range with twin short guns."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ストライクノワールはストライクの再設計型で、ファントムペインの暗色作戦のために用意された。二丁のショートガンにより艦内やコロニー街路でも素早く射角を変えられる。",
       "黒い塗装はステルスではなく標識である。この機体が行う任務は、通常、公式記録には残らない。"
+    ],
+    "en": [
+      "The Strike Noir is a redesign of the Strike Gundam, prepared for Phantom Pain's dark operations. Its twin short guns let it turn and fire quickly both inside ships and on colony streets.",
+      "Its black paint is a marker, not stealth: the missions this machine flies usually do not appear in official records."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "双短枪 ×2",
-        "ja": "ショートガン ×2"
+        "ja": "ショートガン ×2",
+        "en": "Short Gun ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达SEED C.E.73 STARGAZER》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED C.E.73 STARGAZER\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "强袭高达的同型机，以嫣红涂装与追加推进器活跃于奥布战线。",
-    "ja": "ストライクの同型機。ストライクルージュの塗装と追加スラスターでオーブ戦線を戦う。"
+    "ja": "ストライクの同型機。ストライクルージュの塗装と追加スラスターでオーブ戦線を戦う。",
+    "en": "A sister machine of the Strike Gundam, active on the Orb front with crimson paint and additional thrusters."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ストライクルージュはストライクの予備部品とデータを基に、オーブ風の紅い塗装を施した機体である。換装バックパックのインターフェースは残るが、空戦形態で出撃することが多い。",
       "「もう一機のストライク」と呼ばれるが、乗る者も選択も異なる。同じ骨格が、まったく別の戦場へ向かうことができる。"
+    ],
+    "en": [
+      "The Strike Rouge is based on spare parts and data from the Strike Gundam, repainted in an Orb-style crimson. It keeps the backpack interface for equipment swaps but more often sorties in aerial-combat form.",
+      "It is often seen as 'another Strike', but it carried different pilots and different choices. The same frame can go to completely different battlefields."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

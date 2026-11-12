@@ -1,8 +1,8 @@
 {
   "name": "gundam-archive",
-  "version": "3.1.3",
+  "version": "3.2.0",
   "private": true,
-  "description": "GUNDAM Archive — an interactive, traceable mobile-suit archive with a 12-era 2D/3D atlas, 3D relationship graphs, a Chinese/Japanese site and English documentation.",
+  "description": "GUNDAM Archive — an interactive, source-traced mobile-suit archive with a 12-era 2D/3D atlas, 3D relationship graphs, detailed procedural models and a Chinese/Japanese/English site.",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -19,7 +19,8 @@
     "predev": "tsx scripts/build-search-index.ts",
     "routes:check": "node scripts/check-routes.mjs",
     "content:audit": "node scripts/check-content.mjs",
-    "check:prebuild": "npm run validate && npm run content:audit && npm run docs:check && npm run typecheck && npm run language:check"
+    "check:prebuild": "npm run validate && npm run content:audit && npm run docs:check && npm run typecheck && npm run language:check && npm run translations:check",
+    "translations:check": "node scripts/check-translations.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.9",

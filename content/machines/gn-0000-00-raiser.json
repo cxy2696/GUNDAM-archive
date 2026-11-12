@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "00 高达与 0-Raiser 合体后的形态，双太阳炉同步带来超越常规的粒子输出。",
-    "ja": "ダブルオーガンダムと0-ライザーの合体形態。ツインドライヴの同期により通常を超える粒子出力を得る。"
+    "ja": "ダブルオーガンダムと0-ライザーの合体形態。ツインドライヴの同期により通常を超える粒子出力を得る。",
+    "en": "The form of the 00 Gundam combined with the 0-Raiser, whose twin solar furnace synchronization produces particle output beyond the norm."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ダブルオーライザーはツインドライヴの同期と0-ライザーの強化で、刹那の機体を理論限界まで押し上げた。高機動格闘だけでなく巨大な粒子場で戦場へ干渉し、ソレスタルビーイングが再び世界へ介入する鍵となった。"
+    ],
+    "en": [
+      "The 00 Raiser uses twin-drive synchronization and the 0-Raiser's reinforcement parts to push Setsuna's machine to its theoretical limit. It can not only perform high-mobility close combat but also interfere with the battlefield through a huge particle field, becoming the key for Celestial Being to re-enter the world."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "GN 剑 II ×2",
-        "ja": "GNソードII ×2"
+        "ja": "GNソードII ×2",
+        "en": "GN Sword II ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 光束军刀 ×2",
-        "ja": "GNビームサーベル ×2"
+        "ja": "GNビームサーベル ×2",
+        "en": "GN Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 火神炮 ×2",
-        "ja": "GNバルカン ×2"
+        "ja": "GNバルカン ×2",
+        "en": "GN Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     }
@@ -108,13 +116,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 00 第二季》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 00 第二季》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam 00 Season 2\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

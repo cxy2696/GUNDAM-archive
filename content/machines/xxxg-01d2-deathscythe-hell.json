@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "死神高达的后继机，以活动披风与双刃光束镰刀强化隐密战。",
-    "ja": "ガンダムデスサイズの後継機。アクティブクロークとツインビームサイズで隠密戦を強化した。"
+    "ja": "ガンダムデスサイズの後継機。アクティブクロークとツインビームサイズで隠密戦を強化した。",
+    "en": "The successor to the Deathscythe, strengthening stealth combat with an active cloak and a twin-beam scythe."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムデスサイズヘルは隠密を「見つかりにくくする」段階から「視界を能動的に制御する」段階へ進めた。アクティブクロークは妨害面として展開し、近接戦では盾にもなる。",
       "ツインビームサイズの輪郭は先代より大げさだが、使用の論理は変わらない。相手が気づく前に戦いを終えることだ。"
+    ],
+    "en": [
+      "The Deathscythe Hell pushes stealth from 'reducing the chance of detection' to 'actively controlling the field of view'. Its active cloak can unfold into a jamming surface and also serve as a shield in close combat.",
+      "The twin-beam scythe's silhouette is more exaggerated than its predecessor's, but the logic of use is unchanged: end the battle before the opponent notices."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "双刃光束镰刀",
-        "ja": "ツインビームサイズ"
+        "ja": "ツインビームサイズ",
+        "en": "Twin Beam Scythe"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "活动披风",
-        "ja": "アクティブクローク"
+        "ja": "アクティブクローク",
+        "en": "Active Cloak"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing: Endless Waltz\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

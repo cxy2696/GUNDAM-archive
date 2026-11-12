@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "杰特克公司的决斗型高达，由古尔·杰特克驾驶。",
-    "ja": "ジェターク社の決闘型ガンダム。グエル・ジェタークが駆る。"
+    "ja": "ジェターク社の決闘型ガンダム。グエル・ジェタークが駆る。",
+    "en": "Jeturk's duel-type Gundam, piloted by Guel Jeturk."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ダリルバルデは決闘の規則に最適化された機体である。動作応答と武器切り替えは調整され、学園の規則内での一対一の決闘に適する。",
       "だが戦争は学園の規則を守らない。この機体が最後に向き合うのは、「決闘機」から本物の戦場機へなれるかという問いである。"
+    ],
+    "en": [
+      "The Darilbalde is a machine optimized for dueling rules. Its motion response and weapon switching were tuned for one-on-one duels under the academy's rules.",
+      "But war does not follow the academy's rules. The question the machine ultimately faces is whether it can go from a 'dueling machine' to a competent battlefield machine."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "GUND 格式化",
-        "ja": "GUNDフォーマット"
+        "ja": "GUNDフォーマット",
+        "en": "GUND Format"
       },
       "type": "special"
     }
@@ -94,7 +103,8 @@
       "sources": [
         {
           "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gund-format"
@@ -118,12 +128,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 水星的魔女》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

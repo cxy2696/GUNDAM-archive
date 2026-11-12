@@ -104,23 +104,23 @@ function WheelScene({
 
   return (
     <>
-      <color attach="background" args={["#03060e"]} />
-      <ambientLight intensity={0.8} color="#9cc7e8" />
-      <pointLight position={[4, 8, 6]} intensity={2.4} color="#eaf6ff" />
-      <pointLight position={[-5, -4, -5]} intensity={1.4} color="#9a86ff" />
+      <color attach="background" args={["#010603"]} />
+      <ambientLight intensity={0.8} color="#a9e8bf" />
+      <pointLight position={[4, 8, 6]} intensity={2.4} color="#eafff0" />
+      <pointLight position={[-5, -4, -5]} intensity={1.4} color="#b4ff6a" />
       <Stars radius={50} depth={30} count={1400} factor={3} saturation={0.35} fade speed={0.3} />
 
       <group ref={group}>
         <mesh position={[0, 0, 0]}>
           <cylinderGeometry args={[0.035, 0.035, 6.6, 16]} />
-          <meshStandardMaterial color="#63e6ff" emissive="#63e6ff" emissiveIntensity={0.9} transparent opacity={0.7} />
+          <meshStandardMaterial color="#58ff9d" emissive="#58ff9d" emissiveIntensity={0.9} transparent opacity={0.7} />
         </mesh>
         <mesh position={[0, -3.35, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <ringGeometry args={[0.2, 3.9, 96]} />
           <meshBasicMaterial color="#1e4468" transparent opacity={0.08} side={THREE.DoubleSide} />
         </mesh>
 
-        <Line points={points} color="#ffb648" transparent opacity={0.28} lineWidth={1} dashed dashSize={0.08} gapSize={0.14} />
+        <Line points={points} color="#d8ff63" transparent opacity={0.28} lineWidth={1} dashed dashSize={0.08} gapSize={0.14} />
 
         {items.map((item, index) => (
           <Ring

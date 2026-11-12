@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle, getCharacter, getEra, getFaction, getMachine } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick, pickList } from "@/lib/i18n";
 import { formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { CharacterMark } from "@/components/Emblems";
@@ -30,7 +30,7 @@ export async function generateMetadata({
     description: pick(character.role, lang),
     alternates: {
       canonical: `/${lang}/characters/${character.id}/`,
-      languages: { "zh-CN": `/zh/characters/${character.id}/`, "ja-JP": `/ja/characters/${character.id}/` },
+      languages: languageAlternates(`/characters/${character.id}`),
     },
   };
 }
@@ -176,7 +176,7 @@ export default async function CharacterPage({
             <div className="section__top">
               <span className="micro">01 / {dict.machine.overview}</span>
             </div>
-            {character.bio[typed].map((paragraph) => (
+            {pickList(character.bio, typed).map((paragraph) => (
               <p key={paragraph.slice(0, 24)} className="profile-paragraph">
                 {paragraph}
               </p>

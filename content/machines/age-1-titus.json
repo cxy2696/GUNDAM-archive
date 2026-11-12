@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "AGE-1 的格斗换装形态，以光束拳套与重装甲进行近身战。",
-    "ja": "AGE-1の格闘換装形態。ビームナックルと重装甲で近接戦を行う。"
+    "ja": "AGE-1の格闘換装形態。ビームナックルと重装甲で近接戦を行う。",
+    "en": "A close-combat wear configuration of the AGE-1, fighting at close range with beam knuckles and heavy armor."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "タイタスはAGE-1の四肢をより重厚な格闘ユニットへ換装した形態である。ビームナックルは接触の瞬間に高エネルギー粒子を放ち、拳を装甲貫通用の武器へ変える。",
       "動きは標準型より遅いが、一撃は重い。フリットにとって、ヴェイガン機と至近距離で向き合うための最も直接的な答えだった。"
+    ],
+    "en": [
+      "The Titus replaces the AGE-1's limbs with heavier close-combat components. The beam knuckles release high-energy particles on contact, turning a punch into a weapon that penetrates armor.",
+      "It moves more slowly than the standard type, but every blow is heavier. For Flit, this was the most direct answer when facing Vagan mobile suits at close range."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束拳套",
-        "ja": "ビームナックル"
+        "ja": "ビームナックル",
+        "en": "Beam Knuckle"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 AGE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam AGE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

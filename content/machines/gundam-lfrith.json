@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "凡娜迪斯机构开发的 GUND 格式化高达，是风灵高达的前身。",
-    "ja": "ヴァナディース機関が開発したGUNDフォーマット搭載ガンダム。エアリアルの前身である。"
+    "ja": "ヴァナディース機関が開発したGUNDフォーマット搭載ガンダム。エアリアルの前身である。",
+    "en": "The GUND Format Gundam developed by the Vanadis Institute, the predecessor of the Gundam Aerial."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ルブリスはヴァナディース機関が医療用途に開発したGUNDフォーマット搭載機である。人体の神経と機体を直接接続し、パイロットは自分の身体のようにMSを操作できる。",
       "GUNDフォーマットは後に軍事利用され、パイロットはデータストームと身体負担を負うことになった。"
+    ],
+    "en": [
+      "The Lfrith is a GUND Format machine developed by the Vanadis Institute for medical use. It connects the human nervous system directly to the machine, letting the pilot control the MS as if it were their own body.",
+      "GUND Format was later used for military purposes, and pilots had to endure the data storm and its physical burden."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "GUND 格式化",
-        "ja": "GUNDフォーマット"
+        "ja": "GUNDフォーマット",
+        "en": "GUND Format"
       },
       "type": "special"
     }
@@ -94,7 +103,8 @@
       "sources": [
         {
           "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gund-format"
@@ -109,7 +119,8 @@
       "sources": [
         {
           "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gund-format"
@@ -124,7 +135,8 @@
       "sources": [
         {
           "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gund-format"
@@ -139,7 +151,8 @@
       "sources": [
         {
           "label": "《机动战士高达 水星的魔女》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The Witch from Mercury mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gund-format"
@@ -155,7 +168,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -178,12 +192,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 水星的魔女 PROLOGUE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The Witch from Mercury PROLOGUE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

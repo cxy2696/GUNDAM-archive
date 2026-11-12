@@ -12,8 +12,8 @@ import "@/styles/zoom.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive"),
-  title: "GUNDAM Archive · 机动战士档案",
-  description: "可交互、可追溯的机动战士档案馆。",
+  title: "GUNDAM Archive · Mobile Suit Dossier",
+  description: "An interactive, source-traced mobile suit archive.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

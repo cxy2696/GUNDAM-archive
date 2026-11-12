@@ -28,21 +28,33 @@ const jaPatterns = [
   [/証言/, "「証言」評論調"],
   [/まるで|あたかも/, "比喩テンプレート"],
 ];
+const enPatterns = [
+  [/\bnot just\b/i, "“not just” template"],
+  [/\bmore than just\b/i, "“more than just” template"],
+  [/\bstands? as\b/i, "“stands as” review voice"],
+  [/\btestament to\b/i, "“testament to” review voice"],
+  [/\bin a world where\b/i, "“in a world where” trailer voice"],
+  [/\btruly\b/i, "empty intensifier “truly”"],
+  [/\bdelve\b/i, "“delve” filler"],
+  [/\btapestry\b/i, "“tapestry” filler"],
+  [/\bunforgettable\b/i, "marketing language"],
+  [/\bmasterpiece\b/i, "marketing language"],
+];
 const errors = [];
 
 function scan(label, value, lang) {
   if (typeof value !== "string") return;
-  const patterns = lang === "zh" ? zhPatterns : jaPatterns;
+  const patterns = lang === "zh" ? zhPatterns : lang === "ja" ? jaPatterns : enPatterns;
   for (const [pattern, reason] of patterns) {
     if (pattern.test(value)) errors.push(`${label} [${lang}] ${reason}: ${value.slice(0, 48)}…`);
   }
-  const max = lang === "zh" ? 260 : 320;
+  const max = lang === "zh" ? 260 : lang === "ja" ? 320 : 500;
   if (value.length > max) errors.push(`${label} [${lang}] 段落过长 (${value.length} > ${max})`);
 }
 
 function walkLocalized(label, value) {
   if (!value || typeof value !== "object") return;
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     const text = value[lang];
     if (typeof text === "string") scan(label, text, lang);
     if (Array.isArray(text)) text.forEach((item, index) => scan(`${label}[${index}]`, item, lang));
@@ -58,6 +70,9 @@ function walkItem(file, item) {
   }
   if (item.summary && typeof item.summary.ja === "string" && item.summary.ja.length > 120) {
     errors.push(`${path.basename(file)}:${item.id}.summary [ja] 要約が長い (${item.summary.ja.length} > 120)`);
+  }
+  if (item.summary && typeof item.summary.en === "string" && item.summary.en.length > 260) {
+    errors.push(`${path.basename(file)}:${item.id}.summary [en] summary too long (${item.summary.en.length} > 260)`);
   }
 }
 

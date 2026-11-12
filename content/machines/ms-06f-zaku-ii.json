@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "吉翁公国的主力量产机，也是“机动战士”这一兵器概念最早成形的载体。单机性能平庸，却以产量与泛用性撑起了整场一年战争。",
-    "ja": "ジオン公国の主力量産機であり、「モビルスーツ」という兵器概念が最初に結実した機体。単機性能は凡庸だが、生産性と汎用性で一年戦争を支えた。"
+    "ja": "ジオン公国の主力量産機であり、「モビルスーツ」という兵器概念が最初に結実した機体。単機性能は凡庸だが、生産性と汎用性で一年戦争を支えた。",
+    "en": "The Principality of Zeon's main mass-production machine, and the earliest carrier of the 'mobile suit' weapon concept. Its individual performance was mediocre, but its production volume and versatility sustained the entire One Year War."
   },
   "description": {
     "zh": [
@@ -34,47 +35,56 @@
     "ja": [
       "MS-06FはザクIの全面改良型で、熱核反応炉と超硬鋼装甲を採用。武装は120mmマシンガン、ヒートホーク、ザク・バズーカが中心である。整備性に優れ、コロニーの工場でも前線の簡易ドックでも整備できた。",
       "ルウム戦役から地球降下作戦まで、ザクIIは一年戦争のほぼ全ての戦線に現れた。最強のMSではないが、ジオンの「量産技術で戦争を起こす」戦略を最もよく示す機体である。"
+    ],
+    "en": [
+      "The MS-06F is a full improvement over the Zaku I, using a thermonuclear reactor and super-hard steel armor, armed mainly with a 120mm machine gun, heat hawk and Zaku bazooka. It is extremely easy to maintain; both colony factories and simple front-line docks can service it.",
+      "From the Battle of Loum to the Earth landing operations, the Zaku II appears on almost every front of the One Year War. It is not the strongest MS, but it best illustrates Zeon's strategy of waging war with mass-production technology."
     ]
   },
   "specs": {
     "heightOverall": 17.5,
     "heightHead": 17.5,
     "weightEmpty": 58.1,
-    "weightFull": 78.0,
+    "weightFull": 78,
     "powerOutput": 951,
     "thrust": 43200,
     "sensorRadius": 3200,
     "armor": {
       "zh": "超硬钢合金",
-      "ja": "超硬鋼合金"
+      "ja": "超硬鋼合金",
+      "en": "Super-Hard Steel Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "120mm 扎古机枪",
-        "ja": "120mmザク・マシンガン"
+        "ja": "120mmザク・マシンガン",
+        "en": "120mm Zaku Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "热能斧",
-        "ja": "ヒートホーク"
+        "ja": "ヒートホーク",
+        "en": "Heat Hawk"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "扎古火箭炮",
-        "ja": "ザク・バズーカ"
+        "ja": "ザク・バズーカ",
+        "en": "Zaku Bazooka"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "腿部导弹荚舱 ×2",
-        "ja": "脚部ミサイル・ポッド ×2"
+        "ja": "脚部ミサイル・ポッド ×2",
+        "en": "Leg Missile Pod ×2"
       },
       "type": "kinetic"
     }
@@ -104,7 +114,8 @@
       "sources": [
         {
           "label": "《机动战士高达》MSV 设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Gundam MSV setting materials"
         }
       ]
     }
@@ -127,11 +138,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士高达》第 1—43 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 1–43"
     },
     {
       "label": "《机动战士高达》MSV 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam MSV setting materials"
     }
   ],
   "disputed": false,

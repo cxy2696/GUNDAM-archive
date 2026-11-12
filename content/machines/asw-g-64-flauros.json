@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "厄祭战时代的高达，以远程炮击与变形机构支援铁华团。",
-    "ja": "厄祭戦時代のガンダム。遠距離砲撃と変形機構で鉄華団を支援する。"
+    "ja": "厄祭戦時代のガンダム。遠距離砲撃と変形機構で鉄華団を支援する。",
+    "en": "A Gundam from the Calamity War era, supporting Tekkadan with long-range artillery and a transformation mechanism."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "フラウロスは鉄華団の中でも火力が突出している。遠距離から砲とミサイルで敵陣を削り、MA形態へ変形して迅速に移動できる。",
       "ノルバ・シノが駆る時、この機体の仕事は「仲間を生き残らせること」である。火力は栄光ではなく責任だ。"
+    ],
+    "en": [
+      "Flauros has the most prominent firepower in Tekkadan. It can weaken enemy formations at long range with its cannon and missiles, and can transform into an MA form to relocate quickly.",
+      "When Norba Shino piloted it, the machine's job was to keep his teammates alive. Firepower is not glory; it is responsibility."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "火炮",
-        "ja": "キャノン"
+        "ja": "キャノン",
+        "en": "Cannon"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "导弹",
-        "ja": "ミサイル"
+        "ja": "ミサイル",
+        "en": "Missile"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -89,7 +97,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

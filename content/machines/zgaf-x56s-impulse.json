@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "扎夫特的新世代高达，以分离合体与换装背包适应多种战况。",
-    "ja": "ザフトの新世代ガンダム。分離合体と換装バックパックで多様な戦況に対応する。"
+    "ja": "ザフトの新世代ガンダム。分離合体と換装バックパックで多様な戦況に対応する。",
+    "en": "ZAFT's new-generation Gundam, adapting to many situations with separation/combination and equipment packs."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "インパルスは「換装」を構造そのものにした機体である。コア・ファイター、胸部、脚部、バックパックに分かれ、戦場で分離・再構成・装備交換ができる。",
       "補給が困難な状況でも戦闘力を保てる一方、パイロットには複雑な合体論理の理解が求められる。「学ぶ」ことで扱えるガンダムだ。"
+    ],
+    "en": [
+      "The Impulse Gundam makes 'equipment swapping' part of its structure. It consists of a core fighter, chest, legs and backpack, and can separate, reassemble and change equipment on the battlefield.",
+      "This design keeps it fighting even when supplies are difficult, but it also requires the pilot to understand a complex combination logic. It is a Gundam that must be 'learned' before it can be flown well."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "分离合体",
-        "ja": "分離合体"
+        "ja": "分離合体",
+        "en": "Separation/Combination"
       },
       "type": "special"
     }
@@ -98,7 +107,8 @@
       "sources": [
         {
           "label": "《机动战士高达 SEED DESTINY》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam SEED Destiny mobile suit setting materials (compiled lineage)"
         }
       ]
     }
@@ -121,12 +131,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED DESTINY》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED Destiny\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

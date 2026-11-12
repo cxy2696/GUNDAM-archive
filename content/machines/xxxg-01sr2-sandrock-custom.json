@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "沙漠高达的后继机，盾牌可展开为十字粉碎爪。",
-    "ja": "ガンダムサンドロックの後継機。盾はクロスクラッシャーとして展開する。"
+    "ja": "ガンダムサンドロックの後継機。盾はクロスクラッシャーとして展開する。",
+    "en": "The successor to the Sandrock, whose shield unfolds into a cross crusher claw."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムサンドロック改で最も目を引く変化は巨大な盾である。単なる防御装備ではなく、クロスクラッシャーとして展開する近接武器になった。",
       "機体全体は依然として砂漠と近接戦を軸に設計されているが、動きはより成熟している。戦争で一度研がれた古い刀のように、刃先は以前より安定している。"
+    ],
+    "en": [
+      "The most visible change in the Sandrock Custom is that huge shield. It is defensive equipment and can also unfold into a close-range cross crusher claw.",
+      "The machine as a whole is still designed around desert and close combat, but its movements are more mature. It is like an old blade worn by war, its edge steadier than before."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "热弯刀 ×2",
-        "ja": "ヒートショーテル ×2"
+        "ja": "ヒートショーテル ×2",
+        "en": "Heat Shotel ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "十字粉碎盾",
-        "ja": "クロスクラッシャー"
+        "ja": "クロスクラッシャー",
+        "en": "Cross Crusher Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing: Endless Waltz\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

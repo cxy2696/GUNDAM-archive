@@ -2,6 +2,7 @@ export const dynamic = "force-static";
 
 import type { MetadataRoute } from "next";
 import { getBundle } from "@/lib/content";
+import { LANGS } from "@/lib/schema";
 
 const base = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://cxy2696.github.io/GUNDAM-archive").replace(/\/$/, "");
 
@@ -11,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-11-12T00:00:00.000Z");
 
   const entries: MetadataRoute.Sitemap = [];
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of LANGS) {
     for (const path of staticPaths) {
       entries.push({
         url: `${base}/${lang}${path}/`,

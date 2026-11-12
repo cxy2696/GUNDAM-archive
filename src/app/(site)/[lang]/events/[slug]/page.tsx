@@ -4,7 +4,7 @@ import { RelationGraph } from "@/components/graph/RelationGraph";
 import { buildEventGraph } from "@/lib/graph";
 import { notFound } from "next/navigation";
 import { getBundle, getEvent, getEra, getFaction, getMachine, getPlace, getCharacter } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick, pickList, sourceLabel } from "@/lib/i18n";
 import { formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 
@@ -28,10 +28,7 @@ export async function generateMetadata({
     description: pick(event.summary, lang),
     alternates: {
       canonical: `/${lang}/events/${event.id}/`,
-      languages: {
-        "zh-CN": `/zh/events/${event.id}/`,
-        "ja-JP": `/ja/events/${event.id}/`,
-      },
+      languages: languageAlternates(`/events/${event.id}`),
     },
   };
 }
@@ -128,7 +125,7 @@ export default async function EventPage({
               <span className="micro">01 / {dict.timeline.eventCourse}</span>
               <span className="mono">{era?.code} / EVENT RECORD</span>
             </div>
-            {event.detail[typed].map((paragraph) => (
+            {pickList(event.detail, typed).map((paragraph) => (
               <p key={paragraph.slice(0, 24)} className="event-paragraph">{paragraph}</p>
             ))}
           </section>
@@ -202,7 +199,7 @@ export default async function EventPage({
             <span className="micro">{dict.common.source}</span>
             {event.sources.map((source) => (
               <span key={source.label} className="event-source">
-                <b>{source.level}</b> {source.label}
+                <b>{source.level}</b> {sourceLabel(source, typed)}
               </span>
             ))}
           </div>

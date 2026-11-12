@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "魔灵系列的重装变体，以火力与装甲支援小队。",
-    "ja": "ルブリス系の重装変体。火力と装甲で小隊を支援する。"
+    "ja": "ルブリス系の重装変体。火力と装甲で小隊を支援する。",
+    "en": "A heavy-armor variant of the Lfrith series, supporting squads with firepower and armor."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ウルはルブリス系の中でも重装支援寄りである。装甲は厚く、武装インターフェースも多く、正面交火で仲間の代わりに最初の一撃を受ける。",
       "ソーンと同じく、学園の演習ではない戦場へ投入される。機体が兵器に近づくほど、乗る子どもたちは子どもとして扱われにくくなる。"
+    ],
+    "en": [
+      "The Ur leans toward heavy support within the Lfrith series. Its armor is thicker and its weapon interfaces more numerous, suited to taking the first round of attacks for teammates in a head-on exchange.",
+      "Like the Thorn, it was sent to battlefields that were not academy exercises. The more the machine resembles a weapon, the harder it is to treat the children piloting it as children."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -97,12 +105,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 水星的魔女》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

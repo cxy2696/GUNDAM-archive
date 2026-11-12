@@ -10,3 +10,4 @@ next-env.d.ts
 # generated at build time
 public/search-index.zh.json
 public/search-index.ja.json
+public/search-index.en.json

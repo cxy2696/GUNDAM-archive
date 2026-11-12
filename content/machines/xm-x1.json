@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "十字骨先锋的海盗高达，小型化机体与 ABC 披风的结合。",
-    "ja": "クロスボーン・バンガードの海賊ガンダム。小型化機体とABCマントの組み合わせ。"
+    "ja": "クロスボーン・バンガードの海賊ガンダム。小型化機体とABCマントの組み合わせ。",
+    "en": "The Crossbone Vanguard's pirate Gundam, a combination of a miniaturized machine and an ABC Mantle."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "X-1は宇宙世紀0133年の小型化ガンダムである。骨格は緊密で装甲は薄いが、ABCマントとビーム・ザンバーによって体格以上の生存性を得た。",
       "海賊旗は飾りではない。クロスボーン・バンガードにとって、この機体は木星圏の正規軍の隙間を動くための中量級であり、隠密・快速・一撃離脱が正面火力より重要だった。"
+    ],
+    "en": [
+      "The X-1 is a miniaturized Gundam of U.C.0133. Its frame is compact and its armor light, but through the ABC Mantle and beam Zanber it gains survivability beyond its size.",
+      "The pirate flag is not decoration. For the Crossbone Vanguard, the machine must operate in the gaps of the regular forces in the Jupiter sphere; concealment, speed and a single clean break matter more than head-on firepower."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束 Zanber",
-        "ja": "ビーム・ザンバー"
+        "ja": "ビーム・ザンバー",
+        "en": "Beam Zanber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束枪",
-        "ja": "ビームガン"
+        "ja": "ビームガン",
+        "en": "Beam Gun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "ABC 披风",
-        "ja": "ABCマント"
+        "ja": "ABCマント",
+        "en": "ABC Mantle"
       },
       "type": "special"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《机动战士海盗高达》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Crossbone Gundam mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -119,12 +129,16 @@
   "sources": [
     {
       "label": "《机动战士海盗高达》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Crossbone Gundam original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

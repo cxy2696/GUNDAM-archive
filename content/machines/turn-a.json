@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "被埋在正历地球地下的“黑历史”遗物。月光蝶与纳米机械群让它既是文明的守护者，也是能够终结文明的最终兵器。",
-    "ja": "正暦の地球地下に埋もれていた「黒歴史」の遺物。月光蝶とナノマシン群により、文明の守護者であると同時に文明を終わらせうる最終兵器でもある。"
+    "ja": "正暦の地球地下に埋もれていた「黒歴史」の遺物。月光蝶とナノマシン群により、文明の守護者であると同時に文明を終わらせうる最終兵器でもある。",
+    "en": "A 'Dark History' relic buried beneath the Earth of the Correct Century. The Moonlight Butterfly and nanomachine swarm make it both a guardian of civilization and a final weapon capable of ending it."
   },
   "description": {
     "zh": [
@@ -32,11 +33,15 @@
     "ja": [
       "ターンAの機体ラインは他のガンダムと大きく異なる。丸みを帯びた胸甲、髭のような金色の放熱板、展開可能な月光蝶。その技術的出自は歴史記録から意図的に消され、「黒歴史」という曖昧な呼称だけが残った。",
       "ロラン・セアックはイングレッサの紛争でこの機体を起動した。月光蝶が完全展開すれば、沿道の金属と電子機器を分子レベルまで分解する。ゆえにターンAの出撃は常に「最終兵器を使う価値があるか」という問いを伴う。"
+    ],
+    "en": [
+      "The Turn A's lines are completely different from other Gundams: a rounded chest armor, a gold heat sink like a mustache, and a deployable Moonlight Butterfly. Its technological origin was deliberately erased from historical records, leaving only the vague label 'Dark History'.",
+      "Loran Cehack activated it during the Inglessa conflict. Once the Moonlight Butterfly fully unfolds, it breaks down metal and electronic devices along its path to the molecular level; every sortie of the Turn A is therefore a question of whether the final weapon is worth using."
     ]
   },
   "specs": {
-    "heightOverall": 20.0,
-    "heightHead": 20.0,
+    "heightOverall": 20,
+    "heightHead": 20,
     "weightEmpty": 17.5,
     "weightFull": null,
     "powerOutput": 27000,
@@ -47,28 +52,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "月光蝶",
-        "ja": "月光蝶"
+        "ja": "月光蝶",
+        "en": "Moonlight Butterfly"
       },
       "type": "special"
     }
@@ -114,11 +123,13 @@
   "sources": [
     {
       "label": "TV 动画《∀高达》全 50 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Turn A Gundam\" all 50 episodes"
     },
     {
       "label": "《∀高达》黑历史设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Turn A Gundam Dark History setting materials"
     }
   ],
   "disputed": false,

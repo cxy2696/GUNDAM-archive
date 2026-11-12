@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "深宇宙探测机构的观测型高达，以光束环与自律推进进行非战斗任务。",
-    "ja": "深宇宙探査機構の観測型ガンダム。ビームリングと自律推進で非戦闘任務に就く。"
+    "ja": "深宇宙探査機構の観測型ガンダム。ビームリングと自律推進で非戦闘任務に就く。",
+    "en": "The Deep Space Survey Organization's observation Gundam, carrying out non-combat missions with a beam ring and autonomous propulsion."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "スターゲイザーは戦闘のために生まれたガンダムではない。主任務は深宇宙観測とデータ回収であり、ビームリングは攻撃ではなく防御と姿勢制御に使う。",
       "C.E.73の混乱の中で戦場に巻き込まれる。この機体の最も美しい点は、「破壊」ではなく「観測」の立場を最後まで捨てなかったことだ。"
+    ],
+    "en": [
+      "The Stargazer is not a Gundam born for battle. Its main missions are deep-space observation and data recovery; the beam ring is used for defense and attitude control, not attack.",
+      "In the chaos of C.E.73 it is forced into battle. The most moving thing about the machine is that it never gives up its position of 'observing' rather than 'destroying'."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束环",
-        "ja": "ビームリング"
+        "ja": "ビームリング",
+        "en": "Beam Ring"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "推进器",
-        "ja": "スラスター"
+        "ja": "スラスター",
+        "en": "Thruster"
       },
       "type": "special"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达SEED C.E.73 STARGAZER》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED C.E.73 STARGAZER\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -46,7 +46,7 @@ function registerParagraph(kind, id, lang, text) {
 function registerName(kind, item, id) {
   const name = item.name ?? item.title;
   if (!name) return;
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     const value = name[lang];
     if (!value) continue;
     const key = `${kind}:${lang}:${value}`;
@@ -57,7 +57,7 @@ function registerName(kind, item, id) {
 
 for (const machine of machines) {
   registerName("machine", machine, machine.id);
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     registerText("machine summary", machine.id, lang, machine.summary?.[lang]);
     (machine.description?.[lang] ?? []).forEach((p) => registerParagraph("machine description", machine.id, lang, p));
   }
@@ -66,7 +66,7 @@ for (const machine of machines) {
 }
 for (const character of characters) {
   registerName("character", character, character.id);
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     (character.bio?.[lang] ?? []).forEach((p) => registerParagraph("character bio", character.id, lang, p));
   }
   const relationKeys = (character.relations ?? []).map((r) => `${r.targetId}|${r.type}`);
@@ -76,7 +76,7 @@ for (const character of characters) {
 }
 for (const event of events) {
   registerName("event", event, event.id);
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     registerText("event summary", event.id, lang, event.summary?.[lang]);
     (event.detail?.[lang] ?? []).forEach((p) => registerParagraph("event detail", event.id, lang, p));
   }
@@ -85,20 +85,20 @@ for (const event of events) {
 }
 for (const faction of factions) {
   registerName("faction", faction, faction.id);
-  for (const lang of ["zh", "ja"]) registerText("faction description", faction.id, lang, faction.description?.[lang]);
+  for (const lang of ["zh", "ja", "en"]) registerText("faction description", faction.id, lang, faction.description?.[lang]);
   const relationKeys = (faction.relations ?? []).map((r) => `${r.targetId}|${r.type}`);
   if (new Set(relationKeys).size !== relationKeys.length) errors.push(`duplicate relation in faction ${faction.id}`);
 }
 for (const tag of tags) {
   registerName("tag", tag, tag.id);
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     registerText("tag description", tag.id, lang, tag.description?.[lang]);
     (tag.detail?.[lang] ?? []).forEach((p) => registerParagraph("tag detail", tag.id, lang, p));
   }
 }
 for (const work of works) {
   registerName("work", work, work.id);
-  for (const lang of ["zh", "ja"]) registerText("work summary", work.id, lang, work.summary?.[lang]);
+  for (const lang of ["zh", "ja", "en"]) registerText("work summary", work.id, lang, work.summary?.[lang]);
 }
 for (const era of eras) registerName("era", era, era.id);
 
@@ -118,7 +118,7 @@ const jaccard = (a, b) => {
 };
 
 for (const event of events) {
-  for (const lang of ["zh", "ja"]) {
+  for (const lang of ["zh", "ja", "en"]) {
     const first = event.detail?.[lang]?.[0];
     if (!first) continue;
     const score = jaccard(event.summary?.[lang], first);

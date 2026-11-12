@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "Z 计划的后继重火力机，采用核心战机合体结构与头部高能米加粒子炮。",
-    "ja": "Ζ計画の後継重火力機。コア・ファイター合体構造と頭部ハイメガ粒子砲を備える。"
+    "ja": "Ζ計画の後継重火力機。コア・ファイター合体構造と頭部ハイメガ粒子砲を備える。",
+    "en": "The Z Project's successor heavy-firepower machine, using a core-fighter combination structure and a head high-energy mega particle cannon."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ΖΖガンダムはΖガンダムの可変フレーム経験をより安定した合体構造へ転換し、重装甲と高火力でネオ・ジオン戦争に臨んだ。単機での継戦能力を重視した結果、機体は大型化・複雑化し、整備性は課題となった。"
+    ],
+    "en": [
+      "The ZZ Gundam turns the Zeta Gundam's transformable-frame experience into a more stable combination structure, facing the Neo Zeon War with heavy armor and heavy firepower. Its design emphasizes sustained single-machine combat, but it therefore became large, complex and hard to maintain."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "头部高能米加粒子炮",
-        "ja": "頭部ハイメガ粒子砲"
+        "ja": "頭部ハイメガ粒子砲",
+        "en": "Head High-energy Mega Particle Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "导弹发射器 ×2",
-        "ja": "ミサイルランチャー ×2"
+        "ja": "ミサイルランチャー ×2",
+        "en": "Missile Launcher ×2"
       },
       "type": "kinetic"
     }
@@ -97,7 +105,8 @@
       "sources": [
         {
           "label": "《机动战士高达 逆袭的夏亚》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Char's Counterattack mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "psychoframe"
@@ -120,13 +129,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 ZZ》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 ZZ》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam ZZ\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

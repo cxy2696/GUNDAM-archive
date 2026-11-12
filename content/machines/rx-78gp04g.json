@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "GP 系列的高机动突击方案，后来被吉翁残党改造成 Gerbera Tetra。",
-    "ja": "GPシリーズの高機動突撃案。後にジオン残党によってゲルバ・テトラへ改修された。"
+    "ja": "GPシリーズの高機動突撃案。後にジオン残党によってゲルバ・テトラへ改修された。",
+    "en": "The GP series' high-mobility assault proposal, later converted by Zeon remnants into the Gerbera Tetra."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "GP04Gは連邦GP計画における高機動突撃型である。推力と近接格闘を重視し、装甲は比較的薄い。位置づけは「戦場の快速反応部隊」に近い。",
       "計画中止後、機体はジオン残党の手に渡り、塗装と武装を全面的に書き換えられた。そのため本来の名で戦場に出ることのなかったガンダムである。"
+    ],
+    "en": [
+      "The GP04G was originally the high-mobility assault type in the Federation's GP plan. It emphasized thrust and close combat, with relatively light armor, positioned close to a 'rapid reaction force on the battlefield'.",
+      "After the proposal was canceled, the machine fell into the hands of Zeon remnants, and its paint and armaments were completely rewritten. It thus became a Gundam that never fought under its original name."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -92,12 +100,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 0083 星尘的回忆》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 0083: Stardust Memory\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

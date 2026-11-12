@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军为强化人部队开发的炮击型高达，以重火力压制战场。",
-    "ja": "地球連合軍が強化人間部隊のために開発した砲撃型ガンダム。重火力で戦場を制圧する。"
+    "ja": "地球連合軍が強化人間部隊のために開発した砲撃型ガンダム。重火力で戦場を制圧する。",
+    "en": "An artillery Gundam developed by the Earth Alliance for its enhanced-human unit, suppressing the battlefield with heavy firepower."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "カラミティは連合軍の「機動と引き換えに火力を得る」発想の産物である。ビーム砲とミサイル・ポッドで短時間に広範囲を覆うが、機体自体の動きは軽快ではない。",
       "フォビドゥン、レイダーと編隊を組むことが多い。三機が制圧・突入・追撃を分担し、連合軍強化人間部隊の標準戦術を形成した。"
+    ],
+    "en": [
+      "The Calamity Gundam is a product of the Alliance's approach of trading mobility for firepower. Its beam cannon and missile pods can cover a large area in a short time, but the machine itself is not agile.",
+      "It often operated in formation with the Forbidden and the Raider. The three machines handled suppression, penetration and pursuit respectively, forming the standard tactics of the Alliance's enhanced-human unit."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束炮",
-        "ja": "ビーム砲"
+        "ja": "ビーム砲",
+        "en": "Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "导弹",
-        "ja": "ミサイル"
+        "ja": "ミサイル",
+        "en": "Missile"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

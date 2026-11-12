@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "ZAFT 开发、后被基拉·大和夺取的高性能机。相转移装甲、翼状推进器与多目标锁定系统，让它成为 C.E.71 战场上最难以击落的机体之一。",
-    "ja": "ザフトが開発し、後にキラ・ヤマトに奪取された高性能機。フェイズシフト装甲、翼状推進器、多目標ロックシステムにより、C.E.71の戦場で最も撃墜困難な機体の一つとなった。"
+    "ja": "ザフトが開発し、後にキラ・ヤマトに奪取された高性能機。フェイズシフト装甲、翼状推進器、多目標ロックシステムにより、C.E.71の戦場で最も撃墜困難な機体の一つとなった。",
+    "en": "A high-performance machine developed by ZAFT and later seized by Kira Yamato. Phase Shift armor, wing thrusters and a multi-target lock system make it one of the hardest machines to shoot down on the C.E.71 battlefield."
   },
   "description": {
     "zh": [
@@ -34,6 +35,10 @@
     "ja": [
       "フリーダムの設計目標は「単機による戦域制圧」である。翼状推進器には複数のビーム砲とミサイルが内蔵され、高精度センサーと組み合わせて短時間に多数の目標を攻撃できる。フェイズシフト装甲は実弾火力をほぼ無効化した。",
       "キラがオーブ攻防戦へ介入した後、フリーダムは地球連合とザフトの双方から独立した第三勢力の象徴となる。高い電力消費とパイロットの空間認識への極端な要求は、この機体が量産兵のためのものではないことを示している。"
+    ],
+    "en": [
+      "The Freedom's design goal is 'single-machine suppression of a battle area'. Its wing thrusters house multiple beam cannons and missiles, and with high-precision sensors it can attack several targets at once in a short time; Phase Shift armor makes it almost immune to solid-shell fire.",
+      "After Kira piloted it into the Battle of Orb, the Freedom became a symbol of a third force independent of the Earth Alliance and ZAFT. Its high power consumption and extreme demand on the pilot's spatial awareness also show that it was not designed for mass-production soldiers."
     ]
   },
   "specs": {
@@ -46,42 +51,48 @@
     "sensorRadius": null,
     "armor": {
       "zh": "相转移装甲",
-      "ja": "フェイズシフト装甲"
+      "ja": "フェイズシフト装甲",
+      "en": "Phase Shift Armor"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "磁轨炮 ×2",
-        "ja": "レールガン ×2"
+        "ja": "レールガン ×2",
+        "en": "Railgun ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "等离子集束炮 ×2",
-        "ja": "プラズマ収束砲 ×2"
+        "ja": "プラズマ収束砲 ×2",
+        "en": "Plasma Beam Cannon ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -118,8 +129,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     }
@@ -142,11 +156,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士高达 SEED》第 1—50 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Gundam SEED\" episodes 1–50"
     },
     {
       "label": "《机动战士高达 SEED》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam SEED MS setting materials"
     }
   ],
   "disputed": false,

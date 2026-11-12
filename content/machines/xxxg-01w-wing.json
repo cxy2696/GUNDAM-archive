@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "五台高达中最早投入“流星作战”的机体，可变形为巡航形态，以破坏步枪执行突袭。",
-    "ja": "五機のガンダムで最初に「オペレーション・メテオ」へ投入された機体。巡航形態へ変形し、バスターライフルで強襲する。"
+    "ja": "五機のガンダムで最初に「オペレーション・メテオ」へ投入された機体。巡航形態へ変形し、バスターライフルで強襲する。",
+    "en": "The first of the five Gundams committed to Operation Meteor, able to transform into a cruising form and raid with a buster rifle."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ウイングは変形機構と高火力ライフルを組み合わせ、単機突破と迅速な離脱を得意とする。A.C.195のコロニー独立運動でヒイロの初代機となり、後のゼロ系譜の戦術的想像力を基礎づけた。"
+    ],
+    "en": [
+      "The Wing Gundam combines a transformation mechanism with a high-firepower rifle, suited to single-machine breakthroughs and rapid withdrawal. It became Heero's first machine in the A.C.195 colony independence movement and established the tactical imagination of the later Zero lineage."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "破坏步枪",
-        "ja": "バスターライフル"
+        "ja": "バスターライフル",
+        "en": "Buster Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -109,13 +117,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《新机动战记高达 W》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《新机动战记高达 W》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam Wing\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

@@ -5,7 +5,7 @@
 .relation-graph-block {
   margin-top: 30px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 182, 72, 0.26);
+  border-top: 1px solid rgba(216, 255, 99, 0.26);
 }
 
 .relation-graph__head {
@@ -33,9 +33,9 @@
   overflow-y: hidden;
   border: 1px solid var(--line-strong);
   background:
-    radial-gradient(620px 420px at 50% 46%, rgba(154, 134, 255, 0.1), transparent 68%),
+    radial-gradient(620px 420px at 50% 46%, rgba(180, 255, 106, 0.1), transparent 68%),
     linear-gradient(180deg, #060d1c, #030710);
-  box-shadow: inset 0 0 0 1px rgba(99, 230, 255, 0.04), inset 0 0 70px rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(88, 255, 157, 0.04), inset 0 0 70px rgba(0, 0, 0, 0.55);
 }
 
 .relation-graph {
@@ -87,7 +87,7 @@
 }
 
 .relation-graph__node:hover circle:first-child {
-  filter: drop-shadow(0 0 8px rgba(99, 230, 255, 0.7));
+  filter: drop-shadow(0 0 8px rgba(88, 255, 157, 0.7));
 }
 
 .relation-graph__legend {
@@ -328,7 +328,7 @@
   position: relative;
   width: 100%;
   height: clamp(440px, 46vw, 560px);
-  background: #03060e;
+  background: #010603;
   overflow: hidden;
 }
 
@@ -352,7 +352,7 @@
 .relation3d__label {
   display: inline-block;
   padding: 2px 7px;
-  border: 1px solid rgba(99, 230, 255, 0.24);
+  border: 1px solid rgba(88, 255, 157, 0.24);
   background: rgba(3, 9, 20, 0.82);
   color: rgba(224, 240, 246, 0.92);
   font-family: var(--font-sans);
@@ -366,7 +366,7 @@
 .relation3d__label.is-active {
   border-color: var(--amber);
   color: #fff;
-  box-shadow: 0 0 16px rgba(255, 182, 72, 0.3);
+  box-shadow: 0 0 16px rgba(216, 255, 99, 0.3);
 }
 
 .relation3d__center {

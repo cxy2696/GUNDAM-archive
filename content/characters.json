@@ -12,7 +12,8 @@
     ],
     "role": {
       "zh": "RX-78-2 驾驶员 / 隆德·贝尔王牌",
-      "ja": "RX-78-2パイロット / ロンド・ベルエース"
+      "ja": "RX-78-2パイロット / ロンド・ベルエース",
+      "en": "RX-78-2 pilot / Londo Bell ace"
     },
     "status": "missing",
     "bio": {
@@ -23,6 +24,10 @@
       "ja": [
         "サイド7の整備少年。ジオン襲撃の際に偶然RX-78-2を起動し、ホワイトベースの主力パイロットとなる。一年戦争の中で急速に成長し、ニュータイプの知覚を示した。",
         "U.C.0093、ロンド・ベル隊のMS隊長としてνガンダムを駆り、アクシズ上空でシャアと最終決戦を迎える。公式記録上の結末は「消息不明」。"
+      ],
+      "en": [
+        "A boy from Side 7 who is good with machines. During a Zeon attack he accidentally starts up the RX-78-2, and afterward becomes the White Base's core fighting strength. He matures quickly in the One Year War and shows Newtype perception.",
+        "In U.C.0093 he pilots the ν Gundam as MS team leader of Londo Bell and fights his final duel with Char above Axis. Official records list his fate as \"missing\"."
       ]
     },
     "machineIds": [
@@ -60,15 +65,18 @@
     ],
     "age": {
       "zh": "约 16 岁（U.C.0079）",
-      "ja": "約16歳（U.C.0079）"
+      "ja": "約16歳（U.C.0079）",
+      "en": "About 16 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "Side 7",
-      "ja": "サイド7"
+      "ja": "サイド7",
+      "en": "Side 7"
     }
   },
   {
@@ -84,14 +92,16 @@
         "factionId": "zeon",
         "period": {
           "zh": "U.C.0079—0080",
-          "ja": "U.C.0079—0080"
+          "ja": "U.C.0079—0080",
+          "en": "U.C.0079–0080"
         }
       },
       {
         "factionId": "aeug",
         "period": {
           "zh": "U.C.0087—0088（化名克瓦特罗）",
-          "ja": "U.C.0087—0088（クワトロ名義）"
+          "ja": "U.C.0087—0088（クワトロ名義）",
+          "en": "U.C.0087–0088 (under the name Quattro)"
         }
       }
     ],
@@ -100,7 +110,8 @@
     ],
     "role": {
       "zh": "吉翁王牌 / 奥古机师 / 新吉翁统帅",
-      "ja": "ジオンエース / エゥーゴパイロット / ネオ・ジオン総帥"
+      "ja": "ジオンエース / エゥーゴパイロット / ネオ・ジオン総帥",
+      "en": "Zeon ace / AEUG pilot / Neo Zeon leader"
     },
     "status": "missing",
     "bio": {
@@ -111,6 +122,10 @@
       "ja": [
         "本名キャスバル・レム・ダイクン、ジオン・ダイクンの子。復讐のためシャア・アズナブルと名乗りジオン軍へ。ルウム戦役で赤いザクIIにより連邦艦五隻を撃沈し、「赤い彗星」と呼ばれた。",
         "一年戦争後はクワトロ・バジーナとしてエゥーゴに参加し、U.C.0093にはネオ・ジオンを率いた。アクシズ落下で地球に贖罪を迫り、最後はアムロとともにサイコフレームの光の中へ消えた。"
+      ],
+      "en": [
+        "His real name is Casval Rem Deikun, son of Zeon Deikun. To take revenge he joins the Zeon military under the name Char Aznable and sinks five Federation warships with a red Zaku II at the Battle of Loum, earning the name \"Red Comet\".",
+        "After the One Year War he joins the AEUG under the name Quattro Bajeena, then founds Neo Zeon in U.C.0093. He tries to force Earth to atone by dropping Axis, and finally disappears with Amuro in the light of the psycho-frame."
       ]
     },
     "machineIds": [
@@ -151,15 +166,18 @@
     ],
     "age": {
       "zh": "约 20 岁（U.C.0079）",
-      "ja": "約20歳（U.C.0079）"
+      "ja": "約20歳（U.C.0079）",
+      "en": "About 20 (U.C.0079)"
     },
     "rank": {
       "zh": "吉翁公国军大佐",
-      "ja": "ジオン公国軍大佐"
+      "ja": "ジオン公国軍大佐",
+      "en": "Colonel, Principality of Zeon Forces"
     },
     "origin": {
       "zh": "Side 3",
-      "ja": "サイド3"
+      "ja": "サイド3",
+      "en": "Side 3"
     }
   },
   {
@@ -175,7 +193,8 @@
     ],
     "role": {
       "zh": "Z 高达驾驶员 / 强化人",
-      "ja": "Ζガンダムパイロット / 強化人間"
+      "ja": "Ζガンダムパイロット / 強化人間",
+      "en": "Zeta Gundam pilot / Cyber-Newtype"
     },
     "status": "alive",
     "bio": {
@@ -186,6 +205,10 @@
       "ja": [
         "サイド7の技術少年。ティターンズ将校との衝突からグリプス戦役に巻き込まれた。Ζガンダムを駆り、訓練以上のニュータイプ感応を戦場で示す。",
         "グリプス戦役末期、シロッコとのサイコ・レゾナンスで深い精神的損傷を受けた。戦後も治療が続くが、その戦闘データは後の機体開発に重要な参照となった。"
+      ],
+      "en": [
+        "A technical-minded boy from Side 7, drawn into the Gryps Conflict by a clash with a Titans officer. He pilots the Zeta Gundam and shows Newtype perception far beyond his training.",
+        "Late in the Gryps Conflict, a psychic clash with Scirocco leaves him severely traumatized. Postwar records show he is still receiving treatment, but his combat data becomes an important reference for later mobile suit development."
       ]
     },
     "machineIds": [
@@ -214,15 +237,18 @@
     ],
     "age": {
       "zh": "约 17 岁（U.C.0087）",
-      "ja": "約17歳（U.C.0087）"
+      "ja": "約17歳（U.C.0087）",
+      "en": "About 17 (U.C.0087)"
     },
     "rank": {
       "zh": "奥古驾驶员",
-      "ja": "エゥーゴのパイロット"
+      "ja": "エゥーゴのパイロット",
+      "en": "AEUG pilot"
     },
     "origin": {
       "zh": "Side 7 · 绿色诺亚",
-      "ja": "サイド7・グリーンノア"
+      "ja": "サイド7・グリーンノア",
+      "en": "Side 7 · Green Noa"
     }
   },
   {
@@ -238,7 +264,8 @@
     ],
     "role": {
       "zh": "阿克西斯摄政 / 新吉翁统帅",
-      "ja": "アクシズ摂政 / ネオ・ジオン総帥"
+      "ja": "アクシズ摂政 / ネオ・ジオン総帥",
+      "en": "Regent of Axis / Neo Zeon leader"
     },
     "status": "dead",
     "bio": {
@@ -249,6 +276,10 @@
       "ja": [
         "ジオン名家カーン家の娘。アクシズでニュータイプと政治家として成長した。一年戦争後、ミネバ・ザビの摂政として実権を握り、U.C.0088にネオ・ジオンを樹立する。",
         "コロニーレーザーと地球寒冷化作戦で連邦を追い詰めたが、グリプス戦役後の混乱の中で撃墜された。その政治的遺産は後のシャアのネオ・ジオンに直結する。"
+      ],
+      "en": [
+        "Daughter of the distinguished Zeon Karn family, she grows into a Newtype and a politician on Axis. After the One Year War she holds real power as Mineva Zabi's regent and founds Neo Zeon in U.C.0088.",
+        "She uses colony lasers and an Earth-cooling operation to pressure the Federation, and is finally shot down in the chaos after the Gryps Conflict. Her political legacy directly shapes Char's later Neo Zeon."
       ]
     },
     "machineIds": [],
@@ -270,15 +301,18 @@
     ],
     "age": {
       "zh": "约 21 岁（U.C.0088）",
-      "ja": "約21歳（U.C.0088）"
+      "ja": "約21歳（U.C.0088）",
+      "en": "About 21 (U.C.0088)"
     },
     "rank": {
       "zh": "阿克西斯摄政",
-      "ja": "アクシズ摂政"
+      "ja": "アクシズ摂政",
+      "en": "Regent of Axis"
     },
     "origin": {
       "zh": "阿克西斯",
-      "ja": "アクシズ"
+      "ja": "アクシズ",
+      "en": "Axis"
     }
   },
   {
@@ -294,7 +328,8 @@
     ],
     "role": {
       "zh": "白色基地舰长 / 隆德·贝尔司令",
-      "ja": "ホワイトベース艦長 / ロンド・ベル司令"
+      "ja": "ホワイトベース艦長 / ロンド・ベル司令",
+      "en": "White Base captain / Londo Bell commander"
     },
     "status": "alive",
     "bio": {
@@ -305,6 +340,10 @@
       "ja": [
         "一年戦争中、急遽ホワイトベース艦長を任され、厳しい規律で少年兵たちを戦闘単位へ育て上げた。その指揮はルウムからアクシズまで連邦の主線を貫く。",
         "U.C.0093、ロンド・ベル艦隊司令としてアクシズ作戦に参加。戦後も軍に残り、宇宙世紀の主線を一貫して見続けた数少ない連邦将校である。"
+      ],
+      "en": [
+        "Thrust into command of the White Base during the One Year War, he turns a group of teenage soldiers into a usable fighting unit through near-harsh discipline. His command runs through the whole Federation main line from Loum to Axis.",
+        "In U.C.0093 he takes part in the Axis operation as commander of the Londo Bell fleet. He stays in the military after the war, one of the few Federation officers who lived through the entire main line of the Universal Century."
       ]
     },
     "machineIds": [],
@@ -349,15 +388,18 @@
     ],
     "age": {
       "zh": "约 28 岁（U.C.0079）",
-      "ja": "約28歳（U.C.0079）"
+      "ja": "約28歳（U.C.0079）",
+      "en": "About 28 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军舰长",
-      "ja": "地球連邦軍艦長"
+      "ja": "地球連邦軍艦長",
+      "en": "Captain, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -373,7 +415,8 @@
     ],
     "role": {
       "zh": "独角兽高达驾驶员 / 工业学校学生",
-      "ja": "ユニコーンガンダムパイロット / 工業学校生"
+      "ja": "ユニコーンガンダムパイロット / 工業学校生",
+      "en": "Unicorn Gundam pilot / industrial school student"
     },
     "status": "alive",
     "bio": {
@@ -384,6 +427,10 @@
       "ja": [
         "工業コロニー「インダストリアル7」で育った少年。ミネバ・ラオを偶然救ったことでラプラスの箱争奪戦に巻き込まれる。ユニコーンガンダムを駆り、戦いの中でニュータイプ感応の代償を学ぶ。",
         "U.C.0096、ミネバとともに憲章の原条文を公開し、ヴィスト財団と連邦軍の双方による「箱」の政治利用を拒否した。"
+      ],
+      "en": [
+        "A boy raised in the industrial colony \"Industrial 7\", he is drawn into the fight over Laplace's Box after accidentally saving Mineva Lao. He pilots the Unicorn Gundam and gradually comes to understand the cost of Newtype perception in battle.",
+        "In U.C.0096 he and Mineva make public the original text of the Charter, refusing both the Vist Foundation's and the Federation military's political use of the \"box\"."
       ]
     },
     "machineIds": [
@@ -408,15 +455,18 @@
     ],
     "age": {
       "zh": "约 16 岁（U.C.0096）",
-      "ja": "約16歳（U.C.0096）"
+      "ja": "約16歳（U.C.0096）",
+      "en": "About 16 (U.C.0096)"
     },
     "rank": {
       "zh": "民间协力者 / 独角兽驾驶员",
-      "ja": "民間協力者 / ユニコーン・パイロット"
+      "ja": "民間協力者 / ユニコーン・パイロット",
+      "en": "Civilian collaborator / Unicorn pilot"
     },
     "origin": {
       "zh": "工业 7 号殖民地",
-      "ja": "インダストリアル7"
+      "ja": "インダストリアル7",
+      "en": "Industrial Colony 7"
     }
   },
   {
@@ -432,7 +482,8 @@
         "factionId": "zeon",
         "period": {
           "zh": "U.C.0079—0088（作为扎比家遗孤）",
-          "ja": "U.C.0079—0088（ザビ家の遺児として）"
+          "ja": "U.C.0079—0088（ザビ家の遺児として）",
+          "en": "U.C.0079–0088 (as a surviving child of the Zabi family)"
         }
       }
     ],
@@ -441,7 +492,8 @@
     ],
     "role": {
       "zh": "扎比家遗孤 / 拉普拉斯之盒关键人",
-      "ja": "ザビ家の遺児 / ラプラスの箱の鍵"
+      "ja": "ザビ家の遺児 / ラプラスの箱の鍵",
+      "en": "Last survivor of the Zabi family / key figure in Laplace's Box"
     },
     "status": "alive",
     "bio": {
@@ -452,6 +504,10 @@
       "ja": [
         "ジオン公国最後の継承者。一年戦争終結時はまだ幼かった。ハマーンの摂政の下で育ったが、U.C.0096に「オードリー・バーン」と名乗り単身地球圏へ向かう。",
         "ジオン復興の象徴となることを拒み、バナージとともに憲章の条文を公開した。以後は民間人として活動し、旧ジオンと新時代を結ぶ鍵となる。"
+      ],
+      "en": [
+        "The last heir of the Principality of Zeon, still a small child when the One Year War ends. She grows up under Haman's regency, but in U.C.0096 she travels alone to the Earth sphere under the name \"Audrey Burne\".",
+        "She refuses to become a symbol of Zeon's revival and chooses to make the Charter's text public with Banagher. She later acts as a civilian and becomes a key figure linking the old Zeon to a new era."
       ]
     },
     "machineIds": [],
@@ -477,15 +533,18 @@
     ],
     "age": {
       "zh": "约 16 岁（U.C.0096）",
-      "ja": "約16歳（U.C.0096）"
+      "ja": "約16歳（U.C.0096）",
+      "en": "About 16 (U.C.0096)"
     },
     "rank": {
       "zh": "扎比家遗孤",
-      "ja": "ザビ家の遺児"
+      "ja": "ザビ家の遺児",
+      "en": "Last survivor of the Zabi family"
     },
     "origin": {
       "zh": "阿克西斯",
-      "ja": "アクシズ"
+      "ja": "アクシズ",
+      "en": "Axis"
     }
   },
   {
@@ -501,7 +560,8 @@
     ],
     "role": {
       "zh": "F91 驾驶员 / 殖民地技术员",
-      "ja": "F91パイロット / コロニー技術者"
+      "ja": "F91パイロット / コロニー技術者",
+      "en": "F91 pilot / colony technician"
     },
     "status": "alive",
     "bio": {
@@ -512,6 +572,10 @@
       "ja": [
         "フロンティアサイドの工業学校生。クロスボーン・バンガードの襲撃時に仲間と連邦軍施設へ逃れ、F91のパイロットとなる。その機械的直感がバイオセンサーを設計以上の性能へ押し上げた。",
         "U.C.0123の紛争後も技術者として活動。その戦闘記録は連邦の小型MSとバイオセンサー評価の重要資料となった。"
+      ],
+      "en": [
+        "An industrial school student in the Frontier Side, he escapes into a Federation military facility with his friends during the Crossbone Vanguard attack and becomes the F91's pilot. His mechanical instinct lets the F91's bio-sensor perform beyond design expectations.",
+        "After the conflict of U.C.0123 he continues to work as a technician. His combat records become an important sample for the Federation's evaluation of miniaturized mobile suits and bio-sensors."
       ]
     },
     "machineIds": [
@@ -526,15 +590,18 @@
     ],
     "age": {
       "zh": "约 17 岁（U.C.0123）",
-      "ja": "約17歳（U.C.0123）"
+      "ja": "約17歳（U.C.0123）",
+      "en": "About 17 (U.C.0123)"
     },
     "rank": {
       "zh": "民间技术员 / F91 驾驶员",
-      "ja": "民間技術者 / F91パイロット"
+      "ja": "民間技術者 / F91パイロット",
+      "en": "Civilian technician / F91 pilot"
     },
     "origin": {
       "zh": "Frontier Side",
-      "ja": "フロンティア・サイド"
+      "ja": "フロンティア・サイド",
+      "en": "Frontier Side"
     }
   },
   {
@@ -550,7 +617,8 @@
     ],
     "role": {
       "zh": "V2 高达驾驶员 / 少年游击队员",
-      "ja": "V2ガンダムパイロット / 少年ゲリラ"
+      "ja": "V2ガンダムパイロット / 少年ゲリラ",
+      "en": "V2 Gundam pilot / young guerrilla"
     },
     "status": "alive",
     "bio": {
@@ -561,6 +629,10 @@
       "ja": [
         "ザンスカール侵攻で家族を失った少年。リガ・ミリティアに保護され、V2ガンダムのパイロットとなる。コロニーゲリラ戦と宗教裁判的な暴力の間で急速に大人にならねばならなかった。",
         "U.C.0153の戦争後、軍を離れ民間へ戻る。その体験は宇宙世紀後期の「少年兵の常態化」を最も直接に記録するものとされる。"
+      ],
+      "en": [
+        "A boy who lost his family in the Zanscare invasion, taken in by the League Militaire and made the V2 Gundam's pilot. He must grow up fast between colonial guerrilla warfare and inquisition-style violence.",
+        "After the war of U.C.0153 ends, he chooses to leave the military and return to civilian life. His experience is seen as the most direct testimony to the \"normalization of child soldiers\" in the late Universal Century."
       ]
     },
     "machineIds": [
@@ -576,15 +648,18 @@
     ],
     "age": {
       "zh": "约 13 岁（U.C.0153）",
-      "ja": "約13歳（U.C.0153）"
+      "ja": "約13歳（U.C.0153）",
+      "en": "About 13 (U.C.0153)"
     },
     "rank": {
       "zh": "神圣军事同盟驾驶员",
-      "ja": "神聖軍事同盟パイロット"
+      "ja": "神聖軍事同盟パイロット",
+      "en": "League Militaire pilot"
     },
     "origin": {
       "zh": "地球圈",
-      "ja": "地球圏"
+      "ja": "地球圏",
+      "en": "Earth sphere"
     }
   },
   {
@@ -600,7 +675,8 @@
     ],
     "role": {
       "zh": "Turn A 驾驶员 / 月之民",
-      "ja": "ターンAパイロット / 月の民"
+      "ja": "ターンAパイロット / 月の民",
+      "en": "Turn A pilot / Moonrace"
     },
     "status": "alive",
     "bio": {
@@ -611,6 +687,10 @@
       "ja": [
         "月から地球へ来た「月の民」の少年。イングレッサで使用人として暮らした。地球の生活への細やかな観察は、彼を誰よりも文明衝突の重みへ近づけた。",
         "軍事クーデターと月の帰還の混乱の中でターンAのパイロットとなる。月光蝶が「黒歴史」を繰り返す危険を前に、人と人がやり直せることを信じた。"
+      ],
+      "en": [
+        "A \"Moonrace\" boy who comes from the Moon to Earth and lives as a hired worker in Inglessa. His close observation of life on Earth makes him understand the weight of this civilizational conflict better than any military person.",
+        "Amid military coups and the confusion of the Moon's return, he becomes the Turn A's pilot. Facing the risk that the Moonlight Butterfly could repeat the \"Black History\", he chooses to believe that people can begin again with one another."
       ]
     },
     "machineIds": [
@@ -641,15 +721,18 @@
     ],
     "age": {
       "zh": "约 20 岁（C.C.2345）",
-      "ja": "約20歳（C.C.2345）"
+      "ja": "約20歳（C.C.2345）",
+      "en": "About 20 (C.C.2345)"
     },
     "rank": {
       "zh": "月之民民兵 / ∀驾驶员",
-      "ja": "月の民兵 / ∀パイロット"
+      "ja": "月の民兵 / ∀パイロット",
+      "en": "Moonrace militia / ∀ pilot"
     },
     "origin": {
       "zh": "月球",
-      "ja": "月"
+      "ja": "月",
+      "en": "Moon"
     }
   },
   {
@@ -665,7 +748,8 @@
     ],
     "role": {
       "zh": "Freedom 驾驶员 / 调整者",
-      "ja": "フリーダムパイロット / コーディネイター"
+      "ja": "フリーダムパイロット / コーディネイター",
+      "en": "Freedom pilot / Coordinator"
     },
     "status": "alive",
     "bio": {
@@ -676,6 +760,10 @@
       "ja": [
         "オーブで育ったコーディネイターの少年。身近な人を守ることだけを望んでいたが、ヘリオポリスの襲撃で地球連合とザフトの戦争に巻き込まれる。フリーダムを駆り、双方の外に第三の道を探した。",
         "C.E.71の戦争後期、双方の殺戮を止めるため戦場へ介入。戦争を終わらせることはできなかったが、「第三勢力の武力介入」をC.E.世界の新たな政治変数とした。"
+      ],
+      "en": [
+        "A Coordinator boy raised in Orb, he only wanted to protect the people close to him, but the attack on Heliopolis pulls him into the war between the Earth Alliance and ZAFT. He pilots the Freedom and tries to open a third path outside both sides.",
+        "Late in the war of C.E.71 he intervenes on the battlefield with the aim of \"stopping both sides from killing any further\". His choice cannot end the war, but it makes \"third-party armed intervention\" a new political variable in the C.E. world."
       ]
     },
     "machineIds": [
@@ -728,15 +816,18 @@
     ],
     "age": {
       "zh": "约 16 岁（C.E.71）",
-      "ja": "約16歳（C.E.71）"
+      "ja": "約16歳（C.E.71）",
+      "en": "About 16 (C.E.71)"
     },
     "rank": {
       "zh": "奥布军 / 三舰同盟",
-      "ja": "オーブ軍 / 三隻同盟"
+      "ja": "オーブ軍 / 三隻同盟",
+      "en": "Orb forces / Three Ships Alliance"
     },
     "origin": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     }
   },
   {
@@ -752,7 +843,8 @@
     ],
     "role": {
       "zh": "Exia 驾驶员 / 高达使者",
-      "ja": "エクシアパイロット / ガンダムマイスター"
+      "ja": "エクシアパイロット / ガンダムマイスター",
+      "en": "Exia pilot / Gundam Meister"
     },
     "status": "alive",
     "bio": {
@@ -763,6 +855,10 @@
       "ja": [
         "戦乱地でソレスタルビーイングに保護された少年兵。「刹那・F・セイエイ」のコードネームでガンダムマイスターとなる。エクシアで武力介入を実行するたび、自らの過去の殺戮と向き合わされる。",
         "A.D.2307の介入により三大陣営は初めて同じ交渉の場に着いた。刹那自身は「任務を遂行する兵器」から、対話の可能性を理解しようとする存在へと変わりつつある。"
+      ],
+      "en": [
+        "A child soldier taken in by Celestial Being in a war-torn region, he becomes a Gundam Meister under the code name Setsuna F. Seiei. He pilots the Exia on armed interventions, but each one forces him to reexamine his own past killings.",
+        "The interventions of A.D.2307 bring the three major blocs to one negotiating table for the first time. Setsuna himself gradually changes from \"a weapon carrying out missions\" into a being trying to understand the possibility of dialogue."
       ]
     },
     "machineIds": [
@@ -800,15 +896,18 @@
     ],
     "age": {
       "zh": "约 16 岁（A.D.2307）",
-      "ja": "約16歳（A.D.2307）"
+      "ja": "約16歳（A.D.2307）",
+      "en": "About 16 (A.D.2307)"
     },
     "rank": {
       "zh": "天人高达使者",
-      "ja": "ソレスタルビーイングのガンダムマイスター"
+      "ja": "ソレスタルビーイングのガンダムマイスター",
+      "en": "Celestial Being Gundam Meister"
     },
     "origin": {
       "zh": "库尔吉斯",
-      "ja": "クルジス"
+      "ja": "クルジス",
+      "en": "Krugis"
     }
   },
   {
@@ -825,7 +924,8 @@
     ],
     "role": {
       "zh": "神高达驾驶员 / 新日本代表",
-      "ja": "ゴッドガンダムパイロット / ネオジャパン代表"
+      "ja": "ゴッドガンダムパイロット / ネオジャパン代表",
+      "en": "Shining Gundam pilot / Neo Japan representative"
     },
     "status": "alive",
     "bio": {
@@ -836,6 +936,10 @@
       "ja": [
         "凍結された父と失踪した兄を探すため、ドモンはシャイニングガンダムで第13回ガンダムファイトに参加する。東方不敗との師弟対決を通じ、「武闘」が勝敗だけではないことを学ぶ。",
         "武闘会の後、ドモンはネオジャパンに残って英雄として扱われることを選ばず、各地を修行して回る。持ち帰ったのは「最強」の名ではなく、東方不敗が最後に教えた「拳は人を守るためにある」という言葉だった。"
+      ],
+      "en": [
+        "To find his father, sealed in ice, and his missing brother, Domon pilots the Shining Gundam in the 13th Gundam Fight; in his master-disciple duel with Master Asia he comes to understand that \"fighting\" is not only about winning and losing.",
+        "After the tournament, Domon does not stay in Neo Japan to enjoy being a hero but continues to train in various places. What he takes away is not the title of \"strongest\" but the words Master Asia taught him at the end: martial arts should be used to protect people, not to prove who is stronger."
       ]
     },
     "machineIds": [
@@ -890,15 +994,18 @@
     ],
     "age": {
       "zh": "约 20 岁（F.C.0060）",
-      "ja": "約20歳（F.C.0060）"
+      "ja": "約20歳（F.C.0060）",
+      "en": "About 20 (F.C.0060)"
     },
     "rank": {
       "zh": "新日本代表",
-      "ja": "ネオジャパン代表"
+      "ja": "ネオジャパン代表",
+      "en": "Neo Japan representative"
     },
     "origin": {
       "zh": "新日本",
-      "ja": "ネオジャパン"
+      "ja": "ネオジャパン",
+      "en": "Neo Japan"
     }
   },
   {
@@ -915,7 +1022,8 @@
     ],
     "role": {
       "zh": "尊者高达驾驶员 / 前代武斗冠军",
-      "ja": "マスターガンダムパイロット / 前回王者"
+      "ja": "マスターガンダムパイロット / 前回王者",
+      "en": "Master Gundam pilot / former tournament champion"
     },
     "status": "dead",
     "bio": {
@@ -926,6 +1034,10 @@
       "ja": [
         "ドモンの父と共に戦った武闘家であり、ドモンの師匠。マスターガンダムで弟子の前に立ち、汚染された地球を自らの方法で救おうとした。",
         "東方不敗はかつての優勝者であり、ドモンの師でもある。地球への愛と人類への失望を同時に抱え、やがてDG細胞によって破壊的な「救済」へ増幅される。ドモンとの最後の戦いは、「誰に地球の代弁者となる資格があるのか」を巡る議論でもあった。"
+      ],
+      "en": [
+        "A martial artist who once fought alongside Domon's father, and Domon's own teacher. He pilots the Master Gundam to block his disciple, trying to save the polluted Earth in his own way.",
+        "Master Asia was once the tournament champion and Domon's master. His love for Earth and his disappointment in humanity exist at the same time, and the DG Cells finally magnify it into a destructive \"salvation\". His last fight with Domon is at heart an argument over who has the right to decide for Earth."
       ]
     },
     "machineIds": [
@@ -947,15 +1059,18 @@
     ],
     "age": {
       "zh": "约 49 岁（F.C.0060）",
-      "ja": "約49歳（F.C.0060）"
+      "ja": "約49歳（F.C.0060）",
+      "en": "About 49 (F.C.0060)"
     },
     "rank": {
       "zh": "前代武斗冠军 / 新香港代表",
-      "ja": "前回優勝者 / ネオホンコン代表"
+      "ja": "前回優勝者 / ネオホンコン代表",
+      "en": "Former tournament champion / Neo Hong Kong representative"
     },
     "origin": {
       "zh": "新香港",
-      "ja": "ネオホンコン"
+      "ja": "ネオホンコン",
+      "en": "Neo Hong Kong"
     }
   },
   {
@@ -972,7 +1087,8 @@
     ],
     "role": {
       "zh": "飞翼高达 / 飞翼零式驾驶员",
-      "ja": "ウイング / ウイングゼロパイロット"
+      "ja": "ウイング / ウイングゼロパイロット",
+      "en": "Wing Gundam / Wing Zero pilot"
     },
     "status": "alive",
     "bio": {
@@ -983,6 +1099,10 @@
       "ja": [
         "「オペレーション・メテオ」のため地球へ送られた少年兵。任務を命より優先する。リリーナとの出会いが「戦争で戦争を終わらせる」論理への疑問を生む。",
         "ヒイロは戦争初期、任務を命より優先し、何度も自爆を準備した。リリーナや仲間との時間の中で、「生き残ること自体が選択である」と学んでいく。戦後も、普通の人間として生きる方法を学び続けている。"
+      ],
+      "en": [
+        "A child soldier sent to Earth for Operation Meteor, he is used to placing the mission above his own life. Meeting Relena makes him begin to question the logic of \"ending war through war\".",
+        "Early in the war Heero places the mission above his life, even preparing to self-destruct several times. Being with Relena and five companions gradually teaches him that living on is itself a choice. After the war he is still learning how to live as an ordinary person."
       ]
     },
     "machineIds": [
@@ -1023,15 +1143,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.C.195）",
-      "ja": "約15歳（A.C.195）"
+      "ja": "約15歳（A.C.195）",
+      "en": "About 15 (A.C.195)"
     },
     "rank": {
       "zh": "殖民地抵抗组织驾驶员",
-      "ja": "コロニー抵抗組織のパイロット"
+      "ja": "コロニー抵抗組織のパイロット",
+      "en": "Colony resistance pilot"
     },
     "origin": {
       "zh": "L1 殖民地群",
-      "ja": "L1コロニー群"
+      "ja": "L1コロニー群",
+      "en": "L1 colony cluster"
     }
   },
   {
@@ -1048,7 +1171,8 @@
     ],
     "role": {
       "zh": "OZ 王牌 / 艾比安驾驶员",
-      "ja": "OZエース / エピオンパイロット"
+      "ja": "OZエース / エピオンパイロット",
+      "en": "OZ ace / Epyon pilot"
     },
     "status": "alive",
     "bio": {
@@ -1059,6 +1183,10 @@
       "ja": [
         "ゼクス・マーキスとして知られるミリアルド・ピースクラフト。OZとホワイトファングの間で揺れ、エピオンで「最強の武力による戦争終結」を求める。",
         "ゼクスは「ミリアルド・ピースクラフト」としてコロニー独立を進め、ホワイトファング期には過激化する。単純な野心家ではなく、「平和にどれだけの暴力が必要か」という問いで極端へ傾いた人物である。戦後は別の身分で責任を負い続ける。"
+      ],
+      "en": [
+        "Milliardo Peacecraft, under the alias Zechs, wavers between OZ and White Fang. He pilots the Epyon in pursuit of a path that \"ends war with the strongest force\".",
+        "Zechs advances colonial independence as \"Milliardo Peacecraft\", then goes to extremes in the White Fang period. He is not a simple opportunist but a man who keeps going to extremes over the question of how much violence peace requires. After the war he chooses another identity in which to keep bearing the consequences."
       ]
     },
     "machineIds": [
@@ -1085,15 +1213,18 @@
     ],
     "age": {
       "zh": "约 19 岁（A.C.195）",
-      "ja": "約19歳（A.C.195）"
+      "ja": "約19歳（A.C.195）",
+      "en": "About 19 (A.C.195)"
     },
     "rank": {
       "zh": "OZ 特尉 / 艾比安驾驶员",
-      "ja": "OZ特尉 / エピオンパイロット"
+      "ja": "OZ特尉 / エピオンパイロット",
+      "en": "OZ Special Lieutenant / Epyon pilot"
     },
     "origin": {
       "zh": "地球圈",
-      "ja": "地球圏"
+      "ja": "地球圏",
+      "en": "Earth sphere"
     }
   },
   {
@@ -1110,7 +1241,8 @@
     ],
     "role": {
       "zh": "高达 X / Double X 驾驶员",
-      "ja": "ガンダムX / ダブルXパイロット"
+      "ja": "ガンダムX / ダブルXパイロット",
+      "en": "Gundam X / Double X pilot"
     },
     "status": "alive",
     "bio": {
@@ -1121,6 +1253,10 @@
       "ja": [
         "廃墟の少年スカベンジャー。旧式MSと直感で生き延びてきた。ティファと出会い、新UNEと廃墟勢力の戦争に巻き込まれ、「新しい世界」を探す者となる。",
         "ガロードは廃土の孤児からガンダムXのパイロットへ成長し、自分とティファだけのために戦うのではないことを学ぶ。宏大な経緯は得意ではないが、要所で「まず隣の人を生かす」ことを選ぶ。戦後も廃土で本来の「新世界」を探し続ける。"
+      ],
+      "en": [
+        "A boy scavenger in the wasteland, surviving on an old mobile suit and instinct. After meeting Tiffa he is drawn into the war between the new UNE and the wasteland powers, and gradually becomes a seeker of the \"new world\".",
+        "Garrod grows from a wasteland orphan into the Gundam X's pilot and learns to fight not only for himself and Tiffa. He is not good at grand speeches, but at key moments he always chooses to \"let the people around him live first\". After the war he keeps searching the wasteland for something that can be called a \"new world\"."
       ]
     },
     "machineIds": [
@@ -1165,15 +1301,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.W.0015）",
-      "ja": "約15歳（A.W.0015）"
+      "ja": "約15歳（A.W.0015）",
+      "en": "About 15 (A.W.0015)"
     },
     "rank": {
       "zh": "秃鹫驾驶员",
-      "ja": "ヴァルチャーのパイロット"
+      "ja": "ヴァルチャーのパイロット",
+      "en": "Vulture pilot"
     },
     "origin": {
       "zh": "地球 · 废土",
-      "ja": "地球・廃土"
+      "ja": "地球・廃土",
+      "en": "Earth · wasteland"
     }
   },
   {
@@ -1190,7 +1329,8 @@
     ],
     "role": {
       "zh": "Newtype 导航 / 废土幸存者",
-      "ja": "ニュータイプ・ナビゲーター / 廃墟の生存者"
+      "ja": "ニュータイプ・ナビゲーター / 廃墟の生存者",
+      "en": "Newtype navigator / wasteland survivor"
     },
     "status": "alive",
     "bio": {
@@ -1201,6 +1341,10 @@
       "ja": [
         "強い感応能力を持つ少女。新UNEに研究対象として狙われる。予知と戦争への恐怖が、ガロードに「力は何を守るためにあるのか」を問わせる。",
         "ティファのニュータイプ感知は戦争の行方を映し、年齢に不相応な苦痛を負わせる。彼女は受動的な「航法装置」ではなく、要所でガロードと廃土を守る選択をする人間である。その沈黙は台詞以上に重い。"
+      ],
+      "en": [
+        "A girl with strong perception, regarded by the new UNE as a research subject. Her precognition and her fear of war keep driving Garrod to ask what power should be used to protect.",
+        "Tiffa's Newtype perception lets her see where the war is going and makes her bear pain far beyond her age. She is someone who actively chooses to protect Garrod and the wasteland, not a passive \"navigation device\". Her silence often carries more weight than her lines."
       ]
     },
     "machineIds": [],
@@ -1218,15 +1362,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.W.0015）",
-      "ja": "約15歳（A.W.0015）"
+      "ja": "約15歳（A.W.0015）",
+      "en": "About 15 (A.W.0015)"
     },
     "rank": {
       "zh": "Newtype 导航员",
-      "ja": "ニュータイプ・ナビゲーター"
+      "ja": "ニュータイプ・ナビゲーター",
+      "en": "Newtype navigator"
     },
     "origin": {
       "zh": "地球 · 废土",
-      "ja": "地球・廃土"
+      "ja": "地球・廃土",
+      "en": "Earth · wasteland"
     }
   },
   {
@@ -1243,7 +1390,8 @@
     ],
     "role": {
       "zh": "英格列沙民兵 / 罗兰的同伴",
-      "ja": "イングレッサ民兵 / ロランの仲間"
+      "ja": "イングレッサ民兵 / ロランの仲間",
+      "en": "Inglessa militia / Loran's companion"
     },
     "status": "alive",
     "bio": {
@@ -1254,6 +1402,10 @@
       "ja": [
         "イングレッサ家の娘。月の民の回帰による混乱の中で民兵に加わる。ロランへの想いと「月の人」への敵意が、C.C.紀元の最も私的な戦争視点となる。",
         "ソシエはイングレッサ民兵の少女から、ローランの立場を理解できる人物へ成長する。ローランへの感情、月の民への不信、地球への帰属意識が戦争の中でぶつかり合う。最終的に学んだのは、立場を捨てることではなく、相手にも立場があると認めることだった。"
+      ],
+      "en": [
+        "Daughter of the Inglessa family, she joins the militia in the confusion of the Moonrace's return. Her feelings for Loran and her hostility toward the \"Moon people\" form the most personal view of war in the C.C. era.",
+        "Sochie grows from an Inglessa militia girl into someone who can understand Loran's position. Her feelings for Loran, her distrust of the Moonrace, and her sense of belonging to Earth clash again and again during the war. What she finally learns is to admit that the other side also has its own position, not to give up her own."
       ]
     },
     "machineIds": [],
@@ -1275,15 +1427,18 @@
     ],
     "age": {
       "zh": "约 17 岁（C.C.2345）",
-      "ja": "約17歳（C.C.2345）"
+      "ja": "約17歳（C.C.2345）",
+      "en": "About 17 (C.C.2345)"
     },
     "rank": {
       "zh": "英格列沙民兵",
-      "ja": "イングレッサ民兵"
+      "ja": "イングレッサ民兵",
+      "en": "Inglessa militia"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -1300,7 +1455,8 @@
     ],
     "role": {
       "zh": "ZAFT 王牌 / 调整者",
-      "ja": "ザフトエース / コーディネイター"
+      "ja": "ザフトエース / コーディネイター",
+      "en": "ZAFT ace / Coordinator"
     },
     "status": "alive",
     "bio": {
@@ -1311,6 +1467,10 @@
       "ja": [
         "キラの幼なじみで、ザフトのエリートパイロット。血縁・国家・友情の間で選択を繰り返し、殲滅によらない平和の道を探す。",
         "アスランはザフトへの忠誠とキラへの友情の間で揺れ続ける。ジャスティスやインフィニットジャスティスで平和のために戦う一方、誤った命令で友人と刃を交えた。立場の転換は一度の宣言ではなく、苦しい選択の連続であることを示している。"
+      ],
+      "en": [
+        "Kira's childhood friend and an elite ZAFT pilot. He chooses again and again between blood ties, country, and friendship, trying to find a path to peace that does not depend on annihilation.",
+        "Athrun wavers between loyalty to ZAFT and friendship with Kira. He has piloted the Justice and Infinite Justice to fight for peace, and has also faced friends in arms under wrong orders. His experience shows that a change of position is a chain of painful choices, not a single declaration."
       ]
     },
     "machineIds": [
@@ -1355,15 +1515,18 @@
     ],
     "age": {
       "zh": "约 16 岁（C.E.71）",
-      "ja": "約16歳（C.E.71）"
+      "ja": "約16歳（C.E.71）",
+      "en": "About 16 (C.E.71)"
     },
     "rank": {
       "zh": "ZAFT 红衣 / 正义驾驶员",
-      "ja": "ザフト赤服 / ジャスティスパイロット"
+      "ja": "ザフト赤服 / ジャスティスパイロット",
+      "en": "ZAFT red coat / Justice pilot"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     }
   },
   {
@@ -1380,7 +1543,8 @@
     ],
     "role": {
       "zh": "PLANT 歌姬 / 克莱因派领袖",
-      "ja": "プラントの歌姫 / クライン派指導者"
+      "ja": "プラントの歌姫 / クライン派指導者",
+      "en": "PLANT songstress / leader of the Clyne Faction"
     },
     "status": "alive",
     "bio": {
@@ -1391,6 +1555,10 @@
       "ja": [
         "歌と政治的判断で戦局に影響を与えるプラントの名家の娘。パイロットとして直接戦うのではなく、組織・情報・象徴の力で戦争の方向を変える。",
         "ラクスはプラントの歌姫からクライン派の政治的象徴へ変わる。艦隊を指揮するわけではないが、情報、歌、人的ネットワークで戦争の方向を変えた。その力は火力ではなく、「別の可能性があると信じさせること」にある。"
+      ],
+      "en": [
+        "A daughter of a prominent PLANT family who influences the course of the war with her singing and political judgment. She does not fight directly like a pilot, but she changes the direction of the war through organization, information, and symbolic power.",
+        "Lacus turns from PLANT's national songstress into the political symbol of the Clyne Faction. She does not command fleets, yet she changes the direction of the war through information, song, and personal networks. Her power comes from making people believe another possibility exists, not from firepower."
       ]
     },
     "machineIds": [],
@@ -1413,15 +1581,18 @@
     ],
     "age": {
       "zh": "约 16 岁（C.E.71）",
-      "ja": "約16歳（C.E.71）"
+      "ja": "約16歳（C.E.71）",
+      "en": "About 16 (C.E.71)"
     },
     "rank": {
       "zh": "PLANT 歌姬 / 克莱因派领袖",
-      "ja": "プラントの歌姫 / クライン派指導者"
+      "ja": "プラントの歌姫 / クライン派指導者",
+      "en": "PLANT songstress / leader of the Clyne Faction"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     }
   },
   {
@@ -1438,7 +1609,8 @@
     ],
     "role": {
       "zh": "力天使高达驾驶员 / 狙击手",
-      "ja": "デュナメスパイロット / 狙撃手"
+      "ja": "デュナメスパイロット / 狙撃手",
+      "en": "Dynames pilot / sniper"
     },
     "status": "dead",
     "bio": {
@@ -1449,6 +1621,10 @@
       "ja": [
         "ソレスタルビーイング最初の狙撃手。任務と仲間を同じ重さで扱う。その冷静さと犠牲が、「武力介入」に初めて人的代償を刻んだ。",
         "ロックオンは家族への復讐をスナイパーライフルの向こうに隠している。戦場では仲間を気遣い、要所で彼らの代わりに攻撃を受ける。彼の死は「ロックオン」を一人の終点ではなくコードネームへ変え、後継者が名と責任を継いだ。"
+      ],
+      "en": [
+        "Celestial Being's earliest sniper, he values the mission and his comrades equally. His calm and his sacrifice make \"armed intervention\" show its human cost for the first time.",
+        "Lockon hides revenge for his family behind the sniper scope. He looks after his teammates in battle and at key moments chooses to take attacks for them. His death turns \"Lockon\" into a code name rather than the end of one man; his successor inherits the name and the responsibility with it."
       ]
     },
     "machineIds": [
@@ -1480,15 +1656,18 @@
     ],
     "age": {
       "zh": "约 24 岁（A.D.2307）",
-      "ja": "約24歳（A.D.2307）"
+      "ja": "約24歳（A.D.2307）",
+      "en": "About 24 (A.D.2307)"
     },
     "rank": {
       "zh": "天人狙击手",
-      "ja": "ソレスタルビーイングの狙撃手"
+      "ja": "ソレスタルビーイングの狙撃手",
+      "en": "Celestial Being sniper"
     },
     "origin": {
       "zh": "爱尔兰",
-      "ja": "アイルランド"
+      "ja": "アイルランド",
+      "en": "Ireland"
     }
   },
   {
@@ -1505,7 +1684,8 @@
     ],
     "role": {
       "zh": "德天使高达驾驶员 / 变革者",
-      "ja": "ヴァーチェパイロット / イノベイター"
+      "ja": "ヴァーチェパイロット / イノベイター",
+      "en": "Virtue pilot / Innovade"
     },
     "status": "unknown",
     "bio": {
@@ -1516,6 +1696,10 @@
       "ja": [
         "イノベイターとして生み出された少年。当初は計画とデータだけを信じていた。仲間との時間が、人間の不完全さと可能性への理解を生む。",
         "ティエリアは最初、自分を「計画の一部」と見なし、人間の感情を理解しにくかった。ソレスタルビーイングの仲間との時間の中で、守りたい人もいれば喪失も怖いと認めていく。その成長は「任務の実行」から「仲間の選択」への移行である。"
+      ],
+      "en": [
+        "A boy created as an Innovade, he believes only in plans and data at first. Being with his comrades makes him begin to understand the imperfection and possibility of \"humans\".",
+        "Tieria first sees himself as \"part of the plan\" and has trouble understanding human feelings. Being with his Celestial Being comrades makes him gradually admit that he too has people he wants to protect and fears losing. His growth is from \"carrying out missions\" to \"choosing companions\"."
       ]
     },
     "machineIds": [
@@ -1547,15 +1731,18 @@
     ],
     "age": {
       "zh": "外观约 20 岁（A.D.2307）",
-      "ja": "外見約20歳（A.D.2307）"
+      "ja": "外見約20歳（A.D.2307）",
+      "en": "About 20 in appearance (A.D.2307)"
     },
     "rank": {
       "zh": "天人高达使者",
-      "ja": "ソレスタルビーイングのガンダムマイスター"
+      "ja": "ソレスタルビーイングのガンダムマイスター",
+      "en": "Celestial Being Gundam Meister"
     },
     "origin": {
       "zh": "Celestial Being",
-      "ja": "ソレスタルビーイング"
+      "ja": "ソレスタルビーイング",
+      "en": "Celestial Being"
     }
   },
   {
@@ -1572,7 +1759,8 @@
     ],
     "role": {
       "zh": "AGE-1 驾驶员 / 联邦司令",
-      "ja": "AGE-1パイロット / 連邦司令"
+      "ja": "AGE-1パイロット / 連邦司令",
+      "en": "AGE-1 pilot / Federation commander"
     },
     "status": "alive",
     "bio": {
@@ -1583,6 +1771,10 @@
       "ja": [
         "ヴェイガンの襲撃で母を失った少年。AGEシステムとAGE-1で戦場に立つ。復讐心と連邦への失望が、A.G.紀元の百年戦争を貫く。",
         "フリットは少年時代に家族とコロニーをヴェイガンに奪われ、復讐が生きる理由に近かった。戦争が三代に及ぶ中で、「ヴェイガンの殲滅」が自動的に平和をもたらすわけではないと気づく。晩年も若い世代の選択に道を譲ろうとする。"
+      ],
+      "en": [
+        "A boy who lost his mother in the Vagan attack, he goes to war with the AGE System and the AGE-1. His desire for revenge and his disappointment in the Federation run through the hundred-year war of the A.G. era.",
+        "Flit sees his family and colony destroyed by the Vagan as a boy, and revenge becomes almost his reason to live. As the war spans three generations he gradually realizes that \"wiping out the Vagan\" will not automatically bring peace. In his later years he still makes way for the choices of the younger generation."
       ]
     },
     "machineIds": [
@@ -1613,15 +1805,18 @@
     ],
     "age": {
       "zh": "约 14 岁（A.G.115）",
-      "ja": "約14歳（A.G.115）"
+      "ja": "約14歳（A.G.115）",
+      "en": "About 14 (A.G.115)"
     },
     "rank": {
       "zh": "地球联邦军驾驶员",
-      "ja": "地球連邦軍パイロット"
+      "ja": "地球連邦軍パイロット",
+      "en": "Earth Federation Forces pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -1638,7 +1833,8 @@
     ],
     "role": {
       "zh": "AGE-2 驾驶员 / 联邦军官",
-      "ja": "AGE-2パイロット / 連邦軍人"
+      "ja": "AGE-2パイロット / 連邦軍人",
+      "en": "AGE-2 pilot / Federation officer"
     },
     "status": "alive",
     "bio": {
@@ -1649,6 +1845,10 @@
       "ja": [
         "フリットの息子だが、父の戦争を繰り返すことを拒む。AGE-2でヴェイガンを追い、敵味方の間で「復讐ではない」戦う理由を探す。",
         "アセムは父の光の中で育ち、フリットのような英雄になりたいと願いながら、自分が決して十分に強くなれないことを恐れる。火星と地球を転戦し、最後は「ダークハウンド」として父とは違う道を歩む。"
+      ],
+      "en": [
+        "Flit's son, yet unwilling to repeat his father's war. He pilots the AGE-2 in pursuit of the Vagan and also searches between enemy and ally for a reason to fight that is \"not revenge\".",
+        "Asemu grows up under his father's shadow, wanting to be a hero like Flit and also afraid he will never be strong enough. He moves between Mars and Earth, and finally walks a path that is not his father's under the name \"Dark Hound\"."
       ]
     },
     "machineIds": [
@@ -1679,15 +1879,18 @@
     ],
     "age": {
       "zh": "约 17 岁（A.G.140）",
-      "ja": "約17歳（A.G.140）"
+      "ja": "約17歳（A.G.140）",
+      "en": "About 17 (A.G.140)"
     },
     "rank": {
       "zh": "地球联邦军驾驶员",
-      "ja": "地球連邦軍パイロット"
+      "ja": "地球連邦軍パイロット",
+      "en": "Earth Federation Forces pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -1704,7 +1907,8 @@
     ],
     "role": {
       "zh": "G-自我驾驶员 / 首都军候补",
-      "ja": "G-セルフパイロット / 首都軍候補"
+      "ja": "G-セルフパイロット / 首都軍候補",
+      "en": "G-Self pilot / Capital Army candidate"
     },
     "status": "alive",
     "bio": {
@@ -1715,6 +1919,10 @@
       "ja": [
         "軌道エレベーターと光子電池の秩序の中で育った少年。海賊襲撃をきっかけにG-セルフを起動する。その出自が、R.C.の政治的禁忌を個人の問題へ変える。",
         "ベルリは最初、首都軍の候補生として軌道エレベーターと光子電池の秩序を当然のものと信じていた。G-セルフとアイーダに出会い、「隠された歴史」に向き合わされ、自分の所属する陣営の正当性を疑い始める。"
+      ],
+      "en": [
+        "A boy raised within the order of the orbital elevator and photon batteries, he starts up the G-Self during a pirate attack. His identity and bloodline turn the political taboo of the R.C. era into a personal problem.",
+        "Bellri is first a Capital Army cadet who believes the order of the orbital elevator and photon batteries is only natural. After meeting the G-Self and Aida he is forced to face \"the hidden history\" and begins to question the legitimacy of his own side."
       ]
     },
     "machineIds": [
@@ -1742,15 +1950,18 @@
     ],
     "age": {
       "zh": "约 17 岁（R.C.1014）",
-      "ja": "約17歳（R.C.1014）"
+      "ja": "約17歳（R.C.1014）",
+      "en": "About 17 (R.C.1014)"
     },
     "rank": {
       "zh": "首都军候补 / G-自我驾驶员",
-      "ja": "首都軍候補 / G-セルフパイロット"
+      "ja": "首都軍候補 / G-セルフパイロット",
+      "en": "Capital Army candidate / G-Self pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -1767,7 +1978,8 @@
     ],
     "role": {
       "zh": "G-Arcane 驾驶员 / 亚美利亚军",
-      "ja": "G-アルケインパイロット / アメリア軍"
+      "ja": "G-アルケインパイロット / アメリア軍",
+      "en": "G-Arcane pilot / Amerian Army"
     },
     "status": "alive",
     "bio": {
@@ -1778,6 +1990,10 @@
       "ja": [
         "アメリア軍のパイロットで、ベルリの仲間。戦場と政治の間で冷静さを保ち、軌道エレベーターが新たな武器になることを防ごうとする。",
         "アイーダはアメリ軍のパイロットであり、R.C.の技術禁忌に巻き込まれた人物である。ベルリより早く「隠された歴史」に触れ、戦いには最初から政治的判断が伴う。ベルリの導き手ではなく、共に答えを探す者である。"
+      ],
+      "en": [
+        "An Amerian Army pilot and Bellri's companion. She keeps a clear head between the battlefield and politics, trying to stop every side from turning the orbital elevator into a new weapon.",
+        "Aida is an Amerian Army pilot and someone caught up in the technological taboo of the R.C. era. She comes into contact with \"the hidden history\" earlier than Bellri, so her fighting carries political judgment from the start. She is someone who gropes for answers together with Bellri, not his guide."
       ]
     },
     "machineIds": [
@@ -1805,15 +2021,18 @@
     ],
     "age": {
       "zh": "约 20 岁（R.C.1014）",
-      "ja": "約20歳（R.C.1014）"
+      "ja": "約20歳（R.C.1014）",
+      "en": "About 20 (R.C.1014)"
     },
     "rank": {
       "zh": "亚美利亚军驾驶员",
-      "ja": "アメリ軍パイロット"
+      "ja": "アメリ軍パイロット",
+      "en": "Amerian Army pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -1830,7 +2049,8 @@
     ],
     "role": {
       "zh": "巴巴托斯驾驶员 / 铁华团王牌",
-      "ja": "バルバトスパイロット / 鉄華団エース"
+      "ja": "バルバトスパイロット / 鉄華団エース",
+      "en": "Barbatos pilot / Tekkadan ace"
     },
     "status": "dead",
     "bio": {
@@ -1841,6 +2061,10 @@
       "ja": [
         "火星の少年兵。オルガの命令を生存のすべてとする。バルバトスは彼の手で獣のように戦い、身体と未来の制御を少しずつ奪っていく。",
         "三日月は火星の少年兵から鉄華団最強の戦力へ成長するが、常に「オルガと仲間を守る」ことを第一に置く。阿頼耶識によってバルバトスとほぼ一体化し、戦うたびに身体は損傷していく。強さと代償は同じものである。"
+      ],
+      "en": [
+        "A child soldier from Mars who treats Orga's orders as the whole of his existence. The Barbatos fights like a wild beast in his hands, and it also makes him gradually lose control of his body and his future.",
+        "Mikazuki grows from a Mars child soldier into Tekkadan's strongest fighting power, yet he always puts \"protecting Orga and his comrades\" first. The Alaya-Vijnana system lets him become almost one with the Barbatos, and it also leaves his body more broken after every battle. His strength and its cost are the same thing."
       ]
     },
     "machineIds": [
@@ -1879,15 +2103,18 @@
     ],
     "age": {
       "zh": "约 15 岁（P.D.325）",
-      "ja": "約15歳（P.D.325）"
+      "ja": "約15歳（P.D.325）",
+      "en": "About 15 (P.D.325)"
     },
     "rank": {
       "zh": "铁华团王牌",
-      "ja": "鉄華団のエース"
+      "ja": "鉄華団のエース",
+      "en": "Tekkadan ace"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     }
   },
   {
@@ -1904,7 +2131,8 @@
     ],
     "role": {
       "zh": "铁华团团长 / 火星独立运动",
-      "ja": "鉄華団団長 / 火星独立運動"
+      "ja": "鉄華団団長 / 火星独立運動",
+      "en": "Tekkadan leader / Mars independence movement"
     },
     "status": "dead",
     "bio": {
@@ -1915,6 +2143,10 @@
       "ja": [
         "鉄華団の創設者。底辺の少年たちを火星の政治舞台へ引き上げる。その判断と野心が組織を急成長させ、ギャラルホルンとの正面衝突へ導く。",
         "オルガは鉄華団の団長であり、子どもたちを火星独立の道へ導いた人物である。「仲間を生かすこと」と「組織を大きくすること」の間で選び続け、そのたびに誰かが代償を払った。その指導力は命令ではなく、引き受けることから生まれる。"
+      ],
+      "en": [
+        "The founder of Tekkadan, he brings the boys up from the bottom to the political stage of Mars. His judgment and ambition make Tekkadan grow fast, and also push them into a head-on clash with Gjallarhorn.",
+        "Orga is Tekkadan's leader and the man who leads a group of children onto the road of Martian independence. He must choose between \"keeping his comrades alive\" and \"making the organization grow\", and every choice costs someone. His leadership comes from bearing responsibility, not from giving orders."
       ]
     },
     "machineIds": [],
@@ -1945,15 +2177,18 @@
     ],
     "age": {
       "zh": "约 17 岁（P.D.325）",
-      "ja": "約17歳（P.D.325）"
+      "ja": "約17歳（P.D.325）",
+      "en": "About 17 (P.D.325)"
     },
     "rank": {
       "zh": "铁华团团长",
-      "ja": "鉄華団団長"
+      "ja": "鉄華団団長",
+      "en": "Tekkadan leader"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     }
   },
   {
@@ -1970,7 +2205,8 @@
     ],
     "role": {
       "zh": "风灵 / 卡利班驾驶员 / 阿斯提卡西亚学生",
-      "ja": "エアリアル / キャリバーンパイロット / アスティカシア学生"
+      "ja": "エアリアル / キャリバーンパイロット / アスティカシア学生",
+      "en": "Aerial / Calibarn pilot / Asticassia student"
     },
     "status": "alive",
     "bio": {
@@ -1981,6 +2217,10 @@
       "ja": [
         "水星からアスティカシア学園へ来た少女。エアリアルで決闘に参加する。ミオリネとの婚約とGUNDフォーマットの秘密が、彼女を企業戦争の中心へ押し出す。",
         "スレッタは水星からアスティカシアへ来たが、最初は母の言葉に従うだけだった。ミオリネ、エアリアル、学園の仲間との時間が、初めて「自分がしたいこと」を与える。成長は強くなることではなく、自分の選択に責任を持つことである。"
+      ],
+      "en": [
+        "A girl who comes from Mercury to Asticassia Academy and pilots the Aerial Gundam in duels. Her engagement to Miorine and the secret of GUND formatting turn her from a \"country girl\" into the center of a corporate war.",
+        "Suletta comes from Mercury to Asticassia, at first only to obey her mother. Being with Miorine, the Aerial, and her schoolmates gives her something she wants to do for herself for the first time. Her growth is learning to take responsibility for her own choices, not becoming stronger."
       ]
     },
     "machineIds": [
@@ -2018,15 +2258,18 @@
     ],
     "age": {
       "zh": "约 17 岁（A.S.122）",
-      "ja": "約17歳（A.S.122）"
+      "ja": "約17歳（A.S.122）",
+      "en": "About 17 (A.S.122)"
     },
     "rank": {
       "zh": "阿斯提卡西亚学生 / 风灵驾驶员",
-      "ja": "アスティカシア学生 / エアリアルパイロット"
+      "ja": "アスティカシア学生 / エアリアルパイロット",
+      "en": "Asticassia student / Aerial pilot"
     },
     "origin": {
       "zh": "水星",
-      "ja": "水星"
+      "ja": "水星",
+      "en": "Mercury"
     }
   },
   {
@@ -2043,7 +2286,8 @@
     ],
     "role": {
       "zh": "贝纳里特集团千金 / 高达公司社长",
-      "ja": "ベネリットグループ令嬢 / ガンダム社社長"
+      "ja": "ベネリットグループ令嬢 / ガンダム社社長",
+      "en": "Benerit Group heiress / Gundam Company president"
     },
     "status": "alive",
     "bio": {
@@ -2054,6 +2298,10 @@
       "ja": [
         "ベネリットグループ総裁の娘。企業婚の道具になることを拒む。スレッタと共にガンダム社を立ち上げ、GUND技術を呪いから選択可能な力へ変えようとする。",
         "ミオリネは最初、父に決められた人生から逃げたいだけだった。やがて自らガンダム会社を引き受け、企業のルールでスレッタとGUND技術を守ろうとする。体制内の隙間を見つけるのが得意だが、「ルールを使うこと」と「ルールに使われること」の境界にも向き合う。"
+      ],
+      "en": [
+        "Daughter of the Benerit Group's president, she does not want to be a tool of a corporate marriage. She founds the Gundam Company with Suletta, trying to turn GUND technology from a curse into a power that can be chosen.",
+        "Miorine first only wants to escape the life her father arranged, but later takes over the Gundam Company herself, trying to protect Suletta and GUND technology through corporate rules. She is good at finding gaps inside the system, and she must also face the line between \"using the rules\" and \"being used by the rules\"."
       ]
     },
     "machineIds": [],
@@ -2072,15 +2320,18 @@
     ],
     "age": {
       "zh": "约 16 岁（A.S.122）",
-      "ja": "約16歳（A.S.122）"
+      "ja": "約16歳（A.S.122）",
+      "en": "About 16 (A.S.122)"
     },
     "rank": {
       "zh": "贝纳里特集团千金 / 高达公司社长",
-      "ja": "ベネリットグループ令嬢 / ガンダム会社社長"
+      "ja": "ベネリットグループ令嬢 / ガンダム会社社長",
+      "en": "Benerit Group heiress / Gundam Company president"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2097,7 +2348,8 @@
     ],
     "role": {
       "zh": "XARX-0 驾驶员 / 月面少年",
-      "ja": "XARX-0パイロット / 月面の少年"
+      "ja": "XARX-0パイロット / 月面の少年",
+      "en": "XARX-0 pilot / lunar boy"
     },
     "status": "alive",
     "bio": {
@@ -2108,6 +2360,10 @@
       "ja": [
         "A.A.45年、アズミは月面で目覚める。アポカリプスが日常となった世界で生まれ、「地球」を知らずに育った。XARX-0は彼を生存者の日常からRG計画の中心へ押し出す。",
         "アズミはA.A.45年の月面で目覚め、改訂された歴史と、型式を書き換えられたガンダムに直面する。自分の記憶が真実か確信できないまま、それでもXARX-0を起動する。彼の経緯は「誰を倒すか」ではなく、「自分は誰か」から始まる。"
+      ],
+      "en": [
+        "In A.A.45, Azumi wakes on the lunar surface. He was born into a world where the Apocalypse has become everyday life, and knows \"Earth\" only from records and rumors; the XARX-0 pushes him from a survivor's routine into the center of the RG Plan.",
+        "Azumi wakes on the lunar surface in A.A.45 to a history that has been \"revised\" and a Gundam whose model number has been rewritten. He is not sure whether the past he remembers is real, yet he still chooses to start up the XARX-0. His story begins with \"who am I\", not with \"who do I want to defeat\"."
       ]
     },
     "machineIds": [
@@ -2123,15 +2379,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.A.45）",
-      "ja": "約15歳（A.A.45）"
+      "ja": "約15歳（A.A.45）",
+      "en": "About 15 (A.A.45)"
     },
     "rank": {
       "zh": "月面幸存者 / XARX-0 驾驶员",
-      "ja": "月面生存者 / XARX-0パイロット"
+      "ja": "月面生存者 / XARX-0パイロット",
+      "en": "Lunar survivor / XARX-0 pilot"
     },
     "origin": {
       "zh": "月球",
-      "ja": "月"
+      "ja": "月",
+      "en": "Moon"
     }
   },
   {
@@ -2148,7 +2407,8 @@
     ],
     "role": {
       "zh": "联邦军官 / GP 系列驾驶员",
-      "ja": "連邦軍人 / GPシリーズのパイロット"
+      "ja": "連邦軍人 / GPシリーズのパイロット",
+      "en": "Federation officer / GP series pilot"
     },
     "status": "alive",
     "bio": {
@@ -2159,6 +2419,10 @@
       "ja": [
         "若き地球連邦の将校。0083年に「スターダスト作戦」へ巻き込まれる。GP01とGP03を駆り、GP02を奪ったジオン残党を追った。",
         "戦後、独断行動の責任を問われる。だがその追跡は、連邦の技術史と個人の選択が交差する現場を最も直接に見た記録となった。"
+      ],
+      "en": [
+        "A young Earth Federation officer drawn into Operation Stardust in 0083. He pilots the GP01 and then the GP03, pursuing the Zeon remnants who seized the GP02.",
+        "After the war he is disciplined for acting without orders, but that pursuit makes him the most direct witness to the gap between Federation technical history and personal choice."
       ]
     },
     "machineIds": [
@@ -2177,15 +2441,18 @@
     ],
     "age": {
       "zh": "约 22 岁（U.C.0083）",
-      "ja": "約22歳（U.C.0083）"
+      "ja": "約22歳（U.C.0083）",
+      "en": "About 22 (U.C.0083)"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2202,7 +2469,8 @@
     ],
     "role": {
       "zh": "吉翁残党王牌 / GP02 驾驶员",
-      "ja": "ジオン残党のエース / GP02パイロット"
+      "ja": "ジオン残党のエース / GP02パイロット",
+      "en": "Zeon remnant ace / GP02 pilot"
     },
     "status": "dead",
     "bio": {
@@ -2213,6 +2481,10 @@
       "ja": [
         "「ソロモンの悪夢」と呼ばれたジオンのエース。一年戦争後も敗北を受け入れず、デラーズ・フリートに加わる。",
         "スターダスト作戦でGP02を奪い、核を投下する。彼にとってそれはテロではなく、死んだ同胞への最後の義理だった。"
+      ],
+      "en": [
+        "A Zeon ace known as the \"Nightmare of Solomon\". After the One Year War he still refuses to accept defeat and joins the Delaz Fleet.",
+        "In Operation Stardust he seizes the GP02 and drops a nuclear weapon. For him this is a final account to his dead comrades, not terrorism."
       ]
     },
     "machineIds": [
@@ -2230,15 +2502,18 @@
     ],
     "age": {
       "zh": "约 27 岁（U.C.0083）",
-      "ja": "約27歳（U.C.0083）"
+      "ja": "約27歳（U.C.0083）",
+      "en": "About 27 (U.C.0083)"
     },
     "rank": {
       "zh": "吉翁残党少佐",
-      "ja": "ジオン残党少佐"
+      "ja": "ジオン残党少佐",
+      "en": "Major, Zeon remnants"
     },
     "origin": {
       "zh": "Side 3",
-      "ja": "サイド3"
+      "ja": "サイド3",
+      "en": "Side 3"
     }
   },
   {
@@ -2255,7 +2530,8 @@
     ],
     "role": {
       "zh": "第 08MS 小队队长",
-      "ja": "第08MS小隊隊長"
+      "ja": "第08MS小隊隊長",
+      "en": "Leader of the 08th MS Team"
     },
     "status": "alive",
     "bio": {
@@ -2266,6 +2542,10 @@
       "ja": [
         "連邦第08MS小隊の隊長として東南アジア戦線へ送られる。戦闘の外に話し合える相手がいると信じた。",
         "ジオンのパイロット、アイナと出会い、軍規に属さない道を選ぶ。Ez8の素朴な外観は、英雄になろうとしない彼の性格と重なる。"
+      ],
+      "en": [
+        "Leader of the Federation's 08th MS Team, sent to the Southeast Asian front. He believes there are still people beyond the fighting he can talk to.",
+        "After meeting the Zeon pilot Aina, he chooses a path outside military regulations. The Ez8's plain appearance matches his own character, which does not want to be a \"hero\"."
       ]
     },
     "machineIds": [
@@ -2279,15 +2559,18 @@
     ],
     "age": {
       "zh": "约 23 岁（U.C.0079）",
-      "ja": "約23歳（U.C.0079）"
+      "ja": "約23歳（U.C.0079）",
+      "en": "About 23 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2304,7 +2587,8 @@
     ],
     "role": {
       "zh": "NT-1 测试驾驶员",
-      "ja": "NT-1テストパイロット"
+      "ja": "NT-1テストパイロット",
+      "en": "NT-1 test pilot"
     },
     "status": "dead",
     "bio": {
@@ -2315,6 +2599,10 @@
       "ja": [
         "連邦NT-1ガンダムのテストパイロットとしてサイド6のコロニーへ派遣される。少年アルとの関係が「敵」という言葉を単純でなくした。",
         "バーニィの襲撃にNT-1で立ち向かう。二機はそれぞれ信じる者を守るために戦い、結末は誰にも勝利を残さなかった。"
+      ],
+      "en": [
+        "Test pilot of the Federation's NT-1 Gundam, sent to a colony at Side 6. Her relationship with the boy Al makes the word \"enemy\" no longer simple.",
+        "During Bernie's attack she takes the NT-1 into battle. Both mobile suits fight to protect the people they believe in, but the outcome leaves no one with a victory."
       ]
     },
     "machineIds": [
@@ -2327,15 +2615,18 @@
     ],
     "age": {
       "zh": "约 21 岁（U.C.0079）",
-      "ja": "約21歳（U.C.0079）"
+      "ja": "約21歳（U.C.0079）",
+      "en": "About 21 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军少尉 / 测试驾驶员",
-      "ja": "地球連邦軍少尉 / テストパイロット"
+      "ja": "地球連邦軍少尉 / テストパイロット",
+      "en": "Second Lieutenant, Earth Federation Forces / test pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2352,7 +2643,8 @@
     ],
     "role": {
       "zh": "联邦 MS 小队指挥官 / 爵士乐手",
-      "ja": "連邦MS小隊指揮官 / ジャズメン"
+      "ja": "連邦MS小隊指揮官 / ジャズメン",
+      "en": "Federation MS team commander / jazz musician"
     },
     "status": "alive",
     "bio": {
@@ -2363,6 +2655,10 @@
       "ja": [
         "連邦側のガンダム・パイロットであり、戦場にジャズのレコードを持ち込む男でもある。ムーアの残骸帯で、アトラスガンダムとジオンの狙撃手が殺し合う。",
         "彼は戦争を浪漫化しない。ジャズは、引き金を引く前に自分がリズムと感情を持つ人間だと思い出すためのものだ。"
+      ],
+      "en": [
+        "A Gundam pilot on the Federation side and a man who brings jazz records to the battlefield. In the debris belt of the Moore Colony, he and a Zeon sniper hunt each other in the Atlas Gundam.",
+        "He never treats war as an adventure. Jazz lets him still remember, before he pulls the trigger, that he is a person with rhythm and feelings."
       ]
     },
     "machineIds": [
@@ -2375,15 +2671,18 @@
     ],
     "age": {
       "zh": "约 23 岁（U.C.0079）",
-      "ja": "約23歳（U.C.0079）"
+      "ja": "約23歳（U.C.0079）",
+      "en": "About 23 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军中尉",
-      "ja": "地球連邦軍中尉"
+      "ja": "地球連邦軍中尉",
+      "en": "First Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2400,7 +2699,8 @@
     ],
     "role": {
       "zh": "十字骨先锋驾驶员",
-      "ja": "クロスボーン・バンガードのパイロット"
+      "ja": "クロスボーン・バンガードのパイロット",
+      "en": "Crossbone Vanguard pilot"
     },
     "status": "alive",
     "bio": {
@@ -2411,6 +2711,10 @@
       "ja": [
         "クロスボーン・バンガードの少年パイロット。X-1で木星圏を駆ける。その成長は海賊ガンダムの伝説とほぼ重なっている。",
         "資源の乏しい木星圏で、最小の代償で任務を果たすことを学ぶ。X-1のマントと海賊旗は、彼にとって「自由」の最も直接的な形だ。"
+      ],
+      "en": [
+        "A young Crossbone Vanguard pilot, he operates the X-1 in the Jupiter sphere. His growth keeps pace with the legend of the Crossbone Gundam.",
+        "In the resource-poor Jupiter sphere he learns to complete missions at the lowest possible cost. The X-1's cloak and pirate flag are his most direct understanding of \"freedom\"."
       ]
     },
     "machineIds": [
@@ -2428,15 +2732,18 @@
     ],
     "age": {
       "zh": "约 15 岁（U.C.0133）",
-      "ja": "約15歳（U.C.0133）"
+      "ja": "約15歳（U.C.0133）",
+      "en": "About 15 (U.C.0133)"
     },
     "rank": {
       "zh": "十字骨先锋驾驶员",
-      "ja": "クロスボーン・バンガードのパイロット"
+      "ja": "クロスボーン・バンガードのパイロット",
+      "en": "Crossbone Vanguard pilot"
     },
     "origin": {
       "zh": "地球圈",
-      "ja": "地球圏"
+      "ja": "地球圏",
+      "en": "Earth sphere"
     }
   },
   {
@@ -2453,7 +2760,8 @@
     ],
     "role": {
       "zh": "独角兽三号机驾驶员 / 强化人",
-      "ja": "ユニコーン3号機パイロット / 強化人間"
+      "ja": "ユニコーン3号機パイロット / 強化人間",
+      "en": "Unicorn Unit 3 pilot / Cyber-Newtype"
     },
     "status": "missing",
     "bio": {
@@ -2464,6 +2772,10 @@
       "ja": [
         "ユニコーン3号機「フェネクス」のパイロットに選ばれる。彼女の意識は金色のサイコフレームと説明不能な融合を起こした。",
         "実験で身体を失った後も、何らかの形で機体に留まる。彼女にとってフェネクスは愛機ではなく、もう戻れない名前である。"
+      ],
+      "en": [
+        "Chosen as the pilot of the Unicorn Unit 3, the Phenex. Her consciousness undergoes an unexplained fusion with the golden psycho-frame.",
+        "After losing her body in an experiment, she still remains inside the machine in some form. For her the Phenex is a name she can never return from, not a machine she rides."
       ]
     },
     "machineIds": [
@@ -2481,15 +2793,18 @@
     ],
     "age": {
       "zh": "约 17 岁（U.C.0096）",
-      "ja": "約17歳（U.C.0096）"
+      "ja": "約17歳（U.C.0096）",
+      "en": "About 17 (U.C.0096)"
     },
     "rank": {
       "zh": "联邦强化人 / 凤凰驾驶员",
-      "ja": "連邦の強化人間 / フェネクスパイロット"
+      "ja": "連邦の強化人間 / フェネクスパイロット",
+      "en": "Federation Cyber-Newtype / Phenex pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2506,7 +2821,8 @@
     ],
     "role": {
       "zh": "联邦 NT 部队驾驶员",
-      "ja": "連邦NT部隊のパイロット"
+      "ja": "連邦NT部隊のパイロット",
+      "en": "Federation NT unit pilot"
     },
     "status": "alive",
     "bio": {
@@ -2517,6 +2833,10 @@
       "ja": [
         "連邦のニュータイプ部隊に所属し、暴走したフェネクスの追跡を命じられる。ナラティブガンダムで複数の装備を切り替える。",
         "最初は任務を果たすだけだったが、やがてリタが残した意識と向き合う。ナラティブという名は、最後には彼自身の経緯になった。"
+      ],
+      "en": [
+        "A pilot of the Federation's Newtype unit, sent to track down the runaway Phenex. He pilots the Narrative Gundam, switching between different equipment sets.",
+        "At first he only wants to complete the mission, but later he has to face the consciousness Rita left behind. The Narrative Gundam's name finally becomes his own experience."
       ]
     },
     "machineIds": [
@@ -2535,15 +2855,18 @@
     ],
     "age": {
       "zh": "约 20 岁（U.C.0096）",
-      "ja": "約20歳（U.C.0096）"
+      "ja": "約20歳（U.C.0096）",
+      "en": "About 20 (U.C.0096)"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -2560,7 +2883,8 @@
     ],
     "role": {
       "zh": "新瑞典代表 / 诺贝尔高达驾驶员",
-      "ja": "ネオスウェーデン代表 / ノーベルガンダムパイロット"
+      "ja": "ネオスウェーデン代表 / ノーベルガンダムパイロット",
+      "en": "Neo Sweden representative / Nobel Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2571,6 +2895,10 @@
       "ja": [
         "ネオスウェーデンのガンダムファイター。第13回大会でも最年少の参加者の一人である。体操のような動きは、ノーベルガンダムを兵器に見せなくする。",
         "デビルガンダム事件ではDG細胞に支配された。ドモンが彼女を取り戻した戦いの後、再び「アレンビー」という個人に戻る。"
+      ],
+      "en": [
+        "Neo Sweden's Gundam Fighter and one of the youngest entrants in the 13th tournament. Her gymnastic movements make the Nobel Gundam look less like a weapon.",
+        "During the Devil Gundam incident she is once controlled by DG Cells. The battle in which Domon pulls her back makes her \"Allenby\" again, not merely a representative machine."
       ]
     },
     "machineIds": [
@@ -2590,15 +2918,18 @@
     ],
     "age": {
       "zh": "约 17 岁（F.C.0060）",
-      "ja": "約17歳（F.C.0060）"
+      "ja": "約17歳（F.C.0060）",
+      "en": "About 17 (F.C.0060)"
     },
     "rank": {
       "zh": "新瑞典代表",
-      "ja": "ネオスウェーデン代表"
+      "ja": "ネオスウェーデン代表",
+      "en": "Neo Sweden representative"
     },
     "origin": {
       "zh": "新瑞典",
-      "ja": "ネオスウェーデン"
+      "ja": "ネオスウェーデン",
+      "en": "Neo Sweden"
     }
   },
   {
@@ -2615,7 +2946,8 @@
     ],
     "role": {
       "zh": "新美国代表 / 极限高达驾驶员",
-      "ja": "ネオアメリカ代表 / ガンダムマックスターパイロット"
+      "ja": "ネオアメリカ代表 / ガンダムマックスターパイロット",
+      "en": "Neo America representative / Maxter Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2626,6 +2958,10 @@
       "ja": [
         "ネオアメリカのボクサー代表。リングのスタイルをガンダムファイトへ持ち込む。マックスターは歩くスポーツ装備のようだ。",
         "派手に見えて、仲間と故郷には非常に誠実。拳は彼の言語であり、大切な者を守ることが拳を振るう理由である。"
+      ],
+      "en": [
+        "Neo America's boxer representative, he brings the style of the ring into the Gundam Fight. His Maxter Gundam looks like a walking set of sports gear.",
+        "He seems flashy, but he is actually very serious about his partners and his hometown. Boxing is his language, and protecting the people who matter is the reason he throws a punch."
       ]
     },
     "machineIds": [
@@ -2645,15 +2981,18 @@
     ],
     "age": {
       "zh": "约 22 岁（F.C.0060）",
-      "ja": "約22歳（F.C.0060）"
+      "ja": "約22歳（F.C.0060）",
+      "en": "About 22 (F.C.0060)"
     },
     "rank": {
       "zh": "新美国代表",
-      "ja": "ネオアメリカ代表"
+      "ja": "ネオアメリカ代表",
+      "en": "Neo America representative"
     },
     "origin": {
       "zh": "新美国",
-      "ja": "ネオアメリカ"
+      "ja": "ネオアメリカ",
+      "en": "Neo America"
     }
   },
   {
@@ -2670,7 +3009,8 @@
     ],
     "role": {
       "zh": "新法国代表 / 玫瑰高达驾驶员",
-      "ja": "ネオフランス代表 / ガンダムローズパイロット"
+      "ja": "ネオフランス代表 / ガンダムローズパイロット",
+      "en": "Neo France representative / Rose Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2681,6 +3021,10 @@
       "ja": [
         "ネオフランスの貴族代表。フェンシングと礼儀をガンダムファイトへ持ち込む。ローゼスビットは散る花びらのようだ。",
         "優雅さは弱さではなく制御だと信じる。追い詰められても、まず襟を整えてから剣を抜く。"
+      ],
+      "en": [
+        "Neo France's noble representative, he brings fencing and etiquette into the tournament. The Rose Gundam's funnels look like scattering petals.",
+        "He believes elegance is control, not weakness. Even when driven into a corner, he straightens his collar before drawing his sword."
       ]
     },
     "machineIds": [
@@ -2700,15 +3044,18 @@
     ],
     "age": {
       "zh": "约 23 岁（F.C.0060）",
-      "ja": "約23歳（F.C.0060）"
+      "ja": "約23歳（F.C.0060）",
+      "en": "About 23 (F.C.0060)"
     },
     "rank": {
       "zh": "新法国代表",
-      "ja": "ネオフランス代表"
+      "ja": "ネオフランス代表",
+      "en": "Neo France representative"
     },
     "origin": {
       "zh": "新法国",
-      "ja": "ネオフランス"
+      "ja": "ネオフランス",
+      "en": "Neo France"
     }
   },
   {
@@ -2725,7 +3072,8 @@
     ],
     "role": {
       "zh": "新俄罗斯代表 / 闪电高达驾驶员",
-      "ja": "ネオロシア代表 / ボルトガンダムパイロット"
+      "ja": "ネオロシア代表 / ボルトガンダムパイロット",
+      "en": "Neo Russia representative / Bolt Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2736,6 +3084,10 @@
       "ja": [
         "ネオロシア代表。元軍人であり、囚われた妻と子を持つ夫でもある。家族の自由と引き換えにガンダムファイトへ出る。",
         "ボルトガンダムのグラビティハンマーと厚い装甲は、彼自身のように無口だ。一振りごとに、家族へ向けた言葉がある。"
+      ],
+      "en": [
+        "Neo Russia's representative, a former soldier, and a husband and father held prisoner. He enters the tournament to buy back his family's freedom.",
+        "The Bolt Gundam's gravity hammer and heavy armor are like the man himself, poor with words. Every swing of the hammer is one sentence he says to his family."
       ]
     },
     "machineIds": [
@@ -2755,15 +3107,18 @@
     ],
     "age": {
       "zh": "约 30 岁（F.C.0060）",
-      "ja": "約30歳（F.C.0060）"
+      "ja": "約30歳（F.C.0060）",
+      "en": "About 30 (F.C.0060)"
     },
     "rank": {
       "zh": "新俄罗斯代表",
-      "ja": "ネオロシア代表"
+      "ja": "ネオロシア代表",
+      "en": "Neo Russia representative"
     },
     "origin": {
       "zh": "新俄罗斯",
-      "ja": "ネオロシア"
+      "ja": "ネオロシア",
+      "en": "Neo Russia"
     }
   },
   {
@@ -2780,7 +3135,8 @@
     ],
     "role": {
       "zh": "新中国代表 / 龙高达驾驶员",
-      "ja": "ネオチャイナ代表 / ドラゴンガンダムパイロット"
+      "ja": "ネオチャイナ代表 / ドラゴンガンダムパイロット",
+      "en": "Neo China representative / Dragon Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2791,6 +3147,10 @@
       "ja": [
         "ネオチャイナのガンダムファイター。年少で大食い、動きも速い。ドラゴンガンダムで少林拳法を大会へ持ち込む。",
         "最初は大会を冒険として楽しんでいたが、やがて国、師門、仲間の重さを知る。ドラゴンクローが掴むのは相手だけでなく、自分の責任でもある。"
+      ],
+      "en": [
+        "Neo China's Gundam Fighter, young, with a big appetite and quick moves. He pilots the Dragon Gundam and brings Shaolin boxing into the tournament.",
+        "At first he treats the tournament as an adventure; only later does he understand the weight of his country, his school, and his comrades. The dragon claws seize not only opponents but also his own responsibility."
       ]
     },
     "machineIds": [
@@ -2810,15 +3170,18 @@
     ],
     "age": {
       "zh": "约 13 岁（F.C.0060）",
-      "ja": "約13歳（F.C.0060）"
+      "ja": "約13歳（F.C.0060）",
+      "en": "About 13 (F.C.0060)"
     },
     "rank": {
       "zh": "新中国代表",
-      "ja": "ネオチャイナ代表"
+      "ja": "ネオチャイナ代表",
+      "en": "Neo China representative"
     },
     "origin": {
       "zh": "新中国",
-      "ja": "ネオチャイナ"
+      "ja": "ネオチャイナ",
+      "en": "Neo China"
     }
   },
   {
@@ -2835,7 +3198,8 @@
     ],
     "role": {
       "zh": "新德国代表 / 镜高达驾驶员",
-      "ja": "ネオドイツ代表 / ガンダムシュピーゲルパイロット"
+      "ja": "ネオドイツ代表 / ガンダムシュピーゲルパイロット",
+      "en": "Neo Germany representative / Spiegel Gundam pilot"
     },
     "status": "dead",
     "bio": {
@@ -2846,6 +3210,10 @@
       "ja": [
         "ネオドイツ代表であり、ドモンの兄弟子でもある。ヘルメットの下に、キョウジに関わる過去を隠す。",
         "シュピーゲルの忍術と鏡面妨害は、彼自身のように掴みどころがない。最後にドモンへ教えたのは強い拳ではなく、何のために戦うかだった。"
+      ],
+      "en": [
+        "Neo Germany's representative, and Domon's senior disciple and mentor. He wears a helmet, hiding a past connected to Kyoji.",
+        "The Spiegel Gundam's ninjutsu and mirror interference are as hard to grasp as the man himself. What he finally teaches Domon is why to fight, not a stronger punch."
       ]
     },
     "machineIds": [
@@ -2863,15 +3231,18 @@
     ],
     "age": {
       "zh": "约 28 岁（F.C.0060）",
-      "ja": "約28歳（F.C.0060）"
+      "ja": "約28歳（F.C.0060）",
+      "en": "About 28 (F.C.0060)"
     },
     "rank": {
       "zh": "新德国代表",
-      "ja": "ネオドイツ代表"
+      "ja": "ネオドイツ代表",
+      "en": "Neo Germany representative"
     },
     "origin": {
       "zh": "新德国",
-      "ja": "ネオドイツ"
+      "ja": "ネオドイツ",
+      "en": "Neo Germany"
     }
   },
   {
@@ -2888,7 +3259,8 @@
     ],
     "role": {
       "zh": "新日本支援驾驶员 / 旭日高达",
-      "ja": "ネオジャパン支援パイロット / ライジングガンダム"
+      "ja": "ネオジャパン支援パイロット / ライジングガンダム",
+      "en": "Neo Japan support pilot / Rising Gundam"
     },
     "status": "alive",
     "bio": {
@@ -2899,6 +3271,10 @@
       "ja": [
         "ドモンの相棒であり整備士。ネオジャパンの予備パイロットでもある。ライジングガンダムを駆る時、その戦いはドモンより冷静だ。",
         "カメラに映らない部分を常に支えてきた。整備、補給、そして自己破壊の淵から彼を引き戻すこと。"
+      ],
+      "en": [
+        "Domon's partner and mechanic, and Neo Japan's backup pilot. When she pilots the Rising Gundam, her fighting style is calmer than Domon's.",
+        "She has always worked behind Domon on the parts the cameras do not show: repairs, supplies, and pulling him back from the edge of self-destruction."
       ]
     },
     "machineIds": [
@@ -2916,15 +3292,18 @@
     ],
     "age": {
       "zh": "约 20 岁（F.C.0060）",
-      "ja": "約20歳（F.C.0060）"
+      "ja": "約20歳（F.C.0060）",
+      "en": "About 20 (F.C.0060)"
     },
     "rank": {
       "zh": "新日本支援驾驶员 / 整备师",
-      "ja": "ネオジャパン支援パイロット / 整備士"
+      "ja": "ネオジャパン支援パイロット / 整備士",
+      "en": "Neo Japan support pilot / mechanic"
     },
     "origin": {
       "zh": "新日本",
-      "ja": "ネオジャパン"
+      "ja": "ネオジャパン",
+      "en": "Neo Japan"
     }
   },
   {
@@ -2941,7 +3320,8 @@
     ],
     "role": {
       "zh": "死神高达驾驶员",
-      "ja": "ガンダムデスサイズのパイロット"
+      "ja": "ガンダムデスサイズのパイロット",
+      "en": "Deathscythe Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -2952,6 +3332,10 @@
       "ja": [
         "オペレーション・メテオの五人目の少年。ガンダムデスサイズを担当する。「死神」を名乗りながら、戦いの後には死者のために祈る。",
         "軽薄に見えて、誰よりも戦争の代償を知っている。隠密、奇襲、離脱。その戦い方は人生と同じく、痕跡を残さない。"
+      ],
+      "en": [
+        "One of the five boys in Operation Meteor, in charge of the Deathscythe Gundam. He calls himself \"the God of Death\", yet always prays for the dead after a battle.",
+        "He seems frivolous, but he understands the cost of war better than anyone. Stealth, raids, withdrawal — his way of fighting, like his life, tries to leave as few traces as possible."
       ]
     },
     "machineIds": [
@@ -2971,15 +3355,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.C.195）",
-      "ja": "約15歳（A.C.195）"
+      "ja": "約15歳（A.C.195）",
+      "en": "About 15 (A.C.195)"
     },
     "rank": {
       "zh": "殖民地抵抗组织驾驶员",
-      "ja": "コロニー抵抗組織のパイロット"
+      "ja": "コロニー抵抗組織のパイロット",
+      "en": "Colony resistance pilot"
     },
     "origin": {
       "zh": "L2 殖民地群",
-      "ja": "L2コロニー群"
+      "ja": "L2コロニー群",
+      "en": "L2 colony cluster"
     }
   },
   {
@@ -2996,7 +3383,8 @@
     ],
     "role": {
       "zh": "重武装高达驾驶员",
-      "ja": "ガンダムヘビーアームズのパイロット"
+      "ja": "ガンダムヘビーアームズのパイロット",
+      "en": "Heavyarms Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -3007,6 +3395,10 @@
       "ja": [
         "オペレーション・メテオの五人目の少年。寡黙で、射撃と計算を得意とする。ガンダムヘビーアームズで弾幕を張り、仲間の道を作る。",
         "自分の過去をあまり語らない。サーカスも戦場も名前も、仮に借りたもののようだ。引き金を引く時だけ、完全に自分自身になる。"
+      ],
+      "en": [
+        "One of the five boys in Operation Meteor, quiet and skilled at shooting and calculation. He pilots the Heavyarms Gundam, using barrage fire to pave the way for his teammates.",
+        "He does not talk much about his past. The circus, the battlefield, names — all seem like things he borrowed for a while. Only when he pulls the trigger does he seem entirely his own."
       ]
     },
     "machineIds": [
@@ -3026,15 +3418,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.C.195）",
-      "ja": "約15歳（A.C.195）"
+      "ja": "約15歳（A.C.195）",
+      "en": "About 15 (A.C.195)"
     },
     "rank": {
       "zh": "殖民地抵抗组织驾驶员",
-      "ja": "コロニー抵抗組織のパイロット"
+      "ja": "コロニー抵抗組織のパイロット",
+      "en": "Colony resistance pilot"
     },
     "origin": {
       "zh": "L3 殖民地群",
-      "ja": "L3コロニー群"
+      "ja": "L3コロニー群",
+      "en": "L3 colony cluster"
     }
   },
   {
@@ -3051,7 +3446,8 @@
     ],
     "role": {
       "zh": "沙漠高达驾驶员",
-      "ja": "ガンダムサンドロックのパイロット"
+      "ja": "ガンダムサンドロックのパイロット",
+      "en": "Sandrock Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -3062,6 +3458,10 @@
       "ja": [
         "ウィナー家の後継者であり、五人の少年の中でも最も穏やか。ガンダムサンドロックを駆りながら、不要な戦いを避けようとする。",
         "優しさは弱さではない。喪失を知っているからこそ、戦わねばならない時に最も難しい選択ができる。"
+      ],
+      "en": [
+        "Heir of the Winner family and the gentlest of the five boys. He pilots the Sandrock Gundam, yet keeps trying to avoid unnecessary fighting.",
+        "His gentleness is not weakness. Precisely because he understands loss, he makes the hardest choices when he must fight."
       ]
     },
     "machineIds": [
@@ -3081,15 +3481,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.C.195）",
-      "ja": "約15歳（A.C.195）"
+      "ja": "約15歳（A.C.195）",
+      "en": "About 15 (A.C.195)"
     },
     "rank": {
       "zh": "温拿家继承人 / 高达驾驶员",
-      "ja": "ウィナー家後継者 / ガンダムパイロット"
+      "ja": "ウィナー家後継者 / ガンダムパイロット",
+      "en": "Winner family heir / Gundam pilot"
     },
     "origin": {
       "zh": "L4 殖民地群",
-      "ja": "L4コロニー群"
+      "ja": "L4コロニー群",
+      "en": "L4 colony cluster"
     }
   },
   {
@@ -3106,7 +3509,8 @@
     ],
     "role": {
       "zh": "神龙 / 双头龙高达驾驶员",
-      "ja": "シェンロン / アルトロンのパイロット"
+      "ja": "シェンロン / アルトロンのパイロット",
+      "en": "Shenlong / Altron Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -3117,6 +3521,10 @@
       "ja": [
         "オペレーション・メテオの五人目の少年。戦いを正義の証明と見なす。シェンロンからアルトロンへ乗り換える。",
         "頑固で鋭く、しばしば仲間を突き放す。それでも最後には皆の側へ戻る。それが彼の信頼の示し方である。"
+      ],
+      "en": [
+        "One of the five boys in Operation Meteor, he sees fighting as a way to prove justice. He pilots the Shenlong Gundam, and later switches to the Altron.",
+        "He is stubborn and sharp, and often pushes his comrades away. But in the end he still chooses to return to everyone's side. This is how he expresses trust."
       ]
     },
     "machineIds": [
@@ -3140,15 +3548,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.C.195）",
-      "ja": "約15歳（A.C.195）"
+      "ja": "約15歳（A.C.195）",
+      "en": "About 15 (A.C.195)"
     },
     "rank": {
       "zh": "殖民地抵抗组织驾驶员",
-      "ja": "コロニー抵抗組織のパイロット"
+      "ja": "コロニー抵抗組織のパイロット",
+      "en": "Colony resistance pilot"
     },
     "origin": {
       "zh": "L5 殖民地群",
-      "ja": "L5コロニー群"
+      "ja": "L5コロニー群",
+      "en": "L5 colony cluster"
     }
   },
   {
@@ -3165,7 +3576,8 @@
     ],
     "role": {
       "zh": "脉冲 / 命运高达驾驶员",
-      "ja": "インパルス / デスティニーのパイロット"
+      "ja": "インパルス / デスティニーのパイロット",
+      "en": "Impulse / Destiny Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -3176,6 +3588,10 @@
       "ja": [
         "オーブ出身のザフトのパイロット。家族を戦争で失った怒りを抱えて軍に入る。インパルス、そしてデスティニーを駆る。",
         "生まれつきの戦士ではない。喪失を手放せない、ただの人間である。デスティニーの赤い輪郭は、最後まで燃え続ける彼の感情のようだ。"
+      ],
+      "en": [
+        "A ZAFT pilot from Orb who joins the military with intense anger after his family dies in the war. He pilots the Impulse and then the Destiny Gundam.",
+        "He is not a born warrior, only a person who cannot let go of his loss. The Destiny Gundam's red outline is like his emotions burning to the very end."
       ]
     },
     "machineIds": [
@@ -3205,15 +3621,18 @@
     ],
     "age": {
       "zh": "约 16 岁（C.E.73）",
-      "ja": "約16歳（C.E.73）"
+      "ja": "約16歳（C.E.73）",
+      "en": "About 16 (C.E.73)"
     },
     "rank": {
       "zh": "ZAFT 红衣",
-      "ja": "ザフト赤服"
+      "ja": "ザフト赤服",
+      "en": "ZAFT red coat"
     },
     "origin": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     }
   },
   {
@@ -3230,7 +3649,8 @@
     ],
     "role": {
       "zh": "奥布代表 / 嫣红强袭驾驶员",
-      "ja": "オーブ代表 / ストライクルージュのパイロット"
+      "ja": "オーブ代表 / ストライクルージュのパイロット",
+      "en": "Orb representative / Strike Rouge pilot"
     },
     "status": "alive",
     "bio": {
@@ -3241,6 +3661,10 @@
       "ja": [
         "オーブ連合首長国の代表であり、キラの妹。ストライクルージュを駆り、戦場で自分が負うべき責任を探す。",
         "戦争を好まないが、選択を他人に委ねることは拒む。ストライクルージュの赤は、「守る」という意志の最も直接的な表現である。"
+      ],
+      "en": [
+        "Representative of the United Emirates of Orb and Kira's sister. She pilots the Strike Rouge, searching on the battlefield for the responsibility she can bear.",
+        "She does not like war, but she refuses to leave the choice to others. The Strike Rouge's red paint is her most direct expression of \"protection\"."
       ]
     },
     "machineIds": [
@@ -3264,15 +3688,18 @@
     ],
     "age": {
       "zh": "约 16 岁（C.E.71）",
-      "ja": "約16歳（C.E.71）"
+      "ja": "約16歳（C.E.71）",
+      "en": "About 16 (C.E.71)"
     },
     "rank": {
       "zh": "奥布联合首长国代表",
-      "ja": "オーブ連合首長国代表"
+      "ja": "オーブ連合首長国代表",
+      "en": "Representative of the United Emirates of Orb"
     },
     "origin": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     }
   },
   {
@@ -3289,7 +3716,8 @@
     ],
     "role": {
       "zh": "传说高达驾驶员",
-      "ja": "レジェンドのパイロット"
+      "ja": "レジェンドのパイロット",
+      "en": "Legend Gundam pilot"
     },
     "status": "dead",
     "bio": {
@@ -3300,6 +3728,10 @@
       "ja": [
         "ザフトのエリートパイロットであり、デュランダル議長の側近。レジェンドを駆り、ドラグーン・システムで全方位戦を行う。",
         "忠誠と自己認識が結びついている。最後まで、あの人がいなければ自分は誰なのかと問い続けた。"
+      ],
+      "en": [
+        "An elite ZAFT pilot and a close aide of Chairman Durandal. He pilots the Legend Gundam, using the DRAGOON system for all-range combat.",
+        "His loyalty is tightly bound to his sense of self. To the end he is still asking himself who he is without that person."
       ]
     },
     "machineIds": [
@@ -3324,15 +3756,18 @@
     ],
     "age": {
       "zh": "约 18 岁（C.E.73）",
-      "ja": "約18歳（C.E.73）"
+      "ja": "約18歳（C.E.73）",
+      "en": "About 18 (C.E.73)"
     },
     "rank": {
       "zh": "ZAFT 红衣 / 传说驾驶员",
-      "ja": "ザフト赤服 / レジェンドパイロット"
+      "ja": "ザフト赤服 / レジェンドパイロット",
+      "en": "ZAFT red coat / Legend pilot"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     }
   },
   {
@@ -3349,7 +3784,8 @@
     ],
     "role": {
       "zh": "鉴定师 / 异端高达红色机驾驶员",
-      "ja": "ジャンク屋 / アストレイ レッドフレームのパイロット"
+      "ja": "ジャンク屋 / アストレイ レッドフレームのパイロット",
+      "en": "Appraiser / Astray Red Frame pilot"
     },
     "status": "alive",
     "bio": {
@@ -3360,6 +3796,10 @@
       "ja": [
         "ジャンク屋「ロウ」の店主であり、アストレイ レッドフレームのパイロット。機体を壊すより直すことを好む。",
         "どの軍隊にも属さないが、C.E.71の混乱で多くの人を救った。菊一文字は殺すための刀ではなく、一つの選択である。"
+      ],
+      "en": [
+        "Owner of the junk shop \"Lowe\" and pilot of the Astray Red Frame. He would rather repair a mobile suit than break it.",
+        "He belongs to no army, yet he saved many people in the chaos of C.E.71. The Gerbera Straight is a choice for him, not a killing blade."
       ]
     },
     "machineIds": [
@@ -3377,15 +3817,18 @@
     ],
     "age": {
       "zh": "约 18 岁（C.E.71）",
-      "ja": "約18歳（C.E.71）"
+      "ja": "約18歳（C.E.71）",
+      "en": "About 18 (C.E.71)"
     },
     "rank": {
       "zh": "鉴定师 / 异端红驾驶员",
-      "ja": "ジャンク屋 / アストレイ レッドフレームパイロット"
+      "ja": "ジャンク屋 / アストレイ レッドフレームパイロット",
+      "en": "Appraiser / Astray Red pilot"
     },
     "origin": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     }
   },
   {
@@ -3402,7 +3845,8 @@
     ],
     "role": {
       "zh": "佣兵 / 异端高达蓝色机驾驶员",
-      "ja": "傭兵 / アストレイ ブルーフレームのパイロット"
+      "ja": "傭兵 / アストレイ ブルーフレームのパイロット",
+      "en": "Mercenary / Astray Blue Frame pilot"
     },
     "status": "alive",
     "bio": {
@@ -3413,6 +3857,10 @@
       "ja": [
         "依頼で動く傭兵。アストレイ ブルーフレームを駆る。タクティカルアームズは契約と戦場に応じて換装される。",
         "口数は少なく、料金は明確だが、独自の規範を持つ。所属より、仕事が潔いかどうかを気にする。"
+      ],
+      "en": [
+        "A mercenary who takes contracts and pilots the Astray Blue Frame. His tactical armament can be swapped quickly to suit the contract and the battlefield.",
+        "He says little and his fees are clear, but he has his own code. More than which side he is on, he cares whether the job is clean."
       ]
     },
     "machineIds": [
@@ -3430,15 +3878,18 @@
     ],
     "age": {
       "zh": "约 20 岁（C.E.71）",
-      "ja": "約20歳（C.E.71）"
+      "ja": "約20歳（C.E.71）",
+      "en": "About 20 (C.E.71)"
     },
     "rank": {
       "zh": "佣兵 / 异端蓝驾驶员",
-      "ja": "傭兵 / アストレイ ブルーフレームパイロット"
+      "ja": "傭兵 / アストレイ ブルーフレームパイロット",
+      "en": "Mercenary / Astray Blue pilot"
     },
     "origin": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     }
   },
   {
@@ -3455,7 +3906,8 @@
     ],
     "role": {
       "zh": "幻痛部队 / 漆黑强袭驾驶员",
-      "ja": "ファントムペイン / ストライクノワールのパイロット"
+      "ja": "ファントムペイン / ストライクノワールのパイロット",
+      "en": "Phantom Pain / Strike Noir pilot"
     },
     "status": "alive",
     "bio": {
@@ -3466,6 +3918,10 @@
       "ja": [
         "地球連合軍第81独立機動群「ファントムペイン」のパイロット。暗色任務に従事する。ストライクノワールを駆り、任務後は即座に離れる。",
         "感情がないわけではない。任務報告の外にしまっているだけだ。戦後、初めて普通の人間として生きることを学ぶ。"
+      ],
+      "en": [
+        "A pilot of the Earth Alliance's 81st Independent Mobile Group \"Phantom Pain\", carrying out dark operations. He pilots the Strike Noir and is used to leaving immediately after a mission ends.",
+        "It is not that he has no feelings; he simply keeps them outside the mission briefing. Only after the war does he begin to learn how to live as an ordinary person."
       ]
     },
     "machineIds": [
@@ -3478,15 +3934,18 @@
     ],
     "age": {
       "zh": "约 18 岁（C.E.73）",
-      "ja": "約18歳（C.E.73）"
+      "ja": "約18歳（C.E.73）",
+      "en": "About 18 (C.E.73)"
     },
     "rank": {
       "zh": "联合军幻痛部队",
-      "ja": "連合軍ファントムペイン"
+      "ja": "連合軍ファントムペイン",
+      "en": "Earth Alliance Phantom Pain"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3503,7 +3962,8 @@
     ],
     "role": {
       "zh": "主天使 / 堕天使 / 妖天使驾驶员",
-      "ja": "キュリオス / アリオス / ハルートのパイロット"
+      "ja": "キュリオス / アリオス / ハルートのパイロット",
+      "en": "Kyrios / Arios / Zabanya pilot"
     },
     "status": "alive",
     "bio": {
@@ -3514,6 +3974,10 @@
       "ja": [
         "ソレスタルビーイングのガンダム・パイロット。「アレルヤ」と「ハレルヤ」の二重人格を持つ。キュリオスからアリオス、ハルートへ乗り換える。",
         "戦い方は冷静と狂暴の間で切り替わる。最後には二つの人格が身体を奪い合うのをやめ、同時に存在することを学ぶ。"
+      ],
+      "en": [
+        "A Celestial Being Gundam pilot with the dual personalities \"Allelujah\" and \"Hallelujah\". He pilots the Kyrios, and later switches to the Arios and the Zabanya.",
+        "His fighting style switches between calm and ferocious. In the end the two personalities no longer fight over the body but learn to exist at the same time."
       ]
     },
     "machineIds": [
@@ -3546,15 +4010,18 @@
     ],
     "age": {
       "zh": "约 24 岁（A.D.2307）",
-      "ja": "約24歳（A.D.2307）"
+      "ja": "約24歳（A.D.2307）",
+      "en": "About 24 (A.D.2307)"
     },
     "rank": {
       "zh": "天人高达使者",
-      "ja": "ソレスタルビーイングのガンダムマイスター"
+      "ja": "ソレスタルビーイングのガンダムマイスター",
+      "en": "Celestial Being Gundam Meister"
     },
     "origin": {
       "zh": "人类革新联盟",
-      "ja": "人類革新連盟"
+      "ja": "人類革新連盟",
+      "en": "Human Reform League"
     }
   },
   {
@@ -3571,7 +4038,8 @@
     ],
     "role": {
       "zh": "AGE-3 驾驶员",
-      "ja": "AGE-3のパイロット"
+      "ja": "AGE-3のパイロット",
+      "en": "AGE-3 pilot"
     },
     "status": "alive",
     "bio": {
@@ -3582,6 +4050,10 @@
       "ja": [
         "フリットの孫であり、AGEシステムの第三世代パイロット。AGE-3でA.G.164の戦場に立ち、戦争を終わらせる方法を探す。",
         "父祖と違い、まず「なぜ」と問う。AGE-3の換装能力は、相手の立場を理解しようとする彼の姿勢に似ている。"
+      ],
+      "en": [
+        "Flit's grandson and the third-generation pilot of the AGE System. He pilots the AGE-3, searching for a way to end the war on the battlefields of A.G.164.",
+        "Unlike his father and grandfather, he prefers to ask \"why\" first. The AGE-3's ability to change wear looks like his posture of constantly trying to understand the other side's position."
       ]
     },
     "machineIds": [
@@ -3606,15 +4078,18 @@
     ],
     "age": {
       "zh": "约 13 岁（A.G.164）",
-      "ja": "約13歳（A.G.164）"
+      "ja": "約13歳（A.G.164）",
+      "en": "About 13 (A.G.164)"
     },
     "rank": {
       "zh": "地球联邦军驾驶员",
-      "ja": "地球連邦軍パイロット"
+      "ja": "地球連邦軍パイロット",
+      "en": "Earth Federation Forces pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3631,7 +4106,8 @@
     ],
     "role": {
       "zh": "维根指挥官 / 雷吉鲁斯驾驶员",
-      "ja": "ヴェイガン指揮官 / レギルスのパイロット"
+      "ja": "ヴェイガン指揮官 / レギルスのパイロット",
+      "en": "Vagan commander / Legilis pilot"
     },
     "status": "dead",
     "bio": {
@@ -3642,6 +4118,10 @@
       "ja": [
         "ヴェイガンの指揮官であり、アセムの士官学校時代の友人。レギルスを駆り、戦争後期にヴェイガンの未来を背負う。",
         "自分の道だけが同胞を守れると信じている。だからこそ、アセムとの再会は残酷だった。"
+      ],
+      "en": [
+        "A Vagan commander and Asemu's friend from military academy days. He pilots the Legilis Gundam and, late in the war, takes on the future of the Vagan.",
+        "He believes his path is the only one that can protect his people. Precisely for that reason, his reunion with Asemu is so cruel."
       ]
     },
     "machineIds": [
@@ -3659,15 +4139,18 @@
     ],
     "age": {
       "zh": "约 25 岁（A.G.164）",
-      "ja": "約25歳（A.G.164）"
+      "ja": "約25歳（A.G.164）",
+      "en": "About 25 (A.G.164)"
     },
     "rank": {
       "zh": "维根指挥官",
-      "ja": "ヴェイガン指揮官"
+      "ja": "ヴェイガン指揮官",
+      "en": "Vagan commander"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     }
   },
   {
@@ -3684,7 +4167,8 @@
     ],
     "role": {
       "zh": "加拉尔霍恩高官 / 巴耶力驾驶员",
-      "ja": "ギャラルホルン高官 / バエルのパイロット"
+      "ja": "ギャラルホルン高官 / バエルのパイロット",
+      "en": "Gjallarhorn senior officer / Bael pilot"
     },
     "status": "dead",
     "bio": {
@@ -3695,6 +4179,10 @@
       "ja": [
         "ギャラルホルンの若き高官であり、鉄華団の体制内の協力者。バエルを駆り、厄祭戦の遺産で秩序を書き換えようとする。",
         "理想と手段が常に絡み合う。バエルは機体ではなく、「自分こそ正統だ」と証明する証書である。"
+      ],
+      "en": [
+        "A young senior officer of Gjallarhorn and Tekkadan's collaborator inside the system. He pilots the Bael, trying to rewrite the order with the legacy of the Calamity War.",
+        "His ideals and his methods are always tangled together. To him the Bael is a certificate proving \"I am the legitimate heir\", not a mobile suit."
       ]
     },
     "machineIds": [
@@ -3720,15 +4208,18 @@
     ],
     "age": {
       "zh": "约 27 岁（P.D.325）",
-      "ja": "約27歳（P.D.325）"
+      "ja": "約27歳（P.D.325）",
+      "en": "About 27 (P.D.325)"
     },
     "rank": {
       "zh": "加拉尔霍恩特务三佐",
-      "ja": "ギャラルホルン特務三佐"
+      "ja": "ギャラルホルン特務三佐",
+      "en": "Gjallarhorn Special Officer, Major"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3745,7 +4236,8 @@
     ],
     "role": {
       "zh": "金巴里斯驾驶员",
-      "ja": "キマリス・ヴィダールのパイロット"
+      "ja": "キマリス・ヴィダールのパイロット",
+      "en": "Kimaris pilot"
     },
     "status": "alive",
     "bio": {
@@ -3756,6 +4248,10 @@
       "ja": [
         "ギャラルホルンの貴族であり、マクギリスの親友。重傷の後、「ヴィダール」として戦場へ戻り、キマリス・ヴィダールを駆る。",
         "体制も友情も変わらないと信じていた。戦争は、そのどちらも誰かが能動的に守らねばならないと教えた。"
+      ],
+      "en": [
+        "A Gjallarhorn noble and McGillis's close friend. After being gravely wounded he returns to the battlefield as \"Vidar\", piloting the Kimaris Vidar.",
+        "He once believed that both the system and friendship could stay unchanged. The war teaches him that both need someone to actively protect them."
       ]
     },
     "machineIds": [
@@ -3776,15 +4272,18 @@
     ],
     "age": {
       "zh": "约 27 岁（P.D.325）",
-      "ja": "約27歳（P.D.325）"
+      "ja": "約27歳（P.D.325）",
+      "en": "About 27 (P.D.325)"
     },
     "rank": {
       "zh": "加拉尔霍恩特务三佐",
-      "ja": "ギャラルホルン特務三佐"
+      "ja": "ギャラルホルン特務三佐",
+      "en": "Gjallarhorn Special Officer, Major"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3801,7 +4300,8 @@
     ],
     "role": {
       "zh": "铁华团 MS 队长 / 古辛驾驶员",
-      "ja": "鉄華団MS隊長 / グシオンのパイロット"
+      "ja": "鉄華団MS隊長 / グシオンのパイロット",
+      "en": "Tekkadan MS team leader / Gusion pilot"
     },
     "status": "dead",
     "bio": {
@@ -3812,6 +4312,10 @@
       "ja": [
         "鉄華団のMS隊長であり、火星の街頭を生き延びた者。グシオン系を重装水中機からフルシティまで改修して駆る。",
         "表現は得意ではないが、「弟妹たちを生きて連れて帰る」ことを唯一の命令とする。グシオンの厚い装甲は、家族のために張る壁のようだ。"
+      ],
+      "en": [
+        "Tekkadan's MS team leader and a survivor of the Martian streets. He pilots the Gusion series, refitting it from the heavy amphibious machine all the way to the Full City type.",
+        "He is not good at expressing himself, but he treats \"keep my little brothers and sisters alive\" as his only order. The Gusion's heavy armor is like the wall he holds up for his family."
       ]
     },
     "machineIds": [
@@ -3842,15 +4346,18 @@
     ],
     "age": {
       "zh": "约 19 岁（P.D.325）",
-      "ja": "約19歳（P.D.325）"
+      "ja": "約19歳（P.D.325）",
+      "en": "About 19 (P.D.325)"
     },
     "rank": {
       "zh": "铁华团 MS 队长",
-      "ja": "鉄華団MS隊長"
+      "ja": "鉄華団MS隊長",
+      "en": "Tekkadan MS team leader"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     }
   },
   {
@@ -3867,7 +4374,8 @@
     ],
     "role": {
       "zh": "杰特克社长 / 达利尔巴尔德驾驶员",
-      "ja": "ジェターク社長 / ダリルバルデのパイロット"
+      "ja": "ジェターク社長 / ダリルバルデのパイロット",
+      "en": "Jeturk president / Darilbalde pilot"
     },
     "status": "alive",
     "bio": {
@@ -3878,6 +4386,10 @@
       "ja": [
         "ジェターク重工の後継者であり、学園の決闘者。ダリルバルデを駆り、自尊心と一族の期待をコクピットへ持ち込む。",
         "失敗、家出、再出発を経る。最後には「ジェタークのグエル」ではなく、自分の選択に責任を持つ人間になる。"
+      ],
+      "en": [
+        "Heir of Jeturk Heavy Industries and a duelist at the academy. He pilots the Darilbalde, carrying his pride and his family's expectations into the cockpit.",
+        "He goes through failure, leaving home, and starting over. In the end he is no longer \"Guel of Jeturk\" but a person willing to take responsibility for his own choices."
       ]
     },
     "machineIds": [
@@ -3902,15 +4414,18 @@
     ],
     "age": {
       "zh": "约 17 岁（A.S.122）",
-      "ja": "約17歳（A.S.122）"
+      "ja": "約17歳（A.S.122）",
+      "en": "About 17 (A.S.122)"
     },
     "rank": {
       "zh": "杰特克重工继承人",
-      "ja": "ジェターク重工後継者"
+      "ja": "ジェターク重工後継者",
+      "en": "Jeturk Heavy Industries heir"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3927,7 +4442,8 @@
     ],
     "role": {
       "zh": "战骑高达驾驶员",
-      "ja": "シュバルゼッテのパイロット"
+      "ja": "シュバルゼッテのパイロット",
+      "en": "Schwarzette pilot"
     },
     "status": "alive",
     "bio": {
@@ -3938,6 +4454,10 @@
       "ja": [
         "グエルの弟であり、ジェターク重工のパイロット。シュバルゼッテを駆り、経緯後半に兄と対立する位置へ押される。",
         "兄の背中を追い続け、自分が認められる方法を探してきた。シュバルゼッテの大型ビームソードは、もう譲らないという宣言である。"
+      ],
+      "en": [
+        "Guel's younger brother and a Jeturk Heavy Industries pilot. He pilots the Schwarzette and, late in the story, is pushed into a position opposed to his brother.",
+        "He has always been chasing his brother's back and looking for a way to be recognized. The Schwarzette's large beam sword is his declaration that he will not give way again."
       ]
     },
     "machineIds": [
@@ -3955,15 +4475,18 @@
     ],
     "age": {
       "zh": "约 16 岁（A.S.122）",
-      "ja": "約16歳（A.S.122）"
+      "ja": "約16歳（A.S.122）",
+      "en": "About 16 (A.S.122)"
     },
     "rank": {
       "zh": "杰特克重工驾驶员",
-      "ja": "ジェターク重工パイロット"
+      "ja": "ジェターク重工パイロット",
+      "en": "Jeturk Heavy Industries pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -3980,7 +4503,8 @@
     ],
     "role": {
       "zh": "佩尔公司驾驶员 / 铁骑高达",
-      "ja": "ペイル社パイロット / ファラクト"
+      "ja": "ペイル社パイロット / ファラクト",
+      "en": "Peil Technologies pilot / Pharact"
     },
     "status": "unknown",
     "bio": {
@@ -3991,6 +4515,10 @@
       "ja": [
         "ペイル社の「エラン・ケレス」。ファラクトを駆る。その身分の背後には、製造された複数の強化人間がいる。",
         "最初は他人を道具として見ていたが、スレッタとの接触で自分の位置を疑い始める。ファラクトの遠隔操作は、世界との距離そのものだ。"
+      ],
+      "en": [
+        "\"Elan Ceres\" of Peil Technologies, piloting the Pharact Gundam. Behind this identity is a series of manufactured enhanced humans.",
+        "At first he treats others as tools, but later, through contact with Suletta, he begins to question his place. The Pharact's remote control is like the distance he keeps from the world."
       ]
     },
     "machineIds": [
@@ -4003,15 +4531,18 @@
     ],
     "age": {
       "zh": "约 17 岁（A.S.122）",
-      "ja": "約17歳（A.S.122）"
+      "ja": "約17歳（A.S.122）",
+      "en": "About 17 (A.S.122)"
     },
     "rank": {
       "zh": "佩尔公司驾驶员",
-      "ja": "ペイル社パイロット"
+      "ja": "ペイル社パイロット",
+      "en": "Peil Technologies pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -4028,7 +4559,8 @@
     ],
     "role": {
       "zh": "黎明战线 / 魔灵乌尔驾驶员",
-      "ja": "ドーン・オブ・フォールド / ルブリス・ウルのパイロット"
+      "ja": "ドーン・オブ・フォールド / ルブリス・ウルのパイロット",
+      "en": "Dawn of Fold / Lfrith Ur pilot"
     },
     "status": "dead",
     "bio": {
@@ -4039,6 +4571,10 @@
       "ja": [
         "地球の反スペーシアン組織「ドーン・オブ・フォールド」のパイロット。ルブリス・ウルを駆る。スレッタを憧れの存在であり、超えるべき相手と見る。",
         "戦いには子どものような率直さと、奪われた者の怒りがある。ルブリス・ウルの重装の輪郭は、もう無視されたくないという声のようだ。"
+      ],
+      "en": [
+        "A pilot of Dawn of Fold, an anti-spacian organization on Earth, she pilots the Lfrith Ur. She sees Suletta as an idol and also as a rival she must surpass.",
+        "Her fighting carries a childlike directness and also the anger of the dispossessed. The Lfrith Ur's heavy silhouette is like her voice, which refuses to be ignored any longer."
       ]
     },
     "machineIds": [
@@ -4062,15 +4598,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.S.122）",
-      "ja": "約15歳（A.S.122）"
+      "ja": "約15歳（A.S.122）",
+      "en": "About 15 (A.S.122)"
     },
     "rank": {
       "zh": "黎明战线驾驶员",
-      "ja": "ドーン・オブ・フォールドのパイロット"
+      "ja": "ドーン・オブ・フォールドのパイロット",
+      "en": "Dawn of Fold pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -4087,7 +4626,8 @@
     ],
     "role": {
       "zh": "黎明战线 / 魔灵索恩驾驶员",
-      "ja": "ドーン・オブ・フォールド / ルブリス・ソーンのパイロット"
+      "ja": "ドーン・オブ・フォールド / ルブリス・ソーンのパイロット",
+      "en": "Dawn of Fold / Lfrith Thorn pilot"
     },
     "status": "dead",
     "bio": {
@@ -4098,6 +4638,10 @@
       "ja": [
         "ドーン・オブ・フォールドのパイロット。ルブリス・ソーンを駆る。ソフィより冷静で、他人を信じるのが難しい。",
         "スペーシアンへの敵意は実体験に根ざす。ルブリス・ソーンの軽い輪郭と彼女の沈黙は対照的だ。説明せず、ただ動く。"
+      ],
+      "en": [
+        "A Dawn of Fold pilot who operates the Lfrith Thorn. She is calmer than Sophie and finds it harder to trust others.",
+        "Her hostility toward spacians comes from personal experience. The Lfrith Thorn's light silhouette contrasts with her silence: no explanation, only action."
       ]
     },
     "machineIds": [
@@ -4117,15 +4661,18 @@
     ],
     "age": {
       "zh": "约 15 岁（A.S.122）",
-      "ja": "約15歳（A.S.122）"
+      "ja": "約15歳（A.S.122）",
+      "en": "About 15 (A.S.122)"
     },
     "rank": {
       "zh": "黎明战线驾驶员",
-      "ja": "ドーン・オブ・フォールドのパイロット"
+      "ja": "ドーン・オブ・フォールドのパイロット",
+      "en": "Dawn of Fold pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -4142,7 +4689,8 @@
     ],
     "role": {
       "zh": "ZZ 高达驾驶员 / 香格里拉少年",
-      "ja": "ZZガンダムのパイロット / シャングリラの少年"
+      "ja": "ZZガンダムのパイロット / シャングリラの少年",
+      "en": "ZZ Gundam pilot / Shangri-La boy"
     },
     "status": "alive",
     "bio": {
@@ -4153,6 +4701,10 @@
       "ja": [
         "シャングリラのジャンク屋の少年。グリプス戦役後にZZガンダムのパイロットとなる。口では金のことしか言わないが、行動では常に仲間を優先する。",
         "ハマーンやグレミーとの対峙は、「ニュータイプ」という言葉を初めて疲れたものにした。戦後、彼は地球圏を離れ、自分の答えを探す。"
+      ],
+      "en": [
+        "A junk-dealer boy from Shangri-La who becomes the ZZ Gundam's pilot after the Gryps Conflict. He talks only about money, but his actions always put his friends first.",
+        "Judau's confrontations with Haman, Glemy, and the others make the word \"Newtype\" look so tired for the first time. After the war he chooses to leave the Earth sphere and look for his own answer."
       ]
     },
     "machineIds": [
@@ -4174,15 +4726,18 @@
     ],
     "age": {
       "zh": "约 14 岁（U.C.0088）",
-      "ja": "約14歳（U.C.0088）"
+      "ja": "約14歳（U.C.0088）",
+      "en": "About 14 (U.C.0088)"
     },
     "rank": {
       "zh": "奥古驾驶员 / 香格里拉少年",
-      "ja": "エゥーゴのパイロット / シャングリラの少年"
+      "ja": "エゥーゴのパイロット / シャングリラの少年",
+      "en": "AEUG pilot / Shangri-La boy"
     },
     "origin": {
       "zh": "Side 1 · 香格里拉",
-      "ja": "サイド1・シャングリラ"
+      "ja": "サイド1・シャングリラ",
+      "en": "Side 1 · Shangri-La"
     }
   },
   {
@@ -4199,7 +4754,8 @@
     ],
     "role": {
       "zh": "马夫蒂领导者 / Ξ 高达驾驶员",
-      "ja": "マフティー指導者 / Ξガンダムのパイロット"
+      "ja": "マフティー指導者 / Ξガンダムのパイロット",
+      "en": "Mafty leader / Ξ Gundam pilot"
     },
     "status": "dead",
     "bio": {
@@ -4210,6 +4766,10 @@
       "ja": [
         "ブライト・ノアの息子であり、かつて連邦軍の少年パイロットだった。U.C.0105、「マフティー・ナビーユ・エリン」として反連邦組織を率いる。",
         "テロで連邦に地球の消耗を止めさせられると信じながら、無関係な者を傷つけないと自分に言い聞かせることはできない。Ξガンダムの白い輪郭は、逃れられない出自のようだ。"
+      ],
+      "en": [
+        "Bright Noa's son and once a young Federation pilot. In U.C.0105 he leads the anti-Federation organization under the name \"Mafty Navue Erin\".",
+        "He believes terrorism can force the Federation to stop consuming Earth, yet he cannot convince himself that it will not hurt innocent people. The Ξ Gundam's white silhouette is like the background he cannot escape."
       ]
     },
     "machineIds": [
@@ -4237,15 +4797,18 @@
     ],
     "age": {
       "zh": "约 24 岁（U.C.0105）",
-      "ja": "約24歳（U.C.0105）"
+      "ja": "約24歳（U.C.0105）",
+      "en": "About 24 (U.C.0105)"
     },
     "rank": {
       "zh": "马夫蒂领导者 / Ξ驾驶员",
-      "ja": "マフティー指導者 / Ξパイロット"
+      "ja": "マフティー指導者 / Ξパイロット",
+      "en": "Mafty leader / Ξ pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -4262,7 +4825,8 @@
     ],
     "role": {
       "zh": "报丧女妖驾驶员 / 强化人",
-      "ja": "バンシィのパイロット / 強化人間"
+      "ja": "バンシィのパイロット / 強化人間",
+      "en": "Banshee pilot / Cyber-Newtype"
     },
     "status": "dead",
     "bio": {
@@ -4273,6 +4837,10 @@
       "ja": [
         "強化人間へ改造された少女。かつてスベロア・ジンネマンの部下だった。バンシィを駆り、ラプラスの事件でユニコーンと共に戦う。",
         "過去は番号と実験によって切り刻まれた。だが最後の戦いで、彼女は初めて自分の名で選択する。"
+      ],
+      "en": [
+        "A girl remade into a Cyber-Newtype, once a subordinate of Suberoa Zinnerman. She pilots the Banshee and fights alongside the Unicorn during the Laplace incident.",
+        "Her past was cut to pieces by numbers and experiments, but in her final battle she makes a choice under her own name for the first time."
       ]
     },
     "machineIds": [
@@ -4294,15 +4862,18 @@
     ],
     "age": {
       "zh": "约 16 岁（U.C.0096）",
-      "ja": "約16歳（U.C.0096）"
+      "ja": "約16歳（U.C.0096）",
+      "en": "About 16 (U.C.0096)"
     },
     "rank": {
       "zh": "新吉翁强化人 / 报丧女妖驾驶员",
-      "ja": "ネオ・ジオンの強化人間 / バンシィパイロット"
+      "ja": "ネオ・ジオンの強化人間 / バンシィパイロット",
+      "en": "Neo Zeon Cyber-Newtype / Banshee pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     }
   },
   {
@@ -4319,7 +4890,8 @@
     ],
     "role": {
       "zh": "扎夫特指挥官 / 神意高达驾驶员",
-      "ja": "ザフト指揮官 / プロヴィデンスのパイロット"
+      "ja": "ザフト指揮官 / プロヴィデンスのパイロット",
+      "en": "ZAFT commander / Providence Gundam pilot"
     },
     "status": "dead",
     "bio": {
@@ -4330,6 +4902,10 @@
       "ja": [
         "ザフトの仮面の指揮官であり、ムウ・ラ・フラガの宿敵。プロヴィデンスを駆り、ヤキン・ドゥーエで最後の破滅を推し進める。",
         "人類は戦争を繰り返すだけだと信じ、自らすべてを終わらせようとする。プロヴィデンスのドラグーンは、戦場に散らばる彼の悪意のようだ。"
+      ],
+      "en": [
+        "ZAFT's masked commander and Mu La Flaga's nemesis. He pilots the Providence Gundam and drives the final destruction at Jachin Due.",
+        "He believes humanity will only repeat war, so he wants to end everything with his own hands. The Providence Gundam's DRAGOONs are like his malice scattered across the battlefield."
       ]
     },
     "machineIds": [
@@ -4354,15 +4930,18 @@
     ],
     "age": {
       "zh": "约 30 岁（C.E.71）",
-      "ja": "約30歳（C.E.71）"
+      "ja": "約30歳（C.E.71）",
+      "en": "About 30 (C.E.71)"
     },
     "rank": {
       "zh": "ZAFT 指挥官",
-      "ja": "ザフト指揮官"
+      "ja": "ザフト指揮官",
+      "en": "ZAFT commander"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     }
   },
   {
@@ -4379,7 +4958,8 @@
     ],
     "role": {
       "zh": "变革者领导者 / 再生高达驾驶员",
-      "ja": "イノベイターの指導者 / リボーンズのパイロット"
+      "ja": "イノベイターの指導者 / リボーンズのパイロット",
+      "en": "Leader of the Innovators / Reborns Gundam pilot"
     },
     "status": "dead",
     "bio": {
@@ -4390,6 +4970,10 @@
       "ja": [
         "イノベイターの指導者であり、かつて0ガンダムを駆った存在。自分が人類の進化を導く者だと信じている。",
         "リボーンズガンダムで刹那と対決し、力で正当性を証明しようとする。最後には、自分が見下していた「人間」に敗れる。"
+      ],
+      "en": [
+        "The leader of the Innovators and once the pilot of the 0 Gundam. He believes he is the being who will guide human evolution.",
+        "He pilots the Reborns Gundam against Setsuna, trying to prove his legitimacy with force. In the end he is defeated by the \"humans\" he looked down on."
       ]
     },
     "machineIds": [
@@ -4409,15 +4993,18 @@
     ],
     "age": {
       "zh": "外观约 20 岁（A.D.2312）",
-      "ja": "外見約20歳（A.D.2312）"
+      "ja": "外見約20歳（A.D.2312）",
+      "en": "About 20 in appearance (A.D.2312)"
     },
     "rank": {
       "zh": "变革者领导者",
-      "ja": "イノベイターの指導者"
+      "ja": "イノベイターの指導者",
+      "en": "Leader of the Innovators"
     },
     "origin": {
       "zh": "Celestial Being",
-      "ja": "ソレスタルビーイング"
+      "ja": "ソレスタルビーイング",
+      "en": "Celestial Being"
     }
   },
   {
@@ -4430,15 +5017,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（U.C.0079）",
-      "ja": "約17歳（U.C.0079）"
+      "ja": "約17歳（U.C.0079）",
+      "en": "About 17 (U.C.0079)"
     },
     "rank": {
       "zh": "地球联邦军曹",
-      "ja": "地球連邦軍曹"
+      "ja": "地球連邦軍曹",
+      "en": "Sergeant, Earth Federation Forces"
     },
     "origin": {
       "zh": "Side 3",
-      "ja": "サイド3"
+      "ja": "サイド3",
+      "en": "Side 3"
     },
     "factionId": "earth-federation",
     "affiliations": [],
@@ -4447,7 +5037,8 @@
     ],
     "role": {
       "zh": "联邦军驾驶员 / 吉翁·戴肯之女",
-      "ja": "連邦軍パイロット / ジオン・ダイクンの娘"
+      "ja": "連邦軍パイロット / ジオン・ダイクンの娘",
+      "en": "Federation pilot / daughter of Zeon Deikun"
     },
     "status": "alive",
     "bio": {
@@ -4458,6 +5049,10 @@
       "ja": [
         "ジオン・ダイクンの娘で、本名はアルテイシア。一年戦争中はセイラ・マスと名乗り、ホワイトベースで通信士とパイロットを務めた。",
         "戦場でシャアと再会するが、同じ側には立たなかった。戦後は軍を離れ、ダイクン家の残した問題に向き合う。"
+      ],
+      "en": [
+        "Zeon Deikun's daughter, real name Artesia. During the One Year War she uses the name Sayla Mass and serves on the White Base as a communications officer and pilot.",
+        "She and Char meet again on the battlefield, but they do not end up on the same side. After the war she leaves the military and keeps dealing with the problems the Deikun family left behind."
       ]
     },
     "machineIds": [],
@@ -4493,15 +5088,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（U.C.0079）",
-      "ja": "約17歳（U.C.0079）"
+      "ja": "約17歳（U.C.0079）",
+      "en": "About 17 (U.C.0079)"
     },
     "rank": {
       "zh": "吉翁军 Newtype 驾驶员",
-      "ja": "ジオン軍ニュータイプパイロット"
+      "ja": "ジオン軍ニュータイプパイロット",
+      "en": "Zeon military Newtype pilot"
     },
     "origin": {
       "zh": "印度",
-      "ja": "インド"
+      "ja": "インド",
+      "en": "India"
     },
     "factionId": "zeon",
     "affiliations": [],
@@ -4510,7 +5108,8 @@
     ],
     "role": {
       "zh": "弗拉纳冈机构 Newtype / 艾尔美斯驾驶员",
-      "ja": "フラナガン機関のニュータイプ / エルメスパイロット"
+      "ja": "フラナガン機関のニュータイプ / エルメスパイロット",
+      "en": "Flanagan Institute Newtype / Elmeth pilot"
     },
     "status": "dead",
     "bio": {
@@ -4521,6 +5120,10 @@
       "ja": [
         "フラナガン機関で育ったニュータイプ。エルメスで一年戦争末期の戦いに参加し、戦闘中にアムロとシャアの感情を感知した。",
         "シャアを守ろうとしてアムロに撃墜される。彼女の死は、アムロとシャアの双方に消えない傷を残した。"
+      ],
+      "en": [
+        "A Newtype raised by the Flanagan Institute, she pilots the Elmeth in the fighting at the end of the One Year War. She can sense Amuro's and Char's emotions in battle.",
+        "She is shot down by Amuro while protecting Char. Her death leaves a scar on both Amuro and Char that cannot be erased."
       ]
     },
     "machineIds": [],
@@ -4547,15 +5150,18 @@
     "aliases": [],
     "age": {
       "zh": "约 24 岁（U.C.0087）",
-      "ja": "約24歳（U.C.0087）"
+      "ja": "約24歳（U.C.0087）",
+      "en": "About 24 (U.C.0087)"
     },
     "rank": {
       "zh": "奥古中尉",
-      "ja": "エゥーゴ中尉"
+      "ja": "エゥーゴ中尉",
+      "en": "AEUG Lieutenant"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "aeug",
     "affiliations": [],
@@ -4564,7 +5170,8 @@
     ],
     "role": {
       "zh": "奥古驾驶员 / 高达 Mk-II",
-      "ja": "エゥーゴのパイロット / ガンダムMk-II"
+      "ja": "エゥーゴのパイロット / ガンダムMk-II",
+      "en": "AEUG pilot / Gundam Mk-II"
     },
     "status": "dead",
     "bio": {
@@ -4575,6 +5182,10 @@
       "ja": [
         "元ティターンズ将校。民間人虐殺に反対してエゥーゴへ移り、ガンダムMk-IIのパイロットとしてカミーユと共に戦う。",
         "グリプス戦役末期、ティターンズの追撃を止めようとして戦死。その選択はカミーユの「軍人の責任」の理解に影響を与えた。"
+      ],
+      "en": [
+        "A former Titans officer who switches to the AEUG out of opposition to the massacre of civilians. She serves in the AEUG as a Gundam Mk-II pilot and is Kamille's comrade.",
+        "Late in the Gryps Conflict she dies in battle while stopping the Titans' pursuit. Her choice shapes Kamille's understanding of \"a soldier's responsibility\"."
       ]
     },
     "machineIds": [
@@ -4608,15 +5219,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "earth-federation",
     "affiliations": [],
@@ -4625,7 +5239,8 @@
     ],
     "role": {
       "zh": "蓝色命运 1 号机驾驶员",
-      "ja": "ブルーディスティニー1号機パイロット"
+      "ja": "ブルーディスティニー1号機パイロット",
+      "en": "Blue Destiny Unit 1 pilot"
     },
     "status": "alive",
     "bio": {
@@ -4636,6 +5251,10 @@
       "ja": [
         "連邦陸戦隊のテストパイロット。EXAMシステムを搭載したブルーディスティニー1号機を駆る。",
         "EXAMはパイロットの意識へ侵入するため、システムの暴走前に戦闘を終えなければならない。戦後は前線を離れた。"
+      ],
+      "en": [
+        "A test pilot of the Federation ground forces, sent to pilot Blue Destiny Unit 1, which carries the EXAM system.",
+        "The EXAM system intrudes on the pilot's consciousness, and he must end the battle before the system runs out of control. After the war he leaves the front line."
       ]
     },
     "machineIds": [
@@ -4659,15 +5278,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "地球联邦军少尉",
-      "ja": "地球連邦軍少尉"
+      "ja": "地球連邦軍少尉",
+      "en": "Second Lieutenant, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "earth-federation",
     "affiliations": [],
@@ -4676,7 +5298,8 @@
     ],
     "role": {
       "zh": "苍白骑士驾驶员",
-      "ja": "ペイルライダーのパイロット"
+      "ja": "ペイルライダーのパイロット",
+      "en": "Pale Rider pilot"
     },
     "status": "unknown",
     "bio": {
@@ -4687,6 +5310,10 @@
       "ja": [
         "連邦「ペイルライダー計画」のパイロットで、HADESシステムの試験を担当した。",
         "HADESは短時間だけ機体の制限を解除するが、同時に巨大な情報負荷をパイロットへ押し付ける。彼女の記録は大半が封印された。"
+      ],
+      "en": [
+        "A pilot of the Federation's \"Pale Rider Plan\", responsible for testing the HADES system.",
+        "HADES briefly releases the machine's limits while pressing an enormous information load onto the pilot. Most of her records are sealed."
       ]
     },
     "machineIds": [
@@ -4710,15 +5337,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "地球联邦军大尉",
-      "ja": "地球連邦軍大尉"
+      "ja": "地球連邦軍大尉",
+      "en": "Captain, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "earth-federation",
     "affiliations": [],
@@ -4727,7 +5357,8 @@
     ],
     "role": {
       "zh": "佩涅罗佩驾驶员 / 联邦军大尉",
-      "ja": "ペーネロペーのパイロット / 連邦軍大尉"
+      "ja": "ペーネロペーのパイロット / 連邦軍大尉",
+      "en": "Penelope pilot / Federation captain"
     },
     "status": "alive",
     "bio": {
@@ -4738,6 +5369,10 @@
       "ja": [
         "連邦軍のニュータイプ部隊のパイロット。ペーネロペーでマフティーを追う。",
         "ダバオ上空でハサウェイと交戦するが、戦果は連邦の腐敗を変えず、マフティーの動機を理解することもなかった。"
+      ],
+      "en": [
+        "A pilot of the Federation military's Newtype unit, he pilots the Penelope in pursuit of Mafty.",
+        "He fights Hathaway above Davao, but the outcome changes neither the Federation's corruption nor his understanding of Mafty's motives."
       ]
     },
     "machineIds": [
@@ -4766,15 +5401,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "提坦斯测试驾驶员",
-      "ja": "ティターンズ・テストパイロット"
+      "ja": "ティターンズ・テストパイロット",
+      "en": "Titans test pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "titans",
     "affiliations": [],
@@ -4783,7 +5421,8 @@
     ],
     "role": {
       "zh": "提坦斯测试驾驶员 / TR 系列",
-      "ja": "ティターンズのテストパイロット / TRシリーズ"
+      "ja": "ティターンズのテストパイロット / TRシリーズ",
+      "en": "Titans test pilot / TR series"
     },
     "status": "unknown",
     "bio": {
@@ -4794,6 +5433,10 @@
       "ja": [
         "ティターンズTR計画のテストパイロット。ヘイズル改とウーンドウォートの運用試験に参加した。",
         "TRシリーズは換装とデータ収集を重視しており、彼の任務は実験機を限界まで使い、データを技術部門へ持ち帰ることだった。"
+      ],
+      "en": [
+        "A test pilot of the Titans' TR Plan, taking part in operational trials of the Hazel Custom and the Woundwort.",
+        "The TR series emphasizes equipment swapping and data collection; his job is to push the experimental machines to their limits and bring the data back to the technical department."
       ]
     },
     "machineIds": [
@@ -4816,15 +5459,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "木星帝国军官",
-      "ja": "木星帝国将校"
+      "ja": "木星帝国将校",
+      "en": "Jupiter Empire officer"
     },
     "origin": {
       "zh": "木星圈",
-      "ja": "木星圏"
+      "ja": "木星圏",
+      "en": "Jupiter sphere"
     },
     "factionId": "jupiter-empire",
     "affiliations": [],
@@ -4833,7 +5479,8 @@
     ],
     "role": {
       "zh": "木星帝国军官 / X-2 驾驶员",
-      "ja": "木星帝国将校 / X-2パイロット"
+      "ja": "木星帝国将校 / X-2パイロット",
+      "en": "Jupiter Empire officer / X-2 pilot"
     },
     "status": "dead",
     "bio": {
@@ -4844,6 +5491,10 @@
       "ja": [
         "木星帝国の将校。クロスボーン・ガンダムX-2を奪い、トビアの前に立ちはだかる。",
         "X-1の設計を知っているため、同型機の弱点を突く戦いができる。彼の選択により、X-2はX-1と対立するガンダムになった。"
+      ],
+      "en": [
+        "An officer of the Jupiter Empire, he becomes Tobia's rival after seizing the Crossbone Gundam X-2.",
+        "He knows the X-1's design and can therefore fight against the weaknesses of the same machine type. His choice makes the X-2 a Gundam that stands against the X-1."
       ]
     },
     "machineIds": [
@@ -4872,15 +5523,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "吉翁军曹长",
-      "ja": "ジオン軍曹長"
+      "ja": "ジオン軍曹長",
+      "en": "Sergeant Major, Zeon military"
     },
     "origin": {
       "zh": "Side 3",
-      "ja": "サイド3"
+      "ja": "サイド3",
+      "en": "Side 3"
     },
     "factionId": "zeon",
     "affiliations": [],
@@ -4889,7 +5543,8 @@
     ],
     "role": {
       "zh": "泥岩高达驾驶员 / 吉翁前线",
-      "ja": "マドロックのパイロット / ジオニックフロント"
+      "ja": "マドロックのパイロット / ジオニックフロント",
+      "en": "Mudrock Gundam pilot / Zeon front"
     },
     "status": "unknown",
     "bio": {
@@ -4900,6 +5555,10 @@
       "ja": [
         "ジオニックフロントのパイロット。北米戦線で連邦のマドロックと遭遇する。",
         "連邦MSの戦術には慣れていたが、マドロックの火力と装甲はジオン小隊に大きな損害を与えた。"
+      ],
+      "en": [
+        "A pilot of the Zeon front-line forces, he encounters the Federation's Mudrock Gundam on the North American front.",
+        "He knows Federation MS tactics, but the Mudrock's firepower and armor still cost the Zeon squad dearly."
       ]
     },
     "machineIds": [
@@ -4923,15 +5582,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "地球联邦军测试驾驶员",
-      "ja": "地球連邦軍テストパイロット"
+      "ja": "地球連邦軍テストパイロット",
+      "en": "Earth Federation Forces test pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "earth-federation",
     "affiliations": [],
@@ -4940,7 +5602,8 @@
     ],
     "role": {
       "zh": "F90 测试驾驶员",
-      "ja": "F90テストパイロット"
+      "ja": "F90テストパイロット",
+      "en": "F90 test pilot"
     },
     "status": "alive",
     "bio": {
@@ -4951,6 +5614,10 @@
       "ja": [
         "連邦F90計画のテストパイロット。ミッション・パック換装の試験に参加した。",
         "F90の汎用骨格は実戦データで調整する必要があり、彼の任務は各パックの限界性能を測ることだった。"
+      ],
+      "en": [
+        "A test pilot of the Federation's F90 Plan, taking part in Mission Pack equipment trials.",
+        "The F90's universal frame needs to be tuned with a large amount of combat data; his job is to measure the limit performance of the different packs."
       ]
     },
     "machineIds": [
@@ -4972,15 +5639,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "月之民大将",
-      "ja": "月の民大将"
+      "ja": "月の民大将",
+      "en": "Moonrace general"
     },
     "origin": {
       "zh": "月球",
-      "ja": "月"
+      "ja": "月",
+      "en": "Moon"
     },
     "factionId": "moonrace",
     "affiliations": [],
@@ -4989,7 +5659,8 @@
     ],
     "role": {
       "zh": "月之民武将 / Turn X 驾驶员",
-      "ja": "月の武将 / ターンXパイロット"
+      "ja": "月の武将 / ターンXパイロット",
+      "en": "Moonrace general / Turn X pilot"
     },
     "status": "dead",
     "bio": {
@@ -5000,6 +5671,10 @@
       "ja": [
         "月の民の武将で、武力による地球回帰を主張した。",
         "ターンXでローランのターンAと交戦し、敗れる。彼にとって戦いは、自分がまだ戦士であることを示す手段だった。"
+      ],
+      "en": [
+        "A Moonrace general who advocates forcing the Moonrace's return to Earth by military means.",
+        "He pilots the Turn X against Loran's Turn A and is finally defeated. For him, fighting is how he proves he is still a warrior."
       ]
     },
     "machineIds": [
@@ -5029,15 +5704,18 @@
     "aliases": [],
     "age": {
       "zh": "数百岁（冷冻睡眠）",
-      "ja": "数百年（冷凍睡眠）"
+      "ja": "数百年（冷凍睡眠）",
+      "en": "Several hundred years old (cold sleep)"
     },
     "rank": {
       "zh": "月之民女王",
-      "ja": "月の民の女王"
+      "ja": "月の民の女王",
+      "en": "Queen of the Moonrace"
     },
     "origin": {
       "zh": "月球",
-      "ja": "月"
+      "ja": "月",
+      "en": "Moon"
     },
     "factionId": "moonrace",
     "affiliations": [],
@@ -5046,7 +5724,8 @@
     ],
     "role": {
       "zh": "月之民女王",
-      "ja": "月の民の女王"
+      "ja": "月の民の女王",
+      "en": "Moonrace queen"
     },
     "status": "alive",
     "bio": {
@@ -5057,6 +5736,10 @@
       "ja": [
         "月の民の女王で、地球回帰計画を主導した。",
         "キエルと身分を入れ替えた後、地球の住民の生活を理解し始める。回帰計画は単なる政治決定ではなくなった。"
+      ],
+      "en": [
+        "Queen of the Moonrace, she leads the plan to return to Earth.",
+        "After swapping identities with Kihel, she begins to understand the lives of Earth's residents anew. The return plan is also shaped by her personal experience."
       ]
     },
     "machineIds": [],
@@ -5089,15 +5772,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（C.C.2345）",
-      "ja": "約17歳（C.C.2345）"
+      "ja": "約17歳（C.C.2345）",
+      "en": "About 17 (C.C.2345)"
     },
     "rank": {
       "zh": "英格列沙民兵",
-      "ja": "イングレッサ民兵"
+      "ja": "イングレッサ民兵",
+      "en": "Inglessa militia"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "inglessa-militia",
     "affiliations": [],
@@ -5106,7 +5792,8 @@
     ],
     "role": {
       "zh": "英格列沙民兵 / 迪安娜替身",
-      "ja": "イングレッサ民兵 / ディアナの身代わり"
+      "ja": "イングレッサ民兵 / ディアナの身代わり",
+      "en": "Inglessa militia / Dianna's double"
     },
     "status": "alive",
     "bio": {
@@ -5117,6 +5804,10 @@
       "ja": [
         "イングレッサの少女。ディアナと顔が似ていたため、月の民の政治に巻き込まれる。",
         "ディアナの代わりに公の場へ立ち、二つの文明の誤解を理解していく。"
+      ],
+      "en": [
+        "A girl from Inglessa, drawn into Moonrace politics because she looks exactly like Dianna.",
+        "She appears in public in Dianna's place and gradually comes to understand the misunderstandings between the two civilizations."
       ]
     },
     "machineIds": [],
@@ -5147,15 +5838,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（C.E.71）",
-      "ja": "約17歳（C.E.71）"
+      "ja": "約17歳（C.E.71）",
+      "en": "About 17 (C.E.71)"
     },
     "rank": {
       "zh": "ZAFT 红衣",
-      "ja": "ザフト赤服"
+      "ja": "ザフト赤服",
+      "en": "ZAFT red coat"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     },
     "factionId": "zaft",
     "affiliations": [],
@@ -5164,7 +5858,8 @@
     ],
     "role": {
       "zh": "决斗高达驾驶员 / ZAFT 红衣",
-      "ja": "デュエルパイロット / ザフト赤服"
+      "ja": "デュエルパイロット / ザフト赤服",
+      "en": "Duel Gundam pilot / ZAFT red coat"
     },
     "status": "alive",
     "bio": {
@@ -5175,6 +5870,10 @@
       "ja": [
         "ザフトの赤服パイロット。短気な性格で、デュエルガンダムを駆りC.E.71の戦争に参加した。",
         "地球とヤキン・ドゥーエでキラやアスランと交戦し、戦後もザフトに残る。"
+      ],
+      "en": [
+        "A ZAFT red coat pilot with a hot temper, he pilots the Duel Gundam in the war of C.E.71.",
+        "He fights Kira and Athrun repeatedly on Earth and at Jachin Due, and stays in ZAFT after the war."
       ]
     },
     "machineIds": [
@@ -5209,15 +5908,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（C.E.71）",
-      "ja": "約17歳（C.E.71）"
+      "ja": "約17歳（C.E.71）",
+      "en": "About 17 (C.E.71)"
     },
     "rank": {
       "zh": "ZAFT 红衣",
-      "ja": "ザフト赤服"
+      "ja": "ザフト赤服",
+      "en": "ZAFT red coat"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     },
     "factionId": "zaft",
     "affiliations": [],
@@ -5226,7 +5928,8 @@
     ],
     "role": {
       "zh": "暴风高达驾驶员 / ZAFT 红衣",
-      "ja": "バスターパイロット / ザフト赤服"
+      "ja": "バスターパイロット / ザフト赤服",
+      "en": "Buster Gundam pilot / ZAFT red coat"
     },
     "status": "alive",
     "bio": {
@@ -5237,6 +5940,10 @@
       "ja": [
         "ザフトの砲撃型ガンダムパイロットで、バスターの遠距離火力を担当した。",
         "捕虜になった後、アークエンジェルの人々と接してザフトの宣伝を疑い始める。戦後はラクスの側に残った。"
+      ],
+      "en": [
+        "ZAFT's artillery-type Gundam pilot, responsible for the Buster Gundam's long-range firepower.",
+        "After being captured he spends time with the Archangel's crew and begins to doubt ZAFT's propaganda. After the war he stays on Lacus's side."
       ]
     },
     "machineIds": [
@@ -5267,15 +5974,18 @@
     "aliases": [],
     "age": {
       "zh": "约 15 岁（C.E.71）",
-      "ja": "約15歳（C.E.71）"
+      "ja": "約15歳（C.E.71）",
+      "en": "About 15 (C.E.71)"
     },
     "rank": {
       "zh": "ZAFT 红衣",
-      "ja": "ザフト赤服"
+      "ja": "ザフト赤服",
+      "en": "ZAFT red coat"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     },
     "factionId": "zaft",
     "affiliations": [],
@@ -5284,7 +5994,8 @@
     ],
     "role": {
       "zh": "迅雷高达驾驶员 / ZAFT 红衣",
-      "ja": "ブリッツパイロット / ザフト赤服"
+      "ja": "ブリッツパイロット / ザフト赤服",
+      "en": "Blitz Gundam pilot / ZAFT red coat"
     },
     "status": "dead",
     "bio": {
@@ -5295,6 +6006,10 @@
       "ja": [
         "ザフトの最も若い赤服パイロットの一人で、ブリッツでステルス任務を担当した。",
         "オーブ近海でキラと交戦し、アスランを守るために撃墜される。彼の死はアスランが戦争を疑う最初の契機になった。"
+      ],
+      "en": [
+        "One of ZAFT's youngest red coat pilots, he carries out stealth missions in the Blitz Gundam.",
+        "He fights Kira off the coast of Orb and is shot down while protecting Athrun. His death makes Athrun question the war for the first time."
       ]
     },
     "machineIds": [
@@ -5324,15 +6039,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "联合军强化人",
-      "ja": "連合軍強化人間"
+      "ja": "連合軍強化人間",
+      "en": "Earth Alliance Cyber-Newtype"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "omni-enforcer",
     "affiliations": [],
@@ -5341,7 +6059,8 @@
     ],
     "role": {
       "zh": "灾厄高达驾驶员 / 强化人",
-      "ja": "カラミティパイロット / 強化人間"
+      "ja": "カラミティパイロット / 強化人間",
+      "en": "Calamity Gundam pilot / Cyber-Newtype"
     },
     "status": "dead",
     "bio": {
@@ -5352,6 +6071,10 @@
       "ja": [
         "連合軍強化人間部隊のパイロットで、カラミティの火力制圧を担当した。",
         "薬物で戦闘状態を維持しており、戦いは選択ではなく任務に近かった。"
+      ],
+      "en": [
+        "A pilot of the Earth Alliance's Cyber-Newtype unit, he pilots the Calamity Gundam for firepower suppression.",
+        "He is used to maintaining his combat state with drugs; for him fighting is more a mission than a choice."
       ]
     },
     "machineIds": [
@@ -5384,15 +6107,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "联合军强化人",
-      "ja": "連合軍強化人間"
+      "ja": "連合軍強化人間",
+      "en": "Earth Alliance Cyber-Newtype"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "omni-enforcer",
     "affiliations": [],
@@ -5401,7 +6127,8 @@
     ],
     "role": {
       "zh": "禁断高达驾驶员 / 强化人",
-      "ja": "フォビドゥンパイロット / 強化人間"
+      "ja": "フォビドゥンパイロット / 強化人間",
+      "en": "Forbidden Gundam pilot / Cyber-Newtype"
     },
     "status": "dead",
     "bio": {
@@ -5412,6 +6139,10 @@
       "ja": [
         "連合軍強化人間部隊のパイロットで、フォビドゥンで敵防線の突破を担当した。",
         "シャニ、クロトと三機編隊を組み、正面突入と制圧を担った。"
+      ],
+      "en": [
+        "A pilot of the Earth Alliance's Cyber-Newtype unit, he pilots the Forbidden Gundam to break through enemy lines.",
+        "He forms a three-machine formation with Shani and Clotho, responsible for frontal penetration and suppression."
       ]
     },
     "machineIds": [
@@ -5444,15 +6175,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "联合军强化人",
-      "ja": "連合軍強化人間"
+      "ja": "連合軍強化人間",
+      "en": "Earth Alliance Cyber-Newtype"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "omni-enforcer",
     "affiliations": [],
@@ -5461,7 +6195,8 @@
     ],
     "role": {
       "zh": "掠夺高达驾驶员 / 强化人",
-      "ja": "レイダーパイロット / 強化人間"
+      "ja": "レイダーパイロット / 強化人間",
+      "en": "Raider Gundam pilot / Cyber-Newtype"
     },
     "status": "dead",
     "bio": {
@@ -5472,6 +6207,10 @@
       "ja": [
         "連合軍強化人間部隊のパイロットで、レイダーによる高速追撃を担当した。",
         "戦い方は衝動的で、援護なしに敵陣へ突っ込むことが多かった。"
+      ],
+      "en": [
+        "A pilot of the Earth Alliance's Cyber-Newtype unit, he pilots the Raider Gundam in high-speed pursuit.",
+        "His fighting style is impulsive, and he often charges into enemy formations without cover."
       ]
     },
     "machineIds": [
@@ -5504,15 +6243,18 @@
     "aliases": [],
     "age": {
       "zh": "约 26 岁（C.E.71）",
-      "ja": "約26歳（C.E.71）"
+      "ja": "約26歳（C.E.71）",
+      "en": "About 26 (C.E.71)"
     },
     "rank": {
       "zh": "联合军少校",
-      "ja": "連合軍少校"
+      "ja": "連合軍少校",
+      "en": "Major, Earth Alliance"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "omni-enforcer",
     "affiliations": [],
@@ -5521,7 +6263,8 @@
     ],
     "role": {
       "zh": "大天使号舰长",
-      "ja": "アークエンジェル艦長"
+      "ja": "アークエンジェル艦長",
+      "en": "Captain of the Archangel"
     },
     "status": "alive",
     "bio": {
@@ -5532,6 +6275,10 @@
       "ja": [
         "アークエンジェルの艦長。ヘリオポリス事件後に艦を引き継いだ。",
         "連合軍の命令と乗員の生存の間で選択を迫られ、最終的に連合軍を離れて独立部隊となる。"
+      ],
+      "en": [
+        "Captain of the Archangel, she takes command of the warship after the Heliopolis incident.",
+        "She must choose between the Earth Alliance's orders and the survival of her crew, and finally leaves the Alliance to become an independent force."
       ]
     },
     "machineIds": [],
@@ -5566,15 +6313,18 @@
     "aliases": [],
     "age": {
       "zh": "约 28 岁（C.E.71）",
-      "ja": "約28歳（C.E.71）"
+      "ja": "約28歳（C.E.71）",
+      "en": "About 28 (C.E.71)"
     },
     "rank": {
       "zh": "联合军少校",
-      "ja": "連合軍少校"
+      "ja": "連合軍少校",
+      "en": "Major, Earth Alliance"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "omni-enforcer",
     "affiliations": [],
@@ -5583,7 +6333,8 @@
     ],
     "role": {
       "zh": "联合军 MA 驾驶员 / 大天使号",
-      "ja": "連合軍MAパイロット / アークエンジェル"
+      "ja": "連合軍MAパイロット / アークエンジェル",
+      "en": "Alliance MA pilot / Archangel"
     },
     "status": "alive",
     "bio": {
@@ -5594,6 +6345,10 @@
       "ja": [
         "連合軍のMAパイロットで、後にアークエンジェルへ加わる。",
         "ヤキン・ドゥーエで艦を守るために消息を絶ち、後にSEED DESTINYで別の立場として戻る。"
+      ],
+      "en": [
+        "An Earth Alliance MA pilot who later joins the Archangel.",
+        "He goes missing at Jachin Due while protecting the warship, and later returns in SEED DESTINY under another identity."
       ]
     },
     "machineIds": [],
@@ -5631,15 +6386,18 @@
     "aliases": [],
     "age": {
       "zh": "约 32 岁（C.E.73）",
-      "ja": "約32歳（C.E.73）"
+      "ja": "約32歳（C.E.73）",
+      "en": "About 32 (C.E.73)"
     },
     "rank": {
       "zh": "PLANT 议长",
-      "ja": "プラント議長"
+      "ja": "プラント議長",
+      "en": "PLANT Chairman"
     },
     "origin": {
       "zh": "PLANT",
-      "ja": "プラント"
+      "ja": "プラント",
+      "en": "PLANT"
     },
     "factionId": "zaft",
     "affiliations": [],
@@ -5648,7 +6406,8 @@
     ],
     "role": {
       "zh": "PLANT 最高评议会议长",
-      "ja": "プラント最高評議会議長"
+      "ja": "プラント最高評議会議長",
+      "en": "Chairman of the PLANT Supreme Council"
     },
     "status": "dead",
     "bio": {
@@ -5659,6 +6418,10 @@
       "ja": [
         "プラント最高評議会議長で、「デスティニープラン」により人類の未来を配置しようとした。",
         "遺伝子決定論が戦争をなくすと信じたが、人間から選択肢を奪うことになった。最終的にメサイアで敗れる。"
+      ],
+      "en": [
+        "Chairman of the PLANT Supreme Council, he proposes the \"Destiny Plan\" to arrange humanity's future.",
+        "He believes genetic determinism can eliminate war, but he takes the power of choice away from humanity. He is finally defeated at the Messiah fortress."
       ]
     },
     "machineIds": [],
@@ -5690,15 +6453,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "新丹麦代表",
-      "ja": "ネオデンマーク代表"
+      "ja": "ネオデンマーク代表",
+      "en": "Neo Denmark representative"
     },
     "origin": {
       "zh": "新丹麦",
-      "ja": "ネオデンマーク"
+      "ja": "ネオデンマーク",
+      "en": "Neo Denmark"
     },
     "factionId": "neo-denmark",
     "affiliations": [],
@@ -5707,7 +6473,8 @@
     ],
     "role": {
       "zh": "新丹麦代表 / 人鱼高达驾驶员",
-      "ja": "ネオデンマーク代表 / マーメイドガンダムパイロット"
+      "ja": "ネオデンマーク代表 / マーメイドガンダムパイロット",
+      "en": "Neo Denmark representative / Mermaid Gundam pilot"
     },
     "status": "alive",
     "bio": {
@@ -5718,6 +6485,10 @@
       "ja": [
         "ネオデンマークのガンダムファイターで、マーメイドガンダムで第13回大会に参加した。",
         "水中戦に適した機体だが、陸上では姿勢制御系の制約を受ける。"
+      ],
+      "en": [
+        "Neo Denmark's Gundam Fighter, she pilots the Mermaid Gundam in the 13th tournament.",
+        "Her machine is suited to underwater combat, but on land it is limited by its attitude control system."
       ]
     },
     "machineIds": [
@@ -5742,15 +6513,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "高达研究者",
-      "ja": "ガンダム研究者"
+      "ja": "ガンダム研究者",
+      "en": "Gundam researcher"
     },
     "origin": {
       "zh": "新日本",
-      "ja": "ネオジャパン"
+      "ja": "ネオジャパン",
+      "en": "Neo Japan"
     },
     "factionId": "neo-japan",
     "affiliations": [],
@@ -5759,7 +6533,8 @@
     ],
     "role": {
       "zh": "恶魔高达核心 / 多蒙之兄",
-      "ja": "デビルガンダムの核心 / ドモンの兄"
+      "ja": "デビルガンダムの核心 / ドモンの兄",
+      "en": "Devil Gundam core / Domon's brother"
     },
     "status": "dead",
     "bio": {
@@ -5770,6 +6545,10 @@
       "ja": [
         "ドモンの兄で、デビルガンダム計画の研究者。",
         "DG細胞に取り込まれ、デビルガンダムの核心となった。ドモンが武闘会で向き合ったのは機体だけでなく、兄の残した意識でもあった。"
+      ],
+      "en": [
+        "Domon's older brother and a researcher on the Devil Gundam plan.",
+        "He is absorbed by the DG Cells and becomes the Devil Gundam's core. What Domon faces in the tournament is not only a machine but also his brother's lingering consciousness."
       ]
     },
     "machineIds": [],
@@ -5796,15 +6575,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "殖民地驾驶员",
-      "ja": "コロニーのパイロット"
+      "ja": "コロニーのパイロット",
+      "en": "Colony pilot"
     },
     "origin": {
       "zh": "殖民地",
-      "ja": "コロニー"
+      "ja": "コロニー",
+      "en": "Colony"
     },
     "factionId": "colony-operatives",
     "affiliations": [],
@@ -5813,7 +6595,8 @@
     ],
     "role": {
       "zh": "双子座高达 01 驾驶员",
-      "ja": "ジェミナス01パイロット"
+      "ja": "ジェミナス01パイロット",
+      "en": "Gundam Geminass 01 pilot"
     },
     "status": "alive",
     "bio": {
@@ -5824,6 +6607,10 @@
       "ja": [
         "G-UNIT計画のコロニー人パイロットで、ジェミナス01を駆る。",
         "OZ内部の権力闘争に巻き込まれ、コロニー、OZ、自分の立場の間で選択を迫られる。"
+      ],
+      "en": [
+        "A colony pilot of the G-UNIT Plan, he pilots the Gundam Geminass 01.",
+        "He is drawn into the power struggle inside OZ and must choose between the colony, OZ, and his own position."
       ]
     },
     "machineIds": [
@@ -5852,15 +6639,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "OZ 驾驶员",
-      "ja": "OZパイロット"
+      "ja": "OZパイロット",
+      "en": "OZ pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "oz",
     "affiliations": [],
@@ -5869,7 +6659,8 @@
     ],
     "role": {
       "zh": "格雷普高达驾驶员 / OZ",
-      "ja": "グリープパイロット / OZ"
+      "ja": "グリープパイロット / OZ",
+      "en": "Griepe Gundam pilot / OZ"
     },
     "status": "unknown",
     "bio": {
@@ -5880,6 +6671,10 @@
       "ja": [
         "OZのG-UNIT計画のパイロットで、グリープを駆る。",
         "機体を出世の道具と考え、戦闘では仲間より戦果を優先する。"
+      ],
+      "en": [
+        "An OZ pilot of the G-UNIT Plan, he pilots the Griepe Gundam.",
+        "He treats the machine as a tool for promotion, and in battle he cares more about results than about his comrades."
       ]
     },
     "machineIds": [
@@ -5908,15 +6703,18 @@
     "aliases": [],
     "age": {
       "zh": "约 24 岁（A.C.195）",
-      "ja": "約24歳（A.C.195）"
+      "ja": "約24歳（A.C.195）",
+      "en": "About 24 (A.C.195)"
     },
     "rank": {
       "zh": "OZ 总帅",
-      "ja": "OZ総帥"
+      "ja": "OZ総帥",
+      "en": "OZ commander-in-chief"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "oz",
     "affiliations": [],
@@ -5925,7 +6723,8 @@
     ],
     "role": {
       "zh": "OZ 总帅",
-      "ja": "OZ総帥"
+      "ja": "OZ総帥",
+      "en": "OZ commander-in-chief"
     },
     "status": "dead",
     "bio": {
@@ -5936,6 +6735,10 @@
       "ja": [
         "OZの総帥で、A.C.紀元で最も影響力のある政治家の一人。",
         "戦争が人間を高貴にすると信じ、ホワイトファングとの決戦で戦死した。"
+      ],
+      "en": [
+        "Commander-in-chief of OZ and one of the most influential political figures of the A.C. era.",
+        "He sees war as a way to keep humanity noble, and finally dies in battle in the decisive fight with White Fang."
       ]
     },
     "machineIds": [],
@@ -5968,15 +6771,18 @@
     "aliases": [],
     "age": {
       "zh": "约 17 岁（A.W.0015）",
-      "ja": "約17歳（A.W.0015）"
+      "ja": "約17歳（A.W.0015）",
+      "en": "About 17 (A.W.0015)"
     },
     "rank": {
       "zh": "秃鹫驾驶员",
-      "ja": "ヴァルチャーのパイロット"
+      "ja": "ヴァルチャーのパイロット",
+      "en": "Vulture pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "vulture",
     "affiliations": [],
@@ -5985,7 +6791,8 @@
     ],
     "role": {
       "zh": "空中霸王驾驶员 / 秃鹫",
-      "ja": "エアマスターパイロット / ヴァルチャー"
+      "ja": "エアマスターパイロット / ヴァルチャー",
+      "en": "Airmaster pilot / Vulture"
     },
     "status": "alive",
     "bio": {
@@ -5996,6 +6803,10 @@
       "ja": [
         "ヴァルチャーのエアマスターパイロットで、高速接近と偵察を得意とする。",
         "ガロードの隊に加わり、空中から地上部隊を援護した。"
+      ],
+      "en": [
+        "A Vulture unit's Airmaster pilot, skilled at high-speed approaches and reconnaissance.",
+        "After joining Garrod's team, he is responsible for covering ground units from the air."
       ]
     },
     "machineIds": [
@@ -6026,15 +6837,18 @@
     "aliases": [],
     "age": {
       "zh": "约 18 岁（A.W.0015）",
-      "ja": "約18歳（A.W.0015）"
+      "ja": "約18歳（A.W.0015）",
+      "en": "About 18 (A.W.0015)"
     },
     "rank": {
       "zh": "秃鹫驾驶员",
-      "ja": "ヴァルチャーのパイロット"
+      "ja": "ヴァルチャーのパイロット",
+      "en": "Vulture pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "vulture",
     "affiliations": [],
@@ -6043,7 +6857,8 @@
     ],
     "role": {
       "zh": "豹式高达驾驶员 / 秃鹫",
-      "ja": "レオパルドパイロット / ヴァルチャー"
+      "ja": "レオパルドパイロット / ヴァルチャー",
+      "en": "Leopard Gundam pilot / Vulture"
     },
     "status": "alive",
     "bio": {
@@ -6054,6 +6869,10 @@
       "ja": [
         "ヴァルチャーの重火力パイロットで、レオパルドを駆る。",
         "制圧と拠点破壊を担当し、味方の前方に火力の回廊を作る。"
+      ],
+      "en": [
+        "A heavy-firepower pilot of the Vulture unit, he pilots the Leopard Gundam.",
+        "He is responsible for suppression and demolishing strongpoints, often providing a corridor of fire ahead of his teammates."
       ]
     },
     "machineIds": [
@@ -6084,15 +6903,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "新 UNE 特务",
-      "ja": "新UN特務"
+      "ja": "新UN特務",
+      "en": "New UNE special agent"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "new-une",
     "affiliations": [],
@@ -6101,7 +6923,8 @@
     ],
     "role": {
       "zh": "维萨戈高达驾驶员 / 新 UNE",
-      "ja": "ヴァサーゴパイロット / 新UN"
+      "ja": "ヴァサーゴパイロット / 新UN",
+      "en": "Virsago Gundam pilot / new UNE"
     },
     "status": "dead",
     "bio": {
@@ -6112,6 +6935,10 @@
       "ja": [
         "新UNの強化人間パイロットで、フロスト兄弟の兄。",
         "ヴァサーゴでガロードを追撃し、戦いを決闘ではなく任務として扱う。"
+      ],
+      "en": [
+        "A Cyber-Newtype pilot of the new UNE, and the older of the Frost brothers.",
+        "He pilots the Virsago Gundam in pursuit of Garrod, treating the fight as a mission rather than a duel."
       ]
     },
     "machineIds": [
@@ -6146,15 +6973,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "新 UNE 特务",
-      "ja": "新UN特務"
+      "ja": "新UN特務",
+      "en": "New UNE special agent"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "new-une",
     "affiliations": [],
@@ -6163,7 +6993,8 @@
     ],
     "role": {
       "zh": "阿斯塔隆驾驶员 / 新 UNE",
-      "ja": "アシュタロンパイロット / 新UN"
+      "ja": "アシュタロンパイロット / 新UN",
+      "en": "Ashtaron pilot / new UNE"
     },
     "status": "dead",
     "bio": {
@@ -6174,6 +7005,10 @@
       "ja": [
         "フロスト兄弟の弟で、可変型のアシュタロンを駆る。",
         "シャギアと連携し、高空や軌道から奇襲をかける。"
+      ],
+      "en": [
+        "The younger of the Frost brothers, he pilots the transformable Ashtaron Gundam.",
+        "He coordinates with Shagia to launch raids from high altitude and orbit."
       ]
     },
     "machineIds": [
@@ -6207,15 +7042,18 @@
     "aliases": [],
     "age": {
       "zh": "约 30 岁（A.W.0015）",
-      "ja": "約30歳（A.W.0015）"
+      "ja": "約30歳（A.W.0015）",
+      "en": "About 30 (A.W.0015)"
     },
     "rank": {
       "zh": "秃鹫舰长",
-      "ja": "ヴァルチャー艦長"
+      "ja": "ヴァルチャー艦長",
+      "en": "Vulture captain"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "vulture",
     "affiliations": [],
@@ -6224,7 +7062,8 @@
     ],
     "role": {
       "zh": "秃鹫领袖 / 前 GX 驾驶员",
-      "ja": "ヴァルチャーの指導者 / 元GXパイロット"
+      "ja": "ヴァルチャーの指導者 / 元GXパイロット",
+      "en": "Vulture leader / former GX pilot"
     },
     "status": "alive",
     "bio": {
@@ -6235,6 +7074,10 @@
       "ja": [
         "第7次宇宙戦争時のGXパイロットで、戦後はヴァルチャーの指導者となった。",
         "戦争の再発を防ぐ方法を探し続け、ガロードとティファに希望を託す。"
+      ],
+      "en": [
+        "A GX pilot from the time of the 7th Space War, he becomes the leader of the Vulture unit after the war.",
+        "He keeps looking for a way to prevent the war from repeating, and pins his hopes on Garrod and Tiffa."
       ]
     },
     "machineIds": [
@@ -6265,15 +7108,18 @@
     "aliases": [],
     "age": {
       "zh": "约 20 岁（P.D.325）",
-      "ja": "約20歳（P.D.325）"
+      "ja": "約20歳（P.D.325）",
+      "en": "About 20 (P.D.325)"
     },
     "rank": {
       "zh": "铁华团 MS 队员",
-      "ja": "鉄華団MS隊員"
+      "ja": "鉄華団MS隊員",
+      "en": "Tekkadan MS member"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     },
     "factionId": "tekkadan",
     "affiliations": [],
@@ -6282,7 +7128,8 @@
     ],
     "role": {
       "zh": "弗劳洛斯驾驶员 / 铁华团",
-      "ja": "フラウロスパイロット / 鉄華団"
+      "ja": "フラウロスパイロット / 鉄華団",
+      "en": "Flauros pilot / Tekkadan"
     },
     "status": "dead",
     "bio": {
@@ -6293,6 +7140,10 @@
       "ja": [
         "鉄華団のMSパイロットで、フラウロスの遠距離火力を担当した。",
         "エドモントンと火星戦線で仲間を援護し、最後はクーデターの中で戦死する。"
+      ],
+      "en": [
+        "A Tekkadan MS pilot, responsible for the Flauros's long-range firepower.",
+        "He provides cover for his teammates at Edmonton and on the Mars front, and finally dies in the coup."
       ]
     },
     "machineIds": [
@@ -6326,15 +7177,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "寻宝者",
-      "ja": "宝探し"
+      "ja": "宝探し",
+      "en": "Treasure hunter"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     },
     "factionId": "urdr-hunt",
     "affiliations": [],
@@ -6343,7 +7197,8 @@
     ],
     "role": {
       "zh": "阿斯塔罗特驾驶员 / 寻宝者",
-      "ja": "アスタロトパイロット / 宝探し"
+      "ja": "アスタロトパイロット / 宝探し",
+      "en": "Astaroth pilot / treasure hunter"
     },
     "status": "alive",
     "bio": {
@@ -6354,6 +7209,10 @@
       "ja": [
         "ウルズハントの宝探しで、解体・再組立されたアスタロトを駆る。",
         "旧ガンダムの部品と傭兵の経験で活動し、厄祭戦の遺産を自分の未来に変えようとする。"
+      ],
+      "en": [
+        "A treasure hunter in Urdr Hunt, he pilots the Astaroth, rebuilt from dismantled parts.",
+        "He works with parts from old Gundams and his mercenary experience, aiming to trade the legacy of the Calamity War for his own future."
       ]
     },
     "machineIds": [
@@ -6375,15 +7234,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "寻宝者",
-      "ja": "宝探し"
+      "ja": "宝探し",
+      "en": "Treasure hunter"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     },
     "factionId": "urdr-hunt",
     "affiliations": [],
@@ -6392,7 +7254,8 @@
     ],
     "role": {
       "zh": "马可西亚斯驾驶员 / 寻宝者",
-      "ja": "マルコシアスパイロット / 宝探し"
+      "ja": "マルコシアスパイロット / 宝探し",
+      "en": "Marchosias pilot / treasure hunter"
     },
     "status": "alive",
     "bio": {
@@ -6403,6 +7266,10 @@
       "ja": [
         "ウルズハントのもう一人の宝探しで、マルコシアスを駆る。",
         "厄祭戦の遺産を巡って動き、旧ガンダムの技術とデータを各勢力と争う。"
+      ],
+      "en": [
+        "Another treasure hunter in Urdr Hunt, he pilots the Marchosias.",
+        "He acts around the legacy of the Calamity War, competing with various powers for the technology and data of old Gundams."
       ]
     },
     "machineIds": [
@@ -6424,15 +7291,18 @@
     "aliases": [],
     "age": {
       "zh": "约 16 岁（P.D.325）",
-      "ja": "約16歳（P.D.325）"
+      "ja": "約16歳（P.D.325）",
+      "en": "About 16 (P.D.325)"
     },
     "rank": {
       "zh": "火星独立运动代表",
-      "ja": "火星独立運動の代表"
+      "ja": "火星独立運動の代表",
+      "en": "Representative of the Mars independence movement"
     },
     "origin": {
       "zh": "火星",
-      "ja": "火星"
+      "ja": "火星",
+      "en": "Mars"
     },
     "factionId": "tekkadan",
     "affiliations": [],
@@ -6441,7 +7311,8 @@
     ],
     "role": {
       "zh": "火星独立运动领袖",
-      "ja": "火星独立運動の指導者"
+      "ja": "火星独立運動の指導者",
+      "en": "Leader of the Mars independence movement"
     },
     "status": "alive",
     "bio": {
@@ -6452,6 +7323,10 @@
       "ja": [
         "火星の独立運動の指導者で、当初は和平交渉を目指した。",
         "エドモントンとクーデターの後、鉄華団だけに頼らず政治的手段で火星の自治を求める。"
+      ],
+      "en": [
+        "A leader of Mars's independence movement, she initially aims for peaceful negotiation.",
+        "After Edmonton and the coup, she begins to use political means to seek Mars's autonomy rather than relying only on Tekkadan."
       ]
     },
     "machineIds": [],
@@ -6484,15 +7359,18 @@
     "aliases": [],
     "age": {
       "zh": "不详（意识存续于风灵）",
-      "ja": "不明（エアリアルに意識が残る）"
+      "ja": "不明（エアリアルに意識が残る）",
+      "en": "Unknown (consciousness persists in the Aerial)"
     },
     "rank": {
       "zh": "高达驾驶员",
-      "ja": "ガンダムパイロット"
+      "ja": "ガンダムパイロット",
+      "en": "Gundam pilot"
     },
     "origin": {
       "zh": "水星",
-      "ja": "水星"
+      "ja": "水星",
+      "en": "Mercury"
     },
     "factionId": "vanadis",
     "affiliations": [],
@@ -6501,7 +7379,8 @@
     ],
     "role": {
       "zh": "魔灵高达驾驶员 / 斯莱塔之姐",
-      "ja": "ルブリスパイロット / スレッタの姉"
+      "ja": "ルブリスパイロット / スレッタの姉",
+      "en": "Lfrith Gundam pilot / Suletta's sister"
     },
     "status": "unknown",
     "bio": {
@@ -6512,6 +7391,10 @@
       "ja": [
         "スレッタの姉で、ヴァナディース事変でルブリスを駆った。",
         "その後、意識はエアリアルの中に残り、スレッタと機体の間にもう一つの接続を作る。"
+      ],
+      "en": [
+        "Suletta's older sister, she pilots the Lfrith Gundam during the Vanadis incident.",
+        "Her consciousness later remains inside the Aerial Gundam, becoming another layer of connection between Suletta and the machine."
       ]
     },
     "machineIds": [
@@ -6546,15 +7429,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "技术顾问",
-      "ja": "技術顧問"
+      "ja": "技術顧問",
+      "en": "Technical advisor"
     },
     "origin": {
       "zh": "水星",
-      "ja": "水星"
+      "ja": "水星",
+      "en": "Mercury"
     },
     "factionId": "vanadis",
     "affiliations": [],
@@ -6563,7 +7449,8 @@
     ],
     "role": {
       "zh": "凡娜迪斯幸存者 / 高达公司技术顾问",
-      "ja": "ヴァナディースの生存者 / ガンダム会社技術顧問"
+      "ja": "ヴァナディースの生存者 / ガンダム会社技術顧問",
+      "en": "Vanadis survivor / Gundam Company technical advisor"
     },
     "status": "alive",
     "bio": {
@@ -6574,6 +7461,10 @@
       "ja": [
         "スレッタの母で、ヴァナディース事変の生存者。",
         "技術顧問としてベネリットグループに入り、クワイエット・ゼロを進める。娘たちにガンダムの不要な世界を残そうとした。"
+      ],
+      "en": [
+        "Suletta's mother and a survivor of the Vanadis incident.",
+        "She enters the Benerit Group as a technical advisor, promotes the Quiet Zero plan, and tries to win a world for her daughters that does not need Gundams."
       ]
     },
     "machineIds": [],
@@ -6607,15 +7498,18 @@
     "aliases": [],
     "age": {
       "zh": "约 30 岁（A.G.115）",
-      "ja": "約30歳（A.G.115）"
+      "ja": "約30歳（A.G.115）",
+      "en": "About 30 (A.G.115)"
     },
     "rank": {
       "zh": "地球联邦军大尉",
-      "ja": "地球連邦軍大尉"
+      "ja": "地球連邦軍大尉",
+      "en": "Captain, Earth Federation Forces"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "federation-age",
     "affiliations": [],
@@ -6624,7 +7518,8 @@
     ],
     "role": {
       "zh": "联邦王牌驾驶员",
-      "ja": "連邦のエースパイロット"
+      "ja": "連邦のエースパイロット",
+      "en": "Federation ace pilot"
     },
     "status": "alive",
     "bio": {
@@ -6635,6 +7530,10 @@
       "ja": [
         "連邦軍のエースパイロットで、「白い狼」と呼ばれる。",
         "G-エクセスでヴェイガンと戦い、フリットの先輩でありライバルでもある。"
+      ],
+      "en": [
+        "An ace pilot of the Federation military, known as the \"White Wolf\".",
+        "He pilots the G-Exes against the Vagan and is Flit's senior and rival in the military."
       ]
     },
     "machineIds": [],
@@ -6661,15 +7560,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "亚美利亚军中尉",
-      "ja": "アメリ軍中尉"
+      "ja": "アメリ軍中尉",
+      "en": "Lieutenant, Amerian Army"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "amerian",
     "affiliations": [],
@@ -6678,7 +7580,8 @@
     ],
     "role": {
       "zh": "亚美利亚军驾驶员",
-      "ja": "アメリ軍パイロット"
+      "ja": "アメリ軍パイロット",
+      "en": "Amerian Army pilot"
     },
     "status": "alive",
     "bio": {
@@ -6689,6 +7592,10 @@
       "ja": [
         "アメリ軍のパイロットで、ベルリの仲間。",
         "モンテーロなどでキャピタル・タワーと満月作戦に参加し、援護と突撃を担当した。"
+      ],
+      "en": [
+        "An Amerian Army pilot and Bellri's companion.",
+        "He pilots machines such as the Montero in the Capital Tower and Full Moon operations, responsible for cover and assault."
       ]
     },
     "machineIds": [],
@@ -6720,15 +7627,18 @@
     "aliases": [],
     "age": {
       "zh": "不详",
-      "ja": "不明"
+      "ja": "不明",
+      "en": "Unknown"
     },
     "rank": {
       "zh": "DSSD 测试驾驶员",
-      "ja": "DSSDテストパイロット"
+      "ja": "DSSDテストパイロット",
+      "en": "DSSD test pilot"
     },
     "origin": {
       "zh": "地球",
-      "ja": "地球"
+      "ja": "地球",
+      "en": "Earth"
     },
     "factionId": "dssd",
     "affiliations": [],
@@ -6737,7 +7647,8 @@
     ],
     "role": {
       "zh": "观星者高达驾驶员 / DSSD",
-      "ja": "スターゲイザーパイロット / DSSD"
+      "ja": "スターゲイザーパイロット / DSSD",
+      "en": "Stargazer Gundam pilot / DSSD"
     },
     "status": "alive",
     "bio": {
@@ -6748,6 +7659,10 @@
       "ja": [
         "DSSDのテストパイロットで、スターゲイザーの深宇宙観測任務を担当した。",
         "スターゲイザーは本来戦闘機ではない。C.E.73の衝突で、彼は観測装置を使って乗員を守ることを迫られた。"
+      ],
+      "en": [
+        "A DSSD test pilot, responsible for the Stargazer Gundam's deep-space observation missions.",
+        "The Stargazer was not originally a combat machine; in the conflict of C.E.73 he is forced to use its observation equipment to protect the crew."
       ]
     },
     "machineIds": [

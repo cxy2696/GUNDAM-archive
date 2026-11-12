@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "神龙高达的后继机，双臂龙爪与火焰放射进一步强化。",
-    "ja": "シェンロンガンダムの後継機。両腕のドラゴンクローと火炎放射を強化した。"
+    "ja": "シェンロンガンダムの後継機。両腕のドラゴンクローと火炎放射を強化した。",
+    "en": "The successor to the Shenlong, with dragon claws on both arms and stronger flame throwers."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "アルトロンガンダムはシェンロンの片腕ドラゴンクローを両腕へ拡張した。二つの目標を同時に掴み、ビームグレイブか火炎放射で止めを刺す。",
       "遠距離手段はほとんどなく、すべての戦術は「近づく」という一つの答えへ向かう。チャン・ウーフェイにとって、それは態度である。"
+    ],
+    "en": [
+      "The Altron Gundam extends the Shenlong's single-arm dragon claw to both arms. It can grip two targets at once, then finish with a beam lance or a flame thrower.",
+      "The machine has almost no ranged means; every tactic points to the same answer: get close. For Chang Wufei, this is an attitude."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "双龙爪",
-        "ja": "ツインドラゴンクロー"
+        "ja": "ツインドラゴンクロー",
+        "en": "Twin Dragon Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束长枪",
-        "ja": "ビームグレイブ"
+        "ja": "ビームグレイブ",
+        "en": "Beam Glaive"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "火焰放射 ×2",
-        "ja": "火炎放射 ×2"
+        "ja": "火炎放射 ×2",
+        "en": "Flame Thrower ×2"
       },
       "type": "special"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing: Endless Waltz\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

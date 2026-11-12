@@ -115,7 +115,7 @@
   position: relative;
   height: clamp(440px, 59vh, 660px);
   background:
-    radial-gradient(circle at 50% 42%, rgba(34, 211, 238, 0.06), transparent 55%),
+    radial-gradient(circle at 50% 42%, rgba(88, 255, 157, 0.06), transparent 55%),
     var(--stage-bg);
   overflow: hidden;
 }
@@ -413,7 +413,7 @@
   margin-top: -7px;
   background: var(--cyan);
   border: 0;
-  box-shadow: 0 0 10px rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 10px rgba(88, 255, 157, 0.35);
 }
 
 .slider input[type="range"]::-moz-range-thumb {
@@ -499,7 +499,7 @@
 }
 
 .sheet__part.is-active {
-  filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.85));
+  filter: drop-shadow(0 0 5px rgba(88, 255, 157, 0.85));
 }
 
 .sheet__part.is-active path,
@@ -511,7 +511,7 @@
 }
 
 .sheet__part:focus-visible {
-  filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.9));
+  filter: drop-shadow(0 0 6px rgba(88, 255, 157, 0.9));
 }
 
 .sheet__micro {
@@ -525,7 +525,7 @@
   font-family: var(--font-mono);
   font-size: 10.5px;
   letter-spacing: 0.06em;
-  fill: rgba(34, 211, 238, 0.7);
+  fill: rgba(88, 255, 157, 0.7);
 }
 
 .sheet.is-engineering .sheet__part path,
@@ -533,7 +533,7 @@
 .sheet.is-engineering .sheet__part circle,
 .sheet.is-engineering .sheet__part ellipse {
   fill: transparent !important;
-  stroke: rgba(34, 211, 238, 0.55) !important;
+  stroke: rgba(88, 255, 157, 0.55) !important;
   stroke-width: 0.8 !important;
 }
 
@@ -580,8 +580,8 @@
 .viewer--hero .viewer__stage {
   height: clamp(470px, 64vh, 720px);
   background:
-    radial-gradient(circle at 50% 44%, rgba(34, 211, 238, 0.1), transparent 46%),
-    radial-gradient(circle at 50% 46%, rgba(34, 211, 238, 0.04), transparent 62%);
+    radial-gradient(circle at 50% 44%, rgba(88, 255, 157, 0.1), transparent 46%),
+    radial-gradient(circle at 50% 46%, rgba(88, 255, 157, 0.04), transparent 62%);
   overflow: visible;
 }
 
@@ -593,7 +593,7 @@
   width: min(86%, 620px);
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(88, 255, 157, 0.12);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -606,7 +606,7 @@
   width: min(70%, 500px);
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
-  border: 1px dashed rgba(34, 211, 238, 0.1);
+  border: 1px dashed rgba(88, 255, 157, 0.1);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -750,7 +750,7 @@
   font-family: var(--font-mono);
   font-size: 10.5px;
   letter-spacing: 0.12em;
-  fill: rgba(34, 211, 238, 0.62);
+  fill: rgba(88, 255, 157, 0.62);
 }
 
 .sheet__side-value {
@@ -769,7 +769,7 @@
   justify-content: center;
   gap: 14px;
   background:
-    radial-gradient(circle at 50% 45%, rgba(34, 211, 238, 0.07), transparent 52%),
+    radial-gradient(circle at 50% 45%, rgba(88, 255, 157, 0.07), transparent 52%),
     var(--stage-bg);
 }
 
@@ -782,4 +782,12 @@
 
 .viewer__canvas-skeleton .micro {
   color: var(--text-3);
+}
+
+/* v3.2 design sheet: armament readout and denser side data */
+.sheet__arm {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.02em;
+  fill: rgba(169, 232, 191, 0.78);
 }

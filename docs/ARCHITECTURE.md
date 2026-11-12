@@ -1,6 +1,6 @@
 # 架构与决策记录
 
-> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.1）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.2）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. 约束与目标
 
@@ -106,16 +106,16 @@ MechViewer (client)
 - **不用后处理链**：量子形态由 emissive/uniform 驱动的粒子、环与菲涅尔球体组合，避免额外 render target；换取低端设备可降级。
 - **状态本地化**：查看器状态不进入全局 store；页面级交互不触发服务端请求。
 
-## 7. 双语路由
+## 7. 三语路由
 
-- 路由：`/zh/...` 与 `/ja/...`，`[lang]` 段在 `generateStaticParams` 中固定为两种；机体、人物、事件、势力各有详情页，`/glossary` 汇总术语，`/chronology` 汇总世纪表。
+- 路由：`/zh/...`、`/ja/...` 与 `/en/...`，`[lang]` 段在 `generateStaticParams` 中固定为三种；机体、人物、事件、势力各有详情页，`/glossary` 汇总术语，`/chronology` 汇总世纪表。
 - 目录：`app/(site)/[lang]/` 是站点组的 root layout，直接输出 `<html lang="ja">` 或 `zh-CN`；`app/(root)/` 承载 `/` 重定向页。这样每种语言都有正确的 `lang` 属性，而不是在客户端改。
 - 元数据：每页 `alternates.languages` 输出 `zh-CN` / `ja-JP` / `x-default`。
-- 内容：`name` / `summary` / `description` 均为 `{ zh, ja }`；schema 强制双语，避免半成品。
+- 内容：`name` 为 `{ zh, ja, en }`；`summary` / `description` / `detail` / `bio` 等为 `{ zh, ja, en? }`。英文由 `translations:check` 强制覆盖所有可显示字段，避免英文页静默回退中文。
 - 排版：`html lang` + `data-lang` 作用域切换字体栈与断行规则；数值使用统一等宽字体。
 - 切换器：`LanguageSwitch` 同时出现在桌面头部、移动菜单与页脚；切换时保留 path / query / hash，并把 `scrollY` 写入 sessionStorage，由 `ScrollRestore` 在目标页恢复。活动语言有 `aria-current="true"`。
-- 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gundam-lang`，否则按 `navigator.language` 选择 `/zh/` 或 `/ja/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
-- 缺失策略：当前内容全部双语；若未来出现缺译，按方案书 6.7 的降级规则显示原名 + 提示，不用机翻冒充人工稿。
+- 入口判定：`app/(root)/page.tsx` 是静态 splash；优先读 `gundam-lang`，否则按 `navigator.language` 选择 `/zh/`、`/ja/` 或 `/en/`。静态导出无法做服务端 Accept-Language 分流，这是有意的客户端方案。
+- 缺失策略：英文缺失会阻止 `check:prebuild`；`pick()` / `pickList()` 仍保留显式回退，供未来新增内容在翻译前本地预览，但发布门禁不会放过缺译。
 
 ## 8. 检索
 
@@ -154,7 +154,7 @@ MechViewer (client)
 
 迁移不需要改页面组件、查看器或 schema；只需要换 `content.ts` 的实现与部署方式。
 
-## 12. v3.1 座舱外壳、宇宙地图与关系图
+## 12. v3.2 座舱皮肤、宇宙地图与关系图
 
 - **座舱外壳**：`src/styles/cockpit.css` 与 `glass.css` 定义毛玻璃白框、舱盖背景、侧 MFD 与可收起操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
 - **宇宙地图**：`content/atlas.json` 是唯一数据源，`src/lib/geo.ts` 负责 2D 正交投影与 3D 坐标，`Atlas2D` 用 SVG，`Atlas3D` 用 R3F + CanvasTexture 生成地球贴图；二者共享同一批节点与选中状态。2D 的 Lagrange 位置由 `lagrangeOrbit()` 从地月几何推导，表面点由 `globePoint()` 投影；3D 只把距离压缩，不改变归属。

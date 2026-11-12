@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { TechTreeExplorer } from "@/components/TechTreeExplorer";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: dict.tree.title,
     description: dict.tree.lead,
-    alternates: { canonical: `/${lang}/tech-tree/`, languages: { "zh-CN": "/zh/tech-tree/", "ja-JP": "/ja/tech-tree/" } },
+    alternates: { canonical: `/${lang}/tech-tree/`, languages: languageAlternates("/tech-tree/") },
   };
 }
 

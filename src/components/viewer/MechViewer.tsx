@@ -73,7 +73,7 @@ export function MechViewer({
     ? PART_LABELS[hovered as PartId]?.[lang] ?? hovered
     : null;
 
-  const renderSheet = (compact = false) => (
+  const renderSheet = (compact = false, bare = false) => (
     <DesignSheet
       machine={machine}
       lang={lang}
@@ -81,13 +81,14 @@ export function MechViewer({
       onHover={setHovered}
       engineering={engineering}
       compact={compact}
+      bare={bare}
     />
   );
 
   const fallback = (
     <div className="viewer__fallback">
-      <p className="micro">WEBGL UNAVAILABLE / STATIC SHEET</p>
-      {renderSheet(false)}
+      <p className="micro">WEBGL UNAVAILABLE / {labels.design.toUpperCase()}</p>
+      {hero ? renderSheet(false, true) : renderSheet(false)}
     </div>
   );
 
@@ -140,6 +141,7 @@ export function MechViewer({
                 hovered={hovered}
                 onHover={setHovered}
                 onReady={() => setReady(true)}
+                transparent={hero}
               />
             </ViewerBoundary>
           </div>

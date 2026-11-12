@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "厄祭战时代残存的高达型机体，以亚哈反应堆与太刀在火星战场上觉醒。",
-    "ja": "厄祭戦時代の生き残りガンダム。エイハブ・リアクターと太刀で火星の戦場に目覚める。"
+    "ja": "厄祭戦時代の生き残りガンダム。エイハブ・リアクターと太刀で火星の戦場に目覚める。",
+    "en": "A surviving Gundam-type mobile suit from the Calamity War, awakened on the Mars battlefield with an Ahab Reactor and a katana."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "バルバトスは三日月・オーガスが駆り、鉄華団の傭兵生活の中で装甲と武装を追加されていく。華やかなビーム兵器を持たず、獣のような近接戦とエイハブ・リアクターの持久力で火星の少年たちの生存手段となった。"
+    ],
+    "en": [
+      "Barbatos is piloted by Mikazuki Augus, and the machine kept gaining armor and weapons through Tekkadan's life as mercenaries. It has no flashy beam weapons; instead its almost animalistic close combat and the endurance of its Ahab Reactor made it a survival tool for a Mars boy."
     ]
   },
   "specs": {
@@ -45,21 +49,24 @@
     {
       "name": {
         "zh": "大型太刀",
-        "ja": "大型太刀"
+        "ja": "大型太刀",
+        "en": "Large Katana"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "滑空炮",
-        "ja": "滑空砲"
+        "ja": "滑空砲",
+        "en": "Smoothbore Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "腕部装甲",
-        "ja": "腕部アーマー"
+        "ja": "腕部アーマー",
+        "en": "Arm Armor"
       },
       "type": "special"
     }
@@ -98,7 +105,8 @@
       "sources": [
         {
           "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "alaya-vijnana"
@@ -121,13 +129,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "搭载 EXAM 系统的陆战型高达，蓝色装甲下封着新人类少女的意识。",
-    "ja": "EXAMシステムを搭載した陸戦型ガンダム。青い装甲の下にニュータイプの少女の意識が封じられている。"
+    "ja": "EXAMシステムを搭載した陸戦型ガンダム。青い装甲の下にニュータイプの少女の意識が封じられている。",
+    "en": "A ground-combat Gundam carrying the EXAM System, with a Newtype girl's consciousness sealed under its blue armor."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ブルーディスティニー1号機は陸戦型ガンダムを基盤とし、中核にEXAMシステムを搭載する。敵のニュータイプ知覚を強引に戦闘へ引き込むインターフェースだ。起動時には頭部が赤く変わる。",
       "青い塗装は隠蔽のためではなく、この「実験体」を示すためのものだ。パイロットはシステムの暴走が始まる前に戦闘を終えなければならない。"
+    ],
+    "en": [
+      "Blue Destiny Unit 1 is based on the Ground Gundam, and its core is the EXAM System—an interface that forcibly pulls an enemy Newtype's perception into battle. When the system activates, the machine's head turns red.",
+      "Its blue paint marks it as an 'experimental subject', not for concealment. The pilot must end the battle before the system goes out of control, or their consciousness will be dragged into another person's battlefield."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "60mm 火神炮",
-        "ja": "60mmバルカン"
+        "ja": "60mmバルカン",
+        "en": "60mm Vulcan"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "100mm 机枪",
-        "ja": "100mmマシンガン"
+        "ja": "100mmマシンガン",
+        "en": "100mm Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "导弹发射器",
-        "ja": "ミサイル・ランチャー"
+        "ja": "ミサイル・ランチャー",
+        "en": "Missile Launcher"
       },
       "type": "kinetic"
     }
@@ -96,7 +105,8 @@
       "sources": [
         {
           "label": "《机动战士高达外传 失落的环节》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Side Story: Missing Link mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "exam"
@@ -120,12 +130,16 @@
   "sources": [
     {
       "label": "《机动战士高达外传 蓝色命运》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam Side Story: Blue Destiny original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

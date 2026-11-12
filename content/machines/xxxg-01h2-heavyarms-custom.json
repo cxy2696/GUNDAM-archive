@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "重武装高达的后继机，追加双肩加特林与更多导弹仓。",
-    "ja": "ガンダムヘビーアームズの後継機。両肩のガトリングと追加ミサイル・ポッドを備える。"
+    "ja": "ガンダムヘビーアームズの後継機。両肩のガトリングと追加ミサイル・ポッドを備える。",
+    "en": "The successor to the Heavyarms, adding twin shoulder gatlings and more missile pods."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムヘビーアームズ改は「火力不足」という選択肢を完全に消した。両肩のガトリングと拡張されたミサイル・ポッドにより、短時間でより広い正面を覆える。",
       "代償は弾薬依存の深刻化である。補給線の上で戦わなければ、どんな弾幕も一度きりの花火に過ぎない。"
+    ],
+    "en": [
+      "The Heavyarms Custom deletes the option of 'not enough firepower' entirely. Twin shoulder gatlings and expanded missile pods let it cover a wider front in a short time.",
+      "The cost is a heavier dependence on ammunition. It must operate along supply lines, or even the strongest barrage is just a one-time firework."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "双管加特林 ×2",
-        "ja": "ツイン・ガトリング ×2"
+        "ja": "ツイン・ガトリング ×2",
+        "en": "Twin Gatling ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "导弹仓 ×2",
-        "ja": "ミサイル・ポッド ×2"
+        "ja": "ミサイル・ポッド ×2",
+        "en": "Missile Pod ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "军刀",
-        "ja": "アーミーナイフ"
+        "ja": "アーミーナイフ",
+        "en": "Army Knife"
       },
       "type": "melee"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达W 无尽的华尔兹》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing: Endless Waltz\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

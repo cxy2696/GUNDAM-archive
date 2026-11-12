@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "天人的近接战专用高达。GN 动力装置提供的粒子推进与 GN 剑的实体刃，让它在中距离火力之外保留了决定性的白刃战能力。",
-    "ja": "ソレスタルビーイングの近接戦専用ガンダム。GNドライヴによる粒子推進とGNソードの実体刃により、中距離火力とは別に決定的な白兵戦能力を保持した。"
+    "ja": "ソレスタルビーイングの近接戦専用ガンダム。GNドライヴによる粒子推進とGNソードの実体刃により、中距離火力とは別に決定的な白兵戦能力を保持した。",
+    "en": "Celestial Being's Gundam specialized for close combat. The particle propulsion of its GN Drive and the solid blades of its GN Swords let it keep a decisive edged-weapon capability beyond medium-range firepower."
   },
   "description": {
     "zh": [
@@ -32,6 +33,10 @@
     "ja": [
       "エクシアは第四世代ガンダムで唯一、近接格闘を主任務とする機体である。GNソードは刀身周囲に高エネルギー粒子場を形成し、装甲を切断するだけでなく接触瞬間に粒子衝撃を放つ。七本の剣によりあらゆる距離へ対応できる。",
       "刹那・F・セイエイはA.D.2307の初期武力介入でこの機体を駆った。エクシアの戦闘スタイルは刹那の個人史と高度に重なる。直接的で短く、撤退の余地をほとんど残さないそれは、「武力による戦争根絶」の矛盾を交戦のたびに鋭くする。"
+    ],
+    "en": [
+      "The Exia is the only fourth-generation Gundam whose main mission is close combat. Its GN Sword forms a high-energy particle field around the blade, able to cut armor and release a particle shock on contact; the Seven Swords system gives it a response at every range.",
+      "Setsuna F. Seiei piloted it in the initial armed interventions of A.D.2307. The Exia's fighting style overlaps heavily with Setsuna's personal history: direct, brief, almost no room for retreat, which makes the contradiction of 'ending war by force' sharper in every engagement."
     ]
   },
   "specs": {
@@ -44,35 +49,40 @@
     "sensorRadius": null,
     "armor": {
       "zh": "E 碳装甲",
-      "ja": "Eカーボン装甲"
+      "ja": "Eカーボン装甲",
+      "en": "E-Carbon Armor"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "GN 剑",
-        "ja": "GNソード"
+        "ja": "GNソード",
+        "en": "GN Sword"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 光束军刀 ×2",
-        "ja": "GNビームサーベル ×2"
+        "ja": "GNビームサーベル ×2",
+        "en": "GN Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 火神炮 ×2",
-        "ja": "GNバルカン ×2"
+        "ja": "GNバルカン ×2",
+        "en": "GN Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     }
@@ -109,8 +119,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     },
@@ -124,7 +137,8 @@
       "sources": [
         {
           "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 Season 2 mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gn-drive"
@@ -148,11 +162,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士高达 00》第 1—25 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Gundam 00\" episodes 1–25"
     },
     {
       "label": "《机动战士高达 00》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam 00 MS setting materials"
     }
   ],
   "disputed": false,

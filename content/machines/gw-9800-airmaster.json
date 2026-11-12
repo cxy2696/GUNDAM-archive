@@ -21,7 +21,8 @@
   },
   "summary": {
     "zh": "以空战与变形为核心的废土高达，能切换飞行形态执行侦察与火力支援。",
-    "ja": "空戦と変形を中核とする廃墟のガンダム。飛行形態へ切り替え、偵察と火力支援を行う。"
+    "ja": "空戦と変形を中核とする廃墟のガンダム。飛行形態へ切り替え、偵察と火力支援を行う。",
+    "en": "A wasteland Gundam built around aerial combat and transformation, able to switch to flight form for reconnaissance and fire support."
   },
   "description": {
     "zh": [
@@ -29,6 +30,9 @@
     ],
     "ja": [
       "エアマスターは速度と視界を重視し、二連ライフルと変形翼で廃墟の戦場を快速に駆ける。レオパルド、Xと共に小規模傭兵隊を組み、戦後のガンダムが「再利用」される生存論理を体現した。"
+    ],
+    "en": [
+      "The Airmaster's design emphasizes speed and visibility; its twin beam rifle and transforming wings suit rapid engagement in the wasteland. With the Leopard and the X it forms a small mercenary team, reflecting the survival logic of 'reusing' Gundams after the war."
     ]
   },
   "specs": {
@@ -44,21 +48,24 @@
     {
       "name": {
         "zh": "双管光束步枪",
-        "ja": "二連ビームライフル"
+        "ja": "二連ビームライフル",
+        "en": "Twin Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -90,7 +97,8 @@
       "sources": [
         {
           "label": "《机动新世纪高达 X》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "After War Gundam X mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -113,13 +121,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动新世纪高达 X》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"After War Gundam X\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

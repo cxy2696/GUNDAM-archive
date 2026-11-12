@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "联邦“苍白骑士计划”的产物，搭载以强化人为核心的 HADES 系统。",
-    "ja": "連邦「ペイルライダー計画」の産物。強化人間を核心とするHADESシステムを搭載する。"
+    "ja": "連邦「ペイルライダー計画」の産物。強化人間を核心とするHADESシステムを搭載する。",
+    "en": "The product of the Federation's 'Pale Rider Plan', carrying the HADES System built around enhanced humans."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ペイルライダーは連邦が暗部で進めた強化人間計画の一環である。HADESシステムは短時間だけ機体のリミッターを解放し、同時に巨大な情報負荷をパイロットへ押し付ける。",
       "白い装甲と赤いセンサーは実験台の標本のようだ。兵器というより、人体と機械を強引に接合する装置に近い。"
+    ],
+    "en": [
+      "The Pale Rider is part of the enhanced-human plan the Federation pushed in the shadows. The HADES System briefly releases the machine's limits while pressing a huge information load onto the pilot.",
+      "Its white armor and red sensors make it look like a specimen on an experiment table. Rather than a weapon, it is a device that forcibly joins a human body to a machine."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "60mm 火神炮",
-        "ja": "60mmバルカン"
+        "ja": "60mmバルカン",
+        "en": "60mm Vulcan"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "巨型加特林",
-        "ja": "ジャイアント・ガトリング"
+        "ja": "ジャイアント・ガトリング",
+        "en": "Giant Gatling"
       },
       "type": "kinetic"
     }
@@ -104,12 +113,16 @@
   "sources": [
     {
       "label": "《机动战士高达外传 失落的环节》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam Side Story: Missing Link original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

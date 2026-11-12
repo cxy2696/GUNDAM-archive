@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "提坦斯早期主力试作机，后被奥古夺取，成为 Z 计划的可动骨架验证平台。",
-    "ja": "ティターンズ初期の主力試作機。後にエゥーゴに奪取され、Ζ計画のムーバブルフレーム検証機となった。"
+    "ja": "ティターンズ初期の主力試作機。後にエゥーゴに奪取され、Ζ計画のムーバブルフレーム検証機となった。",
+    "en": "An early Titans main prototype, later captured by the AEUG and used as the movable-frame validation platform for the Z Project."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "Mk-IIは連邦軍次世代MSの先行試作で、ムーバブルフレームと紧凑な機体構造を採用した。グリプス戦役でエゥーゴに奪取され、Ζガンダム開発を直接推し進め、カミーユ・ビダンの初期戦闘機ともなった。"
+    ],
+    "en": [
+      "The Mk-II is an advance prototype of the Federation's next-generation MS, using a movable frame and a more compact structure. It was captured by the AEUG during the Gryps Conflict, directly driving the development of the Zeta Gundam, and became Kamille Bidan's machine in his early battles."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -99,7 +107,8 @@
       "sources": [
         {
           "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Advance of Zeta: The Flag of Titans mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -122,13 +131,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士 Z 高达》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士 Z 高达》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Zeta Gundam\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

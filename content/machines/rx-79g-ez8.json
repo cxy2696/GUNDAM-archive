@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "天田士郎的座机，用陆战型高达的备用零件在现场改装而成。",
-    "ja": "シロー・アマダの搭乗機。陸戦型ガンダムの予備部品を用いて現地改修された。"
+    "ja": "シロー・アマダの搭乗機。陸戦型ガンダムの予備部品を用いて現地改修された。",
+    "en": "Shiro Amada's machine, field-modified from spare parts of the Ground Gundam."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "Ez8は損傷した陸戦型ガンダムと予備部品を組み合わせた機体である。象徴的なVアンテナを外し、より信頼性の高い装甲配置と武装インターフェースに変更したため、外見はガンダムらしくないほど素朴だ。",
       "この「戦場改修」こそ第08MS小隊の気質である。最強の機体ではなく、与えられた装備を限界まで使い切る兵士たちの機体だった。"
+    ],
+    "en": [
+      "The Ez8 is the product of joining a damaged Ground Gundam with spare parts. It removes the signature V antenna and switches to a more reliable armor layout and weapon interfaces, looking so plain it hardly resembles a Gundam.",
+      "This 'battlefield modification' is exactly the character of the 08th MS Team: no strongest machine, only soldiers who push existing equipment to the limit."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "35mm 机关炮 ×2",
-        "ja": "35mm機関砲 ×2"
+        "ja": "35mm機関砲 ×2",
+        "en": "35mm Machine Cannon ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "100mm 机枪",
-        "ja": "100mmマシンガン"
+        "ja": "100mmマシンガン",
+        "en": "100mm Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "火箭炮",
-        "ja": "ロケット・ランチャー"
+        "ja": "ロケット・ランチャー",
+        "en": "Rocket Launcher"
       },
       "type": "kinetic"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 第08MS小队》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The 08th MS Team\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

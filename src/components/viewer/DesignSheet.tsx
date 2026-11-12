@@ -2,6 +2,7 @@
 
 import type { Machine } from "@/lib/schema";
 import type { Lang } from "@/lib/schema";
+import { pick } from "@/lib/i18n";
 import { PART_LABELS } from "./model";
 
 export function DesignSheet({
@@ -11,6 +12,7 @@ export function DesignSheet({
   onHover,
   engineering,
   compact = false,
+  bare = false,
 }: {
   machine: Machine;
   lang: Lang;
@@ -18,6 +20,7 @@ export function DesignSheet({
   onHover: (id: string | null) => void;
   engineering: boolean;
   compact?: boolean;
+  bare?: boolean;
 }) {
   const c = machine.viewer.colors;
   const head = machine.viewer.head;
@@ -59,11 +62,11 @@ export function DesignSheet({
         </linearGradient>
       </defs>
 
-      <rect width={compact ? 360 : 640} height="560" fill="#070e13" />
+      <rect width={compact ? 360 : 640} height="560" fill={bare ? "transparent" : "#070e13"} />
       <g transform={compact ? undefined : "translate(140 0)"}>
-      <rect width="360" height="560" fill="#070e13" />
-      <rect width="360" height="560" fill={`url(#sheet-grid-${machine.id})`} />
-      <rect width="360" height="560" fill={`url(#sheet-fade-${machine.id})`} opacity=".4" />
+      <rect width="360" height="560" fill={bare ? "transparent" : "#070e13"} />
+      <rect width="360" height="560" fill={`url(#sheet-grid-${machine.id})`} opacity={bare ? 0.55 : 1} />
+      {!bare && <rect width="360" height="560" fill={`url(#sheet-fade-${machine.id})`} opacity=".4" />}
 
       <g className="sheet__annot" aria-hidden>
         <text x="20" y="28" className="sheet__micro">FRONT / ELEVATION</text>
@@ -339,8 +342,21 @@ export function DesignSheet({
         <text x="22" y="158" className="sheet__side-value">{machine.specs.weightFull ? `${machine.specs.weightFull.toFixed(1)} T` : "N/A"}</text>
         <text x="22" y="184" className="sheet__side-label">ARMOR</text>
         <text x="22" y="198" className="sheet__side-value">
-          {machine.specs.armor ? machine.specs.armor[lang] : "N/A"}
+          {machine.specs.armor ? pick(machine.specs.armor, lang) : "N/A"}
         </text>
+
+        <line x1="22" y1="214" x2="112" y2="214" stroke="rgba(88,255,157,.22)" strokeWidth=".6" />
+        <text x="22" y="232" className="sheet__side-label">ARMAMENT</text>
+        {machine.armament.slice(0, 5).map((arm, index) => (
+          <text key={`${arm.name.zh}-${index}`} x="22" y={248 + index * 16} className="sheet__arm">
+            {String(index + 1).padStart(2, "0")} {pick(arm.name, lang).slice(0, 24)}
+          </text>
+        ))}
+        {machine.armament.length > 5 && (
+          <text x="22" y={248 + 5 * 16} className="sheet__arm">
+            +{machine.armament.length - 5} MORE
+          </text>
+        )}
 
         <text x="22" y="474" className="sheet__side-label">SHEET</text>
         <text x="22" y="488" className="sheet__side-value">01 / FRONT</text>
@@ -365,19 +381,31 @@ export function DesignSheet({
             <text x="556" y={102 + index * 22} className="sheet__side-value">{name}</text>
           </g>
         ))}
-        <text x="538" y="310" className="sheet__side-label">MATERIAL SLOTS</text>
-        <text x="538" y="324" className="sheet__side-value">PRI / SEC / ACC</text>
-        <text x="538" y="338" className="sheet__side-value">EYE / FRAME</text>
-        <rect x="538" y="352" width="12" height="12" fill={c.primary} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
-        <rect x="556" y="352" width="12" height="12" fill={c.secondary} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
-        <rect x="574" y="352" width="12" height="12" fill={c.accent} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
-        <rect x="592" y="352" width="12" height="12" fill={c.eye} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
-        <rect x="610" y="352" width="12" height="12" fill={c.frame} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
+        <text x="538" y="286" className="sheet__side-label">POWER</text>
+        <text x="538" y="300" className="sheet__side-value">
+          {machine.specs.powerOutput ? `${machine.specs.powerOutput} KW` : "N/A"}
+        </text>
+        <text x="538" y="318" className="sheet__side-label">THRUST</text>
+        <text x="538" y="332" className="sheet__side-value">
+          {machine.specs.thrust ? `${machine.specs.thrust} KGF` : "N/A"}
+        </text>
+        <text x="538" y="350" className="sheet__side-label">SENSOR</text>
+        <text x="538" y="364" className="sheet__side-value">
+          {machine.specs.sensorRadius ? `${machine.specs.sensorRadius} M` : "N/A"}
+        </text>
+        <text x="538" y="382" className="sheet__side-label">MATERIAL SLOTS</text>
+        <text x="538" y="396" className="sheet__side-value">PRI / SEC / ACC</text>
+        <text x="538" y="410" className="sheet__side-value">EYE / FRAME</text>
+        <rect x="538" y="424" width="12" height="12" fill={c.primary} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
+        <rect x="556" y="424" width="12" height="12" fill={c.secondary} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
+        <rect x="574" y="424" width="12" height="12" fill={c.accent} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
+        <rect x="592" y="424" width="12" height="12" fill={c.eye} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
+        <rect x="610" y="424" width="12" height="12" fill={c.frame} stroke="rgba(255,255,255,.3)" strokeWidth=".5" />
 
         <text x="538" y="474" className="sheet__side-label">SOURCE</text>
-        <text x="538" y="488" className="sheet__side-value">GUNDAM / MS-ARCHIVE</text>
+        <text x="538" y="488" className="sheet__side-value">GUNDAM ARCHIVE</text>
         <text x="538" y="512" className="sheet__side-label">STATUS</text>
-        <text x="538" y="526" className="sheet__side-value">PROCEDURAL / LOD-P</text>
+        <text x="538" y="526" className="sheet__side-value">PROCEDURAL</text>
         </g>
       )}
     </svg>

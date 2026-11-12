@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "联邦次世代主力机，以 Mission Pack 换装覆盖多种战场。",
-    "ja": "連邦の次世代主力機。ミッション・パック換装で多様な戦場に対応する。"
+    "ja": "連邦の次世代主力機。ミッション・パック換装で多様な戦場に対応する。",
+    "en": "The Federation's next-generation main machine, covering many battlefields with Mission Pack swaps."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "F90は宇宙世紀0120年代の連邦「小型化」路線を代表する機体である。RX-78より一回り小さいが、ミッション・パックによって偵察・重装・高機動などの形態を得る。",
       "「一機ですべての任務に対応する」という発想を最大限まで押し進めた。価値は単一性能ではなく、後方支援と戦術の汎用性にある。"
+    ],
+    "en": [
+      "The F90 represents the Federation's 'miniaturization' line in the 0120s of the Universal Century. It is shorter than the RX-78, but Mission Packs give it reconnaissance, heavy-armor, high-mobility and other forms.",
+      "The machine pushed the idea of 'one machine for every mission' to its largest scale. Its value lies not in any single performance figure but in logistics and tactical versatility."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -88,7 +96,8 @@
       "sources": [
         {
           "label": "《机动战士高达 F91》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam F91 mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "《机动战士高达 F90》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam F90 original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

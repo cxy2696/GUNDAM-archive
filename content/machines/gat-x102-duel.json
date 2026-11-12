@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军 GAT 系列的原型机，以均衡性能成为后续机体的基准。",
-    "ja": "地球連合軍GATシリーズの原型機。バランスの取れた性能で後続機の基準となった。"
+    "ja": "地球連合軍GATシリーズの原型機。バランスの取れた性能で後続機の基準となった。",
+    "en": "A prototype of the Earth Alliance's GAT series, whose balanced performance became the baseline for later machines."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "デュエルはGATシリーズの中で最も「標準」な機体である。ストライクの換装、バスターの砲撃、ブリッツのステルスはないが、各性能は安定したバランスを保つ。",
       "標準的であるからこそ、後続開発の参照になった。戦争後期には追加装甲と武装が施されたが、骨格は素朴な原型機のままだ。"
+    ],
+    "en": [
+      "The Duel Gundam is the most 'standard' machine in the GAT series. It lacks the Strike's pack swaps, the Buster's artillery or the Blitz's stealth, but keeps a stable balance across all performance areas.",
+      "Because it was standard enough, it became the reference for later development. In the later war it received additional armor and weapons, but its frame remained that plain prototype."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -105,12 +114,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

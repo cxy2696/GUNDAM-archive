@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "为核打击而设计的重装高达，盾内藏 MK82 核弹头。",
-    "ja": "核攻撃のために設計された重装ガンダム。シールド内にMK82核弾頭を収める。"
+    "ja": "核攻撃のために設計された重装ガンダム。シールド内にMK82核弾頭を収める。",
+    "en": "A heavy Gundam designed for nuclear strike, with an MK82 nuclear warhead in its shield."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "GP02Aの任務は最初からMS戦ではなかった。敵艦隊の中心に核を投下し、生きて離脱する。そのために装甲は鈍重なまでに厚く、推力は短距離離脱に集中した。",
       "「サイサリス」という花の名は本質を隠せない。戦略核攻撃を単機サイズに押し込んだ兵器である。スターダスト作戦は、この機体を連邦技術史でもっとも危険な作品の一つにした。"
+    ],
+    "en": [
+      "The GP02A's mission was never MS combat to begin with. It was to drop a nuclear weapon in the center of an enemy fleet and leave alive—so its armor was made almost clumsy, and its thrusters were concentrated on short-range escape.",
+      "The nickname 'Physalis' cannot hide its nature: a weapon that compresses strategic nuclear strike into a single machine. Operation Stardust made it one of the most dangerous products in the history of Federation technology."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "核弹头火箭炮",
-        "ja": "核弾頭ランチャー"
+        "ja": "核弾頭ランチャー",
+        "en": "Nuclear Bazooka"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 0083 星尘的回忆》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 0083: Stardust Memory\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

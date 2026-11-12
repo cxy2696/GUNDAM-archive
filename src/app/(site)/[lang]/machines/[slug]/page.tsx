@@ -13,7 +13,7 @@ import {
   getTag,
   getWork,
 } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick, pickList, sourceLabel, sourceNote } from "@/lib/i18n";
 import {
   formatSpecValue,
   formatStoryDate,
@@ -48,11 +48,7 @@ export async function generateMetadata({
     description: pick(machine.summary, lang),
     alternates: {
       canonical: `/${lang}/machines/${machine.id}/`,
-      languages: {
-        "zh-CN": `/zh/machines/${machine.id}/`,
-        "ja-JP": `/ja/machines/${machine.id}/`,
-        "x-default": `/zh/machines/${machine.id}/`,
-      },
+      languages: languageAlternates(`/machines/${machine.id}`),
     },
     openGraph: {
       title: `${pick(machine.name, lang)} ${machine.modelCode}`,
@@ -97,6 +93,21 @@ export default async function MachinePage({
   const armamentCounts = (["beam", "kinetic", "melee", "special"] as const)
     .map((type) => ({ type, count: machine.armament.filter((item) => item.type === type).length }))
     .filter((item) => item.count > 0);
+  const sortedEvents = [...events].sort(
+    (a, b) => a.date.year - b.date.year || (a.date.month ?? 0) - (b.date.month ?? 0),
+  );
+  const serviceWindow =
+    sortedEvents.length > 0
+      ? `${formatStoryDate(sortedEvents[0].date, getEra(sortedEvents[0].eraId)?.code ?? "", typed)} — ${formatStoryDate(sortedEvents[sortedEvents.length - 1].date, getEra(sortedEvents[sortedEvents.length - 1].eraId)?.code ?? "", typed)}`
+      : "—";
+  const powerWeight =
+    machine.specs.powerOutput && machine.specs.weightFull
+      ? (machine.specs.powerOutput / machine.specs.weightFull).toFixed(1)
+      : null;
+  const thrustWeight =
+    machine.specs.thrust && machine.specs.weightFull
+      ? (machine.specs.thrust / machine.specs.weightFull).toFixed(2)
+      : null;
 
   const graph = buildMachineGraph(machine.id, bundle, typed, dict);
 
@@ -154,7 +165,7 @@ export default async function MachinePage({
               <div className="dossier-head__names">
                 <span className="mono">{machine.modelCode}</span>
                 <span>{machine.name.ja}</span>
-                <span>{machine.name.en}</span>
+                {typed !== "en" && <span>{machine.name.en}</span>}
               </div>
               <p className="dossier-head__summary">{pick(machine.summary, typed)}</p>
               <div className="tag-row">
@@ -198,11 +209,38 @@ export default async function MachinePage({
             </summary>
             <div className="fold__body">
               <p className="fold__lead">{pick(machine.summary, typed)}</p>
-              {machine.description[typed].map((paragraph) => (
+              {pickList(machine.description, typed).map((paragraph) => (
                 <p key={paragraph.slice(0, 24)} className="fold__paragraph">
                   {paragraph}
                 </p>
               ))}
+              <div className="dossier-readout">
+                <div className="readout-cell">
+                  <span className="micro">{dict.spec.powerOutput} / {dict.spec.weightFull}</span>
+                  <b className="mono">{powerWeight ?? "N/A"}</b>
+                  <i>kW / t</i>
+                </div>
+                <div className="readout-cell">
+                  <span className="micro">{dict.spec.thrust} / {dict.spec.weightFull}</span>
+                  <b className="mono">{thrustWeight ?? "N/A"}</b>
+                  <i>kgf / t</i>
+                </div>
+                <div className="readout-cell">
+                  <span className="micro">{dict.spec.sensorRadius}</span>
+                  <b className="mono">{machine.specs.sensorRadius ? `${(machine.specs.sensorRadius / 1000).toFixed(1)}` : "N/A"}</b>
+                  <i>km</i>
+                </div>
+                <div className="readout-cell">
+                  <span className="micro">{dict.machine.armament}</span>
+                  <b className="mono">{String(machine.armament.length).padStart(2, "0")}</b>
+                  <i>{dict.common.count}</i>
+                </div>
+              </div>
+              <div className="service-window">
+                <span className="micro">{dict.machine.events}</span>
+                <b className="mono">{serviceWindow}</b>
+                <span className="mono">{events.length} / {String(bundle.events.length).padStart(2, "0")}</span>
+              </div>
             </div>
           </details>
 
@@ -320,7 +358,7 @@ export default async function MachinePage({
                   {pilots.map(({ character, note }) => (
                     <Link key={character.id} href={`/${typed}/characters/${character.id}`} className="pilot">
                       <span className="pilot__avatar" aria-hidden>
-                        {character.name.zh.slice(0, 1)}
+                        {character.name[typed].slice(0, 1)}
                       </span>
                       <span className="pilot__info">
                         <b>{pick(character.name, typed)}</b>
@@ -409,12 +447,12 @@ export default async function MachinePage({
                     <span className="source-list__label">
                       {source.url ? (
                         <a href={source.url} target="_blank" rel="noreferrer">
-                          {source.label} <ArrowUpRightIcon size={11} />
+                          {sourceLabel(source, typed)} <ArrowUpRightIcon size={11} />
                         </a>
                       ) : (
-                        source.label
+                        sourceLabel(source, typed)
                       )}
-                      {source.note && <em>{source.note}</em>}
+                      {sourceNote(source, typed) && <em>{sourceNote(source, typed)}</em>}
                     </span>
                     <span className="source-list__kind">{dict.sourceLevel[source.level]}</span>
                   </li>

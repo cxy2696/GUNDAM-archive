@@ -21,7 +21,8 @@
   },
   "summary": {
     "zh": "G-自我的高机动衍生机，以光子电池与浮游武器强化宇宙战能力。",
-    "ja": "G-セルフの高機動派生機。光子電池と浮遊兵器で宇宙戦能力を強化する。"
+    "ja": "G-セルフの高機動派生機。光子電池と浮遊兵器で宇宙戦能力を強化する。",
+    "en": "A high-mobility derivative of the G-Self, strengthening space combat with a photon battery and funnel weapons."
   },
   "description": {
     "zh": [
@@ -29,11 +30,14 @@
     ],
     "ja": [
       "G-ルシファーはG-セルフの換装概念をより極端な宇宙戦仕様へ押し広げ、ファンネルと高推力バックパックで軌道エレベーター防衛の中核となる。R.C.の技術禁令が武器化を止めていないことを示す機体でもある。"
+    ],
+    "en": [
+      "The G-Lucifer pushes the G-Self's wear concept toward a more extreme space-combat configuration; its funnels and high-thrust backpack make it a core part of the orbital elevator defense line. Its existence shows that the R.C. technology ban did not really stop weaponization."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": null,
     "powerOutput": null,
@@ -44,21 +48,24 @@
     {
       "name": {
         "zh": "浮游炮 ×4",
-        "ja": "ファンネル ×4"
+        "ja": "ファンネル ×4",
+        "en": "Funnel ×4"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     }
@@ -97,13 +104,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《高达 G 之复国运动》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《高达 G 之复国运动》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Gundam Reconguista in G\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

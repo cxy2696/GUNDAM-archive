@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "联邦为水陆两用与高机动战开发的实验机，能在殖民地残骸中高速机动。",
-    "ja": "連邦が水陸両用と高機動戦のために開発した実験機。コロニー残骸の中を高速機動できる。"
+    "ja": "連邦が水陸両用と高機動戦のために開発した実験機。コロニー残骸の中を高速機動できる。",
+    "en": "An experimental Federation machine developed for amphibious and high-mobility combat, able to maneuver at high speed through colony debris."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "アトラスガンダムの設計は「破砕したコロニー残骸の中を移動する」ことに集中している。脚部とサブアームが多方向の推力を生み、サンダーボルトのデブリ帯で通常のMSには難しい姿勢制御を可能にした。",
       "量産を目的とせず、戦場で得た最大限環境のデータを連邦の技術部門へ還元するための機体である。露出したスラスターの一つ一つが実験機のわがままを経緯る。"
+    ],
+    "en": [
+      "The Atlas Gundam's design revolves around 'moving through broken colony debris'. Its legs and assist arms provide thrust in multiple directions, letting it perform attitude control in the Thunderbolt sector's debris belt that a normal MS cannot.",
+      "It was not built for mass production, but to feed extreme-environment data collected on the battlefield back to the Federation's technical department. Every exposed thruster declares the wilfulness of an experimental machine."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "轨道炮",
-        "ja": "レールガン"
+        "ja": "レールガン",
+        "en": "Railgun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "辅助臂",
-        "ja": "サブアーム"
+        "ja": "サブアーム",
+        "en": "Sub-arm"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "水中用推进器",
-        "ja": "水中用スラスター"
+        "ja": "水中用スラスター",
+        "en": "Underwater Thruster"
       },
       "type": "special"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 雷霆宙域》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Thunderbolt\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -28,7 +28,7 @@ export function formatSpecValue(
   value: number | null | undefined,
   lang: Lang,
 ): string {
-  if (value === null || value === undefined) return lang === "zh" ? "资料未载" : "資料未載";
+  if (value === null || value === undefined) return lang === "zh" ? "资料未载" : lang === "ja" ? "資料未載" : "Not documented";
   switch (field) {
     case "heightOverall":
     case "heightHead":
@@ -48,7 +48,7 @@ export function formatSpecValue(
 export function heightReference(height: number | null | undefined, lang: Lang): string | null {
   if (!height) return null;
   const floors = Math.max(1, Math.round(height / 3));
-  return lang === "zh" ? `约 ${floors} 层楼高` : `約${floors}階建て相当`;
+  return lang === "zh" ? `约 ${floors} 层楼高` : lang === "ja" ? `約${floors}階建て相当` : `About ${floors} storeys tall`;
 }
 
 export const specFields = [
@@ -82,6 +82,21 @@ export function clamp(value: number, min: number, max: number): number {
 export function normalizeQuery(query: string): string {
   return query
     .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ν/g, "nu")
+    .replace(/α/g, "alpha")
+    .replace(/β/g, "beta")
+    .replace(/γ/g, "gamma")
+    .replace(/δ/g, "delta")
+    .replace(/ε/g, "epsilon")
+    .replace(/ζ/g, "zeta")
+    .replace(/η/g, "eta")
+    .replace(/θ/g, "theta")
+    .replace(/ξ/g, "xi")
+    .replace(/σ/g, "sigma")
+    .replace(/φ/g, "phi")
+    .replace(/ω/g, "omega")
     .replace(/[\s\-_.·・]/g, "")
     .trim();
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { AtlasExplorer } from "@/components/atlas/AtlasExplorer";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: dict.map.title,
     description: dict.atlas.lead,
-    alternates: { canonical: `/${lang}/map/`, languages: { "zh-CN": "/zh/map/", "ja-JP": "/ja/map/" } },
+    alternates: { canonical: `/${lang}/map/`, languages: languageAlternates("/map/") },
   };
 }
 

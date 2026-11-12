@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "AGE 系统的第一台机体，可通过 Titus、Sparrow 等换装适应不同战况。",
-    "ja": "AGEシステムの第一号機。ティタス、スパローなどの換装で異なる戦況に対応する。"
+    "ja": "AGEシステムの第一号機。ティタス、スパローなどの換装で異なる戦況に対応する。",
+    "en": "The first machine of the AGE System, able to adapt to different situations through wear configurations such as Titus and Sparrow."
   },
   "description": {
     "zh": [
@@ -30,11 +31,14 @@
     ],
     "ja": [
       "AGE-1はフリット・アスノが駆り、AGEシステムが記録した戦闘データを新しい換装と武装へ変換する。コロニー・ノーラの少年防衛戦から始まり、三代にわたる連邦の象徴となっていく。"
+    ],
+    "en": [
+      "The AGE-1 is piloted by Flit Asuno; the machine converts combat data recorded by the AGE System into new wear forms and armaments. It began with the defense of the colony Nora by its young defenders and gradually became a Federation symbol spanning three generations."
     ]
   },
   "specs": {
-    "heightOverall": 18.0,
-    "heightHead": 18.0,
+    "heightOverall": 18,
+    "heightHead": 18,
     "weightEmpty": null,
     "weightFull": null,
     "powerOutput": null,
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -103,7 +111,8 @@
       "sources": [
         {
           "label": "《机动战士高达 AGE》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam AGE mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "age-system"
@@ -118,7 +127,8 @@
       "sources": [
         {
           "label": "《机动战士高达 AGE》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam AGE mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "age-system"
@@ -133,7 +143,8 @@
       "sources": [
         {
           "label": "《机动战士高达 AGE》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam AGE mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "age-system"
@@ -156,13 +167,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 AGE》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 AGE》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam AGE\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

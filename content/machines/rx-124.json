@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "TR 系列集大成的小型高机动机体，可换装为多种形态。",
-    "ja": "TRシリーズの集大成となる小型高機動機。複数の形態へ換装できる。"
+    "ja": "TRシリーズの集大成となる小型高機動機。複数の形態へ換装できる。",
+    "en": "A compact high-mobility machine that culminates the TR series, able to swap into many forms."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ウーンドウォートはTR計画で蓄積された換装技術を、一機の小型機体へ圧縮した。他のティターンズ機より輪郭は軽く、四肢とスラスターは任務に応じて再構成できる。",
       "未完成の設計草稿のようでありながら、戦闘論理はすでに完成している。ティターンズにとっては技術的勝利だが、パイロットにとってはシステム全体を理解することを求める機体だ。"
+    ],
+    "en": [
+      "The Woundwort compresses the equipment-swap technology accumulated by the TR plan into a small machine. Its silhouette is lighter than other Titans machines, but its limbs and thrusters can be recombined into different forms by mission.",
+      "It is like an unfinished design draft, yet already has a complete combat logic. For the Titans it is a technical victory; for the pilot, it is a machine that requires understanding the whole system."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "复合光束枪",
-        "ja": "複合ビーム砲"
+        "ja": "複合ビーム砲",
+        "en": "Composite Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌推进器",
-        "ja": "シールド・ブースター"
+        "ja": "シールド・ブースター",
+        "en": "Shield Booster"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "钩爪",
-        "ja": "クロー"
+        "ja": "クロー",
+        "en": "Hook Claw"
       },
       "type": "melee"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "《机动战士高达 Advance of Zeta 在提坦斯的旗下》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam Advance of Zeta: The Flag of Titans original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

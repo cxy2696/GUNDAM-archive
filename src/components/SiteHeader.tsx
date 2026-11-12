@@ -65,7 +65,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
   return (
     <>
       <a className="skip-link" href="#main">
-        {lang === "zh" ? "跳到主要内容" : "本文へスキップ"}
+        {lang === "zh" ? "跳到主要内容" : lang === "ja" ? "本文へスキップ" : "Skip to main content"}
       </a>
       <header className="header">
         <div className="header__inner">
@@ -79,7 +79,7 @@ export function SiteHeader({ lang, dict }: { lang: Lang; dict: Dictionary }) {
             </span>
           </Link>
 
-          <nav className="nav" aria-label={lang === "zh" ? "主导航" : "メインナビゲーション"}>
+          <nav className="nav" aria-label={lang === "zh" ? "主导航" : lang === "ja" ? "メインナビゲーション" : "Main navigation"}>
             {navItems.map((item) => (
               <Link
                 key={item.key}

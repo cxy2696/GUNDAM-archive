@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "OZ 的 G-UNIT 计划机体，以换装与高通用性为目标。",
-    "ja": "OZのG-UNIT計画の機体。換装と高い汎用性を目指す。"
+    "ja": "OZのG-UNIT計画の機体。換装と高い汎用性を目指す。",
+    "en": "A machine of OZ's G-UNIT plan, aiming for equipment swaps and high versatility."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムジェミナス01は、五機のオペレーション・メテオとは別にOZが進めた試みである。単一の極端な性能ではなく、汎用骨格と任務換装を重視した。",
       "G-UNITの経緯ではコロニーの少年が操縦し、OZ内部の権力闘争に巻き込まれる。機体は標準的だが、難しいのは乗る者の立場の選択だ。"
+    ],
+    "en": [
+      "The Gundam Geminass 01 is another attempt OZ pursued outside the five Operation Meteor machines. It emphasizes a common frame and mission-specific equipment rather than a single extreme performance.",
+      "In the story of G-UNIT, it is piloted by a colony youth and drawn into OZ's internal power struggle. The machine itself is standard; the hard part is how its pilot chooses a position."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮",
-        "ja": "バルカン"
+        "ja": "バルカン",
+        "en": "Vulcan"
       },
       "type": "kinetic"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《新机动战记高达W 双故事 G-UNIT》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing Dual Story: G-UNIT mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -119,12 +129,16 @@
   "sources": [
     {
       "label": "《新机动战记高达W 双故事 G-UNIT》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam Wing Dual Story: G-UNIT original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军的远程炮击型高达，双炮组合覆盖远近火力。",
-    "ja": "地球連合軍の遠距離砲撃型ガンダム。二門の砲を組み合わせて遠近の火力を担う。"
+    "ja": "地球連合軍の遠距離砲撃型ガンダム。二門の砲を組み合わせて遠近の火力を担う。",
+    "en": "The Earth Alliance's long-range artillery Gundam, whose twin guns cover both near and far firepower."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "バスターの設計は二門の主砲を軸にしている。350mm砲撃管は実弾制圧、94mm高エネルギービームライフルはビーム狙撃を担い、両者を組み合わせた射撃モードもある。",
       "単機突進には向かない。パイロットは仲間の後ろに立ち、火力で戦場を区切り、前線の人間に進む道を作る。"
+    ],
+    "en": [
+      "The Buster Gundam's design revolves around its two main guns. The 350mm gun launcher handles solid-shell suppression, the 94mm high-energy rifle handles beam sniping, and the two can combine into a stronger firing mode.",
+      "It is not suited to charging in alone. The pilot must stand behind teammates and use firepower to cut the battlefield into sections, giving the front line a path."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "350mm 炮击管",
-        "ja": "350mm砲撃管"
+        "ja": "350mm砲撃管",
+        "en": "350mm Gun Launcher"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "94mm 高能步枪",
-        "ja": "94mm高エネルギービームライフル"
+        "ja": "94mm高エネルギービームライフル",
+        "en": "94mm High-energy Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "导弹",
-        "ja": "ミサイル"
+        "ja": "ミサイル",
+        "en": "Missile"
       },
       "type": "kinetic"
     }
@@ -98,12 +106,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

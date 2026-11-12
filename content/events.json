@@ -3,7 +3,8 @@
     "id": "one-year-war",
     "title": {
       "zh": "一年战争",
-      "ja": "一年戦争"
+      "ja": "一年戦争",
+      "en": "One Year War"
     },
     "eraId": "uc",
     "scale": "era",
@@ -41,18 +42,21 @@
     ],
     "summary": {
       "zh": "吉翁公国对地球联邦宣战。鲁姆会战让联邦失去大半宇宙舰队，战争最终以阿·巴瓦·库陷落和吉翁解体结束。",
-      "ja": "ジオン公国が地球連邦へ宣戦。ルウム戦役で連邦は宇宙艦隊の大半を失い、戦争はア・バオア・クー陥落とジオン解体で終わった。"
+      "ja": "ジオン公国が地球連邦へ宣戦。ルウム戦役で連邦は宇宙艦隊の大半を失い、戦争はア・バオア・クー陥落とジオン解体で終わった。",
+      "en": "The Principality of Zeon declares war on the Earth Federation. The Battle of Loum costs the Federation more than half its space fleet, and the war ends with the fall of A Baoa Qu and the dissolution of Zeon."
     },
     "outcome": {
       "zh": "吉翁战败，联邦获胜；但殖民地与地球的经济创伤、以及双方对 Newtype 的军事利用，直接埋下了此后的冲突。",
-      "ja": "ジオン敗北、連邦勝利。しかしコロニーと地球の経済的傷、そしてニュータイプの軍事利用が、その後の紛争の火種を残した。"
+      "ja": "ジオン敗北、連邦勝利。しかしコロニーと地球の経済的傷、そしてニュータイプの軍事利用が、その後の紛争の火種を残した。",
+      "en": "Zeon is defeated and the Federation wins. The economic damage to the colonies and Earth, and both sides' military use of Newtypes, directly plant the seeds of the conflicts that follow."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 1—43 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 1–43"
       }
     ],
     "detail": {
@@ -63,6 +67,10 @@
       "ja": [
         "ジオン公国と地球連邦がコロニー自治権を巡って開戦。ジオンはコロニー落下で地球を攻撃し、ルウム会戦ではMS奇襲で連邦宇宙艦隊を壊滅させた。連邦は工業力と人口で初期を耐え、ホワイトベースとRX-78-2で反攻に転じる。戦線はオデッサからア・バオア・クーへ広がり、ジオン本土の陥落で終わった。",
         "一年戦争の開戦から一週間で、ジオンは毒ガスと核攻撃によりサイド1・2・4を破壊し、約28億人が死亡した。連邦はルウムの敗北後にV作戦を発動し、サイド7でRX-78-2を極秘開発する。1月31日に脱出したレビル中将は「ジオンに兵なし」と演説し、連邦は休戦を捨てた。1月31日に結ばれた南極条約はNBC兵器とコロニー落下を禁じたが、戦争は終わらなかった。"
+      ],
+      "en": [
+        "The Principality of Zeon and the Earth Federation go to war over colonial autonomy. Zeon strikes Earth with a falling colony and, at the Battle of Loum, uses a mobile suit surprise attack to destroy the Federation space fleet. The Federation draws on its industrial and population depth to survive the early phase, then turns the war with White Base and the RX-78-2. Fighting runs from Odessa to A Baoa Qu and ends with the fall of Zeon's homeland.",
+        "In the first week of the One Year War, Zeon destroys Sides 1, 2 and 4 with gas and nuclear attacks, killing about 2.8 billion people. After Loum, the Federation launches Operation V and secretly develops the RX-78-2 at Side 7. Lieutenant General Revil escapes on January 31 and gives his \"Zeon has no troops left\" speech; the Federation then gives up on a ceasefire. The Antarctic Treaty, signed on January 31, bans NBC weapons and colony drops but does not end the war."
       ]
     }
   },
@@ -70,7 +78,8 @@
     "id": "battle-of-loum",
     "title": {
       "zh": "鲁姆会战",
-      "ja": "ルウム戦役"
+      "ja": "ルウム戦役",
+      "en": "Battle of Loum"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -94,18 +103,21 @@
     ],
     "summary": {
       "zh": "吉翁以 MS 部队对联邦宇宙舰队发动奇袭。夏亚驾驶红色扎古 II 击沉五艘战舰，“红色彗星”之名自此确立。",
-      "ja": "ジオンがMS部隊で連邦宇宙艦隊を奇襲。シャアの赤いザクIIが戦艦五隻を撃沈し、「赤い彗星」の名が確立した。"
+      "ja": "ジオンがMS部隊で連邦宇宙艦隊を奇襲。シャアの赤いザクIIが戦艦五隻を撃沈し、「赤い彗星」の名が確立した。",
+      "en": "Zeon launches a mobile suit surprise attack on the Federation space fleet. Char Aznable, piloting a red Zaku II, sinks five warships, and the name \"Red Comet\" is established."
     },
     "outcome": {
       "zh": "联邦舰队主力覆灭，被迫接受南极条约；吉翁获得开战初期的战略主动权。",
-      "ja": "連邦艦隊主力が壊滅し南極条約を受諾。ジオンが開戦初期の戦略的主導権を握った。"
+      "ja": "連邦艦隊主力が壊滅し南極条約を受諾。ジオンが開戦初期の戦略的主導権を握った。",
+      "en": "The main Federation fleet is destroyed and forced to accept the Antarctic Treaty; Zeon gains the strategic initiative in the opening phase of the war."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 1 话；《鲁姆会战》设定资料",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episode 1; Battle of Loum setting materials"
       }
     ],
     "detail": {
@@ -116,6 +128,10 @@
       "ja": [
         "ジオンはザクII編隊を連邦艦隊のレーダー死角へ投入し、至近距離の核ロケットと格闘戦で陣形を崩した。シャアが戦艦五隻を撃沈し、連邦艦隊主力は壊滅して南極条約を受け入れる。",
         "ルウム戦役で連邦の第一・第三艦隊は約8割が壊滅し、連絡艇で脱出したレビル中将は黒い三連星に捕らえられた。シャアが撃沈したのはサラミス級4隻とマゼラン級1隻である。ミノフスキー粒子下で連邦艦隊のレーダーと遠距離射撃が封じられ、ジオンのMSは艦隊の内側へ接近できた。連邦はこの敗北で宇宙艦隊の再建を迫られた。"
+      ],
+      "en": [
+        "Zeon sends Zaku II formations into the Federation fleet's radar blind spots and breaks up its formation with close-range nuclear rockets and melee combat. Char sinks five warships, the main Federation fleet is destroyed, and the Federation is forced to accept the Antarctic Treaty.",
+        "At Loum, about 80 percent of the Federation First and Third Fleets are destroyed. Lieutenant General Revil is captured by the Black Tri-Stars while escaping in a liaison craft. Char sinks four Salamis-class cruisers and one Magellan-class battleship. Minovsky particles strip the Federation fleet of radar and long-range fire control, letting Zeon mobile suits close in."
       ]
     }
   },
@@ -123,7 +139,8 @@
     "id": "operation-british",
     "title": {
       "zh": "不列颠作战",
-      "ja": "ブリティッシュ作戦"
+      "ja": "ブリティッシュ作戦",
+      "en": "Operation British"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -144,18 +161,21 @@
     "characterIds": [],
     "summary": {
       "zh": "吉翁将改轨的殖民卫星投向联邦总部贾布罗，卫星在轨道调整失败后坠落在澳大利亚悉尼。",
-      "ja": "ジオンが軌道変更したコロニーを連邦総司令部ジャブローへ投向。軌道調整に失敗し、コロニーはオーストラリア・シドニーへ落下した。"
+      "ja": "ジオンが軌道変更したコロニーを連邦総司令部ジャブローへ投向。軌道調整に失敗し、コロニーはオーストラリア・シドニーへ落下した。",
+      "en": "Zeon drops a redirected colony on the Federation headquarters at Jaburo; the colony's orbital adjustment fails and it falls on Sydney, Australia."
     },
     "outcome": {
       "zh": "悉尼及周边地区被摧毁，海啸与粉尘导致全球气候异常；贾布罗因未被直接命中而保存了联邦指挥中枢。",
-      "ja": "シドニーと周辺地域が壊滅し、津波と粉塵が地球規模の気候異常を招いた。ジャブローは直撃を免れ、連邦の指揮中枢が残った。"
+      "ja": "シドニーと周辺地域が壊滅し、津波と粉塵が地球規模の気候異常を招いた。ジャブローは直撃を免れ、連邦の指揮中枢が残った。",
+      "en": "Sydney and the surrounding region are destroyed. Tsunamis and dust cause global climate anomalies, while Jaburo keeps the Federation command center because it was not hit directly."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 5 话；《一年战争史》相关年表",
-        "level": "A"
+        "level": "A",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episode 5; One Year War history timeline"
       }
     ],
     "detail": {
@@ -166,6 +186,10 @@
       "ja": [
         "ジオンは軌道を変えたコロニーを連邦本部ジャブローへ落とそうとしたが、軌道調整に失敗し、コロニーはオーストラリアのシドニーへ落下した。都市は破壊され、津波と粉塵が気候を変えたが、ジャブローは指揮中枢を保った。",
         "ブリティッシュ作戦はサイド2の第8号コロニー「アイランド・イフィッシュ」をジャブローへ向けて軌道変更した。質量約100億トン、直径約6.4km、全長約40kmの円筒型コロニーで、約11km/sで再突入。アラビア上空で崩壊し、前部がシドニーへ落下してオーストラリア大陸の約16%が水没、直径約500kmのクレーターが残った。ジャブローは直撃を免れた。"
+      ],
+      "en": [
+        "Zeon tries to drop a redirected colony on the Federation headquarters at Jaburo. The orbital adjustment fails and the colony lands on Sydney, Australia. The city is destroyed, tsunamis and dust change the global climate, and Jaburo keeps its command center because it was not hit directly.",
+        "Operation British redirects Side 2's Colony 8, \"Island Iffish\", toward Jaburo. The colony has a mass of about 10 billion tons, a diameter of about 6.4 km and a length of about 40 km. It re-enters at about 11 km/s, breaks apart over Arabia, and its front section strikes Sydney. About 16 percent of Australia's land is flooded by seawater, and the crater is about 500 km across. Jaburo takes no direct impact."
       ]
     }
   },
@@ -173,7 +197,8 @@
     "id": "operation-odessa",
     "title": {
       "zh": "敖德萨作战",
-      "ja": "オデッサ作戦"
+      "ja": "オデッサ作戦",
+      "en": "Operation Odessa"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -196,18 +221,21 @@
     ],
     "summary": {
       "zh": "联邦为夺回地球资源命脉发动的大规模反攻。RX-78-2 与白色基地队参与突破吉翁矿山基地的防线。",
-      "ja": "地球の資源生命線を奪還するため連邦が発動した大規模反攻。RX-78-2とホワイトベース隊がジオンの鉱山基地防衛線突破に参加した。"
+      "ja": "地球の資源生命線を奪還するため連邦が発動した大規模反攻。RX-78-2とホワイトベース隊がジオンの鉱山基地防衛線突破に参加した。",
+      "en": "The Federation launches a large-scale counteroffensive to retake Earth's resource lifeline. The RX-78-2 and the White Base team help break through the defenses of Zeon's mining base."
     },
     "outcome": {
       "zh": "联邦夺回敖德萨，吉翁在地球上的资源供给与地面战力受到决定性打击。",
-      "ja": "連邦がオデッサを奪還。ジオンの地球上の資源供給と地上戦力は決定的な打撃を受けた。"
+      "ja": "連邦がオデッサを奪還。ジオンの地球上の資源供給と地上戦力は決定的な打撃を受けた。",
+      "en": "The Federation retakes Odessa, and Zeon's resource supply and ground combat strength on Earth take a decisive blow."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 25—26 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 25–26"
       }
     ],
     "detail": {
@@ -218,6 +246,10 @@
       "ja": [
         "連邦は地球の資源供給を奪回するため反攻し、ホワイトベース隊がジオンの鉱山基地防衛線を突破した。オデッサ陥落後、ジオンの地球上の資源供給と地上戦力は大きく削がれた。",
         "オデッサの守備はマ・クベ大佐が指揮した。連邦が防衛線を突破すると、マ・クベは宇宙へ撤退する際に南極条約を破って水爆ミサイルを発射し、アムロのRX-78-2に撃墜される。11月10日にジオンはオデッサ鉱山の放棄を発表し、残存地上部隊はアジアとアフリカへ退却した。オデッサはジオン最大の資源基地で、その喪失により地球上の補給線が断たれた。"
+      ],
+      "en": [
+        "The Federation attacks to retake Earth's resource lifeline, and the White Base team helps break through the defenses of Zeon's mining base. After Odessa falls, Zeon's resource supply and ground strength on Earth are sharply reduced.",
+        "The commander at Odessa is Colonel M'Quve. After the Federation breaks the line, M'Quve fires hydrogen bomb missiles while withdrawing to space in violation of the Antarctic Treaty and is shot down by Amuro in the RX-78-2. On November 10, Zeon formally abandons the Odessa mining region, and the remaining ground troops retreat to Asia and Africa. Zeon's resource supply on Earth takes a decisive blow."
       ]
     }
   },
@@ -225,7 +257,8 @@
     "id": "jaburo-assault",
     "title": {
       "zh": "贾布罗攻略战",
-      "ja": "ジャブロー攻略戦"
+      "ja": "ジャブロー攻略戦",
+      "en": "Jaburo Assault"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -249,18 +282,21 @@
     ],
     "summary": {
       "zh": "吉翁地面部队对联邦地下总部发动突袭，试图在联邦反攻前摧毁其指挥链。复杂的地下通道让守军得以逐层抵抗。",
-      "ja": "ジオン地上部隊が連邦地下司令部を奇襲し、反攻前に指揮系統を破壊しようとした。複雑な地下通路で守備側が層状に抵抗した。"
+      "ja": "ジオン地上部隊が連邦地下司令部を奇襲し、反攻前に指揮系統を破壊しようとした。複雑な地下通路で守備側が層状に抵抗した。",
+      "en": "Zeon ground forces launch a surprise attack on the Federation's underground headquarters, aiming to destroy its command chain before the Federation counterattacks. Complex underground passages let the defenders resist layer by layer."
     },
     "outcome": {
       "zh": "吉翁部队未能突破核心区，被迫撤退；联邦总部功能基本完好，为星一号作战保留了指挥能力。",
-      "ja": "ジオン部隊は中枢区を突破できず撤退。連邦司令部の機能はほぼ無傷で、星一号作戦の指揮能力が保たれた。"
+      "ja": "ジオン部隊は中枢区を突破できず撤退。連邦司令部の機能はほぼ無傷で、星一号作戦の指揮能力が保たれた。",
+      "en": "The Zeon force fails to break into the core and is forced to withdraw. The Federation headquarters remains largely functional and keeps its command capability for Operation Star One."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 29—30 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 29–30"
       }
     ],
     "detail": {
@@ -269,6 +305,9 @@
       ],
       "ja": [
         "ジオンの地上部隊が複雑な地下通路からジャブローへ突入し、連邦守備隊は縦深と罠で層状に抵抗した。攻撃側は核心区を突破できず、撤退時に大きな損害を出した。連邦の指揮中枢は保たれた。"
+      ],
+      "en": [
+        "Zeon ground forces enter Jaburo through complex underground passages, and Federation defenders use depth and traps to resist layer by layer. The attackers fail to break into the core and lose many troops while withdrawing, and the Federation command center is preserved intact."
       ]
     }
   },
@@ -276,7 +315,8 @@
     "id": "battle-of-solomon",
     "title": {
       "zh": "所罗门攻略战",
-      "ja": "ソロモン攻略戦"
+      "ja": "ソロモン攻略戦",
+      "en": "Battle of Solomon"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -300,18 +340,21 @@
     ],
     "summary": {
       "zh": "星一号作战的第一阶段。联邦以太阳能反射镜与舰队炮击压制所罗门，白色基地队负责突破要塞外围。",
-      "ja": "星一号作戦の第一段階。連邦が太陽光反射鏡と艦隊砲撃でソロモンを制圧し、ホワイトベース隊が要塞外周突破を担った。"
+      "ja": "星一号作戦の第一段階。連邦が太陽光反射鏡と艦隊砲撃でソロモンを制圧し、ホワイトベース隊が要塞外周突破を担った。",
+      "en": "The first phase of Operation Star One. The Federation suppresses Solomon with solar reflectors and fleet bombardment, while the White Base team breaks through the fortress perimeter."
     },
     "outcome": {
       "zh": "所罗门陷落，吉翁宇宙攻击军司令多兹鲁·扎比战死；联邦获得进攻阿·巴瓦·库的前进基地。",
-      "ja": "ソロモン陥落。ジオン宇宙攻撃軍司令ドズル・ザビが戦死し、連邦はア・バオア・クー攻撃の前進基地を得た。"
+      "ja": "ソロモン陥落。ジオン宇宙攻撃軍司令ドズル・ザビが戦死し、連邦はア・バオア・クー攻撃の前進基地を得た。",
+      "en": "Solomon falls and Dozle Zabi, commander of the Zeon space attack force, is killed. The Federation gains a forward base for the attack on A Baoa Qu."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 35—36 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 35–36"
       }
     ],
     "detail": {
@@ -322,6 +365,10 @@
       "ja": [
         "連邦は太陽光反射鏡と艦隊砲撃でソロモンを制圧し、ホワイトベース隊が外周を突破した。要塞は陥落し、ジオン宇宙攻撃軍司令ドズル・ザビが戦死。連邦はア・バオア・クーへの前進基地を得る。",
         "連邦の「ソーラー・システム」は軌道上の反射鏡で太陽光を集め、ソロモンの外壁を焼き切った。ドズル・ザビはMA-08ビグ・ザムで出撃し、連邦艦艇を撃沈してティアンム中将を戦死させる。スレッガー・ロウはコア・ブースターでビグ・ザムに体当たりしてアムロに突破口を開き、アムロがこれを撃破した。陥落後、ソロモンはコンペイトウと改名された。"
+      ],
+      "en": [
+        "The Federation suppresses Solomon with solar reflectors and fleet bombardment, and the White Base team breaks through the perimeter. The fortress falls, Dozle Zabi, commander of the Zeon space attack force, is killed, and the Federation gains a forward base for the attack on A Baoa Qu.",
+        "The Federation's \"Solar System\" focuses sunlight with multiple reflectors in orbit and burns through Solomon's outer wall. Dozle Zabi sorties in the MA-08 Big Zam and sinks several Federation ships; Lieutenant General Tianem is killed. Sleggar Law damages Big Zam with a Core Booster, creating the opening for Amuro to destroy it. After the fall, the Federation renames Solomon \"Konpei Island\"."
       ]
     }
   },
@@ -329,7 +376,8 @@
     "id": "battle-of-a-baoa-qu",
     "title": {
       "zh": "阿·巴瓦·库攻防战",
-      "ja": "ア・バオア・クー攻防戦"
+      "ja": "ア・バオア・クー攻防戦",
+      "en": "Battle of A Baoa Qu"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -355,18 +403,21 @@
     ],
     "summary": {
       "zh": "一年战争的最终决战。联邦与吉翁投入全部残余战力，阿姆罗与夏亚在要塞内部首次正面交手。",
-      "ja": "一年戦争の最終決戦。連邦とジオンが残存戦力の全てを投入し、アムロとシャアが要塞内部で初めて正面から交戦した。"
+      "ja": "一年戦争の最終決戦。連邦とジオンが残存戦力の全てを投入し、アムロとシャアが要塞内部で初めて正面から交戦した。",
+      "en": "The final battle of the One Year War. The Federation and Zeon commit all remaining forces, and Amuro and Char meet face to face inside the fortress for the first time."
     },
     "outcome": {
       "zh": "吉翁公国解体，基连·扎比死亡；联邦惨胜，但大量殖民地与舰艇损失使战后重建极为艰难。",
-      "ja": "ジオン公国が解体しギレン・ザビが死亡。連邦は辛勝したが、多数のコロニーと艦艇の損失により戦後復興は困難を極めた。"
+      "ja": "ジオン公国が解体しギレン・ザビが死亡。連邦は辛勝したが、多数のコロニーと艦艇の損失により戦後復興は困難を極めた。",
+      "en": "The Principality of Zeon dissolves and Gihren Zabi dies. The Federation wins at great cost, but heavy colony and ship losses make postwar reconstruction extremely difficult."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达》第 42—43 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam\" episodes 42–43"
       }
     ],
     "detail": {
@@ -377,6 +428,10 @@
       "ja": [
         "連邦とジオンは残存戦力をア・バオア・クーへ投入した。アムロとシャアが要塞内部で交戦し、ギレン・ザビはキシリアに撃たれ、ジオンの指揮体系は崩壊する。連邦は勝利したが、艦隊とコロニーの損害は大きかった。",
         "ア・バオア・クー攻防戦の前夜、ジオンは12月30日に「ソーラ・レイ」を発射し、デギン・ザビ公王と連邦のレビル将軍が死亡、連邦艦隊は約3分の1を失った。デギンは連邦との和平交渉中だった。12月31日、連邦は星一号作戦でア・バオア・クーへ突入し、ジオンのドロス級大型空母「ドロス」「ドロワ」を撃沈した。ジオンの指揮体系はザビ家の相次ぐ死で崩れ、戦後の解体へ向かう。"
+      ],
+      "en": [
+        "The Federation and Zeon commit all remaining forces to A Baoa Qu. Amuro and Char fight inside the fortress, Kycilia shoots Gihren Zabi, and the Zeon command system collapses. The Federation wins, but fleet and colony losses are severe.",
+        "On the eve of the Battle of A Baoa Qu, Zeon fires the Solar Ray on December 30. Degwin Zabi and Federation General Revil both die, and about one third of the Federation fleet is destroyed. Degwin was in contact with the Federation for peace talks at the time. On December 31, the Federation attacks A Baoa Qu in Operation Star One, and the two Zeon Dolos-class large carriers, Dolos and Dolowa, are sunk one after the other."
       ]
     }
   },
@@ -384,7 +439,8 @@
     "id": "operation-stardust",
     "title": {
       "zh": "星尘作战",
-      "ja": "スターダスト作戦"
+      "ja": "スターダスト作戦",
+      "en": "Operation Stardust"
     },
     "eraId": "uc",
     "scale": "incident",
@@ -402,18 +458,21 @@
     "characterIds": [],
     "summary": {
       "zh": "吉翁残党“迪拉兹舰队”夺取联邦新型高达 GP02A，并以殖民卫星坠落北美为目标发动报复作战。",
-      "ja": "ジオン残党「デラーズ・フリート」が連邦の新型ガンダムGP02Aを奪取し、コロニーを北米へ落下させる報復作戦を発動した。"
+      "ja": "ジオン残党「デラーズ・フリート」が連邦の新型ガンダムGP02Aを奪取し、コロニーを北米へ落下させる報復作戦を発動した。",
+      "en": "The Zeon remnant Delaz Fleet seizes the Federation's new Gundam GP02A and launches a revenge operation aimed at dropping a colony on North America."
     },
     "outcome": {
       "zh": "殖民卫星坠落被阻止，但联邦军内部因善后与情报失败加速分裂，提坦斯在此背景下成立。",
-      "ja": "コロニー落下は阻止されたが、事後処理と情報失敗で連邦軍内部の分裂が加速し、ティターンズ成立の背景となった。"
+      "ja": "コロニー落下は阻止されたが、事後処理と情報失敗で連邦軍内部の分裂が加速し、ティターンズ成立の背景となった。",
+      "en": "The colony drop is stopped, but the Federation military splits faster over the aftermath and intelligence failures, and the Titans form in this context."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "OVA《机动战士高达 0083 星尘的回忆》全 13 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "OVA \"Mobile Suit Gundam 0083: Stardust Memory\" all 13 episodes"
       }
     ],
     "detail": {
@@ -422,6 +481,9 @@
       ],
       "ja": [
         "デラーズ・フリートは連邦のGP02Aを奪い、コロニー落下で北米を攻撃しようとした。落下は軍事的に阻止されたが、情報と事後処理の失敗により、ティターンズが「秩序回復」を掲げて成立する。"
+      ],
+      "en": [
+        "The Delaz Fleet seizes the Federation's GP02A and plans to drop a colony on North America. The Federation stops the drop militarily, but failures in intelligence and in the aftermath let the Titans form under the name of \"restoring order\", and the Federation turns to hard rule."
       ]
     }
   },
@@ -429,7 +491,8 @@
     "id": "gryps-conflict",
     "title": {
       "zh": "格里普斯战役",
-      "ja": "グリプス戦役"
+      "ja": "グリプス戦役",
+      "en": "Gryps Conflict"
     },
     "eraId": "uc",
     "scale": "era",
@@ -462,18 +525,21 @@
     ],
     "summary": {
       "zh": "提坦斯与奥古围绕殖民卫星激光与地球圈霸权展开的内战。Z 高达、可动骨架与 Newtype 部队在此集中登场。",
-      "ja": "ティターンズとエゥーゴがコロニーレーザーと地球圏の覇権を巡って戦った内戦。Ζガンダム、ムーバブルフレーム、ニュータイプ部隊が集中投入された。"
+      "ja": "ティターンズとエゥーゴがコロニーレーザーと地球圏の覇権を巡って戦った内戦。Ζガンダム、ムーバブルフレーム、ニュータイプ部隊が集中投入された。",
+      "en": "A civil war between the Titans and the AEUG over the colony laser and control of the Earth Sphere. The Zeta Gundam, movable frames and Newtype units all enter the stage here."
     },
     "outcome": {
       "zh": "提坦斯与奥古双方主力均遭重创，殖民卫星激光失控；联邦军内部权力重组，为第一次新吉翁战争留下真空。",
-      "ja": "ティターンズとエゥーゴの双方が大打撃を受け、コロニーレーザーが暴走。連邦軍内の権力再編が第一次ネオ・ジオン戦争の空白を生んだ。"
+      "ja": "ティターンズとエゥーゴの双方が大打撃を受け、コロニーレーザーが暴走。連邦軍内の権力再編が第一次ネオ・ジオン戦争の空白を生んだ。",
+      "en": "The main forces of both the Titans and the AEUG are heavily damaged and the colony laser runs out of control. Power is reorganized inside the Federation military, leaving a vacuum for the First Neo Zeon War."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士 Z 高达》全 50 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Zeta Gundam\" all 50 episodes"
       }
     ],
     "detail": {
@@ -484,6 +550,10 @@
       "ja": [
         "ティターンズとエゥーゴがコロニーレーザーと地球圏の主導権を巡って戦った。Ζガンダム、可変フレーム、サイコフレーム技術がこの時期に実戦投入される。双方は消耗し、コロニーレーザーは制御を失い、連邦軍は再編された。",
         "ティターンズはU.C.0085.07.31、サイド1の30バンチコロニーにG3ガスを注入し、約1500万人の住民を殺害した。事件は伝染病として隠蔽された。連邦軍准将ブレックス・フォーラはこれを機にエゥーゴを組織し、シャアはクワトロ・バジーナの名で参加する。グリプス戦役の陣営はこうして固まった。"
+      ],
+      "en": [
+        "The Titans and the AEUG go to war over the colony laser and control of the Earth Sphere. The Zeta Gundam, variable frames and psycommu technology all enter combat in this period. Both main forces wear each other down, the colony laser runs out of control, and the Federation military is reorganized afterward.",
+        "In the \"Colony 30\" incident on U.C. 0085.07.31, the Titans inject G3 gas into a Side 1 colony, killing about 15 million residents, and announce that the cause was an infectious disease. Federation Brigadier General Blex Forer founds the AEUG in response, Char joins under the name Quattro Bajeena, and the two sides of the Gryps Conflict take shape."
       ]
     }
   },
@@ -491,7 +561,8 @@
     "id": "dakar-speech",
     "title": {
       "zh": "达喀尔演说",
-      "ja": "ダカール演説"
+      "ja": "ダカール演説",
+      "en": "Dakar Speech"
     },
     "eraId": "uc",
     "scale": "incident",
@@ -513,18 +584,21 @@
     ],
     "summary": {
       "zh": "夏亚以克瓦特罗·巴吉纳的身份闯入联邦临时首都的议会，向全世界直播提坦斯的暴行与联邦的腐败。",
-      "ja": "シャアがクワトロ・バジーナとして連邦臨時首都の議会へ乱入し、ティターンズの蛮行と連邦の腐敗を世界へ生中継した。"
+      "ja": "シャアがクワトロ・バジーナとして連邦臨時首都の議会へ乱入し、ティターンズの蛮行と連邦の腐敗を世界へ生中継した。",
+      "en": "Char, under the name Quattro Bajeena, forces his way into the parliament in the Federation's provisional capital and broadcasts the Titans' atrocities and the Federation's corruption to the world."
     },
     "outcome": {
       "zh": "演说动摇了联邦对提坦斯的支持，多个殖民地转向奥古；提坦斯随后加速军事化。",
-      "ja": "演説は連邦内のティターンズ支持を揺るがし、複数のコロニーがエゥーゴへ傾いた。ティターンズはその後軍事化を加速させた。"
+      "ja": "演説は連邦内のティターンズ支持を揺るがし、複数のコロニーがエゥーゴへ傾いた。ティターンズはその後軍事化を加速させた。",
+      "en": "The speech weakens Federation support for the Titans and several colonies turn to the AEUG. The Titans then accelerate their militarization."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士 Z 高达》第 37 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Zeta Gundam\" episode 37"
       }
     ],
     "detail": {
@@ -533,6 +607,9 @@
       ],
       "ja": [
         "シャアはクワトロ・バジーナとして連邦臨時議会へ乱入し、ティターンズの暴行と連邦の腐敗を中継した。演説は連邦のティターンズ支持を揺るがし、複数のコロニーがエゥーゴへ傾く。"
+      ],
+      "en": [
+        "Char, under the name Quattro Bajeena, forces his way into the Federation's provisional assembly and broadcasts the Titans' atrocities and Federation corruption. The speech weakens Federation support for the Titans, and several colonies turn to the AEUG."
       ]
     }
   },
@@ -540,7 +617,8 @@
     "id": "first-neo-zeon-war",
     "title": {
       "zh": "第一次新吉翁战争",
-      "ja": "第一次ネオ・ジオン戦争"
+      "ja": "第一次ネオ・ジオン戦争",
+      "en": "First Neo Zeon War"
     },
     "eraId": "uc",
     "scale": "era",
@@ -566,18 +644,21 @@
     ],
     "summary": {
       "zh": "哈曼·卡恩率新吉翁从阿克西斯出击，试图在联邦内战后重建吉翁霸权。战争把地球寒冷化作战与殖民卫星激光推向最大规模。",
-      "ja": "ハマーン・カーン率いるネオ・ジオンがアクシズから出撃し、連邦内戦後の混乱でジオンの覇権再建を狙った。地球寒冷化作戦とコロニーレーザーが最大限まで用いられた。"
+      "ja": "ハマーン・カーン率いるネオ・ジオンがアクシズから出撃し、連邦内戦後の混乱でジオンの覇権再建を狙った。地球寒冷化作戦とコロニーレーザーが最大限まで用いられた。",
+      "en": "Haman Karn leads Neo Zeon out of Axis, trying to rebuild Zeon hegemony after the Federation civil war. The war brings the Earth cooling operation and the colony laser to their largest scale."
     },
     "outcome": {
       "zh": "哈曼战死，新吉翁主力瓦解；联邦虽获胜，但军力与威信进一步衰退，为夏亚的崛起留下空间。",
-      "ja": "ハマーン戦死、ネオ・ジオン主力が瓦解。連邦は勝利したが軍事力と威信はさらに衰退し、シャアの台頭を許した。"
+      "ja": "ハマーン戦死、ネオ・ジオン主力が瓦解。連邦は勝利したが軍事力と威信はさらに衰退し、シャアの台頭を許した。",
+      "en": "Haman is killed and the main Neo Zeon force collapses. The Federation wins but its military strength and prestige decline further, leaving room for Char's rise."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 ZZ》全 47 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam ZZ\" all 47 episodes"
       }
     ],
     "detail": {
@@ -586,6 +667,9 @@
       ],
       "ja": [
         "U.C.0087年末、アクシズのネオ・ジオンは地球圏へ戻り、連邦内戦で疲弊した地球圏の掌握を狙った。地球寒冷化作戦とコロニーレーザーが使われ、連邦軍は対応に追われる。ハマーン戦死後にネオ・ジオンは瓦解し、連邦の軍力と威信はさらに低下した。"
+      ],
+      "en": [
+        "At the end of U.C. 0087, Neo Zeon at Axis returns to the Earth Sphere and fights for hegemony, exploiting the Federation's exhaustion after its civil war. Neo Zeon uses an Earth cooling operation and the colony laser, and the Federation military struggles to respond. After Haman is killed, Neo Zeon collapses and the Federation's military strength and prestige keep falling."
       ]
     }
   },
@@ -593,7 +677,8 @@
     "id": "axis-drop",
     "title": {
       "zh": "阿克西斯坠落作战",
-      "ja": "アクシズ落下作戦"
+      "ja": "アクシズ落下作戦",
+      "en": "Axis Drop"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -619,18 +704,21 @@
     ],
     "summary": {
       "zh": "夏亚率新吉翁将阿克西斯推入地球坠落轨道，隆德·贝尔舰队全力拦截。ν 高达与沙扎比在要塞内部展开最终对决。",
-      "ja": "シャア率いるネオ・ジオンがアクシズを地球落下軌道へ投入し、ロンド・ベル艦隊が全力で迎撃。νガンダムとサザビーが要塞内部で最終決戦を迎えた。"
+      "ja": "シャア率いるネオ・ジオンがアクシズを地球落下軌道へ投入し、ロンド・ベル艦隊が全力で迎撃。νガンダムとサザビーが要塞内部で最終決戦を迎えた。",
+      "en": "Char leads Neo Zeon in pushing Axis onto a collision course with Earth, and the Londo Bell fleet tries to stop it. The ν Gundam and Sazabi fight a final duel inside the fortress."
     },
     "outcome": {
       "zh": "阿克西斯被精神感应框架引发的共鸣推离轨道，地球避免直击；阿姆罗与夏亚下落不明。",
-      "ja": "アクシズはサイコフレームの共振により軌道を外れ、地球への直撃は回避された。アムロとシャアは消息不明となった。"
+      "ja": "アクシズはサイコフレームの共振により軌道を外れ、地球への直撃は回避された。アムロとシャアは消息不明となった。",
+      "en": "The psycho-frame's resonance pushes Axis off its course and Earth avoids a direct hit. Amuro and Char are missing."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "剧场版《机动战士高达 逆袭的夏亚》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "Theatrical film \"Mobile Suit Gundam: Char's Counterattack\""
       }
     ],
     "detail": {
@@ -641,6 +729,10 @@
       "ja": [
         "シャアはアクシズを地球落下軌道へ投入し、ロンド・ベル艦隊が全力で迎撃した。νガンダムとサザビーが要塞内部で戦い、サイコフレームの共鳴がアクシズを軌道から押し戻す。地球は直撃を免れ、アムロとシャアは行方不明になった。",
         "シャアはルナツーを襲撃して核弾頭を奪い、アクシズに積み込んで核の冬を起こそうとした。人類を宇宙へ移住させ、ニュータイプへ導く計画である。U.C.0093.03.12、ロンド・ベルは核ミサイルと通常弾頭を同時に撃ち込むが軌道を変えられない。νガンダムとサザビーの交戦後、サイコフレームの共振がアクシズを押し戻した。"
+      ],
+      "en": [
+        "Char pushes Axis onto a collision course with Earth and the Londo Bell fleet tries to stop it. The ν Gundam and Sazabi fight a final duel inside the fortress, and the psycho-frame's resonance pushes Axis off course. Earth avoids a direct hit, and Amuro and Char are missing.",
+        "Char attacks Luna II, seizes nuclear warheads and loads them onto Axis, planning to use a nuclear winter to force all humanity to move into space. On U.C. 0093.03.12, Londo Bell fires nuclear missiles and conventional warheads at the same time but fails to change the collision course. After the ν Gundam and Sazabi fight, the psycho-frame's resonance pushes Axis away from Earth."
       ]
     }
   },
@@ -648,7 +740,8 @@
     "id": "laplace-incident",
     "title": {
       "zh": "拉普拉斯事件",
-      "ja": "ラプラス事件"
+      "ja": "ラプラス事件",
+      "en": "Laplace Incident"
     },
     "eraId": "uc",
     "scale": "incident",
@@ -673,18 +766,21 @@
     ],
     "summary": {
       "zh": "毕斯特财团与“带袖的”围绕拉普拉斯之盒展开争夺。独角兽高达在殖民卫星内部首次启动，宪章的原始条文成为各方筹码。",
-      "ja": "ヴィスト財団と「袖付き」がラプラスの箱を巡って争奪戦を展開。ユニコーンガンダムがコロニー内部で初起動し、憲章の原条文が各方の取引材料となった。"
+      "ja": "ヴィスト財団と「袖付き」がラプラスの箱を巡って争奪戦を展開。ユニコーンガンダムがコロニー内部で初起動し、憲章の原条文が各方の取引材料となった。",
+      "en": "The Vist Foundation and the Sleeves fight over Laplace's Box. The Unicorn Gundam first activates inside a colony, and the original text of the Charter becomes a bargaining chip for every side."
     },
     "outcome": {
       "zh": "巴纳吉与米涅瓦公开了宪章中“未来 Newtype 权利”的条文，拒绝双方的政治利用；联邦与财团的合法性同时受到冲击。",
-      "ja": "バナージとミネバが憲章の「未来のニュータイプの権利」条文を公開し、双方の政治利用を拒否。連邦と財団の正統性が同時に揺らいだ。"
+      "ja": "バナージとミネバが憲章の「未来のニュータイプの権利」条文を公開し、双方の政治利用を拒否。連邦と財団の正統性が同時に揺らいだ。",
+      "en": "Banagher and Mineva make public the Charter clause on the rights of future Newtypes and refuse both sides' political use of it. The legitimacy of the Federation and the Foundation is shaken at the same time."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "OVA《机动战士高达 UC》第 1—7 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "OVA \"Mobile Suit Gundam Unicorn\" episodes 1–7"
       }
     ],
     "detail": {
@@ -695,6 +791,10 @@
       "ja": [
         "ビスト財団と「袖付き」がラプラスの箱を争った。箱には連邦憲章の原文が納められている。ユニコーンがコロニー内で起動し、バナージとミネバが条文を公開して、どちらか一方だけの解釈を拒んだ。",
         "ラプラスの箱には、U.C.0001に公布された「宇宙世紀憲章」の原版石碑が納められていた。全7章15条からなり、ダカール議会の複製碑は第7章を削除している。原版の第7章第15条第2節は、宇宙環境に適応した新たな人類の出現が確認された場合、連邦がその新たな人類を政府運営へ優先的に参加させる、と定めていた。"
+      ],
+      "en": [
+        "The Vist Foundation and the Sleeves fight over Laplace's Box, which holds the original text of the Federation Charter. The Unicorn activates inside a colony, and Banagher and Mineva make the text public, refusing to let any side monopolize its interpretation.",
+        "Laplace's Box holds the original stone monument of the Universal Century Charter promulgated in U.C. 0001, with 7 chapters and 15 articles. The replica displayed at the Dakar assembly omits Chapter 7. The original Chapter 7, Article 15, Section 2 provides that if Newtypes adapted to space are confirmed, the Federation should give them priority in government. The Vist Foundation hid the monument for nearly a century and used it to negotiate with the Federation."
       ]
     }
   },
@@ -702,7 +802,8 @@
     "id": "torrington-assault",
     "title": {
       "zh": "托灵顿基地袭击",
-      "ja": "トリントン基地襲撃"
+      "ja": "トリントン基地襲撃",
+      "en": "Torrington Base Attack"
     },
     "eraId": "uc",
     "scale": "battle",
@@ -725,18 +826,21 @@
     ],
     "summary": {
       "zh": "“带袖的”残党袭击澳大利亚的联邦退役 MS 保管基地，夺取旧吉翁机体。独角兽与巴纳吉被卷入基地防卫战。",
-      "ja": "「袖付き」残党がオーストラリアの連邦退役MS保管基地を襲撃し、旧ジオン機を奪取。ユニコーンとバナージが基地防衛戦に巻き込まれた。"
+      "ja": "「袖付き」残党がオーストラリアの連邦退役MS保管基地を襲撃し、旧ジオン機を奪取。ユニコーンとバナージが基地防衛戦に巻き込まれた。",
+      "en": "Sleeves remnants attack a Federation storage base for retired mobile suits in Australia and seize old Zeon machines. The Unicorn and Banagher are drawn into the defense of the base."
     },
     "outcome": {
       "zh": "基地设施与大量退役机体被毁，残党成功夺取部分机体；联邦被迫重新评估旧吉翁兵器的保管政策。",
-      "ja": "基地施設と多数の退役機体が破壊され、残党は一部機体の奪取に成功。連邦は旧ジオン兵器の保管政策の再評価を迫られた。"
+      "ja": "基地施設と多数の退役機体が破壊され、残党は一部機体の奪取に成功。連邦は旧ジオン兵器の保管政策の再評価を迫られた。",
+      "en": "Base facilities and many retired mobile suits are destroyed, and the remnants seize some machines. The Federation is forced to review its policy on storing old Zeon weapons."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "OVA《机动战士高达 UC》第 4 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "OVA \"Mobile Suit Gundam Unicorn\" episode 4"
       }
     ],
     "detail": {
@@ -745,6 +849,9 @@
       ],
       "ja": [
         "「袖付き」残党がオーストラリアの連邦退役MS保管基地を襲撃し、旧ジオン機体を奪った。基地施設と多数の退役機体が破壊され、連邦は旧ジオン兵器の保管・破棄政策を再検討する。"
+      ],
+      "en": [
+        "Sleeves remnants attack a Federation storage base for retired mobile suits in Australia and seize old Zeon machines. Base facilities and many retired mobile suits are destroyed, and the Federation later reviews its policy for storing and scrapping old Zeon weapons."
       ]
     }
   },
@@ -752,7 +859,8 @@
     "id": "cosmo-babylonia-war",
     "title": {
       "zh": "宇宙巴比伦战争",
-      "ja": "コスモ・バビロニア戦争"
+      "ja": "コスモ・バビロニア戦争",
+      "en": "Cosmo Babylonia War"
     },
     "eraId": "uc",
     "scale": "era",
@@ -774,18 +882,21 @@
     ],
     "summary": {
       "zh": "十字骨先锋以宇宙贵族主义为旗号袭击 Frontier Side，联邦军与民间技术员被卷入。F91 在这场短促而激烈的冲突中首次投入实战。",
-      "ja": "クロスボーン・バンガードがコスモ贵族主義を掲げてフロンティアサイドを襲撃し、連邦軍と民間技術者が巻き込まれた。F91がこの短く激しい紛争で初の実戦投入を果たす。"
+      "ja": "クロスボーン・バンガードがコスモ贵族主義を掲げてフロンティアサイドを襲撃し、連邦軍と民間技術者が巻き込まれた。F91がこの短く激しい紛争で初の実戦投入を果たす。",
+      "en": "The Crossbone Vanguard's push for Cosmo Aristocracy turns the Frontier Side into a testing ground: the F91 sees its first combat while Federation units and civilian engineers are pulled into the fight."
     },
     "outcome": {
       "zh": "十字骨先锋的殖民地控制被打破，但其思想残余转入地下；MS 小型化与生物传感器技术在此后成为联邦主流。",
-      "ja": "クロスボーン・バンガードのコロニー支配は崩れたが、思想の残滓は地下へ。MS小型化とバイオセンサー技術は以後の連邦主流となった。"
+      "ja": "クロスボーン・バンガードのコロニー支配は崩れたが、思想の残滓は地下へ。MS小型化とバイオセンサー技術は以後の連邦主流となった。",
+      "en": "The Crossbone Vanguard's control of the colonies is broken, but the remnants of its ideology go underground. Mobile suit miniaturization and bio-sensor technology then become mainstream in the Federation."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "剧场版《机动战士高达 F91》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "Theatrical film \"Mobile Suit Gundam F91\""
       }
     ],
     "detail": {
@@ -794,6 +905,9 @@
       ],
       "ja": [
         "クロスボーン・バンガードが宇宙貴族主義を掲げてフロンティア・サイドを襲撃し、連邦軍と民間技術者が巻き込まれた。F91が実戦投入され、MSの小型化とバイオセンサー技術が連邦の主流となる。"
+      ],
+      "en": [
+        "The Crossbone Vanguard attacks the Frontier Side under the banner of Cosmo Aristocracy, drawing in the Federation military and civilian technicians. The F91 enters combat in this war, and mobile suit miniaturization and bio-sensor technology later become mainstream in the Federation."
       ]
     }
   },
@@ -801,7 +915,8 @@
     "id": "zanscare-war",
     "title": {
       "zh": "赞斯卡尔战争",
-      "ja": "ザンスカール戦争"
+      "ja": "ザンスカール戦争",
+      "en": "Zanscare War"
     },
     "eraId": "uc",
     "scale": "era",
@@ -823,18 +938,21 @@
     ],
     "summary": {
       "zh": "赞斯卡尔帝国以“玛丽亚主义”发动圣战，神圣军事同盟以 V 高达系列进行游击抵抗。战争把地球圈再次拖入全面动员。",
-      "ja": "ザンスカール帝国が「マリア主義」の聖戦を開始し、リガ・ミリティアがVガンダム系列でゲリラ抵抗を展開。地球圏は再び総動員の戦争へ陥った。"
+      "ja": "ザンスカール帝国が「マリア主義」の聖戦を開始し、リガ・ミリティアがVガンダム系列でゲリラ抵抗を展開。地球圏は再び総動員の戦争へ陥った。",
+      "en": "Mariaism sends the Zanscare Empire to war. The League Militaire answers with the Victory Gundam and a long guerrilla campaign that drains the whole Earth Sphere."
     },
     "outcome": {
       "zh": "赞斯卡尔的核心领导层被击溃，战争以停战收场；但联邦的权威已无法恢复，宇宙世纪进入漫长的衰退期。",
-      "ja": "ザンスカールの中核指導部が崩壊し休戦。しかし連邦の権威は回復せず、宇宙世紀は長い衰退期へ入る。"
+      "ja": "ザンスカールの中核指導部が崩壊し休戦。しかし連邦の権威は回復せず、宇宙世紀は長い衰退期へ入る。",
+      "en": "Zanscare's core leadership is defeated and the war ends in a ceasefire. The Federation's authority can no longer recover, and the Universal Century enters a long decline."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士 V 高达》全 51 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Victory Gundam\" all 51 episodes"
       }
     ],
     "detail": {
@@ -843,6 +961,9 @@
       ],
       "ja": [
         "ザンスカール帝国がマリア主義で聖戦を起こし、神聖軍事同盟はVガンダム系でゲリラ戦を続けた。地球圏は再び総動員へ入り、ザンスカール指導部は崩壊するが、連邦の権威は回復しなかった。"
+      ],
+      "en": [
+        "The Zanscare Empire launches a holy war under Mariaism, and the League Militaire fights a guerrilla war with the Victory Gundam series. The war drags the Earth Sphere into full mobilization again. Zanscare's leadership is finally defeated, but the Federation's authority can no longer recover."
       ]
     }
   },
@@ -850,7 +971,8 @@
     "id": "13th-gundam-fight",
     "title": {
       "zh": "第十三届高达武斗会",
-      "ja": "第13回ガンダムファイト"
+      "ja": "第13回ガンダムファイト",
+      "en": "13th Gundam Fight"
     },
     "eraId": "fc",
     "scale": "era",
@@ -867,18 +989,21 @@
     ],
     "summary": {
       "zh": "各殖民国家以高达代表进行四年一度的武斗大会，胜者获得殖民霸权。第十三届大会因 Devil Gundam 的失控而偏离规则。",
-      "ja": "各国がガンダム代表による四年一度の武闘大会でコロニーの覇権を争う。第13回大会はデビルガンダムの暴走により規則から逸脱した。"
+      "ja": "各国がガンダム代表による四年一度の武闘大会でコロニーの覇権を争う。第13回大会はデビルガンダムの暴走により規則から逸脱した。",
+      "en": "Colonial nations compete with Gundam representatives in a martial arts tournament held every four years, and the winner gains colonial hegemony. The 13th tournament departs from the rules after the Devil Gundam runs out of control."
     },
     "outcome": {
       "zh": "武斗会制度本身受到挑战，但以机体代战的形式被保留；新日本代表多蒙·卡修成为大会焦点。",
-      "ja": "武闘会制度そのものが問われたが、機体による代理戦争の形式は維持された。ネオジャパン代表ドモン・カッシュが大会の焦点となる。"
+      "ja": "武闘会制度そのものが問われたが、機体による代理戦争の形式は維持された。ネオジャパン代表ドモン・カッシュが大会の焦点となる。",
+      "en": "The tournament system itself is challenged, but the form of fighting by proxy machines is kept. Neo Japan's representative Domon Kasshu becomes the focus of the tournament."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动武斗传 G 高达》全 49 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Fighter G Gundam\" all 49 episodes"
       }
     ],
     "detail": {
@@ -887,6 +1012,9 @@
       ],
       "ja": [
         "第13回ガンダムファイトでは各コロニー国家が代表機体を送り、勝者がコロニーの覇権を得る。デビルガンダムの暴走で大会は規則から外れ、ドモンと東方不敗の師弟対決が大会の政治的暴力を露わにした。"
+      ],
+      "en": [
+        "In the 13th Gundam Fight, each colonial nation enters a representative machine, and the winner gains colonial hegemony. After the Devil Gundam runs out of control, the contest departs from the rules, and the master-and-student duel between Domon and Master Asia exposes the political violence behind the Gundam Fight."
       ]
     }
   },
@@ -894,7 +1022,8 @@
     "id": "operation-meteor",
     "title": {
       "zh": "流星作战",
-      "ja": "オペレーション・メテオ"
+      "ja": "オペレーション・メテオ",
+      "en": "Operation Meteor"
     },
     "eraId": "ac",
     "scale": "era",
@@ -917,18 +1046,21 @@
     ],
     "summary": {
       "zh": "五台高达被秘密送往地球，对 OZ 的军事设施发动突袭。殖民地独立组织试图以少数高性能机体扭转战力差距。",
-      "ja": "五機のガンダムが極秘に地球へ送られ、OZの軍事施設を急襲。コロニー独立組織は少数の高性能機で戦力差を覆そうとした。"
+      "ja": "五機のガンダムが極秘に地球へ送られ、OZの軍事施設を急襲。コロニー独立組織は少数の高性能機で戦力差を覆そうとした。",
+      "en": "Five Gundams are secretly sent to Earth and attack OZ military facilities. The colony independence organization tries to close the gap in fighting strength with a few high-performance machines."
     },
     "outcome": {
       "zh": "突袭迫使 OZ 调整地球圈防御，但也加速了其政变与“以武力终结战争”的进程。",
-      "ja": "奇襲によりOZは地球圏防衛を再編。しかしクーデターと「武力による戦争終結」の動きを加速させた。"
+      "ja": "奇襲によりOZは地球圏防衛を再編。しかしクーデターと「武力による戦争終結」の動きを加速させた。",
+      "en": "The raids force OZ to adjust its Earth Sphere defenses, but they also speed up its coup and its course of \"ending war by force\"."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《新机动战记高达 W》第 1—2 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam Wing\" episodes 1–2"
       }
     ],
     "detail": {
@@ -939,6 +1071,10 @@
       "ja": [
         "コロニー独立組織は五機のガンダムを地球へ送り、OZの軍事施設、MS工場、指揮節点を攻撃した。奇襲はOZに防衛再編を強いる一方、クーデターと「武力で戦争を終わらせる」路線を加速させた。",
         "オペレーション・メテオの背景には、A.C.175にコロニー指導者ヒイロ・ユイが暗殺された事件がある。A.C.195.04.07、5人の少年がウイング、デスサイズ、ヘビーアームズ、サンドロック、シェンロンの5機で、隕石型カプセルから地球へ降下し、OZの軍事基地を同時に襲撃した。OZと地球圏統一連合は勢力を広げており、奇襲はその配備を崩した。"
+      ],
+      "en": [
+        "The colony independence organization secretly sends five Gundams to Earth, and they attack OZ military facilities, mobile suit factories and command nodes separately. The raids force OZ to adjust its defenses and also speed up its coup and its line of \"ending the war by force\".",
+        "Operation Meteor follows the assassination of colonial leader Heero Yuy in A.C. 175. On A.C. 195.04.07, five boys pilot the Wing, Deathscythe, Heavyarms, Sandrock and Shenlong Gundams down to Earth from meteor-shaped capsules and attack OZ bases separately. OZ and the United Earth Sphere Alliance were expanding their power, and the simultaneous raids disrupted their deployments."
       ]
     }
   },
@@ -946,7 +1082,8 @@
     "id": "7th-space-war",
     "title": {
       "zh": "第七次宇宙战争",
-      "ja": "第7次宇宙戦争"
+      "ja": "第7次宇宙戦争",
+      "en": "7th Space War"
     },
     "eraId": "aw",
     "scale": "era",
@@ -966,18 +1103,21 @@
     ],
     "summary": {
       "zh": "地球与宇宙殖民地之间的全面战争，殖民卫星坠落导致地球人口锐减。战后十五年，世界仍在废土与军阀割据中挣扎。",
-      "ja": "地球と宇宙コロニーの全面戦争。コロニー落下により地球人口が激減した。戦後十五年、世界はなお廃墟と軍閥の割拠の中で喘いでいる。"
+      "ja": "地球と宇宙コロニーの全面戦争。コロニー落下により地球人口が激減した。戦後十五年、世界はなお廃墟と軍閥の割拠の中で喘いでいる。",
+      "en": "A total war between Earth and the space colonies, in which falling colonies cut Earth's population sharply. Fifteen years after the war, the world still struggles in a wasteland ruled by warlords."
     },
     "outcome": {
       "zh": "新联合国建立并高压统治，但大量 MS 与 Newtype 兵器散落民间；A.W.0015 的废土上仍不断发现战争遗产。",
-      "ja": "新連邦が成立し高圧統治を行うが、多数のMSとニュータイプ兵器が民間へ流出。A.W.0015の廃墟では今も戦争遺産が発見され続ける。"
+      "ja": "新連邦が成立し高圧統治を行うが、多数のMSとニュータイプ兵器が民間へ流出。A.W.0015の廃墟では今も戦争遺産が発見され続ける。",
+      "en": "The New UNE is founded and rules with a heavy hand, but many mobile suits and Newtype weapons are scattered among the people. War relics keep turning up in the wasteland of A.W. 0015."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动新世纪高达 X》第 1 话及背景设定",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"After War Gundam X\" episode 1 and background setting"
       }
     ],
     "detail": {
@@ -988,6 +1128,10 @@
       "ja": [
         "地球と宇宙コロニーの全面戦争でコロニーが落下し、地球人口は激減、生態系は崩壊した。戦後十五年、新UNは強圧的な秩序で世界を再建するが、民間に散ったMSとニュータイプ兵器が再び起動する。",
         "第7次宇宙戦争は地球統合連邦政府と宇宙革命軍の戦争で、革命軍はサイドのコロニー「クラウド9」を拠点とした。コロニー落下により地球圏の人口は約100億人から約1億人へ減り、双方は戦力を失って明確な勝敗のないまま停戦する。戦後に新連邦が成立した。戦争が終わった年がA.W.0001とされ、新暦の元年となった。文明と技術は大きく後退した。"
+      ],
+      "en": [
+        "The total war between Earth and the space colonies causes colony drops, a sharp fall in Earth's population and ecological collapse. Fifteen years after the war, the New UNE rebuilds the world with a harsh order, and mobile suits and Newtype weapons scattered among the people are repeatedly restarted.",
+        "The 7th Space War is fought between the United Nations Earth government and the Space Revolutionary Army, which is based at the colony Cloud Nine. The colony drops cut the Earth Sphere's population from about 10 billion to about 100 million. After both sides exhaust their strength, the war ends in a ceasefire with no clear winner, and only afterward can the New UNE be founded. Earth Sphere civilization regresses sharply as a result."
       ]
     }
   },
@@ -995,7 +1139,8 @@
     "id": "dark-history",
     "title": {
       "zh": "黑历史",
-      "ja": "黒歴史"
+      "ja": "黒歴史",
+      "en": "Dark History"
     },
     "eraId": "cc",
     "scale": "era",
@@ -1018,18 +1163,21 @@
     ],
     "summary": {
       "zh": "正历之前所有高达纪元被统称为“黑历史”。月球与地球的冲突中，Turn A 与月光蝶被重新启动，历史记录再次面临被抹除的风险。",
-      "ja": "正暦以前の全てのガンダム紀元は「黒歴史」と呼ばれる。月と地球の衝突の中でターンAと月光蝶が再起動し、歴史記録は再び抹消の危機に晒された。"
+      "ja": "正暦以前の全てのガンダム紀元は「黒歴史」と呼ばれる。月と地球の衝突の中でターンAと月光蝶が再起動し、歴史記録は再び抹消の危機に晒された。",
+      "en": "All Gundam eras before the Correct Century are called the Dark History. In the conflict between the Moon and Earth, the Turn A and the Moonlight Butterfly are restarted, and the historical record again faces the risk of erasure."
     },
     "outcome": {
       "zh": "罗兰与同伴阻止了月光蝶的全面展开，黑历史的记录被部分保留；两个文明选择以对话而非灭绝继续共存。",
-      "ja": "ロランたちが月光蝶の全面展開を阻止し、黒歴史の記録は一部保存された。二つの文明は絶滅ではなく対話による共存を選んだ。"
+      "ja": "ロランたちが月光蝶の全面展開を阻止し、黒歴史の記録は一部保存された。二つの文明は絶滅ではなく対話による共存を選んだ。",
+      "en": "Loran and his companions stop the Moonlight Butterfly from deploying fully, and part of the Dark History record is preserved. The two civilizations choose to coexist through dialogue rather than extinction."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《∀高达》全 50 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Turn A Gundam\" all 50 episodes"
       }
     ],
     "detail": {
@@ -1038,6 +1186,9 @@
       ],
       "ja": [
         "黒歴史は正暦以前のすべてのガンダム紀元の総称である。月と地球の衝突でターンAとターンXが起動し、月光蝶が多くの文明の産物を分子レベルまで分解した。ローランが全面展開を止め、一部の記録が残る。"
+      ],
+      "en": [
+        "The Dark History is the name for all Gundam eras before the Correct Century. During the conflict between the lunar surface and Earth, the Turn A and Turn X activate, and the Moonlight Butterfly breaks down the products of many civilizations to the molecular level. Loran stops the Moonlight Butterfly from deploying fully, and part of the record is preserved."
       ]
     }
   },
@@ -1045,7 +1196,8 @@
     "id": "bloody-valentine",
     "title": {
       "zh": "血色情人节",
-      "ja": "血のバレンタイン"
+      "ja": "血のバレンタイン",
+      "en": "Bloody Valentine"
     },
     "eraId": "ce",
     "scale": "incident",
@@ -1067,18 +1219,21 @@
     ],
     "summary": {
       "zh": "地球联合军向 PLANT 的农业殖民地尤尼乌斯 7 发射核弹，造成二十余万调整者死亡。ZAFT 随后以中子干扰器与报复性攻击全面反击。",
-      "ja": "地球連合軍がPLANTの農業コロニーユニウス7へ核弾頭を発射し、二十万余のコーディネイターが死亡。ザフトはニュートロンジャマーと報復攻撃で全面反撃に転じた。"
+      "ja": "地球連合軍がPLANTの農業コロニーユニウス7へ核弾頭を発射し、二十万余のコーディネイターが死亡。ザフトはニュートロンジャマーと報復攻撃で全面反撃に転じた。",
+      "en": "The Earth Alliance fires a nuclear weapon at the PLANT agricultural colony Junius Seven, killing more than 200,000 Coordinators. ZAFT then counterattacks with neutron jammers and retaliatory strikes."
     },
     "outcome": {
       "zh": "C.E.71 的全面战争正式爆发；尤尼乌斯 7 的残骸与“血色情人节”成为双方激进派最有效的动员符号。",
-      "ja": "C.E.71の全面戦争が勃発。ユニウス7の残骸と「血のバレンタイン」は、双方の急進派にとって最も有効な動員の象徴となった。"
+      "ja": "C.E.71の全面戦争が勃発。ユニウス7の残骸と「血のバレンタイン」は、双方の急進派にとって最も有効な動員の象徴となった。",
+      "en": "Full-scale war breaks out in C.E. 71. The wreckage of Junius Seven and \"Bloody Valentine\" become the most effective rallying symbols for hardliners on both sides."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 SEED》第 1 话及背景设定",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam SEED\" episode 1 and background setting"
       }
     ],
     "detail": {
@@ -1089,6 +1244,10 @@
       "ja": [
         "C.E.70.02.14、農業コロニー・ユニウス7は通常運転中に核弾頭の直撃を受け、二十数万人のコーディネイターが死亡した。ザフトはニュートロンジャマーと報復攻撃で全面反撃し、C.E.71の全面戦争が始まる。",
         "血のバレンタインの攻撃は地球連合軍内のブルーコスモス派将校が独断で持ち込んだMk5戦術核によるもので、24万3721人が死亡した。連合は核攻撃を否認し、ユニウス7の崩壊はプラント側の自爆作戦だと主張する。2月18日の国葬で、プラント最高評議会議長シーゲル・クラインは独立宣言と徹底抗戦を表明した。連合軍内部からも反発が起きた。"
+      ],
+      "en": [
+        "On C.E. 70.02.14, the agricultural colony Junius Seven is hit by a nuclear weapon while operating normally, and more than 200,000 Coordinators die. ZAFT counterattacks with neutron jammers and retaliation, and full-scale war breaks out in C.E. 71.",
+        "The Bloody Valentine attack used an Mk5 tactical nuclear weapon brought in without authorization by a Blue Cosmos officer in the Earth Alliance military and killed 243,721 people. The Alliance denies the nuclear attack and says Junius Seven was destroyed by a PLANT self-detonation. On February 18, PLANT holds a state funeral, and Supreme Council Chairman Siegel Clyne declares independence at the funeral and calls for all-out resistance."
       ]
     }
   },
@@ -1096,7 +1255,8 @@
     "id": "battle-of-orb",
     "title": {
       "zh": "奥布攻防战",
-      "ja": "オーブ攻防戦"
+      "ja": "オーブ攻防戦",
+      "en": "Battle of Orb"
     },
     "eraId": "ce",
     "scale": "battle",
@@ -1128,18 +1288,21 @@
     ],
     "summary": {
       "zh": "地球联合军要求奥布交出 MS 技术并加入战争，奥布拒绝后遭联合军与 ZAFT 的双重压力。基拉驾驶 Freedom 介入，试图保护奥布的中立。",
-      "ja": "地球連合軍がオーブへMS技術の引き渡しと参戦を要求。拒否したオーブは連合軍とザフトの双方から圧力を受けた。キラはフリーダムで介入し、オーブの中立を守ろうとした。"
+      "ja": "地球連合軍がオーブへMS技術の引き渡しと参戦を要求。拒否したオーブは連合軍とザフトの双方から圧力を受けた。キラはフリーダムで介入し、オーブの中立を守ろうとした。",
+      "en": "The Earth Alliance demands that Orb hand over its mobile suit technology and join the war. After Orb refuses, it comes under pressure from both the Alliance and ZAFT. Kira intervenes in the Freedom to try to protect Orb's neutrality."
     },
     "outcome": {
       "zh": "奥布本土在战火中严重受损，其政府流亡；基拉与 Archangel 脱离联合军，成为独立的第三方战力。",
-      "ja": "オーブ本土は戦火で大きく損壊し政府は亡命。キラとアークエンジェルは連合軍を離れ、独立した第三勢力となった。"
+      "ja": "オーブ本土は戦火で大きく損壊し政府は亡命。キラとアークエンジェルは連合軍を離れ、独立した第三勢力となった。",
+      "en": "Orb's homeland is severely damaged in the fighting and its government goes into exile. Kira and the Archangel leave the Alliance and become an independent third force."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 SEED》第 23—28 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam SEED\" episodes 23–28"
       }
     ],
     "detail": {
@@ -1148,6 +1311,9 @@
       ],
       "ja": [
         "連合軍はオーブにMS技術の提供と参戦を要求し、拒否したオーブは連合軍とザフトの双方から圧力を受けた。キラがフリーダムで介入するが、オーブ本土は大きく損傷し、政府は亡命。キラとアークエンジェルは連合軍を離れる。"
+      ],
+      "en": [
+        "The Alliance demands that Orb hand over its mobile suit technology and enter the war. After Orb refuses, it faces pressure from both the Alliance and ZAFT. Kira intervenes in the Freedom, but Orb's homeland is still severely damaged and its government goes into exile. Kira and the Archangel then leave the Alliance."
       ]
     }
   },
@@ -1155,7 +1321,8 @@
     "id": "celestial-being-intervention",
     "title": {
       "zh": "天人武力介入",
-      "ja": "ソレスタルビーイング武力介入"
+      "ja": "ソレスタルビーイング武力介入",
+      "en": "Celestial Being Intervention"
     },
     "eraId": "ad",
     "scale": "era",
@@ -1176,18 +1343,21 @@
     ],
     "summary": {
       "zh": "天人宣布以武力根绝战争，四台 GN 动力高达在全球冲突热点同时介入。三大阵营被迫从互相消耗转向共同应对。",
-      "ja": "ソレスタルビーイングが武力による戦争根絶を宣言し、四機のGNドライヴ搭載ガンダムが各地の紛争地へ同時介入。三大陣営は相互消耗から共同対応へ転換を迫られた。"
+      "ja": "ソレスタルビーイングが武力による戦争根絶を宣言し、四機のGNドライヴ搭載ガンダムが各地の紛争地へ同時介入。三大陣営は相互消耗から共同対応へ転換を迫られた。",
+      "en": "Celestial Being declares war on war itself, sending four GN-drive Gundams into hotspots worldwide at once. The three major blocs are forced from mutual attrition into a common response."
     },
     "outcome": {
       "zh": "三大阵营首次建立联合沟通机制，但天人的“绝对武力”也被视为新的霸权；GN 技术随后被各方逆向工程。",
-      "ja": "三大陣営は初めて共同の交渉枠組みを築いたが、ソレスタルビーイングの「絶対武力」は新たな覇権とも見なされた。GN技術は後に各方で逆解析される。"
+      "ja": "三大陣営は初めて共同の交渉枠組みを築いたが、ソレスタルビーイングの「絶対武力」は新たな覇権とも見なされた。GN技術は後に各方で逆解析される。",
+      "en": "The three major blocs set up a joint communication mechanism for the first time, but Celestial Being's \"absolute force\" is also seen as a new hegemony. GN technology is then reverse-engineered by every side."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 00》第 1—2 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam 00\" episodes 1–2"
       }
     ],
     "detail": {
@@ -1198,6 +1368,10 @@
       "ja": [
         "ソレスタルビーイングは四機のGNドライブ搭載ガンダムで世界各地の紛争へ介入し、圧倒的な技術力で双方の軍を破壊した。三大陣営は連合の通信体制を築き、GN技術は各勢力に逆解析される。",
         "ソレスタルビーイングの4機のガンダムはGNドライヴを搭載し、母艦プトレマイオスは量子演算機ヴェーダから指示を受け、GN粒子はレーダーも妨害した。A.D.2308、アレハンドロ・コーナーは擬似太陽炉を積んだGN-Xを30機、三大陣営へ引き渡す。国連軍はこの機体で4機のガンダムを破り、ソレスタルビーイングは崩壊した。"
+      ],
+      "en": [
+        "Celestial Being intervenes in conflicts around the world with four GN-drive Gundams at the same time, using overwhelming technical superiority to destroy the armed forces of both sides. The three major blocs are forced to set up a joint communication mechanism, and GN technology is later reverse-engineered by every side.",
+        "Celestial Being's four Gundams are powered by GN Drives, and the mothership Ptolemaios receives real-time instructions through the quantum computer Veda. GN particles can also jam radar and communications. In A.D. 2308, Alejandro Corner hands 30 GN-X units equipped with pseudo-solar reactors to the three major blocs, and the UN forces use them to defeat Celestial Being's four Gundams."
       ]
     }
   },
@@ -1205,7 +1379,8 @@
     "id": "hathaway-flash",
     "title": {
       "zh": "马夫蒂起义",
-      "ja": "マフティー蜂起"
+      "ja": "マフティー蜂起",
+      "en": "Mafty Uprising"
     },
     "eraId": "uc",
     "scale": "incident",
@@ -1227,18 +1402,21 @@
     ],
     "summary": {
       "zh": "U.C.0105，哈萨维以马夫蒂·纳比尤·艾林之名袭击联邦高官，Ξ 高达与佩涅罗佩在达沃上空交战。",
-      "ja": "U.C.0105、ハサウェイがマフティー・ナビーユ・エリンとして連邦高官を襲撃。Ξガンダムとペーネロペーがダバオ上空で交戦する。"
+      "ja": "U.C.0105、ハサウェイがマフティー・ナビーユ・エリンとして連邦高官を襲撃。Ξガンダムとペーネロペーがダバオ上空で交戦する。",
+      "en": "In U.C. 0105, Hathaway attacks senior Federation officials under the name Mafty Navue Erin, and the Xi Gundam and Penelope fight above Davao."
     },
     "outcome": {
       "zh": "起义被镇压，哈萨维被捕并处刑；联邦的腐败并未因此改变。",
-      "ja": "蜂起は鎮圧され、ハサウェイは捕えられ処刑された。連邦の腐敗は変わらなかった。"
+      "ja": "蜂起は鎮圧され、ハサウェイは捕えられ処刑された。連邦の腐敗は変わらなかった。",
+      "en": "The uprising is put down, Hathaway is arrested and executed, and the Federation's corruption does not change."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "剧场版《机动战士高达 闪光的哈萨维》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "Theatrical film \"Mobile Suit Gundam: Hathaway's Flash\""
       }
     ],
     "detail": {
@@ -1247,6 +1425,9 @@
       ],
       "ja": [
         "ハサウェイはマフティー・ナビーユ・エリンとして連邦高官を襲い、地球の過剰開発を止めようとした。Ξガンダムとペーネロペーがダバオ上空で交戦し、蜂起は鎮圧され、ハサウェイは処刑される。"
+      ],
+      "en": [
+        "Hathaway attacks senior Federation officials under the name Mafty Navue Erin, trying to force the Federation to stop overdeveloping Earth. The Xi Gundam and Penelope fight above Davao, the uprising is put down, and Hathaway is arrested and executed."
       ]
     }
   },
@@ -1254,7 +1435,8 @@
     "id": "vagan-war",
     "title": {
       "zh": "维根战争",
-      "ja": "ヴェイガン戦争"
+      "ja": "ヴェイガン戦争",
+      "en": "Vagan War"
     },
     "eraId": "ag",
     "scale": "era",
@@ -1275,18 +1457,21 @@
     ],
     "summary": {
       "zh": "火星移民维根对地球联邦发动长期战争，AGE-1 在殖民卫星诺拉首次投入实战。",
-      "ja": "火星移民ヴェイガンが地球連邦へ長期戦争を仕掛け、AGE-1がコロニー・ノーラで初の実戦投入を迎える。"
+      "ja": "火星移民ヴェイガンが地球連邦へ長期戦争を仕掛け、AGE-1がコロニー・ノーラで初の実戦投入を迎える。",
+      "en": "The Martian settlers known as the Vagan wage a long war against the Earth Federation, and the AGE-1 enters combat for the first time at the colony Nora."
     },
     "outcome": {
       "zh": "战争跨越三代人，最终以维根与联邦的停战与政治重组收场。",
-      "ja": "戦争は三代にわたり、最終的にヴェイガンと連邦の停戦と政治再編で終結する。"
+      "ja": "戦争は三代にわたり、最終的にヴェイガンと連邦の停戦と政治再編で終結する。",
+      "en": "The war spans three generations and ends with a ceasefire and political reorganization between the Vagan and the Federation."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 AGE》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam AGE\""
       }
     ],
     "detail": {
@@ -1295,6 +1480,9 @@
       ],
       "ja": [
         "火星移民ヴェイガンと地球連邦の戦争は百年続き、AGE-1がコロニー・ノーラで初の実戦を迎えた。フリット、アセム、キオの三代を経て、停戦と政治再編で終わる。"
+      ],
+      "en": [
+        "The war between the Martian settlers known as the Vagan and the Earth Federation lasts a hundred years, and the AGE-1 first sees combat at the colony Nora. The war passes through three generations, Flit, Asemu and Kio, and ends with a ceasefire and political reorganization."
       ]
     }
   },
@@ -1302,7 +1490,8 @@
     "id": "capital-tower",
     "title": {
       "zh": "首都塔事件",
-      "ja": "キャピタル・タワー事件"
+      "ja": "キャピタル・タワー事件",
+      "en": "Capital Tower Incident"
     },
     "eraId": "rc",
     "scale": "incident",
@@ -1322,18 +1511,21 @@
     ],
     "summary": {
       "zh": "R.C.1014，贝尔利与 G-自我在首都塔周边卷入海盗与亚美利亚军的冲突，禁忌的宇宙航行被重新提起。",
-      "ja": "R.C.1014、ベルリとG-セルフがキャピタル・タワー周辺で海賊とアメリア軍の衝突に巻き込まれ、禁じられた宇宙航行が再び問われる。"
+      "ja": "R.C.1014、ベルリとG-セルフがキャピタル・タワー周辺で海賊とアメリア軍の衝突に巻き込まれ、禁じられた宇宙航行が再び問われる。",
+      "en": "In R.C. 1014, Bellri and the G-Self are caught up in a clash between pirates and the Amerian army around the Capital Tower, and forbidden space travel is raised again."
     },
     "outcome": {
       "zh": "冲突暴露了光子电池与轨道电梯体系的脆弱，也开启了通往宇宙的新航路。",
-      "ja": "衝突は光子電池と軌道エレベーター体系の脆弱さを露呈し、宇宙への新たな航路を開いた。"
+      "ja": "衝突は光子電池と軌道エレベーター体系の脆弱さを露呈し、宇宙への新たな航路を開いた。",
+      "en": "The clash exposes the fragility of the photon battery and orbital elevator system and opens a new route to space."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《高达 G 之复国运动》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Gundam Reconguista in G\""
       }
     ],
     "detail": {
@@ -1342,6 +1534,9 @@
       ],
       "ja": [
         "ベルリとG-セルフがキャピタル・タワー周辺で海賊とアメリ軍の衝突に巻き込まれ、禁じられた宇宙航行が再び議題になる。事件は光子電池と軌道エレベーターの脆さを露呈し、宇宙への新航路を開いた。"
+      ],
+      "en": [
+        "Bellri and the G-Self are caught up in a clash between pirates and the Amerian army around the Capital Tower, and forbidden space travel becomes an issue again. The incident exposes the fragility of the photon battery and orbital elevator system and opens a new route to space."
       ]
     }
   },
@@ -1349,7 +1544,8 @@
     "id": "gjallarhorn-coup",
     "title": {
       "zh": "加拉尔霍恩政变",
-      "ja": "ギャラルホルン・クーデター"
+      "ja": "ギャラルホルン・クーデター",
+      "en": "Gjallarhorn Coup"
     },
     "eraId": "pd",
     "scale": "era",
@@ -1373,18 +1569,21 @@
     ],
     "summary": {
       "zh": "P.D.325，麦克吉利斯以巴耶力之名发动政变，铁华团与加拉尔霍恩在火星与地球间全面冲突。",
-      "ja": "P.D.325、マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面衝突する。"
+      "ja": "P.D.325、マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面衝突する。",
+      "en": "In P.D. 325, McGillis launches a coup in the name of Bael, and Tekkadan and Gjallarhorn clash across Mars and Earth."
     },
     "outcome": {
       "zh": "政变失败，铁华团与加拉尔霍恩均付出惨重代价；火星独立进程被迫改写。",
-      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは大きな代償を払った。火星独立の道筋は書き換えられる。"
+      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは大きな代償を払った。火星独立の道筋は書き換えられる。",
+      "en": "The coup fails and both Tekkadan and Gjallarhorn pay a heavy price. The course of Martian independence is forced to change."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: Iron-Blooded Orphans\""
       }
     ],
     "detail": {
@@ -1395,6 +1594,10 @@
       "ja": [
         "マクギリスはバエルの名でクーデターを起こし、厄祭戦の正統性で現行秩序を倒そうとした。鉄華団とギャラルホルンが火星と地球で全面衝突し、クーデターは失敗。双方が大きな犠牲を払う。",
         "マクギリスはギャラルホルンの地球本部ヴィーンゴールヴを占拠し、地下に安置されていたバエルを奪取。セブンスターズの当主たちに戦力の供出を求めるが拒否され、革命軍はラスタル・エリオンのアリアンロッドに対し半分以下の戦力で戦うことになる。クーデターの失敗後、オルガはノブリスの部下に射殺され、マクギリスはガエリオのキマリス・ヴィダールとの死闘で戦死した。"
+      ],
+      "en": [
+        "McGillis launches a coup in the name of Bael, trying to overturn the current order with the legitimacy of the Calamity War. Tekkadan and Gjallarhorn clash across Mars and Earth, the coup fails, and both sides pay a heavy price.",
+        "McGillis occupies Gjallarhorn's Earth headquarters Vingolf, seizes the Bael kept underground and demands that the heads of the Seven Stars families provide forces. The heads refuse, and the revolutionary army can only face Rustal Elion's Arianrhod with less than half the enemy's strength. After the coup fails, Orga is shot by Nobliss's subordinates, and McGillis dies fighting Gaelio in the Kimaris Vidar."
       ]
     }
   },
@@ -1402,7 +1605,8 @@
     "id": "plant-quetta",
     "title": {
       "zh": "奎达工厂袭击",
-      "ja": "プラント・クエタ襲撃"
+      "ja": "プラント・クエタ襲撃",
+      "en": "Plant Quetta Attack"
     },
     "eraId": "as",
     "scale": "incident",
@@ -1426,18 +1630,21 @@
     ],
     "summary": {
       "zh": "A.S.122，奎达工厂遭黎明战线袭击，风灵高达与魔灵乌尔、魔灵索恩在数据风暴中交战。",
-      "ja": "A.S.122、クエタ工場がドーン・オブ・フォールドに襲撃され、エアリアルとルブリス・ウル、ルブリス・ソーンがデータストームの中で交戦した。"
+      "ja": "A.S.122、クエタ工場がドーン・オブ・フォールドに襲撃され、エアリアルとルブリス・ウル、ルブリス・ソーンがデータストームの中で交戦した。",
+      "en": "In A.S. 122, Plant Quetta is attacked by Dawn of Fold, and the Gundam Aerial fights the Lfrith Ur and Lfrith Thorn in the data storm."
     },
     "outcome": {
       "zh": "袭击改变了贝纳里特集团的权力平衡，也让 GUND 系统成为公开的政治议题。",
-      "ja": "襲撃はベネリットグループの力関係を変え、GUNDシステムを公然たる政治課題にした。"
+      "ja": "襲撃はベネリットグループの力関係を変え、GUNDシステムを公然たる政治課題にした。",
+      "en": "The attack changes the balance of power in the Benerit Group and makes the GUND system a public political issue."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 水星的魔女》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\""
       }
     ],
     "detail": {
@@ -1446,6 +1653,9 @@
       ],
       "ja": [
         "クエタ工場がドーン・オブ・フォールドに襲撃され、エアリアルとルブリス・ウル、ルブリス・ソーンが交戦した。GUNDフォーマットのデータ負荷が公然と議論され、ベネリットグループの力関係が変わる。"
+      ],
+      "en": [
+        "Plant Quetta is attacked by Dawn of Fold, and the Gundam Aerial fights the Lfrith Ur and Lfrith Thorn. In the battle, the data load of GUND Format is publicly discussed, and the balance of power in the Benerit Group changes with it."
       ]
     }
   },
@@ -1453,7 +1663,8 @@
     "id": "devil-gundam-awakening",
     "title": {
       "zh": "恶魔高达觉醒",
-      "ja": "デビルガンダム覚醒"
+      "ja": "デビルガンダム覚醒",
+      "en": "Devil Gundam Awakening"
     },
     "eraId": "fc",
     "scale": "incident",
@@ -1475,18 +1686,21 @@
     ],
     "summary": {
       "zh": "第十三届高达武斗会期间，被封印的恶魔高达重新启动，DG 细胞开始侵蚀新宿。",
-      "ja": "第13回ガンダムファイト中、封印されていたデビルガンダムが再起動し、DG細胞が新宿を侵食し始める。"
+      "ja": "第13回ガンダムファイト中、封印されていたデビルガンダムが再起動し、DG細胞が新宿を侵食し始める。",
+      "en": "During the 13th Gundam Fight, the sealed Devil Gundam restarts and DG Cells begin to erode Shinjuku."
     },
     "outcome": {
       "zh": "多蒙与东方不败被迫联手对抗失控的恶魔高达，武斗会的规则被彻底打破。",
-      "ja": "ドモンと東方不敗は失控したデビルガンダムに共闘を強いられ、ファイトの規則は根本から崩れる。"
+      "ja": "ドモンと東方不敗は失控したデビルガンダムに共闘を強いられ、ファイトの規則は根本から崩れる。",
+      "en": "Domon and Master Asia are forced to join forces against the out-of-control Devil Gundam, and the rules of the Gundam Fight are completely broken."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动武斗传 G 高达》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Fighter G Gundam\""
       }
     ],
     "detail": {
@@ -1495,6 +1709,9 @@
       ],
       "ja": [
         "封印されていたデビルガンダムが再起動し、DG細胞が新宿を侵食した。ドモンと東方不敗は手を組んで暴走したデビルガンダムと戦い、ガンダムファイトの規則は完全に破られる。"
+      ],
+      "en": [
+        "The sealed Devil Gundam restarts and DG Cells begin to erode Shinjuku. Domon and Master Asia are forced to join forces against the out-of-control Devil Gundam, and the rules of the Gundam Fight are completely broken."
       ]
     }
   },
@@ -1502,7 +1719,8 @@
     "id": "gundam-fight-final",
     "title": {
       "zh": "高达武斗会决赛",
-      "ja": "ガンダムファイト決勝"
+      "ja": "ガンダムファイト決勝",
+      "en": "Gundam Fight Final"
     },
     "eraId": "fc",
     "scale": "battle",
@@ -1525,18 +1743,21 @@
     ],
     "summary": {
       "zh": "神高达与尊者高达在武斗会决赛相遇，师徒二人以拳法决定地球的命运。",
-      "ja": "ゴッドガンダムとマスターガンダムが決勝で対峙し、師弟が拳法で地球の命運を決める。"
+      "ja": "ゴッドガンダムとマスターガンダムが決勝で対峙し、師弟が拳法で地球の命運を決める。",
+      "en": "The God Gundam and Master Gundam meet in the Gundam Fight final, and master and student decide Earth's fate with martial arts."
     },
     "outcome": {
       "zh": "多蒙击败东方不败，但胜利并未消除武斗会制度本身的暴力。",
-      "ja": "ドモンは東方不敗を破るが、勝利は武闘会制度そのものの暴力を消さなかった。"
+      "ja": "ドモンは東方不敗を破るが、勝利は武闘会制度そのものの暴力を消さなかった。",
+      "en": "Domon defeats Master Asia, but the victory does not remove the violence built into the Gundam Fight system."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动武斗传 G 高达》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Fighter G Gundam\""
       }
     ],
     "detail": {
@@ -1545,6 +1766,9 @@
       ],
       "ja": [
         "ゴッドガンダムとマスターガンダムが決勝で対峙し、ドモンと東方不敗が拳法で地球の運命を決めた。ドモンは勝つが、試合の終了はガンダムファイト制度そのものの暴力を消さない。"
+      ],
+      "en": [
+        "The God Gundam and Master Gundam meet in the Gundam Fight final, and Domon and Master Asia decide Earth's fate with martial arts. Domon wins, but the end of the match does not remove the violence built into the Gundam Fight system."
       ]
     }
   },
@@ -1552,7 +1776,8 @@
     "id": "eve-wars",
     "title": {
       "zh": "前夜战争",
-      "ja": "イブ・ウォーズ"
+      "ja": "イブ・ウォーズ",
+      "en": "Eve Wars"
     },
     "eraId": "ac",
     "scale": "era",
@@ -1578,18 +1803,21 @@
     ],
     "summary": {
       "zh": "OZ 内部政变与白色芬古的崛起把地球圈推向全面战争，飞翼零式与艾比安在轨道上决战。",
-      "ja": "OZ内部のクーデターとホワイトファングの台頭が地球圏を全面戦争へ押し出し、ウイングゼロとエピオンが軌道上で決戦する。"
+      "ja": "OZ内部のクーデターとホワイトファングの台頭が地球圏を全面戦争へ押し出し、ウイングゼロとエピオンが軌道上で決戦する。",
+      "en": "A coup inside OZ and the rise of White Fang push the Earth Sphere into full-scale war, and the Wing Zero and Epyon fight a decisive battle in orbit."
     },
     "outcome": {
       "zh": "战争以 OZ 解体与殖民地自治的妥协收场，但“以武力终结战争”的循环并未真正结束。",
-      "ja": "戦争はOZ解体とコロニー自治の妥協で終わるが、「武力による戦争終結」の循環は終わらない。"
+      "ja": "戦争はOZ解体とコロニー自治の妥協で終わるが、「武力による戦争終結」の循環は終わらない。",
+      "en": "The war ends with the dissolution of OZ and a compromise on colonial autonomy, but the cycle of \"ending war by force\" has not ended."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《新机动战记高达 W》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam Wing\""
       }
     ],
     "detail": {
@@ -1600,6 +1828,10 @@
       "ja": [
         "A.C.195年末、地球圏ではOZ内の政変派、コロニーのホワイトファング、帰順を拒むガンダムパイロットが並立していた。ウイングゼロとエピオンが軌道上で決戦し、戦争はOZの解体とコロニー自治の妥協で終わる。",
         "A.C.195年末、ホワイトファングはミリアルド・ピースクラフトが率い、要塞リーブラを地球へ落下させようとした。世界国家軍とホワイトファングはリーブラ周辺で決戦し、トレーズ・クシュリナーダはトールギスIIで五飛と戦い、五飛の一撃に倒れる。レディ・アンは世界国家軍の敗北を宣言し、リーブラの落下はガンダムチームによって阻止された。"
+      ],
+      "en": [
+        "At the end of A.C. 195, three forces appear in the Earth Sphere at the same time: the coup faction inside OZ, the colony group White Fang, and the Gundam pilots who refuse to return. The Wing Zero and Epyon fight a decisive battle in orbit, and the war ends with the dissolution of OZ and a compromise on colonial autonomy.",
+        "At the end of A.C. 195, White Fang, led by Milliardo Peacecraft, pushes the fortress Libra toward Earth. The World Nation Army and White Fang fight a decisive battle around Libra. Treize Khushrenada duels Wufei in the Tallgeese II and is knocked down by a single blow from Wufei, and Lady Une then announces the World Nation Army's defeat. The fall of Libra is finally stopped by the Gundam team."
       ]
     }
   },
@@ -1607,7 +1839,8 @@
     "id": "after-war-awakening",
     "title": {
       "zh": "战后高达觉醒",
-      "ja": "戦後ガンダム覚醒"
+      "ja": "戦後ガンダム覚醒",
+      "en": "Post-War Gundam Awakening"
     },
     "eraId": "aw",
     "scale": "incident",
@@ -1634,18 +1867,21 @@
     ],
     "summary": {
       "zh": "加罗特在废土上启动高达 X，随后与 Double X、Airmaster 组成小队，挑战新 UNE 的秩序。",
-      "ja": "ガロードが廃墟でガンダムXを起動し、ダブルX、エアマスターと共に新UNEの秩序へ挑む。"
+      "ja": "ガロードが廃墟でガンダムXを起動し、ダブルX、エアマスターと共に新UNEの秩序へ挑む。",
+      "en": "Garrod starts the Gundam X in the wasteland and later forms a team with the Double X and Airmaster to challenge the New UNE order."
     },
     "outcome": {
       "zh": "战斗阻止了新 UNE 的强制统一，但废土的“新世界”仍只是开端。",
-      "ja": "戦いは新UNEの強制統一を阻んだが、廃墟の「新しい世界」はまだ始まりに過ぎない。"
+      "ja": "戦いは新UNEの強制統一を阻んだが、廃墟の「新しい世界」はまだ始まりに過ぎない。",
+      "en": "The fighting stops the New UNE's forced unification, but the wasteland's \"new world\" is still only a beginning."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动新世纪高达 X》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"After War Gundam X\""
       }
     ],
     "detail": {
@@ -1654,6 +1890,9 @@
       ],
       "ja": [
         "A.W.15、廃土のスカベンジャーであるガロードはMSの残骸の中から起動可能なガンダムXを見つける。ダブルX、エアマスターと小隊を組み、新UNEの強制統一を止めたが、戦いの後も廃土には制度も復興計画もない。"
+      ],
+      "en": [
+        "In A.W. 15, the wasteland scavenger Garrod finds a working Gundam X among mobile suit wreckage. He later forms a team with the Double X and Airmaster and stops the New UNE's forced unification. After the fighting, the wasteland still has no institutions or reconstruction plan."
       ]
     }
   },
@@ -1661,7 +1900,8 @@
     "id": "moonrace-return",
     "title": {
       "zh": "月之民回归",
-      "ja": "月の民の回帰"
+      "ja": "月の民の回帰",
+      "en": "Moonrace Return"
     },
     "eraId": "cc",
     "scale": "era",
@@ -1683,18 +1923,21 @@
     ],
     "summary": {
       "zh": "月之民结束长期滞留，开始大规模回归地球，与地球居民发生冲突。",
-      "ja": "月の民が長い滞留を終え、地球へ大規模帰還を開始し、地球住民と衝突する。"
+      "ja": "月の民が長い滞留を終え、地球へ大規模帰還を開始し、地球住民と衝突する。",
+      "en": "The Moonrace end their long stay and begin a large-scale return to Earth, coming into conflict with Earth's residents."
     },
     "outcome": {
       "zh": "回归以战争与谈判交织的方式推进，罗兰成为两边都能对话的少数人。",
-      "ja": "帰還は戦争と交渉の交錯で進み、ロランは双方と対話できる数少ない存在となる。"
+      "ja": "帰還は戦争と交渉の交錯で進み、ロランは双方と対話できる数少ない存在となる。",
+      "en": "The return proceeds through a mix of war and negotiation, and Loran becomes one of the few people both sides can talk to."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《∀高达》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Turn A Gundam\""
       }
     ],
     "detail": {
@@ -1703,6 +1946,9 @@
       ],
       "ja": [
         "月の民が長い滞留を終えて地球へ大規模に回帰し、地球の住民と土地・資源を巡って衝突した。回帰は戦争と交渉の交錯で進み、ローランは双方と対話できる数少ない人物になる。"
+      ],
+      "en": [
+        "The Moonrace end their long stay and begin a large-scale return to Earth, coming into conflict with Earth's residents over land and resources. The return proceeds through a mix of war and negotiation, and Loran becomes one of the few people both sides can talk to."
       ]
     }
   },
@@ -1710,7 +1956,8 @@
     "id": "battle-jachin-due",
     "title": {
       "zh": "雅金·杜维攻防战",
-      "ja": "ヤキン・ドゥーエ攻防戦"
+      "ja": "ヤキン・ドゥーエ攻防戦",
+      "en": "Battle of Jachin Due"
     },
     "eraId": "ce",
     "scale": "battle",
@@ -1737,18 +1984,21 @@
     ],
     "summary": {
       "zh": "联合军与 ZAFT 在雅金·杜维展开决战，创世纪与核弹把战争推向灭绝边缘。",
-      "ja": "連合軍とザフトがヤキン・ドゥーエで決戦し、ジェネシスと核弾が戦争を絶滅の淵へ押しやる。"
+      "ja": "連合軍とザフトがヤキン・ドゥーエで決戦し、ジェネシスと核弾が戦争を絶滅の淵へ押しやる。",
+      "en": "GENESIS and nuclear salvos turn Jachin Due into a near-extinction event, ended when Kira and Athrun stop the superweapon and both fleets stand down."
     },
     "outcome": {
       "zh": "基拉与阿斯兰阻止了创世纪发射，战争以双方疲惫的停战收场。",
-      "ja": "キラとアスランがジェネシス発射を阻止し、戦争は双方疲弊の停戦で終わる。"
+      "ja": "キラとアスランがジェネシス発射を阻止し、戦争は双方疲弊の停戦で終わる。",
+      "en": "Kira and Athrun stop GENESIS from firing, and the war ends in a ceasefire with both sides exhausted."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 SEED》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam SEED\""
       }
     ],
     "detail": {
@@ -1759,6 +2009,10 @@
       "ja": [
         "連合軍とザフトがヤキン・ドゥーエで決戦し、ジェネシスと核弾頭が戦争を絶滅の縁へ押し込んだ。キラとアスランがジェネシスの発射を止め、双方は疲弊の中で停戦する。",
         "ヤキン・ドゥーエの戦闘はC.E.71.09.26から27日まで続いた。連合軍が核弾頭でボアズ要塞を破壊すると、ザフトはジェネシスを発射。1射目で連合艦隊の約4割が壊滅し、2射目は月面基地を消滅させた。キラとアスランはメテオでプラントへ向かう核ミサイルを撃墜し、フェイズシフト装甲で守られたジェネシス内部へ突入して発射を止めた。"
+      ],
+      "en": [
+        "The Alliance and ZAFT fight a decisive battle at Jachin Due, and GENESIS and nuclear weapons push the war to the edge of extinction. Kira and Athrun stop GENESIS from firing, and both sides agree to a ceasefire in exhaustion.",
+        "The fighting at Jachin Due lasts from C.E. 71.09.26 to the 27th. The Alliance first destroys the Boaz fortress with nuclear weapons, and ZAFT then fires GENESIS; the first shot destroys about 40 percent of the Alliance fleet, and the second destroys the lunar base. Kira and Athrun use the Meteor to shoot down nuclear missiles aimed at PLANT. GENESIS is covered by phase shift armor, making it hard to damage with conventional fire, and the two then break inside to stop the firing."
       ]
     }
   },
@@ -1766,7 +2020,8 @@
     "id": "memento-mori",
     "title": {
       "zh": "遗言炮击",
-      "ja": "メメントモリ砲撃"
+      "ja": "メメントモリ砲撃",
+      "en": "Memento Mori Strike"
     },
     "eraId": "ad",
     "scale": "battle",
@@ -1785,18 +2040,21 @@
     ],
     "summary": {
       "zh": "变革者启动轨道炮 Memento Mori，天人以 00 强化模组突入摧毁炮台。",
-      "ja": "イノベイターが軌道砲メメントモリを起動し、ソレスタルビーイングがダブルオーライザーで砲台へ突入する。"
+      "ja": "イノベイターが軌道砲メメントモリを起動し、ソレスタルビーイングがダブルオーライザーで砲台へ突入する。",
+      "en": "The Innovators activate the orbital cannon Memento Mori, and Celestial Being breaks in with the 00 Raiser to destroy the cannon."
     },
     "outcome": {
       "zh": "炮台被摧毁，但围绕“人类是否应被强制统一”的分歧更加尖锐。",
-      "ja": "砲台は破壊されたが、「人類は強制的に統一されるべきか」という対立はより先鋭化した。"
+      "ja": "砲台は破壊されたが、「人類は強制的に統一されるべきか」という対立はより先鋭化した。",
+      "en": "The cannon is destroyed, but the dispute over whether humanity should be forcibly unified becomes sharper."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 00 第二季》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam 00 Season 2\""
       }
     ],
     "detail": {
@@ -1807,6 +2065,10 @@
       "ja": [
         "イノベイターが軌道砲メメント・モリを起動し、超遠距離ビームで敵中枢を破壊しようとした。ソレスタルビーイングがダブルオーライザーで突入して砲台を破壊するが、人類統合を巡る対立は深まる。",
         "メメント・モリはA-LAWSが低軌道リング上に建造した大型自由電子レーザー砲で、合計2基が存在した。1号機は中東のスイール王国の首都を消滅させた。2号機はA.D.2312の軌道エレベーター占拠事件で、ダブルオーライザーが大気圏内から放ったライザーソードに切断されるが、破壊直前の発射が軌道エレベーターに直撃し、ブレイク・ピラー事件を引き起こした。"
+      ],
+      "en": [
+        "The Innovators activate the orbital cannon Memento Mori, trying to destroy enemy command centers with ultra-long-range beams. Celestial Being breaks in with the 00 Raiser and destroys the cannon, but the dispute over whether humanity should be forcibly unified becomes sharper.",
+        "Memento Mori is a large free-electron laser cannon built by A-LAWS on a low-orbit ring; there are two units. Unit 1 once destroyed the capital of the Kingdom of Suille in the Middle East. The 00 Raiser cuts Unit 2 apart from inside the atmosphere with the Raiser Sword during the orbital elevator occupation incident of A.D. 2312, but the beam it fires before being destroyed hits the orbital elevator and causes the Break Pillar accident."
       ]
     }
   },
@@ -1814,7 +2076,8 @@
     "id": "second-generation",
     "title": {
       "zh": "亚瑟姆世代",
-      "ja": "アセムの世代"
+      "ja": "アセムの世代",
+      "en": "Asemu Generation"
     },
     "eraId": "ag",
     "scale": "era",
@@ -1834,18 +2097,21 @@
     ],
     "summary": {
       "zh": "维根战争进入第二代，亚瑟姆驾驶 AGE-2 在火星与地球圈之间转战。",
-      "ja": "ヴェイガン戦争は第二世代へ入り、アセムがAGE-2で火星と地球圏を転戦する。"
+      "ja": "ヴェイガン戦争は第二世代へ入り、アセムがAGE-2で火星と地球圏を転戦する。",
+      "en": "The Vagan War enters its second generation, and Asemu fights across Mars and the Earth Sphere in the AGE-2."
     },
     "outcome": {
       "zh": "战争没有因换代而停止，父子两代对“复仇”的理解开始分裂。",
-      "ja": "戦争は世代交代でも止まらず、父子は「復讐」の意味をめぐって分岐していく。"
+      "ja": "戦争は世代交代でも止まらず、父子は「復讐」の意味をめぐって分岐していく。",
+      "en": "The war does not stop with the change of generation, and father and son begin to differ over what \"revenge\" means."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 AGE》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam AGE\""
       }
     ],
     "detail": {
@@ -1854,6 +2120,9 @@
       ],
       "ja": [
         "ヴェイガン戦争は第二世代へ入り、アセムがAGE-2で火星と地球圏を転戦した。フリットはヴェイガン殲滅を求め、アセムはそれが平和につながるのか疑い始める。"
+      ],
+      "en": [
+        "The Vagan War enters its second generation, and Asemu fights across Mars and the Earth Sphere in the AGE-2. Father and son begin to differ over what revenge means: Flit wants to destroy the Vagan, and Asemu begins to doubt whether that can bring peace."
       ]
     }
   },
@@ -1861,7 +2130,8 @@
     "id": "third-generation",
     "title": {
       "zh": "奇奥世代",
-      "ja": "キオの世代"
+      "ja": "キオの世代",
+      "en": "Kio Generation"
     },
     "eraId": "ag",
     "scale": "era",
@@ -1883,18 +2153,21 @@
     ],
     "summary": {
       "zh": "战争进入第三代，奇奥驾驶 AGE-FX 试图以理解而非歼灭结束维根冲突。",
-      "ja": "戦争は第三世代へ入り、キオがAGE-FXで殲滅ではなく理解による終結を目指す。"
+      "ja": "戦争は第三世代へ入り、キオがAGE-FXで殲滅ではなく理解による終結を目指す。",
+      "en": "The war enters its third generation, and Kio pilots the AGE-FX in an attempt to end the Vagan conflict through understanding rather than annihilation."
     },
     "outcome": {
       "zh": "AGE-FX 的浮游炮与爆发模式让奇奥得以在混战中传递对话，但和平仍需要政治选择。",
-      "ja": "AGE-FXのファンネルとバーストモードは混戦中の対話を可能にしたが、平和には政治的な選択が残った。"
+      "ja": "AGE-FXのファンネルとバーストモードは混戦中の対話を可能にしたが、平和には政治的な選択が残った。",
+      "en": "The AGE-FX's funnels and Burst Mode let Kio carry on dialogue through the melee, but peace still requires a political choice."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 AGE》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam AGE\""
       }
     ],
     "detail": {
@@ -1903,6 +2176,9 @@
       ],
       "ja": [
         "キオはAGE-FXで戦い、ヴェイガンとの衝突を殲滅ではなく理解で終わらせようとした。機体の性能は対話の窓を開くが、停戦は双方が相手の未来を認めるかにかかっている。"
+      ],
+      "en": [
+        "Kio enters the war in the AGE-FX, trying to end the Vagan conflict through understanding rather than annihilation. The machine's performance opens a window for dialogue, but a ceasefire still depends on whether both sides recognize that the other also has a future."
       ]
     }
   },
@@ -1910,7 +2186,8 @@
     "id": "venus-globe",
     "title": {
       "zh": "金星地球圈",
-      "ja": "ヴィーナス・グローブ"
+      "ja": "ヴィーナス・グローブ",
+      "en": "Venus Globe"
     },
     "eraId": "rc",
     "scale": "incident",
@@ -1931,18 +2208,21 @@
     ],
     "summary": {
       "zh": "贝尔利与艾达追踪海盗，抵达金星地球圈，发现光子电池与宇宙航行被隐藏的历史。",
-      "ja": "ベルリとアイーダが海賊を追ってヴィーナス・グローブへ到達し、光子電池と宇宙航行の隠された歴史を知る。"
+      "ja": "ベルリとアイーダが海賊を追ってヴィーナス・グローブへ到達し、光子電池と宇宙航行の隠された歴史を知る。",
+      "en": "The pirates' route leads to Venus Globe, where Bellri and Aida uncover how photon batteries and space travel actually developed."
     },
     "outcome": {
       "zh": "金星圈的技术与政治真相被带回地球，轨道电梯体系不再稳固。",
-      "ja": "ヴィーナス・グローブの技術と政治の真実が地球へ持ち帰られ、軌道エレベーター体系は揺らぎ始める。"
+      "ja": "ヴィーナス・グローブの技術と政治の真実が地球へ持ち帰られ、軌道エレベーター体系は揺らぎ始める。",
+      "en": "The technological and political truth of the Venus Globe is brought back to Earth, and the orbital elevator system is no longer stable."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《高达 G 之复国运动》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Gundam Reconguista in G\""
       }
     ],
     "detail": {
@@ -1951,6 +2231,9 @@
       ],
       "ja": [
         "ベルリとアイーダは海賊を追って金星地球圏へ到達し、光子電池と宇宙航行の隠された歴史を知る。真実が地球へ持ち帰られ、軌道エレベーター体系は揺らぐ。"
+      ],
+      "en": [
+        "Bellri and Aida follow the pirates to the Venus Globe and discover the hidden history of the photon battery and space travel. After the truth is brought back to Earth, the orbital elevator system begins to shake."
       ]
     }
   },
@@ -1958,7 +2241,8 @@
     "id": "full-moon",
     "title": {
       "zh": "满月作战",
-      "ja": "フルムーン作戦"
+      "ja": "フルムーン作戦",
+      "en": "Operation Full Moon"
     },
     "eraId": "rc",
     "scale": "battle",
@@ -1980,18 +2264,21 @@
     ],
     "summary": {
       "zh": "亚美利亚军与首都军围绕轨道电梯展开决战，G-自我与 G-Lucifer 在宇宙交战。",
-      "ja": "アメリア軍と首都軍が軌道エレベーターを巡って決戦し、G-セルフとG-ルシファーが宇宙で交戦する。"
+      "ja": "アメリア軍と首都軍が軌道エレベーターを巡って決戦し、G-セルフとG-ルシファーが宇宙で交戦する。",
+      "en": "The Amerian army and the Capital Army fight a decisive battle over the orbital elevator, and the G-Self and G-Lucifer fight in space."
     },
     "outcome": {
       "zh": "战斗暂时阻止了轨道电梯被武器化，但 R.C. 的技术禁忌仍未被真正解决。",
-      "ja": "戦闘は軌道エレベーターの兵器化を一時的に阻んだが、R.C.の技術禁忌は解決されていない。"
+      "ja": "戦闘は軌道エレベーターの兵器化を一時的に阻んだが、R.C.の技術禁忌は解決されていない。",
+      "en": "The battle temporarily stops the orbital elevator from being weaponized, but the technological taboo of R.C. remains unresolved."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《高达 G 之复国运动》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Gundam Reconguista in G\""
       }
     ],
     "detail": {
@@ -2000,6 +2287,9 @@
       ],
       "ja": [
         "R.C.1014、軌道エレベーターはアメリアと首都軍が争うエネルギー・政治の要となっていた。G-セルフとG-ルシファーが宇宙で交戦し、武器化は一時的に止まるが、技術禁忌は解決しない。"
+      ],
+      "en": [
+        "In R.C. 1014, the orbital elevator becomes the energy and political hub contested by Ameria and the Capital Army. The G-Self and G-Lucifer fight in space, and the battle temporarily stops the orbital elevator from being weaponized, but the technological taboo remains unresolved."
       ]
     }
   },
@@ -2007,7 +2297,8 @@
     "id": "edmonton",
     "title": {
       "zh": "埃德蒙顿之战",
-      "ja": "エドモントンの戦い"
+      "ja": "エドモントンの戦い",
+      "en": "Battle of Edmonton"
     },
     "eraId": "pd",
     "scale": "battle",
@@ -2031,18 +2322,21 @@
     ],
     "summary": {
       "zh": "铁华团在埃德蒙顿与加拉尔霍恩交战，巴巴托斯与金巴里斯·维达尔正面冲突。",
-      "ja": "鉄華団がエドモントンでギャラルホルンと交戦し、バルバトスとキマリス・ヴィダールが激突する。"
+      "ja": "鉄華団がエドモントンでギャラルホルンと交戦し、バルバトスとキマリス・ヴィダールが激突する。",
+      "en": "Tekkadan fights Gjallarhorn at Edmonton, and the Barbatos clashes head-on with the Kimaris Vidar."
     },
     "outcome": {
       "zh": "铁华团付出惨重代价，但火星独立运动由此获得更大的政治声量。",
-      "ja": "鉄華団は大きな代償を払ったが、火星独立運動はより大きな政治的発言力を得た。"
+      "ja": "鉄華団は大きな代償を払ったが、火星独立運動はより大きな政治的発言力を得た。",
+      "en": "Tekkadan pays a heavy price, but the Martian independence movement gains greater political voice from it."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: Iron-Blooded Orphans\""
       }
     ],
     "detail": {
@@ -2051,6 +2345,9 @@
       ],
       "ja": [
         "P.D.325、鉄華団はクーデリアとタカキをエドモントンへ送る途中、市街外でギャラルホルンの追撃部隊に迎撃された。バルバトスとキマリス・ヴィダールが正面衝突し、鉄華団は大きな損害を出すが、火星独立運動はより大きな政治的声を得る。"
+      ],
+      "en": [
+        "In P.D. 325, Tekkadan escorts Kudelia and Takaki to Edmonton and is intercepted outside the city by a Gjallarhorn pursuit force. The Barbatos clashes head-on with the Kimaris Vidar, and Tekkadan suffers heavy losses, but the Martian independence movement gains greater political voice as a result."
       ]
     }
   },
@@ -2058,7 +2355,8 @@
     "id": "mars-arc",
     "title": {
       "zh": "火星战线",
-      "ja": "火星戦線"
+      "ja": "火星戦線",
+      "en": "Mars Front"
     },
     "eraId": "pd",
     "scale": "era",
@@ -2080,18 +2378,21 @@
     ],
     "summary": {
       "zh": "麦克吉利斯以巴耶力之名发动政变，铁华团与加拉尔霍恩在火星与地球间全面开战。",
-      "ja": "マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面戦争に入る。"
+      "ja": "マクギリスがバエルの名でクーデターを起こし、鉄華団とギャラルホルンが火星と地球で全面戦争に入る。",
+      "en": "McGillis launches a coup in the name of Bael, and Tekkadan and Gjallarhorn go to full-scale war across Mars and Earth."
     },
     "outcome": {
       "zh": "政变失败，铁华团与加拉尔霍恩两败俱伤，火星的独立进程被重新书写。",
-      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは共倒れに近い損害を受け、火星独立の道筋は書き換えられた。"
+      "ja": "クーデターは失敗し、鉄華団とギャラルホルンは共倒れに近い損害を受け、火星独立の道筋は書き換えられた。",
+      "en": "The coup fails, Tekkadan and Gjallarhorn are both badly hurt, and the course of Martian independence is rewritten."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 铁血的奥尔芬斯》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: Iron-Blooded Orphans\""
       }
     ],
     "detail": {
@@ -2100,6 +2401,9 @@
       ],
       "ja": [
         "P.D.325、ギャラルホルン内部の改革派マクギリスはバエルの名でクーデターを起こし、火星の鉄華団を巻き込んで地球の本部と全面戦争に入る。クーデターの失敗後、双方は傷つき、火星独立の過程は書き換えられる。"
+      ],
+      "en": [
+        "In P.D. 325, the Gjallarhorn reformer McGillis launches a coup in the name of Bael and draws Tekkadan on Mars into full-scale war with the Earth headquarters. After the coup fails, both sides are badly hurt and the course of Martian independence is rewritten."
       ]
     }
   },
@@ -2107,7 +2411,8 @@
     "id": "vanadis-incident",
     "title": {
       "zh": "凡娜迪斯事件",
-      "ja": "ヴァナディース事件"
+      "ja": "ヴァナディース事件",
+      "en": "Vanadis Incident"
     },
     "eraId": "as",
     "scale": "incident",
@@ -2128,18 +2433,21 @@
     ],
     "summary": {
       "zh": "凡娜迪斯机构遭袭击，GUND 格式化与高达开发的秘密被暴力揭开。",
-      "ja": "ヴァナディース機関が襲撃され、GUNDフォーマットとガンダム開発の秘密が暴力によって暴かれる。"
+      "ja": "ヴァナディース機関が襲撃され、GUNDフォーマットとガンダム開発の秘密が暴力によって暴かれる。",
+      "en": "The Vanadis institute is attacked, and the secrets of GUND Format and Gundam development are violently exposed."
     },
     "outcome": {
       "zh": "事件让 GUND 技术被企业体系收编，也为斯莱塔一代的诅咒埋下伏笔。",
-      "ja": "事件はGUND技術を企業体系へ取り込み、スレッタ世代の呪いの伏線となった。"
+      "ja": "事件はGUND技術を企業体系へ取り込み、スレッタ世代の呪いの伏線となった。",
+      "en": "The incident lets the corporate system absorb GUND technology and foreshadows the curse that hangs over Suletta's generation."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 水星的魔女》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\""
       }
     ],
     "detail": {
@@ -2150,6 +2458,10 @@
       "ja": [
         "月面のヴァナディース機関はGUNDフォーマットの研究を続けていたが、武装集団の襲撃を受けた。GUND技術は企業体系へ取り込まれ、スレッタ世代の状況の伏線となる。",
         "A.S.101、MS開発評議会の下にあったドミニコス隊が、ヴァナディース機関の宇宙フロント「フォールクヴァング」を襲撃した。機関はパーメットとGUNDを研究しており、MSメーカーのオックス・アース・コーポレーションに買収されてGUNDフォーマットは軍事転用されていた。襲撃後、生き残った研究者は「魔女」と呼ばれ、ガンダムの開発は禁止される。"
+      ],
+      "en": [
+        "The Vanadis institute on the lunar surface is attacked by armed forces while conducting GUND Format research, and the secrets of GUND technology and Gundam development are violently exposed. The incident lets the corporate system absorb GUND technology and foreshadows the plight of Suletta's generation.",
+        "In A.S. 101, the Dominicus team under the MS Development Council attacks Fólkvangr, a frontline research facility the Vanadis institute operates in space. The institute studies Permet and GUND and had already been bought by the MS manufacturer Ochs Earth, which diverted GUND Format to military use. After the attack, the surviving researchers are called \"witches\" and Gundam development is banned."
       ]
     }
   },
@@ -2157,7 +2469,8 @@
     "id": "quiet-zero",
     "title": {
       "zh": "寂静零号",
-      "ja": "クワイエット・ゼロ"
+      "ja": "クワイエット・ゼロ",
+      "en": "Quiet Zero"
     },
     "eraId": "as",
     "scale": "era",
@@ -2178,18 +2491,21 @@
     ],
     "summary": {
       "zh": "贝纳里特集团启动寂静零号，试图以数据风暴控制地球圈；斯莱塔驾驶卡利班阻止。",
-      "ja": "ベネリットグループがクワイエット・ゼロを起動し、データストームで地球圏を制御しようとする。スレッタがキャリバーンで阻止する。"
+      "ja": "ベネリットグループがクワイエット・ゼロを起動し、データストームで地球圏を制御しようとする。スレッタがキャリバーンで阻止する。",
+      "en": "Benerit's data-storm plan comes online at Quiet Zero. Suletta takes the Calibarn up to shut it down."
     },
     "outcome": {
       "zh": "计划被阻止，GUND 技术与企业权力被迫进入新的谈判。",
-      "ja": "計画は阻止され、GUND技術と企業権力は新たな交渉の場へ移る。"
+      "ja": "計画は阻止され、GUND技術と企業権力は新たな交渉の場へ移る。",
+      "en": "The plan is stopped, and GUND technology and corporate power are forced into new negotiations."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 水星的魔女》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\""
       }
     ],
     "detail": {
@@ -2200,6 +2516,10 @@
       "ja": [
         "ベネリットグループはデータストームで地球圏を制御しようとクワイエット・ゼロを起動した。スレッタがキャリバーンで止め、GUND技術と企業権力は新たな交渉へ入る。",
         "クワイエット・ゼロはガンダム・エアリアルのパーメットネットワークを中核とし、パーメットスコア6に達した機体のネットワークを地球圏へ広げて、GUNDフォーマット搭載機をすべて掌握しようとした。原案はデリング・レンブランの妻ノートレットが起草し、デリングとプロスペラが共同で進めた。キャリバーンにはデータストームのフィルターがなく、スレッタはパーメットの負荷を直接受けた。"
+      ],
+      "en": [
+        "The Benerit Group activates Quiet Zero, trying to control the Earth Sphere with the data storm. Suletta pilots the Calibarn to stop the plan, and GUND technology and corporate power are forced into new negotiations.",
+        "Quiet Zero is built around the Gundam Aerial's Permet network and plans to extend the Permet score 6 machine network across the globe, taking over every device running GUND Format. The original plan was proposed by Notrette, Delling Rembran's wife, and Delling and Prospera push it forward together. The Calibarn has no data storm filter, so Suletta can only endure the Permet load directly."
       ]
     }
   },
@@ -2207,7 +2527,8 @@
     "id": "marimeia-uprising",
     "title": {
       "zh": "玛丽美亚之乱",
-      "ja": "マリーメイアの乱"
+      "ja": "マリーメイアの乱",
+      "en": "Mariemaia Uprising"
     },
     "eraId": "ac",
     "scale": "battle",
@@ -2229,18 +2550,21 @@
     ],
     "summary": {
       "zh": "A.C.196，玛丽美亚军以 OZ 残党之名发动叛乱，飞翼零式与艾比安再次被投入战场。",
-      "ja": "A.C.196、マリーメイア軍がOZ残党の名で蜂起し、ウイングゼロとエピオンが再び戦場へ投入される。"
+      "ja": "A.C.196、マリーメイア軍がOZ残党の名で蜂起し、ウイングゼロとエピオンが再び戦場へ投入される。",
+      "en": "In A.C. 196, the Mariemaia army rebels in the name of the OZ remnants, and the Wing Zero and Epyon are sent into battle again."
     },
     "outcome": {
       "zh": "叛乱被镇压，但“以战争终结战争”的循环仍在继续。",
-      "ja": "反乱は鎮圧されたが、「戦争で戦争を終わらせる」循環は続く。"
+      "ja": "反乱は鎮圧されたが、「戦争で戦争を終わらせる」循環は続く。",
+      "en": "The rebellion is put down, but the cycle of \"ending war through war\" continues."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "OVA《新机动战记高达 W 无尽的华尔兹》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "OVA \"Mobile Suit Gundam Wing: Endless Waltz\""
       }
     ],
     "detail": {
@@ -2249,6 +2573,9 @@
       ],
       "ja": [
         "A.C.196、OZの残党を名乗るマリーメイア軍が地球圏で蜂起し、ウイングゼロとエピオンが再び戦場へ投入された。乱は鎮圧されるが、「戦争で戦争を終わらせる」循環は止まらない。"
+      ],
+      "en": [
+        "In A.C. 196, OZ remnants rebel across the Earth Sphere under the name Mariemaia, and the Wing Zero and Epyon are sent into battle again. The rebellion is put down, but the cycle of \"ending war with war\" does not stop."
       ]
     }
   },
@@ -2256,7 +2583,8 @@
     "id": "new-une-final",
     "title": {
       "zh": "新 UNE 最终决战",
-      "ja": "新UNE最終決戦"
+      "ja": "新UNE最終決戦",
+      "en": "New UNE Final Battle"
     },
     "eraId": "aw",
     "scale": "battle",
@@ -2281,18 +2609,21 @@
     ],
     "summary": {
       "zh": "A.W.15，新 UNE 与废土势力在 Fort Severn 周边决战，Double X 与 Airmaster 试图阻止强制统一。",
-      "ja": "A.W.15、新UNEと廃墟勢力がフォート・セバーン周辺で決戦し、ダブルXとエアマスターが強制統一を阻もうとする。"
+      "ja": "A.W.15、新UNEと廃墟勢力がフォート・セバーン周辺で決戦し、ダブルXとエアマスターが強制統一を阻もうとする。",
+      "en": "In A.W. 15, the New UNE and the wasteland forces fight a decisive battle around Fort Severn, and the Double X and Airmaster try to stop forced unification."
     },
     "outcome": {
       "zh": "新 UNE 的攻势被瓦解，废土暂时保住自治，但新的秩序仍未建立。",
-      "ja": "新UNEの攻勢は崩れ、廃墟は一時的に自治を保つが、新たな秩序はまだ築かれない。"
+      "ja": "新UNEの攻勢は崩れ、廃墟は一時的に自治を保つが、新たな秩序はまだ築かれない。",
+      "en": "The New UNE offensive is broken, the wasteland keeps its autonomy for the time being, but a new order is still not established."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动新世纪高达 X》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"After War Gundam X\""
       }
     ],
     "detail": {
@@ -2301,6 +2632,9 @@
       ],
       "ja": [
         "A.W.15、新UNEの強制統一部隊がフォート・セバーンへ進み、廃墟勢力が迎撃に集結した。ダブルXとエアマスターが統一攻勢を止め、新UNの攻勢は崩れる。廃土は一時的に自治を保つが、新しい秩序はまだない。"
+      ],
+      "en": [
+        "In A.W. 15, the New UNE force carrying out forced unification advances to Fort Severn, and the wasteland forces gather there to meet it. The Double X and Airmaster stop the unification offensive; the New UNE offensive is broken, the wasteland keeps its autonomy for the time being, but a new order is still not established."
       ]
     }
   },
@@ -2308,7 +2642,8 @@
     "id": "turn-x-duel",
     "title": {
       "zh": "Turn X 决战",
-      "ja": "ターンX決戦"
+      "ja": "ターンX決戦",
+      "en": "Turn X Duel"
     },
     "eraId": "cc",
     "scale": "battle",
@@ -2330,18 +2665,21 @@
     ],
     "summary": {
       "zh": "C.C.2345，Turn A 与 Turn X 在黑历史遗产上正面交战，月光蝶第一次被完整释放。",
-      "ja": "C.C.2345、ターンAとターンXが黒歴史の遺産上で激突し、月光蝶が初めて完全に解放される。"
+      "ja": "C.C.2345、ターンAとターンXが黒歴史の遺産上で激突し、月光蝶が初めて完全に解放される。",
+      "en": "C.C. 2345: two Dark History relics meet in a duel that lets the Moonlight Butterfly loose for the first time."
     },
     "outcome": {
       "zh": "战斗以 Turn X 被击破告终，黑历史的武器再次被埋入地下。",
-      "ja": "戦いはターンXの撃破で終わり、黒歴史の兵器は再び地下へ埋められる。"
+      "ja": "戦いはターンXの撃破で終わり、黒歴史の兵器は再び地下へ埋められる。",
+      "en": "The battle ends with the Turn X destroyed, and the weapons of the Dark History are buried underground again."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《∀高达》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Turn A Gundam\""
       }
     ],
     "detail": {
@@ -2352,6 +2690,10 @@
       "ja": [
         "ターンAとターンXが黒歴史の遺産の上で交戦し、月光蝶が初めて完全に展開された。ターンXは撃破され、黒歴史の兵器は再び地下へ埋められる。",
         "ターンXは月の「マウンテン・サイクル」から発掘された黒歴史の機体で、ギム・ギンガナムが駆る。ターンAはローラン・セアックが操縦する。全身を9つに分離して全方位攻撃を行い、背部のウェポンプラットフォーム「キャラパス」は複数の武器を組み合わせられる。月光蝶はナノマシンを散布して文明の産物を分解する最終兵器である。"
+      ],
+      "en": [
+        "The Turn A and Turn X fight over Dark History relics, and the Moonlight Butterfly is released in full for the first time. The Turn X is destroyed, and the weapons of the Dark History are buried underground again.",
+        "The Turn X is a Dark History machine excavated from the \"Mountain Cycle\" ruins on the lunar surface and is piloted by Gym Ghingham; the Turn A is piloted by Loran. The machine can separate into nine parts for all-direction attacks, and the back weapon platform \"Karapas\" can combine into various weapons. The Moonlight Butterfly is the final weapon that scatters nanomachines and breaks down the products of civilization."
       ]
     }
   },
@@ -2359,7 +2701,8 @@
     "id": "apocalypse-year-one",
     "title": {
       "zh": "A.A.元年",
-      "ja": "A.A.元年"
+      "ja": "A.A.元年",
+      "en": "A.A. Year One"
     },
     "eraId": "aa",
     "scale": "era",
@@ -2374,18 +2717,24 @@
     "characterIds": [],
     "summary": {
       "zh": "三项外来技术带来繁荣后暴走，Apocalypse 出现；人类在三个月攻防后放弃地球。",
-      "ja": "三つの外来技術が繁栄をもたらした後、アポカリプスが出現。三か月の攻防の末、人類は地球を放棄する。"
+      "ja": "三つの外来技術が繁栄をもたらした後、アポカリプスが出現。三か月の攻防の末、人類は地球を放棄する。",
+      "en": "Three alien technologies lift humanity, then slip its control. Within three months the Apocalypse forces the survivors off Earth."
     },
     "outcome": {
       "zh": "人类把这一年记为 A.A. 元年，地球圈进入月面/殖民地幸存时代。",
-      "ja": "人類はこの年をA.A.元年と記録し、地球圏は月面・コロニー生存の時代へ入る。"
+      "ja": "人類はこの年をA.A.元年と記録し、地球圏は月面・コロニー生存の時代へ入る。",
+      "en": "Humanity records the year as A.A. Year One, and the Earth Sphere enters an age of survivors on the Moon and in the colonies."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
-        "label": "官方《机动战士高达 RG XARX-ZERO》故事简介",
-        "level": "S"
+        "label": "GUNDAM Archive A.A. 原创纪元设定（非官方）",
+        "level": "C",
+        "url": "https://github.com/cxy2696/GUNDAM-archive",
+        "note": "原创设定，不对应任何官方动画、漫画或游戏。",
+        "noteEn": "Original setting. It does not correspond to any official anime, manga or game.",
+        "labelEn": "GUNDAM Archive A.A. original era setting (unofficial)"
       }
     ],
     "detail": {
@@ -2394,6 +2743,9 @@
       ],
       "ja": [
         "三つの外来技術が繁栄の後に暴走し、アポカリプスが出現。人類は三か月の攻防の末に地球を放棄し、この年をA.A.元年として月面とコロニーへ移る。"
+      ],
+      "en": [
+        "Three alien technologies bring prosperity and then run out of control. The Apocalypse appears, and humanity abandons Earth after three months of fighting. The year is recorded as A.A. Year One, and the survivors move to the lunar surface and the colonies."
       ]
     }
   },
@@ -2401,7 +2753,8 @@
     "id": "azumi-awakening",
     "title": {
       "zh": "阿兹米觉醒",
-      "ja": "アズミの覚醒"
+      "ja": "アズミの覚醒",
+      "en": "Azumi Awakening"
     },
     "eraId": "aa",
     "scale": "incident",
@@ -2420,18 +2773,24 @@
     ],
     "summary": {
       "zh": "A.A.45 年，阿兹米·雷在月面醒来，XARX-0 高达 ZERO 启动。",
-      "ja": "A.A.45年、アズミ・レイが月面で目覚め、XARX-0ガンダムZEROが起動する。"
+      "ja": "A.A.45年、アズミ・レイが月面で目覚め、XARX-0ガンダムZEROが起動する。",
+      "en": "In A.A. 45, Azumi Rei wakes on the lunar surface and the XARX-0 Gundam ZERO activates."
     },
     "outcome": {
       "zh": "少年与“被修订的高达”相遇，RG 计划由此开始。",
-      "ja": "少年と「改訂されたガンダム」の出会いにより、RG計画の経緯が始まる。"
+      "ja": "少年と「改訂されたガンダム」の出会いにより、RG計画の経緯が始まる。",
+      "en": "The boy meets the \"revised Gundam\", and the RG project begins."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
-        "label": "官方《机动战士高达 RG XARX-ZERO》故事简介",
-        "level": "S"
+        "label": "GUNDAM Archive A.A. 原创纪元设定（非官方）",
+        "level": "C",
+        "url": "https://github.com/cxy2696/GUNDAM-archive",
+        "note": "原创设定，不对应任何官方动画、漫画或游戏。",
+        "noteEn": "Original setting. It does not correspond to any official anime, manga or game.",
+        "labelEn": "GUNDAM Archive A.A. original era setting (unofficial)"
       }
     ],
     "detail": {
@@ -2440,6 +2799,9 @@
       ],
       "ja": [
         "アズミ・レイが月面で目覚め、XARX-0ガンダムZEROが起動した。彼の前に広がるのは繰り返し改訂された歴史であり、ガンダムの型式や記録も完全には信じられない。"
+      ],
+      "en": [
+        "Azumi Rei wakes on the lunar surface and the XARX-0 Gundam ZERO activates. He faces a history that has been revised again and again, where even the Gundam's model number and records are not fully trustworthy."
       ]
     }
   },
@@ -2447,7 +2809,8 @@
     "id": "rogue-orbit-contact",
     "title": {
       "zh": "异轨接触",
-      "ja": "ローグ・オービット接触"
+      "ja": "ローグ・オービット接触",
+      "en": "Rogue Orbit Contact"
     },
     "eraId": "aa",
     "scale": "battle",
@@ -2464,18 +2827,24 @@
     "characterIds": [],
     "summary": {
       "zh": "螺旋高达在废弃轨道执行任务时遭遇未知的自我增殖威胁，船员被迫在碎片带中突围。",
-      "ja": "螺旋ガンダムが放棄軌道で未知の自己増殖脅威と遭遇し、クルーはデブリ帯での突破を迫られる。"
+      "ja": "螺旋ガンダムが放棄軌道で未知の自己増殖脅威と遭遇し、クルーはデブリ帯での突破を迫られる。",
+      "en": "The Spiral Gundam meets an unknown self-replicating threat while on a mission in a derelict orbit, and the crew must break out through the debris belt."
     },
     "outcome": {
       "zh": "战斗让船员确认 Apocalypse 的威胁已扩散到轨道遗迹。",
-      "ja": "戦闘により、アポカリプスの脅威が軌道遺跡へ拡散していることが確認される。"
+      "ja": "戦闘により、アポカリプスの脅威が軌道遺跡へ拡散していることが確認される。",
+      "en": "The fight confirms to the crew that the Apocalypse threat has spread to the orbital ruins."
     },
     "canon": "parallel",
     "mainline": true,
     "sources": [
       {
-        "label": "游戏《GUNDAM 异轨征途》官方资料",
-        "level": "S"
+        "label": "GUNDAM Archive A.A. 原创纪元设定（非官方）",
+        "level": "C",
+        "url": "https://github.com/cxy2696/GUNDAM-archive",
+        "note": "原创设定，不对应任何官方动画、漫画或游戏。",
+        "noteEn": "Original setting. It does not correspond to any official anime, manga or game.",
+        "labelEn": "GUNDAM Archive A.A. original era setting (unofficial)"
       }
     ],
     "detail": {
@@ -2484,6 +2853,9 @@
       ],
       "ja": [
         "A.A.45、異軌船団は放棄軌道で旧文明の残骸を回収中、自己増殖する防衛プログラムに遭遇した。スパイラルガンダムがデブリ帯を突破し、アポカリプスが軌道遺跡へ拡散したことが確認される。"
+      ],
+      "en": [
+        "In A.A. 45, the Rogue Orbit flotilla is salvaging relics of the old civilization in a derelict orbit when it encounters a self-replicating defense program. The Spiral Gundam breaks out through the debris belt, and the fight confirms that the Apocalypse has spread to the orbital ruins."
       ]
     }
   },
@@ -2491,7 +2863,8 @@
     "id": "fifth-luna",
     "title": {
       "zh": "月神五号坠落",
-      "ja": "フィフス・ルナ落下"
+      "ja": "フィフス・ルナ落下",
+      "en": "Fifth Luna Drop"
     },
     "eraId": "uc",
     "scale": "incident",
@@ -2515,18 +2888,21 @@
     ],
     "summary": {
       "zh": "夏亚率新吉翁将小行星月神五号推向地球，隆德·贝尔舰队试图拦截。",
-      "ja": "シャア率いるネオ・ジオンが小惑星フィフス・ルナを地球へ落下させ、ロンド・ベル艦隊が迎撃した。"
+      "ja": "シャア率いるネオ・ジオンが小惑星フィフス・ルナを地球へ落下させ、ロンド・ベル艦隊が迎撃した。",
+      "en": "Char leads Neo Zeon in pushing the asteroid Fifth Luna toward Earth, and the Londo Bell fleet tries to intercept it."
     },
     "outcome": {
       "zh": "月神五号击中拉萨附近，城市与周边地区被毁；联邦未能阻止坠落，新吉翁的威胁升级。",
-      "ja": "フィフス・ルナはラサ付近へ落下し、都市と周辺地域を破壊した。連邦は落下を止められず、ネオ・ジオンの脅威が強まる。"
+      "ja": "フィフス・ルナはラサ付近へ落下し、都市と周辺地域を破壊した。連邦は落下を止められず、ネオ・ジオンの脅威が強まる。",
+      "en": "Fifth Luna hits near Lhasa, destroying the city and the surrounding area. The Federation fails to stop the fall and the Neo Zeon threat escalates."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "剧场版《机动战士高达 逆袭的夏亚》",
-        "level": "S"
+        "level": "S",
+        "labelEn": "Theatrical film \"Mobile Suit Gundam: Char's Counterattack\""
       }
     ],
     "detail": {
@@ -2537,6 +2913,10 @@
       "ja": [
         "シャアはU.C.0093年初、フィフス・ルナを地球落下軌道へ投入し、ネオ・ジオンの宣戦布告とした。ロンド・ベル艦隊は核弾頭とMSで小惑星の破壊を試みたが、軌道を完全には変えられない。",
         "フィフス・ルナはラサ付近へ落下し、多数の民間人が死亡した。連邦は落下を阻止できず、シャアは次の目標をアクシズへ移す。"
+      ],
+      "en": [
+        "At the start of U.C. 0093, Char pushes Fifth Luna onto a collision course with Earth as a signal of the declaration of war. The Londo Bell fleet tries to destroy the asteroid with nuclear weapons and mobile suits but cannot fully change its course.",
+        "Fifth Luna lands near Lhasa and kills many civilians. The Federation does not stop the fall, and Char then turns his target to Axis."
       ]
     }
   },
@@ -2544,7 +2924,8 @@
     "id": "break-the-world",
     "title": {
       "zh": "Break the World",
-      "ja": "ブレイク・ザ・ワールド"
+      "ja": "ブレイク・ザ・ワールド",
+      "en": "Break the World"
     },
     "eraId": "ce",
     "scale": "incident",
@@ -2567,18 +2948,21 @@
     ],
     "summary": {
       "zh": "扎夫特激进派将尤尼乌斯 7 的残骸推入地球轨道，试图制造新的灾难。",
-      "ja": "ザフト過激派がユニウス7の残骸を地球軌道へ投入し、新たな災厄を起こそうとした。"
+      "ja": "ザフト過激派がユニウス7の残骸を地球軌道へ投入し、新たな災厄を起こそうとした。",
+      "en": "ZAFT hardliners push the wreckage of Junius Seven onto a course toward Earth, trying to create a new disaster."
     },
     "outcome": {
       "zh": "残骸在大气层中解体，但碎片仍造成大规模伤亡；C.E.73 的战争由此重新爆发。",
-      "ja": "残骸は大気圏で分解したが、破片が大規模な被害をもたらした。C.E.73の戦争が再び始まる。"
+      "ja": "残骸は大気圏で分解したが、破片が大規模な被害をもたらした。C.E.73の戦争が再び始まる。",
+      "en": "The wreckage breaks apart in the atmosphere, but the fragments still cause mass casualties. War breaks out again in C.E. 73."
     },
     "canon": "mainline",
     "mainline": true,
     "sources": [
       {
         "label": "TV 动画《机动战士高达 SEED DESTINY》第 1—2 话",
-        "level": "S"
+        "level": "S",
+        "labelEn": "TV anime \"Mobile Suit Gundam SEED Destiny\" episodes 1–2"
       }
     ],
     "detail": {
@@ -2589,6 +2973,10 @@
       "ja": [
         "ユニウス7の残骸がザフト過激派によって地球落下軌道へ投入され、プラントと地球連合の停戦を破壊しようとした。",
         "ザフトと連合軍の双方が落下の阻止や利用を試みる。残骸は大気圏で分解したが、破片は大きな被害を出し、C.E.73の全面戦争が始まった。"
+      ],
+      "en": [
+        "The wreckage of Junius Seven is pushed onto a collision course with Earth by ZAFT hardliners, with the goal of completely breaking the ceasefire between PLANT and the Earth Alliance.",
+        "Both ZAFT and the Alliance try to stop or use the fall. The wreckage breaks apart in the atmosphere, but the fragments still cause huge casualties, and full-scale war breaks out in C.E. 73."
       ]
     }
   },
@@ -2596,7 +2984,8 @@
     "id": "battle-of-heliopolis",
     "title": {
       "zh": "海利欧波利斯攻防战",
-      "ja": "ヘリオポリス攻防戦"
+      "ja": "ヘリオポリス攻防戦",
+      "en": "Battle of Heliopolis"
     },
     "eraId": "ce",
     "scale": "battle",
@@ -2628,7 +3017,8 @@
     ],
     "summary": {
       "zh": "ZAFT 突袭奥布的资源殖民卫星，夺走五台 GAT-X 原型机；海利欧波利斯在战斗中解体，基拉与阿斯兰从此以敌我身份交锋。",
-      "ja": "ザフトがオーブの資源コロニーを急襲し、GAT-X五機を奪取。ヘリオポリスは戦闘で崩壊し、キラとアスランは敵味方として相対する。"
+      "ja": "ザフトがオーブの資源コロニーを急襲し、GAT-X五機を奪取。ヘリオポリスは戦闘で崩壊し、キラとアスランは敵味方として相対する。",
+      "en": "ZAFT raids Orb's resource colony and seizes five GAT-X prototypes. Heliopolis breaks apart in the fighting, and Kira and Athrun face each other as enemies from then on."
     },
     "detail": {
       "zh": [
@@ -2638,11 +3028,16 @@
       "ja": [
         "C.E.71.01.25、クルーゼ隊がヘリオポリスへ強襲登陆し、オーブのモルゲンレーテが連合と共同開発したGAT-X三機と二機の支援機を奪取した。コロニー内部の戦闘でマスドライバーと外壁が破損し、住民は避難を余儀なくされた。",
         "ストライクはキラの操作で起動し、連合軍とオーブの混成部隊が脱出する。アスランはイージスで追撃したが、コロニー崩壊までに決着はつかなかった。この遭遇が、その後の二人の敵対関係の始点となる。"
+      ],
+      "en": [
+        "On C.E. 71.01.25, the Le Creuset team lands in Heliopolis by surprise assault. Its targets are three GAT-X units and two medium-range support machines developed with the help of Orb's Morgenroete. Fighting inside the colony triggers the mass driver and breaches the outer wall, and residents are forced to evacuate.",
+        "The Strike Gundam activates under Kira's control, and the joint Alliance and Orb force then withdraws. Athrun pursues in the Aegis, but neither side achieves a decisive result before the colony breaks apart. The encounter becomes the start of several years of hostility between the two."
       ]
     },
     "outcome": {
       "zh": "海利欧波利斯毁灭；强袭与 Archangel 脱出，ZAFT 获得四台 GAT-X。",
-      "ja": "ヘリオポリスは崩壊。ストライクとアークエンジェルは脱出し、ザフトはGAT-X四機を確保した。"
+      "ja": "ヘリオポリスは崩壊。ストライクとアークエンジェルは脱出し、ザフトはGAT-X四機を確保した。",
+      "en": "Heliopolis is destroyed. The Strike and the Archangel escape, and ZAFT captures four GAT-X units."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2663,7 +3058,8 @@
     "id": "operation-spitbreak",
     "title": {
       "zh": "断矛作战",
-      "ja": "スピットブレイク作戦"
+      "ja": "スピットブレイク作戦",
+      "en": "Operation Spitbreak"
     },
     "eraId": "ce",
     "scale": "battle",
@@ -2684,7 +3080,8 @@
     ],
     "summary": {
       "zh": "ZAFT 对阿拉斯加 JOSH-A 发动大规模降下作战，却落入联合的诱饵计划；基地自毁，双方损失惨重。",
-      "ja": "ザフトがアラスカのJOSH-Aへ大規模降下作戦を敢行するが、連合の囮計画に嵌まり、基地の自爆で双方が大損害を受けた。"
+      "ja": "ザフトがアラスカのJOSH-Aへ大規模降下作戦を敢行するが、連合の囮計画に嵌まり、基地の自爆で双方が大損害を受けた。",
+      "en": "ZAFT launches a large-scale descent operation against JOSH-A in Alaska but falls into the Alliance's decoy plan. The base self-destructs, and both sides suffer heavy losses."
     },
     "detail": {
       "zh": [
@@ -2694,11 +3091,16 @@
       "ja": [
         "ザフトは地上部隊とMSを集結し、連合軍総司令部JOSH-Aの一撃破を狙った。連合は基地地下にサイクロプス・システムを設置し、守備隊と施設の一部を意図的に残してザフト主力を爆発範囲へ引き込んだ。",
         "アークエンジェルは最終段階で離脱し、キラとマリューは基地の自爆を見送るしかなかった。この戦闘でザフトの地上戦力は大きく消耗し、連合は戦争の重心を宇宙と軌道へ移す。"
+      ],
+      "en": [
+        "ZAFT gathers ground troops and mobile suits to destroy the Alliance headquarters JOSH-A in one blow. The Alliance installs the Cyclops system under the base and deliberately leaves some defenders and facilities in place to draw the ZAFT main force into the blast radius.",
+        "The Archangel leaves in the final stage, and Kira and Murrue can only watch the base self-destruct. After this battle, ZAFT's ground forces are sharply reduced, and the Alliance shifts the war's center of gravity to space and orbit."
       ]
     },
     "outcome": {
       "zh": "JOSH-A 自毁；ZAFT 地面战力受挫，联合把主战场推向宇宙。",
-      "ja": "JOSH-Aは自爆。ザフトの地上戦力は打撃を受け、連合は主戦場を宇宙へ移した。"
+      "ja": "JOSH-Aは自爆。ザフトの地上戦力は打撃を受け、連合は主戦場を宇宙へ移した。",
+      "en": "JOSH-A self-destructs. ZAFT's ground forces are hurt, and the Alliance shifts the main theater to space."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2719,7 +3121,8 @@
     "id": "battle-of-messiah",
     "title": {
       "zh": "弥赛亚攻防战",
-      "ja": "メサイア攻防戦"
+      "ja": "メサイア攻防戦",
+      "en": "Battle of Messiah"
     },
     "eraId": "ce",
     "scale": "battle",
@@ -2748,7 +3151,8 @@
     ],
     "summary": {
       "zh": "ZAFT 以弥赛亚要塞迎击联合与终端机，命运、传说与强袭自由在 L5 决战；杜兰达尔在要塞内被雷射杀。",
-      "ja": "ザフトはメサイア要塞で連合とターミナルを迎え、デスティニー、レジェンド、ストライクフリーダムがL5で激突。デュランダルは要塞内でレイに撃たれた。"
+      "ja": "ザフトはメサイア要塞で連合とターミナルを迎え、デスティニー、レジェンド、ストライクフリーダムがL5で激突。デュランダルは要塞内でレイに撃たれた。",
+      "en": "ZAFT meets the Alliance and Terminal with the Messiah fortress, and the Destiny, Legend and Strike Freedom fight a decisive battle at L5. Durandal is shot inside the fortress by Rey."
     },
     "detail": {
       "zh": [
@@ -2758,11 +3162,16 @@
       "ja": [
         "メサイアはザフトがL5に築いた最終防衛線で、陽電子砲と多数のMSを備えていた。ターミナルとオーブ艦隊が外側から突入し、ストライクフリーダム、インフィニットジャスティスとデスティニー、レジェンドが要塞周辺で交戦する。",
         "ギルバート・デュランダルは要塞内でデスティニープランを公表し、レイ・ザ・バレルは最後に反旗を翻して彼を撃った。要塞陥落後、プラント臨時評議会は停戦を宣言し、C.E.の第二次大戦は終結する。"
+      ],
+      "en": [
+        "Messiah is the final defense line ZAFT builds at L5, equipped with positron cannons and many mobile suits. Terminal and the Orb fleet break in from outside, and the Strike Freedom, Infinite Justice, Destiny and Legend fight a melee around the fortress.",
+        "Gilbert Durandal publicly presents the Destiny Plan inside the fortress, and Rey Za Burrel chooses to resist at the last moment and shoots him. After the fortress falls, PLANT's provisional council announces a ceasefire, and the second C.E. war ends."
       ]
     },
     "outcome": {
       "zh": "弥赛亚陷落，杜兰达尔死亡，PLANT 宣布停战。",
-      "ja": "メサイアは陥落し、デュランダルは死亡。プラントは停戦を宣言した。"
+      "ja": "メサイアは陥落し、デュランダルは死亡。プラントは停戦を宣言した。",
+      "en": "Messiah falls, Durandal dies, and PLANT announces a ceasefire."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2783,7 +3192,8 @@
     "id": "operation-gundam-capture",
     "title": {
       "zh": "高达捕获作战",
-      "ja": "ガンダム捕獲作戦"
+      "ja": "ガンダム捕獲作戦",
+      "en": "Gundam Capture Operation"
     },
     "eraId": "ad",
     "scale": "battle",
@@ -2811,7 +3221,8 @@
     ],
     "summary": {
       "zh": "三大阵营首次联合，以优势兵力围捕天人四机；GN 粒子与单机性能差距让包围网被逐一突破。",
-      "ja": "三陣営が初めて連合し、物量でソレスタルビーイングの四機を包囲。GN粒子と単機性能の差により、包囲網は各個突破された。"
+      "ja": "三陣営が初めて連合し、物量でソレスタルビーイングの四機を包囲。GN粒子と単機性能の差により、包囲網は各個突破された。",
+      "en": "The three major blocs unite for the first time and surround Celestial Being's four Gundams with superior numbers; GN particles and the performance gap let the encirclement be broken piece by piece."
     },
     "detail": {
       "zh": [
@@ -2821,11 +3232,16 @@
       "ja": [
         "ユニオン、AEU、人革連は軌道と大気圏内に多層の迎撃網を敷き、通常MSの物量でソレスタルビーイングを拘束しようとした。四機のガンダムは分散行動し、GNドライブと光学迷彩で追撃を振り切る。",
         "戦闘後、三陣営は現有MSではGN粒子兵器に正面から対抗できないと判断し、太陽炉技術の獲得を急いだ。この失敗がGN-X計画と後の国連軍編成を加速させる。"
+      ],
+      "en": [
+        "The Union, AEU and Human Reform League set up multiple interception layers in orbit and inside the atmosphere, trying to hold Celestial Being back with the numerical superiority of conventional mobile suits. The four Gundams act separately and escape pursuit with GN Drives and optical camouflage.",
+        "After the battle, the three major blocs conclude that existing mobile suits cannot face GN particle weapons head-on and decide to speed up acquisition of solar reactor technology. This failure directly drives the GN-X plan and the later formation of the UN forces."
       ]
     },
     "outcome": {
       "zh": "捕获失败；三大阵营转向 GN-X 开发。",
-      "ja": "捕獲は失敗し、三陣営はGN-Xの開発へ舵を切った。"
+      "ja": "捕獲は失敗し、三陣営はGN-Xの開発へ舵を切った。",
+      "en": "The capture fails; the three major blocs turn to GN-X development."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2846,7 +3262,8 @@
     "id": "operation-fallen-angels",
     "title": {
       "zh": "天使陨落作战",
-      "ja": "堕ちた天使作戦"
+      "ja": "堕ちた天使作戦",
+      "en": "Operation Fallen Angels"
     },
     "eraId": "ad",
     "scale": "battle",
@@ -2874,7 +3291,8 @@
     ],
     "summary": {
       "zh": "联合国军以三十机 GN-X 围攻天人，托勒密与四机在 L1 附近被击溃；洛克昂战死，天人转入地下。",
-      "ja": "国連軍はGN-X三十機でソレスタルビーイングを包囲し、プトレマイオスと四機をL1付近で撃破。ロックオンが戦死し、組織は地下へ潜った。"
+      "ja": "国連軍はGN-X三十機でソレスタルビーイングを包囲し、プトレマイオスと四機をL1付近で撃破。ロックオンが戦死し、組織は地下へ潜った。",
+      "en": "UN forces surround Celestial Being with thirty GN-X units, and the Ptolemaios and four Gundams are defeated near L1. Lockon dies, and Celestial Being goes underground."
     },
     "detail": {
       "zh": [
@@ -2884,11 +3302,16 @@
       "ja": [
         "国連軍はGN-X三十機を複数の小隊に編成し、GN粒子の探知網でプトレマイオスを追い詰めた。ヴァーチェの審判システムが切断され、四機は個別に突破するしかなかった。",
         "ロックオンは味方を掩護するためアリー・アル・サーシェスと交戦し、デュナメスは大破、本人も戦死する。プトレマイオスはティエリアと刹那の掩護で離脱し、ソレスタルビーイングの公開武力介入は終幕を迎えた。"
+      ],
+      "en": [
+        "The UN forces form thirty GN-X units into several teams and lock onto the Ptolemaios with a GN particle detection net. After the Virtue's Trial System is cut off by the enemy, the four Gundams can only break out separately.",
+        "Lockon fights Ali al-Saachez to cover his comrades; the Dynames is severely damaged and he is killed. The Ptolemaios escapes under cover from Tieria and Setsuna, and Celestial Being's phase of open armed intervention ends."
       ]
     },
     "outcome": {
       "zh": "托勒密脱出；洛克昂死亡，天人转入隐蔽活动。",
-      "ja": "プトレマイオスは脱出。ロックオンは戦死し、組織は潜伏活動へ移る。"
+      "ja": "プトレマイオスは脱出。ロックオンは戦死し、組織は潜伏活動へ移る。",
+      "en": "The Ptolemaios escapes; Lockon dies, and Celestial Being moves to covert operations."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2909,7 +3332,8 @@
     "id": "dort-uprising",
     "title": {
       "zh": "多特殖民地暴动",
-      "ja": "ドルト・コロニー蜂起"
+      "ja": "ドルト・コロニー蜂起",
+      "en": "Dort Uprising"
     },
     "eraId": "pd",
     "scale": "battle",
@@ -2933,7 +3357,8 @@
     ],
     "summary": {
       "zh": "铁华团护送库德莉亚前往地球，途中在多特殖民地遭遇劳工暴动与加拉尔霍恩镇压；巴巴托斯首次介入殖民地内乱。",
-      "ja": "鉄華団はクーデリアを地球へ護送する途中、ドルト・コロニーで労働者暴動とギャラルホルンの鎮圧に遭遇。バルバトスが初めてコロニー内乱へ介入した。"
+      "ja": "鉄華団はクーデリアを地球へ護送する途中、ドルト・コロニーで労働者暴動とギャラルホルンの鎮圧に遭遇。バルバトスが初めてコロニー内乱へ介入した。",
+      "en": "Tekkadan escorts Kudelia to Earth and encounters a labor riot and Gjallarhorn crackdown at the Dort colony on the way; the Barbatos intervenes in a colonial uprising for the first time."
     },
     "detail": {
       "zh": [
@@ -2943,11 +3368,16 @@
       "ja": [
         "ドルト社が運営する工業コロニーでは長く賃金が抑えられ、労働者が港を封鎖して待遇改善を求めた。ギャラルホルンは秩序維持の名目でコロニーへ入り、暴動側と武力衝突する。",
         "鉄華団はクーデリアの護送を請け負い、三日月がバルバトスで港区のギャラルホルンMS小隊を退けた。この事件でクーデリアは地球圏の経済構造を直視し、鉄華団とギャラルホルンの敵対は公然化する。"
+      ],
+      "en": [
+        "The industrial colony run by the Dort Company has long kept wages low, and workers blockade the port and demand better treatment. Gjallarhorn enters the colony in the name of maintaining order and clashes with the rioters.",
+        "Tekkadan is hired to escort Kudelia, and Mikazuki drives the Barbatos to repel a Gjallarhorn mobile suit team in the port district. The incident shows Kudelia the economic structure of the Earth Sphere and brings the hostility between Tekkadan and Gjallarhorn into the open."
       ]
     },
     "outcome": {
       "zh": "铁华团护送库德莉亚离开多特；殖民地劳资矛盾公开化。",
-      "ja": "鉄華団はクーデリアを伴ってドルトを離脱。コロニーの労使対立は表面化した。"
+      "ja": "鉄華団はクーデリアを伴ってドルトを離脱。コロニーの労使対立は表面化した。",
+      "en": "Tekkadan escorts Kudelia out of Dort; the colony's labor dispute becomes public."
     },
     "canon": "mainline",
     "mainline": true,
@@ -2968,7 +3398,8 @@
     "id": "battle-of-vingolf",
     "title": {
       "zh": "维恩戈尔夫决战",
-      "ja": "ヴィーンゴールヴ決戦"
+      "ja": "ヴィーンゴールヴ決戦",
+      "en": "Battle of Vingolf"
     },
     "eraId": "pd",
     "scale": "battle",
@@ -2994,7 +3425,8 @@
     ],
     "summary": {
       "zh": "麦吉利斯夺取巴耶力后进攻加拉尔霍恩总部，与盖里奥的 Kimaris Vidar 决战；铁华团在地面掩护，双方指挥层几乎全灭。",
-      "ja": "マクギリスはバエルを奪ってギャラルホルン本部を攻撃し、ガエリオのキマリス・ヴィダルと決戦。鉄華団は地上で掩護し、双方の指揮層が壊滅した。"
+      "ja": "マクギリスはバエルを奪ってギャラルホルン本部を攻撃し、ガエリオのキマリス・ヴィダルと決戦。鉄華団は地上で掩護し、双方の指揮層が壊滅した。",
+      "en": "After seizing Bael, McGillis attacks Gjallarhorn headquarters and fights Gaelio's Kimaris Vidar. Tekkadan covers him on the ground, and the command level of both sides is almost wiped out."
     },
     "detail": {
       "zh": [
@@ -3004,11 +3436,16 @@
       "ja": [
         "マクギリスはバエルを「初代ガンダム」の権威として掲げ全军へ呼びかけたが、応じる者は少なかった。少数でヴィーンゴールヴへ突入し、ガエリオのキマリス・ヴィダルと本部沖で決闘する。",
         "鉄華団はヴィーンゴールヴ周辺でギャラルホルン艦隊と交戦し、オルガは離脱中に銃撃されて死亡する。マクギリスは敗死し、ガエリオが七星家の再建を担う。鉄華団の独立路線はここで終わる。"
+      ],
+      "en": [
+        "McGillis calls on the whole army with the authority of Bael as the \"first Gundam\", but few answer. He breaks into Vingolf with a small force, Gaelio meets him in the Kimaris Vidar, and the two machines duel off the coast of the headquarters.",
+        "Tekkadan fights the Gjallarhorn fleet around Vingolf, and Orga is shot during the withdrawal. McGillis is defeated and dies, Gaelio takes over the rebuilding of the Seven Stars families, and Tekkadan's independent path ends."
       ]
     },
     "outcome": {
       "zh": "麦吉利斯与奥尔加死亡；加拉尔霍恩由盖里奥主导重建。",
-      "ja": "マクギリスとオルガが死亡。ギャラルホルンはガエリオ主導で再建へ向かう。"
+      "ja": "マクギリスとオルガが死亡。ギャラルホルンはガエリオ主導で再建へ向かう。",
+      "en": "McGillis and Orga die; Gjallarhorn is rebuilt under Gaelio's leadership."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3029,7 +3466,8 @@
     "id": "hashmal-awakening",
     "title": {
       "zh": "哈什马尔觉醒",
-      "ja": "ハシュマル覚醒"
+      "ja": "ハシュマル覚醒",
+      "en": "Hashmal Awakening"
     },
     "eraId": "pd",
     "scale": "incident",
@@ -3050,7 +3488,8 @@
     ],
     "summary": {
       "zh": "厄祭战的机动装甲哈什马尔在火星沙漠中重启，铁华团与加拉尔霍恩被迫联手；巴巴托斯狼王以近战将其击破。",
-      "ja": "厄祭戦のモビルアーマー、ハシュマルが火星砂漠で再起動。鉄華団とギャラルホルンは共闘を余儀なくされ、バルバトス・ルプス・レクスが近接戦で撃破した。"
+      "ja": "厄祭戦のモビルアーマー、ハシュマルが火星砂漠で再起動。鉄華団とギャラルホルンは共闘を余儀なくされ、バルバトス・ルプス・レクスが近接戦で撃破した。",
+      "en": "Hashmal, a mobile armor from the Calamity War, restarts in the Martian desert, and Tekkadan and Gjallarhorn are forced to join forces; the Barbatos Lupus Rex destroys it in close combat."
     },
     "detail": {
       "zh": [
@@ -3060,11 +3499,16 @@
       "ja": [
         "ハシュマルは厄祭戦の遺物である無人モビルアーマーで、エイハブ・リアクターと自己修復能力によって活動を続ける。周囲のMSとコロニー施設を敵と認識し、火星地表で破壊を広げ始めた。",
         "鉄華団とギャラルホルンは臨時停戦し、三日月のバルバトス・ルプス・レクスが大型槌で近接压制、昭弘の機動工兵が補給線を断つ。ハシュマル撃破後、厄祭戦遺物の危険性が再び議題となる。"
+      ],
+      "en": [
+        "Hashmal is an unmanned mobile armor left from the Calamity War and keeps operating on an Ahab reactor and self-repair capability. It identifies nearby mobile suits and colonial facilities as hostile targets and begins to widen its destruction across the Martian surface.",
+        "Tekkadan and Gjallarhorn agree to a temporary ceasefire. Mikazuki drives the Barbatos Lupus Rex to pin Hashmal down at close range with a large mace, and Akihiro's mobile worker cuts off its supply. After Hashmal is destroyed, the risk of weapons left from the Calamity War is put back on the agenda."
       ]
     },
     "outcome": {
       "zh": "哈什马尔被击破；厄祭战遗留兵器的管理问题被重新讨论。",
-      "ja": "ハシュマルは撃破され、厄祭戦遺物の管理が再び議論された。"
+      "ja": "ハシュマルは撃破され、厄祭戦遺物の管理が再び議論された。",
+      "en": "Hashmal is destroyed; the problem of managing weapons left over from the Calamity War is discussed again."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3085,7 +3529,8 @@
     "id": "quinharbor-incident",
     "title": {
       "zh": "昆港袭击",
-      "ja": "クイン・ハーバー襲撃"
+      "ja": "クイン・ハーバー襲撃",
+      "en": "Quinharbor Incident"
     },
     "eraId": "as",
     "scale": "incident",
@@ -3109,7 +3554,8 @@
     ],
     "summary": {
       "zh": "贝纳里特使节在昆港遇袭，斯莱塔驾驶风灵介入并击毁黎明战线的 MS；米奥莉奈因此被推上集团总裁之位。",
-      "ja": "ベネリットの使節がクイン・ハーバーで襲撃され、スレッタがエアリアルで介入してドーン・オブ・フォールドのMSを撃破。ミオリネがグループ総裁へ押し上げられた。"
+      "ja": "ベネリットの使節がクイン・ハーバーで襲撃され、スレッタがエアリアルで介入してドーン・オブ・フォールドのMSを撃破。ミオリネがグループ総裁へ押し上げられた。",
+      "en": "A Benerit Group envoy is attacked at Quinharbor, and Suletta intervenes in the Aerial and destroys Dawn of Fold mobile suits; Miorine is pushed into the group presidency as a result."
     },
     "detail": {
       "zh": [
@@ -3119,11 +3565,16 @@
       "ja": [
         "ベネリットグループがクイン・ハーバーで地球側企業と交渉中、ドーン・オブ・フォールドが奇襲をかけた。ミオリネは交戦に巻き込まれ、スレッタのエアリアルが駆けつけ、GUND-BITで敵MS数機を撃破する。",
         "使節団に多数の死傷者が出ると、グループ内部は責任をミオリネへ押し付け、総裁就任と地球側の沈静化を求めた。スレッタの介入は「英雄的な救出」として報道されるが、彼女自身も各方の注目を集める。"
+      ],
+      "en": [
+        "While the Benerit Group negotiates with Earth-side companies at Quinharbor, Dawn of Fold launches a surprise attack. Miorine is caught in the crossfire, and Suletta arrives in the Gundam Aerial and destroys several enemy mobile suits with GUND-BITs.",
+        "The incident causes heavy casualties among the envoy delegation, and inside the group, responsibility is pushed onto Miorine, demanding that she take the presidency and handle Earth-side public opinion. Suletta's intervention is packaged as a \"heroic rescue\", but it also makes her a target of attention from every side."
       ]
     },
     "outcome": {
       "zh": "使节团伤亡；米奥莉奈接任总裁，斯莱塔成为焦点。",
-      "ja": "使節団に死傷者。ミオリネは総裁に就任し、スレッタは注目の的となる。"
+      "ja": "使節団に死傷者。ミオリネは総裁に就任し、スレッタは注目の的となる。",
+      "en": "The envoy delegation suffers heavy casualties; Miorine becomes president and Suletta becomes a focus of attention."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3144,7 +3595,8 @@
     "id": "battle-of-asticassia",
     "title": {
       "zh": "阿斯提卡西亚决战",
-      "ja": "アスティカシア決戦"
+      "ja": "アスティカシア決戦",
+      "en": "Battle of Asticassia"
     },
     "eraId": "as",
     "scale": "battle",
@@ -3172,7 +3624,8 @@
     ],
     "summary": {
       "zh": "寂静零号启动后，阿斯提卡西亚与前线 73 区成为战场；斯莱塔驾驶卡利班与风灵改修型对决，米奥莉奈关闭寂静零号。",
-      "ja": "クワイエット・ゼロ起動後、アスティカシアとフロント73区が戦場となる。スレッタはキャリバーンでエアリアル改修型と対決し、ミオリネがクワイエット・ゼロを停止させた。"
+      "ja": "クワイエット・ゼロ起動後、アスティカシアとフロント73区が戦場となる。スレッタはキャリバーンでエアリアル改修型と対決し、ミオリネがクワイエット・ゼロを停止させた。",
+      "en": "After Quiet Zero activates, Asticassia and Front 73 become battlefields; Suletta fights the Aerial Rebuild in the Calibarn, and Miorine shuts Quiet Zero down."
     },
     "detail": {
       "zh": [
@@ -3182,11 +3635,16 @@
       "ja": [
         "クワイエット・ゼロはパーメット網でフロントを覆い、データストームを地球圏全体へ広げようとした。ミオリネは地球側勢力と組み、内部から制御権を切断。スレッタはキャリバーンで再起動したエアリアル改修型を迎え撃つ。",
         "エリクトとエアリアルの意識はデータストームの中でスレッタと対峙し、最後に未来を彼女へ委ねる。クワイエット・ゼロ停止後、ベネリットグループは解体し、フロントと地球の交渉が廃墟の上で再開された。"
+      ],
+      "en": [
+        "Quiet Zero covers the Front with the Permet network, trying to spread the data storm across the entire Earth Sphere. Miorine works with Earth-side forces to cut the control authority from inside; Suletta meets the reactivated Aerial Rebuild in the Calibarn.",
+        "Ericht and the Aerial's consciousness confront Suletta in the data storm and finally choose to give the future back to her. After Quiet Zero stops, the Benerit Group dissolves, and negotiations between the Front and Earth begin again on the ruins."
       ]
     },
     "outcome": {
       "zh": "寂静零号停止；贝纳里特解体，前线与地球重启谈判。",
-      "ja": "クワイエット・ゼロは停止。ベネリットは解体し、フロントと地球の交渉が再開された。"
+      "ja": "クワイエット・ゼロは停止。ベネリットは解体し、フロントと地球の交渉が再開された。",
+      "en": "Quiet Zero stops; Benerit dissolves, and the Front and Earth restart negotiations."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3207,7 +3665,8 @@
     "id": "battle-of-libra",
     "title": {
       "zh": "天秤座攻防战",
-      "ja": "リーブラ攻防戦"
+      "ja": "リーブラ攻防戦",
+      "en": "Battle of Libra"
     },
     "eraId": "ac",
     "scale": "battle",
@@ -3230,7 +3689,8 @@
     ],
     "summary": {
       "zh": "白色芬古把天秤座投向地球，OZ 与高达机师在轨道上决战；希罗与泽克斯以零式系统对决，天秤座最终被破坏。",
-      "ja": "ホワイトファングはリーブラを地球へ投向し、OZとガンダムパイロットが軌道上で決戦。ヒイロとゼクスがゼロシステムで対決し、リーブラは破壊された。"
+      "ja": "ホワイトファングはリーブラを地球へ投向し、OZとガンダムパイロットが軌道上で決戦。ヒイロとゼクスがゼロシステムで対決し、リーブラは破壊された。",
+      "en": "White Fang drops Libra on Earth, and OZ and the Gundam pilots fight a decisive battle in orbit; Heero and Zechs duel with the Zero System, and Libra is finally destroyed."
     },
     "detail": {
       "zh": [
@@ -3240,11 +3700,16 @@
       "ja": [
         "リーブラはホワイトファングがOZから奪ったコロニー要塞で、大型ビーム砲と数十機のモビルドールを備えていた。ゼクスはミリアルド・ピースクラフトの名で要塞を掌握し、その質量を地球へ落とそうとする。",
         "ヒイロのウイングゼロが要塞内部へ突入し、エピオンを駆るゼクスとゼロシステムを介して対決する。主砲が破壊されるとリーブラは軌道上で分解し、先に命を落としたトレーズとともにOZの旧秩序も崩れた。"
+      ],
+      "en": [
+        "Libra is a colony fortress White Fang took from OZ, armed with a large beam cannon and dozens of mobile dolls. Zechs holds the fortress under the name Milliardo Peacecraft and plans to drop its mass on Earth.",
+        "Heero breaks into the fortress in the Wing Zero and duels Zechs in the Epyon with the Zero System. After the main cannon is destroyed, Libra breaks apart in orbit; Treize died in an earlier duel, and OZ's old order collapses with him."
       ]
     },
     "outcome": {
       "zh": "天秤座解体；地球圈进入新的权力重组。",
-      "ja": "リーブラは分解し、地球圏は新たな権力再編へ入る。"
+      "ja": "リーブラは分解し、地球圏は新たな権力再編へ入る。",
+      "en": "Libra breaks apart; the Earth Sphere enters a new power reorganization."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3265,7 +3730,8 @@
     "id": "sanc-kingdom-crisis",
     "title": {
       "zh": "桑克王国危机",
-      "ja": "サンクキングダム危機"
+      "ja": "サンクキングダム危機",
+      "en": "Sanc Kingdom Crisis"
     },
     "eraId": "ac",
     "scale": "incident",
@@ -3285,7 +3751,8 @@
     ],
     "summary": {
       "zh": "OZ 以军事压力迫使桑克王国放弃中立，莉莉娜流亡；泽克斯以米利亚尔特之名接管王国，随后把它交给白色芬古。",
-      "ja": "OZは軍事圧力でサンクキングダムの中立を放棄させ、リリーナは亡命。ゼクスがミリアルド名義で王国を掌握し、後にホワイトファングへ引き渡した。"
+      "ja": "OZは軍事圧力でサンクキングダムの中立を放棄させ、リリーナは亡命。ゼクスがミリアルド名義で王国を掌握し、後にホワイトファングへ引き渡した。",
+      "en": "OZ uses military pressure to force the Sanc Kingdom to abandon neutrality, and Relena goes into exile; Zechs takes over the kingdom under the name Milliardo and later hands it to White Fang."
     },
     "detail": {
       "zh": [
@@ -3295,11 +3762,16 @@
       "ja": [
         "サンクキングダムは地球圏で数少ない完全平和主義の中立国だった。OZは「防衛協力」の名目で駐留し、港と議会を実質支配してリリーナに軍事協力を迫る。",
         "ゼクスは王国危機で正体を明かし、ミリアルド・ピースクラフトの名でサンクを掌握してOZへの対抗拠点に変えた。亡命後のリリーナは平和演説を続け、サンクの象徴性はかえって強まる。"
+      ],
+      "en": [
+        "The Sanc Kingdom is one of the few neutral states in the Earth Sphere that holds to complete pacifism. OZ moves in under the name of \"assistance in defense\", effectively controls its port and parliament, and forces Relena to accept military cooperation.",
+        "Zechs reveals his identity during the kingdom's crisis, takes over Sanc under the name Milliardo Peacecraft and turns it into a base against OZ. After going into exile, Relena continues to win support with peace speeches, and Sanc's symbolic importance only grows."
       ]
     },
     "outcome": {
       "zh": "桑克被 OZ 控制，莉莉娜流亡；泽克斯接管王国。",
-      "ja": "サンクはOZに制圧され、リリーナは亡命。ゼクスが王国を掌握した。"
+      "ja": "サンクはOZに制圧され、リリーナは亡命。ゼクスが王国を掌握した。",
+      "en": "Sanc comes under OZ control and Relena goes into exile; Zechs takes over the kingdom."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3320,7 +3792,8 @@
     "id": "cloud-nine-uprising",
     "title": {
       "zh": "云九攻防战",
-      "ja": "クラウド9攻防戦"
+      "ja": "クラウド9攻防戦",
+      "en": "Cloud Nine Uprising"
     },
     "eraId": "aw",
     "scale": "battle",
@@ -3344,7 +3817,8 @@
     ],
     "summary": {
       "zh": "宇宙革命军以云九为本土向地球发动最后攻势，加罗德与 Double X 在卫星加农炮支援下迎击；新联邦与秃鹫暂时结盟。",
-      "ja": "宇宙革命軍はクラウド9を本土として地球へ最終攻勢をかけ、ガロードのダブルエックスがサテライトキャノンの支援で迎撃。新連邦とバルチャーは一時同盟した。"
+      "ja": "宇宙革命軍はクラウド9を本土として地球へ最終攻勢をかけ、ガロードのダブルエックスがサテライトキャノンの支援で迎撃。新連邦とバルチャーは一時同盟した。",
+      "en": "The Space Revolutionary Army uses Cloud Nine as its home base for a final offensive against Earth, and Garrod and the Double X meet it with support from the satellite cannon; the New Federation and the Vultures ally for the time being."
     },
     "detail": {
       "zh": [
@@ -3354,11 +3828,16 @@
       "ja": [
         "クラウド9はL3に位置する宇宙革命軍の国家中枢である。革命軍はコロニー落下とMS降下で新連邦を牽制しつつ、月面のD.O.M.E.マイクロ波送電施設の奪取を狙った。",
         "ガロードとティファはバルチャーの協力でクラウド9外周へ突入し、ダブルエックスのサテライトキャノンがコロニー外壁を貫く。革命軍の地球降下部隊は補給断で撤退し、新連邦は戦力を月面へ集中できた。"
+      ],
+      "en": [
+        "Cloud Nine is located at L3 and is the surviving state center of the Space Revolutionary Army. The revolutionary army uses colony drops and mobile suit descents to pin down the New Federation while trying to seize the D.O.M.E. microwave power transmission facility on the lunar surface.",
+        "Garrod and Tiffa break into the outer perimeter of Cloud Nine with support from the Vultures, and the Double X's satellite cannon pierces the colony's outer wall. The revolutionary army's Earth descent force withdraws because its supply is cut, and the New Federation can concentrate its forces on the lunar surface."
       ]
     },
     "outcome": {
       "zh": "革命军降下部队撤退；战局转向月面 D.O.M.E.。",
-      "ja": "革命軍の降下部隊は撤退し、戦局は月面D.O.M.E.へ移る。"
+      "ja": "革命軍の降下部隊は撤退し、戦局は月面D.O.M.E.へ移る。",
+      "en": "The revolutionary army's descent force withdraws; the war shifts to D.O.M.E. on the lunar surface."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3379,7 +3858,8 @@
     "id": "dianna-counter-landing",
     "title": {
       "zh": "迪安娜反击队降下",
-      "ja": "ディアナ・カウンター降下"
+      "ja": "ディアナ・カウンター降下",
+      "en": "Dianna Counter Landing"
     },
     "eraId": "cc",
     "scale": "battle",
@@ -3402,7 +3882,8 @@
     ],
     "summary": {
       "zh": "月之民的迪安娜反击队降下北美，因格莱萨与卢贾纳的领地战争被卷入；罗兰驾驶 Turn A 阻止双方扩大冲突。",
-      "ja": "ムーンレィスのディアナ・カウンターが北米へ降下し、イングレッサとルジアーナの領地戦争に巻き込まれる。ロランはターンAで衝突の拡大を食い止めた。"
+      "ja": "ムーンレィスのディアナ・カウンターが北米へ降下し、イングレッサとルジアーナの領地戦争に巻き込まれる。ロランはターンAで衝突の拡大を食い止めた。",
+      "en": "The Moonrace's Dianna Counter lands in North America and is drawn into the territorial war between Inglessa and Lousana; Loran pilots the Turn A to stop both sides from widening the conflict."
     },
     "detail": {
       "zh": [
@@ -3412,11 +3893,16 @@
       "ja": [
         "ディアナ・カウンターはノックス付近に橋頭堡を築き、地球側へ土地と資源の譲渡を要求した。イングレッサとルジアーナの民兵はそれぞれ状況を判断し、局地衝突が急速に広がる。",
         "ロランはムーンレィスの潜入員としてターンAで介入し、双方のMSを退けつつ致命的な破壊を避けた。その後、ディアナ本人が平民としてイングレッサへ入り、キエルとの身分交換が事態をさらに複雑にする。"
+      ],
+      "en": [
+        "The Dianna Counter establishes a bridgehead near Nocis and demands that the Earth side hand over land and resources. The militias of Inglessa and Lousana each judge the situation for themselves, and local clashes quickly widen.",
+        "Loran intervenes in the Turn A as a Moonrace infiltrator, driving back mobile suits from both sides but avoiding lethal damage. Dianna herself then enters Inglessa as a civilian, and her identity exchange with Kihel makes the situation more complicated."
       ]
     },
     "outcome": {
       "zh": "月之民在北美建立据点；因格莱萨与卢贾纳的冲突升级。",
-      "ja": "ムーンレィスは北米に拠点を築き、イングレッサとルジアーナの衝突が激化した。"
+      "ja": "ムーンレィスは北米に拠点を築き、イングレッサとルジアーナの衝突が激化した。",
+      "en": "The Moonrace establish a foothold in North America; the conflict between Inglessa and Lousana escalates."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3437,7 +3923,8 @@
     "id": "battle-of-nora",
     "title": {
       "zh": "诺拉攻防战",
-      "ja": "ノーラ攻防戦"
+      "ja": "ノーラ攻防戦",
+      "en": "Battle of Nora"
     },
     "eraId": "ag",
     "scale": "battle",
@@ -3457,7 +3944,8 @@
     ],
     "summary": {
       "zh": "维根突袭诺拉殖民地，弗利特在混乱中启动 AGE-1；联邦的殖民卫星防御体系暴露缺口。",
-      "ja": "ヴェイガンがノーラ・コロニーを急襲し、フリットは混乱の中でAGE-1を起動。連邦のコロニー防衛体制の綻びが露呈した。"
+      "ja": "ヴェイガンがノーラ・コロニーを急襲し、フリットは混乱の中でAGE-1を起動。連邦のコロニー防衛体制の綻びが露呈した。",
+      "en": "The Vagan raid the colony Nora, and Flit activates the AGE-1 in the confusion; the Federation's colony defense system shows a gap."
     },
     "detail": {
       "zh": [
@@ -3467,11 +3955,16 @@
       "ja": [
         "ノーラはL1にある地球連邦のコロニーで、駐留部隊は旧式MSが中心だった。ヴェイガンの奇襲部隊が外壁を突破し、AGEシステムの開発データとフリットの家族を狙う。",
         "避難途中のフリットはAGE-1に乗り込み、AGEシステムの即時換装でヴェイガン先遣機を退けた。コロニーは維持されたが、民間人の死傷と施設被害により連邦はヴェイガン脅威の再評価を迫られる。"
+      ],
+      "en": [
+        "Nora is an Earth Federation colony at L1, and its garrison is mostly equipped with old mobile suits. The Vagan break through the outer wall with a surprise force, targeting the AGE System's development data and Flit's family.",
+        "Flit enters the AGE-1 on the way to the shelter and drives back the Vagan advance units with the AGE System's instant equipment swaps. The colony is held, but civilian casualties and facility damage force the Federation to reassess the Vagan threat."
       ]
     },
     "outcome": {
       "zh": "诺拉保住；联邦确认维根拥有突破殖民卫星防御的能力。",
-      "ja": "ノーラは維持され、連邦はヴェイガンのコロニー突破能力を確認した。"
+      "ja": "ノーラは維持され、連邦はヴェイガンのコロニー突破能力を確認した。",
+      "en": "Nora is held; the Federation confirms that the Vagan can break through colony defenses."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3492,7 +3985,8 @@
     "id": "battle-of-sankt-porto",
     "title": {
       "zh": "圣波特攻防战",
-      "ja": "ザンクト・ポルト攻防戦"
+      "ja": "ザンクト・ポルト攻防戦",
+      "en": "Battle of Sankt Porto"
     },
     "eraId": "rc",
     "scale": "battle",
@@ -3514,7 +4008,8 @@
     ],
     "summary": {
       "zh": "首都军与亚美利亚、永贺在圣波特展开轨道电梯攻防；贝尔利驾驶 G-Self 介入，三方争夺光子电池接收权。",
-      "ja": "首都軍とアメリア、トワサンガがザンクト・ポルトで軌道エレベーター攻防を展開。ベルリのG-セルフが介入し、三方が光子電池の受入権を争った。"
+      "ja": "首都軍とアメリア、トワサンガがザンクト・ポルトで軌道エレベーター攻防を展開。ベルリのG-セルフが介入し、三方が光子電池の受入権を争った。",
+      "en": "The Capital Army, Ameria and Towasanga fight over the orbital elevator at Sankt Porto; Bellri intervenes in the G-Self, and three sides contest the right to receive photon batteries."
     },
     "detail": {
       "zh": [
@@ -3524,11 +4019,16 @@
       "ja": [
         "ザンクト・ポルトはキャピタル・タワー頂上の聖域であり、光子電池が地球圏へ入る唯一の受入口でもある。首都軍は港を封鎖しようとし、アメリアとトワサンガの連合部隊が軌道側から奇襲をかけた。",
         "ベルリのG-セルフが塔頂で首都軍のMSを迎撃し、アイーダの艦隊が地上補給を断つ。決着はつかなかったが、光子電池の流通は再配分され、キャピタル・テリトリィのエネルギー独占に亀裂が入る。"
+      ],
+      "en": [
+        "Sankt Porto is the sanctuary at the top of the Central Tower and the only receiving port through which photon batteries enter the Earth Sphere. The Capital Army tries to blockade the port, and a joint Amerian and Towasangan force attacks from the orbital side.",
+        "Bellri intercepts the Capital Army's mobile suits at the top of the tower in the G-Self, and Aida's fleet cuts the ground supply at the same time. The battle produces no single winner, but the flow of photon batteries is redistributed and cracks appear in the Capital Territory's monopoly on energy."
       ]
     },
     "outcome": {
       "zh": "圣波特港短暂开放；首都特区对光子电池的垄断被削弱。",
-      "ja": "ザンクト・ポルトの港は一時開放され、キャピタル・テリトリィの独占は揺らいだ。"
+      "ja": "ザンクト・ポルトの港は一時開放され、キャピタル・テリトリィの独占は揺らいだ。",
+      "en": "Sankt Porto harbor opens briefly; the Capital Territory's monopoly on photon batteries is weakened."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3549,7 +4049,8 @@
     "id": "shuffle-alliance-awakening",
     "title": {
       "zh": "洗牌同盟集结",
-      "ja": "シャッフル同盟集結"
+      "ja": "シャッフル同盟集結",
+      "en": "Shuffle Alliance Assembly"
     },
     "eraId": "fc",
     "scale": "battle",
@@ -3577,7 +4078,8 @@
     ],
     "summary": {
       "zh": "第十三届高达武斗会进入决赛，多蒙与东方不败在圭亚那高地决战；洗牌同盟五人重新集结，阻止恶魔高达扩散。",
-      "ja": "第13回ガンダムファイト決勝でドモンと東方不敗がギアナ高地で決戦。シャッフル同盟の五人が再集結し、デビルガンダムの拡散を食い止めた。"
+      "ja": "第13回ガンダムファイト決勝でドモンと東方不敗がギアナ高地で決戦。シャッフル同盟の五人が再集結し、デビルガンダムの拡散を食い止めた。",
+      "en": "The 13th Gundam Fight reaches its final, and Domon and Master Asia fight a decisive battle in the Guyana Highlands; the five members of the Shuffle Alliance reunite to stop the Devil Gundam from spreading."
     },
     "detail": {
       "zh": [
@@ -3587,11 +4089,16 @@
       "ja": [
         "デビルガンダムはギアナ高地で周囲の機体を吸収し、DG細胞がコロニーへ拡散し始めた。ドモンと東方不敗の師弟対決は大きな危機の中に置かれ、残るシャッフル同盟の四人が高地の外周を守る。",
         "ドモンは石破天驚拳でデビルガンダムの中核を破り、東方不敗は最後に未来を彼へ託す。ファイトは中断され、各国代表は決勝の結果を戦争の拡大ではなく復興に使うことで合意した。"
+      ],
+      "en": [
+        "The Devil Gundam absorbs nearby machines in the Guyana Highlands, and DG Cells begin to spread toward the colonies. The master-and-student duel between Domon and Master Asia is caught in a larger crisis, and the other four Shuffle Alliance members hold the highlands' perimeter.",
+        "Domon destroys the Devil Gundam's core with the Sekiha Tenkyoken, and Master Asia entrusts the future to him at the last moment. The Gundam Fight is interrupted as a result, and the national representatives agree to use the final's result for reconstruction rather than widening the war."
       ]
     },
     "outcome": {
       "zh": "恶魔高达被击破；武斗会中断，各国转向重建。",
-      "ja": "デビルガンダムは撃破され、ファイトは中断。各国は復興へ方針を転換した。"
+      "ja": "デビルガンダムは撃破され、ファイトは中断。各国は復興へ方針を転換した。",
+      "en": "The Devil Gundam is destroyed; the Gundam Fight is interrupted, and the nations turn to reconstruction."
     },
     "canon": "mainline",
     "mainline": true,
@@ -3612,7 +4119,8 @@
     "id": "xarx-zero-awakening",
     "title": {
       "zh": "XARX-0 启动",
-      "ja": "XARX-0起動"
+      "ja": "XARX-0起動",
+      "en": "XARX-0 Activation"
     },
     "eraId": "aa",
     "scale": "incident",
@@ -3633,7 +4141,8 @@
     ],
     "summary": {
       "zh": "月面方舟的幸存者启动 XARX-0，旧文明的自我增殖生态被重新唤醒；异轨船团必须在 A.A.45 年前找到关闭协议。",
-      "ja": "月面アークの生存者がXARX-0を起動し、旧文明の自己増殖生態が再び目覚める。異軌船団はA.A.45年までに停止プロトコルを見つけなければならない。"
+      "ja": "月面アークの生存者がXARX-0を起動し、旧文明の自己増殖生態が再び目覚める。異軌船団はA.A.45年までに停止プロトコルを見つけなければならない。",
+      "en": "Survivors of the lunar ark activate XARX-0, and the self-replicating ecology of the old civilization is awakened again; the Rogue Orbit flotilla must find the shutdown protocol before A.A. 45."
     },
     "detail": {
       "zh": [
@@ -3643,19 +4152,27 @@
       "ja": [
         "XARX-0はA.A.以前の試作機で、中核は「アポカリプス」生態と自己修復プロトコルを共有している。月面アークの生存者は解凍後に起動シーケンスへ誤って触れ、地表の増殖体が軌道へ広がり始めた。",
         "アズミと異軌船団は廃コロニー間で旧文明の停止鍵を探す。XARX-0の起動はスパイラルガンダムの防衛プログラムも呼び覚まし、両機は近地球軌道で最初の接触を果たす。"
+      ],
+      "en": [
+        "XARX-0 is a prototype left from before the A.A. era, and its core shares a self-repair protocol with the \"Apocalypse\" ecology. After thawing, the survivors of the lunar ark accidentally trigger the activation sequence, and the proliferating bodies on the surface begin to spread toward orbit.",
+        "Azumi and the Rogue Orbit flotilla search the abandoned colonies for the shutdown key left by the old civilization. XARX-0's activation also wakes the Spiral Gundam's defense program, and the two make first contact in low Earth orbit."
       ]
     },
     "outcome": {
       "zh": "XARX-0 与螺旋高达接触；关闭协议仍未找到。",
-      "ja": "XARX-0とスパイラルガンダムが接触。停止プロトコルは未発見のまま。"
+      "ja": "XARX-0とスパイラルガンダムが接触。停止プロトコルは未発見のまま。",
+      "en": "XARX-0 makes contact with the Spiral Gundam; the shutdown protocol has still not been found."
     },
     "canon": "parallel",
     "mainline": false,
     "sources": [
       {
-        "label": "GUNDAM Archive original setting (this site)",
+        "label": "GUNDAM Archive A.A. 原创纪元设定（非官方）",
         "level": "C",
-        "url": "https://github.com/cxy2696/GUNDAM-archive"
+        "url": "https://github.com/cxy2696/GUNDAM-archive",
+        "note": "原创设定，不对应任何官方动画、漫画或游戏。",
+        "noteEn": "Original setting. It does not correspond to any official anime, manga or game.",
+        "labelEn": "GUNDAM Archive A.A. original era setting (unofficial)"
       }
     ]
   }

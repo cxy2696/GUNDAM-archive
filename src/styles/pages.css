@@ -15,7 +15,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(720px 520px at 74% 44%, rgba(34, 211, 238, 0.08), transparent 70%),
+    radial-gradient(720px 520px at 74% 44%, rgba(88, 255, 157, 0.08), transparent 70%),
     linear-gradient(to bottom, transparent 70%, var(--bg-base));
   pointer-events: none;
 }
@@ -117,7 +117,7 @@
 
 .hero__stage-orbit span {
   position: absolute;
-  border: 1px solid rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(88, 255, 157, 0.1);
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -139,7 +139,7 @@
 .hero__stage-orbit span:nth-child(3) {
   width: 92%;
   height: 46%;
-  border-color: rgba(34, 211, 238, 0.07);
+  border-color: rgba(88, 255, 157, 0.07);
   transform: translate(-50%, -50%) rotate(-24deg);
 }
 
@@ -337,7 +337,7 @@
   line-height: 0.7;
   letter-spacing: -0.06em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(34, 211, 238, 0.15);
+  -webkit-text-stroke: 1px rgba(88, 255, 157, 0.15);
   pointer-events: none;
   user-select: none;
   opacity: 0.7;
@@ -515,7 +515,7 @@
   width: 66%;
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
-  border: 1px dashed rgba(34, 211, 238, 0.12);
+  border: 1px dashed rgba(88, 255, 157, 0.12);
   border-radius: 50%;
 }
 
@@ -523,7 +523,7 @@
 .mcard__target::after {
   content: "";
   position: absolute;
-  background: rgba(34, 211, 238, 0.12);
+  background: rgba(88, 255, 157, 0.12);
 }
 
 .mcard__target::before {
@@ -551,7 +551,7 @@
 
 .mcard:hover .mcard__glyph {
   transform: translateY(-6px) scale(1.015);
-  filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 18px rgba(34, 211, 238, 0.12));
+  filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 18px rgba(88, 255, 157, 0.12));
 }
 
 .mcard__index {
@@ -792,7 +792,7 @@
   height: 210px;
   border: 1px solid var(--line);
   background:
-    linear-gradient(to bottom, rgba(34, 211, 238, 0.025), transparent 50%),
+    linear-gradient(to bottom, rgba(88, 255, 157, 0.025), transparent 50%),
     var(--bg-panel);
   overflow: hidden;
 }
@@ -869,12 +869,12 @@
   height: 5px;
   background: var(--cyan);
   transform: rotate(45deg);
-  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.08);
+  box-shadow: 0 0 0 4px rgba(88, 255, 157, 0.08);
   transition: box-shadow var(--dur);
 }
 
 .mini-event:hover .mini-event__dot {
-  box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.16);
+  box-shadow: 0 0 0 6px rgba(88, 255, 157, 0.16);
 }
 
 .mini-event__label {
@@ -1215,7 +1215,7 @@
   top: 8%;
   width: 34%;
   height: 80%;
-  background: radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.06), transparent 66%);
+  background: radial-gradient(circle at 50% 50%, rgba(88, 255, 157, 0.06), transparent 66%);
   pointer-events: none;
 }
 
@@ -1628,7 +1628,7 @@
   letter-spacing: -0.08em;
   line-height: 0.75;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(34, 211, 238, 0.1);
+  -webkit-text-stroke: 1px rgba(88, 255, 157, 0.1);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -2355,8 +2355,8 @@
 .tree__viewport {
   border: 1px solid var(--line);
   background:
-    linear-gradient(to right, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    linear-gradient(to right, rgba(88, 255, 157, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(88, 255, 157, 0.035) 1px, transparent 1px),
     var(--bg-panel);
   background-size: 40px 40px;
   overflow: auto;
@@ -2737,7 +2737,7 @@
 .tl-track {
   position: relative;
   background:
-    linear-gradient(to right, rgba(34, 211, 238, 0.02), transparent 40%),
+    linear-gradient(to right, rgba(88, 255, 157, 0.02), transparent 40%),
     transparent;
   overflow: hidden;
 }
@@ -2824,7 +2824,7 @@
   height: 5px;
   background: var(--cyan);
   transform: rotate(45deg);
-  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.08);
+  box-shadow: 0 0 0 3px rgba(88, 255, 157, 0.08);
   transition: box-shadow var(--dur), background var(--dur);
 }
 
@@ -2862,7 +2862,7 @@
 }
 
 .tl-event:hover .tl-event__dot {
-  box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.14);
+  box-shadow: 0 0 0 6px rgba(88, 255, 157, 0.14);
 }
 
 .tl-event.is-selected {
@@ -2871,7 +2871,7 @@
 
 .tl-event.is-selected .tl-event__dot {
   background: var(--cyan);
-  box-shadow: 0 0 0 5px rgba(34, 211, 238, 0.2), 0 0 16px rgba(34, 211, 238, 0.6);
+  box-shadow: 0 0 0 5px rgba(88, 255, 157, 0.2), 0 0 16px rgba(88, 255, 157, 0.6);
 }
 
 .tl-event.is-selected .tl-event__label {
@@ -3139,7 +3139,7 @@
 .map-frame {
   border: 1px solid var(--line);
   background:
-    radial-gradient(circle at 50% 48%, rgba(34, 211, 238, 0.05), transparent 56%),
+    radial-gradient(circle at 50% 48%, rgba(88, 255, 157, 0.05), transparent 56%),
     #050c11;
   position: relative;
 }
@@ -3183,11 +3183,11 @@
 }
 
 .map-marker--colony .map-marker__dot {
-  fill: #22d3ee;
+  fill: #58ff9d;
 }
 
 .map-marker--space .map-marker__dot {
-  fill: #a78bfa;
+  fill: #b4ff6a;
 }
 
 .map-marker--moon .map-marker__dot {
@@ -3201,13 +3201,13 @@
 
 .map-marker.is-selected .map-marker__dot {
   fill: #e8feff;
-  stroke: #22d3ee;
+  stroke: #58ff9d;
   stroke-width: 1.4;
 }
 
 .map-marker__ring {
   fill: none;
-  stroke: #22d3ee;
+  stroke: #58ff9d;
   stroke-width: 0.8;
   opacity: 0.75;
   animation: map-pulse 2.4s ease-out infinite;
@@ -3887,7 +3887,7 @@
   letter-spacing: -0.06em;
   line-height: 0.8;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(34, 211, 238, 0.09);
+  -webkit-text-stroke: 1px rgba(88, 255, 157, 0.09);
   pointer-events: none;
   white-space: nowrap;
 }
@@ -4923,8 +4923,8 @@ a.aside-work:hover {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to right, rgba(34, 211, 238, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(88, 255, 157, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(88, 255, 157, 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(circle at 50% 50%, black, transparent 68%);
 }
@@ -6043,7 +6043,7 @@ a.aside-work:hover {
   margin: 24px 0 8px;
   border: 1px solid var(--line-strong);
   background:
-    linear-gradient(180deg, rgba(34, 211, 238, 0.03), transparent 30%),
+    linear-gradient(180deg, rgba(88, 255, 157, 0.03), transparent 30%),
     color-mix(in srgb, var(--bg-panel) 78%, transparent);
   overflow: hidden;
 }
@@ -6112,8 +6112,8 @@ a.aside-work:hover {
   position: relative;
   padding: 22px 24px 20px;
   background:
-    linear-gradient(to right, rgba(34, 211, 238, 0.035), transparent 45%),
-    repeating-linear-gradient(0deg, transparent 0 31px, rgba(34, 211, 238, 0.035) 31px 32px);
+    linear-gradient(to right, rgba(88, 255, 157, 0.035), transparent 45%),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(88, 255, 157, 0.035) 31px 32px);
 }
 
 .chrono-console__screen-head {
@@ -6521,7 +6521,7 @@ a.aside-work:hover {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(180deg, rgba(99, 230, 255, 0.18), rgba(99, 230, 255, 0.04));
+  background: linear-gradient(180deg, rgba(88, 255, 157, 0.18), rgba(88, 255, 157, 0.04));
 }
 
 .tree__level i {
@@ -6543,7 +6543,7 @@ a.aside-work:hover {
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.14em;
-  color: rgba(99, 230, 255, 0.5);
+  color: rgba(88, 255, 157, 0.5);
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -6784,8 +6784,8 @@ a.aside-work:hover {
   z-index: 3;
   pointer-events: none;
   background:
-    linear-gradient(to right, rgba(99, 230, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(99, 230, 255, 0.055) 1px, transparent 1px);
+    linear-gradient(to right, rgba(88, 255, 157, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(88, 255, 157, 0.055) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: linear-gradient(to bottom, transparent 4%, #000 18%, #000 72%, transparent 92%);
   opacity: 0.5;
@@ -6798,8 +6798,8 @@ a.aside-work:hover {
   right: 0;
   top: 22%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 230, 255, 0.35), transparent);
-  box-shadow: 0 0 24px 6px rgba(99, 230, 255, 0.08);
+  background: linear-gradient(90deg, transparent, rgba(88, 255, 157, 0.35), transparent);
+  box-shadow: 0 0 24px 6px rgba(88, 255, 157, 0.08);
 }
 
 .hero__mfd-specs {
@@ -6817,14 +6817,14 @@ a.aside-work:hover {
   gap: 1px;
   width: 132px;
   padding: 10px 12px;
-  border-left: 1px solid rgba(99, 230, 255, 0.35);
+  border-left: 1px solid rgba(88, 255, 157, 0.35);
   background: linear-gradient(90deg, rgba(3, 9, 20, 0.55), transparent);
   align-self: center;
 }
 
 .hero__mfd-col--right {
   border-left: 0;
-  border-right: 1px solid rgba(154, 134, 255, 0.35);
+  border-right: 1px solid rgba(180, 255, 106, 0.35);
   background: linear-gradient(270deg, rgba(3, 9, 20, 0.55), transparent);
   text-align: right;
 }
@@ -6869,7 +6869,7 @@ a.aside-work:hover {
 .hero__mfd-readout i {
   width: 22px;
   height: 1px;
-  background: rgba(99, 230, 255, 0.3);
+  background: rgba(88, 255, 157, 0.3);
 }
 
 @media (max-width: 1080px) {

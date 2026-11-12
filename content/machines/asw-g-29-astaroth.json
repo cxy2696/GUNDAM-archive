@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "厄祭战时代的高达，在 Urdr Hunt 中以寻宝者的身份重新登场。",
-    "ja": "厄祭戦時代のガンダム。ウルズハントで宝探しの立場から再登場する。"
+    "ja": "厄祭戦時代のガンダム。ウルズハントで宝探しの立場から再登場する。",
+    "en": "A Gundam from the Calamity War era, returning as a treasure hunter's machine in Urdr Hunt."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "アスタロトは分解され、売買され、再び組み立てられたガンダムである。武装と装甲は完全ではなく、そのために「歴史に使われた」質感を帯びる。",
       "ウルズハントの経緯では、追い求められる遺産に近い。機体本身に立場はなく、立場はその代償を払う者から生まれる。"
+    ],
+    "en": [
+      "Astaroth is a Gundam that has been dismantled, resold and reassembled. Its armaments and armor are incomplete, which gives it the texture of something history has used.",
+      "In the story of Urdr Hunt, it is more like an inheritance that people chase. The machine itself has no stance; the stance comes from those willing to pay the price for it."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "剑",
-        "ja": "ソード"
+        "ja": "ソード",
+        "en": "Sword"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "步枪",
-        "ja": "ライフル"
+        "ja": "ライフル",
+        "en": "Rifle"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -89,7 +97,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "《机动战士高达 铁血的奥尔芬斯 Urdr Hunt》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans Urdr Hunt original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

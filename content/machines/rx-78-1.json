@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "联邦 V 作战中最早完成的原型机，为二号机与三号机提供了基础数据。",
-    "ja": "連邦V作戦で最初に完成した原型機。2号機と3号機に基礎データを提供した。"
+    "ja": "連邦V作戦で最初に完成した原型機。2号機と3号機に基礎データを提供した。",
+    "en": "The first prototype completed in the Federation's Operation V, providing the base data for Unit 2 and Unit 3."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "サイド7の組立ラインで最初に形になったのがRX-78-1である。装甲と発電機にはなお試験的な性格が強く、後にデータ採取のために解体された。",
       "「白い悪魔」となったRX-78-2と違い、1号機は自らの戦史を残せなかったが、ガンダムの基本骨格を連邦系譜全体に残した。"
+    ],
+    "en": [
+      "On the assembly line at Side 7, the RX-78-1 was the first machine to take shape. Its armor and generator still had an obvious experimental character, and it was later dismantled for data collection.",
+      "Compared with the RX-78-2, which later became the 'White Devil', Unit 1 had no chance to write its own combat history, but it left the Gundam's basic frame to the entire Federation lineage."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     }
@@ -84,7 +92,8 @@
       "sources": [
         {
           "label": "《机动战士高达》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "core-block"
@@ -99,7 +108,8 @@
       "sources": [
         {
           "label": "《机动战士高达》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "core-block"
@@ -123,12 +133,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

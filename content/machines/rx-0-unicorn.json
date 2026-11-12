@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "毕斯特财团与阿纳海姆秘密开发的“拉普拉斯之盒”钥匙。独角兽模式下的封印装甲，在毁灭模式中让位于全身精神感应框架。",
-    "ja": "ヴィスト財団とアナハイムが極秘開発した「ラプラスの箱」の鍵。ユニコーンモードの封印装甲は、デストロイモードで全身のサイコフレームへ置き換わる。"
+    "ja": "ヴィスト財団とアナハイムが極秘開発した「ラプラスの箱」の鍵。ユニコーンモードの封印装甲は、デストロイモードで全身のサイコフレームへ置き換わる。",
+    "en": "The key to the 'Laplace's Box' secretly developed by the Vist Foundation and Anaheim. Its sealed armor in Unicorn Mode gives way to a full-body psycho-frame in Destroy Mode."
   },
   "description": {
     "zh": [
@@ -34,6 +35,10 @@
     "ja": [
       "RX-0の最大の特徴は火力ではなく「リミッター」である。ユニコーンモードは装甲でサイコフレームの応答を拘束し、パイロットの意識が過負荷に呑まれるのを防ぐ。制限を解けば機体高と関節可動域は大きく増大する。",
       "バナージ・リンクスはラプラス事件でこの機体を駆った。説明のつかない形でパイロットの意志に応答する姿は、連邦とヴィスト財団の双方に、この機体が単なる兵器ではなく憲章政治の延長であることを知らしめた。"
+    ],
+    "en": [
+      "The RX-0's biggest feature is its limiter, not its firepower. Unicorn Mode uses armor to restrain the psycho-frame's response, preventing the pilot from being swallowed by an overload of consciousness; once the limit is released, the machine's height and joint range increase markedly.",
+      "Banagher Links piloted it in the Laplace Incident. Several times it responded to the pilot's will in ways no one could explain, making both the Federation and the Vist Foundation realize that the machine is a continuation of charter politics, not a simple weapon."
     ]
   },
   "specs": {
@@ -46,35 +51,40 @@
     "sensorRadius": null,
     "armor": {
       "zh": "高达尼姆合金",
-      "ja": "ガンダリウム合金"
+      "ja": "ガンダリウム合金",
+      "en": "Gundarium Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "光束马格南",
-        "ja": "ビーム・マグナム"
+        "ja": "ビーム・マグナム",
+        "en": "Beam Magnum"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -112,8 +122,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     },
@@ -127,8 +140,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     },
@@ -142,7 +158,8 @@
       "sources": [
         {
           "label": "《机动战士高达 UC》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Unicorn mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "psychoframe"
@@ -166,11 +183,13 @@
   "sources": [
     {
       "label": "OVA《机动战士高达 UC》第 1—7 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "OVA \"Mobile Suit Gundam Unicorn\" episodes 1–7"
     },
     {
       "label": "《机动战士高达 UC》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam Unicorn MS setting materials"
     }
   ],
   "disputed": false,

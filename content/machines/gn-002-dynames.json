@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "天人的远程狙击型高达，以 GN 狙击枪与高精度传感器在战场外缘提供火力。",
-    "ja": "ソレスタルビーイングの遠距離狙撃型ガンダム。GNスナイパーライフルと高精度センサーで戦場外縁から火力を提供する。"
+    "ja": "ソレスタルビーイングの遠距離狙撃型ガンダム。GNスナイパーライフルと高精度センサーで戦場外縁から火力を提供する。",
+    "en": "Celestial Being's long-range sniping Gundam, providing fire from the edge of the battlefield with a GN sniper rifle and high-precision sensors."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "デュナメスはロックオン・ストラトスが駆り、隠密・観測・一撃必中を重視した。GNシールドは全身防御へ展開でき、狙撃手はソレスタルビーイングの武力介入において最も孤独な観測者となった。"
+    ],
+    "en": [
+      "The Dynames is piloted by Lockon Stratos and emphasizes concealment, observation and one-shot hits. Its GN Shield can unfold into full-body protection, and the 'sniper' also takes on the most solitary observer role in Celestial Being's armed interventions."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "GN 狙击枪",
-        "ja": "GNスナイパーライフル"
+        "ja": "GNスナイパーライフル",
+        "en": "GN Sniper Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 光束军刀 ×2",
-        "ja": "GNビームサーベル ×2"
+        "ja": "GNビームサーベル ×2",
+        "en": "GN Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 火神炮 ×2",
-        "ja": "GNバルカン ×2"
+        "ja": "GNバルカン ×2",
+        "en": "GN Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     }
@@ -103,7 +111,8 @@
       "sources": [
         {
           "label": "《机动战士高达 00 第二季》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 Season 2 mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gn-drive"
@@ -126,13 +135,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 00》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 00》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam 00\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

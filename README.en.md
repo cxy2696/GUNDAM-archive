@@ -1,9 +1,9 @@
 # GUNDAM Archive · Mobile Suit Archive
 
-[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [Live site](https://cxy2696.github.io/GUNDAM-archive/zh/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [Operations](docs/OPERATIONS.md)
+[中文](README.md) ｜ [日本語](README.ja.md) ｜ [English](README.en.md) ｜ [中文站](https://cxy2696.github.io/GUNDAM-archive/zh/) · [日本語サイト](https://cxy2696.github.io/GUNDAM-archive/ja/) · [English site](https://cxy2696.github.io/GUNDAM-archive/en/) ｜ [GitHub](https://github.com/cxy2696/GUNDAM-archive) ｜ [Operations](docs/OPERATIONS.md)
 
 > An interactive, traceable, operable archive of the Gundam multiverse.  
-> 12-era 2D/3D atlas · 3D relationship graphs · tech tree · bilingual static site
+> 12-era 2D/3D atlas · 3D relationship graphs · tech tree · trilingual static site
 
 **Next.js 15 · React 19 · TypeScript · Three.js / R3F · Zod · static export · JSON-driven**
 
@@ -13,19 +13,32 @@
 
 **GUNDAM Archive** is an interactive, traceable and operable mobile-suit knowledge archive. It organizes machines, characters, events, factions and technology terms from 12 eras and 42 works into a structure that can be opened entry by entry and traced back to its sources — not another static data page.
 
-The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese/Japanese routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
+The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese, Japanese and English routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.1.3** (2026-11-12).  
-Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh` and `/ja` site has **854 static pages**, **487 search entries** and **846 sitemap routes**.
+Current version: **v3.2.0** (2026-11-12).  
+Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1277 static pages**, **487 search entries per language** and **1269 sitemap routes**.
 
 ## 30-second overview
 
 - **What it is**: a JSON-driven Gundam archive that puts machines, chronology, lineage, characters and sources into one readable structure.
-- **Where to start**: [Chronology](https://cxy2696.github.io/GUNDAM-archive/zh/chronology/) → [Atlas](https://cxy2696.github.io/GUNDAM-archive/zh/map/) → [Coverage rules](docs/MACHINE_COVERAGE.md).
+- **Where to start**: [Chronology](https://cxy2696.github.io/GUNDAM-archive/en/chronology/) → [Atlas](https://cxy2696.github.io/GUNDAM-archive/en/map/) → [Coverage rules](docs/MACHINE_COVERAGE.md).
 - **Trust model**: machines and events carry `sources`; unchecked values are `seed`, disputed values are `disputed`, missing values render as “not documented” rather than estimates.
 - **How to change it**: content lives in `content/`; see [CONTENT_GUIDE](docs/CONTENT_GUIDE.md). Release, rollback and troubleshooting are in [OPERATIONS](docs/OPERATIONS.md).
 
 > **Scope**: 148 machines — 146 from 11 mainline eras plus 2 A.A. originals — covering mainline and core side stories. This is not a 5,000+ variant catalogue and contains no official artwork.
+
+## What's new in v3.2
+
+| Area | Current state |
+| --- | --- |
+| **English site** | New `/en`: all 148 machines, 114 characters, 69 events, 82 factions, 32 tags, 42 works, 12 eras, 15 places and 156 atlas nodes have English copy; event titles and source citations are localised too |
+| **English voice** | Home, navigation, search hints and empty states rewritten as direct, conversational English, not sentence-by-sentence translation |
+| **Tactical phosphor UI** | Green CRT cockpit reference: dark-green MFD bezels, scanlines, a circular targeting scope behind the hero mech, denser side telemetry |
+| **Faster browse** | Machine filters sync to the URL (`era`, `faction`, `tag`, `canon`, `sort`, `q`), plus a canon segmented filter and `/` focus shortcut |
+| **Faster search** | Palette type facets, result counts, recent queries and `/`; Greek ν is searchable as `nu` |
+| **Model detail** | Every suit gains a neck ring, cheek vents, cockpit seams, shoulder verniers, forearm panels, fingers, knee/ankle pistons, soles, backpack tanks, nozzles, shield trim and weapon sights; the stage adds bearing ticks, a range ring and a height ruler |
+| **Design sheets** | Armament list, power/thrust/sensor readouts and material slots added to the front elevation, part graph and measurement overlay |
+| **Source integrity** | All “page check pending” placeholders removed; the two A.A. originals are C-tier unofficial material; vague “official setting materials” wording replaced with on-screen/public-source wording; English citation labels added |
 
 ## What's new in v3.1
 
@@ -48,8 +61,8 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 
 1. **Start with the chronology**: era calendars, spans, works and machine counts; expand any era into its full machine roster.
 2. **Open a machine page**: era, faction, first appearance, armaments, pilots, lineage edges, sources, 3D and 2D design sheet.
-3. **Follow technology**: the [tech tree](https://cxy2696.github.io/GUNDAM-archive/zh/tech-tree/) highlights tags and links every edge back to two machines.
-4. **Explore geography/relations**: switch 2D/3D eras in the [atlas](https://cxy2696.github.io/GUNDAM-archive/zh/map/), or open the [archive](https://cxy2696.github.io/GUNDAM-archive/zh/archive/) faction graph.
+3. **Follow technology**: the [tech tree](https://cxy2696.github.io/GUNDAM-archive/en/tech-tree/) highlights tags and links every edge back to two machines.
+4. **Explore geography/relations**: switch 2D/3D eras in the [atlas](https://cxy2696.github.io/GUNDAM-archive/en/map/), or open the [archive](https://cxy2696.github.io/GUNDAM-archive/en/archive/) faction graph.
 5. **Look up terms/events**: glossary search map and relation tree; timeline drawer or event dossiers.
 6. **Contribute**: begin with [CONTENT_GUIDE](docs/CONTENT_GUIDE.md); adding a machine requires no page code.
 
@@ -87,7 +100,7 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 - **Events**: 69 dossiers with background/outcome, participants, machines, characters, sources and previous/next events.
 - **Glossary**: 32 controlled technology tags with explanations, category filters, search map, relation tree and 12 reading terms.
 - **HUD/reading mode**: HUD toggle, scanlines, reticle, link status; `A+ / A−` large-text mode scales body and cards.
-- **Chinese/Japanese routes**: `/zh` and `/ja`, hreflang/canonical, language switch preserving path, query, hash and scroll position.
+- **Chinese / Japanese / English routes**: `/zh`, `/ja` and `/en`, hreflang/canonical, language switch preserving path, query, hash and scroll position.
 
 ## Quick start
 
@@ -150,7 +163,7 @@ The **canonical documentation is Chinese**; this English README is the internati
 | [docs/README](docs/README.md) | Documentation index, authority order, maintenance matrix |
 | [docs/OPERATIONS](docs/OPERATIONS.md) | Release, rollback, monitoring, troubleshooting, periodic maintenance |
 | [docs/ARCHITECTURE](docs/ARCHITECTURE.md) | Layers, data flow, viewer, deployment, ADRs |
-| [docs/CONTENT_GUIDE](docs/CONTENT_GUIDE.md) | Adding/editing content, bilingual rules, review checklist |
+| [docs/CONTENT_GUIDE](docs/CONTENT_GUIDE.md) | Adding/editing content, trilingual rules, review checklist |
 | [docs/DATA_DICTIONARY](docs/DATA_DICTIONARY.md) | Fields, enums, atlas, validation |
 | [docs/DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md) | Tokens, cockpit shell, charts, accessibility, motion |
 | [docs/ROADMAP](docs/ROADMAP.md) / [CHANGELOG](CHANGELOG.md) | Next steps / released changes |
@@ -164,7 +177,7 @@ The **canonical documentation is Chinese**; this English README is the internati
 2. **Docs** — Markdown links, required documents, version and content-count snapshots.
 3. **Types** — `typecheck`.
 4. **Language** — template phrases, overlong summaries/paragraphs.
-5. **Build** — 854 static pages and the search index.
+5. **Build** — 1277 static pages and three search indexes.
 6. **Links** — every internal href and `#fragment`.
 7. **Routes** — every sitemap route has an exported document with `<title>` and `<main>`.
 

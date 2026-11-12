@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "AGE-2 的海盗风格改装机，以光束锚与钩爪进行捕获战。",
-    "ja": "AGE-2の海賊風改装機。ビームアンカーとフックで捕獲戦を行う。"
+    "ja": "AGE-2の海賊風改装機。ビームアンカーとフックで捕獲戦を行う。",
+    "en": "A pirate-styled modification of the AGE-2, built for capture combat with a beam anchor and hook claw."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ダークハウンドはAGE-2を大幅に改装した形態である。黒い装甲、眼帯状のセンサー、ビームアンカーは明確な海賊の気配を帯びる。",
       "アセムが「ダークハウンド」として活動する時、この機体は偽装であると同時に、過去へ戻れないことの証明でもあった。"
+    ],
+    "en": [
+      "The Dark Hound is a heavily modified form of the AGE-2. Its black armor, visor-like sensor and beam anchor all carry a clear pirate character.",
+      "When Asemu operated as the Dark Hound, the machine was both a disguise and proof that he could not return to the past."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "光束锚",
-        "ja": "ビームアンカー"
+        "ja": "ビームアンカー",
+        "en": "Beam Anchor"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "钩爪",
-        "ja": "フック"
+        "ja": "フック",
+        "en": "Hook Claw"
       },
       "type": "melee"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 AGE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam AGE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

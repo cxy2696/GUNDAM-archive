@@ -106,7 +106,7 @@ export function CockpitConsole({
           ×
         </button>
         <button type="button" className="console-hide" onClick={() => setHidden(true)}>
-          {lang === "ja" ? "収納" : "收起"} <span aria-hidden>▾</span>
+          {lang === "zh" ? "收起" : lang === "ja" ? "収納" : "Hide"} <span aria-hidden>▾</span>
         </button>
         <section className="console-card">
           <div className="console-card__inner">

@@ -63,7 +63,7 @@ export function MachineCard({
         </div>
         <h3 className="mcard__name">
           {pick(machine.name, lang)}
-          <em>{lang === "zh" ? machine.name.ja : machine.name.zh}</em>
+          <em>{lang === "en" ? machine.name.ja : lang === "ja" ? machine.name.zh : machine.name.ja}</em>
         </h3>
         <p className="mcard__summary">{pick(machine.summary, lang)}</p>
         <div className="mcard__foot">

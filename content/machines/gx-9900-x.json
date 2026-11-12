@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "第七次宇宙战争时期的高达型机体，搭载卫星微波炮，是废土上少数能改变战局的战略兵器。",
-    "ja": "第7次宇宙戦争期のガンダム。サテライトキャノンを搭載し、廃墟で戦局を変えうる数少ない戦略兵器。"
+    "ja": "第7次宇宙戦争期のガンダム。サテライトキャノンを搭載し、廃墟で戦局を変えうる数少ない戦略兵器。",
+    "en": "A Gundam-type machine from the 7th Space War, carrying a satellite cannon and one of the few strategic weapons in the wasteland capable of changing the course of a battle."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ガンダムXはコア・ファイターとサテライトキャノンを中核とし、単機でコロニーや艦隊へ戦略打撃を与える。戦後、ガロード・ランが発見して再起動し、廃墟の少年が「新しい世界」を探す道具となった。"
+    ],
+    "en": [
+      "The Gundam X is built around a core fighter and the satellite cannon, and a single unit can strike a colony or a fleet strategically. After the war it was found and restarted by Garrod Ran, becoming a tool for a wasteland boy searching for a 'new world'."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "卫星微波炮",
-        "ja": "サテライトキャノン"
+        "ja": "サテライトキャノン",
+        "en": "Satellite Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -107,8 +115,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     },
@@ -122,7 +133,8 @@
       "sources": [
         {
           "label": "《机动新世纪高达 X》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "After War Gundam X mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -145,13 +157,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动新世纪高达 X》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"After War Gundam X\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

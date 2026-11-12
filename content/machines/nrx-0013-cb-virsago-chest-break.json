@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "维萨戈高达的决战形态，胸部展开大型光束炮。",
-    "ja": "ガンダムヴァサーゴの決戦形態。胸部に大型ビーム砲を展開する。"
+    "ja": "ガンダムヴァサーゴの決戦形態。胸部に大型ビーム砲を展開する。",
+    "en": "The decisive-battle form of the Virsago Gundam, with a large beam cannon unfolding from its chest."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "チェストブレイクはヴァサーゴの火力を胸部へ集中させた。装甲を展開して現れる砲口は、極短時間に高密度ビームを放つ。代償として正面はほとんど防御できない。",
       "「最後の一撃」のために存在する形態である。持久戦を想定せず、最初の交火で結果を決めることだけを狙う。"
+    ],
+    "en": [
+      "The Chest Break concentrates the Virsago's firepower in its chest. The muzzle revealed when the armor unfolds can release a high-density beam in an extremely short time, at the cost of almost no defense on the machine's front.",
+      "This is a form that exists for the 'final blow'. It is not prepared for a long fight, only to decide the result in the first exchange."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "胸部大型光束炮",
-        "ja": "胸部大型ビーム砲"
+        "ja": "胸部大型ビーム砲",
+        "en": "Chest Large Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束爪",
-        "ja": "ビームクロー"
+        "ja": "ビームクロー",
+        "en": "Beam Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "散射光束炮",
-        "ja": "拡散ビーム砲"
+        "ja": "拡散ビーム砲",
+        "en": "Scattering Beam Cannon"
       },
       "type": "beam"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

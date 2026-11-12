@@ -50,7 +50,7 @@
 .zoom-frame__keys button:hover {
   color: var(--cyan);
   border-color: var(--cyan-line);
-  background: rgba(99, 230, 255, 0.08);
+  background: rgba(88, 255, 157, 0.08);
 }
 
 .zoom-frame__keys > span {
@@ -78,7 +78,7 @@
   flex-direction: column;
   padding: 12px 18px 18px;
   background:
-    radial-gradient(900px 600px at 50% 0%, rgba(154, 134, 255, 0.14), transparent 65%),
+    radial-gradient(900px 600px at 50% 0%, rgba(180, 255, 106, 0.14), transparent 65%),
     #03070f;
 }
 

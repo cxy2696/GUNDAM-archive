@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "力天使高达的后继机，以狙击与浮游盾进行远程支援。",
-    "ja": "デュナメスの後継機。狙撃とシールドビットで遠距離支援を行う。"
+    "ja": "デュナメスの後継機。狙撃とシールドビットで遠距離支援を行う。",
+    "en": "The successor to the Dynames, providing long-range support with sniping and shield bits."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ケルディムはデュナメスの狙撃定位を継承しつつ、防御も分離式のシールドビットにした。照準を保ったまま、盾が自律的に脅威へ向かう。",
       "ロックオンの戦い方は「まず見て、それから撃つ」のままである。この機体は観測の時間を増やし、同時に外せない理由も増やした。"
+    ],
+    "en": [
+      "The Cherudim inherits the Dynames's sniping role but turns its protection into detachable shield bits. It can keep aiming while the shields seek out threats on their own.",
+      "Lockon's fighting style is still 'look first, then shoot'. The machine gives him more time to observe, and more reasons he cannot miss."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "GN 狙击步枪",
-        "ja": "GNスナイパーライフル"
+        "ja": "GNスナイパーライフル",
+        "en": "GN Sniper Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 手枪 ×2",
-        "ja": "GNピストル ×2"
+        "ja": "GNピストル ×2",
+        "en": "GN Pistol ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "浮游盾",
-        "ja": "シールドビット"
+        "ja": "シールドビット",
+        "en": "Shield Bit"
       },
       "type": "special"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《机动战士高达00 先驱者的觉醒》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "funnel"
@@ -118,9 +128,12 @@
   },
   "sources": [
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

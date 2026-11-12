@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { TimelineExplorer } from "@/components/TimelineExplorer";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: dict.timeline.title,
     description: dict.timeline.lead,
-    alternates: { canonical: `/${lang}/timeline/`, languages: { "zh-CN": "/zh/timeline/", "ja-JP": "/ja/timeline/" } },
+    alternates: { canonical: `/${lang}/timeline/`, languages: languageAlternates("/timeline/") },
   };
 }
 

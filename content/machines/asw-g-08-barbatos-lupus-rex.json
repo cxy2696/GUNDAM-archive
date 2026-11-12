@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "巴巴托斯的最终形态，以兽性的近战与尾部武装进行最后一战。",
-    "ja": "バルバトスの最終形態。獣的な近接戦とテイル武装で最後の戦いを戦う。"
+    "ja": "バルバトスの最終形態。獣的な近接戦とテイル武装で最後の戦いを戦う。",
+    "en": "The final form of Barbatos, fighting its last battle with bestial close combat and tail armaments."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ルプスレクスはバルバトスの「獣」を最大限まで押し進めた。巨大な前腕、展開式のテイルブレード、長いメイスにより、近接戦では防御をほとんど考慮しない。",
       "もはや工業製品のようには見えない。三日月と共に戦闘によって改造され、最後には人と兵器の間にある何かになった。"
+    ],
+    "en": [
+      "The Lupus Rex pushes Barbatos's 'beast' side to the limit. Huge forearms, an extendable tail blade and a longer mace mean it barely considers defense in close combat.",
+      "The machine hardly looks like an industrial product anymore. Together with Mikazuki, it was reshaped by battle until it became something between a human and a weapon."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "帝王锤矛",
-        "ja": "レクスメイス"
+        "ja": "レクスメイス",
+        "en": "Rex Mace"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "双爪",
-        "ja": "ツインクロー"
+        "ja": "ツインクロー",
+        "en": "Twin Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "尾部刀",
-        "ja": "テイルブレード"
+        "ja": "テイルブレード",
+        "en": "Tail Blade"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "200mm 炮",
-        "ja": "200mm砲"
+        "ja": "200mm砲",
+        "en": "200mm Gun"
       },
       "type": "kinetic"
     }
@@ -106,12 +115,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

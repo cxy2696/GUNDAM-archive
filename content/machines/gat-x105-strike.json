@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "大西洋联邦与奥布合作开发的 GAT 系列机，以背包换装适应宇宙、空战与炮战。",
-    "ja": "大西洋連邦とオーブが共同開発したGAT系列機。バックパック換装で宇宙・空戦・砲戦に対応する。"
+    "ja": "大西洋連邦とオーブが共同開発したGAT系列機。バックパック換装で宇宙・空戦・砲戦に対応する。",
+    "en": "A GAT-series machine developed jointly by the Atlantic Federation and Orb, adapting to space, aerial and artillery combat with backpack swaps."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ストライクガンダムはフェイズシフト装甲と換装バックパックを採用し、C.E.71の戦場で最も柔軟な連合軍機の一つとなった。キラ・ヤマトがヘリオポリスで起動し、オーブと連合軍の衝突の中で「何を守るか」を問い続けた。"
+    ],
+    "en": [
+      "The Strike Gundam uses Phase Shift armor and interchangeable backpacks, making it one of the most flexible Alliance machines on the C.E.71 battlefield. Kira Yamato activated it at Heliopolis and kept redefining 'what must be protected' through the conflicts in Orb and with the Alliance."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -103,7 +111,8 @@
       "sources": [
         {
           "label": "《机动战士高达SEED C.E.73 STARGAZER》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam SEED C.E.73 STARGAZER mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "phase-shift"
@@ -118,7 +127,8 @@
       "sources": [
         {
           "label": "《机动战士高达 SEED》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam SEED mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "phase-shift"
@@ -134,7 +144,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -149,7 +160,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -164,7 +176,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -179,7 +192,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -194,7 +208,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -209,7 +224,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -224,7 +240,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -239,7 +256,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -254,7 +272,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -269,7 +288,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -291,13 +311,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 SEED》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 SEED》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam SEED\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

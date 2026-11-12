@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军的可变型高达，可变形为 MA 进行高速突袭。",
-    "ja": "地球連合軍の可変型ガンダム。MAへ変形して高速突撃を行う。"
+    "ja": "地球連合軍の可変型ガンダム。MAへ変形して高速突撃を行う。",
+    "en": "The Earth Alliance's transformable Gundam, able to change into an MA for high-speed raids."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "イージスはGATシリーズで唯一、可変構造を重視した機体である。MS形態では四本のビームサーベルによる近接戦を得意とし、MA形態では高速で目標へ接近し突撃する。",
       "その設計には攻撃的な優雅さがある。すべての武器は「近づいて終わらせる」ためであり、遠距離での消耗を目的としない。"
+    ],
+    "en": [
+      "The Aegis Gundam is the only machine in the GAT series to emphasize a transformable structure. In MS form it excels at close combat with four beam sabers; in MA form it can approach at high speed and ram a target.",
+      "Its design has an aggressive elegance: every weapon points toward 'close in and finish it', not long-range attrition."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×4",
-        "ja": "ビームサーベル ×4"
+        "ja": "ビームサーベル ×4",
+        "en": "Beam Saber ×4"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "变形 MA 形态",
-        "ja": "MA形態"
+        "ja": "MA形態",
+        "en": "MA Transformation"
       },
       "type": "special"
     }
@@ -105,12 +114,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

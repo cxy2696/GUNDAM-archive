@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "Gundam X 的后继机，搭载双卫星微波炮，是废土上最具战略威慑力的机体。",
-    "ja": "ガンダムXの後継機。ツインサテライトキャノンを搭載し、廃墟で最も戦略的抑止力を持つ機体。"
+    "ja": "ガンダムXの後継機。ツインサテライトキャノンを搭載し、廃墟で最も戦略的抑止力を持つ機体。",
+    "en": "The successor to the Gundam X, carrying twin satellite cannons and the most strategically intimidating machine in the wasteland."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ダブルXは二基のサテライトキャノンと強化された反応炉で「一撃で戦局を変える」力を最大限まで高めたが、発射には多大なエネルギーと支援を要する。ガロードの手で廃墟の希望にも、旧戦争遺産の時限爆弾にもなった。"
+    ],
+    "en": [
+      "The Double X pushes 'one shot changes the battle' to its largest scale with two satellite cannons and a stronger reactor, but each shot requires enormous energy and support. In Garrod's hands it is both the wasteland's hope and a time bomb left by the old war."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "双卫星微波炮",
-        "ja": "ツインサテライトキャノン"
+        "ja": "ツインサテライトキャノン",
+        "en": "Twin Satellite Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -107,13 +115,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动新世纪高达 X》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动新世纪高达 X》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"After War Gundam X\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

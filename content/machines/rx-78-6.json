@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "联邦为地面战开发的 RX-78 六号机，强化装甲与双管光束枪。",
-    "ja": "連邦が地上戦用に開発したRX-78の6号機。装甲とツイン・ビーム・ガンを強化した。"
+    "ja": "連邦が地上戦用に開発したRX-78の6号機。装甲とツイン・ビーム・ガンを強化した。",
+    "en": "The Federation's RX-78 Unit 6, developed for ground combat, with reinforced armor and a twin beam gun."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "マドロックガンダムはRX-78シリーズの中でも地上制圧に寄った機体である。装甲は厚く、ツイン・ビーム・ガンとグレネード・ランチャーによって市街地でも山地でも継続的な火力を出せる。",
       "「マドロック」の名は鈍重で堅牢な印象に由来する。2号機のような伝説はないが、別の戦線でガンダムとしての重量を引き受けた。"
+    ],
+    "en": [
+      "The Mudrock Gundam is the machine in the RX-78 series that leans toward ground suppression. Its armor is thicker, and its twin beam gun and grenade launcher let it keep up firepower in both cities and mountains.",
+      "The name 'Mudrock' comes from its heavy, solid impression. It lacks Unit 2's legend, but on another front it carried the weight a Gundam should."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "双管光束枪",
-        "ja": "ツイン・ビーム・ガン"
+        "ja": "ツイン・ビーム・ガン",
+        "en": "Twin Beam Gun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "榴弹发射器",
-        "ja": "グレネード・ランチャー"
+        "ja": "グレネード・ランチャー",
+        "en": "Grenade Launcher"
       },
       "type": "kinetic"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "《吉翁前线 机动战士高达0079》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Zeonic Front: Mobile Suit Gundam 0079 original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

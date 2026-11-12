@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "佩尔公司开发的 GUND 格式化高达，以高机动与远程操纵闻名。",
-    "ja": "ペイル社が開発したGUNDフォーマット搭載ガンダム。高機動と遠隔操作で知られる。"
+    "ja": "ペイル社が開発したGUNDフォーマット搭載ガンダム。高機動と遠隔操作で知られる。",
+    "en": "The GUND Format Gundam developed by Peil Technologies, known for high mobility and remote operation."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ファラクトの設計には明確な実験の気配がある。四肢とスラスターは分離・再構成でき、パイロットは遠距離から複数の部位を操作する。",
       "ペイル社にとっては技術展示であり、乗る強化人間にとっては繰り返し消耗される実験である。"
+    ],
+    "en": [
+      "The Pharact's design has a clear experimental character. Its limbs and thrusters can separate and reassemble, letting the pilot operate multiple parts from a distance.",
+      "For Peil it is a technology demonstration; for the enhanced human piloting it, it is an experiment that is used up again and again."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "GUND 格式化",
-        "ja": "GUNDフォーマット"
+        "ja": "GUNDフォーマット",
+        "en": "GUND Format"
       },
       "type": "special"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 水星的魔女》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -407,7 +407,7 @@ export function Atlas2D({
         <g className="atlas2d__markers">
           {visibleNodes.map(({ node, x, y, faction }) => {
             const active = node.id === selectedId;
-            const color = faction?.color ?? "#63e6ff";
+            const color = faction?.color ?? "#58ff9d";
             const shape = KIND_SHAPE[node.kind] ?? "circle";
             return (
               <g
@@ -494,7 +494,7 @@ export function Atlas2D({
                     }}
                     aria-label={pick(node.name, lang)}
                   >
-                    <circle r={active ? 4.2 : 2.8} fill={active ? "#ffb648" : "rgba(99,230,255,0.85)"} stroke="#04101c" strokeWidth={0.8} />
+                    <circle r={active ? 4.2 : 2.8} fill={active ? "#d8ff63" : "rgba(99,230,255,0.85)"} stroke="#04101c" strokeWidth={0.8} />
                     <circle r={8} fill="transparent" />
                     <title>{pick(node.name, lang)}</title>
                   </g>
@@ -508,7 +508,7 @@ export function Atlas2D({
 
         {selected && selected.node.kind !== "region" && (
           <g className="atlas2d__target" aria-hidden>
-            <line x1={selected.x} y1={selected.y - 14} x2={selected.x} y2={selected.y - 46} stroke={selected.faction?.color ?? "#63e6ff"} strokeWidth={0.9} />
+            <line x1={selected.x} y1={selected.y - 14} x2={selected.x} y2={selected.y - 46} stroke={selected.faction?.color ?? "#58ff9d"} strokeWidth={0.9} />
             <text x={selected.x} y={selected.y - 52} textAnchor="middle" className="atlas2d__target-label">
               TARGET LOCK
             </text>

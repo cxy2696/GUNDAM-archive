@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "新吉翁为夏亚打造的 NT 专用重型机。25.6 米的身躯、六枚浮游炮与赛可缪系统，让它在阿克西斯作战中成为 ν 高达最直接的对手。",
-    "ja": "ネオ・ジオンがシャアのために建造したNT専用大型機。25.6mの巨体、六基のファンネル、サイコミュを備え、アクシズ作戦でνガンダムの最大の敵となった。"
+    "ja": "ネオ・ジオンがシャアのために建造したNT専用大型機。25.6mの巨体、六基のファンネル、サイコミュを備え、アクシズ作戦でνガンダムの最大の敵となった。",
+    "en": "The Newtype-use heavy machine built by Neo Zeon for Char. Its 25.6-meter body, six funnels and psycommu system make it the most direct opponent of the Nu Gundam in the Axis operation."
   },
   "description": {
     "zh": [
@@ -34,11 +35,15 @@
     "ja": [
       "サザビーはジオン系MS設計思想の集大成である。高出力反応炉、重厚な装甲、サイコミュ、ファンネルを単機の限界まで積み上げた。体積と推力は連邦の同時期機を大きく上回るが、生産コストは極めて高かった。",
       "シャアはアクシズ作戦でこの機体を駆った。ファンネルは要塞内部では使いにくかったが、それでもνガンダムに大きな圧力を与えた。最後は二機ともサイコフレームの共振の中で制御を失った。"
+    ],
+    "en": [
+      "The Sazabi is the culmination of Zeon-style MS design philosophy: high-output reactor, heavy armor, psycommu and funnels all pushed to the limit of a single machine. Its size and thrust far exceed contemporary Federation machines, at the cost of extremely high production cost.",
+      "Char piloted it in the Axis operation. The funnels were restricted inside the fortress, but still put great pressure on the Nu Gundam. The two machines finally lost control together in the resonance of their psycho-frames."
     ]
   },
   "specs": {
     "heightOverall": 25.6,
-    "heightHead": 24.0,
+    "heightHead": 24,
     "weightEmpty": 30.5,
     "weightFull": 71.2,
     "powerOutput": 3960,
@@ -46,42 +51,48 @@
     "sensorRadius": 22600,
     "armor": {
       "zh": "高达尼姆合金",
-      "ja": "ガンダリウム合金"
+      "ja": "ガンダリウム合金",
+      "en": "Gundarium Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "光束霰弹步枪",
-        "ja": "ビーム・ショット・ライフル"
+        "ja": "ビーム・ショット・ライフル",
+        "en": "Beam Shotgun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "浮游炮 ×6",
-        "ja": "ファンネル ×6"
+        "ja": "ファンネル ×6",
+        "en": "Funnel ×6"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "腹部米加粒子炮",
-        "ja": "腹部メガ粒子砲"
+        "ja": "腹部メガ粒子砲",
+        "en": "Abdomen Mega Particle Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -128,11 +139,13 @@
   "sources": [
     {
       "label": "剧场版《机动战士高达 逆袭的夏亚》",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Theatrical film \"Mobile Suit Gundam: Char's Counterattack\""
     },
     {
       "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Gundam: Char's Counterattack MS setting materials"
     }
   ],
   "disputed": false,

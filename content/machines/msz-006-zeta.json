@@ -24,7 +24,8 @@
   },
   "summary": {
     "zh": "奥古与阿纳海姆合作的 TMS 旗舰机，可在 MS 与巡航形态间变形。它把可动骨架、高达尼姆γ与生物传感器带进了 U.C.0087 的主战场。",
-    "ja": "エゥーゴとアナハイムが共同開発したTMSの旗艦機。MS形態と巡航形態の変形が可能で、ムーバブルフレーム、ガンダリウムγ、バイオセンサーをU.C.0087の主戦場へ持ち込んだ。"
+    "ja": "エゥーゴとアナハイムが共同開発したTMSの旗艦機。MS形態と巡航形態の変形が可能で、ムーバブルフレーム、ガンダリウムγ、バイオセンサーをU.C.0087の主戦場へ持ち込んだ。",
+    "en": "The TMS flagship machine of the AEUG-Anaheim collaboration, able to transform between MS and cruising form. It brought the movable frame, Gundarium Gamma and bio-sensor into the main battlefield of U.C.0087."
   },
   "description": {
     "zh": [
@@ -34,6 +35,10 @@
     "ja": [
       "Ζ計画の核心は「一機で大気圏突入、宇宙戦、高機動格闘を同時に解決する」ことだった。可変フレームにより単機での大気圏突入が可能になったが、変形機構は構造疲労と整備性の難題を伴った。",
       "カミーユ・ビダンはこの機体でグリプス戦役の主要戦闘の大半を戦った。バイオセンサーは戦闘中に度々仕様を超える応答を示し、そのデータは後にアナハイムのサイコフレーム前期研究へ用いられた。"
+    ],
+    "en": [
+      "The core of the Z Project is 'one machine that handles atmospheric entry, space combat and high-mobility close combat at once'. The transformable frame lets the Zeta Gundam enter the atmosphere alone without an external booster, but the transformation mechanism also brings structural fatigue and maintenance problems.",
+      "Kamille Bidan piloted it through most of the key battles of the Gryps Conflict. The bio-sensor produced responses beyond specification several times in battle, and these data were later used by Anaheim in early research on the psycho-frame."
     ]
   },
   "specs": {
@@ -46,35 +51,40 @@
     "sensorRadius": 14000,
     "armor": {
       "zh": "高达尼姆γ合金",
-      "ja": "ガンダリウムγ合金"
+      "ja": "ガンダリウムγ合金",
+      "en": "Gundarium γ Alloy"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "腕部榴弹发射器 ×2",
-        "ja": "腕部グレネードランチャー ×2"
+        "ja": "腕部グレネードランチャー ×2",
+        "en": "Wrist Grenade Launcher ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -114,7 +124,8 @@
       "sources": [
         {
           "label": "《机动战士高达 逆袭的夏亚》MS 设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Gundam: Char's Counterattack MS setting materials"
         }
       ]
     },
@@ -129,7 +140,8 @@
       "sources": [
         {
           "label": "《机动战士高达 F91》设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Mobile Suit Gundam F91 setting materials"
         }
       ]
     },
@@ -143,8 +155,11 @@
       },
       "sources": [
         {
-          "label": "官方设定资料（待核页码）",
-          "level": "A"
+          "label": "本档案依据作品正片与公开机体资料整理的技术谱系（编辑整理，非官方谱系图）",
+          "level": "B",
+          "note": "谱系关系为编辑整理，不是官方发布的谱系图；每条边均可在对应机体页复核。",
+          "labelEn": "Technical lineage compiled from the work's on-screen content and public mobile suit materials by this archive (editorial compilation, not an official lineage chart)",
+          "noteEn": "This lineage is an editorial compilation, not an official chart. Every edge can be checked on the linked suit pages."
         }
       ]
     }
@@ -167,11 +182,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士 Z 高达》全 50 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Zeta Gundam\" all 50 episodes"
     },
     {
       "label": "《机动战士 Z 高达》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Zeta Gundam MS setting materials"
     }
   ],
   "disputed": false,

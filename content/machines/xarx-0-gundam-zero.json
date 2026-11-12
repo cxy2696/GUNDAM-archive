@@ -21,7 +21,8 @@
   },
   "summary": {
     "zh": "A.A.45 年，阿兹米·雷在月面启动的 XARX-0 高达 ZERO；机体与“材质化”技术及 Apocalypse 遗产直接相关。",
-    "ja": "A.A.45年、アズミ・レイが月面で起動したXARX-0ガンダムZERO。機体は「マテリアライズ」技術とアポカリプスの遺産に直結する。"
+    "ja": "A.A.45年、アズミ・レイが月面で起動したXARX-0ガンダムZERO。機体は「マテリアライズ」技術とアポカリプスの遺産に直結する。",
+    "en": "The XARX-0 Gundam ZERO was activated by Azmi Rei on the lunar surface in A.A.45; the machine is directly tied to 'materialization' technology and the Apocalypse legacy."
   },
   "description": {
     "zh": [
@@ -29,6 +30,9 @@
     ],
     "ja": [
       "XARX-0はRG計画における「改訂されたガンダム」の出発点。装甲・武装・マテリアライズ系統の全容は公開されておらず、機体そのものが未解釈の技術遺産である。アズミはアポカリプスの日常の中で、その意味を定義し直さねばならない。"
+    ],
+    "en": [
+      "The XARX-0 is the starting point of the 'revised Gundam' in the RG plan. Its armor, armaments and materialization system have not been fully disclosed; the machine itself is like an unexplained technological legacy, and Azmi must redefine it in the everyday life of Apocalypse."
     ]
   },
   "specs": {
@@ -44,21 +48,24 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -96,7 +103,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -118,13 +126,12 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 RG XARX-ZERO》官方设定资料",
-      "level": "S"
-    },
-    {
-      "label": "Gundam.INFO 官方机体资料",
-      "level": "A",
-      "url": "https://www.gundam.info/"
+      "label": "GUNDAM Archive A.A. 原创纪元设定（非官方）",
+      "level": "C",
+      "url": "https://github.com/cxy2696/GUNDAM-archive",
+      "note": "原创设定，不对应任何官方动画、漫画或游戏。",
+      "noteEn": "Original setting. It does not correspond to any official anime, manga or game.",
+      "labelEn": "GUNDAM Archive A.A. original era setting (unofficial)"
     }
   ],
   "disputed": false,

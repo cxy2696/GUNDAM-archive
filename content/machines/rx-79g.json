@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "用 RX-78 剩余零件与陆战需求拼出的量产型高达，活跃于东南亚战线。",
-    "ja": "RX-78の余剰部品と陸戦要求を組み合わせた量産型ガンダム。東南アジア戦線で活躍した。"
+    "ja": "RX-78の余剰部品と陸戦要求を組み合わせた量産型ガンダム。東南アジア戦線で活躍した。",
+    "en": "A mass-production Gundam assembled from leftover RX-78 parts and ground-combat needs, active on the Southeast Asian front."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "陸戦型ガンダムは観閲式や宣伝のために生まれた機体ではない。RX-78の余剰部品、陸戦用の防塵処理、交換可能な武装を組み合わせ、泥とジャングルでの継続戦闘を重視した。",
       "第08MS小隊などの運用記録が示すのは、単機性能ではなく補給・整備・歩兵連携の価値である。ガンダムを「装備」として使う機体だった。"
+    ],
+    "en": [
+      "The Ground Gundam is not a machine born for parades or propaganda. It combines leftover RX-78 parts, dustproofing for ground combat and interchangeable weapons, emphasizing sustained fighting in mud and jungle.",
+      "Records from units such as the 08th MS Team show that its value lies not in individual performance but in supply, maintenance and coordination with infantry—a Gundam treated as 'equipment' first."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "60mm 火神炮",
-        "ja": "60mmバルカン"
+        "ja": "60mmバルカン",
+        "en": "60mm Vulcan"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "100mm 机枪",
-        "ja": "100mmマシンガン"
+        "ja": "100mmマシンガン",
+        "en": "100mm Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "180mm 加农炮",
-        "ja": "180mmキャノン"
+        "ja": "180mmキャノン",
+        "en": "180mm Cannon"
       },
       "type": "kinetic"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《机动战士高达 第08MS小队》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: The 08th MS Team mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -110,7 +120,8 @@
       "sources": [
         {
           "label": "《机动战士高达外传 蓝色命运》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Side Story: Blue Destiny mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "exam"
@@ -134,12 +145,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 第08MS小队》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: The 08th MS Team\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

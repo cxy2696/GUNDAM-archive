@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "联邦 GP 系列的一号机，强调陆战与核心战机换装，是 0083 年高达开发计划的起点。",
-    "ja": "連邦GP計画の一号機。陸戦とコア・ファイター換装を重視し、0083年のガンダム開発計画の出発点となった。"
+    "ja": "連邦GP計画の一号機。陸戦とコア・ファイター換装を重視し、0083年のガンダム開発計画の出発点となった。",
+    "en": "The Federation GP series' Unit 1, emphasizing ground combat and core-fighter swaps, and the starting point of the 0083 Gundam Development Project."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "GP01はRX-78の技術を基に、換装可能なコア・ファイターとより完成度の高いムーバブルフレームを採用した。地球圏でのジオン残党との衝突で連邦新型MSの可能性を示す一方、計画の情報・兵站面の脆さも露呈した。"
+    ],
+    "en": [
+      "The GP01 is based on RX-78 technology, using a swappable core fighter and a more complete movable frame. It proved the potential of the Federation's new-generation MS in the conflict in the Earth sphere and against Zeon remnants, and also exposed the plan's fragility in intelligence and logistics."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "90mm 机枪",
-        "ja": "90mmマシンガン"
+        "ja": "90mmマシンガン",
+        "en": "90mm Machine Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -98,7 +106,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -113,7 +122,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     },
@@ -128,7 +138,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -150,13 +161,19 @@
   },
   "sources": [
     {
-      "label": "OVA《机动战士高达 0083 星尘的回忆》官方设定资料",
-      "level": "S"
+      "label": "OVA《机动战士高达 0083 星尘的回忆》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "OVA \"Mobile Suit Gundam 0083: Stardust Memory\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

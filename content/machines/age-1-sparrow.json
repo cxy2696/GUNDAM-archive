@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "AGE-1 的空战换装形态，以轻量化与飞行性能见长。",
-    "ja": "AGE-1の空戦換装形態。軽量化と飛行性能に優れる。"
+    "ja": "AGE-1の空戦換装形態。軽量化と飛行性能に優れる。",
+    "en": "An air-combat wear configuration of the AGE-1, emphasizing reduced weight and flight performance."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "スパローは重装甲を外し、軽量な空戦ユニットを装着した形態である。大気圏内を長時間飛行し、高度優位から急降下射撃を行う。",
       "タイタスに比べれば偵察・遊撃機に近い。AGEシステムの価値はここにある。同じ機体が戦場に応じて性格を変えられる。"
+    ],
+    "en": [
+      "The Sparrow removes the heavy armor and fits lightweight aerial-combat components. It can fly for long periods inside the atmosphere and uses altitude to make diving shots.",
+      "Compared with the Titus, it is closer to a reconnaissance and hit-and-run machine. This is where the AGE System's value lies: the same frame can change character to suit the battlefield."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "飞行背包",
-        "ja": "フライトパック"
+        "ja": "フライトパック",
+        "en": "Flight Pack"
       },
       "type": "special"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 AGE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam AGE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

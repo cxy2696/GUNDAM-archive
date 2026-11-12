@@ -22,10 +22,10 @@ function makeEarthTexture(): THREE.CanvasTexture {
   if (!ctx) return new THREE.CanvasTexture(canvas);
 
   const ocean = ctx.createLinearGradient(0, 0, 0, H);
-  ocean.addColorStop(0, "#071726");
-  ocean.addColorStop(0.45, "#0a2236");
-  ocean.addColorStop(0.55, "#0a2033");
-  ocean.addColorStop(1, "#061522");
+  ocean.addColorStop(0, "#03130a");
+  ocean.addColorStop(0.45, "#06301a");
+  ocean.addColorStop(0.55, "#052616");
+  ocean.addColorStop(1, "#020d06");
   ctx.fillStyle = ocean;
   ctx.fillRect(0, 0, W, H);
 
@@ -94,7 +94,7 @@ function makeMoonTexture(): THREE.CanvasTexture {
   canvas.height = 256;
   const ctx = canvas.getContext("2d");
   if (ctx) {
-    ctx.fillStyle = "#6f7a83";
+    ctx.fillStyle = "#6f9a7c";
     ctx.fillRect(0, 0, 512, 256);
     for (let i = 0; i < 70; i += 1) {
       const x = (i * 97) % 512;
@@ -122,21 +122,21 @@ const Earth = forwardRef<THREE.Mesh, { focus: { lon: number; lat: number }; onMi
     <group>
       <mesh ref={ref} onClick={onMiss} castShadow receiveShadow>
         <sphereGeometry args={[1, 96, 64]} />
-        <meshStandardMaterial map={texture} roughness={0.76} metalness={0.12} emissive="#0a2c40" emissiveIntensity={0.28} />
+        <meshStandardMaterial map={texture} roughness={0.76} metalness={0.12} emissive="#0a3a20" emissiveIntensity={0.28} />
       </mesh>
       <mesh scale={1.004}>
         <sphereGeometry args={[1, 48, 32]} />
-        <meshBasicMaterial color="#63e6ff" wireframe transparent opacity={0.05} />
+        <meshBasicMaterial color="#58ff9d" wireframe transparent opacity={0.05} />
       </mesh>
       <mesh scale={1.045}>
         <sphereGeometry args={[1, 48, 32]} />
-        <meshBasicMaterial color="#3fb8ff" transparent opacity={0.09} side={THREE.BackSide} />
+        <meshBasicMaterial color="#45ffd0" transparent opacity={0.09} side={THREE.BackSide} />
       </mesh>
-      <pointLight position={[4, 3, 5]} intensity={2.2} color="#dcefff" distance={18} />
+      <pointLight position={[4, 3, 5]} intensity={2.2} color="#eafff0" distance={18} />
       {/* focus marker */}
       <mesh position={[Math.cos(focus.lat * DEG) * Math.cos(focus.lon * DEG) * 1.01, Math.sin(focus.lat * DEG) * 1.01, -Math.cos(focus.lat * DEG) * Math.sin(focus.lon * DEG) * 1.01]}>
         <sphereGeometry args={[0.018, 8, 8]} />
-        <meshBasicMaterial color="#ffb648" />
+        <meshBasicMaterial color="#d8ff63" />
       </mesh>
     </group>
   );
@@ -154,14 +154,14 @@ function BodySphere({ body, label }: { body: string; label: string }) {
       <mesh>
         <sphereGeometry args={[info.radius, 48, 32]} />
         {moonTexture ? (
-          <meshStandardMaterial map={moonTexture} roughness={0.95} metalness={0.05} emissive="#33414f" emissiveIntensity={0.35} />
+          <meshStandardMaterial map={moonTexture} roughness={0.95} metalness={0.05} emissive="#294534" emissiveIntensity={0.35} />
         ) : (
           <meshStandardMaterial color={info.color} roughness={0.85} metalness={0.08} emissive={info.color} emissiveIntensity={0.12} />
         )}
       </mesh>
       <mesh scale={1.18}>
         <sphereGeometry args={[info.radius, 24, 16]} />
-        <meshBasicMaterial color="#7fdcff" wireframe transparent opacity={0.08} />
+        <meshBasicMaterial color="#9dffc4" wireframe transparent opacity={0.08} />
       </mesh>
       <Html position={[0, info.radius + 0.16, 0]} center className="atlas3d__body-label" zIndexRange={[20, 0]}>
         <span>{label}</span>
@@ -313,7 +313,7 @@ function Scene({
           : 0;
       const position = node3D(node, era.focus, spread);
       const faction = node.factionId ? factions.find((item) => item.id === node.factionId) : undefined;
-      return { node, position, color: faction?.color ?? "#63e6ff" };
+      return { node, position, color: faction?.color ?? "#58ff9d" };
     });
     const byId = new Map(nodes.map((item) => [item.node.id, item]));
     const routes = era.routes
@@ -339,14 +339,14 @@ function Scene({
 
   return (
     <>
-      <color attach="background" args={["#03060e"]} />
-      <fog attach="fog" args={["#03060e", 14, 34]} />
-      <ambientLight intensity={0.55} color="#7fb4d8" />
-      <directionalLight position={[6, 8, 6]} intensity={1.9} color="#e8f4ff" />
+      <color attach="background" args={["#010603"]} />
+      <fog attach="fog" args={["#010603", 14, 34]} />
+      <ambientLight intensity={0.55} color="#a9e8bf" />
+      <directionalLight position={[6, 8, 6]} intensity={1.9} color="#eafff0" />
       <Stars radius={70} depth={40} count={1800} factor={3.2} saturation={0.35} fade speed={0.35} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.9, 0]}>
         <ringGeometry args={[1.4, 9.6, 96, 1]} />
-        <meshBasicMaterial color="#2a5f86" transparent opacity={0.035} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#1f5a35" transparent opacity={0.035} side={THREE.DoubleSide} />
       </mesh>
 
       <group ref={groupRefs}>
@@ -368,7 +368,7 @@ function Scene({
             const theta = (index / 128) * Math.PI * 2;
             return new THREE.Vector3(Math.cos(theta) * 3.2, 0, Math.sin(theta) * 3.2);
           })}
-          color="#2c6d93"
+          color="#2f7a4a"
           transparent
           opacity={0.4}
           lineWidth={0.7}
@@ -381,7 +381,7 @@ function Scene({
           <Line
             key={route.key}
             points={route.points}
-            color="#ffb648"
+            color="#d8ff63"
             transparent
             opacity={0.55}
             lineWidth={1}

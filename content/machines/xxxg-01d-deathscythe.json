@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "流星作战的五台高达之一，以隐形与一击脱离为设计核心。",
-    "ja": "オペレーション・メテオの五機のガンダムの一機。隠密と一撃離脱を設計の核とする。"
+    "ja": "オペレーション・メテオの五機のガンダムの一機。隠密と一撃離脱を設計の核とする。",
+    "en": "One of the five Gundams of Operation Meteor, designed around stealth and one-hit withdrawal."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムデスサイズは「見られること」を失敗と見なす。装甲の継ぎ目とスラスター配置はレーダー特性を抑え、主武装は艦艇装甲を切り裂くビームサイズだ。",
       "オペレーション・メテオでは敵防線へ潜入し、指揮節点や補給施設を攻撃した。"
+    ],
+    "en": [
+      "The Deathscythe treats 'being seen' as failure. Its armor seams and thruster layout keep radar signature as low as possible, and its main weapon is a beam scythe capable of cutting through warship armor.",
+      "In Operation Meteor it was responsible for infiltrating enemy lines and attacking command nodes and supply facilities."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束镰刀",
-        "ja": "ビームサイズ"
+        "ja": "ビームサイズ",
+        "en": "Beam Scythe"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "破坏盾",
-        "ja": "バスターシールド"
+        "ja": "バスターシールド",
+        "en": "Buster Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     }
@@ -88,7 +96,8 @@
       "sources": [
         {
           "label": "《新机动战记高达W 无尽的华尔兹》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing: Endless Waltz mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "hyper-jammer"
@@ -112,12 +121,16 @@
   "sources": [
     {
       "label": "动画《新机动战记高达 W》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam Wing\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

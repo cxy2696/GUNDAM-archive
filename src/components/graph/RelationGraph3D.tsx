@@ -9,18 +9,18 @@ import type { Dictionary } from "@/lib/i18n";
 import type { GraphData, GraphNode } from "@/lib/graph";
 
 const EDGE_COLOR: Record<string, string> = {
-  hostility: "#ff5d6c",
-  alliance: "#5ce6a6",
-  succession: "#ffb648",
-  split: "#ff9f43",
-  affiliation: "#63e6ff",
+  hostility: "#ff7164",
+  alliance: "#6bff9f",
+  succession: "#d8ff63",
+  split: "#d8ff63",
+  affiliation: "#58ff9d",
   family: "#f472b6",
-  mentor: "#9a86ff",
-  comrade: "#5ce6a6",
-  rival: "#ff5d6c",
+  mentor: "#b4ff6a",
+  comrade: "#6bff9f",
+  rival: "#ff7164",
   admiration: "#f472b6",
-  lineage: "#5ce6a6",
-  event: "#ff5d6c",
+  lineage: "#6bff9f",
+  event: "#ff7164",
 };
 
 type Positioned = { node: GraphNode; position: [number, number, number]; angle: number; radius: number };
@@ -87,15 +87,15 @@ function GraphScene({
 
   return (
     <>
-      <color attach="background" args={["#03060e"]} />
-      <ambientLight intensity={0.8} color="#9cc7e8" />
-      <pointLight position={[4, 6, 5]} intensity={2.4} color="#eaf6ff" />
-      <pointLight position={[-5, -2, -4]} intensity={1.6} color="#9a86ff" />
+      <color attach="background" args={["#010603"]} />
+      <ambientLight intensity={0.8} color="#a9e8bf" />
+      <pointLight position={[4, 6, 5]} intensity={2.4} color="#eafff0" />
+      <pointLight position={[-5, -2, -4]} intensity={1.6} color="#b4ff6a" />
       <Stars radius={60} depth={36} count={1400} factor={3} saturation={0.35} fade speed={0.3} />
 
       <mesh position={[0, -1.4, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[1.4, 4.6, 96]} />
-        <meshBasicMaterial color="#2a5f86" transparent opacity={0.06} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#1f5a35" transparent opacity={0.06} side={THREE.DoubleSide} />
       </mesh>
       <mesh ref={centerRef}>
         <octahedronGeometry args={[0.46, 1]} />
@@ -195,7 +195,7 @@ function GraphScene({
 }
 
 function groupColor(node: GraphNode): string {
-  return node.color ?? "#63e6ff";
+  return node.color ?? "#58ff9d";
 }
 
 export function RelationGraph3D({

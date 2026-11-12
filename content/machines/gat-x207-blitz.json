@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军的隐密型高达，以海市蜃楼系统实现光学隐身。",
-    "ja": "地球連合軍の隠密型ガンダム。ミラージュコロイドで光学ステルスを実現する。"
+    "ja": "地球連合軍の隠密型ガンダム。ミラージュコロイドで光学ステルスを実現する。",
+    "en": "The Earth Alliance's stealth Gundam, achieving optical invisibility with the Mirage Colloid system."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ブリッツの核心は火力ではなく「消えること」にある。ミラージュコロイドが微粒子で機体を包み、可視光とレーダーの両方で希薄にする。",
       "破壊、奪取、斬首任務に適する。パイロットは自分が見えない状態で戦うことに慣れねばならない。この孤独は性能表には書かれない。"
+    ],
+    "en": [
+      "The Blitz Gundam's core is 'disappearing', not firepower. The Mirage Colloid system wraps the machine in particles, making it thin to both visible light and radar.",
+      "It is suited to sabotage, seizure and decapitation missions. The pilot must get used to fighting without being able to see the machine, a loneliness the performance chart does not record."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "攻盾系统",
-        "ja": "攻盾システム"
+        "ja": "攻盾システム",
+        "en": "Offensive Shield System"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "海市蜃楼系统",
-        "ja": "ミラージュコロイド"
+        "ja": "ミラージュコロイド",
+        "en": "Mirage Colloid"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "爪",
-        "ja": "クロー"
+        "ja": "クロー",
+        "en": "Claw"
       },
       "type": "melee"
     }
@@ -105,12 +114,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

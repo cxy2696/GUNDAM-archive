@@ -55,7 +55,7 @@ function PieceMesh({
   const baseColor = colors[piece.color as ColorKey];
   const color = useMemo(() => {
     if (quantum < 0.02 || piece.color === "eye") return baseColor;
-    return new THREE.Color(baseColor).lerp(new THREE.Color("#22d3ee"), quantum * 0.34).getStyle();
+    return new THREE.Color(baseColor).lerp(new THREE.Color("#58ff9d"), quantum * 0.34).getStyle();
   }, [baseColor, quantum, piece.color]);
   const isEye = piece.color === "eye" || piece.emissive;
   const metalness = piece.color === "frame" ? 0.92 : piece.color === "accent" ? 0.72 : 0.68;
@@ -235,8 +235,8 @@ function QuantumField({ height, amount }: { height: number; amount: number }) {
     () => ({
       uTime: { value: 0 },
       uAmount: { value: 0 },
-      uColorA: { value: new THREE.Color("#22d3ee") },
-      uColorB: { value: new THREE.Color("#a78bfa") },
+      uColorA: { value: new THREE.Color("#58ff9d") },
+      uColorB: { value: new THREE.Color("#b4ff6a") },
     }),
     [],
   );
@@ -304,7 +304,7 @@ function QuantumRings({ height, amount }: { height: number; amount: number }) {
         <mesh key={radius} rotation={[Math.PI / 2, 0, 0]} position={[0, (index - 1) * height * 0.16, 0]}>
           <torusGeometry args={[height * radius, 0.018, 8, 96]} />
           <meshBasicMaterial
-            color={index === 1 ? "#a78bfa" : "#22d3ee"}
+            color={index === 1 ? "#b4ff6a" : "#58ff9d"}
             transparent
             opacity={amount * (0.45 - index * 0.08)}
             depthWrite={false}
@@ -442,6 +442,7 @@ function StageScene({
   nonce,
   hovered,
   onHover,
+  transparent = false,
 }: {
   machine: Machine;
   explode: number;
@@ -452,16 +453,17 @@ function StageScene({
   nonce: number;
   hovered: string | null;
   onHover: (id: string | null) => void;
+  transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   const controls = useRef<any>(null);
 
   return (
     <>
-      <color attach="background" args={["#04090d"]} />
+      {!transparent && <color attach="background" args={["#04090d"]} />}
       <fog attach="fog" args={["#04090d", height * 2.6, height * 5.6]} />
       <ambientLight intensity={0.14} />
-      <hemisphereLight args={["#d8f3ff", "#04080b", 0.38]} />
+      <hemisphereLight args={["#d8ffe8", "#020a06", 0.42]} />
       <directionalLight
         position={[height * 1.35, height * 1.7, height * 1.5]}
         intensity={3.6}
@@ -477,13 +479,13 @@ function StageScene({
         shadow-camera-bottom={-height * 0.4}
         shadow-bias={-0.0004}
       />
-      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={3.0} color="#22d3ee" />
-      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={1.25} color="#8b7bff" />
-      <pointLight position={[0, height * 0.7, height * 1.6]} intensity={height * 1.3} color="#bfefff" distance={height * 2.5} />
+      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={3.0} color="#58ff9d" />
+      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={1.25} color="#b4ff6a" />
+      <pointLight position={[0, height * 0.7, height * 1.6]} intensity={height * 1.3} color="#d8ffe8" distance={height * 2.5} />
 
       <Environment resolution={192} frames={1} environmentIntensity={0.55}>
         <Lightformer form="rect" intensity={2.6} position={[0, height * 0.8, -height * 0.9]} scale={[height, height, 1]} color="#bfe9ff" />
-        <Lightformer form="rect" intensity={1.4} position={[-height * 0.9, height * 0.5, height * 0.4]} rotation-y={Math.PI / 2} scale={[height * 0.7, height * 0.5, 1]} color="#22d3ee" />
+        <Lightformer form="rect" intensity={1.4} position={[-height * 0.9, height * 0.5, height * 0.4]} rotation-y={Math.PI / 2} scale={[height * 0.7, height * 0.5, 1]} color="#58ff9d" />
         <Lightformer form="ring" intensity={2.2} position={[height * 0.8, height * 0.6, height * 0.6]} scale={height * 0.22} color="#f5a623" />
       </Environment>
 
@@ -500,17 +502,17 @@ function StageScene({
       {quantum > 0.01 && <QuantumRings height={height} amount={quantum} />}
       {quantum > 0.01 && <QuantumParticles height={height} amount={quantum} />}
       {quantum > 0.01 && (
-        <pointLight position={[0, height * 0.55, 0]} intensity={quantum * height * 1.1} color="#22d3ee" distance={height * 2.2} />
+        <pointLight position={[0, height * 0.55, 0]} intensity={quantum * height * 1.1} color="#58ff9d" distance={height * 2.2} />
       )}
 
       <Grid
         args={[height * 6, height * 6]}
         cellSize={1}
         cellThickness={0.45}
-        cellColor="#13323e"
+        cellColor="#0f3a22"
         sectionSize={5}
         sectionThickness={0.9}
-        sectionColor="#1d4d5c"
+        sectionColor="#1c6b3c"
         fadeDistance={height * 4.2}
         fadeStrength={2.2}
         infiniteGrid
@@ -518,12 +520,46 @@ function StageScene({
       />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
         <ringGeometry args={[height * 0.44, height * 0.452, 96]} />
-        <meshBasicMaterial color="#22d3ee" transparent opacity={0.32} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#58ff9d" transparent opacity={0.32} side={THREE.DoubleSide} />
       </mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
         <ringGeometry args={[height * 0.58, height * 0.585, 96]} />
-        <meshBasicMaterial color="#22d3ee" transparent opacity={0.12} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#58ff9d" transparent opacity={0.12} side={THREE.DoubleSide} />
       </mesh>
+
+      <group position={[0, 0.018, 0]}>
+        {Array.from({ length: 36 }, (_, index) => {
+          const angle = (index / 36) * Math.PI * 2;
+          const radius = height * 0.66;
+          return (
+            <mesh
+              key={`bearing-${index}`}
+              position={[Math.cos(angle) * radius, 0, Math.sin(angle) * radius]}
+              rotation={[0, -angle, 0]}
+            >
+              <boxGeometry args={[0.04, 0.012, index % 3 === 0 ? 0.58 : 0.3]} />
+              <meshBasicMaterial color="#58ff9d" transparent opacity={index % 3 === 0 ? 0.42 : 0.2} />
+            </mesh>
+          );
+        })}
+        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.002, 0]}>
+          <ringGeometry args={[height * 0.72, height * 0.724, 96]} />
+          <meshBasicMaterial color="#58ff9d" transparent opacity={0.12} side={THREE.DoubleSide} />
+        </mesh>
+        <mesh position={[-height * 0.92, height * 0.5, -height * 0.55]}>
+          <boxGeometry args={[0.035, height, 0.035]} />
+          <meshBasicMaterial color="#58ff9d" transparent opacity={0.22} />
+        </mesh>
+        {Array.from({ length: 9 }, (_, index) => (
+          <mesh
+            key={`ruler-${index}`}
+            position={[-height * 0.92, height * (0.1 + index * 0.1), -height * 0.55]}
+          >
+            <boxGeometry args={[index % 5 === 0 ? 0.6 : 0.32, 0.025, 0.025]} />
+            <meshBasicMaterial color="#58ff9d" transparent opacity={0.3} />
+          </mesh>
+        ))}
+      </group>
 
       <ContactShadows
         position={[0, 0.005, 0]}
@@ -565,6 +601,7 @@ export function MechStage({
   onHover,
   onReady,
   className = "",
+  transparent = false,
 }: {
   machine: Machine;
   explode: number;
@@ -577,6 +614,7 @@ export function MechStage({
   onHover: (id: string | null) => void;
   onReady?: () => void;
   className?: string;
+  transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   return (
@@ -584,10 +622,10 @@ export function MechStage({
       className={className}
       shadows
       dpr={[1, 1.75]}
-      gl={{ antialias: true, alpha: false, powerPreference: "high-performance" }}
+      gl={{ antialias: true, alpha: transparent, powerPreference: "high-performance" }}
       camera={{ position: presetPosition("iso", height), fov: 30, near: 0.1, far: height * 12 }}
       onCreated={({ gl }) => {
-        gl.setClearColor("#04090d", 1);
+        gl.setClearColor("#04090d", transparent ? 0 : 1);
         onReady?.();
       }}
       onPointerMissed={() => onHover(null)}
@@ -603,6 +641,7 @@ export function MechStage({
         nonce={nonce}
         hovered={hovered}
         onHover={onHover}
+        transparent={transparent}
       />
     </Canvas>
   );

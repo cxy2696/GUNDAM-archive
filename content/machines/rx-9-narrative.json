@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "独角兽系谱的技术验证机，以 A/B 装备换装与精神感应框架测试为核心。",
-    "ja": "ユニコーン系譜の技術検証機。A/B装備の換装とサイコフレームの試験を主目的とする。"
+    "ja": "ユニコーン系譜の技術検証機。A/B装備の換装とサイコフレームの試験を主目的とする。",
+    "en": "A technology demonstrator of the Unicorn lineage, centered on A/B equipment swaps and psycho-frame testing."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ナラティブガンダムはユニコーンのサイコフレーム・データをより軽量な機体へ応用し、換装で異なる任務に対応する。フェネクス追撃に参加し、サイコフレームの実戦における制御不能性を連邦に再認識させた。"
+    ],
+    "en": [
+      "The Narrative Gundam applies the Unicorn's psycho-frame data to a lighter machine and adapts to different missions through equipment swaps. It took part in the pursuit of the Phenex, and also made the Federation re-examine the uncontrollability of the psycho-frame in real combat."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "有线式浮游炮",
-        "ja": "有線式ファンネル"
+        "ja": "有線式ファンネル",
+        "en": "Wired Funnel"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -98,7 +106,8 @@
       "sources": [
         {
           "label": "《机动战士高达 NT》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Narrative mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "psychoframe"
@@ -121,13 +130,19 @@
   },
   "sources": [
     {
-      "label": "剧场版《机动战士高达 NT》官方设定资料",
-      "level": "S"
+      "label": "剧场版《机动战士高达 NT》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "Theatrical film \"Mobile Suit Gundam Narrative\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

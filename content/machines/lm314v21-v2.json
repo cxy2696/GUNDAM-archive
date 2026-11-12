@@ -23,7 +23,8 @@
   },
   "summary": {
     "zh": "神圣军事同盟为对抗赞斯卡尔而投入的最终旗舰机。光之翼让它在米诺夫斯基粒子环境下获得近乎不可能的加速与巡航能力。",
-    "ja": "ザンスカールに対抗するためリガ・ミリティアが投入した最終旗艦機。光の翼により、ミノフスキー粒子環境下で不可能に近い加速と巡航能力を得た。"
+    "ja": "ザンスカールに対抗するためリガ・ミリティアが投入した最終旗艦機。光の翼により、ミノフスキー粒子環境下で不可能に近い加速と巡航能力を得た。",
+    "en": "The final flagship machine the League Militaire committed against Zanscare. Its Wings of Light give it almost impossible acceleration and cruising ability in a Minovsky particle environment."
   },
   "description": {
     "zh": [
@@ -33,47 +34,56 @@
     "ja": [
       "V2はモジュール設計を採用し、換装により多様な任務形態に対応する。中核は新型熱核反応炉と「光の翼」推進システムで、展開時の巨大な光幕は推進器であると同時に防御場ともなる。",
       "ウッソ・エヴィンはザンスカール戦争後期の最も凄惨な戦闘をこの機体で戦った。V2の性能は同時期の量産機を大きく上回るが、高機動がもたらす操縦負荷と光の翼のエネルギー消費により、常に「少数のための機体」であり続けた。"
+    ],
+    "en": [
+      "The V2 uses a modular design and can adapt to many mission forms through equipment swaps. Its core is a new thermonuclear reactor and the 'Wings of Light' propulsion system: when deployed, the wings form a huge curtain of light that serves as both thruster and defensive field.",
+      "Uso Ewin piloted it through the most brutal fighting of the late Zanscare War. The V2's performance far exceeded contemporary mass-production machines, but the control load of its high mobility and the energy consumption of the Wings of Light kept it a machine for the few."
     ]
   },
   "specs": {
     "heightOverall": 15.5,
     "heightHead": 15.5,
     "weightEmpty": 10.8,
-    "weightFull": 21.0,
+    "weightFull": 21,
     "powerOutput": 7510,
     "thrust": 66750,
     "sensorRadius": 25000,
     "armor": {
       "zh": "高达尼姆合金陶瓷复合材料",
-      "ja": "ガンダリウム合金セラミック複合材"
+      "ja": "ガンダリウム合金セラミック複合材",
+      "en": "Gundarium Ceramic Composite"
     }
   },
   "armament": [
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束盾牌",
-        "ja": "ビームシールド"
+        "ja": "ビームシールド",
+        "en": "Beam Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光之翼",
-        "ja": "光の翼"
+        "ja": "光の翼",
+        "en": "Wings of Light"
       },
       "type": "special"
     }
@@ -110,7 +120,8 @@
       "sources": [
         {
           "label": "《∀高达》黑历史设定资料",
-          "level": "A"
+          "level": "A",
+          "labelEn": "Turn A Gundam Dark History setting materials"
         }
       ]
     }
@@ -133,11 +144,13 @@
   "sources": [
     {
       "label": "TV 动画《机动战士 V 高达》全 51 话",
-      "level": "S"
+      "level": "S",
+      "labelEn": "TV anime \"Mobile Suit Victory Gundam\" all 51 episodes"
     },
     {
       "label": "《机动战士 V 高达》MS 设定资料",
-      "level": "A"
+      "level": "A",
+      "labelEn": "Mobile Suit Victory Gundam MS setting materials"
     }
   ],
   "disputed": false,

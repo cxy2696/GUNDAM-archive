@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "维根方的高达型机体，由泽哈特驾驶，以浮游炮与高机动战著称。",
-    "ja": "ヴェイガン側のガンダム型機体。ゼハートが駆り、ファンネルと高機動戦で知られる。"
+    "ja": "ヴェイガン側のガンダム型機体。ゼハートが駆り、ファンネルと高機動戦で知られる。",
+    "en": "The Vagan side's Gundam-type machine, piloted by Zeheart, known for funnels and high-mobility combat."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "レギルスはヴェイガンの技術路線の結晶である。単眼センサーと流線形の輪郭は、連邦系ガンダムと明確な対比を成す。",
       "ゼハートがこれに乗る頃、彼は何かを証明するためではなく、自ら選んだ道を守るために戦っていた。機体には悲劇的な完成度が漂う。"
+    ],
+    "en": [
+      "The Legilis is the crystallization of the Vagan technological line. Its mono-eye sensor and streamlined silhouette contrast sharply with Federation Gundams.",
+      "When Zeheart piloted it, he was no longer trying to prove anything, but to protect the path he had chosen. The machine therefore carries a tragic completeness."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "浮游炮",
-        "ja": "ファンネル"
+        "ja": "ファンネル",
+        "en": "Funnel"
       },
       "type": "special"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -118,12 +128,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 AGE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam AGE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -6,14 +6,14 @@ const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "GUNDAM Archive — 机动战士档案",
+    name: "GUNDAM Archive — Mobile Suit Dossier",
     short_name: "GUNDAM",
-    description: "可交互、可追溯的机动战士档案馆。",
+    description: "An interactive, source-traced mobile suit archive.",
     start_url: `${base}/zh/`,
     scope: `${base}/`,
     display: "standalone",
-    background_color: "#060b10",
-    theme_color: "#060b10",
+    background_color: "#020805",
+    theme_color: "#020805",
     icons: [{ src: `${base}/icon.svg`, sizes: "any", type: "image/svg+xml", purpose: "any" }],
   };
 }

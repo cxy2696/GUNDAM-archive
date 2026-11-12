@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "德天使高达的后继机，背部隐藏着第二台高达 Seraphim。",
-    "ja": "ヴァーチェの後継機。背部に第二のガンダム、セラフィムを隠す。"
+    "ja": "ヴァーチェの後継機。背部に第二のガンダム、セラフィムを隠す。",
+    "en": "The successor to the Virtue, hiding a second Gundam, the Seraphim, in its back."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "セラヴィーの外観はヴァーチェより重厚だが、背部にはもう一機のガンダム、セラフィムを隠す。この設計により、重装火力の外側に突然の形態変化を残した。",
       "ティエリアの「隠す」ことへの執着が、機体構造そのものになっている。重装ガンダムであると同時に、二重身の戦術でもある。"
+    ],
+    "en": [
+      "The Seravee looks heavier than the Virtue, but another machine, the Seraphim, is hidden in its back. This design lets it keep the ability to change formation suddenly beyond its heavy firepower.",
+      "Tieria's obsession with 'hiding' became structure itself in this machine. It is a heavy Gundam, and also a tactic built on a double identity."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "GN 火箭炮 ×2",
-        "ja": "GNバズーカ ×2"
+        "ja": "GNバズーカ ×2",
+        "en": "GN Bazooka ×2"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 光束炮",
-        "ja": "GNビーム砲"
+        "ja": "GNビーム砲",
+        "en": "GN Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "隐藏机体 Seraphim",
-        "ja": "セラフィム"
+        "ja": "セラフィム",
+        "en": "Hidden Unit Seraphim"
       },
       "type": "special"
     }
@@ -102,9 +111,12 @@
   },
   "sources": [
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

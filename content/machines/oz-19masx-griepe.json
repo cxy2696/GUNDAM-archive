@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "G-UNIT 计划的高阶机体，以重型光束炮与可变装甲著称。",
-    "ja": "G-UNIT計画の上位機。重光束砲と可変装甲で知られる。"
+    "ja": "G-UNIT計画の上位機。重光束砲と可変装甲で知られる。",
+    "en": "A high-end machine of the G-UNIT plan, known for a heavy beam cannon and variable armor."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ガンダムグリープはG-UNITシリーズの中でも「決戦機」に近い一機である。肩部と背部に重光束砲を統合し、装甲は形態に応じて展開する。",
       "五機のガンダムのような伝説性はないが、OZの技術路線を直接示している。より少ない機体で、より集中した火力を担う。"
+    ],
+    "en": [
+      "The Griepe Gundam is the machine in the G-UNIT series closer to a 'decisive battle machine'. Heavy beam cannons are integrated into its shoulders and back, and its armor can unfold according to form.",
+      "It lacks the legendary quality of the five Gundams, but it directly embodies OZ's technical line: fewer machines carrying more concentrated firepower."
     ]
   },
   "specs": {
@@ -43,21 +48,24 @@
     {
       "name": {
         "zh": "光束炮",
-        "ja": "ビーム砲"
+        "ja": "ビーム砲",
+        "en": "Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "爪",
-        "ja": "クロー"
+        "ja": "クロー",
+        "en": "Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "《新机动战记高达W 双故事 G-UNIT》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam Wing Dual Story: G-UNIT original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

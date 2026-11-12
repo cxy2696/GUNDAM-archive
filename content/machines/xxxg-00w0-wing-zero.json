@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "五台高达的设计原型，搭载零式系统，能以预测战斗的方式引导驾驶员。",
-    "ja": "五機のガンダムの設計原型。ゼロシステムを搭載し、戦闘予測でパイロットを導く。"
+    "ja": "五機のガンダムの設計原型。ゼロシステムを搭載し、戦闘予測でパイロットを導く。",
+    "en": "The design prototype of the five Gundams, carrying the Zero System, which guides the pilot by predicting battle."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ウイングゼロはツインバスターライフルと変形機構を持ち、ゼロシステムは戦場情報を直接パイロットへ投射する。コロニー独立運動の象徴であり、「武力による戦争終結」という矛盾を最も鋭く体現する機体でもある。"
+    ],
+    "en": [
+      "The Wing Zero has a twin buster rifle and a transformation mechanism, and the Zero System projects battlefield information directly to the pilot. It is both a symbol of the colony independence movement and the sharpest carrier of the contradiction of 'ending war by force'."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "双管破坏步枪",
-        "ja": "ツインバスターライフル"
+        "ja": "ツインバスターライフル",
+        "en": "Twin Buster Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "火神炮 ×2",
-        "ja": "バルカン ×2"
+        "ja": "バルカン ×2",
+        "en": "Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -105,7 +113,8 @@
       "sources": [
         {
           "label": "《新机动战记高达 W》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam Wing mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gundarium"
@@ -121,7 +130,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -143,13 +153,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《新机动战记高达 W》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《新机动战记高达 W》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam Wing\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

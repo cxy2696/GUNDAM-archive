@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "联邦军的超大型高机动 MS，以米诺夫斯基飞行装甲与浮游导弹构成压倒性的推进力。",
-    "ja": "連邦軍の超大型高機動MS。ミノフスキー・フライト装甲とファンネル・ミサイルにより圧倒的な推力を得る。"
+    "ja": "連邦軍の超大型高機動MS。ミノフスキー・フライト装甲とファンネル・ミサイルにより圧倒的な推力を得る。",
+    "en": "The Federation's enormous high-mobility MS, whose Minovsky flight armor and funnel missiles produce overwhelming thrust."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "ペーネロペーはマフティーに対抗するため連邦軍が投入した旗艦機で、体積と推力は通常のMSを大きく上回る。Ξガンダムとダバオ上空で高速追撃戦を展開し、巨大機の整備性と政治的な重荷を露呈した。"
+    ],
+    "en": [
+      "The Penelope is the flagship machine the Federation committed against Mafty, with size and thrust far beyond a normal MS. It fought a high-speed chase with the Xi Gundam over Dava, ultimately exposing the double burden of giant machines in maintenance and politics."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "浮游导弹 ×2",
-        "ja": "ファンネル・ミサイル ×2"
+        "ja": "ファンネル・ミサイル ×2",
+        "en": "Funnel Missile ×2"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -107,13 +115,19 @@
   },
   "sources": [
     {
-      "label": "剧场版《机动战士高达 闪光的哈萨维》官方设定资料",
-      "level": "S"
+      "label": "剧场版《机动战士高达 闪光的哈萨维》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "Theatrical film \"Mobile Suit Gundam: Hathaway's Flash\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

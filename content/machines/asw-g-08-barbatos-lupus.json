@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "巴巴托斯在埃德蒙顿之战后的改装形态，速度与近战能力进一步提升。",
-    "ja": "エドモントン戦後の改修形態。速度と近接戦能力をさらに高めたバルバトス。"
+    "ja": "エドモントン戦後の改修形態。速度と近接戦能力をさらに高めたバルバトス。",
+    "en": "Barbatos's modified form after the Battle of Edmonton, with further improved speed and close-combat ability."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ルプスは数多の戦いを経たバルバトスの改修形態である。装甲を削り、スラスターとテイルユニットを強化し、全体の輪郭は獲物に襲いかかる獣のようになった。",
       "三日月・オーガスと機体の接続は深くなる。阿頼耶識システムは機体を直接感じさせ、同時にすべての衝撃を身体へ返す。"
+    ],
+    "en": [
+      "The Lupus is the form Barbatos took after many battles. Its armor was cut back, its thrusters and tail unit reinforced, and its overall silhouette resembles a beast preparing to pounce.",
+      "Mikazuki Augus's connection to the machine grew deeper. The Alaya-Vijnana System let him sense the mobile suit directly, but it also sent every impact back into his body."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "200mm 炮",
-        "ja": "200mm砲"
+        "ja": "200mm砲",
+        "en": "200mm Gun"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "锤矛",
-        "ja": "メイス"
+        "ja": "メイス",
+        "en": "Mace"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "爪",
-        "ja": "クロー"
+        "ja": "クロー",
+        "en": "Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "尾部推进器",
-        "ja": "テイルブースター"
+        "ja": "テイルブースター",
+        "en": "Tail Booster"
       },
       "type": "special"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《机动战士高达 铁血的奥尔芬斯》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "alaya-vijnana"
@@ -119,12 +129,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 铁血的奥尔芬斯》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam: Iron-Blooded Orphans\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

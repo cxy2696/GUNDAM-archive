@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "天人的第四世代高达，以双 GN 驱动器实现平方化的粒子输出。",
-    "ja": "ソレスタルビーイングの第四世代ガンダム。ツインGNドライブで二乗化した粒子出力を得る。"
+    "ja": "ソレスタルビーイングの第四世代ガンダム。ツインGNドライブで二乗化した粒子出力を得る。",
+    "en": "Celestial Being's fourth-generation Gundam, squaring particle output with twin GN Drives."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "ダブルオーガンダムの最大の特徴は武器ではなく、背部の二基のGNドライブである。同期すると粒子出力は加算ではなく二乗で増大する。",
       "同時に高いリスクを伴う。二基のドライブは完全な同期を保たねばならず、崩れれば機体は一瞬で制御を失う。"
+    ],
+    "en": [
+      "The 00 Gundam's biggest feature is the two GN Drives on its back, not its weapons. Once the twin drives synchronize, particle output grows quadratically, not additively.",
+      "This design also means extremely high risk. The two drives must stay in perfect sync, or the machine can lose control in an instant."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "GN 剑 II ×2",
-        "ja": "GNソードII ×2"
+        "ja": "GNソードII ×2",
+        "en": "GN Sword II ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 光束步枪",
-        "ja": "GNビームライフル"
+        "ja": "GNビームライフル",
+        "en": "GN Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "双 GN 驱动器",
-        "ja": "ツインGNドライブ"
+        "ja": "ツインGNドライブ",
+        "en": "Twin GN Drive"
       },
       "type": "special"
     }
@@ -95,7 +104,8 @@
       "sources": [
         {
           "label": "《机动战士高达00 先驱者的觉醒》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "gn-drive"
@@ -118,9 +128,12 @@
   },
   "sources": [
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

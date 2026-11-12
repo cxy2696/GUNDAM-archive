@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { ArrowUpRightIcon, OrbitMark } from "@/components/Icons";
 
@@ -17,7 +17,7 @@ export async function generateMetadata({
   return {
     title: dict.about.title,
     description: dict.about.lead,
-    alternates: { canonical: `/${lang}/about/`, languages: { "zh-CN": "/zh/about/", "ja-JP": "/ja/about/" } },
+    alternates: { canonical: `/${lang}/about/`, languages: languageAlternates("/about/") },
   };
 }
 
@@ -29,6 +29,14 @@ const layerText = {
     { id: "L4", name: "数据层", detail: "content/*.json + Zod · 目标 PostgreSQL 16 + JSONB", status: "as-built" },
     { id: "L5", name: "资产层", detail: "程序化 LOD-P · 目标 glTF 2.0 + KTX2 + CDN", status: "partial" },
     { id: "L6", name: "运营层", detail: "npm run validate · GitHub Actions · 内容 PR 门禁", status: "as-built" },
+  ],
+  en: [
+    { id: "L1", name: "Presentation", detail: "Next.js 15 App Router · static export · R3F", status: "as-built" },
+    { id: "L2", name: "Application", detail: "React Server Components · build-time data loading", status: "as-built" },
+    { id: "L3", name: "Service", detail: "Target: NestJS + Zod · currently replaced by build-time checks", status: "planned" },
+    { id: "L4", name: "Data", detail: "content/*.json + Zod · target PostgreSQL 16 + JSONB", status: "as-built" },
+    { id: "L5", name: "Assets", detail: "Procedural LOD-P · target glTF 2.0 + KTX2 + CDN", status: "partial" },
+    { id: "L6", name: "Operations", detail: "npm run validate · GitHub Actions · content PR gate", status: "as-built" },
   ],
   ja: [
     { id: "L1", name: "プレゼンテーション", detail: "Next.js 15 App Router · 静的書き出し · R3F", status: "as-built" },
@@ -46,6 +54,12 @@ const pipelineText = {
     { n: "02", t: "SCHEMA", d: "zod 校验字段、外键与引用" },
     { n: "03", t: "BUILD", d: "静态导出，生成 zh/ja 双语页面" },
     { n: "04", t: "SHIP", d: "CDN / GitHub Pages，缓存哈希失效" },
+  ],
+  en: [
+    { n: "01", t: "CONTENT", d: "Add or edit an entry in content/*.json" },
+    { n: "02", t: "SCHEMA", d: "Zod checks fields, foreign keys and references" },
+    { n: "03", t: "BUILD", d: "Static export generates zh / ja / en pages" },
+    { n: "04", t: "SHIP", d: "CDN / GitHub Pages, cache busted by hash" },
   ],
   ja: [
     { n: "01", t: "CONTENT", d: "content/*.json の項目を追加・修正" },
@@ -80,6 +94,31 @@ const extra = {
     cut: "DATA CUT",
     licenseTitle: "版权与许可",
     disclaimer: "非官方粉丝项目，与 Bandai Namco / 创通・Sunrise 无关联。",
+  },
+  en: {
+    asBuilt: "Shipped",
+    partial: "Partial",
+    planned: "Planned",
+    pipeline: "Content pipeline",
+    pipelineLead: "Adding a suit does not touch page code: drop in JSON, run the checks, rebuild.",
+    schemaTitle: "Single source of truth",
+    schemaText: "src/lib/schema.ts defines both the data shape and the TypeScript types. Zod parses every file at build time, so a bad field, foreign key or lineage loop stops the build instead of shipping.",
+    repoTitle: "Repository",
+    docs: [
+      { path: "docs/CHRONOLOGY.md", label: "Twelve-era table and reading paths" },
+      { path: "docs/MACHINE_COVERAGE.md", label: "Suit coverage and inclusion rules" },
+      { path: "docs/ARCHITECTURE.md", label: "Architecture and decision record" },
+      { path: "docs/CONTENT_GUIDE.md", label: "How to add a suit, event or character" },
+      { path: "docs/DATA_DICTIONARY.md", label: "Data dictionary and units" },
+      { path: "docs/ASSET_PIPELINE.md", label: "glTF / LOD / manifest rules" },
+      { path: "docs/GOVERNANCE.md", label: "Source tiers, disputes and copyright" },
+    ],
+    roadmapTitle: "From v3.1 to v3.2",
+    roadmapNote: "This release is a working archive, not the final form. Next up: real glTF assets and a content service.",
+    version: "VERSION",
+    cut: "DATA CUT",
+    licenseTitle: "Copyright and licence",
+    disclaimer: "Unofficial fan project. Not affiliated with Bandai Namco or Sotsu・Sunrise.",
   },
   ja: {
     asBuilt: "実装済み",
@@ -125,7 +164,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ABOUT</span>
-            <span className="mono">V3.1.3 / 2026.11.12</span>
+            <span className="mono">V3.2.0 / 2026.11.12</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -134,7 +173,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 3.1.3</span>
+            <span className="micro">{t.version} 3.2.0</span>
             <span className="micro">{t.cut} 2026.11.12</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
@@ -272,7 +311,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GUNDAM ARCHIVE / V3.1.3</span>
+              <span className="micro">GUNDAM ARCHIVE / V3.2.0</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>

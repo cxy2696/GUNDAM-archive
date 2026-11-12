@@ -10,6 +10,7 @@
 | 站点 | GitHub Pages 项目页 |
 | 中文 | https://cxy2696.github.io/GUNDAM-archive/zh/ |
 | 日文 | https://cxy2696.github.io/GUNDAM-archive/ja/ |
+| English | https://cxy2696.github.io/GUNDAM-archive/en/ |
 | 仓库 | https://github.com/cxy2696/GUNDAM-archive |
 | 部署分支 | `main` |
 | 构建方式 | `next build` + `output: "export"` → `out/` |
@@ -45,7 +46,9 @@ git push origin main
 
 ```bash
 curl -sI https://cxy2696.github.io/GUNDAM-archive/zh/ | head -1
-curl -sI https://cxy2696.github.io/GUNDAM-archive/zh/map/ | head -1
+curl -sI https://cxy2696.github.io/GUNDAM-archive/ja/ | head -1
+curl -sI https://cxy2696.github.io/GUNDAM-archive/en/ | head -1
+curl -sI https://cxy2696.github.io/GUNDAM-archive/en/map/ | head -1
 curl -s https://cxy2696.github.io/GUNDAM-archive/search-index.zh.json | python3 -c "import json,sys;print(len(json.load(sys.stdin)))"
 ```
 
@@ -142,7 +145,7 @@ NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive pnpm routes:check
 | 3D 空白 | 浏览器禁用 WebGL / 无 GPU | 查看控制台；页面应保留 2D 设计图/回退文案 |
 | 字体异常 | 本地字体未加载或系统回退 | 检查 `src/app/fonts/*.woff2` 与 `next/font/local` 构建日志 |
 | CI 安装失败 | pnpm 版本与 lockfile 不匹配 | 使用 pnpm 10；锁定 `pnpm-lock.yaml`，不要手改 |
-| build 内存不足 | 846+ 页面静态导出 | 在 CI 使用 Node 22；本地关闭其他构建；必要时拆分批次 |
+| build 内存不足 | 1269+ 页面静态导出 | 在 CI 使用 Node 22；本地关闭其他构建；必要时拆分批次 |
 | 文档检查失败 | 链接、计数或版本漂移 | 按 `docs:check` 输出修复；数量源以 `content/` 为准 |
 
 ## 9. 权限与安全

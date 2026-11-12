@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { MachineExplorer } from "@/components/MachineExplorer";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: dict.machineIndex.title,
     description: dict.machineIndex.lead,
-    alternates: { canonical: `/${lang}/machines/`, languages: { "zh-CN": "/zh/machines/", "ja-JP": "/ja/machines/" } },
+    alternates: { canonical: `/${lang}/machines/`, languages: languageAlternates("/machines/") },
   };
 }
 

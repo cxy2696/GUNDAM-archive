@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "与 X-1 同型的二号机，被木星势力夺取后由萨比尼驾驶。",
-    "ja": "X-1と同型の2号機。木星勢力に奪われ、ザビネ・シャルーが搭乗する。"
+    "ja": "X-1と同型の2号機。木星勢力に奪われ、ザビネ・シャルーが搭乗する。",
+    "en": "A sister machine of the same type as the X-1, seized by the Jupiter forces and later piloted by Zabine."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "X-2はX-1と同じ設計を共有しながら、パイロットの立場によってまったく別の経歴をたどる。木星勢力に奪われ、ザビネ・シャルーがかつての仲間を追う武器となった。",
       "X-2は後にザビネの手でクロスボーン・バンガードを追撃し、同型のX-1と向かい合う。"
+    ],
+    "en": [
+      "The X-2 shares the same design as the X-1, but its pilot's allegiance gave it a completely different history. After being seized by the Jupiter forces, it became the weapon Zabine Chareux used to hunt his former comrades.",
+      "The X-2 was later used by Zabine to pursue the Crossbone Vanguard, facing the same-type X-1 head-on."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束 Zanber",
-        "ja": "ビーム・ザンバー"
+        "ja": "ビーム・ザンバー",
+        "en": "Beam Zanber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "光束枪",
-        "ja": "ビームガン"
+        "ja": "ビームガン",
+        "en": "Beam Gun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "ABC 披风",
-        "ja": "ABCマント"
+        "ja": "ABCマント",
+        "en": "ABC Mantle"
       },
       "type": "special"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "《机动战士海盗高达》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Crossbone Gundam original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

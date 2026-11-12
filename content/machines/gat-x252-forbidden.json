@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "地球联合军的突入型高达，以能量偏向装甲与等离子炮突破防线。",
-    "ja": "地球連合軍の突入型ガンダム。エネルギー偏向装甲とプラズマ砲で防線を突破する。"
+    "ja": "地球連合軍の突入型ガンダム。エネルギー偏向装甲とプラズマ砲で防線を突破する。",
+    "en": "The Earth Alliance's penetration Gundam, breaking through defense lines with energy-deflecting armor and a plasma cannon."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "フォビドゥンは一部のビームを偏向する装甲を持ち、誘導プラズマ砲と組み合わせて敵陣を正面から切り開く。",
       "その設計は優雅ではなく、やや粗暴だ。強化人間のパイロットにとって、この機体は信頼できる相棒ではなく、着なければならない重鎧に近い。"
+    ],
+    "en": [
+      "The Forbidden Gundam's armor can deflect some beams; combined with its guided plasma cannon, it is suited to tearing open enemy formations from the front.",
+      "Its design does not pursue elegance and is even somewhat crude. To its enhanced pilot, the machine is like heavy armor that must be worn, not a partner that can be trusted."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "诱导等离子炮",
-        "ja": "誘導プラズマ砲"
+        "ja": "誘導プラズマ砲",
+        "en": "Guided Plasma Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束炮",
-        "ja": "ビーム砲"
+        "ja": "ビーム砲",
+        "en": "Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "重斩刀",
-        "ja": "重斬刀"
+        "ja": "重斬刀",
+        "en": "Heavy Sword"
       },
       "type": "melee"
     }
@@ -103,12 +112,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

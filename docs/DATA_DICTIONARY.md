@@ -1,6 +1,6 @@
 # 数据字典
 
-> 版本：v3.1.3（2026-11-12）。代码中的唯一真相源是 `src/lib/schema.ts`；本文是给人读的镜像，两者冲突时以 schema 为准。
+> 版本：v3.2.0（2026-11-12）。代码中的唯一真相源是 `src/lib/schema.ts`；本文是给人读的镜像，两者冲突时以 schema 为准。
 
 ## 0. 通用约定
 
@@ -14,7 +14,7 @@
 | 空值 | 没有数据用 `null` 或省略字段；禁止 0 或估算值 |
 | 公共字段 | 多数实体有 `sources`；机体额外有 `disputed`、`dataQuality`、`updatedAt` |
 | 出处覆盖 | **当前只有 Machine 与 Event 强制 `sources`**；Faction / Character / Work / Place / Tag 尚未逐条挂 `source_refs`，以作品/纪元锚定（M4 补全） |
-| UI 语言 | 界面语言由路由 `/zh` / `/ja` 决定，不写入内容字段；`Localized` 只描述数据本身 |
+| UI 语言 | 界面语言由路由 `/zh` / `/ja` / `/en` 决定，不写入内容字段；`Localized` 只描述数据本身 |
 
 ## 1. 枚举
 
@@ -242,7 +242,7 @@ U.C. 的 `span` 为 0001–0223，`window` 为 0079–0096；年表默认显示�
 
 ### 9.1 出处覆盖范围
 
-当前 v3.1 的 `sources` 覆盖：
+当前 v3.2 的 `sources` 覆盖：
 
 | 实体 | 是否强制 `sources` | 说明 |
 | --- | --- | --- |

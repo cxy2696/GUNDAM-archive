@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "在 RX-78 上追加全套装甲与重火力的方案，以机动性换取生存性。",
-    "ja": "RX-78に全身装甲と重火力を追加した案。機動性と引き換えに生存性を高める。"
+    "ja": "RX-78に全身装甲と重火力を追加した案。機動性と引き換えに生存性を高める。",
+    "en": "A plan to add a full set of armor and heavy firepower to the RX-78, trading mobility for survivability."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "フルアーマーガンダムは「ガンダムをどこまで改修できるか」という連邦の直接的な答えである。装着できる装甲をすべて着け、携行できるミサイルをすべて積んだ。結果として火力と防御力は上がり、機動性は明確に低下した。",
       "新しい機体というより、着脱式の戦術装備に近い。この発想は後のGPシリーズや各種フルアーマー案に繰り返し現れる。"
+    ],
+    "en": [
+      "The Full Armor Gundam is the Federation's direct answer to 'how else can the Gundam be modified': fit all the armor it can carry and bring all the missiles it can carry. The result is more firepower and protection and a clear drop in mobility.",
+      "It is more a detachable tactical kit than a completely new machine. The idea reappeared repeatedly in the GP series and various full-armor plans."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "60mm 火神炮 ×2",
-        "ja": "60mmバルカン ×2"
+        "ja": "60mmバルカン ×2",
+        "en": "60mm Vulcan ×2"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "双管光束枪",
-        "ja": "ツイン・ビーム・ガン"
+        "ja": "ツイン・ビーム・ガン",
+        "en": "Twin Beam Gun"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "导弹发射器 ×2",
-        "ja": "ミサイル・ランチャー ×2"
+        "ja": "ミサイル・ランチャー ×2",
+        "en": "Missile Launcher ×2"
       },
       "type": "kinetic"
     }
@@ -99,12 +108,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

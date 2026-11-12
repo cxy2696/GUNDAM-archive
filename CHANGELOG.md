@@ -1,5 +1,27 @@
 # Changelog
 
+## [3.2.0] — 2026-11-12
+
+### Added
+
+- **English edition (`/en`)**: full UI dictionary and English content across 148 machine dossiers, 114 characters, 69 events, 82 factions, 32 tech tags, 42 works, 12 eras, 15 places and 156 atlas nodes. Event titles and source labels now have English forms; every route has `hreflang` alternates and an English search index.
+- **Natural English copy**: hero, navigation, search hints and empty states rewritten as direct, conversational English instead of translated template text.
+- **Tactical phosphor reskin**: dark-green CRT palette, green MFD bezels, stronger scanlines, a live circular targeting scope behind the hero mech, and denser side telemetry panels modelled on the supplied cockpit reference.
+- **Quick Query band** on the home page: submit-to-search input, four example queries, all twelve era shortcuts and a visible `/`/`⌘K` entry point.
+- **Faster browse**: machine index filters now sync to the URL (`era`, `faction`, `tag`, `canon`, `sort`, `q`), with a canon segmented filter and a `/` keyboard focus shortcut.
+- **Faster search**: command palette type facets, result counts, recent queries, a `/` shortcut and Greek-letter normalisation (`ν` → `nu`) so Latin queries hit Greek-named suits.
+- **More model detail**: a universal mechanical detail kit for every suit — cheek vents, neck ring, cockpit seams, shoulder verniers, forearm panels, articulated hands and fingers, knee/ankle pistons, sole plates, backpack fuel tanks, nozzle bells, shield trim and weapon sights. The 3D stage adds bearing ticks, a range ring, a height ruler and green holographic lighting.
+- **Richer design sheets**: armament list, power/thrust/sensor readouts and colour/material slots added to the existing front elevation, part graph and measurement overlay.
+- **Derived dossier readout**: power-to-weight, thrust-to-weight, sensor range, armament count and service window on every machine page, all computed from existing data rather than invented.
+- **Source integrity pass**: removed every “待核页码” placeholder, reclassified the two A.A. originals as unofficial C-tier material, replaced vague “official setting materials” labels with on-screen/public-source wording, and added English citation labels. No A.A. fan setting is presented as official.
+
+### Changed
+
+- Machine, event, faction, tag, place and era content now carries `en` fields; `pick()` and `pickList()` fall back explicitly when a translation is absent.
+- Search indexes all three languages at once, including armaments, descriptions and source-native terms.
+- Version bumped to `3.2.0`; 1,277 static pages, 487 entries per language, 1,269 sitemap routes.
+
+
 All notable changes to GUNDAM Archive are documented here.  
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 

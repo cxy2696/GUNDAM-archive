@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "豹式高达的强化形态，追加大型导弹与光束炮。",
-    "ja": "ガンダムレオパルドの強化形態。大型ミサイルとビーム砲を追加した。"
+    "ja": "ガンダムレオパルドの強化形態。大型ミサイルとビーム砲を追加した。",
+    "en": "An enhanced form of the Leopard Gundam, adding large missiles and a beam cannon."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "デストロイはレオパルドの「支援」を「攻城」へ押し進めた。大型ミサイルとビーム砲により、歩兵の制圧だけでなく拠点の破壊が可能になる。",
       "一方で輪郭は大きく、遅い。運用部隊は一つの事実を受け入れねばならない。火力が強いほど、敵に優先して狙われる。"
+    ],
+    "en": [
+      "The Destroy pushes the Leopard Gundam's 'support' toward 'siege'. Large missiles and a beam cannon let it demolish strongholds, not merely suppress infantry.",
+      "But its silhouette is also larger and slower. Units using it must accept a fact: the stronger the firepower, the more likely it becomes the enemy's priority target."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "双管光束加特林",
-        "ja": "ツイン・ビームガトリング"
+        "ja": "ツイン・ビームガトリング",
+        "en": "Twin Beam Gatling"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "大型导弹",
-        "ja": "大型ミサイル"
+        "ja": "大型ミサイル",
+        "en": "Large Missile"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束炮",
-        "ja": "ビーム砲"
+        "ja": "ビーム砲",
+        "en": "Beam Cannon"
       },
       "type": "beam"
     }
@@ -94,12 +102,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

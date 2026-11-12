@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新联合国军的强化人专用机，以光束爪与散射炮进行猎杀。",
-    "ja": "新UN軍の強化人間専用機。ビームクローと拡散ビーム砲で狩りを行う。"
+    "ja": "新UN軍の強化人間専用機。ビームクローと拡散ビーム砲で狩りを行う。",
+    "en": "The New UN Forces' machine for enhanced humans, hunting with beam claws and a scattering cannon."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ヴァサーゴは強化人間向けに調整された機体である。ビームクローは近距離で装甲を裂き、拡散ビーム砲は相手の退路を塞ぐ。",
       "フロスト兄弟にとって戦闘は決闘ではなく任務だ。機体の設計も同じ冷たさを帯びる。余計な装飾はなく、最も効率的な殺傷経路だけがある。"
+    ],
+    "en": [
+      "The Virsago Gundam is a machine tuned for enhanced humans. Its beam claws are suited to tearing armor at close range, while the scattering beam cannon is used to cut off an opponent's retreat.",
+      "For the Frost brothers, battle is a mission, not a duel. The machine's design reflects the same coldness: no excess decoration, only the most efficient kill path."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束爪",
-        "ja": "ビームクロー"
+        "ja": "ビームクロー",
+        "en": "Beam Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "散射光束炮",
-        "ja": "拡散ビーム砲"
+        "ja": "拡散ビーム砲",
+        "en": "Scattering Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -87,7 +95,8 @@
       "sources": [
         {
           "label": "《机动新世纪高达 X》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "After War Gundam X mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -103,7 +112,8 @@
       "sources": [
         {
           "label": "机体谱系整理（作品设定）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "Mobile suit lineage compilation (work setting)"
         }
       ]
     }
@@ -126,12 +136,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

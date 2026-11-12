@@ -460,22 +460,139 @@ export function buildMech(config: ViewerConfig): MechPart[] {
     parts.push({ id: "weapon", axis: [0.55, 0.15, 1], order: 1.45, pieces });
   }
 
+  /* ---------------- universal detail kit ----------------
+     Small mechanical read-through details shared by every suit:
+     panel seams, vents, joint pistons, hands, nozzles and warning
+     lamps. They are deliberately non-specific so they add legibility
+     without inventing a machine's official gimmick. */
+  const byId = (id: MechPart["id"]) => parts.find((part) => part.id === id);
+  const add = (id: MechPart["id"], pieces: Piece[]) => {
+    const part = byId(id);
+    if (part) part.pieces.push(...pieces);
+  };
+
+  add("head", [
+    cyl([0.34, 0.38, 0.16], [0, 14.05, 0], "secondary"),
+    box([0.9, 0.08, 0.06], [0, 14.32, 0.965], "frame"),
+    box([0.18, 0.22, 0.1], [-0.58, 14.62, 0.98], "frame"),
+    box([0.18, 0.22, 0.1], [0.58, 14.62, 0.98], "frame"),
+    cyl([0.1, 0.1, 0.08], [0, 15.72, -0.88], "eye", undefined, { emissive: true }),
+    box([0.34, 0.12, 0.1], [0, 14.1, 0.86], "accent"),
+  ]);
+
+  add("torso", [
+    box([0.05, 1.65, 0.06], [-1.05, 12.1, 1.33], "frame"),
+    box([0.05, 1.65, 0.06], [1.05, 12.1, 1.33], "frame"),
+    box([0.05, 1.3, 0.06], [-0.68, 12.2, 1.36], "frame"),
+    box([0.05, 1.3, 0.06], [0.68, 12.2, 1.36], "frame"),
+    cyl([0.16, 0.16, 0.1], [-1.48, 13.1, 1.24], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    cyl([0.16, 0.16, 0.1], [1.48, 13.1, 1.24], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    box([0.42, 0.08, 0.08], [0, 13.72, 1.32], "accent"),
+    box([0.3, 0.5, 0.1], [-1.9, 11.55, 0.72], "secondary", [0, 0, 0.12]),
+    box([0.3, 0.5, 0.1], [1.9, 11.55, 0.72], "secondary", [0, 0, -0.12]),
+    box([2.3, 0.1, 0.14], [0, 10.05, 1.01], "frame"),
+  ]);
+
+  add("waist", [
+    cyl([0.15, 0.15, 0.4], [0, 9.35, 0.68], "frame", [0, 0, Math.PI / 2]),
+    box([1.25, 0.14, 0.2], [0, 9.22, 1.02], "accent"),
+    box([0.12, 0.8, 0.1], [-1.42, 8.62, 1.08], "frame"),
+    box([0.12, 0.8, 0.1], [1.42, 8.62, 1.08], "frame"),
+    box([0.16, 0.16, 0.16], [-2.05, 7.55, 0.38], "eye", undefined, { emissive: true }),
+    box([0.16, 0.16, 0.16], [2.05, 7.55, 0.38], "eye", undefined, { emissive: true }),
+  ]);
+
+  for (const side of [-1, 1] as const) {
+    const x = side * (chestW / 2 + 1.25);
+    add(side === -1 ? "arm_l" : "arm_r", [
+      cyl([0.3, 0.3, 0.18], [x, 7.35, 0], "secondary", [0, 0, Math.PI / 2]),
+      box([0.62, 0.62, 0.48], [x, 6.72, 0.06], "frame"),
+      box([0.13, 0.46, 0.16], [x - 0.21, 6.3, 0.24], "frame"),
+      box([0.13, 0.46, 0.16], [x - 0.06, 6.28, 0.25], "frame"),
+      box([0.13, 0.46, 0.16], [x + 0.09, 6.28, 0.25], "frame"),
+      box([0.13, 0.46, 0.16], [x + 0.24, 6.3, 0.24], "frame"),
+      box([0.16, 0.32, 0.2], [x - side * 0.4, 6.58, 0.22], "frame", [0, 0, side * 0.38]),
+      box([0.07, 1.2, 0.06], [x + side * 0.2, 8.5, 0.87], "accent"),
+      box([0.42, 0.1, 0.12], [x, 9.55, 0.7], "frame"),
+      cyl([0.12, 0.12, 0.1], [x + side * 0.45, 8.0, 0.66], "eye", [0, 0, Math.PI / 2], { emissive: true }),
+    ]);
+
+    const lx = side * (heavy ? 1.65 : slim ? 1.28 : 1.42);
+    add(side === -1 ? "leg_l" : "leg_r", [
+      box([0.06, 2.1, 0.06], [lx - 0.28, 3.45, legW * 0.69], "frame"),
+      box([0.06, 1.45, 0.06], [lx + 0.28, 3.45, legW * 0.69], "frame"),
+      cyl([0.24, 0.24, 0.22], [lx, 5.0, 0], "secondary", [0, 0, Math.PI / 2]),
+      box([0.46, 0.1, 0.12], [lx, 5.1, 0.82], "accent"),
+      cyl([0.11, 0.11, 0.46], [lx, 2.1, -0.5], "frame"),
+      cyl([0.08, 0.08, 0.52], [lx, 2.1, 0.48], "frame"),
+      box([legW * 0.9, 0.1, 0.6], [lx, 2.48, 0.58], "frame"),
+      box([legW * 0.8, 0.14, 0.5], [lx, 0.18, 1.3], "accent"),
+      box([legW * 0.58, 0.12, 0.42], [lx, 0.3, -0.78], "frame"),
+      box([0.22, 0.16, 0.22], [lx + side * 0.55, 1.52, -0.22], "eye", undefined, { emissive: true }),
+    ]);
+  }
+
+  add("backpack", [
+    cyl([0.36, 0.36, 0.7], [-0.95, 11.82, -1.82], "secondary", [0.35, 0, 0]),
+    cyl([0.36, 0.36, 0.7], [0.95, 11.82, -1.82], "secondary", [0.35, 0, 0]),
+    cyl([0.4, 0.4, 0.1], [-0.95, 11.35, -1.62], "frame", [0.35, 0, 0]),
+    cyl([0.4, 0.4, 0.1], [0.95, 11.35, -1.62], "frame", [0.35, 0, 0]),
+    box([2.0, 0.08, 0.08], [0, 13.1, -1.85], "accent"),
+    box([1.4, 0.6, 0.08], [0, 12.3, -1.9], "secondary"),
+    box([0.18, 0.18, 0.18], [-1.2, 12.95, -1.9], "eye", undefined, { emissive: true }),
+    box([0.18, 0.18, 0.18], [1.2, 12.95, -1.9], "eye", undefined, { emissive: true }),
+  ]);
+
+  if (config.shield) {
+    add("shield", [
+      box([0.1, 3.3, 0.12], [-4.2, 8.6, 0.74], "frame", [0, 0.1, 0.03]),
+      box([0.86, 0.1, 0.1], [-4.32, 10.1, 0.74], "accent", [0, 0.1, 0.03]),
+      cyl([0.12, 0.12, 0.08], [-4.32, 7.6, 0.75], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    ]);
+  }
+
+  if (config.weapon === "rifle") {
+    add("weapon", [
+      box([0.16, 0.2, 0.28], [3.5, 8.28, 0.95], "eye", undefined, { emissive: true }),
+      box([0.24, 0.12, 0.6], [3.5, 7.6, 2.2], "accent"),
+      cyl([0.2, 0.2, 0.22], [3.5, 8.02, 4.3], "frame", [Math.PI / 2, 0, 0]),
+      box([0.1, 0.16, 0.44], [3.5, 8.22, 3.0], "frame"),
+    ]);
+  } else if (config.weapon === "bazooka") {
+    add("weapon", [
+      cyl([0.36, 0.36, 0.22], [3.4, 8.7, 3.12], "frame", [Math.PI / 2, 0, 0]),
+      box([0.3, 0.24, 0.4], [3.4, 8.32, 1.7], "eye", undefined, { emissive: true }),
+      box([0.24, 0.24, 0.7], [3.4, 8.3, 0.25], "accent"),
+    ]);
+  } else if (config.weapon === "saber") {
+    add("weapon", [
+      cyl([0.14, 0.14, 0.18], [3.75, 7.72, 0.35], "accent", [0, 0, 0]),
+      box([0.1, 0.36, 0.2], [3.75, 8.12, 0.35], "eye", undefined, { emissive: true }),
+    ]);
+  } else if (config.weapon === "mace") {
+    add("weapon", [
+      cone(0.14, 0.5, [3.7, 5.05, 0.45], "accent"),
+      box([1.0, 0.12, 0.98], [3.7, 6.05, 0.45], "accent"),
+      box([0.3, 0.2, 0.3], [3.7, 6.55, 0.45], "eye", undefined, { emissive: true }),
+    ]);
+  }
+
   return parts;
 }
 
 export const PART_LABELS = {
-  head: { zh: "头部", ja: "頭部" },
-  torso: { zh: "胸部 / 躯干", ja: "胸部・胴体" },
-  waist: { zh: "腰部 / 裙甲", ja: "腰部・スカート" },
-  shoulder_l: { zh: "左肩甲", ja: "左肩アーマー" },
-  shoulder_r: { zh: "右肩甲", ja: "右肩アーマー" },
-  arm_l: { zh: "左臂", ja: "左腕" },
-  arm_r: { zh: "右臂", ja: "右腕" },
-  leg_l: { zh: "左腿", ja: "左脚" },
-  leg_r: { zh: "右腿", ja: "右脚" },
-  backpack: { zh: "背包 / 推进器", ja: "バックパック・スラスター" },
-  weapon: { zh: "主武器", ja: "主武装" },
-  shield: { zh: "盾牌", ja: "シールド" },
+  head: { zh: "头部", ja: "頭部", en: "Head" },
+  torso: { zh: "胸部 / 躯干", ja: "胸部・胴体", en: "Torso" },
+  waist: { zh: "腰部 / 裙甲", ja: "腰部・スカート", en: "Waist / skirt armor" },
+  shoulder_l: { zh: "左肩甲", ja: "左肩アーマー", en: "Left shoulder" },
+  shoulder_r: { zh: "右肩甲", ja: "右肩アーマー", en: "Right shoulder" },
+  arm_l: { zh: "左臂", ja: "左腕", en: "Left arm" },
+  arm_r: { zh: "右臂", ja: "右腕", en: "Right arm" },
+  leg_l: { zh: "左腿", ja: "左脚", en: "Left leg" },
+  leg_r: { zh: "右腿", ja: "右脚", en: "Right leg" },
+  backpack: { zh: "背包 / 推进器", ja: "バックパック・スラスター", en: "Backpack / thrusters" },
+  weapon: { zh: "主武器", ja: "主武装", en: "Main weapon" },
+  shield: { zh: "盾牌", ja: "シールド", en: "Shield" },
 } as const;
 
 export type PartId = keyof typeof PART_LABELS;

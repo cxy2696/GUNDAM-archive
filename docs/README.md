@@ -3,7 +3,7 @@
 [中文](README.md) ｜ [English](README.en.md)
 
 > 文档按“唯一职责”维护，避免同一事实在多处漂移。  
-> 当前发布：v3.1.3 · 2026-11-12。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
+> 当前发布：v3.2.0 · 2026-11-12。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
 
 ## 1. 权威顺序
 
@@ -28,7 +28,7 @@
 | [EDITORIAL.md](EDITORIAL.md) | 编辑风格、禁用模板句、事实与长度规则 | 字段枚举、具体设定参数 |
 | [MACHINE_COVERAGE.md](MACHINE_COVERAGE.md) | “全机体”的收录规则、覆盖矩阵、明确不包含什么 | 具体参数、逐条出处 |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | 六层模型、目录边界、数据流、查看器、部署、ADR、迁移 | 字段表、逐条内容规范 |
-| [CONTENT_GUIDE.md](CONTENT_GUIDE.md) | 新增/修改机体、事件、人物、势力、作品、地图的步骤；双语与审校清单 | schema 类型定义、API 设计 |
+| [CONTENT_GUIDE.md](CONTENT_GUIDE.md) | 新增/修改机体、事件、人物、势力、作品、地图的步骤；三语与审校清单 | schema 类型定义、API 设计 |
 | [DATA_DICTIONARY.md](DATA_DICTIONARY.md) | 字段、枚举、单位、日期、关联、Atlas、校验规则 | 操作步骤、路线图 |
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | Token、字体、座舱外壳、图表、动效、响应式、可访问性 | 内容事实、数据字段 |
 | [ASSET_PIPELINE.md](ASSET_PIPELINE.md) | LOD、partId、manifest、Blender→glTF、验收 | 内容 JSON 字段 |
@@ -52,7 +52,7 @@
 | 改一段文字 | [EDITORIAL](EDITORIAL.md) | `pnpm language:check` |
 | 判断出处能不能用 | [GOVERNANCE](GOVERNANCE.md) | [DATA_SOURCES](DATA_SOURCES.md) |
 | 部署/回滚/排障 | [OPERATIONS](OPERATIONS.md) | `.github/workflows/` |
-| 改 UI/图表 | [DESIGN_SYSTEM](DESIGN_SYSTEM.md) | [ARCHITECTURE](ARCHITECTURE.md) 的 v3.1 节 |
+| 改 UI/图表 | [DESIGN_SYSTEM](DESIGN_SYSTEM.md) | [ARCHITECTURE](ARCHITECTURE.md) 的 v3.2 节 |
 | 接 3D 资产 | [ASSET_PIPELINE](ASSET_PIPELINE.md) | `docs/templates/asset-manifest.example.json` |
 | 看版本计划 | [ROADMAP](ROADMAP.md) | [../CHANGELOG.md](../CHANGELOG.md) |
 
@@ -60,7 +60,7 @@
 
 - **第一次接触**：README → ARCHITECTURE“六层模型” → 本页。
 - **新增内容**：CONTENT_GUIDE → DATA_DICTIONARY → `pnpm check`。
-- **改前端/查看器/图表**：DESIGN_SYSTEM → ARCHITECTURE 的 v3.1 节 → CONTRIBUTING。
+- **改前端/查看器/图表**：DESIGN_SYSTEM → ARCHITECTURE 的 v3.2 节 → CONTRIBUTING。
 - **发布/运维**：OPERATIONS → `.github/workflows/` → `pnpm check`。
 - **做 3D 资产**：ASSET_PIPELINE → DATA_DICTIONARY 的 ViewerConfig → `docs/templates/asset-manifest.example.json`。
 - **处理出处/版权**：GOVERNANCE → CONTENT_GUIDE → NOTICE。
@@ -72,8 +72,8 @@
 | 新增/删除条目 | README/README.ja 数量快照、CHANGELOG、相关覆盖表 | `pnpm docs:check`、`pnpm validate` |
 | 修改 schema 字段/枚举 | DATA_DICTIONARY、CONTENT_GUIDE、README 架构描述 | `pnpm typecheck`、`pnpm validate` |
 | 修改内容数字（纪元/事件/势力/标签） | CHRONOLOGY、MACHINE_COVERAGE、README | `pnpm docs:check` |
-| 新增/修改 Atlas | DATA_DICTIONARY（Atlas）、CONTENT_GUIDE 2.10、ARCHITECTURE v3.1 | `pnpm validate` |
-| 修改座舱/图表/缩放 | DESIGN_SYSTEM、ARCHITECTURE v3.1 | `pnpm typecheck`、`pnpm build` |
+| 新增/修改 Atlas | DATA_DICTIONARY（Atlas）、CONTENT_GUIDE 2.10、ARCHITECTURE v3.2 | `pnpm validate` |
+| 修改座舱/图表/缩放 | DESIGN_SYSTEM、ARCHITECTURE v3.2 | `pnpm typecheck`、`pnpm build` |
 | 修改 CI/发布/依赖 | OPERATIONS、CONTRIBUTING、README 部署表 | CI 与 Pages 实际跑通 |
 | 发布新版本 | CHANGELOG、ROADMAP、README 版本、package.json | `pnpm docs:check`、CI |
 

@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新日本的备用机体，以光束弓进行中距离支援。",
-    "ja": "ネオジャパンの予備機。ビームボウによる中距離支援を担う。"
+    "ja": "ネオジャパンの予備機。ビームボウによる中距離支援を担う。",
+    "en": "Neo Japan's backup machine, providing medium-range support with a beam bow."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ライジングガンダムはシャイニングガンダムの予備機で、輪郭はより軽く、武装も支援寄りである。ビームボウは連射でき、近距離では盾へ展開する。",
       "主役機のようなスポットライトはないが、要所で相棒の火力の空白を埋めた。ガンダムファイトは一人のリングではない。"
+    ],
+    "en": [
+      "The Rising Gundam is the Shining Gundam's backup, with a lighter silhouette and armaments leaning toward support. Its beam bow can fire repeatedly and can unfold into a shield at close range.",
+      "It never had the spotlight of a main character's machine, but at critical moments it filled the firepower gap for its partner. The Gundam Fight is not a one-person ring."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束弓",
-        "ja": "ビームボウ"
+        "ja": "ビームボウ",
+        "en": "Beam Bow"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "苦无",
-        "ja": "クナイ"
+        "ja": "クナイ",
+        "en": "Kunai"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -94,12 +102,16 @@
   "sources": [
     {
       "label": "动画《机动武斗传 G 高达》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Fighter G Gundam\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

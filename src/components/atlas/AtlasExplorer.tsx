@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import type { AtlasEra, Era, EventRecord, Faction, Lang, Machine } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
-import { pick } from "@/lib/i18n";
+import { pick, sourceLabel } from "@/lib/i18n";
 import { formatStoryDate } from "@/lib/format";
 import { Atlas2D } from "./Atlas2D";
 import { ZoomFrame } from "@/components/ui/ZoomFrame";
@@ -314,7 +314,7 @@ export function AtlasExplorer({
                       className={`atlas-index ${node.id === selectedId ? "is-active" : ""}`}
                       onClick={() => setSelectedId(node.id)}
                     >
-                      <span className="atlas-index__dot" style={{ background: factions.find((f) => f.id === node.factionId)?.color ?? "#63e6ff" }} />
+                      <span className="atlas-index__dot" style={{ background: factions.find((f) => f.id === node.factionId)?.color ?? "#58ff9d" }} />
                       {pick(node.name, lang)}
                       <span className="mono">{node.orbit ?? node.kind}</span>
                     </button>
@@ -332,10 +332,10 @@ export function AtlasExplorer({
                   <span className={`source-level source-level--${source.level}`}>{source.level}</span>
                   {source.url ? (
                     <a href={source.url} target="_blank" rel="noreferrer">
-                      {source.label}
+                      {sourceLabel(source, lang)}
                     </a>
                   ) : (
-                    source.label
+                    sourceLabel(source, lang)
                   )}
                 </li>
               ))}

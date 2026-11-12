@@ -12,7 +12,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "以一年战争为舞台，确立“少年驾驶员 + 人形兵器 + 战争政治”范式的原点作品。",
-      "ja": "一年戦争を舞台に、「少年パイロット＋人型兵器＋戦争政治」の原型を確立した原点。"
+      "ja": "一年戦争を舞台に、「少年パイロット＋人型兵器＋戦争政治」の原型を確立した原点。",
+      "en": "The origin work, set in the One Year War, that establishes the \"young pilot + humanoid weapon + war politics\" pattern."
     }
   },
   {
@@ -28,7 +29,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "格里普斯战役。可变骨架、可动骨架与提坦斯的暴力统治共同构成了 U.C.0087 的技术与政治底色。",
-      "ja": "グリプス戦役。可変フレーム、ムーバブルフレーム、ティターンズの暴力支配がU.C.0087の技術と政治を規定した。"
+      "ja": "グリプス戦役。可変フレーム、ムーバブルフレーム、ティターンズの暴力支配がU.C.0087の技術と政治を規定した。",
+      "en": "The Gryps Conflict. Variable frames, movable frames and the Titans' violent rule together form the technological and political backdrop of U.C. 0087."
     }
   },
   {
@@ -44,7 +46,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "第一次新吉翁战争。从格里普斯的废墟出发，把少年兵、殖民卫星政治与强化人悲剧推向更荒诞的方向。",
-      "ja": "第一次ネオ・ジオン戦争。グリプスの廃墟から始まり、少年兵・コロニー政治・強化人間の悲劇をより荒唐無稽な方向へ押し出した。"
+      "ja": "第一次ネオ・ジオン戦争。グリプスの廃墟から始まり、少年兵・コロニー政治・強化人間の悲劇をより荒唐無稽な方向へ押し出した。",
+      "en": "The First Neo Zeon War. Starting from the ruins of Gryps, it pushes child soldiers, colony politics and the tragedy of enhanced humans in a more absurd direction."
     }
   },
   {
@@ -60,7 +63,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0093，夏亚与小行星阿克西斯。精神感应框架在阿姆罗与夏亚的最终对决中越过了兵器与意识的边界。",
-      "ja": "U.C.0093、シャアと小惑星アクシズ。サイコフレームはアムロとシャアの最終決戦で兵器と意識の境界を越えた。"
+      "ja": "U.C.0093、シャアと小惑星アクシズ。サイコフレームはアムロとシャアの最終決戦で兵器と意識の境界を越えた。",
+      "en": "U.C. 0093, Char and the asteroid Axis. The psycho-frame crosses the boundary between weapon and consciousness in the final duel between Amuro and Char."
     }
   },
   {
@@ -76,7 +80,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "一年战争结束三年后的吉翁残党叛乱，以及提坦斯成立前夜的联邦腐败。",
-      "ja": "一年戦争終結から三年後のジオン残党の乱と、ティターンズ成立前夜の連邦の腐敗。"
+      "ja": "一年戦争終結から三年後のジオン残党の乱と、ティターンズ成立前夜の連邦の腐敗。",
+      "en": "A Zeon remnant rebellion three years after the end of the One Year War, and Federation corruption on the eve of the Titans' founding."
     }
   },
   {
@@ -92,7 +97,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0123，宇宙贵族主义与十字骨先锋。MS 小型化与生物传感器在此成为时代关键词。",
-      "ja": "U.C.0123、コスモ贵族主義とクロスボーン・バンガード。MSの小型化とバイオセンサーが時代の鍵となる。"
+      "ja": "U.C.0123、コスモ贵族主義とクロスボーン・バンガード。MSの小型化とバイオセンサーが時代の鍵となる。",
+      "en": "U.C. 0123, Cosmo Aristocracy and the Crossbone Vanguard. Mobile suit miniaturization and bio-sensors become the keywords of the era."
     }
   },
   {
@@ -108,7 +114,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0153，赞斯卡尔战争。少年胡索与 V2 高达在殖民地游击战中面对轮子与断头台。",
-      "ja": "U.C.0153、ザンスカール戦争。少年ウッソとV2ガンダムがコロニーゲリラ戦で車輪とギロチンに立ち向かう。"
+      "ja": "U.C.0153、ザンスカール戦争。少年ウッソとV2ガンダムがコロニーゲリラ戦で車輪とギロチンに立ち向かう。",
+      "en": "U.C. 0153, the Zanscare War. The boy Üso and the V2 Gundam face wheels and guillotines in a colonial guerrilla war."
     }
   },
   {
@@ -124,7 +131,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0096，拉普拉斯之盒。独角兽与毁灭模式把精神感应框架推向物理法则的边缘。",
-      "ja": "U.C.0096、ラプラスの箱。ユニコーンとデストロイモードがサイコフレームを物理法則の境界へ押し上げる。"
+      "ja": "U.C.0096、ラプラスの箱。ユニコーンとデストロイモードがサイコフレームを物理法則の境界へ押し上げる。",
+      "en": "U.C. 0096, Laplace's Box. The Unicorn and Destroy Mode push the psycho-frame to the edge of physical law."
     }
   },
   {
@@ -140,7 +148,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "F.C.0060，第十三届高达武斗会。以拳与机体代替国家战争的热血纪元。",
-      "ja": "F.C.0060、第13回ガンダムファイト。拳と機体で国家戦争を代替する熱血の紀元。"
+      "ja": "F.C.0060、第13回ガンダムファイト。拳と機体で国家戦争を代替する熱血の紀元。",
+      "en": "F.C. 0060, the 13th Gundam Fight. A hot-blooded era that replaces national war with fists and machines."
     }
   },
   {
@@ -156,7 +165,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.C.0195，流星作战。五台高达与 OZ 的政变把殖民地独立战争变成一场关于武器与和平的辩论。",
-      "ja": "A.C.0195、オペレーション・メテオ。五機のガンダムとOZのクーデターがコロニー独立戦争を武器と平和の議論へ変えた。"
+      "ja": "A.C.0195、オペレーション・メテオ。五機のガンダムとOZのクーデターがコロニー独立戦争を武器と平和の議論へ変えた。",
+      "en": "A.C. 0195, Operation Meteor. Five Gundams and OZ's coup turn the colonial independence war into a debate about weapons and peace."
     }
   },
   {
@@ -172,7 +182,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.W.0015，第七次宇宙战争的废墟。废土、拾荒者与“新人类”遗产构成一幅荒芜公路片。",
-      "ja": "A.W.0015、第7次宇宙戦争の廃墟。荒野、スカベンジャー、ニュータイプの遺産がロードムービーを描く。"
+      "ja": "A.W.0015、第7次宇宙戦争の廃墟。荒野、スカベンジャー、ニュータイプの遺産がロードムービーを描く。",
+      "en": "A.W. 0015, the ruins of the 7th Space War. The wasteland, scavengers and the legacy of \"Newtypes\" make up a desolate road movie."
     }
   },
   {
@@ -188,7 +199,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "C.C.2345，月球与地球的文明冲突。Turn A 与月光蝶把所有高达纪元的记忆收进“黑历史”。",
-      "ja": "C.C.2345、月と地球の文明衝突。ターンAと月光蝶が全てのガンダム紀元の記憶を「黒歴史」へ収める。"
+      "ja": "C.C.2345、月と地球の文明衝突。ターンAと月光蝶が全てのガンダム紀元の記憶を「黒歴史」へ収める。",
+      "en": "C.C. 2345, the civilizational conflict between the Moon and Earth. The Turn A and the Moonlight Butterfly gather the memory of every Gundam era into the \"Dark History\"."
     }
   },
   {
@@ -204,7 +216,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "C.E.71，调整者与自然人的全面战争。相转移装甲、中子干扰器与基因身份共同构成了新的战场。",
-      "ja": "C.E.71、コーディネイターとナチュラルの全面戦争。フェイズシフト装甲、ニュートロンジャマー、遺伝子の身分が新たな戦場を構成した。"
+      "ja": "C.E.71、コーディネイターとナチュラルの全面戦争。フェイズシフト装甲、ニュートロンジャマー、遺伝子の身分が新たな戦場を構成した。",
+      "en": "C.E. 71, full-scale war between Coordinators and Naturals. Phase shift armor, neutron jammers and genetic identity together form a new battlefield."
     }
   },
   {
@@ -220,7 +233,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.D.2307，轨道电梯时代的能源政治。天人以 GN 动力介入三大阵营的战争。",
-      "ja": "A.D.2307、軌道エレベーター時代のエネルギー政治。ソレスタルビーイングがGNドライヴで三大陣営の戦争へ介入する。"
+      "ja": "A.D.2307、軌道エレベーター時代のエネルギー政治。ソレスタルビーイングがGNドライヴで三大陣営の戦争へ介入する。",
+      "en": "A.D. 2307, the energy politics of the orbital elevator age. Celestial Being intervenes in the war of the three major blocs with GN drives."
     }
   },
   {
@@ -236,7 +250,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "一年战争末期，Side 6 的少年与联邦 NT-1 实验机卷入一场没有胜利者的战斗。",
-      "ja": "一年戦争末期、サイド6の少年と連邦のNT-1実験機が、勝者のいない戦いに巻き込まれる。"
+      "ja": "一年戦争末期、サイド6の少年と連邦のNT-1実験機が、勝者のいない戦いに巻き込まれる。",
+      "en": "At the end of the One Year War, a boy on Side 6 and the Federation's NT-1 prototype are caught in a battle with no winner."
     }
   },
   {
@@ -252,7 +267,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0097，独角兽事件后的叙述高达与“凤凰”追击战。",
-      "ja": "U.C.0097、ユニコーン事件後のナラティブガンダムと「フェネクス」追撃戦。"
+      "ja": "U.C.0097、ユニコーン事件後のナラティブガンダムと「フェネクス」追撃戦。",
+      "en": "U.C. 0097, the Narrative Gundam and the hunt for the \"Phoenix\" after the Unicorn incident."
     }
   },
   {
@@ -268,7 +284,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "U.C.0105，哈萨维以马夫蒂之名对抗联邦的腐败。",
-      "ja": "U.C.0105、ハサウェイがマフティーの名で連邦の腐敗に挑む。"
+      "ja": "U.C.0105、ハサウェイがマフティーの名で連邦の腐敗に挑む。",
+      "en": "U.C. 0105, Hathaway fights Federation corruption under the name Mafty."
     }
   },
   {
@@ -284,7 +301,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "C.E.73，第二次调整者与自然人的战争。命运计划把基因决定论推上政治舞台。",
-      "ja": "C.E.73、二度目のコーディネイターとナチュラルの戦争。デスティニープランが遺伝子決定論を政治の場へ押し出す。"
+      "ja": "C.E.73、二度目のコーディネイターとナチュラルの戦争。デスティニープランが遺伝子決定論を政治の場へ押し出す。",
+      "en": "C.E. 73, the second war between Coordinators and Naturals. The Destiny Plan brings genetic determinism onto the political stage."
     }
   },
   {
@@ -300,7 +318,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.D.2312，天人重组并与变革者、地球联邦的新秩序对抗。",
-      "ja": "A.D.2312、ソレスタルビーイングが再編し、イノベイターと地球連邦の新秩序に対抗する。"
+      "ja": "A.D.2312、ソレスタルビーイングが再編し、イノベイターと地球連邦の新秩序に対抗する。",
+      "en": "A.D. 2312, Celestial Being reforms and confronts the Innovators and the new order of the Earth Federation."
     }
   },
   {
@@ -316,7 +335,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "跨越三代的百年战争。AGE 系统记录战斗并把经验传给下一代。",
-      "ja": "三代にわたる百年戦争。AGEシステムが戦闘を記録し、経験を次代へ継承する。"
+      "ja": "三代にわたる百年戦争。AGEシステムが戦闘を記録し、経験を次代へ継承する。",
+      "en": "A hundred-year war across three generations. The AGE System records battles and passes experience to the next generation."
     }
   },
   {
@@ -332,7 +352,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "R.C.1014，宇宙电梯与光子电池时代的少年少女，重新面对被禁止的宇宙航行。",
-      "ja": "R.C.1014、軌道エレベーターと光子電池の時代の少年少女が、禁じられた宇宙航行と向き合う。"
+      "ja": "R.C.1014、軌道エレベーターと光子電池の時代の少年少女が、禁じられた宇宙航行と向き合う。",
+      "en": "R.C. 1014, boys and girls in the age of orbital elevators and photon batteries face forbidden space travel again."
     }
   },
   {
@@ -348,7 +369,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "P.D.323，火星少年兵组成的铁华团以一台厄祭战残存机挑战加拉尔霍恩。",
-      "ja": "P.D.323、火星の少年兵で結成された鉄華団が、厄祭戦の残存機でギャラルホルンを挑む。"
+      "ja": "P.D.323、火星の少年兵で結成された鉄華団が、厄祭戦の残存機でギャラルホルンを挑む。",
+      "en": "P.D. 323, Tekkadan, a group of Martian child soldiers, challenges Gjallarhorn with a surviving Calamity War machine."
     }
   },
   {
@@ -364,7 +386,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.S.122，水星来的少女进入阿斯提卡西亚学园，GUND 格式化与企业的算计交织。",
-      "ja": "A.S.122、水星から来た少女がアスティカシア学園へ入り、GUNDフォーマットと企業の思惑が交錯する。"
+      "ja": "A.S.122、水星から来た少女がアスティカシア学園へ入り、GUNDフォーマットと企業の思惑が交錯する。",
+      "en": "A.S. 122, a girl from Mercury enters Asticassia School, where GUND Format and corporate calculation intertwine."
     }
   },
   {
@@ -380,7 +403,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "A.A.45 年，月面少年阿兹米·雷在 Apocalypse 的日常中醒来，驾驶 XARX-0 高达 ZERO 面对被技术遗产改变的世界。",
-      "ja": "A.A.45年、月面の少年アズミ・レイがアポカリプスの日常の中で目覚め、XARX-0ガンダムZEROで技術遺産に変わった世界へ挑む。"
+      "ja": "A.A.45年、月面の少年アズミ・レイがアポカリプスの日常の中で目覚め、XARX-0ガンダムZEROで技術遺産に変わった世界へ挑む。",
+      "en": "In A.A. 45, the lunar boy Azumi Rei wakes in the everyday world of the Apocalypse and pilots the XARX-0 Gundam ZERO against a world changed by technological relics."
     }
   },
   {
@@ -396,7 +420,8 @@
     "canon": "parallel",
     "summary": {
       "zh": "在 A.A. 纪元的地球圈遗迹中，玩家驾驶螺旋高达穿越废弃轨道，对抗未知的自我增殖威胁。",
-      "ja": "A.A.紀元の地球圏遺跡を舞台に、プレイヤーは螺旋ガンダムで放棄軌道を駆け、未知の自己増殖脅威へ挑む。"
+      "ja": "A.A.紀元の地球圏遺跡を舞台に、プレイヤーは螺旋ガンダムで放棄軌道を駆け、未知の自己増殖脅威へ挑む。",
+      "en": "In the Earth Sphere ruins of the A.A. era, the player pilots the Spiral Gundam through derelict orbits against an unknown self-replicating threat."
     }
   },
   {
@@ -412,7 +437,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "东南亚战线的陆战小队群像。没有王牌与奇迹，只有泥泞、补给和一台陆战型高达。",
-      "ja": "東南アジア戦線の陸戦小隊を描く群像劇。エースも奇跡もなく、泥と補給と一機の陸戦型ガンダムがあるだけだ。"
+      "ja": "東南アジア戦線の陸戦小隊を描く群像劇。エースも奇跡もなく、泥と補給と一機の陸戦型ガンダムがあるだけだ。",
+      "en": "A group portrait of a ground squad on the Southeast Asian front. No aces and no miracles, only mud, supply and one ground-type Gundam."
     }
   },
   {
@@ -428,7 +454,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "穆尔殖民地废墟中的爵士与狙击。联邦与吉翁的残兵在漂浮的残骸带里互相猎杀。",
-      "ja": "ムーア同胞団の残骸で響くジャズと狙撃。連邦とジオンの残兵が漂うデブリ帯で殺し合う。"
+      "ja": "ムーア同胞団の残骸で響くジャズと狙撃。連邦とジオンの残兵が漂うデブリ帯で殺し合う。",
+      "en": "Jazz and sniping in the ruins of the Moore colony. Federation and Zeon remnants hunt each other in a drifting debris belt."
     }
   },
   {
@@ -444,7 +471,8 @@
     "canon": "game_original",
     "summary": {
       "zh": "地球联邦与吉翁两支试验部队在一年战争末期的平行轨迹。",
-      "ja": "一年戦争末期、連邦とジオンの二つの実験部隊の平行する軌跡。"
+      "ja": "一年戦争末期、連邦とジオンの二つの実験部隊の平行する軌跡。",
+      "en": "The parallel paths of two Earth Federation and Zeon test units at the end of the One Year War."
     }
   },
   {
@@ -460,7 +488,8 @@
     "canon": "game_original",
     "summary": {
       "zh": "EXAM 系统与联邦陆战队的失控实验。蓝色机体里装着不该被唤醒的东西。",
-      "ja": "EXAMシステムと連邦陸戦隊の暴走実験。青い機体には目覚めさせるべきでないものが宿る。"
+      "ja": "EXAMシステムと連邦陸戦隊の暴走実験。青い機体には目覚めさせるべきでないものが宿る。",
+      "en": "The EXAM System and the Federation Marines' out-of-control experiment. Something that should not have been awakened is inside the blue machine."
     }
   },
   {
@@ -476,7 +505,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "提坦斯试验部队与 TR 系列的始末。技术狂热、派系倾轧与强化人实验交织。",
-      "ja": "ティターンズの実験部隊とTRシリーズの経緯。技術偏重、派閥抗争、強化人間実験が交錯する。"
+      "ja": "ティターンズの実験部隊とTRシリーズの経緯。技術偏重、派閥抗争、強化人間実験が交錯する。",
+      "en": "The Titans test unit and the rise and fall of the TR series. Technical obsession, factional infighting and enhanced-human experiments intertwine."
     }
   },
   {
@@ -492,7 +522,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "《逆袭的夏亚》的小说版。Hi-ν 高达与夜莺在这里登场，战场走向与剧场版不同。",
-      "ja": "『逆襲のシャア』の小説版。Hi-νガンダムとナイチンゲールが登場し、戦局は劇場版と異なる。"
+      "ja": "『逆襲のシャア』の小説版。Hi-νガンダムとナイチンゲールが登場し、戦局は劇場版と異なる。",
+      "en": "The novel version of Char's Counterattack. The Hi-ν Gundam and Nightingale appear here, and the course of the battlefield differs from the film."
     }
   },
   {
@@ -508,7 +539,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "宇宙世纪 0120 年代，联邦次世代主力机 F90 的换装实验与火星残党冲突。",
-      "ja": "宇宙世紀0120年代、連邦次世代主力機F90の換装実験と火星残党の衝突。"
+      "ja": "宇宙世紀0120年代、連邦次世代主力機F90の換装実験と火星残党の衝突。",
+      "en": "In the 0120s of the Universal Century, equipment-swap tests of the Federation's next-generation mainstay F90 and a conflict with Martian remnants."
     }
   },
   {
@@ -524,7 +556,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "宇宙世纪 0133 年，木星圈与十字骨先锋的游击战。小型化机体的极限与海盗旗。",
-      "ja": "宇宙世紀0133年、木星圏とクロスボーン・バンガードのゲリラ戦。小型化機体の限界と海賊旗。"
+      "ja": "宇宙世紀0133年、木星圏とクロスボーン・バンガードのゲリラ戦。小型化機体の限界と海賊旗。",
+      "en": "In U.C. 0133, guerrilla war in the Jupiter sphere and with the Crossbone Vanguard. The limits of miniaturized machines and the pirate flag."
     }
   },
   {
@@ -540,7 +573,8 @@
     "canon": "game_original",
     "summary": {
       "zh": "从吉翁军视角进行的小队战术模拟。高达是敌方最强的未知数。",
-      "ja": "ジオン軍視点の小隊戦術シミュレーション。ガンダムは敵側最強の未知数。"
+      "ja": "ジオン軍視点の小隊戦術シミュレーション。ガンダムは敵側最強の未知数。",
+      "en": "A squad-level tactical simulation from the Zeon side. The Gundam is the enemy's strongest unknown."
     }
   },
   {
@@ -556,7 +590,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "A.C.196 年的后日谈。玛丽美亚之乱与五台高达的最终形态。",
-      "ja": "A.C.196年の後日談。マリーメイアの乱と五機のガンダムの最終形態。"
+      "ja": "A.C.196年の後日談。マリーメイアの乱と五機のガンダムの最終形態。",
+      "en": "An epilogue set in A.C. 196. The Mariemaia uprising and the final forms of the five Gundams."
     }
   },
   {
@@ -572,7 +607,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "OZ 的 G-UNIT 计划与殖民地的少年驾驶员。五台高达之外的另一次流星作战。",
-      "ja": "OZのG-UNIT計画とコロニーの少年パイロット。五機のガンダムとは別のオペレーション・メテオ。"
+      "ja": "OZのG-UNIT計画とコロニーの少年パイロット。五機のガンダムとは別のオペレーション・メテオ。",
+      "en": "OZ's G-UNIT plan and the colony's young pilots. Another Operation Meteor outside the five Gundams."
     }
   },
   {
@@ -588,7 +624,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "战力外鉴定士罗·裘尔与异端高达们的冒险。战场之外，还有另一种活着的方式。",
-      "ja": "ジャンク屋ロウ・ギュールとアストレイたちの冒険。戦場の外にも、別の生き方がある。"
+      "ja": "ジャンク屋ロウ・ギュールとアストレイたちの冒険。戦場の外にも、別の生き方がある。",
+      "en": "The adventures of the non-combatant assessor Lowe Guele and the Astray Gundams. There is another way to live outside the battlefield."
     }
   },
   {
@@ -604,7 +641,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "C.E.73 的观测部队与漆黑强袭。没有主角光环，只有被战争卷走的普通人。",
-      "ja": "C.E.73の観測部隊とストライクノワール。主人公補正はなく、戦争に巻き込まれた普通の人々がいる。"
+      "ja": "C.E.73の観測部隊とストライクノワール。主人公補正はなく、戦争に巻き込まれた普通の人々がいる。",
+      "en": "A C.E. 73 observation unit and the Strike Noir. No protagonist halo, only ordinary people swept up by war."
     }
   },
   {
@@ -620,7 +658,8 @@
     "canon": "mainline",
     "summary": {
       "zh": "A.D.2314，ELS 与人类的第一次接触。00 Qan[T] 用对话代替最后一击。",
-      "ja": "A.D.2314、ELSと人類の初接触。ダブルオークアンタは最後の一撃の代わりに対話を選ぶ。"
+      "ja": "A.D.2314、ELSと人類の初接触。ダブルオークアンタは最後の一撃の代わりに対話を選ぶ。",
+      "en": "A.D. 2314, humanity's first contact with the ELS. The 00 Qan[T] uses dialogue instead of a final blow."
     }
   },
   {
@@ -636,7 +675,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "P.D.325，围绕“乌尔德之猎”的寻宝与加拉尔霍恩的阴影。",
-      "ja": "P.D.325、「ウルズハント」を巡る宝探しとギャラルホルンの影。"
+      "ja": "P.D.325、「ウルズハント」を巡る宝探しとギャラルホルンの影。",
+      "en": "P.D. 325, a treasure hunt around the \"Urdr Hunt\" and the shadow of Gjallarhorn."
     }
   },
   {
@@ -652,7 +692,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "凡娜迪斯事变的前夜。GUND 格式化、魔灵与一个被夺走的童年。",
-      "ja": "ヴァナディース事変の前夜。GUNDフォーマット、ルブリス、奪われた幼少期。"
+      "ja": "ヴァナディース事変の前夜。GUNDフォーマット、ルブリス、奪われた幼少期。",
+      "en": "The eve of the Vanadis incident. GUND Format, Lfrith and a stolen childhood."
     }
   },
   {
@@ -668,7 +709,8 @@
     "canon": "side_story",
     "summary": {
       "zh": "亚瑟姆与泽哈特视角的再剪辑。两个被战争推着走的少年，走向不同的终点。",
-      "ja": "アセムとゼハート視点の再編集。戦争に押し流された二人の少年が、異なる終着点へ向かう。"
+      "ja": "アセムとゼハート視点の再編集。戦争に押し流された二人の少年が、異なる終着点へ向かう。",
+      "en": "A re-edit from the perspectives of Asemu and Zeheart. Two boys pushed along by war head toward different ends."
     }
   }
 ]

@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "堕天使高达的后继机，以双人格协同与高机动变形进行决战。",
-    "ja": "アリオスの後継機。二重人格の協調と高機動変形で決戦を戦う。"
+    "ja": "アリオスの後継機。二重人格の協調と高機動変形で決戦を戦う。",
+    "en": "The successor to the Arios, fighting the decisive battle with dual-personality coordination and high-mobility transformation."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ハルートの外観には明確な異形感がある。スラスターと翼状ユニットはMA形態で展開し、速度と機動は「ELS群の中で生き残る」ことに向けられている。",
       "アレルヤとハレルヤはこの機体の中で制御を奪い合わず、同時に存在する。その戦い方は二つの人格の合奏である。"
+    ],
+    "en": [
+      "The Harute's appearance has an obvious alien quality. Its thrusters and wing units unfold in MA form, with speed and mobility aimed at 'surviving inside the ELS swarm'.",
+      "Allelujah and Hallelujah no longer fight for control in this machine; they exist at the same time. Its way of fighting is a duet of two personalities."
     ]
   },
   "specs": {
@@ -42,28 +47,32 @@
     {
       "name": {
         "zh": "GN 光束军刀",
-        "ja": "GNビームサーベル"
+        "ja": "GNビームサーベル",
+        "en": "GN Beam Saber"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GN 步枪",
-        "ja": "GNライフル"
+        "ja": "GNライフル",
+        "en": "GN Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "GN 盾牌",
-        "ja": "GNシールド"
+        "ja": "GNシールド",
+        "en": "GN Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "变形 MA 形态",
-        "ja": "MA形態"
+        "ja": "MA形態",
+        "en": "MA Transformation"
       },
       "type": "special"
     }
@@ -102,12 +111,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达00 先驱者的觉醒》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam 00 the Movie: A Wakening of the Trailblazer\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

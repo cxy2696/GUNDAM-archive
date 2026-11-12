@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "厄祭战时代的高达，在 Urdr Hunt 中作为被争夺的遗产登场。",
-    "ja": "厄祭戦時代のガンダム。ウルズハントで争奪される遺産として登場する。"
+    "ja": "厄祭戦時代のガンダム。ウルズハントで争奪される遺産として登場する。",
+    "en": "A Gundam from the Calamity War era, appearing in Urdr Hunt as a contested inheritance."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "マルコシアスは厄祭戦時代に残されたガンダムの一機で、機体状態は完全ではない。価値は現在の性能より、「厄祭戦の遺産」という身分に由来する。",
       "ウルズハントでは、これを巡る争奪が異なる者たちの欲望を結びつける。機体は金属に過ぎないが、経緯は追う者たちによって書かれる。"
+    ],
+    "en": [
+      "Marchosias is one of the Gundams left from the Calamity War, and its condition is incomplete. Its value comes more from its identity as a 'Calamity War legacy' than from its current performance.",
+      "In Urdr Hunt, the struggle over it links different people's desires. The machine is only metal; the story is written by those who chase it."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "剑",
-        "ja": "ソード"
+        "ja": "ソード",
+        "en": "Sword"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "爪",
-        "ja": "クロー"
+        "ja": "クロー",
+        "en": "Claw"
       },
       "type": "melee"
     }
@@ -96,12 +104,16 @@
   "sources": [
     {
       "label": "《机动战士高达 铁血的奥尔芬斯 Urdr Hunt》原作与设定资料",
-      "level": "B"
+      "level": "B",
+      "labelEn": "Mobile Suit Gundam: Iron-Blooded Orphans Urdr Hunt original work and setting materials"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

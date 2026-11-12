@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "新联合国军的可变型高达，以 MA 形态进行高速突袭。",
-    "ja": "新UN軍の可変型ガンダム。MA形態で高速突撃を行う。"
+    "ja": "新UN軍の可変型ガンダム。MA形態で高速突撃を行う。",
+    "en": "The New UN Forces' transformable Gundam, raiding at high speed in MA form."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "アシュタロンはMSとMAの二形態を切り替えられる。MA形態では輪郭が扁平になり、高空や軌道からの高速侵入に適する。",
       "武装は多くないが、進入角度の読みにくさが強みだ。ヴァサーゴと組むことで、二機は完成された狩りの組み合わせになる。"
+    ],
+    "en": [
+      "The Ashtaron Gundam can switch between MS and MA forms. In MA form its silhouette becomes flat, suited to cutting in quickly from high altitude or orbit.",
+      "Its armaments are not plentiful, but its approach angle is hard to predict. Paired with the Virsago, the two machines form a complete hunting combination."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "光束爪",
-        "ja": "ビームクロー"
+        "ja": "ビームクロー",
+        "en": "Beam Claw"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "导弹",
-        "ja": "ミサイル"
+        "ja": "ミサイル",
+        "en": "Missile"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "可变装甲",
-        "ja": "可変装甲"
+        "ja": "可変装甲",
+        "en": "Variable Armor"
       },
       "type": "special"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

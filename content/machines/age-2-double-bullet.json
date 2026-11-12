@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "AGE-2 的炮击换装形态，以双管光束炮进行中远距压制。",
-    "ja": "AGE-2の砲撃換装形態。ツインビーム砲で中遠距離制圧を行う。"
+    "ja": "AGE-2の砲撃換装形態。ツインビーム砲で中遠距離制圧を行う。",
+    "en": "The artillery wear configuration of the AGE-2, using twin beam cannons for medium- and long-range suppression."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "ダブルバレットはAGE-2の速度優位を継続火力へ置き換えた。ツインビーム砲は交互射撃で目標への圧力を保つ。",
       "アセムは近距離の判断を得意としたが、この装備はより遠くで考えることを教えた。火力は答えではなく、タイミングが答えである。"
+    ],
+    "en": [
+      "The Double Bullet trades the AGE-2's speed advantage for sustained firepower. The twin beam cannons can alternate shots to keep pressure on a target.",
+      "Asemu was better at close-range judgement, but this equipment taught him to think at a greater distance. Firepower is not the answer; timing is."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "双管光束炮",
-        "ja": "ツインビーム砲"
+        "ja": "ツインビーム砲",
+        "en": "Twin Beam Cannon"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -95,12 +103,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 AGE》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam AGE\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

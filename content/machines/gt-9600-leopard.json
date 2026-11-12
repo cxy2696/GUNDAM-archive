@@ -17,7 +17,8 @@
   },
   "summary": {
     "zh": "秃鹫部队的重火力支援机体，以双管光束加特林压制战场。",
-    "ja": "ヴァルチャーの重火力支援機。ツイン・ビームガトリングで戦場を制圧する。"
+    "ja": "ヴァルチャーの重火力支援機。ツイン・ビームガトリングで戦場を制圧する。",
+    "en": "The Vulture unit's heavy-fire support machine, suppressing the battlefield with a twin beam gatling."
   },
   "description": {
     "zh": [
@@ -27,6 +28,10 @@
     "ja": [
       "レオパルドの火力配置は移動砲台に近い。ツイン・ビームガトリングは継続掃射に適し、肩のミサイル・ポッドは掩体後の目標を処理する。",
       "装甲は厚くなく、機動も標準的だ。本来の価値は、仲間が援護を必要とした時、十分に長い火力の回廊を用意できることにある。"
+    ],
+    "en": [
+      "The Leopard Gundam's firepower layout is close to a mobile battery. The twin beam gatling suits sustained sweeping fire, while shoulder missile pods handle targets behind cover.",
+      "Its armor is not thick and its mobility is only average. Its value is that when teammates need cover, it can always provide a fire corridor long enough."
     ]
   },
   "specs": {
@@ -42,21 +47,24 @@
     {
       "name": {
         "zh": "双管光束加特林",
-        "ja": "ツイン・ビームガトリング"
+        "ja": "ツイン・ビームガトリング",
+        "en": "Twin Beam Gatling"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "导弹仓",
-        "ja": "ミサイル・ポッド"
+        "ja": "ミサイル・ポッド",
+        "en": "Missile Pod"
       },
       "type": "kinetic"
     },
     {
       "name": {
         "zh": "光束军刀",
-        "ja": "ビームサーベル"
+        "ja": "ビームサーベル",
+        "en": "Beam Saber"
       },
       "type": "melee"
     }
@@ -86,7 +94,8 @@
       "sources": [
         {
           "label": "《机动新世纪高达 X》机体设定（谱系整理）",
-          "level": "B"
+          "level": "B",
+          "labelEn": "After War Gundam X mobile suit setting materials (compiled lineage)"
         }
       ],
       "techTag": "movable-frame"
@@ -110,12 +119,16 @@
   "sources": [
     {
       "label": "动画《机动新世纪高达 X》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"After War Gundam X\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -18,7 +18,8 @@
   },
   "summary": {
     "zh": "正义高达的后继机，以命运-01 背包与光束盾强化高机动战。",
-    "ja": "ジャスティスの後継機。ファトゥム-01とビームシールドで高機動戦を強化した。"
+    "ja": "ジャスティスの後継機。ファトゥム-01とビームシールドで高機動戦を強化した。",
+    "en": "The successor to the Justice Gundam, strengthening high-mobility combat with the Fatum-01 pack and a beam shield."
   },
   "description": {
     "zh": [
@@ -28,6 +29,10 @@
     "ja": [
       "インフィニットジャスティスはジャスティスの支援定位をさらに推し進めた。ファトゥム-01はより強い推力と機動を与え、ビームシールドは近接戦に余裕を加える。",
       "戦い方は今回も相棒を軸にするが、その相手はストライクフリーダムだ。二機は戦場で互いの支点となり、編隊舞踏のような連携を見せる。"
+    ],
+    "en": [
+      "The Infinite Justice Gundam pushes the Justice's support role further. The Fatum-01 pack provides stronger thrust and mobility, while the beam shield gives it an extra margin for error in close combat.",
+      "Its way of fighting still revolves around a partner, but this time the partner is the Strike Freedom. The two machines become each other's pivot on the battlefield, coordinating almost like a formation dance."
     ]
   },
   "specs": {
@@ -43,28 +48,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "命运-01 背包",
-        "ja": "ファトゥム-01"
+        "ja": "ファトゥム-01",
+        "en": "Fatum-01 Pack"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "盾牌",
-        "ja": "シールド"
+        "ja": "シールド",
+        "en": "Shield"
       },
       "type": "special"
     }
@@ -105,12 +114,16 @@
   "sources": [
     {
       "label": "动画《机动战士高达 SEED DESTINY》正片",
-      "level": "S"
+      "level": "S",
+      "labelEn": "Anime \"Mobile Suit Gundam SEED Destiny\" on-screen content"
     },
     {
-      "label": "Gundam.INFO 官方作品资料",
+      "label": "Gundam.INFO 官方门户（作品资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体作品页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual work pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (work materials portal)"
     }
   ],
   "disputed": false,

@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "GUND 格式的试作机，取消过滤器以追求极限同步，被称为“怪物”的机体。",
-    "ja": "GUNDフォーマットの試作機。フィルターを外し最大限の同期を求めた「怪物」と呼ばれる機体。"
+    "ja": "GUNDフォーマットの試作機。フィルターを外し最大限の同期を求めた「怪物」と呼ばれる機体。",
+    "en": "A GUND Format prototype that removed the filter to pursue extreme synchronization, a machine called a 'monster'."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "キャリバーンはGUND技術初期の極端な産物で、エアリアルのような安全制限を持たず、パイロットはデータストームを直接受け止める。スレッタは最終戦でこれに乗り、「呪い」を未来を選ぶ力へ変えた。"
+    ],
+    "en": [
+      "The Calibarn is an extreme early product of GUND technology. Without the safety limits of the Aerial, the pilot must endure the data storm directly. Suletta piloted it in the final battle and turned the 'curse' into the power to choose the future."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "可变式光束步枪",
-        "ja": "可変式ビームライフル"
+        "ja": "可変式ビームライフル",
+        "en": "Variable Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "GUND 比特 ×4",
-        "ja": "GUNDビット ×4"
+        "ja": "GUNDビット ×4",
+        "en": "GUND Bit ×4"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -112,13 +120,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 水星的魔女》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 水星的魔女》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

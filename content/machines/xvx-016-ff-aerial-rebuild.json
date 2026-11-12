@@ -22,7 +22,8 @@
   },
   "summary": {
     "zh": "风灵高达的改修型，强化了比特子机与数据风暴控制，外观也更接近完整的 GUND 机体。",
-    "ja": "エアリアルの改修型。ビット子機とデータストーム制御を強化し、外観もより完成されたGUND機体へ近づいた。"
+    "ja": "エアリアルの改修型。ビット子機とデータストーム制御を強化し、外観もより完成されたGUND機体へ近づいた。",
+    "en": "A reworked form of the Gundam Aerial, strengthening the bit units and data-storm control, with an appearance closer to a complete GUND machine."
   },
   "description": {
     "zh": [
@@ -30,6 +31,9 @@
     ],
     "ja": [
       "改修型はエアリアルの核心構造を保ちつつ、GUND接続と機体負荷のバランスを取り直した。もはや学園決闘の機体ではなく、企業戦争と「ガンダムの呪い」の中心にある。"
+    ],
+    "en": [
+      "The Rebuild keeps the Aerial's core architecture while rebalancing the GUND connection and the machine's burden. It went from an academy duel machine to the center of corporate war and the 'Gundam curse'."
     ]
   },
   "specs": {
@@ -45,28 +49,32 @@
     {
       "name": {
         "zh": "光束步枪",
-        "ja": "ビームライフル"
+        "ja": "ビームライフル",
+        "en": "Beam Rifle"
       },
       "type": "beam"
     },
     {
       "name": {
         "zh": "比特子机 ×6",
-        "ja": "ビット子機 ×6"
+        "ja": "ビット子機 ×6",
+        "en": "Bit ×6"
       },
       "type": "special"
     },
     {
       "name": {
         "zh": "光束军刀 ×2",
-        "ja": "ビームサーベル ×2"
+        "ja": "ビームサーベル ×2",
+        "en": "Beam Saber ×2"
       },
       "type": "melee"
     },
     {
       "name": {
         "zh": "专用盾牌",
-        "ja": "専用シールド"
+        "ja": "専用シールド",
+        "en": "Dedicated Shield"
       },
       "type": "special"
     }
@@ -112,13 +120,19 @@
   },
   "sources": [
     {
-      "label": "TV 动画《机动战士高达 水星的魔女》官方设定资料",
-      "level": "S"
+      "label": "TV 动画《机动战士高达 水星的魔女》正片（机体外观与武装）",
+      "level": "S",
+      "note": "本档案依据公开播出内容与公开资料整理，未复制官方图像，也未与设定集逐页核对。",
+      "noteEn": "Compiled from publicly broadcast material and public sources. No official artwork is reproduced and no setting book has been checked page by page.",
+      "labelEn": "TV anime \"Mobile Suit Gundam: The Witch from Mercury\" on-screen content (on-screen appearance and armament)"
     },
     {
-      "label": "Gundam.INFO 官方机体资料",
+      "label": "Gundam.INFO 官方门户（机体资料入口）",
       "level": "A",
-      "url": "https://www.gundam.info/"
+      "url": "https://www.gundam.info/",
+      "note": "门户首页入口；具体机体页与页码仍需逐项补链。",
+      "noteEn": "Portal home only; individual suit pages and page numbers still need to be linked one by one.",
+      "labelEn": "Gundam.INFO official portal (mobile suit materials portal)"
     }
   ],
   "disputed": false,

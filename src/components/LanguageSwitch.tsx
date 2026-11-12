@@ -23,7 +23,6 @@ export function LanguageSwitch({
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const path = basePath && pathname.startsWith(basePath) ? pathname.slice(basePath.length) : pathname;
   const rest = path.replace(new RegExp(`^/${lang}`), "") || "";
-  const other: Lang = lang === "zh" ? "ja" : "zh";
   const [suffix, setSuffix] = useState("");
 
   useEffect(() => {
@@ -41,18 +40,22 @@ export function LanguageSwitch({
 
   return (
     <div className={`lang-switch ${className}`} role="group" aria-label={dict.common.language}>
-      {(["zh", "ja"] as const).map((target) => (
+      {([
+        { code: "zh" as const, label: "中文", short: "中", title: "中文" },
+        { code: "ja" as const, label: "日本語", short: "日", title: "日本語" },
+        { code: "en" as const, label: "English", short: "EN", title: "English" },
+      ]).map((target) => (
         <a
-          key={target}
-          href={`${basePath}/${target}${rest}${suffix}`}
-          className={`lang-switch__option ${lang === target ? "is-active" : ""}`}
-          aria-current={lang === target ? "true" : undefined}
-          aria-label={target === "zh" ? "中文" : "日本語"}
-          onClick={() => remember(target)}
-          title={target === "zh" ? "中文" : "日本語"}
+          key={target.code}
+          href={`${basePath}/${target.code}${rest}${suffix}`}
+          className={`lang-switch__option ${lang === target.code ? "is-active" : ""}`}
+          aria-current={lang === target.code ? "true" : undefined}
+          aria-label={target.title}
+          onClick={() => remember(target.code)}
+          title={target.title}
         >
-          <span className="lang-switch__full" aria-hidden>{target === "zh" ? "中文" : "日本語"}</span>
-          <span className="lang-switch__short" aria-hidden>{target === "zh" ? "中" : "日"}</span>
+          <span className="lang-switch__full" aria-hidden>{target.label}</span>
+          <span className="lang-switch__short" aria-hidden>{target.short}</span>
         </a>
       ))}
     </div>

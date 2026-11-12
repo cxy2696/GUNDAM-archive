@@ -3,208 +3,238 @@
     "id": "side-7",
     "name": {
       "zh": "Side 7",
-      "ja": "サイド7"
+      "ja": "サイド7",
+      "en": "Side 7"
     },
     "kind": "colony",
     "orbit": "L3",
     "angle": 210,
     "description": {
       "zh": "一年战争开战初期仍保持中立的殖民卫星群，联邦的秘密 MS 开发设施设于此。RX-78-2 在这里首次投入实战。",
-      "ja": "一年戦争開戦初期まで中立を保ったコロニー群。連邦の極秘MS開発施設が置かれ、RX-78-2がここで初めて実戦投入された。"
+      "ja": "一年戦争開戦初期まで中立を保ったコロニー群。連邦の極秘MS開発施設が置かれ、RX-78-2がここで初めて実戦投入された。",
+      "en": "A cluster of colonies that stayed neutral in the early days of the One Year War, where the Federation's secret MS development facility was located. The RX-78-2 was first sent into combat here."
     }
   },
   {
     "id": "loum",
     "name": {
       "zh": "鲁姆",
-      "ja": "ルウム"
+      "ja": "ルウム",
+      "en": "Loum"
     },
     "kind": "space",
     "orbit": "L1",
     "angle": 140,
     "description": {
       "zh": "Side 5 所在的宇域。U.C.0079.01.15 的鲁姆会战以吉翁的压倒性胜利告终，联邦宇宙舰队主力在此覆灭。",
-      "ja": "サイド5の宙域。U.C.0079.01.15のルウム戦役はジオンの圧勝に終わり、連邦宇宙艦隊の主力がここで壊滅した。"
+      "ja": "サイド5の宙域。U.C.0079.01.15のルウム戦役はジオンの圧勝に終わり、連邦宇宙艦隊の主力がここで壊滅した。",
+      "en": "The space region containing Side 5. The Battle of Loum on U.C.0079.01.15 ended in an overwhelming Zeon victory, and the main force of the Federation space fleet was destroyed here."
     }
   },
   {
     "id": "odessa",
     "name": {
       "zh": "敖德萨",
-      "ja": "オデッサ"
+      "ja": "オデッサ",
+      "en": "Odessa"
     },
     "kind": "earth",
     "lat": 46.5,
     "lng": 30.7,
     "description": {
       "zh": "黑海北岸的工业与资源枢纽，吉翁在地球上最大的矿业基地。敖德萨作战的胜负决定了联邦地面反攻的节奏。",
-      "ja": "黒海北岸の工業・資源拠点で、ジオンの地球上最大の鉱山基地。オデッサ作戦の帰趨が連邦の地上反攻の速度を決めた。"
+      "ja": "黒海北岸の工業・資源拠点で、ジオンの地球上最大の鉱山基地。オデッサ作戦の帰趨が連邦の地上反攻の速度を決めた。",
+      "en": "An industrial and resource hub on the northern shore of the Black Sea, and Zeon's largest mining base on Earth. The outcome of Operation Odessa set the pace of the Federation's ground counteroffensive."
     }
   },
   {
     "id": "jaburo",
     "name": {
       "zh": "贾布罗",
-      "ja": "ジャブロー"
+      "ja": "ジャブロー",
+      "en": "Jaburo"
     },
     "kind": "earth",
     "lat": -3.2,
     "lng": -60,
     "description": {
       "zh": "亚马逊盆地地下的联邦军总司令部。坚固的岩层与迷宫般的通道使其成为一年战争中最难攻陷的据点之一。",
-      "ja": "アマゾン盆地地下の連邦軍総司令部。堅牢な岩盤と迷宮状の通路により、一年戦争で最も攻略困難な拠点の一つとなった。"
+      "ja": "アマゾン盆地地下の連邦軍総司令部。堅牢な岩盤と迷宮状の通路により、一年戦争で最も攻略困難な拠点の一つとなった。",
+      "en": "The Federation military headquarters underground in the Amazon basin. Solid rock strata and maze-like passages made it one of the hardest strongholds to take in the One Year War."
     }
   },
   {
     "id": "solomon",
     "name": {
       "zh": "所罗门",
-      "ja": "ソロモン"
+      "ja": "ソロモン",
+      "en": "Solomon"
     },
     "kind": "space",
     "orbit": "L5",
     "angle": 280,
     "description": {
       "zh": "吉翁军改造成要塞的小行星，宇宙攻击军的前线基地。U.C.0079.12.24，联邦以“星一号作战”攻陷此地。",
-      "ja": "ジオン軍が要塞化した小惑星で、宇宙攻撃軍の前線基地。U.C.0079.12.24、連邦は「星一号作戦」でこれを陥落させた。"
+      "ja": "ジオン軍が要塞化した小惑星で、宇宙攻撃軍の前線基地。U.C.0079.12.24、連邦は「星一号作戦」でこれを陥落させた。",
+      "en": "An asteroid converted by the Zeon military into a fortress, the frontline base of its space attack force. On U.C.0079.12.24 the Federation took it in Operation Star One."
     }
   },
   {
     "id": "a-baoa-qu",
     "name": {
       "zh": "阿·巴瓦·库",
-      "ja": "ア・バオア・クー"
+      "ja": "ア・バオア・クー",
+      "en": "A Baoa Qu"
     },
     "kind": "space",
     "orbit": "L2",
     "angle": 330,
     "description": {
       "zh": "吉翁最后的宇宙要塞，Side 3 的门户。一年战争的最终决战在此爆发，夏亚与阿姆罗也在这里首次正面交手。",
-      "ja": "ジオン最後の宇宙要塞で、サイド3の門戸。一年戦争の最終決戦がここで勃発し、シャアとアムロもここで初めて正面から交戦した。"
+      "ja": "ジオン最後の宇宙要塞で、サイド3の門戸。一年戦争の最終決戦がここで勃発し、シャアとアムロもここで初めて正面から交戦した。",
+      "en": "Zeon's last space fortress and the gateway to Side 3. The final battle of the One Year War broke out here, and Char and Amuro faced each other directly for the first time."
     }
   },
   {
     "id": "gryps",
     "name": {
       "zh": "格里普斯",
-      "ja": "グリプス"
+      "ja": "グリプス",
+      "en": "Gryps"
     },
     "kind": "space",
     "orbit": "L2",
     "angle": 250,
     "description": {
       "zh": "提坦斯把殖民卫星改造成可变巨炮的要塞。U.C.0087 的格里普斯战役围绕它展开，最终以殖民地激光的失控收场。",
-      "ja": "ティターンズがコロニーを可変巨砲へ改造した要塞。U.C.0087のグリプス戦役はこれを巡って展開し、コロニーレーザーの暴走で終結した。"
+      "ja": "ティターンズがコロニーを可変巨砲へ改造した要塞。U.C.0087のグリプス戦役はこれを巡って展開し、コロニーレーザーの暴走で終結した。",
+      "en": "A fortress where the Titans converted a colony into a variable giant cannon. The Gryps Conflict of U.C.0087 was fought over it and ended with the colony laser running out of control."
     }
   },
   {
     "id": "dakar",
     "name": {
       "zh": "达喀尔",
-      "ja": "ダカール"
+      "ja": "ダカール",
+      "en": "Dakar"
     },
     "kind": "earth",
     "lat": 14.7,
     "lng": -17.4,
     "description": {
       "zh": "联邦临时首都。U.C.0087.08，夏亚以“克瓦特罗·巴吉纳”之名在此向全世界揭露提坦斯的暴行。",
-      "ja": "連邦の臨時首都。U.C.0087.08、シャアは「クワトロ・バジーナ」の名でここから世界へティターンズの蛮行を暴露した。"
+      "ja": "連邦の臨時首都。U.C.0087.08、シャアは「クワトロ・バジーナ」の名でここから世界へティターンズの蛮行を暴露した。",
+      "en": "The Federation's temporary capital. In U.C.0087.08, Char, under the name Quattro Bajeena, exposed the Titans' atrocities to the world here."
     }
   },
   {
     "id": "axis",
     "name": {
       "zh": "阿克西斯",
-      "ja": "アクシズ"
+      "ja": "アクシズ",
+      "en": "Axis"
     },
     "kind": "space",
     "description": {
       "zh": "一年战争后吉翁残党逃往小行星带建立的要塞国家。U.C.0093，它被改造成质量弹投向地球，成为逆袭的夏亚的最终赌注。",
-      "ja": "一年戦争後、ジオン残党が小惑星帯で築いた要塞国家。U.C.0093、質量弾として地球へ投下され、逆襲のシャアの最終賭博となった。"
+      "ja": "一年戦争後、ジオン残党が小惑星帯で築いた要塞国家。U.C.0093、質量弾として地球へ投下され、逆襲のシャアの最終賭博となった。",
+      "en": "A fortress state built by Zeon remnants who fled to the asteroid belt after the One Year War. In U.C.0093 it was converted into a mass projectile and thrown at Earth, becoming the final gamble of Char's Counterattack."
     }
   },
   {
     "id": "von-braun",
     "name": {
       "zh": "冯·布朗",
-      "ja": "フォン・ブラウン"
+      "ja": "フォン・ブラウン",
+      "en": "Von Braun"
     },
     "kind": "moon",
     "lat": 0,
     "lng": 0,
     "description": {
       "zh": "月球最大的城市与重工业中心，阿纳海姆电子等军工企业的据点。许多试作机在正式下线前都在此完成测试。",
-      "ja": "月面最大の都市にして重工業の中心。アナハイム・エレクトロニクスなど軍需企業の拠点で、多くの試作機がここで試験を終えた。"
+      "ja": "月面最大の都市にして重工業の中心。アナハイム・エレクトロニクスなど軍需企業の拠点で、多くの試作機がここで試験を終えた。",
+      "en": "The Moon's largest city and heavy-industry center, home to Anaheim Electronics and other military contractors. Many prototype machines finished testing here before rolling off the line."
     }
   },
   {
     "id": "torrington",
     "name": {
       "zh": "托灵顿",
-      "ja": "トリントン"
+      "ja": "トリントン",
+      "en": "Torrington"
     },
     "kind": "earth",
     "lat": -34.5,
     "lng": 150.8,
     "description": {
       "zh": "澳大利亚的联邦军基地，停放着大量退役 MS。U.C.0096 的“带袖的”袭击让这座基地再次成为战场。",
-      "ja": "オーストラリアの連邦軍基地で、多数の退役MSが保管されていた。U.C.0096の「袖付き」の襲撃により再び戦場となった。"
+      "ja": "オーストラリアの連邦軍基地で、多数の退役MSが保管されていた。U.C.0096の「袖付き」の襲撃により再び戦場となった。",
+      "en": "A Federation military base in Australia holding large numbers of retired MS. The Sleeves' attack in U.C.0096 made the base a battlefield again."
     }
   },
   {
     "id": "laplace",
     "name": {
       "zh": "拉普拉斯",
-      "ja": "ラプラス"
+      "ja": "ラプラス",
+      "en": "Laplace"
     },
     "kind": "space",
     "orbit": "L1",
     "angle": 30,
     "description": {
       "zh": "Side 1 的殖民卫星。U.C.0001 的《宇宙世纪宪章》在此颁布，百年后“拉普拉斯之盒”让宪章的原始条文重见天日。",
-      "ja": "サイド1のコロニー。U.C.0001に「宇宙世紀憲章」が公布され、百年後「ラプラスの箱」が憲章の原条文を再び世に晒した。"
+      "ja": "サイド1のコロニー。U.C.0001に「宇宙世紀憲章」が公布され、百年後「ラプラスの箱」が憲章の原条文を再び世に晒した。",
+      "en": "A colony of Side 1. The Universal Century Charter was promulgated here in U.C.0001, and a century later Laplace's Box brought its original text back to light."
     }
   },
   {
     "id": "side-3",
     "name": {
       "zh": "Side 3",
-      "ja": "サイド3"
+      "ja": "サイド3",
+      "en": "Side 3"
     },
     "kind": "colony",
     "orbit": "L2",
     "angle": 20,
     "description": {
       "zh": "吉翁公国的本土，位于 L2 的殖民卫星群。独立运动与“选良民”政策让它成为一年战争的政治核心。",
-      "ja": "ジオン公国の本土であるL2のコロニー群。独立運動と「選良民」政策により、一年戦争の政治的核心となった。"
+      "ja": "ジオン公国の本土であるL2のコロニー群。独立運動と「選良民」政策により、一年戦争の政治的核心となった。",
+      "en": "The homeland of the Principality of Zeon, a cluster of colonies at L2. The independence movement and the 'chosen people' policy made it the political core of the One Year War."
     }
   },
   {
     "id": "orb",
     "name": {
       "zh": "奥布",
-      "ja": "オーブ"
+      "ja": "オーブ",
+      "en": "Orb"
     },
     "kind": "earth",
-    "lat": -8.0,
-    "lng": 160.0,
+    "lat": -8,
+    "lng": 160,
     "description": {
       "zh": "南太平洋所罗门群岛一带的中立岛国，曙光社的 MS 工厂与奥布联合酋长国的首都奥尔法特都设在这里。",
-      "ja": "南太平洋ソロモン諸島付近の中立島国。モルゲンレーテのMS工場とオーブ連合首長国の首都オロファトがある。"
+      "ja": "南太平洋ソロモン諸島付近の中立島国。モルゲンレーテのMS工場とオーブ連合首長国の首都オロファトがある。",
+      "en": "A neutral island nation in the Solomon Islands area of the South Pacific, home to Morgenroete's MS factory and to Olofat, capital of the Orb Union."
     }
   },
   {
     "id": "sydney",
     "name": {
       "zh": "悉尼",
-      "ja": "シドニー"
+      "ja": "シドニー",
+      "en": "Sydney"
     },
     "kind": "earth",
     "lat": -33.87,
     "lng": 151.21,
     "description": {
       "zh": "澳大利亚东海岸城市。U.C.0079.01.31，被吉翁改轨的殖民卫星坠落于此，造成的海啸与气候异常持续多年。",
-      "ja": "オーストラリア東岸の都市。U.C.0079.01.31、ジオンが軌道変更したコロニーがここへ落下し、津波と気候異常が長く続いた。"
+      "ja": "オーストラリア東岸の都市。U.C.0079.01.31、ジオンが軌道変更したコロニーがここへ落下し、津波と気候異常が長く続いた。",
+      "en": "A city on Australia's east coast. On U.C.0079.01.31 a colony redirected by Zeon fell here, and the tsunamis and climate anomalies it caused lasted for years."
     }
   }
 ]

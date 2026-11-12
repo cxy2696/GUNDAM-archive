@@ -1,6 +1,6 @@
 import { getBundle } from "./content";
 import { normalizeQuery } from "./format";
-import { pick } from "./i18n";
+import { pick, pickList } from "./i18n";
 import type { Lang } from "./schema";
 import type { SearchEntry } from "./search";
 
@@ -46,8 +46,13 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
         era?.code ?? "",
         era ? pick(era.name, lang) : "",
         faction ? pick(faction.name, lang) : "",
-        pick(m.summary, lang),
-        ...(lang === "ja" ? m.summary.zh ? [m.summary.zh] : [] : m.summary.ja ? [m.summary.ja] : []),
+        m.summary.zh,
+        m.summary.ja ?? "",
+        m.summary.en ?? "",
+        ...(m.description.zh ?? []).slice(0, 1),
+        ...(m.description.ja ?? []).slice(0, 1),
+        ...(m.description.en ?? []).slice(0, 1),
+        ...m.armament.flatMap((arm) => [arm.name.zh, arm.name.ja ?? "", arm.name.en ?? ""]),
       ],
     });
   }
@@ -66,10 +71,14 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
         c.name.ja,
         c.name.en,
         ...c.aliases,
-        pick(c.role, lang),
-        c.origin ? pick(c.origin, lang) : "",
-        c.rank ? pick(c.rank, lang) : "",
-        ...c.bio[lang].slice(0, 1),
+        c.role.zh,
+        c.role.ja ?? "",
+        c.role.en ?? "",
+        c.origin ? `${c.origin.zh} ${c.origin.ja ?? ""} ${c.origin.en ?? ""}` : "",
+        c.rank ? `${c.rank.zh} ${c.rank.ja ?? ""} ${c.rank.en ?? ""}` : "",
+        ...(c.bio.zh ?? []).slice(0, 1),
+        ...(c.bio.ja ?? []).slice(0, 1),
+        ...(c.bio.en ?? []).slice(0, 1),
       ],
     });
   }
@@ -98,14 +107,19 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       keywords: [
         e.title.zh,
         e.title.ja,
-        pick(e.summary, lang),
+        e.summary.zh,
+        e.summary.ja ?? "",
+        e.summary.en ?? "",
+        ...(e.detail.zh ?? []).slice(0, 1),
+        ...(e.detail.ja ?? []).slice(0, 1),
+        ...(e.detail.en ?? []).slice(0, 1),
         ...e.factionIds.flatMap((id) => {
           const faction = bundle.factions.find((item) => item.id === id);
-          return faction ? [pick(faction.name, lang), faction.short] : [];
+          return faction ? [faction.name.zh, faction.name.ja, faction.name.en, faction.short] : [];
         }),
         ...e.machineIds.flatMap((id) => {
           const machine = bundle.machines.find((item) => item.id === id);
-          return machine ? [pick(machine.name, lang), machine.modelCode] : [];
+          return machine ? [machine.name.zh, machine.name.ja, machine.name.en, machine.modelCode] : [];
         }),
       ],
     });
@@ -125,9 +139,11 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
         t.name.en,
         t.description.zh,
         t.description.ja,
+        t.description.en ?? "",
         t.category,
         ...t.detail.zh.slice(0, 1),
         ...t.detail.ja.slice(0, 1),
+        ...(t.detail.en ?? []).slice(0, 1),
       ],
     });
   }
@@ -139,8 +155,16 @@ export function buildSearchIndex(lang: Lang): SearchEntry[] {
       href: `/archive#works`,
       title: pick(w.title, lang),
       subtitle: String(w.year),
-      meta: pick(w.title, lang === "zh" ? "ja" : "zh"),
-      keywords: [w.title.zh, w.title.ja, w.title.en, String(w.year), pick(w.summary, lang)],
+      meta: pick(w.title, lang === "en" ? "ja" : lang === "ja" ? "zh" : "ja"),
+      keywords: [
+        w.title.zh,
+        w.title.ja,
+        w.title.en,
+        String(w.year),
+        w.summary.zh,
+        w.summary.ja ?? "",
+        w.summary.en ?? "",
+      ],
     });
   }
 

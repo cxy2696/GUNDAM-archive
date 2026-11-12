@@ -2,12 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getBundle, getMachine, getTag } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import { dateFraction, formatStoryDate } from "@/lib/format";
 import type { Lang } from "@/lib/schema";
 import { EraRail } from "@/components/EraRail";
 import { MachineCard } from "@/components/MachineCard";
 import { MechViewer } from "@/components/viewer/MechViewer";
+import { TacticalScope } from "@/components/TacticalScope";
+import { QuickQuery } from "@/components/QuickQuery";
 import { ArrowRightIcon, CrosshairIcon, GlobeIcon, GraphIcon } from "@/components/Icons";
 
 export async function generateMetadata({
@@ -23,7 +25,7 @@ export async function generateMetadata({
     description: dict.meta.description,
     alternates: {
       canonical: `/${lang}/`,
-      languages: { "zh-CN": "/zh/", "ja-JP": "/ja/", "x-default": "/zh/" },
+      languages: languageAlternates(),
     },
   };
 }
@@ -118,6 +120,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           </div>
 
           <div className="hero__stage-wrap">
+            <div className="hero__scope">
+              <TacticalScope code={hero.modelCode} label={pick(hero.name, typed)} />
+            </div>
             <div className="hero__stage-orbit" aria-hidden>
               <span />
               <span />
@@ -177,6 +182,19 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           U.C.0079
         </div>
       </section>
+
+      <QuickQuery
+        lang={typed}
+        dict={dict}
+        eras={bundle.eras}
+        suggestions={
+          typed === "en"
+            ? ["RX-78-2", "Unicorn", "Zaku", "psycoframe"]
+            : typed === "ja"
+              ? ["RX-78-2", "ユニコーン", "ザク", "サイコフレーム"]
+              : ["RX-78-2", "独角兽", "扎古", "精神感应框架"]
+        }
+      />
 
       <section className="section" id="thesis">
         <div className="container">
@@ -369,9 +387,25 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <aside className="gov__quote">
               <span className="micro">EDITORIAL RULE / 04</span>
               <blockquote>
-                “没有参数就留空，
-                <br />
-                不用同类机体估算。”
+                {typed === "zh" ? (
+                  <>
+                    “没有参数就留空，
+                    <br />
+                    不用同类机体估算。”
+                  </>
+                ) : typed === "ja" ? (
+                  <>
+                    「数値がなければ空欄。
+                    <br />
+                    同型機からの推測はしない。」
+                  </>
+                ) : (
+                  <>
+                    “No number? Leave it blank.
+                    <br />
+                    Never estimate from a sister suit.”
+                  </>
+                )}
               </blockquote>
               <p>{dict.machine.seedNote}</p>
               <div className="gov__quote-meta mono">

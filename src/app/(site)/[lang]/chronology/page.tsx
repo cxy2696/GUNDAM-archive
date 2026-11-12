@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
-import { getDict, isLang, pick } from "@/lib/i18n";
+import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { ChronologyConsole } from "@/components/ChronologyConsole";
 import { EraDemo } from "@/components/chronology/EraDemo";
@@ -21,7 +21,7 @@ export async function generateMetadata({
     description: dict.chronology.lead,
     alternates: {
       canonical: `/${lang}/chronology/`,
-      languages: { "zh-CN": "/zh/chronology/", "ja-JP": "/ja/chronology/" },
+      languages: languageAlternates("/chronology"),
     },
   };
 }
@@ -182,7 +182,7 @@ export default async function ChronologyPage({
                               <Link href={`/${typed}/machines/${machine.id}`}>
                                 {pick(machine.name, typed)}
                               </Link>
-                              <span className="roster-table__ja">{typed === "zh" ? machine.name.ja : machine.name.zh}</span>
+                              <span className="roster-table__ja">{typed === "zh" ? machine.name.ja : typed === "ja" ? machine.name.zh : machine.name.ja}</span>
                               <span className="roster-table__meta">
                                 {faction?.short ?? "—"} · {work ? pick(work.title, typed) : "—"}
                               </span>

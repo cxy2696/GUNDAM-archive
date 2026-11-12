@@ -6,7 +6,7 @@ import { z } from "zod";
  * If it does not validate, the build fails — there is no "just this once".
  */
 
-export const LANGS = ["zh", "ja"] as const;
+export const LANGS = ["zh", "ja", "en"] as const;
 export type Lang = (typeof LANGS)[number];
 
 export const CANON_LEVELS = ["mainline", "side_story", "parallel", "game_original"] as const;
@@ -21,18 +21,24 @@ const slug = z
 export const localized = z.object({
   zh: z.string().min(1),
   ja: z.string().min(1),
+  en: z.string().min(1).optional(),
 });
 
 export const localizedOptional = z.object({
   zh: z.string().min(1),
   ja: z.string().optional(),
+  en: z.string().optional(),
 });
 
 export const sourceRef = z.object({
   label: z.string().min(2),
+  /** English citation label; the original label stays for the zh/ja site. */
+  labelEn: z.string().min(2).optional(),
   level: z.enum(["S", "A", "B", "C"]),
   url: z.string().url().optional(),
   note: z.string().optional(),
+  /** English note shown on the English site. */
+  noteEn: z.string().optional(),
 });
 export type SourceRef = z.infer<typeof sourceRef>;
 
@@ -98,7 +104,11 @@ export const characterSchema = z.object({
   eraIds: z.array(slug).min(1),
   role: localized,
   status: z.enum(["alive", "dead", "unknown", "missing"]),
-  bio: z.object({ zh: z.array(z.string()).min(1), ja: z.array(z.string()).min(1) }),
+  bio: z.object({
+    zh: z.array(z.string()).min(1),
+    ja: z.array(z.string()).min(1),
+    en: z.array(z.string()).min(1).optional(),
+  }),
   machineIds: z.array(slug).default([]),
   eventIds: z.array(slug).default([]),
   relations: z
@@ -152,6 +162,7 @@ export const eventSchema = z.object({
   detail: z.object({
     zh: z.array(z.string()).min(1),
     ja: z.array(z.string()).min(1),
+    en: z.array(z.string()).min(1).optional(),
   }),
   outcome: localized,
   canon: z.enum(CANON_LEVELS),
@@ -169,6 +180,7 @@ export const tagSchema = z.object({
   detail: z.object({
     zh: z.array(z.string()).min(1),
     ja: z.array(z.string()).min(1),
+    en: z.array(z.string()).min(1).optional(),
   }),
 });
 export type Tag = z.infer<typeof tagSchema>;
@@ -186,7 +198,11 @@ export const machineSchema = z.object({
   canon: z.enum(CANON_LEVELS),
   firstAppear: storyDate,
   summary: localized,
-  description: z.object({ zh: z.array(z.string()).min(1), ja: z.array(z.string()).min(1) }),
+  description: z.object({
+    zh: z.array(z.string()).min(1),
+    ja: z.array(z.string()).min(1),
+    en: z.array(z.string()).min(1).optional(),
+  }),
   specs: z.object({
     heightOverall: specNumber,
     heightHead: specNumber,
