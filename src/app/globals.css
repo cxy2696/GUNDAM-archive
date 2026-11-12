@@ -1688,7 +1688,7 @@ body {
    They sit in the page margins and never block pointer input.
    ============================================================ */
 
-:root { --canopy-h: 24px; }
+:root { --canopy-h: 28px; }
 
 .main {
   padding-top: calc(var(--header-h) + var(--canopy-h));
@@ -1792,7 +1792,7 @@ body {
 
 .hud-rail--top { top: 96px; }
 
-:root { --console-h: 24px; }
+:root { --console-h: 28px; }
 body { padding-bottom: var(--console-h); }
 
 .cockpit-console {
@@ -1867,4 +1867,29 @@ body { padding-bottom: var(--console-h); }
 @media print {
   .cockpit-console { display: none; }
   body { padding-bottom: 0; }
+}
+
+/* The main deck reads as the central display: a thin bezel, inset
+   shadow and two corner cuts, with no effect on content width. */
+.cockpit-deck {
+  margin: 0 clamp(0px, 0.55vw, 9px);
+  border-left: 1px solid rgba(34, 211, 238, 0.1);
+  border-right: 1px solid rgba(34, 211, 238, 0.1);
+  box-shadow:
+    inset 0 0 80px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(34, 211, 238, 0.08);
+}
+
+.cockpit-deck::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.28), transparent);
+}
+
+@media (max-width: 900px) {
+  .cockpit-deck { margin: 0; border-left: 0; border-right: 0; }
 }
