@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { Era, EventRecord, Lang, Machine, Place } from "@/lib/schema";
+import type { Era, EventRecord, Faction, Lang, Machine, Place } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
 import { formatStoryDate } from "@/lib/format";
+import { EraFactionMap } from "./EraFactionMap";
 
 const R = 218;
 const CX = 320;
@@ -43,6 +44,7 @@ export function OrbitalMap({
   events,
   eras,
   machines,
+  factions,
   lang,
   dict,
 }: {
@@ -50,10 +52,13 @@ export function OrbitalMap({
   events: EventRecord[];
   eras: Era[];
   machines: Machine[];
+  factions: Faction[];
   lang: Lang;
   dict: Dictionary;
 }) {
+  const [eraId, setEraId] = useState<string>("uc");
   const [selectedId, setSelectedId] = useState<string>("a-baoa-qu");
+  const selectedEra = eras.find((era) => era.id === eraId) ?? eras[0];
   const selected = places.find((place) => place.id === selectedId) ?? places[0];
   const selectedEvents = events.filter((event) => event.placeId === selected?.id);
   const battlePlaces = places.filter((place) => events.some((event) => event.placeId === place.id));
@@ -73,8 +78,46 @@ export function OrbitalMap({
 
   const select = (id: string) => setSelectedId(id);
 
+  const eraTabs = (
+    <div className="map-era-tabs" role="tablist" aria-label={dict.chronology.title}>
+      {eras.map((era) => (
+        <button
+          key={era.id}
+          type="button"
+          role="tab"
+          aria-selected={eraId === era.id}
+          className={`map-era-tab ${eraId === era.id ? "is-active" : ""}`}
+          style={{ "--era": era.color } as React.CSSProperties}
+          onClick={() => setEraId(era.id)}
+        >
+          <span className="mono">{era.code}</span>
+          <b>{pick(era.name, lang)}</b>
+          <span className="mono">{String(events.filter((event) => event.eraId === era.id).length).padStart(2, "0")}</span>
+        </button>
+      ))}
+    </div>
+  );
+
+  if (selectedEra && eraId !== "uc") {
+    const eraFactions = factions.filter((faction) => faction.eraIds.includes(eraId));
+    return (
+      <div className="map-page map-page--stacked container">
+        {eraTabs}
+        <EraFactionMap
+          era={selectedEra}
+          factions={eraFactions}
+          events={events}
+          machines={machines}
+          lang={lang}
+          dict={dict}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="map-page container">
+      {eraTabs}
       <div className="map-main">
         <div className="map-frame">
           <div className="map-frame__top">
@@ -206,7 +249,7 @@ export function OrbitalMap({
               );
             })}
 
-            <text x={CX} y={CY + R + 22} textAnchor="middle" className="map-label" fill="#4e6572" fontSize="6.5">
+            <text x={CX} y={CY + R + 22} textAnchor="middle" className="map-label" fill="#4e6572" fontSize="9">
               {dict.map.note}
             </text>
           </svg>
@@ -262,7 +305,7 @@ export function OrbitalMap({
                     .map((id) => machines.find((machine) => machine.id === id))
                     .filter((machine): machine is Machine => Boolean(machine));
                   return (
-                    <Link key={event.id} href={`/${lang}/timeline?e=${event.id}`} className="map-event">
+                    <Link key={event.id} href={`/${lang}/events/${event.id}`} className="map-event">
                       <span className="map-event__date mono">
                         {era ? formatStoryDate(event.date, era.code, lang) : ""}
                       </span>

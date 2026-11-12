@@ -29,8 +29,8 @@ export type TreeLayout = {
   isolatedLabelY: number;
 };
 
-const NODE_W = 176;
-const GAP_Y = 112;
+const NODE_W = 200;
+const GAP_Y = 126;
 
 function edgePath(from: LayoutNode, to: LayoutNode): string {
   const x1 = from.x + NODE_W / 2;
@@ -98,7 +98,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
     list.forEach((machine, index) => {
       const node: LayoutNode = {
         machine,
-        x: 150 + level * 226,
+        x: 160 + level * 252,
         y: startY + index * GAP_Y,
         depth: level,
         isolated: false,
@@ -124,7 +124,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], era
   isolatedMachines.forEach((machine, index) => {
     const node: LayoutNode = {
       machine,
-      x: 150 + (index % perRow) * 226,
+      x: 160 + (index % perRow) * 252,
       y: gridStart + Math.floor(index / perRow) * 96,
       depth: -1,
       isolated: true,

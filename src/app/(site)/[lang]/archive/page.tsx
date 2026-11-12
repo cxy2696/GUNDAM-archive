@@ -79,24 +79,38 @@ export default async function ArchivePage({ params }: { params: Promise<{ lang: 
             <span className="micro">01 / {dict.archive.factions}</span>
             <span className="mono">{String(factions.length).padStart(2, "0")}</span>
           </div>
-          <div className="faction-grid">
-            {factions.map((faction) => {
-              const era = bundle.eras.find((item) => item.id === faction.eraIds[0]);
-              const machineCount = bundle.machines.filter((machine) => machine.factionId === faction.id).length;
+          <div className="faction-era-groups">
+            {bundle.eras.map((era) => {
+              const group = factions.filter((faction) => faction.eraIds[0] === era.id);
+              if (group.length === 0) return null;
               return (
-                <Link key={faction.id} href={`/${typed}/factions/${faction.id}`} className="faction-card">
-                  <div className="faction-card__top">
-                    <FactionEmblem short={faction.short} color={faction.color} size={54} />
-                    <span className="faction-card__era mono">{era?.code}</span>
+                <section key={era.id} className="faction-era-group" aria-labelledby={`faction-era-${era.id}`}>
+                  <div className="faction-era-group__head">
+                    <span className="mono" style={{ color: era.color }}>{era.code}</span>
+                    <h2 id={`faction-era-${era.id}`}>{pick(era.name, typed)}</h2>
+                    <span className="mono">{String(group.length).padStart(2, "0")} {dict.archive.factions}</span>
                   </div>
-                  <h3>{pick(faction.name, typed)}</h3>
-                  <span className="faction-card__short mono">{faction.short}</span>
-                  <p>{pick(faction.description, typed)}</p>
-                  <div className="faction-card__foot">
-                    <span className="mono">{String(machineCount).padStart(2, "0")} MS</span>
-                    <span className="mono">{faction.founded ?? "—"}</span>
+                  <div className="faction-grid">
+                    {group.map((faction) => {
+                      const machineCount = bundle.machines.filter((machine) => machine.factionId === faction.id).length;
+                      return (
+                        <Link key={faction.id} href={`/${typed}/factions/${faction.id}`} className="faction-card">
+                          <div className="faction-card__top">
+                            <FactionEmblem short={faction.short} color={faction.color} size={54} />
+                            <span className="faction-card__era mono">{era.code}</span>
+                          </div>
+                          <h3>{pick(faction.name, typed)}</h3>
+                          <span className="faction-card__short mono">{faction.short}</span>
+                          <p>{pick(faction.description, typed)}</p>
+                          <div className="faction-card__foot">
+                            <span className="mono">{String(machineCount).padStart(2, "0")} MS</span>
+                            <span className="mono">{faction.founded ?? "—"}</span>
+                          </div>
+                        </Link>
+                      );
+                    })}
                   </div>
-                </Link>
+                </section>
               );
             })}
           </div>

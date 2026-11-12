@@ -2213,7 +2213,7 @@
       "ja": "チボデー・クロケット",
       "en": "Chibodee Crocket"
     },
-    "factionId": "gundam-fighters",
+    "factionId": "neo-america",
     "affiliations": [],
     "eraIds": [
       "fc"
@@ -4915,7 +4915,7 @@
       "zh": "新丹麦",
       "ja": "ネオデンマーク"
     },
-    "factionId": "gundam-fighters",
+    "factionId": "neo-denmark",
     "affiliations": [],
     "eraIds": [
       "fc"

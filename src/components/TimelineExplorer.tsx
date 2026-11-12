@@ -38,7 +38,7 @@ function eraEventRows(events: EventRecord[], domain: [number, number]) {
   const rowEnds: number[] = [];
   return sorted.map((event) => {
     const left = ((dateFraction(event.date) - domain[0]) / (domain[1] - domain[0])) * 100;
-    let row = rowEnds.findIndex((end) => left > end + 7.5);
+    let row = rowEnds.findIndex((end) => left > end + 14);
     if (row === -1) {
       row = rowEnds.length;
       rowEnds.push(left);
@@ -140,7 +140,7 @@ export function TimelineExplorer({
           era,
           domain,
           rows,
-          height: Math.max(126, 66 + (maxRow + 1) * 32),
+          height: Math.max(144, 66 + (maxRow + 1) * 38),
           step: tickStep(domain, tickMode),
         };
       }),
@@ -263,7 +263,7 @@ export function TimelineExplorer({
                       <button
                         type="button"
                         className={`tl-event tl-event--${event.scale} ${isSelected ? "is-selected" : ""}`}
-                        style={{ left: `${Math.min(96, Math.max(4, left))}%`, top: 28 + row * 32 }}
+                        style={{ left: `${Math.min(96, Math.max(4, left))}%`, top: 28 + row * 38 }}
                         onClick={() => setSelectedId(event.id)}
                         aria-expanded={isSelected}
                       >

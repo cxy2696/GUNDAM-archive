@@ -95,7 +95,7 @@ export function TechTreeExplorer({
       </div>
 
       <div className="tree__viewport">
-        <div className="tree__stage" style={{ width: layout.width, height: layout.height }}>
+        <div className={`tree__stage ${activeTag !== "all" ? "is-filtered" : ""}`} style={{ width: layout.width, height: layout.height }}>
           <div className="tree__band" style={{ left: 70, width: 230 }}>
             <span className="micro">ORIGIN / 原型</span>
           </div>

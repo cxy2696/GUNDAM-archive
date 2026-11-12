@@ -11,13 +11,15 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 - **Technical composition panel** on every machine page: power, armor, frame, systems and armament profile generated from controlled tags and specs, with links to the glossary.
 - **Human-machine tag** (“人类机器师”): covers psycommu, psychoframe, GUND Format, Alaya-Vijnana, EXAM and biosensor interfaces; applied to 31 machines.
 - **Cockpit UI pass**: canopy strip, wide side MFD rails, bottom console, interactive chronology console, timeline era focus and keyboard stepping, per-series tech-tree tabs.
+- **Per-era strategic map and faction grouping**: 12 era tabs; U.C. keeps the Earth-sphere map, other eras show faction nodes and events. The archive now groups 51 factions by century.
+- **Search and type pass**: search type filters, match highlighting, clear action; base body text raised to 16px (18px in large reading mode).
 - **MS lineage completion**: 116 edges (up from 82); every one of the 148 machines now has at least one incoming or outgoing lineage edge.
 - **One verified machine and two events**: Lfrith Pre-Production Model (XGF-01), the Fifth Luna drop and Break the World.
 
 ### Changed
 
 - Chinese name of Celestial Being corrected from “天上人” to **“天人”** across content, UI and documentation.
-- Machine count 147 → 148; event count 49 → 51; tag count 31 → 32; character count 73 → 114; faction count 35 → 37; static pages 628 → 720; search index 377 → 424.
+- Machine count 147 → 148; event count 49 → 51; tag count 31 → 32; character count 73 → 114; faction count 35 → 51; static pages 628 → 748; search index 377 → 438.
 - Version bumped to `2.3.0`.
 
 ### Fixed

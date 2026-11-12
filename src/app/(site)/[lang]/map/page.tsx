@@ -29,11 +29,11 @@ export default async function MapPage({ params }: { params: Promise<{ lang: stri
 
   return (
     <>
-      <header className="page-head">
+      <header className="page-head page-head--compact">
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ORBITAL</span>
-            <span className="mono">EARTH SPHERE / L1—L5</span>
+            <span className="mono">12 ERAS / FACTION OVERVIEW</span>
           </div>
           <div className="page-head__title-row">
             <div>
@@ -41,8 +41,8 @@ export default async function MapPage({ params }: { params: Promise<{ lang: stri
               <h1>{dict.map.title}</h1>
             </div>
             <div className="page-head__figure" aria-hidden>
-              <span className="mono">L5</span>
-              <span className="micro">LAGRANGE / SCHEMATIC</span>
+              <span className="mono">12</span>
+              <span className="micro">ERAS / SCHEMATIC</span>
             </div>
           </div>
           <div className="page-head__row">
@@ -57,8 +57,8 @@ export default async function MapPage({ params }: { params: Promise<{ lang: stri
                 <span>LOCATED EVENTS</span>
               </div>
               <div>
-                <b className="mono">05</b>
-                <span>LAGRANGE POINTS</span>
+                <b className="mono">{String(bundle.factions.length).padStart(2, "0")}</b>
+                <span>{dict.archive.factions}</span>
               </div>
             </div>
           </div>
@@ -69,6 +69,7 @@ export default async function MapPage({ params }: { params: Promise<{ lang: stri
         events={bundle.events}
         eras={bundle.eras}
         machines={bundle.machines}
+        factions={bundle.factions}
         lang={typed}
         dict={dict}
       />

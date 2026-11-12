@@ -799,5 +799,243 @@
       "zh": "P.D.325 在火星与地球之间活动的寻宝者与雇佣队伍，围绕厄祭战遗产展开争夺。",
       "ja": "P.D.325、火星と地球の間で活動する宝探しと傭兵の集団。厄祭戦の遺産を巡って争う。"
     }
+  },
+  {
+    "id": "neo-denmark",
+    "name": {
+      "zh": "新丹麦",
+      "ja": "ネオデンマーク",
+      "en": "Neo Denmark"
+    },
+    "short": "NEO-DK",
+    "color": "#2DD4BF",
+    "eraIds": [
+      "fc"
+    ],
+    "description": {
+      "zh": "以人鱼高达参加第十三届高达武斗会的岛国代表。",
+      "ja": "人魚ガンダムで第13回ガンダムファイトに参加した島国の代表。"
+    }
+  },
+  {
+    "id": "neo-america",
+    "name": {
+      "zh": "新美国",
+      "ja": "ネオアメリカ",
+      "en": "Neo America"
+    },
+    "short": "NEO-US",
+    "color": "#4C8DFF",
+    "eraIds": [
+      "fc"
+    ],
+    "description": {
+      "zh": "以拳击型机体参赛的高达武斗会代表国。",
+      "ja": "ボクシング型機体で出場したガンダムファイト代表国。"
+    }
+  },
+  {
+    "id": "sanc-kingdom",
+    "name": {
+      "zh": "桑古王国",
+      "ja": "サンクキングダム",
+      "en": "Sanc Kingdom"
+    },
+    "short": "SANC",
+    "color": "#F3E8C8",
+    "eraIds": [
+      "ac"
+    ],
+    "description": {
+      "zh": "主张完全和平主义的欧洲小国，由和平瑟斯家族统治。",
+      "ja": "完全平和主義を掲げる欧州の小国。ピースクラフト家が治める。"
+    }
+  },
+  {
+    "id": "white-fang",
+    "name": {
+      "zh": "白色獠牙",
+      "ja": "ホワイトファング",
+      "en": "White Fang"
+    },
+    "short": "WF",
+    "color": "#C7D2DA",
+    "eraIds": [
+      "ac"
+    ],
+    "description": {
+      "zh": "A.C.195 由米利亚尔特·匹斯克拉夫特组建的宇宙军，目标是让殖民地独立。",
+      "ja": "A.C.195、ミリアルド・ピースクラフトが率いた宇宙軍。コロニー独立を目指す。"
+    }
+  },
+  {
+    "id": "union",
+    "name": {
+      "zh": "世界经济联合",
+      "ja": "経済連合",
+      "en": "Union"
+    },
+    "short": "UNION",
+    "color": "#3B82F6",
+    "eraIds": [
+      "ad"
+    ],
+    "description": {
+      "zh": "A.D. 三大阵营之一，掌控轨道电梯与太阳能发电。",
+      "ja": "A.D.三大陣営の一つ。軌道エレベーターと太陽光発電を握る。"
+    }
+  },
+  {
+    "id": "aeu",
+    "name": {
+      "zh": "先进欧洲联盟",
+      "ja": "先進欧州連合",
+      "en": "Advanced European Union"
+    },
+    "short": "AEU",
+    "color": "#F59E0B",
+    "eraIds": [
+      "ad"
+    ],
+    "description": {
+      "zh": "A.D. 以欧洲为中心的阵营，拥有 Enact 等 MS。",
+      "ja": "A.D.欧州中心の陣営。エナクトなどのMSを持つ。"
+    }
+  },
+  {
+    "id": "human-reform-league",
+    "name": {
+      "zh": "人类革新联盟",
+      "ja": "人類革新連盟",
+      "en": "Human Reform League"
+    },
+    "short": "HRL",
+    "color": "#22C55E",
+    "eraIds": [
+      "ad"
+    ],
+    "description": {
+      "zh": "A.D. 以轨道电梯与资源开发为核心的欧亚阵营。",
+      "ja": "A.D.軌道エレベーターと資源開発を軸とするユーラシア陣営。"
+    }
+  },
+  {
+    "id": "a-laws",
+    "name": {
+      "zh": "A-LAWS",
+      "ja": "A-LAWS",
+      "en": "A-LAWS"
+    },
+    "short": "A-LAWS",
+    "color": "#EF4444",
+    "eraIds": [
+      "ad"
+    ],
+    "description": {
+      "zh": "A.D.2312 联邦内的“和平维持”部队，以武力强行统一。",
+      "ja": "A.D.2312、連邦内の「平和維持」部隊。武力で統一を進める。"
+    }
+  },
+  {
+    "id": "blue-cosmos",
+    "name": {
+      "zh": "蓝色宇宙",
+      "ja": "ブルーコスモス",
+      "en": "Blue Cosmos"
+    },
+    "short": "BC",
+    "color": "#1D4ED8",
+    "eraIds": [
+      "ce"
+    ],
+    "description": {
+      "zh": "C.E. 的反调整者激进组织，与 LOGOS 有联系。",
+      "ja": "C.E.の反コーディネイター過激派。ロゴスと結びつく。"
+    }
+  },
+  {
+    "id": "terminal",
+    "name": {
+      "zh": "终端",
+      "ja": "ターミナル",
+      "en": "Terminal"
+    },
+    "short": "TERM",
+    "color": "#F472B6",
+    "eraIds": [
+      "ce"
+    ],
+    "description": {
+      "zh": "C.E.73 由拉克丝·克莱因等人建立的秘密网络。",
+      "ja": "C.E.73、ラクス・クラインらが築いた秘密ネットワーク。"
+    }
+  },
+  {
+    "id": "capital-army",
+    "name": {
+      "zh": "首都军",
+      "ja": "キャピタル・アーミィ",
+      "en": "Capital Army"
+    },
+    "short": "CAP",
+    "color": "#8B5CF6",
+    "eraIds": [
+      "rc"
+    ],
+    "description": {
+      "zh": "R.C.1014 首都塔的防卫军，掌握光子电池与 MS。",
+      "ja": "R.C.1014、キャピタル・タワーの防衛軍。光子電池とMSを握る。"
+    }
+  },
+  {
+    "id": "towasanga",
+    "name": {
+      "zh": "托瓦桑加",
+      "ja": "トワサンガ",
+      "en": "Towasanga"
+    },
+    "short": "TOWA",
+    "color": "#F0B429",
+    "eraIds": [
+      "rc"
+    ],
+    "description": {
+      "zh": "R.C. 的宇宙国家，拥有 G-Lucifer 等机体。",
+      "ja": "R.C.の宇宙国家。G-ルシファーなどの機体を持つ。"
+    }
+  },
+  {
+    "id": "gund-arm-inc",
+    "name": {
+      "zh": "高达股份有限公司",
+      "ja": "ガンダム株式会社",
+      "en": "Gund-Arm Inc."
+    },
+    "short": "GUND-ARM",
+    "color": "#EF4444",
+    "eraIds": [
+      "as"
+    ],
+    "description": {
+      "zh": "A.S.122 由米奥莉奈与斯莱塔创立的高达开发公司。",
+      "ja": "A.S.122、ミオリネとスレッタが設立したガンダム開発会社。"
+    }
+  },
+  {
+    "id": "luzianna-militia",
+    "name": {
+      "zh": "卢吉亚纳民兵",
+      "ja": "ルジアナ民兵",
+      "en": "Luzianna Militia"
+    },
+    "short": "LUZ",
+    "color": "#A78BFA",
+    "eraIds": [
+      "cc"
+    ],
+    "description": {
+      "zh": "C.C. 卢吉亚纳地区的民兵，卷入月之民回归后的冲突。",
+      "ja": "C.C.ルジアナ地方の民兵。月の民の回帰後の衝突に巻き込まれる。"
+    }
   }
 ]
