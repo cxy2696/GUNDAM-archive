@@ -12,7 +12,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
 ### Changed
 
-- GitHub Actions upgraded to Node 24 runtimes, removing the Node 20 deprecation warnings: `actions/checkout@v7`, `actions/setup-node@v7`, `pnpm/action-setup@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`.
+- GitHub Actions upgraded to Node 24 runtimes, removing the Node 20 deprecation warnings: `actions/checkout@v7`, `actions/setup-node@v7`, `pnpm/action-setup@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`; runners pinned to `ubuntu-24.04`.
 - Version bumped to `3.1.2`; site pages remain 854, search entries 487, events 69.
 
 ## [3.1.1] — 2026-11-12
