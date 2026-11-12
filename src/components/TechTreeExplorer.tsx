@@ -23,18 +23,28 @@ export function TechTreeExplorer({
   dict: Dictionary;
 }) {
   const [activeTag, setActiveTag] = useState<string>("all");
-  const layout = useMemo(() => layoutTechTree(machines, eras.map((era) => era.id)), [machines, eras]);
-  const usedTags = tags.filter((tag) => machines.some((machine) => machine.tags.includes(tag.id)));
+  const [activeEra, setActiveEra] = useState<string>("uc");
+  const availableMachines = useMemo(
+    () => machines.filter((machine) => machine.eraId === activeEra),
+    [machines, activeEra],
+  );
+  const layout = useMemo(
+    () => layoutTechTree(machines, eras.map((era) => era.id), activeEra),
+    [machines, eras, activeEra],
+  );
+  const usedTags = tags.filter((tag) => availableMachines.some((machine) => machine.tags.includes(tag.id)));
   const tag = tags.find((item) => item.id === activeTag);
-  const activeCount = tag ? machines.filter((machine) => machine.tags.includes(tag.id)).length : machines.length;
+  const activeCount = tag ? availableMachines.filter((machine) => machine.tags.includes(tag.id)).length : availableMachines.length;
+  const activeEraRecord = eras.find((era) => era.id === activeEra);
+  const hasIsolated = layout.nodes.some((node) => node.isolated);
 
   return (
     <div className="tree-page container">
       <div className="tree__toolbar">
         <div className="tree__counts">
-          <span className="mono">{String(machines.length).padStart(2, "0")} {dict.tree.nodes}</span>
+          <span className="mono">{String(availableMachines.length).padStart(2, "0")} {dict.tree.nodes}</span>
           <span className="mono">{String(layout.edges.length).padStart(2, "0")} {dict.tree.ucEdges}</span>
-          <span className="mono">{layout.nodes.filter((node) => node.isolated).length} {dict.tree.parallel}</span>
+          <span className="mono">{activeEraRecord?.code ?? activeEra} / SERIES</span>
         </div>
         <div className="tree__legend" aria-label={dict.tree.legend}>
           <span><i className="line line--derive" />{dict.tree.derive}</span>
@@ -43,12 +53,30 @@ export function TechTreeExplorer({
         </div>
       </div>
 
+      <div className="tree__era-tabs" role="tablist" aria-label={dict.chronology.title}>
+        {eras.map((era) => (
+          <button
+            key={era.id}
+            type="button"
+            role="tab"
+            aria-selected={activeEra === era.id}
+            className={`tree__era-tab ${activeEra === era.id ? "is-active" : ""}`}
+            style={{ "--era": era.color } as React.CSSProperties}
+            onClick={() => { setActiveEra(era.id); setActiveTag("all"); }}
+          >
+            <span className="mono">{era.code}</span>
+            <b>{pick(era.name, lang)}</b>
+            <span className="mono">{String(machines.filter((machine) => machine.eraId === era.id).length).padStart(2, "0")}</span>
+          </button>
+        ))}
+      </div>
+
       <div className="tree__filters">
         <span className="micro">{dict.tree.filterHint}</span>
         <div className="tree__chips">
           <button type="button" className={`chip ${activeTag === "all" ? "is-active" : ""}`} onClick={() => setActiveTag("all")}>
             {dict.tree.allTags}
-            <span className="chip__count">{String(machines.length).padStart(2, "0")}</span>
+            <span className="chip__count">{String(availableMachines.length).padStart(2, "0")}</span>
           </button>
           {usedTags.map((item) => (
             <button
@@ -59,7 +87,7 @@ export function TechTreeExplorer({
             >
               {pick(item.name, lang)}
               <span className="chip__count">
-                {String(machines.filter((machine) => machine.tags.includes(item.id)).length).padStart(2, "0")}
+                {String(availableMachines.filter((machine) => machine.tags.includes(item.id)).length).padStart(2, "0")}
               </span>
             </button>
           ))}
@@ -113,10 +141,12 @@ export function TechTreeExplorer({
             })}
           </svg>
 
-          <div className="tree__parallel" style={{ top: layout.isolatedLabelY }}>
-            <span className="micro">{dict.tree.crossEra}</span>
-            <span className="tree__parallel-line" />
-          </div>
+          {hasIsolated && (
+            <div className="tree__parallel" style={{ top: layout.isolatedLabelY }}>
+              <span className="micro">{dict.tree.crossEra}</span>
+              <span className="tree__parallel-line" />
+            </div>
+          )}
 
           {layout.nodes.map(({ machine, x, y, isolated }) => {
             const era = eras.find((item) => item.id === machine.eraId);
@@ -176,7 +206,7 @@ export function TechTreeExplorer({
         <div className="tree__stats">
           <div>
             <span className="micro">{dict.tree.nodes}</span>
-            <b className="mono">{String(machines.length).padStart(2, "0")}</b>
+            <b className="mono">{String(availableMachines.length).padStart(2, "0")}</b>
           </div>
           <div>
             <span className="micro">{dict.tree.ucEdges}</span>

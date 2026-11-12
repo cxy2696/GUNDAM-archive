@@ -69,6 +69,10 @@ export function CockpitHud({
         <span className="hud-corner hud-corner--tr" />
         <span className="hud-corner hud-corner--bl" />
         <span className="hud-corner hud-corner--br" />
+        <span className="cockpit-canopy" />
+        <span className="cockpit-side cockpit-side--left"><i>MFD-01 / TACTICAL</i></span>
+        <span className="cockpit-side cockpit-side--right"><i>MFD-02 / SENSOR</i></span>
+        <span className="cockpit-console" />
         <span className="hud-scan" />
         <span className="hud-reticle"><i /></span>
         <div className="hud-rail hud-rail--top">

@@ -84,7 +84,8 @@
     "movable-frame",
     "variable-frame",
     "biosensor",
-    "beam-weapon"
+    "beam-weapon",
+    "human-machine"
   ],
   "pilots": [
     {

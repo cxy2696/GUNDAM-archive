@@ -80,7 +80,9 @@
       "characterId": "shinn-asuka"
     }
   ],
-  "eventIds": [],
+  "eventIds": [
+    "break-the-world"
+  ],
   "workIds": [
     "seed-destiny-2004"
   ],

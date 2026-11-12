@@ -50,18 +50,11 @@ function edgePath(from: LayoutNode, to: LayoutNode): string {
  * edge (parallel-universe entries) are parked in a labelled strip at the
  * bottom instead of being forced into the U.C. lineage.
  */
-export function layoutTechTree(machines: Machine[], eraOrder: string[] = []): TreeLayout {
-  // The globe-spanning graph is reserved for the U.C. lineage. Other
-  // universes use different technologies and calendars, so forcing them into
-  // the same columns produces a fake lineage (and an unreadable canvas).
-  const primary = machines.filter((machine) => machine.eraId === "uc");
-  const secondary = machines
-    .filter((machine) => machine.eraId !== "uc")
-    .sort((a, b) => {
-      const ai = eraOrder.indexOf(a.eraId);
-      const bi = eraOrder.indexOf(b.eraId);
-      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi) || a.firstAppear.year - b.firstAppear.year;
-    });
+export function layoutTechTree(machines: Machine[], eraOrder: string[] = [], eraId = "uc"): TreeLayout {
+  // Each era has its own technology base. Layout one era at a time instead
+  // of forcing every universe into the U.C. tree.
+  const primary = machines.filter((machine) => machine.eraId === eraId);
+  const secondary: Machine[] = [];
 
   const incoming = new Map<string, number>();
   primary.forEach((machine) => incoming.set(machine.id, 0));
@@ -122,6 +115,7 @@ export function layoutTechTree(machines: Machine[], eraOrder: string[] = []): Tr
       return !hasEdge;
     }),
   ];
+  void eraOrder;
   // Unconnected / parallel-universe machines are parked in a readable grid.
   const perRow = 6;
   const connectedBottom = nodes.length ? Math.max(...nodes.map((node) => node.y + 70)) : 0;

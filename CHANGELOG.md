@@ -9,12 +9,15 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 
 - **41 new characters** (114 total): GAT-X Duel/Buster/Blitz/Calamity/Forbidden/Raider pilots, Leopard/Airmaster/Virsago/Ashtaron pilots, G-UNIT and Gundam X pilots, Blue Destiny/Pale Rider/Penelope/TR-6/Crossbone X-2/Mudrock/F90 pilots, Turn X, Lfrith, Marchosias, Astaroth and Flauros pilots, plus key figures such as Murrue, Mu, Durandal, Dianna, Kihel, Kudelia, Prospera and Woolf.
 - **Technical composition panel** on every machine page: power, armor, frame, systems and armament profile generated from controlled tags and specs, with links to the glossary.
-- **MS lineage completion**: 115 edges (up from 82); every one of the 147 machines now has at least one incoming or outgoing lineage edge.
+- **Human-machine tag** (“人类机器师”): covers psycommu, psychoframe, GUND Format, Alaya-Vijnana, EXAM and biosensor interfaces; applied to 31 machines.
+- **Cockpit UI pass**: canopy strip, wide side MFD rails, bottom console, interactive chronology console, timeline era focus and keyboard stepping, per-series tech-tree tabs.
+- **MS lineage completion**: 116 edges (up from 82); every one of the 148 machines now has at least one incoming or outgoing lineage edge.
+- **One verified machine and two events**: Lfrith Pre-Production Model (XGF-01), the Fifth Luna drop and Break the World.
 
 ### Changed
 
 - Chinese name of Celestial Being corrected from “天上人” to **“天人”** across content, UI and documentation.
-- Character count 73 → 114; faction count 35 → 37; static pages 628 → 714; search index 377 → 420.
+- Machine count 147 → 148; event count 49 → 51; tag count 31 → 32; character count 73 → 114; faction count 35 → 37; static pages 628 → 720; search index 377 → 424.
 - Version bumped to `2.3.0`.
 
 ### Fixed

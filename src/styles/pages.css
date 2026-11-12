@@ -6052,3 +6052,294 @@ a.aside-work:hover {
   .tech-armament { align-items: flex-start; flex-direction: column; gap: 8px; }
   .tech-armament__rows { margin-left: 0; }
 }
+
+/* ---------------- CHRONOLOGY CONSOLE / 世纪表控制台 ---------------- */
+.chrono-console {
+  position: relative;
+  margin: 24px 0 8px;
+  border: 1px solid var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.03), transparent 30%),
+    color-mix(in srgb, var(--bg-panel) 78%, transparent);
+  overflow: hidden;
+}
+
+.chrono-console::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity: 0.65;
+}
+
+.chrono-console__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 78%, var(--cyan) 3%);
+}
+
+.chrono-console__top .mono { font-size: 8px; color: var(--text-3); letter-spacing: 0.08em; }
+
+.chrono-console__grid {
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+}
+
+.chrono-console__list {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line-strong);
+  max-height: 520px;
+  overflow-y: auto;
+  background: color-mix(in srgb, var(--bg-base) 48%, transparent);
+}
+
+.chrono-console__tab {
+  display: grid;
+  grid-template-columns: 22px 46px minmax(0, 1fr);
+  gap: 7px;
+  align-items: baseline;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-2);
+  text-align: left;
+  transition: background var(--dur), color var(--dur), border-color var(--dur);
+}
+
+.chrono-console__tab:hover { background: var(--bg-hover); color: var(--text); }
+.chrono-console__tab.is-active {
+  background: color-mix(in srgb, var(--era) 10%, var(--bg-panel));
+  border-left: 2px solid var(--era);
+  color: var(--text);
+}
+
+.chrono-console__tab > span:first-child { font-size: 8px; color: var(--text-3); }
+.chrono-console__code { font-size: 8px; color: var(--era); letter-spacing: 0.08em; }
+.chrono-console__tab b { font-size: 13px; font-weight: 500; }
+
+.chrono-console__screen {
+  position: relative;
+  padding: 22px 24px 20px;
+  background:
+    linear-gradient(to right, rgba(34, 211, 238, 0.035), transparent 45%),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(34, 211, 238, 0.035) 31px 32px);
+}
+
+.chrono-console__screen-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 8px;
+  color: var(--text-3);
+  letter-spacing: 0.08em;
+}
+
+.chrono-console__signal { color: var(--green); }
+.chrono-console__screen h2 { margin-top: 12px; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.03em; }
+
+.chrono-console__years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 7px;
+  font-size: 10px;
+  color: var(--era);
+}
+
+.chrono-console__years span { color: var(--text-3); font-size: 8px; letter-spacing: 0.06em; }
+.chrono-console__summary { max-width: 760px; margin-top: 14px; font-size: 14px; line-height: 1.8; color: var(--text-2); }
+
+.chrono-console__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.chrono-console__stats > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 11px;
+  background: var(--bg-panel);
+}
+
+.chrono-console__stats span { font-size: 9px; color: var(--text-3); }
+.chrono-console__stats b { font-size: 18px; font-weight: 500; color: var(--era); }
+
+.chrono-console__columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.chrono-console__links { display: grid; gap: 2px; margin-top: 7px; }
+.chrono-console__links a {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 8px;
+  align-items: baseline;
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--line);
+  transition: color var(--dur);
+}
+.chrono-console__links a:hover { color: var(--cyan); }
+.chrono-console__links .mono { font-size: 8px; color: var(--text-3); }
+.chrono-console__links b { font-size: 11.5px; font-weight: 400; }
+
+.chrono-console__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .chrono-console__grid { grid-template-columns: minmax(0, 1fr); }
+  .chrono-console__list {
+    flex-direction: row;
+    max-height: none;
+    overflow-x: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .chrono-console__tab {
+    grid-template-columns: 20px 42px auto;
+    min-width: 160px;
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+  .chrono-console__tab.is-active { border-left: 0; border-bottom: 2px solid var(--era); }
+  .chrono-console__columns { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .chrono-console__screen { padding: 16px; }
+  .chrono-console__stats { grid-template-columns: minmax(0, 1fr); }
+  .chrono-console__screen h2 { font-size: 28px; }
+}
+
+/* ---------------- TIMELINE CONSOLE / 年表控制台 ---------------- */
+.tl-era-rail {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+
+.tl-era-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  flex: none;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 65%, transparent);
+  color: var(--text-3);
+  transition: border-color var(--dur), background var(--dur), color var(--dur);
+}
+
+.tl-era-chip:hover { color: var(--text); border-color: var(--line-strong); }
+.tl-era-chip.is-active {
+  color: var(--text);
+  border-color: var(--era, var(--cyan));
+  background: color-mix(in srgb, var(--bg-panel) 80%, var(--era, var(--cyan)) 10%);
+}
+.tl-era-chip .mono { font-size: 8px; color: var(--era, var(--cyan)); letter-spacing: 0.06em; }
+.tl-era-chip b { font-size: 11px; font-weight: 400; }
+.tl-era-chip > .mono:last-child { color: var(--text-3); }
+
+.tl-lanes.has-focus .tl-lane {
+  opacity: 0.32;
+  transition: opacity var(--dur);
+}
+
+.tl-lanes.has-focus .tl-lane.is-focus {
+  opacity: 1;
+}
+
+@media (max-width: 680px) {
+  .tl-era-chip { padding: 6px 7px; }
+  .tl-era-chip b { max-width: 74px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+/* ---------------- TECH TREE ERA TABS / 系列切换 ---------------- */
+.tree__era-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.tree__era-tab {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  flex: none;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 65%, transparent);
+  color: var(--text-3);
+  transition: color var(--dur), border-color var(--dur), background var(--dur);
+}
+
+.tree__era-tab:hover { color: var(--text); border-color: var(--line-strong); }
+.tree__era-tab.is-active {
+  color: var(--text);
+  border-color: var(--era);
+  background: color-mix(in srgb, var(--bg-panel) 80%, var(--era) 10%);
+}
+.tree__era-tab .mono { font-size: 8px; color: var(--era); letter-spacing: 0.06em; }
+.tree__era-tab b { font-size: 11px; font-weight: 400; }
+.tree__era-tab .mono:last-child { color: var(--text-3); }
+.tree__era-tabs + .tree__filters { margin-top: 10px; }
+
+/* ---------------- GLOSSARY SERIES FILTER / 术语系列筛选 ---------------- */
+.glossary-eras {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow-x: auto;
+  padding: 8px 0 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossary-eras > .micro {
+  flex: none;
+  margin-right: 4px;
+  font-size: 8px;
+  color: var(--text-3);
+}
+
+.glossary-eras .chip {
+  flex: none;
+  font-size: 10px;
+}
+
+.glossary-eras .chip .mono {
+  margin-right: 4px;
+  font-size: 8px;
+  color: var(--era, var(--cyan));
+}
+
+.glossary-eras .chip.is-active {
+  border-color: var(--era, var(--cyan));
+}

@@ -96,6 +96,24 @@ export function TimelineExplorer({
     if (node) node.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [focusEra]);
 
+  useEffect(() => {
+    if (!selectedId) return;
+    const ordered = events
+      .filter((event) => (mainlineOnly ? event.mainline : true))
+      .filter((event) => (focusEra ? event.eraId === focusEra : true))
+      .sort((a, b) => dateFraction(a.date) - dateFraction(b.date));
+    const current = ordered.findIndex((event) => event.id === selectedId);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      if (current < 0) return;
+      event.preventDefault();
+      const next = event.key === "ArrowRight" ? ordered[current + 1] : ordered[current - 1];
+      if (next) setSelectedId(next.id);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selectedId, events, mainlineOnly, focusEra]);
+
   const selected = events.find((event) => event.id === selectedId) ?? null;
   const visible = events.filter((event) => (mainlineOnly ? event.mainline : true));
 
@@ -167,7 +185,31 @@ export function TimelineExplorer({
         </div>
       </div>
 
-      <div className="tl-lanes">
+      <div className="tl-era-rail" role="group" aria-label={dict.chronology.title}>
+        <button
+          type="button"
+          className={`tl-era-chip ${!focusEra ? "is-active" : ""}`}
+          onClick={() => setFocusEra(null)}
+        >
+          <span className="mono">ALL</span>
+          <b>{dict.timeline.allEvents}</b>
+        </button>
+        {eras.map((era) => (
+          <button
+            key={era.id}
+            type="button"
+            className={`tl-era-chip ${focusEra === era.id ? "is-active" : ""}`}
+            style={{ "--era": era.color } as React.CSSProperties}
+            onClick={() => setFocusEra(focusEra === era.id ? null : era.id)}
+          >
+            <span className="mono">{era.code}</span>
+            <b>{pick(era.name, lang)}</b>
+            <span className="mono">{String(visible.filter((event) => event.eraId === era.id).length).padStart(2, "0")}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className={`tl-lanes ${focusEra ? "has-focus" : ""}`}>
         {laneData.map(({ era, domain, rows, height, step }) => {
           const ticks = ticksFor(domain, step);
           return (

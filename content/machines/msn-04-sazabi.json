@@ -90,7 +90,8 @@
     "psycommu",
     "funnel",
     "gundarium",
-    "beam-weapon"
+    "beam-weapon",
+    "human-machine"
   ],
   "pilots": [
     {
@@ -102,7 +103,8 @@
     }
   ],
   "eventIds": [
-    "axis-drop"
+    "axis-drop",
+    "fifth-luna"
   ],
   "workIds": [
     "cca-1988"

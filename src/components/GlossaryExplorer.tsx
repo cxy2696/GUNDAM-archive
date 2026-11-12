@@ -22,12 +22,17 @@ export function GlossaryExplorer({
   dict: Dictionary;
 }) {
   const [category, setCategory] = useState<string>("all");
+  const [eraFilter, setEraFilter] = useState<string>("all");
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return tags
       .filter((tag) => category === "all" || tag.category === category)
+      .filter((tag) => {
+        if (eraFilter === "all") return true;
+        return machines.some((machine) => machine.eraId === eraFilter && machine.tags.includes(tag.id));
+      })
       .filter((tag) => {
         if (!q) return true;
         const haystack = [
@@ -42,7 +47,7 @@ export function GlossaryExplorer({
         return haystack.includes(q);
       })
       .sort((a, b) => CATEGORY_ORDER.indexOf(a.category as typeof CATEGORY_ORDER[number]) - CATEGORY_ORDER.indexOf(b.category as typeof CATEGORY_ORDER[number]));
-  }, [tags, category, query]);
+  }, [tags, category, eraFilter, query, machines]);
 
   return (
     <div className="glossary-explorer">
@@ -78,12 +83,36 @@ export function GlossaryExplorer({
         </div>
       </div>
 
+      <div className="glossary-eras" role="group" aria-label={dict.glossary.seriesFilter}>
+        <span className="micro">{dict.glossary.seriesFilter}</span>
+        <button
+          type="button"
+          className={`chip ${eraFilter === "all" ? "is-active" : ""}`}
+          onClick={() => setEraFilter("all")}
+        >
+          {dict.glossary.filterAll}
+        </button>
+        {eras.map((era) => (
+          <button
+            key={era.id}
+            type="button"
+            className={`chip ${eraFilter === era.id ? "is-active" : ""}`}
+            style={{ "--era": era.color } as React.CSSProperties}
+            onClick={() => setEraFilter(era.id)}
+          >
+            <span className="mono">{era.code}</span>
+            {pick(era.name, lang)}
+          </button>
+        ))}
+      </div>
+
       {filtered.length === 0 ? (
         <p className="glossary-empty">{dict.glossary.noResults}</p>
       ) : (
         <div className="glossary-grid">
           {filtered.map((tag) => {
-            const using = machines.filter((machine) => machine.tags.includes(tag.id));
+            const usingAll = machines.filter((machine) => machine.tags.includes(tag.id));
+            const using = eraFilter === "all" ? usingAll : usingAll.filter((machine) => machine.eraId === eraFilter);
             const eraCodes = [...new Set(using.map((machine) => eras.find((era) => era.id === machine.eraId)?.code).filter(Boolean))];
             return (
               <article key={tag.id} className="glossary-card" id={`tag-${tag.id}`}>

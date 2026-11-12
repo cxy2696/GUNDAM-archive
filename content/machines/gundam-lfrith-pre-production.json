@@ -1,0 +1,116 @@
+{
+  "id": "gundam-lfrith-pre-production",
+  "modelCode": "XGF-01",
+  "name": {
+    "zh": "魔灵高达 试作型",
+    "ja": "ガンダム・ルブリス 試作型",
+    "en": "Gundam Lfrith Pre-Production Model"
+  },
+  "aliases": [],
+  "unitType": "mass_production",
+  "eraId": "as",
+  "factionId": "vanadis",
+  "canon": "parallel",
+  "firstAppear": {
+    "year": 122,
+    "precision": "year"
+  },
+  "summary": {
+    "zh": "凡娜迪斯机构以魔灵为基础开发的量产试作型，背部装有 GUND-BIT 大型发射器。",
+    "ja": "ヴァナディース機関がルブリスを基に開発した量産試作型。背部にGUNDビット大型ランチャーを備える。"
+  },
+  "description": {
+    "zh": [
+      "试作型沿用魔灵的 GUND 格式化接口，背部的大型发射器用于搭载和投放 GUND-BIT。它比后来的风灵更接近原始实验机。"
+    ],
+    "ja": [
+      "試作型はルブリスのGUNDフォーマットインターフェースを継承し、背部の大型ランチャーでGUNDビットを搭載・投射する。後のエアリアルより原始的な実験機に近い。"
+    ]
+  },
+  "specs": {
+    "heightOverall": 18.0,
+    "heightHead": 18.0,
+    "weightEmpty": null,
+    "weightFull": 49.1,
+    "powerOutput": null,
+    "thrust": null,
+    "sensorRadius": null
+  },
+  "armament": [
+    {
+      "name": {
+        "zh": "GUND-BIT 大型发射器 ×2",
+        "ja": "GUNDビット大型ランチャー ×2"
+      },
+      "type": "special"
+    },
+    {
+      "name": {
+        "zh": "光束步枪",
+        "ja": "ビームライフル"
+      },
+      "type": "beam"
+    },
+    {
+      "name": {
+        "zh": "盾牌",
+        "ja": "シールド"
+      },
+      "type": "special"
+    }
+  ],
+  "tags": [
+    "gund-format",
+    "beam-weapon",
+    "movable-frame",
+    "human-machine"
+  ],
+  "pilots": [],
+  "eventIds": [],
+  "workIds": [
+    "witch-prologue"
+  ],
+  "edges": [
+    {
+      "to": "gundam-lfrith",
+      "kind": "tech_from",
+      "techTag": "gund-format",
+      "note": {
+        "zh": "魔灵试作型是魔灵与后续 GUND 机体的技术起点。",
+        "ja": "ルブリス試作型はルブリスと後続GUND機体の技術的起点である。"
+      },
+      "sources": [
+        {
+          "label": "《机动战士高达 水星的魔女 PROLOGUE》官方机体页",
+          "level": "S",
+          "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/"
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "head": "fin",
+    "build": "standard",
+    "shoulder": "round",
+    "backpack": "thruster",
+    "weapon": "rifle",
+    "shield": true,
+    "colors": {
+      "primary": "#E8EDF2",
+      "secondary": "#2B4E8C",
+      "accent": "#E0B64A",
+      "eye": "#7DE3FF",
+      "frame": "#4A5563"
+    }
+  },
+  "sources": [
+    {
+      "label": "《机动战士高达 水星的魔女 PROLOGUE》官方机体页",
+      "level": "S",
+      "url": "https://en.gundam-official.com/witch-from-mercury/prologue/mobile-suit/2/"
+    }
+  ],
+  "disputed": false,
+  "dataQuality": "seed",
+  "updatedAt": "2026-11-11"
+}

@@ -90,7 +90,8 @@
     "gundarium",
     "beam-weapon",
     "movable-frame",
-    "biosensor"
+    "biosensor",
+    "human-machine"
   ],
   "pilots": [
     {

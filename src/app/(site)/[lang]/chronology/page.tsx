@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getBundle } from "@/lib/content";
 import { getDict, isLang, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
+import { ChronologyConsole } from "@/components/ChronologyConsole";
 
 export async function generateMetadata({
   params,
@@ -73,6 +74,15 @@ export default async function ChronologyPage({
         </div>
       </header>
 
+      <ChronologyConsole
+        eras={eras}
+        machines={bundle.machines}
+        works={bundle.works}
+        events={bundle.events}
+        lang={typed}
+        dict={dict}
+      />
+
       <section className="chronology-table-section" aria-labelledby="era-overview-title">
         <div className="chronology-section-head">
           <span className="micro">01 / OVERVIEW</span>
@@ -115,41 +125,6 @@ export default async function ChronologyPage({
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section className="chronology-grid" aria-label={dict.chronology.title}>
-        {eras.map((era, index) => {
-          const machines = bundle.machines.filter((machine) => machine.eraId === era.id);
-          const events = bundle.events.filter((event) => event.eraId === era.id);
-          const works = bundle.works.filter((work) => work.eraId === era.id);
-          return (
-            <Link
-              key={era.id}
-              href={`/${typed}/timeline?era=${era.id}`}
-              className="chronology-card"
-              style={{ "--era": era.color } as React.CSSProperties}
-            >
-              <div className="chronology-card__top">
-                <span className="mono chronology-card__index">{String(index + 1).padStart(2, "0")}</span>
-                <span className="mono chronology-card__code">{era.code}</span>
-                <span className={`tag ${era.canon === "mainline" ? "tag--accent" : "tag--violet"}`}>
-                  {dict.canon[era.canon]}
-                </span>
-              </div>
-              <h2>{pick(era.name, typed)}</h2>
-              <span className="mono chronology-card__years">
-                {pad(era.span.start)} — {pad(era.span.end)}
-              </span>
-              <p>{pick(era.summary, typed)}</p>
-              <div className="chronology-card__stats">
-                <span><b>{String(machines.length).padStart(2, "0")}</b>{dict.nav.machines}</span>
-                <span><b>{String(events.length).padStart(2, "0")}</b>{dict.chronology.events}</span>
-                <span><b>{String(works.length).padStart(2, "0")}</b>{dict.chronology.works}</span>
-                <span className="chronology-card__arrow" aria-hidden>↗</span>
-              </div>
-            </Link>
-          );
-        })}
       </section>
 
       <section className="chronology-roster" aria-labelledby="roster-title">

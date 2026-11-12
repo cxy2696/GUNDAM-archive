@@ -37,7 +37,8 @@
       "battle-of-a-baoa-qu",
       "axis-drop",
       "operation-odessa",
-      "jaburo-assault"
+      "jaburo-assault",
+      "fifth-luna"
     ],
     "relations": [
       {
@@ -118,7 +119,8 @@
       "dakar-speech",
       "axis-drop",
       "one-year-war",
-      "gryps-conflict"
+      "gryps-conflict",
+      "fifth-luna"
     ],
     "relations": [
       {
@@ -291,7 +293,8 @@
       "battle-of-a-baoa-qu",
       "axis-drop",
       "battle-of-solomon",
-      "gryps-conflict"
+      "gryps-conflict",
+      "fifth-luna"
     ],
     "relations": [
       {
@@ -1096,7 +1099,9 @@
       "zgaf-x09a-justice",
       "zgaf-x19a-infinite-justice"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "break-the-world"
+    ],
     "relations": [
       {
         "targetId": "kira-yamato",
@@ -2720,7 +2725,9 @@
       "zgaf-x56s-impulse",
       "zgmf-x42s-destiny"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "break-the-world"
+    ],
     "relations": [],
     "appearances": [
       "seed-destiny-2004"
@@ -2816,7 +2823,9 @@
     "machineIds": [
       "zgaf-x666s-legend"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "break-the-world"
+    ],
     "relations": [],
     "appearances": [
       "seed-destiny-2004"

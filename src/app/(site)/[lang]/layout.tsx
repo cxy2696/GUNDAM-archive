@@ -89,7 +89,7 @@ export default async function LangLayout({
           <CockpitHud dict={dict} machineCount={bundle.machines.length} eraCount={bundle.eras.length} />
           <SiteHeader lang={typed} dict={dict} />
           <main id="main" className="main">
-            {children}
+            <div className="cockpit-deck">{children}</div>
           </main>
           <SiteFooter lang={typed} />
           <CommandPalette entries={entries} lang={typed} dict={dict} />
