@@ -118,6 +118,8 @@ NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive pnpm routes:check
 | sitemap 路由 | 每次发布 | `pnpm routes:check`（CI 已跑） |
 | 站内链接/锚点 | 每次发布 | `pnpm links:check`（CI 已跑） |
 | 内容计数漂移 | 每次内容 PR | `pnpm docs:check`（含数量快照校验） |
+| 重复文本/关系/出处 | 每次内容 PR | `pnpm content:audit`（CI 已跑） |
+| 依赖与 Action 更新 | 每周 | Dependabot（npm + GitHub Actions，分组 PR） |
 | 外部来源失效 | 每月抽查 | 抽查 `sources.url`，失效则改注出处或降级 |
 | 依赖安全/版本 | 每季度 | `pnpm outdated`、Dependabot/手动升级后跑 `pnpm check` |
 

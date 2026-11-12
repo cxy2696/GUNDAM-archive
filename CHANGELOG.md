@@ -13,6 +13,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/); versioning: SemVer.
 - Rewrote 11 event openings so summaries no longer repeat the first detail paragraph; all event overlap now below 50%.
 - Added `content:audit`: duplicate names/summaries/paragraphs/relations/sources and summary/detail echo detection.
 - Added `check:prebuild` and simplified CI to one `pnpm check` parity gate; Pages runs `check:prebuild` before the base-path build.
+- Added weekly Dependabot groups for npm and GitHub Actions.
 - Version bumped to `3.1.3`; content counts unchanged (854 pages / 487 search entries / 69 events).
 
 ## [3.1.2] — 2026-11-12
