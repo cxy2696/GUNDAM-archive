@@ -154,7 +154,7 @@ export function RelationGraph({
           {view === "3d" && (
             <>
               <button type="button" className={`chip ${autoRotate ? "is-active" : ""}`} onClick={() => setAutoRotate((value) => !value)}>
-                {autoRotate ? dict.eraDemo.stopRotate : dict.eraDemo.rotate}
+                {dict.viewer.autoRotate}
               </button>
               <button type="button" className={`chip ${showLabels ? "is-active" : ""}`} onClick={() => setShowLabels((value) => !value)}>
                 LABELS

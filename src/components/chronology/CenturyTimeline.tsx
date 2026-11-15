@@ -116,7 +116,11 @@ export function CenturyTimeline({
                 {selected.sources.map((source) => (
                   <li key={`${source.label}-${source.level}`}>
                     <span className={`source-level source-level--${source.level}`}>{source.level}</span>
-                    <span>{sourceLabel(source, lang)}</span>
+                    {source.url ? (
+                      <a href={source.url} target="_blank" rel="noreferrer">{sourceLabel(source, lang)} ↗</a>
+                    ) : (
+                      <span>{sourceLabel(source, lang)}</span>
+                    )}
                   </li>
                 ))}
               </ul>
