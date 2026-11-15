@@ -15,8 +15,8 @@
 
 The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese, Japanese and English routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.3.0** (2026-11-16).  
-Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1277 static pages**, **487 search entries per language** and **1269 sitemap routes**.
+Current version: **v3.3.1** (2026-11-16).  
+Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1280 static pages**, **487 search entries per language** and **1272 sitemap routes**.
 
 ## 30-second overview
 
@@ -26,6 +26,17 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 - **How to change it**: content lives in `content/`; see [CONTENT_GUIDE](docs/CONTENT_GUIDE.md). Release, rollback and troubleshooting are in [OPERATIONS](docs/OPERATIONS.md).
 
 > **Scope**: 148 machines — 146 from 11 mainline eras plus 2 A.A. originals — covering mainline and core side stories. This is not a 5,000+ variant catalogue and contains no official artwork.
+
+## What's new in v3.3.1
+
+| Area | Current state |
+| --- | --- |
+| **Re-layout** | Deep-space starfield, galactic band and parallax dust; first visit defaults to Chinese; cockpit HUD and readable main screen stay intact |
+| **Cockpit** | New `/[lang]/cockpit`: orbit/zoom a 3D seat-and-console bay, open the canopy, click parts, and switch to a dimensioned 2D blueprint |
+| **Century timeline** | The 3D era wheel is gone. Twelve eras now share one 0–2400 century axis; every event dot opens its sources |
+| **C++ rig** | `engine/mech_core.cpp` compiles to WASM and owns the 12-part joint targets plus a two-bone IK helper. The viewer shows `C++ RIG` and falls back to TypeScript |
+| **Mocap** | Load a BVH take into the machine viewer; head, torso, arms and legs are retargeted and looped, with a clear MOCAP exit |
+| **Sources** | The timeline exposes each event's source list; no unsourced entries were added just to increase the count |
 
 ## What's new in v3.3
 
@@ -83,9 +94,9 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 | --- | --- |
 | ![Home](preview/home.png) | ![Atlas](preview/map.png) |
 
-| Atlas · 3D globe | Chronology · 3D era wheel |
+| Atlas · 3D globe | Chronology · shared timeline |
 | --- | --- |
-| ![3D atlas](preview/map-3d.png) | ![3D era wheel](preview/era-wheel.png) |
+| ![3D atlas](preview/map-3d.png) | ![Shared timeline](preview/century-timeline.png) |
 
 | Relation graph · 3D | Glossary search map |
 | --- | --- |
@@ -186,7 +197,7 @@ The **canonical documentation is Chinese**; this English README is the internati
 2. **Docs** — Markdown links, required documents, version and content-count snapshots.
 3. **Types** — `typecheck`.
 4. **Language** — template phrases, overlong summaries/paragraphs.
-5. **Build** — 1277 static pages and three search indexes.
+5. **Build** — 1280 static pages and three search indexes.
 6. **Links** — every internal href and `#fragment`.
 7. **Routes** — every sitemap route has an exported document with `<title>` and `<main>`.
 

@@ -108,7 +108,7 @@ MechViewer (client)
 
 ## 7. 三语路由
 
-- 路由：`/zh/...`、`/ja/...` 与 `/en/...`，`[lang]` 段在 `generateStaticParams` 中固定为三种；机体、人物、事件、势力各有详情页，`/glossary` 汇总术语，`/chronology` 汇总世纪表。
+- 路由：`/zh/...`、`/ja/...` 与 `/en/...`，`[lang]` 段在 `generateStaticParams` 中固定为三种；机体、人物、事件、势力各有详情页，`/glossary` 汇总术语，`/chronology` 汇总世纪表，`/cockpit` 提供 3D/2D 座舱检视。
 - 目录：`app/(site)/[lang]/` 是站点组的 root layout，直接输出 `<html lang="ja">` 或 `zh-CN`；`app/(root)/` 承载 `/` 重定向页。这样每种语言都有正确的 `lang` 属性，而不是在客户端改。
 - 元数据：每页 `alternates.languages` 输出 `zh-CN` / `ja-JP` / `x-default`。
 - 内容：`name` 为 `{ zh, ja, en }`；`summary` / `description` / `detail` / `bio` 等为 `{ zh, ja, en? }`。英文由 `translations:check` 强制覆盖所有可显示字段，避免英文页静默回退中文。

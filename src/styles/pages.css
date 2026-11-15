@@ -909,7 +909,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 48px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .gov__list {
@@ -1270,7 +1270,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
   gap: 48px;
-  align-items: end;
+  align-items: flex-end;
   margin-top: 34px;
 }
 
@@ -1548,7 +1548,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
   gap: 50px;
-  align-items: end;
+  align-items: flex-end;
   padding: 46px 0 40px;
 }
 
@@ -1638,7 +1638,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1.48fr) minmax(340px, 0.82fr);
   gap: 22px;
-  align-items: start;
+  align-items: flex-start;
   padding-top: 26px;
   padding-bottom: 74px;
 }
@@ -3126,7 +3126,7 @@
   gap: 18px;
   padding-top: 24px;
   padding-bottom: 90px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .map-main {
@@ -3898,7 +3898,7 @@
   gap: 34px;
   padding-top: 10px;
   padding-bottom: 80px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .profile__main {
@@ -4549,7 +4549,7 @@ a.aside-work:hover {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 64px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .about-section h2 {
@@ -5088,7 +5088,7 @@ a.aside-work:hover {
 }
 
 .chronology-head .page-head__row {
-  align-items: end;
+  align-items: flex-end;
 }
 
 .chronology-grid {
@@ -5175,7 +5175,7 @@ a.aside-work:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)) 16px;
   gap: 8px;
-  align-items: end;
+  align-items: flex-end;
   margin-top: auto;
   padding-top: 10px;
   border-top: 1px solid var(--line);
@@ -5523,7 +5523,7 @@ a.aside-work:hover {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 60px;
-  align-items: end;
+  align-items: flex-end;
   margin-top: 28px;
 }
 
@@ -6910,3 +6910,116 @@ a.aside-work:hover {
     inset: 66px 8px 10px;
   }
 }
+
+/* ---------- shared century timeline (v3.3.1) ---------- */
+.century-timeline {
+  margin: 34px 0 42px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: rgba(2, 12, 6, 0.72);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.45);
+}
+.century-timeline__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+.century-timeline__head h2 {
+  margin-top: 8px;
+  font-size: clamp(28px, 3vw, 44px);
+}
+.century-timeline__head > p {
+  max-width: 520px;
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.century-timeline__scroll { overflow-x: auto; }
+.century-timeline__canvas { min-width: 900px; }
+.ct-axis,
+.ct-row {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 16px;
+}
+.ct-axis { align-items: flex-end; }
+.ct-axis__label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+.ct-axis__track { position: relative; height: 28px; border-bottom: 1px solid var(--line-strong); }
+.ct-axis__tick { position: absolute; bottom: 0; transform: translateX(-50%); text-align: center; }
+.ct-axis__tick i { display: block; width: 1px; height: 10px; background: var(--line-strong); margin: 0 auto 4px; }
+.ct-axis__tick b { font-size: 9px; font-weight: 400; color: var(--text-3); letter-spacing: 0; }
+.ct-rows { position: relative; }
+.ct-row { min-height: 40px; align-items: center; border-bottom: 1px solid rgba(88, 255, 157, 0.08); }
+.ct-era {
+  display: grid;
+  grid-template-columns: 40px 1fr 20px;
+  gap: 7px;
+  align-items: center;
+  padding: 5px 0;
+  text-align: left;
+  color: var(--text-2);
+}
+.ct-era span { color: var(--era, var(--cyan)); font-size: 11px; }
+.ct-era b { font-size: 12.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ct-era em { font-style: normal; color: var(--text-3); font-size: 10px; }
+.ct-track { position: relative; height: 30px; }
+.ct-band {
+  position: absolute;
+  top: 11px;
+  height: 8px;
+  min-width: 2px;
+  background: color-mix(in srgb, var(--era) 38%, transparent);
+  border: 1px solid color-mix(in srgb, var(--era) 65%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--era) 22%, transparent);
+}
+.ct-event {
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+}
+.ct-event span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--era, var(--cyan));
+  border: 1px solid var(--bg-base);
+  box-shadow: 0 0 8px var(--era, var(--cyan));
+  transition: transform 160ms;
+}
+.ct-event:hover span,
+.ct-event.is-active span { transform: scale(1.8); background: var(--white); }
+.ct-event.is-active { z-index: 2; }
+.century-timeline__detail {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-left: 2px solid var(--cyan);
+  background: rgba(88, 255, 157, 0.045);
+}
+.ct-detail__head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+.ct-detail__head h3 { margin-top: 5px; font-size: 22px; }
+.ct-detail__head .micro { color: var(--text-3); }
+.century-timeline__detail > p { margin-top: 10px; color: var(--text-2); font-size: 15px; line-height: 1.75; }
+.ct-detail__sources { margin-top: 12px; }
+.ct-detail__sources .micro { color: var(--text-3); }
+.ct-detail__sources ul { display: flex; flex-direction: column; gap: 5px; margin-top: 6px; }
+.ct-detail__sources li { display: flex; gap: 8px; align-items: baseline; color: var(--text-2); font-size: 13px; }
+.ct-detail__empty { color: var(--text-3); font-size: 14px; }
+@media (max-width: 760px) {
+  .century-timeline { padding: 14px; }
+  .century-timeline__head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .ct-detail__head { flex-direction: column; gap: 6px; }
+}
+.ct-axis__tick:last-child { transform: translateX(-100%); }
+.ct-axis__tick:last-child i { margin-left: auto; }

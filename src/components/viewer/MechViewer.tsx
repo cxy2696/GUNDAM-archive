@@ -1,6 +1,6 @@
 "use client";
 
-import { Component, useEffect, useState, type ReactNode } from "react";
+import { Component, useEffect, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import type { Machine } from "@/lib/schema";
 import type { Lang } from "@/lib/schema";
@@ -8,6 +8,8 @@ import type { Dictionary } from "@/lib/i18n";
 import { DesignSheet } from "./DesignSheet";
 import type { ViewName } from "./MechStage";
 import { PART_LABELS, type MotionMode, type PartId } from "./model";
+import { loadMechCore, type MechCore } from "@/lib/mech-core";
+import { BvhPlayback, parseBvh } from "@/lib/bvh";
 
 const MechStage = dynamic(() => import("./MechStage").then((module) => module.MechStage), {
   ssr: false,
@@ -63,13 +65,41 @@ export function MechViewer({
   const [hovered, setHovered] = useState<string | null>(null);
   const [motion, setMotion] = useState<MotionMode>("idle");
   const [motionEnabled, setMotionEnabled] = useState(true);
+  const [core, setCore] = useState<MechCore | null>(null);
+  const mocapRef = useRef<BvhPlayback | null>(null);
+  const [mocapName, setMocapName] = useState("");
+
+  const loadBvh = async (file: File | undefined) => {
+    if (!file) return;
+    try {
+      const playback = new BvhPlayback(parseBvh(await file.text()));
+      mocapRef.current = playback;
+      playback.start();
+      setMocapName(file.name.replace(/\.bvh$/i, ""));
+      setMotionEnabled(true);
+    } catch {
+      setMocapName("ERROR");
+    }
+  };
+
+  const clearMocap = () => {
+    mocapRef.current = null;
+    setMocapName("");
+  };
 
   useEffect(() => {
     setMounted(true);
+    let alive = true;
+    loadMechCore().then((loaded) => {
+      if (alive) setCore(loaded);
+    });
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setAutoRotate(false);
       setMotionEnabled(false);
     }
+    return () => {
+      alive = false;
+    };
   }, []);
 
   const partLabel = hovered
@@ -117,6 +147,7 @@ export function MechViewer({
       className={`viewer ${hero ? "viewer--hero" : ""} viewer--${mode}`}
       data-viewer-ready={ready ? "true" : "false"}
       data-motion={motionEnabled ? motion : "off"}
+      data-core={core ? "cpp" : "ts"}
     >
       <div className="viewer__frame" aria-hidden>
         <i className="c tl" />
@@ -133,6 +164,7 @@ export function MechViewer({
           </div>
           <div className="viewer__badges">
             <span>{labels.lodLabel}</span>
+            <span className={`viewer__core ${core ? "is-ready" : ""}`}>{core ? "C++ RIG" : "TS RIG"}</span>
             <span>{machine.specs.heightOverall ? `${machine.specs.heightOverall.toFixed(1)} M` : "N/A"}</span>
             <span className="viewer__live">
               <i />
@@ -159,6 +191,8 @@ export function MechViewer({
                 onReady={() => setReady(true)}
                 motion={motion}
                 motionEnabled={motionEnabled}
+                core={core}
+                mocapRef={mocapRef}
                 transparent={hero}
               />
             </ViewerBoundary>
@@ -207,6 +241,13 @@ export function MechViewer({
         )}
 
         {!hero && motionEnabled && motion === "boost" && <div className="viewer__boost" aria-hidden />}
+
+        {!hero && mocapName && (
+          <div className="viewer__mocap-badge">
+            <i />
+            MOCAP · {mocapName}
+          </div>
+        )}
 
         {!hero && (
           <div className="viewer__motion-status" aria-live="polite">
@@ -282,6 +323,22 @@ export function MechViewer({
               >
                 {labels.wireframe}
               </button>
+              <label className={`viewer__mocap ${mocapName ? "is-active" : ""}`} title={labels.mocapHint}>
+                <span>{labels.mocap}</span>
+                <input
+                  type="file"
+                  accept=".bvh,text/plain"
+                  onChange={(event) => {
+                    void loadBvh(event.target.files?.[0]);
+                    event.currentTarget.value = "";
+                  }}
+                />
+              </label>
+              {mocapName && (
+                <button type="button" onClick={clearMocap} className="viewer__mocap-clear">
+                  {labels.mocapClear}
+                </button>
+              )}
               {mode !== "3d" && (
                 <button
                   type="button"

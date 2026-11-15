@@ -4,7 +4,6 @@ import { themeBootScript } from "@/app/theme-script";
 import "@/app/globals.css";
 import "@/styles/cockpit.css";
 import "@/styles/atlas.css";
-import "@/styles/era-demo.css";
 import "@/styles/graph.css";
 import "@/styles/tag-map.css";
 import "@/styles/glass.css";

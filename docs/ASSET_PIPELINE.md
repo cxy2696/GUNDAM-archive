@@ -1,6 +1,6 @@
 # 3D 资产与渲染管线
 
-> 对应方案书第七章。当前 v3.3.0 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第七章。当前 v3.3.1 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. LOD 规范
 
@@ -147,3 +147,14 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 - `MotionMode = idle | alert | boost` 由查看器控制。`idle` 是呼吸与扫描，`alert` 加快头部追踪，`boost` 前倾并加强推进效果。
 - 推进器位置由 `getThrusterAnchors(viewer)` 从现有 `backpack` 配置推导；`funnel` 背包额外生成浮游炮环绕，`saber` 武器生成辉光，所有机体共享地面扫描环与尘埃粒子。
 - 动画只做姿态与特效，不改变机体参数、分件 ID 或 `partId` 悬停契约。接入 glTF LOD0 时，骨骼动画可替换本层，页面接口不变。
+
+
+## 10. C++ WebAssembly 骨架核心（v3.3.1）
+
+`engine/mech_core.cpp` 是 freestanding C++，不依赖 libc/libm，由 `scripts/build-wasm.sh` 编译为 `public/mech-core.wasm`：
+
+- `solve_pose(mode, t, enabled)`：输出 12 个部位的关节目标旋转；
+- `two_bone_ik(targetX, targetY, lengthA, lengthB)`：为后续动作重定向提供双骨 IK；
+- 浏览器通过 `src/lib/mech-core.ts` 加载；加载失败时退回 TypeScript 动作层，页面不会中断。
+
+WebGL 绘制仍由 Three.js 执行；C++ 负责骨架目标、IK 与可复现的关节物理，不替代浏览器的图形 API。BVH 动作由 `src/lib/bvh.ts` 解析并在同一骨架上重定向。

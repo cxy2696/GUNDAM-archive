@@ -9,9 +9,7 @@ export default function RootPage() {
     let lang = "zh";
     try {
       const stored = localStorage.getItem("gundam-lang");
-      if (stored === "zh" || stored === "ja" || stored === "en") lang = stored;
-      else if ((navigator.language || "").toLowerCase().startsWith("ja")) lang = "ja";
-      else if ((navigator.language || "").toLowerCase().startsWith("en")) lang = "en";
+      if (stored === "ja" || stored === "en") lang = stored;
     } catch {
       /* private mode */
     }

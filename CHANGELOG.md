@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.3.1] — 2026-11-16
+
+### Added
+
+- **Deep-space re-layout**: a live canvas starfield, slower parallax, a galactic band and occasional shooting stars behind the cockpit chrome; all three language homes now default to Chinese on first visit.
+- **Cockpit bay** (`/[lang]/cockpit`): a 1:1 schematic interior with seat, main console, panoramic display, pedals, sticks, overhead rail and canopy. Orbit/zoom, part selection, canopy open/close, auto-orbit and a 2D dimensioned blueprint.
+- **Shared century timeline**: replaced the 3D era wheel with one 0–2400 century axis. Every era is a row with its span and event dots; selecting an event shows its date, summary and source list.
+- **C++ WASM rig core**: `engine/mech_core.cpp` is compiled to `public/mech-core.wasm` and owns the 12-part joint targets, plus a two-bone IK helper. The viewer shows `C++ RIG` when the module is active and falls back to TypeScript if it is unavailable.
+- **BVH motion capture**: load a `.bvh` take in the machine viewer; the parser maps head, torso, arms and legs onto the rig, loops playback and shows a MOCAP state. The C++ core remains the rest/idle solver.
+
+### Changed
+
+- Chronology now leads with the shared timeline; the old EraDemo/EraWheel components and their stylesheet are removed.
+- Map stage keeps its 2D board/3D globe but gains the same space backdrop and cleaner scene lighting.
+- README, docs, version metadata and previews are current at v3.3.1: **1,280 pages**, **1,272 sitemap routes**, 487 search entries per language.
+
 ## [3.3.0] — 2026-11-16
 
 ### Added

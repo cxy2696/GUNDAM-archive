@@ -155,7 +155,7 @@ cp docs/templates/machine.template.json content/machines/my-machine.json
 pnpm check        # validate → docs → typecheck → language → build → links → routes
 ```
 
-`pnpm check` 会重新生成检索索引、构建 854 个页面，并审计站内链接与全部 sitemap 路由。若只改文本，至少跑 `pnpm validate && pnpm language:check`。
+`pnpm check` 会重新生成检索索引、构建 1280 个页面，并审计站内链接与全部 sitemap 路由。若只改文本，至少跑 `pnpm validate && pnpm language:check`。
 
 ## 2.10 新增/修正宇宙地图
 

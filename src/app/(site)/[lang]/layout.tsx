@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
 import { ScrollRestore } from "@/components/ScrollRestore";
 import { CockpitHud } from "@/components/CockpitHud";
+import { SpaceBackdrop } from "@/components/SpaceBackdrop";
 import { CockpitConsole } from "@/components/CockpitConsole";
 import { CockpitRails } from "@/components/CockpitRails";
 import { getMachine } from "@/lib/content";
@@ -17,12 +18,12 @@ import { themeBootScript } from "@/app/theme-script";
 import "@/app/globals.css";
 import "@/styles/cockpit.css";
 import "@/styles/atlas.css";
-import "@/styles/era-demo.css";
 import "@/styles/graph.css";
 import "@/styles/tag-map.css";
 import "@/styles/glass.css";
 import "@/styles/zoom.css";
 import "@/styles/tactical.css";
+import "@/styles/cockpit-bay.css";
 
 export const dynamicParams = false;
 
@@ -136,6 +137,7 @@ export default async function LangLayout({
       <body className={`${display.variable} ${mono.variable}`}>
         <div className="site" data-lang={typed}>
           <ScrollRestore />
+          <SpaceBackdrop />
           <div className="site-bg" aria-hidden />
           <CockpitHud dict={dict} machineCount={bundle.machines.length} eraCount={bundle.eras.length} />
           <SiteHeader lang={typed} dict={dict} />

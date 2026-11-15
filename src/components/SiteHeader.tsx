@@ -23,6 +23,7 @@ const navItems = [
   { key: "chronology", path: "/chronology" },
   { key: "glossary", path: "/glossary" },
   { key: "map", path: "/map" },
+  { key: "cockpit", path: "/cockpit" },
   { key: "archive", path: "/archive" },
   { key: "about", path: "/about" },
 ] as const;

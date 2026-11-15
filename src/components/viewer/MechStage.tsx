@@ -14,6 +14,8 @@ import { useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import type { Machine } from "@/lib/schema";
 import { buildMech, getThrusterAnchors, type ColorKey, type MechPart, type MotionMode, type Piece, type Vec3 } from "./model";
+import type { MechCore } from "@/lib/mech-core";
+import type { BvhPlayback, BvhPose } from "@/lib/bvh";
 
 export type ViewName = "iso" | "front" | "side" | "back" | "top";
 
@@ -359,6 +361,30 @@ function DustMotes({ height }: { height: number }) {
   );
 }
 
+const MOCAP_PART: Partial<Record<MechPart["id"], keyof BvhPose>> = {
+  head: "head",
+  torso: "torso",
+  arm_l: "arm_l",
+  arm_r: "arm_r",
+  leg_l: "leg_l",
+  leg_r: "leg_r",
+};
+
+const PART_INDEX: Record<MechPart["id"], number> = {
+  head: 0,
+  torso: 1,
+  waist: 2,
+  shoulder_l: 3,
+  shoulder_r: 4,
+  arm_l: 5,
+  arm_r: 6,
+  leg_l: 7,
+  leg_r: 8,
+  backpack: 9,
+  weapon: 10,
+  shield: 11,
+};
+
 function Mech({
   machine,
   explode,
@@ -368,6 +394,8 @@ function Mech({
   onHover,
   motion,
   motionEnabled,
+  core,
+  mocapRef,
 }: {
   machine: Machine;
   explode: number;
@@ -377,6 +405,8 @@ function Mech({
   onHover: (id: string | null) => void;
   motion: MotionMode;
   motionEnabled: boolean;
+  core: MechCore | null;
+  mocapRef?: React.RefObject<BvhPlayback | null>;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   const scale = height / 18;
@@ -390,6 +420,10 @@ function Mech({
     const k = 1 - Math.exp(-7 * delta);
     const active = motionEnabled ? 1 : 0;
     const boost = motion === "boost" ? 1 : 0;
+    const cppPose = core
+      ? core.solvePose(motion === "boost" ? 2 : motion === "alert" ? 1 : 0, t, motionEnabled)
+      : null;
+    const mocapPose = mocapRef?.current?.sample() ?? null;
     const alert = motion === "alert" ? 1 : 0;
     const idle = 1 - Math.max(boost, alert);
     if (root.current) {
@@ -421,7 +455,18 @@ function Mech({
       let ry = 0;
       let rz = 0;
 
-      if (part.id === "head") {
+      const mocapKey = MOCAP_PART[part.id];
+      const mocapRotation = mocapKey ? mocapPose?.[mocapKey] : undefined;
+      if (mocapRotation) {
+        rx = mocapRotation[0];
+        ry = mocapRotation[1];
+        rz = mocapRotation[2];
+      } else if (cppPose) {
+        const base = PART_INDEX[part.id] * 3;
+        rx = cppPose[base];
+        ry = cppPose[base + 1];
+        rz = cppPose[base + 2];
+      } else if (part.id === "head") {
         ry = active * (
           idle * (Math.sin(t * 0.38) * 0.09 + Math.sin(t * 0.13 + 1.2) * 0.03) +
           alert * Math.sin(t * 1.55) * 0.18 +
@@ -757,6 +802,8 @@ function StageScene({
   onHover,
   motion,
   motionEnabled,
+  core,
+  mocapRef,
   transparent = false,
 }: {
   machine: Machine;
@@ -770,6 +817,8 @@ function StageScene({
   onHover: (id: string | null) => void;
   motion: MotionMode;
   motionEnabled: boolean;
+  core: MechCore | null;
+  mocapRef?: React.RefObject<BvhPlayback | null>;
   transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
@@ -815,6 +864,8 @@ function StageScene({
         onHover={onHover}
         motion={motion}
         motionEnabled={motionEnabled}
+        core={core}
+        mocapRef={mocapRef}
       />
 
       <ScanSweep height={height} />
@@ -924,6 +975,8 @@ export function MechStage({
   onReady,
   motion = "idle",
   motionEnabled = true,
+  core = null,
+  mocapRef,
   className = "",
   transparent = false,
 }: {
@@ -939,6 +992,8 @@ export function MechStage({
   onReady?: () => void;
   motion?: MotionMode;
   motionEnabled?: boolean;
+  core?: MechCore | null;
+  mocapRef?: React.RefObject<BvhPlayback | null>;
   className?: string;
   transparent?: boolean;
 }) {
@@ -969,6 +1024,8 @@ export function MechStage({
         onHover={onHover}
         motion={motion}
         motionEnabled={motionEnabled}
+        core={core}
+        mocapRef={mocapRef}
         transparent={transparent}
       />
     </Canvas>

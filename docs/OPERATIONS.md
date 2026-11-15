@@ -145,7 +145,7 @@ NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive pnpm routes:check
 | 3D 空白 | 浏览器禁用 WebGL / 无 GPU | 查看控制台；页面应保留 2D 设计图/回退文案 |
 | 字体异常 | 本地字体未加载或系统回退 | 检查 `src/app/fonts/*.woff2` 与 `next/font/local` 构建日志 |
 | CI 安装失败 | pnpm 版本与 lockfile 不匹配 | 使用 pnpm 10；锁定 `pnpm-lock.yaml`，不要手改 |
-| build 内存不足 | 1269+ 页面静态导出 | 在 CI 使用 Node 22；本地关闭其他构建；必要时拆分批次 |
+| build 内存不足 | 1272+ 页面静态导出 | 在 CI 使用 Node 22；本地关闭其他构建；必要时拆分批次 |
 | 文档检查失败 | 链接、计数或版本漂移 | 按 `docs:check` 输出修复；数量源以 `content/` 为准 |
 
 ## 9. 权限与安全
@@ -161,3 +161,14 @@ NEXT_PUBLIC_BASE_PATH=/GUNDAM-archive pnpm routes:check
 - **每月**：抽查 10 条 `sources.url`；检查 README/docs 计数是否与 `content/` 一致；清理失效 issue。
 - **每季度**：升级依赖并跑完整门禁；审阅 `ROADMAP` 与未完成来源覆盖；检查 Pages 配额与 Actions 用量。
 - **每年**：复核许可证、NOTICE、第三方来源清单与归档策略。
+
+## 11. C++ WASM 重建
+
+骨架核心源码在 `engine/mech_core.cpp`，编译产物 `public/mech-core.wasm` 随仓库发布。修改 C++ 后运行：
+
+```bash
+npm run build:wasm
+npm run validate && npm run typecheck
+```
+
+需要 `clang`（支持 wasm32 target）和 `wasm-ld`；macOS 可用 `brew install lld`，其他平台安装 LLVM。CI 不重编译该文件，因此提交前必须把新的 `.wasm` 一起提交。若加载失败，查看器会自动退回 TypeScript 动作层，页面不会中断。

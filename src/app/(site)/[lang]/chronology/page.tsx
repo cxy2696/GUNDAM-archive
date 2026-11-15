@@ -5,7 +5,7 @@ import { getBundle } from "@/lib/content";
 import { getDict, isLang, languageAlternates, pick } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 import { ChronologyConsole } from "@/components/ChronologyConsole";
-import { EraDemo } from "@/components/chronology/EraDemo";
+import { CenturyTimeline } from "@/components/chronology/CenturyTimeline";
 import { TextZoom } from "@/components/ui/TextZoom";
 
 export async function generateMetadata({
@@ -76,16 +76,9 @@ export default async function ChronologyPage({
         </div>
       </header>
 
-      <ChronologyConsole
-        eras={eras}
-        machines={bundle.machines}
-        works={bundle.works}
-        events={bundle.events}
-        lang={typed}
-        dict={dict}
-      />
+      <CenturyTimeline eras={eras} events={bundle.events} lang={typed} dict={dict} />
 
-      <EraDemo
+      <ChronologyConsole
         eras={eras}
         machines={bundle.machines}
         works={bundle.works}

@@ -75,7 +75,7 @@
 | 快速检索 | `QuickQuery` / `tactical.css` | 首页检索带；提交进入 `/search?q=`，四个示例词与十二纪元快捷入口；`/` 与 `⌘K` 打开全局检索 |
 | 文字缩放 | `TextZoom` | 世纪表 A−/A+；用 `--text-zoom` 改字号，不缩放布局 |
 | 宇宙地图 | `.atlas-*` | 2D SVG + 3D R3F；同一节点/选中态；2D 有地表内嵌图 |
-| 纪元年轮 | `.era-wheel` | 3D 环按机体数定半径、按 order 定高度；可点击、旋转、自动旋转 |
+| 共同时间轴 | `CenturyTimeline` | 0–2400 单轴；十二纪元按跨度分行，事件点展开出处；不再使用立体年轮 |
 | 关联图 | `.relation-graph`, `.relation3d` | 放射分组 + 文本索引；2D/3D 切换；标签可关 |
 | 技术谱系 | `.tree-*` | DAG、代际标尺、搜索、缩放、适应宽度、全屏 |
 | 卡片 | `.mcard`, `.pillar`, `.atlas-side__card` | 1px 边框 + 角标；hover 上浮 ≤3px；不堆大阴影 |

@@ -348,6 +348,30 @@ function Scene({
         <ringGeometry args={[1.4, 9.6, 96, 1]} />
         <meshBasicMaterial color="#1f5a35" transparent opacity={0.035} side={THREE.DoubleSide} />
       </mesh>
+      <group position={[0, -0.04, 0]}>
+        {[2.4, 3.8, 5.4, 7.0].map((radius) => (
+          <mesh key={`orbit-${radius}`} rotation={[-Math.PI / 2, 0, 0]}>
+            <ringGeometry args={[radius, radius + 0.012, 96]} />
+            <meshBasicMaterial color="#58ff9d" transparent opacity={0.1} side={THREE.DoubleSide} />
+          </mesh>
+        ))}
+        {Array.from({ length: 12 }, (_, index) => {
+          const angle = (index / 12) * Math.PI * 2;
+          return (
+            <Line
+              key={`spoke-${index}`}
+              points={[
+                new THREE.Vector3(Math.cos(angle) * 1.5, 0, Math.sin(angle) * 1.5),
+                new THREE.Vector3(Math.cos(angle) * 7.0, 0, Math.sin(angle) * 7.0),
+              ]}
+              color="#2f7a4a"
+              transparent
+              opacity={index % 3 === 0 ? 0.16 : 0.07}
+              lineWidth={0.6}
+            />
+          );
+        })}
+      </group>
 
       <group ref={groupRefs}>
         <Earth
