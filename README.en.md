@@ -15,7 +15,7 @@
 
 The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese, Japanese and English routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.2.0** (2026-11-12).  
+Current version: **v3.3.0** (2026-11-16).  
 Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1277 static pages**, **487 search entries per language** and **1269 sitemap routes**.
 
 ## 30-second overview
@@ -26,6 +26,15 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 - **How to change it**: content lives in `content/`; see [CONTENT_GUIDE](docs/CONTENT_GUIDE.md). Release, rollback and troubleshooting are in [OPERATIONS](docs/OPERATIONS.md).
 
 > **Scope**: 148 machines — 146 from 11 mainline eras plus 2 A.A. originals — covering mainline and core side stories. This is not a 5,000+ variant catalogue and contains no official artwork.
+
+## What's new in v3.3
+
+| Area | Current state |
+| --- | --- |
+| **Live motion on every suit** | All 148 viewers now default to an idle sequence: breathing, head scan, torso and shoulder follow-through, knee/ankle micro-motion and backpack vibration. A `Live motion` control cycles Idle / Alert / Boost |
+| **Stage effects** | Thruster plumes, orbiting funnels, beam-saber aura, a ground scan ring and hangar dust, derived from each suit's existing `viewer` config |
+| **Detail pass** | Collar/chest vents, hatch seams, head cameras and chin hardware, shoulder/elbow/wrist joint covers, knuckle guards, knee discs, calf vents, ankle pistons, split toe/sole treads, backpack tanks and nozzle rings, shield fittings and weapon rails |
+| **Joint-aware motion** | Every part now carries a real joint pivot, so head, torso, shoulders, arms, legs, backpack, weapon and shield rotate around their joints instead of the model origin |
 
 ## What's new in v3.2
 

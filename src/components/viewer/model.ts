@@ -32,8 +32,13 @@ export type MechPart = {
     | "shield";
   axis: Vec3;
   order: number;
+  /** Joint centre used by the idle/alert/boost animation. */
+  pivot: Vec3;
   pieces: Piece[];
 };
+
+export type MotionMode = "idle" | "alert" | "boost";
+export type ThrusterAnchor = { pos: Vec3; dir: Vec3; size: number };
 
 export type ViewerConfig = Machine["viewer"];
 
@@ -146,7 +151,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
     cone(0.22, 0.3, [0.62, 11.18, -1.78], "eye", [Math.PI, 0, 0]),
     box([1.2, 0.12, 0.12], [0, 13.35, -1.92], "accent"),
   );
-  parts.push({ id: "backpack", axis: [0, 0.1, -1], order: 1.15, pieces: backpackPieces });
+  parts.push({ id: "backpack", axis: [0, 0.1, -1], order: 1.15, pivot: [0, 12.45, -1.45], pieces: backpackPieces });
 
   /* ---------------- shield ---------------- */
   if (config.shield) {
@@ -154,6 +159,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       id: "shield",
       axis: [-1, 0, 0.45],
       order: 1.0,
+      pivot: [-4.3, 8.6, 0.55],
       pieces: [
         prism(
           [[-0.98, 2.15], [0.98, 2.02], [1.02, -1.7], [0.45, -2.2], [-0.85, -2.0]],
@@ -209,6 +215,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       id: side === -1 ? "leg_l" : "leg_r",
       axis: [side * 0.42, -1, 0],
       order: 0.75,
+      pivot: [x, 9.55, 0],
       pieces,
     });
   }
@@ -218,6 +225,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
     id: "waist",
     axis: [0, -0.65, 0],
     order: 0.45,
+    pivot: [0, 9.55, 0],
     pieces: [
       prism([[-1.7, 0.7], [1.7, 0.7], [1.25, -0.8], [-1.25, -0.8]], 1.95, [0, 9.55, 0], "frame"),
       box([3.45, 0.34, 2.0], [0, 10.02, 0], "secondary"),
@@ -243,6 +251,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
     id: "torso",
     axis: [0, 0.35, 0],
     order: 0.35,
+    pivot: [0, 10.2, 0],
     pieces: [
       prism(
         [[-chestW / 2, 1.5], [chestW / 2, 1.5], [chestW / 2 - 0.6, -1.45], [-chestW / 2 + 0.6, -1.45]],
@@ -330,6 +339,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       id: side === -1 ? "shoulder_l" : "shoulder_r",
       axis: [side, 0.15, 0],
       order: 0.95,
+      pivot: [x, 12.8, 0],
       pieces,
     });
   }
@@ -341,6 +351,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       id: side === -1 ? "arm_l" : "arm_r",
       axis: [side, 0.1, 0],
       order: 1.35,
+      pivot: [x, 12.1, 0],
       pieces: [
         sphere(0.58, [x, 12.1, 0], "frame"),
         box([0.92, 2.3, 0.95], [x, 10.9, 0], "frame"),
@@ -419,7 +430,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       box([0.34, 0.34, 0.1], [0.62, 14.72, 0.95], "accent"),
     );
   }
-  parts.push({ id: "head", axis: [0, 1, 0], order: 1.25, pieces: headPieces });
+  parts.push({ id: "head", axis: [0, 1, 0], order: 1.25, pivot: [0, 14.1, 0], pieces: headPieces });
 
   /* ---------------- weapon ---------------- */
   if (config.weapon !== "none") {
@@ -457,7 +468,7 @@ export function buildMech(config: ViewerConfig): MechPart[] {
         box([0.5, 0.5, 0.5], [3.45, 7.0, 0.1], "frame"),
       );
     }
-    parts.push({ id: "weapon", axis: [0.55, 0.15, 1], order: 1.45, pieces });
+    parts.push({ id: "weapon", axis: [0.55, 0.15, 1], order: 1.45, pivot: [3.5, 7.0, 0.1], pieces });
   }
 
   /* ---------------- universal detail kit ----------------
@@ -577,7 +588,139 @@ export function buildMech(config: ViewerConfig): MechPart[] {
     ]);
   }
 
+
+  /* ---------------- close-up mechanical detail pass ----------------
+     Extra read-through pieces for the parts the camera gets closest to:
+     collar and chest vents, head cameras, shoulder/elbow/wrist joints,
+     knee and ankle hardware, fuel tanks and shield fittings. */
+  add("head", [
+    box([0.36, 0.14, 0.16], [0, 15.72, -0.9], "secondary"),
+    cyl([0.09, 0.09, 0.08], [-0.82, 15.08, 1.0], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    cyl([0.09, 0.09, 0.08], [0.82, 15.08, 1.0], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    box([0.58, 0.12, 0.12], [0, 14.88, 1.0], "frame"),
+    box([0.42, 0.16, 0.18], [0, 14.34, 0.96], "secondary"),
+    box([0.12, 0.34, 0.12], [-0.5, 14.22, 0.92], "frame", [0, 0, 0.18]),
+    box([0.12, 0.34, 0.12], [0.5, 14.22, 0.92], "frame", [0, 0, -0.18]),
+    cyl([0.06, 0.06, 0.26], [0, 16.1, 0.38], "frame"),
+  ]);
+
+  add("torso", [
+    box([chestW * 0.66, 0.1, 0.12], [0, 13.42, 1.22], "secondary"),
+    box([0.18, 0.7, 0.08], [-1.15, 12.0, 1.38], "frame"),
+    box([0.18, 0.7, 0.08], [1.15, 12.0, 1.38], "frame"),
+    box([0.5, 0.1, 0.12], [-1.15, 12.55, 1.39], "accent"),
+    box([0.5, 0.1, 0.12], [1.15, 12.55, 1.39], "accent"),
+    box([0.72, 0.08, 0.1], [0, 11.28, 1.35], "frame"),
+    box([0.42, 0.1, 0.1], [0, 11.1, 1.35], "frame"),
+    box([0.42, 0.1, 0.1], [0, 10.92, 1.35], "frame"),
+    box([0.32, 0.32, 0.1], [-1.62, 12.75, 1.34], "frame", [0, 0, 0.08]),
+    box([0.32, 0.32, 0.1], [1.62, 12.75, 1.34], "frame", [0, 0, -0.08]),
+    box([0.46, 0.18, 0.12], [-1.95, 11.75, 0.88], "frame", [0, 0, 0.12]),
+    box([0.46, 0.18, 0.12], [1.95, 11.75, 0.88], "frame", [0, 0, -0.12]),
+    cyl([0.12, 0.12, 0.1], [-1.1, 10.44, 1.04], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+    cyl([0.12, 0.12, 0.1], [1.1, 10.44, 1.04], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+  ]);
+
+  add("waist", [
+    box([0.9, 0.75, 0.16], [0, 8.22, 1.1], "primary"),
+    box([0.56, 0.08, 0.18], [0, 8.52, 1.17], "accent"),
+    box([0.1, 0.62, 0.1], [-1.08, 8.5, 1.08], "frame"),
+    box([0.1, 0.62, 0.1], [1.08, 8.5, 1.08], "frame"),
+    box([0.85, 0.62, 0.16], [0, 8.3, -0.96], "secondary"),
+    cyl([0.1, 0.1, 1.4], [-1.55, 9.15, -0.2], "frame", [0, 0.35, 0]),
+    cyl([0.1, 0.1, 1.4], [1.55, 9.15, -0.2], "frame", [0, -0.35, 0]),
+    box([0.38, 0.16, 0.2], [-1.5, 8.62, 1.16], "frame"),
+    box([0.38, 0.16, 0.2], [1.5, 8.62, 1.16], "frame"),
+  ]);
+
+  for (const side of [-1, 1] as const) {
+    const x = side * (chestW / 2 + 1.25);
+    add(side === -1 ? "arm_l" : "arm_r", [
+      box([0.5, 0.18, 0.6], [x, 11.72, 0.28], "secondary"),
+      cyl([0.22, 0.22, 0.12], [x, 9.32, 0.06], "secondary", [0, 0, Math.PI / 2]),
+      box([0.6, 0.12, 0.18], [x, 7.52, 0.62], "accent"),
+      box([0.16, 0.38, 0.16], [x + side * 0.32, 6.98, 0.42], "frame"),
+      box([0.24, 0.12, 0.3], [x, 6.94, 0.36], "secondary"),
+      box([0.1, 0.46, 0.08], [x + side * 0.55, 8.25, 0.54], "frame"),
+      box([0.58, 0.1, 0.12], [x, 8.9, 0.7], "frame"),
+      cyl([0.07, 0.07, 0.1], [x + side * 0.6, 7.7, 0.2], "eye", [0, 0, Math.PI / 2], { emissive: true }),
+    ]);
+
+    const lx = side * (heavy ? 1.65 : slim ? 1.28 : 1.42);
+    add(side === -1 ? "leg_l" : "leg_r", [
+      cyl([0.28, 0.28, 0.2], [lx, 8.7, 0], "secondary", [0, 0, Math.PI / 2]),
+      box([legW * 0.7, 0.12, 0.55], [lx, 8.2, 0.55], "frame"),
+      box([0.12, 1.6, 0.08], [lx + side * legW * 0.36, 6.9, legW * 0.55], "frame"),
+      cyl([0.24, 0.24, 0.18], [lx, 6.2, 0.02], "secondary", [0, 0, Math.PI / 2]),
+      box([legW * 0.48, 0.14, 0.56], [lx, 4.9, 0.6], "frame"),
+      box([legW * 0.36, 0.08, 0.48], [lx, 4.7, 0.64], "accent"),
+      box([legW * 0.3, 0.1, 0.38], [lx, 2.85, 0.66], "frame"),
+      box([legW * 0.3, 0.1, 0.38], [lx, 2.65, 0.66], "frame"),
+      cyl([0.1, 0.1, 0.42], [lx - side * 0.35, 1.55, -0.35], "frame"),
+      cyl([0.1, 0.1, 0.42], [lx + side * 0.35, 1.55, -0.35], "frame"),
+      box([legW * 0.9, 0.14, 1.2], [lx, 0.16, 0.52], "frame"),
+      box([legW * 0.34, 0.12, 0.5], [lx - side * 0.26, 0.2, 1.28], "accent"),
+      box([legW * 0.34, 0.12, 0.5], [lx + side * 0.26, 0.2, 1.28], "accent"),
+    ]);
+  }
+
+  add("backpack", [
+    box([0.48, 0.8, 0.48], [-0.92, 12.7, -1.7], "secondary"),
+    box([0.48, 0.8, 0.48], [0.92, 12.7, -1.7], "secondary"),
+    box([0.58, 0.12, 0.58], [-0.92, 13.15, -1.7], "accent"),
+    box([0.58, 0.12, 0.58], [0.92, 13.15, -1.7], "accent"),
+    cyl([0.08, 0.08, 1.3], [-1.55, 12.1, -1.72], "frame"),
+    cyl([0.08, 0.08, 1.3], [1.55, 12.1, -1.72], "frame"),
+    box([2.4, 0.1, 0.12], [0, 12.0, -1.92], "frame"),
+    box([2.1, 0.08, 0.1], [0, 11.88, -1.92], "frame"),
+    cyl([0.2, 0.2, 0.12], [-0.95, 11.96, -1.8], "frame", [0.35, 0, 0]),
+    cyl([0.2, 0.2, 0.12], [0.95, 11.96, -1.8], "frame", [0.35, 0, 0]),
+    box([0.22, 0.22, 0.12], [-1.5, 13.35, -1.75], "eye", undefined, { emissive: true }),
+    box([0.22, 0.22, 0.12], [1.5, 13.35, -1.75], "eye", undefined, { emissive: true }),
+  ]);
+
+  if (config.shield) {
+    add("shield", [
+      box([0.16, 1.1, 0.2], [-4.15, 9.4, 0.66], "frame", [0, 0.1, 0.03]),
+      box([0.9, 0.16, 0.14], [-4.32, 8.88, 0.74], "frame"),
+      box([0.56, 0.56, 0.08], [-4.32, 8.35, 0.76], "secondary"),
+      cyl([0.14, 0.14, 0.08], [-4.32, 8.35, 0.8], "eye", [Math.PI / 2, 0, 0], { emissive: true }),
+      box([0.12, 0.12, 0.1], [-4.7, 10.0, 0.74], "accent"),
+      box([0.12, 0.12, 0.1], [-3.94, 10.0, 0.74], "accent"),
+    ]);
+  }
+
+  if (config.weapon !== "none") {
+    add("weapon", [
+      box([0.28, 0.14, 0.58], [3.5, 8.52, 1.4], "frame"),
+      box([0.18, 0.12, 0.4], [3.5, 8.6, 1.72], "accent"),
+      cyl([0.1, 0.1, 0.2], [3.5, 7.72, 0.55], "frame", [Math.PI / 2, 0, 0]),
+    ]);
+  }
+
   return parts;
+}
+
+/** Nozzle positions used by the animated thruster plume layer. */
+export function getThrusterAnchors(config: ViewerConfig): ThrusterAnchor[] {
+  if (config.backpack === "wing") {
+    return [
+      { pos: [-0.85, 10.78, -1.6], dir: [0, -1, 0], size: 1 },
+      { pos: [0.85, 10.78, -1.6], dir: [0, -1, 0], size: 1 },
+      { pos: [-2.15, 11.9, -2.4], dir: [0, -1, 0], size: 0.7 },
+      { pos: [2.15, 11.9, -2.4], dir: [0, -1, 0], size: 0.7 },
+    ];
+  }
+  if (config.backpack === "thruster") {
+    return [
+      { pos: [-0.72, 10.55, -1.5], dir: [0, -1, 0], size: 1 },
+      { pos: [0.72, 10.55, -1.5], dir: [0, -1, 0], size: 1 },
+    ];
+  }
+  return [
+    { pos: [-0.62, 10.94, -1.78], dir: [0, -1, 0], size: 0.8 },
+    { pos: [0.62, 10.94, -1.78], dir: [0, -1, 0], size: 0.8 },
+  ];
 }
 
 export const PART_LABELS = {

@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.3.0] — 2026-11-16
+
+### Added
+
+- **Live mech motion**: every viewer now has an always-on idle sequence — breathing, head scan, torso sway, shoulder/arm follow-through, knee/ankle micro-motion and backpack vibration. A new `Live motion` control cycles Idle / Alert / Boost in the machine viewer; the state is announced in the stage HUD and respects `prefers-reduced-motion`.
+- **Animated effects**: thruster plumes with warm nozzle cores, `funnel` backpack units orbiting the suit, beam-saber aura, a repeating ground scan ring and drifting hangar dust.
+- **More mechanical detail for all 148 suits**: added collar/chest vents, hatch and panel seams, head cameras and chin hardware, shoulder/elbow/wrist joint covers, knuckle guards, knee discs, calf vents, ankle pistons, split toe/sole treads, backpack fuel tanks, nozzle rings, shield fittings and weapon rails.
+- **Joint-aware animation contract**: every part now carries a `pivot` so head, torso, shoulders, arms, legs, backpack, weapon and shield rotate around their actual joints instead of the model origin.
+
+### Changed
+
+- Viewer console now includes the motion state alongside auto-spin, wireframe and camera presets.
+- Motion and effect layers are derived from the existing `viewer` config, so all machines get the upgrade without per-machine model files.
+- Version bumped to `3.3.0`.
+
 ## [3.2.0] — 2026-11-12
 
 ### Added

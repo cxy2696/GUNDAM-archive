@@ -13,7 +13,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import type { Machine } from "@/lib/schema";
-import { buildMech, type ColorKey, type MechPart, type Piece, type Vec3 } from "./model";
+import { buildMech, getThrusterAnchors, type ColorKey, type MechPart, type MotionMode, type Piece, type Vec3 } from "./model";
 
 export type ViewName = "iso" | "front" | "side" | "back" | "top";
 
@@ -63,11 +63,11 @@ function PieceMesh({
   const emissive = active || isEye ? colors.eye : "#000000";
   const emissiveIntensity = active ? 0.85 : isEye ? 1.8 : quantum * 0.55;
   const edgeColor = active
-    ? "#9af6ff"
+    ? "#b8ffd2"
     : wireframe
-      ? "rgba(34,211,238,0.55)"
+      ? "rgba(88,255,157,0.55)"
       : quantum > 0.05
-        ? "rgba(34,211,238,0.22)"
+        ? "rgba(88,255,157,0.22)"
         : "#050d12";
 
   const prismGeometry = useMemo(() => {
@@ -159,6 +159,206 @@ function PieceMesh({
   );
 }
 
+
+function ThrusterPlume({
+  anchor,
+  motion,
+  enabled,
+  index,
+}: {
+  anchor: { pos: Vec3; dir: Vec3; size: number };
+  motion: MotionMode;
+  enabled: boolean;
+  index: number;
+}) {
+  const group = useRef<THREE.Group>(null);
+  const outer = useRef<THREE.MeshBasicMaterial>(null);
+  const core = useRef<THREE.MeshBasicMaterial>(null);
+  const glow = useRef<THREE.MeshBasicMaterial>(null);
+  const light = useRef<THREE.PointLight>(null);
+  const power = motion === "boost" ? 1 : motion === "alert" ? 0.62 : 0.34;
+  useFrame((state) => {
+    const t = state.clock.elapsedTime;
+    const flicker = 0.82 + Math.sin(t * (18 + index * 1.7) + index) * 0.18;
+    const length = anchor.size * (0.7 + power * 2.1) * (enabled ? flicker : 0.35);
+    if (group.current) {
+      group.current.scale.y = length;
+    }
+    if (outer.current) outer.current.opacity = (0.22 + power * 0.44) * (enabled ? flicker : 0.4);
+    if (core.current) core.current.opacity = (0.42 + power * 0.46) * (enabled ? flicker : 0.4);
+    if (glow.current) glow.current.opacity = (0.3 + power * 0.55) * (enabled ? flicker : 0.3);
+    if (light.current) light.current.intensity = 0;
+  });
+  return (
+    <group position={anchor.pos}>
+      <mesh>
+        <sphereGeometry args={[0.22 * anchor.size, 14, 10]} />
+        <meshBasicMaterial
+          ref={glow}
+          color={motion === "boost" ? "#ffb648" : "#9dffc4"}
+          transparent
+          opacity={0.35}
+          depthWrite={false}
+          blending={THREE.AdditiveBlending}
+        />
+      </mesh>
+      <group ref={group}>
+        <mesh position={[0, -0.5, 0]} rotation={[Math.PI, 0, 0]}>
+          <coneGeometry args={[0.26 * anchor.size, 1, 16, 1, true]} />
+          <meshBasicMaterial
+            ref={outer}
+            color={motion === "boost" ? "#ffb648" : "#9dffc4"}
+            transparent
+            opacity={0.2}
+            depthWrite={false}
+            blending={THREE.AdditiveBlending}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+        <mesh position={[0, -0.42, 0]} rotation={[Math.PI, 0, 0]} scale={[0.38, 0.72, 0.38]}>
+          <coneGeometry args={[0.22 * anchor.size, 1, 12, 1, true]} />
+          <meshBasicMaterial
+            ref={core}
+            color="#fff3d0"
+            transparent
+            opacity={0.45}
+            depthWrite={false}
+            blending={THREE.AdditiveBlending}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+      </group>
+      <pointLight ref={light} position={[0, -0.25, 0]} color="#ffd98a" distance={1.4} intensity={0.02} />
+    </group>
+  );
+}
+
+function ThrusterPlumes({ config, motion, enabled }: { config: Machine["viewer"]; motion: MotionMode; enabled: boolean }) {
+  const anchors = getThrusterAnchors(config);
+  return (
+    <group>
+      {anchors.map((anchor, index) => (
+        <ThrusterPlume key={`thruster-${index}`} anchor={anchor} motion={motion} enabled={enabled} index={index} />
+      ))}
+    </group>
+  );
+}
+
+function FunnelOrbit({ motion, enabled }: { motion: MotionMode; enabled: boolean }) {
+  const group = useRef<THREE.Group>(null);
+  useFrame((state) => {
+    if (!group.current) return;
+    const speed = motion === "boost" ? 0.9 : motion === "alert" ? 0.52 : 0.22;
+    group.current.rotation.y = state.clock.elapsedTime * speed * (enabled ? 1 : 0.15);
+    group.current.children.forEach((child, index) => {
+      child.position.y = 12.6 + Math.sin(state.clock.elapsedTime * 1.1 + index * 1.3) * 0.35;
+    });
+  });
+  return (
+    <group ref={group} position={[0, 0, 0]}>
+      {Array.from({ length: 6 }, (_, index) => {
+        const angle = (index / 6) * Math.PI * 2;
+        const radius = motion === "boost" ? 6.4 : 5.3;
+        return (
+          <group
+            key={`funnel-${index}`}
+            position={[Math.cos(angle) * radius, 12.6, Math.sin(angle) * radius]}
+            rotation={[0, -angle, motion === "boost" ? 0.22 : 0.08]}
+          >
+            <mesh castShadow>
+              <boxGeometry args={[0.3, 1.7, 0.62]} />
+              <meshStandardMaterial color="#dbe8e4" metalness={0.75} roughness={0.32} />
+            </mesh>
+            <mesh position={[0, -0.95, 0]}>
+              <boxGeometry args={[0.18, 0.24, 0.5]} />
+              <meshBasicMaterial color="#58ff9d" transparent opacity={0.85} />
+            </mesh>
+            <mesh position={[0, 0, 0.38]}>
+              <boxGeometry args={[0.12, 1.1, 0.08]} />
+              <meshBasicMaterial color="#b4ff6a" transparent opacity={0.7} />
+            </mesh>
+          </group>
+        );
+      })}
+    </group>
+  );
+}
+
+function SaberAura({ enabled }: { enabled: boolean }) {
+  const outer = useRef<THREE.MeshBasicMaterial>(null);
+  const core = useRef<THREE.MeshBasicMaterial>(null);
+  useFrame((state) => {
+    const pulse = 0.85 + Math.sin(state.clock.elapsedTime * 8.2) * 0.15;
+    if (outer.current) outer.current.opacity = (enabled ? 0.18 : 0.08) * pulse;
+    if (core.current) core.current.opacity = (enabled ? 0.7 : 0.35) * pulse;
+  });
+  return (
+    <group position={[3.75, 9.2, 0.35]}>
+      <mesh>
+        <cylinderGeometry args={[0.2, 0.2, 3.4, 16, 1, true]} />
+        <meshBasicMaterial ref={outer} color="#58ff9d" transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
+      </mesh>
+      <mesh>
+        <cylinderGeometry args={[0.07, 0.07, 3.2, 10, 1, true]} />
+        <meshBasicMaterial ref={core} color="#fff3d0" transparent opacity={0.75} depthWrite={false} blending={THREE.AdditiveBlending} />
+      </mesh>
+      <pointLight position={[0, 0, 0]} color="#58ff9d" intensity={8} distance={5} />
+    </group>
+  );
+}
+
+function ScanSweep({ height }: { height: number }) {
+  const ring = useRef<THREE.Mesh>(null);
+  const material = useRef<THREE.MeshBasicMaterial>(null);
+  useFrame((state) => {
+    const cycle = (state.clock.elapsedTime * 0.12) % 1;
+    if (ring.current) ring.current.scale.setScalar(0.5 + cycle * 1.25);
+    if (material.current) material.current.opacity = 0.3 * (1 - cycle);
+  });
+  return (
+    <mesh ref={ring} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.02, 0]}>
+      <ringGeometry args={[height * 0.38, height * 0.405, 96]} />
+      <meshBasicMaterial ref={material} color="#58ff9d" transparent opacity={0.25} depthWrite={false} blending={THREE.AdditiveBlending} />
+    </mesh>
+  );
+}
+
+function DustMotes({ height }: { height: number }) {
+  const points = useRef<THREE.Points>(null);
+  const positions = useMemo(() => {
+    const array = new Float32Array(140 * 3);
+    for (let i = 0; i < 140; i += 1) {
+      array[i * 3] = (Math.random() - 0.5) * height * 2.4;
+      array[i * 3 + 1] = Math.random() * height * 1.2;
+      array[i * 3 + 2] = (Math.random() - 0.5) * height * 2.4;
+    }
+    return array;
+  }, [height]);
+  useFrame((state, delta) => {
+    const geo = points.current?.geometry;
+    if (!geo) return;
+    const attr = geo.getAttribute("position") as THREE.BufferAttribute;
+    const array = attr.array as Float32Array;
+    for (let i = 0; i < 140; i += 1) {
+      array[i * 3 + 1] += delta * (0.1 + ((i * 13) % 9) * 0.015);
+      if (array[i * 3 + 1] > height * 1.2) array[i * 3 + 1] = 0.05;
+    }
+    attr.needsUpdate = true;
+    if (points.current) {
+      const mat = points.current.material as THREE.PointsMaterial;
+      mat.opacity = 0.22 + Math.sin(state.clock.elapsedTime * 0.4) * 0.05;
+    }
+  });
+  return (
+    <points ref={points}>
+      <bufferGeometry>
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
+      </bufferGeometry>
+      <pointsMaterial color="#9dffc4" size={0.1} sizeAttenuation transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
+    </points>
+  );
+}
+
 function Mech({
   machine,
   explode,
@@ -166,6 +366,8 @@ function Mech({
   wireframe,
   hovered,
   onHover,
+  motion,
+  motionEnabled,
 }: {
   machine: Machine;
   explode: number;
@@ -173,16 +375,33 @@ function Mech({
   wireframe: boolean;
   hovered: string | null;
   onHover: (id: string | null) => void;
+  motion: MotionMode;
+  motionEnabled: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   const scale = height / 18;
   const parts = useMemo(() => buildMech(machine.viewer), [machine.viewer]);
   const refs = useRef<Record<string, THREE.Group | null>>({});
+  const innerRefs = useRef<Record<string, THREE.Group | null>>({});
+  const root = useRef<THREE.Group>(null);
 
   useFrame((state, delta) => {
+    const t = state.clock.elapsedTime;
     const k = 1 - Math.exp(-7 * delta);
+    const active = motionEnabled ? 1 : 0;
+    const boost = motion === "boost" ? 1 : 0;
+    const alert = motion === "alert" ? 1 : 0;
+    const idle = 1 - Math.max(boost, alert);
+    if (root.current) {
+      root.current.position.y += ((Math.sin(t * 0.85) * 0.018 * active) + boost * 0.1 - root.current.position.y) * k;
+      const targetLean = active * (boost * -0.035 + alert * -0.012);
+      root.current.rotation.x += (targetLean - root.current.rotation.x) * (k * 0.55);
+      root.current.rotation.z += (Math.sin(t * 0.52) * 0.004 * active - root.current.rotation.z) * (k * 0.55);
+    }
+
     for (const part of parts) {
       const group = refs.current[part.id];
+      const inner = innerRefs.current[part.id];
       if (!group) continue;
       const push = (explode / 100) * 2.4 * part.order;
       const targetX = part.axis[0] * push;
@@ -192,40 +411,134 @@ function Mech({
       group.position.y += (targetY - group.position.y) * k;
       group.position.z += (targetZ - group.position.z) * k;
       if (quantum > 0.03) {
-        group.position.y += Math.sin(state.clock.elapsedTime * 1.6 + part.order * 4) * 0.0009;
+        group.position.y += Math.sin(t * 1.6 + part.order * 4) * 0.0009;
       }
+      if (!inner) continue;
+
+      const side = part.pivot[0] < -0.1 ? -1 : part.pivot[0] > 0.1 ? 1 : 0;
+      const phase = side === -1 ? Math.PI : 0;
+      let rx = 0;
+      let ry = 0;
+      let rz = 0;
+
+      if (part.id === "head") {
+        ry = active * (
+          idle * (Math.sin(t * 0.38) * 0.09 + Math.sin(t * 0.13 + 1.2) * 0.03) +
+          alert * Math.sin(t * 1.55) * 0.18 +
+          boost * (-0.05 + Math.sin(t * 2.1) * 0.035)
+        );
+        rx = active * (
+          idle * Math.sin(t * 0.6 + 0.4) * 0.018 +
+          alert * -0.035 +
+          boost * -0.08
+        );
+      } else if (part.id === "torso") {
+        ry = active * (
+          idle * Math.sin(t * 0.31 + 0.7) * 0.012 +
+          alert * Math.sin(t * 1.05) * 0.03 +
+          boost * -0.025
+        );
+        rz = active * (
+          idle * Math.sin(t * 0.44 + 1.1) * 0.006 +
+          alert * 0.012 +
+          boost * 0.02
+        );
+      } else if (part.id === "waist") {
+        ry = active * (idle * Math.sin(t * 0.29 + 1.4) * 0.006 + boost * 0.012);
+      } else if (part.id === "shoulder_l" || part.id === "shoulder_r") {
+        rz = side * active * (
+          idle * Math.sin(t * 0.7 + phase) * 0.006 +
+          alert * 0.028 +
+          boost * 0.045
+        );
+        rx = active * (alert * -0.01 + boost * 0.03);
+      } else if (part.id === "arm_l" || part.id === "arm_r") {
+        rx = active * (
+          idle * Math.sin(t * 0.8 + phase) * 0.014 +
+          alert * -0.025 +
+          boost * 0.085
+        );
+        rz = side * active * (
+          idle * Math.sin(t * 0.5 + phase + 0.6) * 0.006 +
+          alert * 0.012 +
+          boost * 0.02
+        );
+      } else if (part.id === "leg_l" || part.id === "leg_r") {
+        rx = active * (
+          idle * Math.sin(t * 0.65 + phase) * 0.004 +
+          alert * 0.008 +
+          boost * 0.045
+        );
+        rz = side * active * (boost * 0.018);
+      } else if (part.id === "backpack") {
+        rx = active * (
+          idle * Math.sin(t * 6.5) * 0.0015 +
+          alert * Math.sin(t * 8.5) * 0.0025 +
+          boost * Math.sin(t * 25) * 0.007
+        );
+      } else if (part.id === "weapon") {
+        rz = active * (
+          idle * Math.sin(t * 1.1) * 0.006 +
+          alert * 0.012 +
+          boost * -0.018
+        );
+      } else if (part.id === "shield") {
+        rz = side * active * (
+          idle * Math.sin(t * 0.9 + 0.5) * 0.005 +
+          alert * 0.01 +
+          boost * 0.018
+        );
+      }
+
+      inner.rotation.x += (rx - inner.rotation.x) * k;
+      inner.rotation.y += (ry - inner.rotation.y) * k;
+      inner.rotation.z += (rz - inner.rotation.z) * k;
     }
   });
 
   return (
     <group scale={scale}>
-      {parts.map((part: MechPart) => (
-        <group
-          key={part.id}
-          ref={(node) => {
-            refs.current[part.id] = node;
-          }}
-          onPointerOver={(event) => {
-            event.stopPropagation();
-            onHover(part.id);
-          }}
-          onPointerOut={(event) => {
-            event.stopPropagation();
-            onHover(null);
-          }}
-        >
-          {part.pieces.map((piece, index) => (
-            <PieceMesh
-              key={`${part.id}-${index}`}
-              piece={piece}
-              colors={machine.viewer.colors}
-              active={hovered === part.id}
-              quantum={quantum}
-              wireframe={wireframe}
-            />
-          ))}
-        </group>
-      ))}
+      <group ref={root}>
+        {parts.map((part: MechPart) => (
+          <group
+            key={part.id}
+            ref={(node) => {
+              refs.current[part.id] = node;
+            }}
+            onPointerOver={(event) => {
+              event.stopPropagation();
+              onHover(part.id);
+            }}
+            onPointerOut={(event) => {
+              event.stopPropagation();
+              onHover(null);
+            }}
+          >
+            <group
+              position={part.pivot}
+              ref={(node) => {
+                innerRefs.current[part.id] = node;
+              }}
+            >
+              <group position={[-part.pivot[0], -part.pivot[1], -part.pivot[2]]}>
+                {part.pieces.map((piece, index) => (
+                  <PieceMesh
+                    key={`${part.id}-${index}`}
+                    piece={piece}
+                    colors={machine.viewer.colors}
+                    active={hovered === part.id}
+                    quantum={quantum}
+                    wireframe={wireframe}
+                  />
+                ))}
+              </group>
+            </group>
+          </group>
+        ))}
+        <ThrusterPlumes config={machine.viewer} motion={motion} enabled={motionEnabled} />
+        {machine.viewer.backpack === "funnel" && <FunnelOrbit motion={motion} enabled={motionEnabled} />}
+        {machine.viewer.weapon === "saber" && <SaberAura enabled={motionEnabled} />}
+      </group>
     </group>
   );
 }
@@ -442,6 +755,8 @@ function StageScene({
   nonce,
   hovered,
   onHover,
+  motion,
+  motionEnabled,
   transparent = false,
 }: {
   machine: Machine;
@@ -453,6 +768,8 @@ function StageScene({
   nonce: number;
   hovered: string | null;
   onHover: (id: string | null) => void;
+  motion: MotionMode;
+  motionEnabled: boolean;
   transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
@@ -479,8 +796,8 @@ function StageScene({
         shadow-camera-bottom={-height * 0.4}
         shadow-bias={-0.0004}
       />
-      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={3.0} color="#58ff9d" />
-      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={1.25} color="#b4ff6a" />
+      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={1.35} color="#9dffc4" />
+      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={0.55} color="#d8ff63" />
       <pointLight position={[0, height * 0.7, height * 1.6]} intensity={height * 1.3} color="#d8ffe8" distance={height * 2.5} />
 
       <Environment resolution={192} frames={1} environmentIntensity={0.55}>
@@ -496,7 +813,12 @@ function StageScene({
         wireframe={wireframe}
         hovered={hovered}
         onHover={onHover}
+        motion={motion}
+        motionEnabled={motionEnabled}
       />
+
+      <ScanSweep height={height} />
+      <DustMotes height={height} />
 
       {quantum > 0.01 && <QuantumField height={height} amount={quantum} />}
       {quantum > 0.01 && <QuantumRings height={height} amount={quantum} />}
@@ -600,6 +922,8 @@ export function MechStage({
   hovered,
   onHover,
   onReady,
+  motion = "idle",
+  motionEnabled = true,
   className = "",
   transparent = false,
 }: {
@@ -613,6 +937,8 @@ export function MechStage({
   hovered: string | null;
   onHover: (id: string | null) => void;
   onReady?: () => void;
+  motion?: MotionMode;
+  motionEnabled?: boolean;
   className?: string;
   transparent?: boolean;
 }) {
@@ -641,6 +967,8 @@ export function MechStage({
         nonce={nonce}
         hovered={hovered}
         onHover={onHover}
+        motion={motion}
+        motionEnabled={motionEnabled}
         transparent={transparent}
       />
     </Canvas>

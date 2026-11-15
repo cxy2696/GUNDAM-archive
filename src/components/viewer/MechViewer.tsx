@@ -7,7 +7,7 @@ import type { Lang } from "@/lib/schema";
 import type { Dictionary } from "@/lib/i18n";
 import { DesignSheet } from "./DesignSheet";
 import type { ViewName } from "./MechStage";
-import { PART_LABELS, type PartId } from "./model";
+import { PART_LABELS, type MotionMode, type PartId } from "./model";
 
 const MechStage = dynamic(() => import("./MechStage").then((module) => module.MechStage), {
   ssr: false,
@@ -61,11 +61,14 @@ export function MechViewer({
   const [autoRotate, setAutoRotate] = useState(false);
   const [view, setView] = useState<{ name: ViewName; nonce: number }>({ name: "iso", nonce: 0 });
   const [hovered, setHovered] = useState<string | null>(null);
+  const [motion, setMotion] = useState<MotionMode>("idle");
+  const [motionEnabled, setMotionEnabled] = useState(true);
 
   useEffect(() => {
     setMounted(true);
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setAutoRotate(false);
+      setMotionEnabled(false);
     }
   }, []);
 
@@ -97,10 +100,23 @@ export function MechViewer({
     setAutoRotate(false);
   };
 
+  const cycleMotion = () => {
+    if (!motionEnabled) {
+      setMotionEnabled(true);
+      setMotion("idle");
+      return;
+    }
+    setMotion((current) => (current === "idle" ? "alert" : current === "alert" ? "boost" : "idle"));
+  };
+
+  const motionLabel =
+    motion === "boost" ? labels.motionBoost : motion === "alert" ? labels.motionAlert : labels.motionIdle;
+
   return (
     <div
       className={`viewer ${hero ? "viewer--hero" : ""} viewer--${mode}`}
       data-viewer-ready={ready ? "true" : "false"}
+      data-motion={motionEnabled ? motion : "off"}
     >
       <div className="viewer__frame" aria-hidden>
         <i className="c tl" />
@@ -141,6 +157,8 @@ export function MechViewer({
                 hovered={hovered}
                 onHover={setHovered}
                 onReady={() => setReady(true)}
+                motion={motion}
+                motionEnabled={motionEnabled}
                 transparent={hero}
               />
             </ViewerBoundary>
@@ -188,6 +206,16 @@ export function MechViewer({
           <div className="viewer__hint">{labels.dragHint}</div>
         )}
 
+        {!hero && motionEnabled && motion === "boost" && <div className="viewer__boost" aria-hidden />}
+
+        {!hero && (
+          <div className="viewer__motion-status" aria-live="polite">
+            <i />
+            <span>{labels.motion}</span>
+            <b>{motionEnabled ? motionLabel : "OFF"}</b>
+          </div>
+        )}
+
         {hero && (
           <div className="viewer__hero-hint">
             <span>{labels.dragHint}</span>
@@ -228,6 +256,16 @@ export function MechViewer({
             </div>
 
             <div className="viewer__toggles">
+              <button
+                type="button"
+                className={motionEnabled ? "is-active" : ""}
+                onClick={cycleMotion}
+                aria-pressed={motionEnabled}
+                aria-label={`${labels.motion}: ${motionEnabled ? motionLabel : "OFF"}`}
+                title={`${labels.motion}: ${motionEnabled ? motionLabel : "OFF"}`}
+              >
+                {labels.motion} · {motionEnabled ? motionLabel : "OFF"}
+              </button>
               <button
                 type="button"
                 className={autoRotate ? "is-active" : ""}

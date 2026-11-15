@@ -113,7 +113,7 @@ const extra = {
       { path: "docs/ASSET_PIPELINE.md", label: "glTF / LOD / manifest rules" },
       { path: "docs/GOVERNANCE.md", label: "Source tiers, disputes and copyright" },
     ],
-    roadmapTitle: "From v3.1 to v3.2",
+    roadmapTitle: "From v3.2 to v3.3",
     roadmapNote: "This release is a working archive, not the final form. Next up: real glTF assets and a content service.",
     version: "VERSION",
     cut: "DATA CUT",
@@ -164,7 +164,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="page-head__crumb">
             <span className="mono">GUNDAM / ABOUT</span>
-            <span className="mono">V3.2.0 / 2026.11.12</span>
+            <span className="mono">V3.3.0 / 2026.11.16</span>
           </div>
           <div className="about-head__mark">
             <OrbitMark size={54} />
@@ -173,7 +173,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <h1>{dict.about.title}</h1>
           <p className="about-head__lead">{dict.about.lead}</p>
           <div className="about-head__meta">
-            <span className="micro">{t.version} 3.2.0</span>
+            <span className="micro">{t.version} 3.3.0</span>
             <span className="micro">{t.cut} 2026.11.12</span>
             <span className="micro">{bundle.machines.length} MS / {bundle.events.length} EVENTS</span>
           </div>
@@ -311,7 +311,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>{dict.about.license}</p>
             <p className="about-disclaimer">{dict.about.disclaimer}</p>
             <div className="about-bottom">
-              <span className="micro">GUNDAM ARCHIVE / V3.2.0</span>
+              <span className="micro">GUNDAM ARCHIVE / V3.3.0</span>
               <Link href={`/${typed}`} className="text-link">
                 {dict.nav.home} <span aria-hidden>→</span>
               </Link>

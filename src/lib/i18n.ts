@@ -203,6 +203,10 @@ const zh = {
     viewLabel: "ORBIT / PERSPECTIVE",
     lodLabel: "LOD-P · PROCEDURAL",
     staticAlt: "机体静态设计图",
+    motion: "动态活动",
+    motionIdle: "待机",
+    motionAlert: "警戒",
+    motionBoost: "推进",
   },
   chronology: {
     eyebrow: "CHRONOLOGY / 世纪表",
@@ -858,6 +862,10 @@ const ja: typeof zh = {
     viewLabel: "ORBIT / PERSPECTIVE",
     lodLabel: "LOD-P · PROCEDURAL",
     staticAlt: "機体の静的設計図",
+    motion: "動的活動",
+    motionIdle: "待機",
+    motionAlert: "警戒",
+    motionBoost: "推進",
   },
   chronology: {
     eyebrow: "CHRONOLOGY / 世紀表",
@@ -1514,6 +1522,10 @@ const en: typeof zh = {
     viewLabel: "ORBIT / PERSPECTIVE",
     lodLabel: "LOD-P · PROCEDURAL",
     staticAlt: "Static mobile suit design sheet",
+    motion: "Live motion",
+    motionIdle: "Idle",
+    motionAlert: "Alert",
+    motionBoost: "Boost",
   },
   chronology: {
     eyebrow: "CHRONOLOGY / ERA TABLE",
