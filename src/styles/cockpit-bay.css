@@ -20,30 +20,30 @@
   gap: 8px;
   padding: 10px 20px;
   border-bottom: 1px solid var(--line);
-  background: rgba(88, 255, 157, 0.025);
+  background: rgba(92, 200, 255, 0.025);
 }
 .cockpit-bay__selected { margin-left: auto; color: var(--text-3); }
 .cockpit-bay__selected b { color: var(--cyan); font-weight: 500; }
 .cockpit-bay__stage { padding: 14px 20px 0; }
-.cockpit-bay__canvas { position: relative; height: min(62vh, 620px); min-height: 420px; overflow: hidden; border: 1px solid var(--line-strong); background: #010603; }
+.cockpit-bay__canvas { position: relative; height: min(62vh, 620px); min-height: 420px; overflow: hidden; border: 1px solid var(--line-strong); background: #01050f; }
 .cockpit-bay__canvas canvas { display: block; width: 100% !important; height: 100% !important; }
-.cockpit-bay__part-list { position: absolute; right: 12px; top: 12px; z-index: 3; display: flex; flex-direction: column; gap: 3px; padding: 6px; border: 1px solid rgba(88, 255, 157, 0.2); background: rgba(2, 14, 7, 0.74); backdrop-filter: blur(5px); }
+.cockpit-bay__part-list { position: absolute; right: 12px; top: 12px; z-index: 3; display: flex; flex-direction: column; gap: 3px; padding: 6px; border: 1px solid rgba(92, 200, 255, 0.2); background: rgba(2, 14, 7, 0.74); backdrop-filter: blur(5px); }
 .cockpit-bay__part-list button { display: flex; align-items: center; gap: 7px; padding: 4px 7px; color: var(--text-3); font-family: var(--font-mono); font-size: 10px; text-align: left; }
 .cockpit-bay__part-list button span { width: 4px; height: 4px; background: var(--text-3); border-radius: 50%; }
-.cockpit-bay__part-list button:hover, .cockpit-bay__part-list button.is-active { color: var(--cyan); background: rgba(88, 255, 157, 0.1); }
+.cockpit-bay__part-list button:hover, .cockpit-bay__part-list button.is-active { color: var(--cyan); background: rgba(92, 200, 255, 0.1); }
 .cockpit-bay__part-list button.is-active span { background: var(--cyan); box-shadow: 0 0 5px var(--cyan); }
-.cockpit-bay__hint { position: absolute; left: 12px; bottom: 10px; z-index: 3; color: rgba(169, 232, 191, 0.45); font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; }
+.cockpit-bay__hint { position: absolute; left: 12px; bottom: 10px; z-index: 3; color: rgba(184, 217, 255, 0.45); font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; }
 .cockpit-bay__note { padding: 10px 20px 16px; color: var(--text-3); }
 .cockpit-bay__loading { height: 500px; display: grid; place-content: center; gap: 12px; color: var(--text-3); border: 1px solid var(--line); text-align: center; }
 .cockpit-bay__loading i { display: block; width: 140px; height: 1px; background: var(--cyan); animation: cockpit-load 1.4s ease-in-out infinite; }
 @keyframes cockpit-load { 0%,100% { transform: scaleX(.3); opacity: .4 } 50% { transform: scaleX(1); opacity: 1 } }
-.cockpit-blueprint { display: block; width: 100%; height: auto; max-height: 620px; background: #05100a; border: 1px solid var(--line-strong); }
-.cockpit-blueprint .bp-annot text, .cockpit-blueprint .bp-labels text, .cockpit-blueprint .bp-dim text { font-family: var(--font-mono); font-size: 10px; fill: rgba(169, 232, 191, 0.65); letter-spacing: .08em; }
-.cockpit-blueprint .bp-labels text { cursor: pointer; fill: rgba(88, 255, 157, 0.75); }
-.cockpit-blueprint .bp-labels text:hover { fill: #eafff0; }
-.cockpit-blueprint .bp-dim line { stroke: rgba(88, 255, 157, 0.3); }
+.cockpit-blueprint { display: block; width: 100%; height: auto; max-height: 620px; background: #030b18; border: 1px solid var(--line-strong); }
+.cockpit-blueprint .bp-annot text, .cockpit-blueprint .bp-labels text, .cockpit-blueprint .bp-dim text { font-family: var(--font-mono); font-size: 10px; fill: rgba(184, 217, 255, 0.65); letter-spacing: .08em; }
+.cockpit-blueprint .bp-labels text { cursor: pointer; fill: rgba(92, 200, 255, 0.75); }
+.cockpit-blueprint .bp-labels text:hover { fill: #eaf7ff; }
+.cockpit-blueprint .bp-dim line { stroke: rgba(92, 200, 255, 0.3); }
 .cockpit-blueprint g[role="button"] { cursor: pointer; }
-.cockpit-blueprint g[role="button"].is-active * { stroke: #d8ff63 !important; fill-opacity: .2; }
+.cockpit-blueprint g[role="button"].is-active * { stroke: #8ed8ff !important; fill-opacity: .2; }
 @media (max-width: 760px) {
   .cockpit-bay__head { flex-direction: column; gap: 10px; }
   .cockpit-bay__selected { margin-left: 0; }

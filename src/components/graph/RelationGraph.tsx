@@ -19,16 +19,16 @@ const CY = 318;
 
 const EDGE_COLOR: Record<string, string> = {
   hostility: "#ff5d6c",
-  alliance: "#5ce6a6",
-  succession: "#d8ff63",
+  alliance: "#5cbcff",
+  succession: "#8ed8ff",
   split: "#ff9f43",
-  affiliation: "#58ff9d",
+  affiliation: "#5cc8ff",
   family: "#f472b6",
-  mentor: "#b4ff6a",
-  comrade: "#5ce6a6",
+  mentor: "#6fbcff",
+  comrade: "#5cbcff",
   rival: "#ff5d6c",
   admiration: "#f472b6",
-  lineage: "#5ce6a6",
+  lineage: "#5cbcff",
   event: "#ff5d6c",
 };
 
@@ -173,7 +173,7 @@ export function RelationGraph({
               <stop offset="100%" stopColor={data.center.color} stopOpacity="0" />
             </radialGradient>
             <marker id="graph-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M0 0 L8 4 L0 8 z" fill="#5ce6a6" />
+              <path d="M0 0 L8 4 L0 8 z" fill="#5cbcff" />
             </marker>
           </defs>
 

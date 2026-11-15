@@ -345,7 +345,7 @@ export function DesignSheet({
           {machine.specs.armor ? pick(machine.specs.armor, lang) : "N/A"}
         </text>
 
-        <line x1="22" y1="214" x2="112" y2="214" stroke="rgba(88,255,157,.22)" strokeWidth=".6" />
+        <line x1="22" y1="214" x2="112" y2="214" stroke="rgba(92,200,255,.22)" strokeWidth=".6" />
         <text x="22" y="232" className="sheet__side-label">ARMAMENT</text>
         {machine.armament.slice(0, 5).map((arm, index) => (
           <text key={`${arm.name.zh}-${index}`} x="22" y={248 + index * 16} className="sheet__arm">

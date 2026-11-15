@@ -57,7 +57,7 @@ function PieceMesh({
   const baseColor = colors[piece.color as ColorKey];
   const color = useMemo(() => {
     if (quantum < 0.02 || piece.color === "eye") return baseColor;
-    return new THREE.Color(baseColor).lerp(new THREE.Color("#58ff9d"), quantum * 0.34).getStyle();
+    return new THREE.Color(baseColor).lerp(new THREE.Color("#5cc8ff"), quantum * 0.34).getStyle();
   }, [baseColor, quantum, piece.color]);
   const isEye = piece.color === "eye" || piece.emissive;
   const metalness = piece.color === "frame" ? 0.92 : piece.color === "accent" ? 0.72 : 0.68;
@@ -65,11 +65,11 @@ function PieceMesh({
   const emissive = active || isEye ? colors.eye : "#000000";
   const emissiveIntensity = active ? 0.85 : isEye ? 1.8 : quantum * 0.55;
   const edgeColor = active
-    ? "#b8ffd2"
+    ? "#b9e8ff"
     : wireframe
-      ? "rgba(88,255,157,0.55)"
+      ? "rgba(92,200,255,0.55)"
       : quantum > 0.05
-        ? "rgba(88,255,157,0.22)"
+        ? "rgba(92,200,255,0.22)"
         : "#050d12";
 
   const prismGeometry = useMemo(() => {
@@ -197,7 +197,7 @@ function ThrusterPlume({
         <sphereGeometry args={[0.22 * anchor.size, 14, 10]} />
         <meshBasicMaterial
           ref={glow}
-          color={motion === "boost" ? "#ffb648" : "#9dffc4"}
+          color={motion === "boost" ? "#ffb648" : "#9dd8ff"}
           transparent
           opacity={0.35}
           depthWrite={false}
@@ -209,7 +209,7 @@ function ThrusterPlume({
           <coneGeometry args={[0.26 * anchor.size, 1, 16, 1, true]} />
           <meshBasicMaterial
             ref={outer}
-            color={motion === "boost" ? "#ffb648" : "#9dffc4"}
+            color={motion === "boost" ? "#ffb648" : "#9dd8ff"}
             transparent
             opacity={0.2}
             depthWrite={false}
@@ -273,11 +273,11 @@ function FunnelOrbit({ motion, enabled }: { motion: MotionMode; enabled: boolean
             </mesh>
             <mesh position={[0, -0.95, 0]}>
               <boxGeometry args={[0.18, 0.24, 0.5]} />
-              <meshBasicMaterial color="#58ff9d" transparent opacity={0.85} />
+              <meshBasicMaterial color="#5cc8ff" transparent opacity={0.85} />
             </mesh>
             <mesh position={[0, 0, 0.38]}>
               <boxGeometry args={[0.12, 1.1, 0.08]} />
-              <meshBasicMaterial color="#b4ff6a" transparent opacity={0.7} />
+              <meshBasicMaterial color="#6fbcff" transparent opacity={0.7} />
             </mesh>
           </group>
         );
@@ -298,13 +298,13 @@ function SaberAura({ enabled }: { enabled: boolean }) {
     <group position={[3.75, 9.2, 0.35]}>
       <mesh>
         <cylinderGeometry args={[0.2, 0.2, 3.4, 16, 1, true]} />
-        <meshBasicMaterial ref={outer} color="#58ff9d" transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
+        <meshBasicMaterial ref={outer} color="#5cc8ff" transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
       </mesh>
       <mesh>
         <cylinderGeometry args={[0.07, 0.07, 3.2, 10, 1, true]} />
         <meshBasicMaterial ref={core} color="#fff3d0" transparent opacity={0.75} depthWrite={false} blending={THREE.AdditiveBlending} />
       </mesh>
-      <pointLight position={[0, 0, 0]} color="#58ff9d" intensity={8} distance={5} />
+      <pointLight position={[0, 0, 0]} color="#5cc8ff" intensity={8} distance={5} />
     </group>
   );
 }
@@ -320,7 +320,7 @@ function ScanSweep({ height }: { height: number }) {
   return (
     <mesh ref={ring} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.02, 0]}>
       <ringGeometry args={[height * 0.38, height * 0.405, 96]} />
-      <meshBasicMaterial ref={material} color="#58ff9d" transparent opacity={0.25} depthWrite={false} blending={THREE.AdditiveBlending} />
+      <meshBasicMaterial ref={material} color="#5cc8ff" transparent opacity={0.25} depthWrite={false} blending={THREE.AdditiveBlending} />
     </mesh>
   );
 }
@@ -356,7 +356,7 @@ function DustMotes({ height }: { height: number }) {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial color="#9dffc4" size={0.1} sizeAttenuation transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
+      <pointsMaterial color="#9dd8ff" size={0.1} sizeAttenuation transparent opacity={0.2} depthWrite={false} blending={THREE.AdditiveBlending} />
     </points>
   );
 }
@@ -593,8 +593,8 @@ function QuantumField({ height, amount }: { height: number; amount: number }) {
     () => ({
       uTime: { value: 0 },
       uAmount: { value: 0 },
-      uColorA: { value: new THREE.Color("#58ff9d") },
-      uColorB: { value: new THREE.Color("#b4ff6a") },
+      uColorA: { value: new THREE.Color("#5cc8ff") },
+      uColorB: { value: new THREE.Color("#6fbcff") },
     }),
     [],
   );
@@ -662,7 +662,7 @@ function QuantumRings({ height, amount }: { height: number; amount: number }) {
         <mesh key={radius} rotation={[Math.PI / 2, 0, 0]} position={[0, (index - 1) * height * 0.16, 0]}>
           <torusGeometry args={[height * radius, 0.018, 8, 96]} />
           <meshBasicMaterial
-            color={index === 1 ? "#b4ff6a" : "#58ff9d"}
+            color={index === 1 ? "#6fbcff" : "#5cc8ff"}
             transparent
             opacity={amount * (0.45 - index * 0.08)}
             depthWrite={false}
@@ -829,7 +829,7 @@ function StageScene({
       {!transparent && <color attach="background" args={["#04090d"]} />}
       <fog attach="fog" args={["#04090d", height * 2.6, height * 5.6]} />
       <ambientLight intensity={0.14} />
-      <hemisphereLight args={["#d8ffe8", "#020a06", 0.42]} />
+      <hemisphereLight args={["#d8ecff", "#020a18", 0.42]} />
       <directionalLight
         position={[height * 1.35, height * 1.7, height * 1.5]}
         intensity={3.6}
@@ -845,13 +845,13 @@ function StageScene({
         shadow-camera-bottom={-height * 0.4}
         shadow-bias={-0.0004}
       />
-      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={1.35} color="#9dffc4" />
-      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={0.55} color="#d8ff63" />
-      <pointLight position={[0, height * 0.7, height * 1.6]} intensity={height * 1.3} color="#d8ffe8" distance={height * 2.5} />
+      <directionalLight position={[-height * 1.6, height * 0.9, -height * 0.9]} intensity={1.35} color="#9dd8ff" />
+      <directionalLight position={[height * 0.4, height * 0.3, -height * 1.8]} intensity={0.55} color="#8ed8ff" />
+      <pointLight position={[0, height * 0.7, height * 1.6]} intensity={height * 1.3} color="#d8ecff" distance={height * 2.5} />
 
       <Environment resolution={192} frames={1} environmentIntensity={0.55}>
         <Lightformer form="rect" intensity={2.6} position={[0, height * 0.8, -height * 0.9]} scale={[height, height, 1]} color="#bfe9ff" />
-        <Lightformer form="rect" intensity={1.4} position={[-height * 0.9, height * 0.5, height * 0.4]} rotation-y={Math.PI / 2} scale={[height * 0.7, height * 0.5, 1]} color="#58ff9d" />
+        <Lightformer form="rect" intensity={1.4} position={[-height * 0.9, height * 0.5, height * 0.4]} rotation-y={Math.PI / 2} scale={[height * 0.7, height * 0.5, 1]} color="#5cc8ff" />
         <Lightformer form="ring" intensity={2.2} position={[height * 0.8, height * 0.6, height * 0.6]} scale={height * 0.22} color="#f5a623" />
       </Environment>
 
@@ -875,17 +875,17 @@ function StageScene({
       {quantum > 0.01 && <QuantumRings height={height} amount={quantum} />}
       {quantum > 0.01 && <QuantumParticles height={height} amount={quantum} />}
       {quantum > 0.01 && (
-        <pointLight position={[0, height * 0.55, 0]} intensity={quantum * height * 1.1} color="#58ff9d" distance={height * 2.2} />
+        <pointLight position={[0, height * 0.55, 0]} intensity={quantum * height * 1.1} color="#5cc8ff" distance={height * 2.2} />
       )}
 
       <Grid
         args={[height * 6, height * 6]}
         cellSize={1}
         cellThickness={0.45}
-        cellColor="#0f3a22"
+        cellColor="#0f2f52"
         sectionSize={5}
         sectionThickness={0.9}
-        sectionColor="#1c6b3c"
+        sectionColor="#1c4f8a"
         fadeDistance={height * 4.2}
         fadeStrength={2.2}
         infiniteGrid
@@ -893,11 +893,11 @@ function StageScene({
       />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
         <ringGeometry args={[height * 0.44, height * 0.452, 96]} />
-        <meshBasicMaterial color="#58ff9d" transparent opacity={0.32} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#5cc8ff" transparent opacity={0.32} side={THREE.DoubleSide} />
       </mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
         <ringGeometry args={[height * 0.58, height * 0.585, 96]} />
-        <meshBasicMaterial color="#58ff9d" transparent opacity={0.12} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#5cc8ff" transparent opacity={0.12} side={THREE.DoubleSide} />
       </mesh>
 
       <group position={[0, 0.018, 0]}>
@@ -911,17 +911,17 @@ function StageScene({
               rotation={[0, -angle, 0]}
             >
               <boxGeometry args={[0.04, 0.012, index % 3 === 0 ? 0.58 : 0.3]} />
-              <meshBasicMaterial color="#58ff9d" transparent opacity={index % 3 === 0 ? 0.42 : 0.2} />
+              <meshBasicMaterial color="#5cc8ff" transparent opacity={index % 3 === 0 ? 0.42 : 0.2} />
             </mesh>
           );
         })}
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.002, 0]}>
           <ringGeometry args={[height * 0.72, height * 0.724, 96]} />
-          <meshBasicMaterial color="#58ff9d" transparent opacity={0.12} side={THREE.DoubleSide} />
+          <meshBasicMaterial color="#5cc8ff" transparent opacity={0.12} side={THREE.DoubleSide} />
         </mesh>
         <mesh position={[-height * 0.92, height * 0.5, -height * 0.55]}>
           <boxGeometry args={[0.035, height, 0.035]} />
-          <meshBasicMaterial color="#58ff9d" transparent opacity={0.22} />
+          <meshBasicMaterial color="#5cc8ff" transparent opacity={0.22} />
         </mesh>
         {Array.from({ length: 9 }, (_, index) => (
           <mesh
@@ -929,7 +929,7 @@ function StageScene({
             position={[-height * 0.92, height * (0.1 + index * 0.1), -height * 0.55]}
           >
             <boxGeometry args={[index % 5 === 0 ? 0.6 : 0.32, 0.025, 0.025]} />
-            <meshBasicMaterial color="#58ff9d" transparent opacity={0.3} />
+            <meshBasicMaterial color="#5cc8ff" transparent opacity={0.3} />
           </mesh>
         ))}
       </group>

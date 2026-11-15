@@ -10,16 +10,16 @@ import type { GraphData, GraphNode } from "@/lib/graph";
 
 const EDGE_COLOR: Record<string, string> = {
   hostility: "#ff7164",
-  alliance: "#6bff9f",
-  succession: "#d8ff63",
-  split: "#d8ff63",
-  affiliation: "#58ff9d",
+  alliance: "#6fc8ff",
+  succession: "#8ed8ff",
+  split: "#8ed8ff",
+  affiliation: "#5cc8ff",
   family: "#f472b6",
-  mentor: "#b4ff6a",
-  comrade: "#6bff9f",
+  mentor: "#6fbcff",
+  comrade: "#6fc8ff",
   rival: "#ff7164",
   admiration: "#f472b6",
-  lineage: "#6bff9f",
+  lineage: "#6fc8ff",
   event: "#ff7164",
 };
 
@@ -87,15 +87,15 @@ function GraphScene({
 
   return (
     <>
-      <color attach="background" args={["#010603"]} />
-      <ambientLight intensity={0.8} color="#a9e8bf" />
-      <pointLight position={[4, 6, 5]} intensity={2.4} color="#eafff0" />
-      <pointLight position={[-5, -2, -4]} intensity={1.6} color="#b4ff6a" />
+      <color attach="background" args={["#01050f"]} />
+      <ambientLight intensity={0.8} color="#b8d9ff" />
+      <pointLight position={[4, 6, 5]} intensity={2.4} color="#eaf7ff" />
+      <pointLight position={[-5, -2, -4]} intensity={1.6} color="#6fbcff" />
       <Stars radius={60} depth={36} count={1400} factor={3} saturation={0.35} fade speed={0.3} />
 
       <mesh position={[0, -1.4, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[1.4, 4.6, 96]} />
-        <meshBasicMaterial color="#1f5a35" transparent opacity={0.06} side={THREE.DoubleSide} />
+        <meshBasicMaterial color="#1f4a7a" transparent opacity={0.06} side={THREE.DoubleSide} />
       </mesh>
       <mesh ref={centerRef}>
         <octahedronGeometry args={[0.46, 1]} />
@@ -195,7 +195,7 @@ function GraphScene({
 }
 
 function groupColor(node: GraphNode): string {
-  return node.color ?? "#58ff9d";
+  return node.color ?? "#5cc8ff";
 }
 
 export function RelationGraph3D({

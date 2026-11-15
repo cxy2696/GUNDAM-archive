@@ -1,6 +1,6 @@
 # 架构与决策记录
 
-> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.3）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.4）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. 约束与目标
 
@@ -154,12 +154,12 @@ MechViewer (client)
 
 迁移不需要改页面组件、查看器或 schema；只需要换 `content.ts` 的实现与部署方式。
 
-## 12. v3.3 动态查看器、座舱皮肤与关系图
+## 12. v3.4 动态查看器、座舱皮肤与关系图
 
 - **座舱外壳**：`src/styles/cockpit.css` 与 `glass.css` 定义毛玻璃白框、舱盖背景、侧 MFD 与可收起操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
 - **宇宙地图**：`content/atlas.json` 是唯一数据源，`src/lib/geo.ts` 负责 2D 正交投影与 3D 坐标，`Atlas2D` 用 SVG，`Atlas3D` 用 R3F + CanvasTexture 生成地球贴图；二者共享同一批节点与选中状态。2D 的 Lagrange 位置由 `lagrangeOrbit()` 从地月几何推导，表面点由 `globePoint()` 投影；3D 只把距离压缩，不改变归属。
 - **关系图**：`src/lib/graph.ts` 从实体引用生成 `GraphData`（中心节点、分区节点、边），`RelationGraph` 负责放射布局、分组弧、碰撞规避与文本索引。图形是纯派生数据，不写入 JSON；新增实体只需补引用，页面自动获得图。
 - **共同世纪时间轴**：`components/chronology/CenturyTimeline.tsx` 把 0–2400 年放在同一横轴，十二纪元按跨度分行；事件圆点打开出处，不再使用立体年轮。
-- **缩放与全屏**：`ZoomFrame` 负责地图、纪元年轮、关联图与 3D 视图的缩放与全屏（全屏用 portal 挂到 `body`，避免被座舱的 `backdrop-filter` 限制）；`TextZoom` 用 CSS 变量放大世纪表文字而不改变布局。
+- **缩放与全屏**：`ZoomFrame` 负责地图、共同时间轴、关联图与 3D 视图的缩放与全屏（全屏用 portal 挂到 `body`，避免被座舱的 `backdrop-filter` 限制）；`TextZoom` 用 CSS 变量放大世纪表文字而不改变布局。
 - **3D 关联图**：`RelationGraph3D` 复用 `GraphData`，把分组节点放在放射状三维层，边用曲线连接，支持旋转、缩放、标签开关与点击跳转；所有 `RelationGraph` 实例都能在 2D/3D 间切换。
 - **构建校验**：`scripts/check-links.mjs` 遍历 `out/**/*.html`，校验站内 href、目录式 URL 与 `#fragment`；`scripts/check-routes.mjs` 校验 sitemap 中每条路由都有带 `<title>` 与 `<main>` 的导出页；`scripts/check-docs.mjs` 校验文档链接、必需文件、版本与数量快照；`pnpm check` 串起七道门。GitHub Pages 使用 `/GUNDAM-archive` 基路径，审计脚本会自动识别前缀。

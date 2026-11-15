@@ -15,7 +15,7 @@
 
 The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese, Japanese and English routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.3.2** (2026-11-16).  
+Current version: **v3.4.0** (2026-11-16).  
 Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1280 static pages**, **487 search entries per language** and **1272 sitemap routes**.
 
 ## 30-second overview
@@ -27,55 +27,14 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 
 > **Scope**: 148 machines — 146 from 11 mainline eras plus 2 A.A. originals — covering mainline and core side stories. This is not a 5,000+ variant catalogue and contains no official artwork.
 
-## What's new in v3.3.2
+## What's new in v3.4.0
 
 | Area | Current state |
 | --- | --- |
-| **Re-layout** | Deep-space starfield, galactic band and parallax dust; first visit defaults to Chinese; cockpit HUD and readable main screen stay intact |
-| **Cockpit** | New `/[lang]/cockpit`: orbit/zoom a 3D seat-and-console bay, open the canopy, click parts, and switch to a dimensioned 2D blueprint |
-| **Century timeline** | The 3D era wheel is gone. Twelve eras now share one 0–2400 century axis; every event dot opens its sources |
-| **C++ rig** | `engine/mech_core.cpp` compiles to WASM and owns the 12-part joint targets plus a two-bone IK helper. The viewer shows `C++ RIG` and falls back to TypeScript |
-| **Mocap** | Load a BVH take into the machine viewer; head, torso, arms and legs are retargeted and looped, with a clear MOCAP exit |
-| **Sources** | The timeline exposes each event's source list; no unsourced entries were added just to increase the count |
-
-## What's new in v3.3
-
-| Area | Current state |
-| --- | --- |
-| **Live motion on every suit** | All 148 viewers now default to an idle sequence: breathing, head scan, torso and shoulder follow-through, knee/ankle micro-motion and backpack vibration. A `Live motion` control cycles Idle / Alert / Boost |
-| **Stage effects** | Thruster plumes, orbiting funnels, beam-saber aura, a ground scan ring and hangar dust, derived from each suit's existing `viewer` config |
-| **Detail pass** | Collar/chest vents, hatch seams, head cameras and chin hardware, shoulder/elbow/wrist joint covers, knuckle guards, knee discs, calf vents, ankle pistons, split toe/sole treads, backpack tanks and nozzle rings, shield fittings and weapon rails |
-| **Joint-aware motion** | Every part now carries a real joint pivot, so head, torso, shoulders, arms, legs, backpack, weapon and shield rotate around their joints instead of the model origin |
-
-## What's new in v3.2
-
-| Area | Current state |
-| --- | --- |
-| **English site** | New `/en`: all 148 machines, 114 characters, 69 events, 82 factions, 32 tags, 42 works, 12 eras, 15 places and 156 atlas nodes have English copy; event titles and source citations are localised too |
-| **English voice** | Home, navigation, search hints and empty states rewritten as direct, conversational English, not sentence-by-sentence translation |
-| **Tactical phosphor UI** | Green CRT cockpit reference: dark-green MFD bezels, scanlines, a circular targeting scope behind the hero mech, denser side telemetry |
-| **Faster browse** | Machine filters sync to the URL (`era`, `faction`, `tag`, `canon`, `sort`, `q`), plus a canon segmented filter and `/` focus shortcut |
-| **Faster search** | Palette type facets, result counts, recent queries and `/`; Greek ν is searchable as `nu` |
-| **Model detail** | Every suit gains a neck ring, cheek vents, cockpit seams, shoulder verniers, forearm panels, fingers, knee/ankle pistons, soles, backpack tanks, nozzles, shield trim and weapon sights; the stage adds bearing ticks, a range ring and a height ruler |
-| **Design sheets** | Armament list, power/thrust/sensor readouts and material slots added to the front elevation, part graph and measurement overlay |
-| **Source integrity** | All “page check pending” placeholders removed; the two A.A. originals are C-tier unofficial material; vague “official setting materials” wording replaced with on-screen/public-source wording; English citation labels added |
-
-## What's new in v3.1
-
-| Area | Current state |
-| --- | --- |
-| **Cockpit UI** | Frosted white main screen, canopy scanlines, side MFDs at ≥1760px, fixed console with a mobile drawer; status chrome on top, era drive/event signal/targets/aux keys below |
-| **Space and occlusion** | Staggered MFD/console cards with a slight hover lift; the console can collapse so it never covers reading content; compact atlas header on mobile |
-| **Zoom/fullscreen** | Maps, 3D globe, era wheel, relation graphs and tech tree have −/+/reset/fullscreen; chronology tables have A−/A+ text scaling |
-| **3D graphs** | Machine, character, event, faction, glossary and archive relation graphs switch between 2D and 3D; 3D supports orbit, auto-rotate, label toggle and node navigation |
-| **Atlas** | 12 eras, 156 nodes; every era has a 2D tactical board and a 3D WebGL globe. U.C. uses the One Year War layout with the 0084 Side 4/5/6 reassignment noted; C.E./A.D./R.C./P.D./A.W. follow documented geography |
-| **Chronology** | 3D era wheel (radius = machine count, height = era order) plus a 12-column distribution; timeline labels anchor left/right with 54px rows |
-| **Relations** | Era-switchable faction graph; alliance/hostility/split/succession lines; 82 factions, at least 5 per era |
-| **Clusters** | Radial relation graphs and text indexes on machine, character, event, faction and glossary pages; 97/114 characters have relations |
-| **Glossary/tech tree** | Category bubble map, relation tree, machine/alias search, generation bands, hover focus and fullscreen |
-| **Search** | On-demand index; pilots, aliases, summaries, factions, tech and works; exact/prefix/multi-word/Latin fuzzy matching, type weighting and `?q=` links |
-| **Content/model** | Events 51→69 (18 new), 20 events gained a second paragraph; procedural 3D add chest seams, cockpit hatch, shoulder verniers, knee guards and ankle actuators |
-| **Maintenance** | Link and sitemap route audits, documentation count/version checks, pnpm 10 CI, Pages base-path build, release/rollback/monitoring/runbook |
+| **Blue cockpit** | Deep-space navy surfaces, ice-blue highlights, slate-blue bezels and blue starfields replace the green CRT palette |
+| **No console** | The fixed operation console is gone; the main display fills the viewport and the frame, header and footer carry the interface |
+| **Stars** | A CSS star layer inside the main display; the fixed canvas was removed so stars never cover readable content |
+| **Consistency** | Atlas, cockpit, graphs, viewer, scope and design-sheet accents all use the same blue system |
 
 ## How to read the archive
 
@@ -88,23 +47,7 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 
 ![GUNDAM Archive home](preview/home.png)
 
-## Screenshots
-
-| Home · cockpit | Atlas · 2D |
-| --- | --- |
-| ![Home](preview/home.png) | ![Atlas](preview/map.png) |
-
-| Atlas · 3D globe | Chronology · shared timeline |
-| --- | --- |
-| ![3D atlas](preview/map-3d.png) | ![Shared timeline](preview/century-timeline.png) |
-
-| Relation graph · 3D | Glossary search map |
-| --- | --- |
-| ![3D relation graph](preview/graph3d.png) | ![Glossary](preview/glossary.png) |
-
-| Machine dossier | Machine index |
-| --- | --- |
-| ![Machine](preview/machine.png) | ![Machines](preview/machines.png) |
+![GUNDAM Archive home](preview/home.png)
 
 ## Core capabilities
 

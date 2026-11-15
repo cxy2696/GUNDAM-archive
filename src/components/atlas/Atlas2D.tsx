@@ -357,7 +357,7 @@ export function Atlas2D({
           <circle cx={ATLAS_FRAME.cx} cy={ATLAS_FRAME.cy} r={ATLAS_FRAME.earthR + 26} fill="url(#atlas-atmo)" />
           <circle cx={ATLAS_FRAME.cx} cy={ATLAS_FRAME.cy} r={ATLAS_FRAME.earthR} fill="url(#atlas-ocean)" />
           <g clipPath="url(#atlas-globe-clip)">
-            <path d={globe.land} fill="rgba(44,130,134,0.42)" stroke="rgba(120,230,240,0.55)" strokeWidth={0.85} strokeLinejoin="round" />
+            <path d={globe.land} fill="rgba(44,110,180,0.42)" stroke="rgba(120,230,240,0.55)" strokeWidth={0.85} strokeLinejoin="round" />
             <path d={globe.grid} fill="none" stroke="rgba(120,190,255,0.16)" strokeWidth={0.55} />
             <ellipse
               cx={ATLAS_FRAME.cx - ATLAS_FRAME.earthR * 0.34}
@@ -407,7 +407,7 @@ export function Atlas2D({
         <g className="atlas2d__markers">
           {visibleNodes.map(({ node, x, y, faction }) => {
             const active = node.id === selectedId;
-            const color = faction?.color ?? "#58ff9d";
+            const color = faction?.color ?? "#5cc8ff";
             const shape = KIND_SHAPE[node.kind] ?? "circle";
             return (
               <g
@@ -474,7 +474,7 @@ export function Atlas2D({
           </text>
           <g transform={`translate(32, 632)`}>
             <rect x={0} y={0} width={strip.width} height={strip.height} fill="rgba(10,26,42,0.55)" stroke="rgba(120,170,210,0.18)" />
-            <path d={strip.path} fill="rgba(44,130,134,0.28)" stroke="rgba(120,220,235,0.35)" strokeWidth={0.6} strokeLinejoin="round" />
+            <path d={strip.path} fill="rgba(44,110,180,0.28)" stroke="rgba(120,220,235,0.35)" strokeWidth={0.6} strokeLinejoin="round" />
             {era.nodes
               .filter((node) => node.anchor === "earth")
               .map((node) => {
@@ -494,7 +494,7 @@ export function Atlas2D({
                     }}
                     aria-label={pick(node.name, lang)}
                   >
-                    <circle r={active ? 4.2 : 2.8} fill={active ? "#d8ff63" : "rgba(99,230,255,0.85)"} stroke="#04101c" strokeWidth={0.8} />
+                    <circle r={active ? 4.2 : 2.8} fill={active ? "#8ed8ff" : "rgba(99,230,255,0.85)"} stroke="#04101c" strokeWidth={0.8} />
                     <circle r={8} fill="transparent" />
                     <title>{pick(node.name, lang)}</title>
                   </g>
@@ -508,7 +508,7 @@ export function Atlas2D({
 
         {selected && selected.node.kind !== "region" && (
           <g className="atlas2d__target" aria-hidden>
-            <line x1={selected.x} y1={selected.y - 14} x2={selected.x} y2={selected.y - 46} stroke={selected.faction?.color ?? "#58ff9d"} strokeWidth={0.9} />
+            <line x1={selected.x} y1={selected.y - 14} x2={selected.x} y2={selected.y - 46} stroke={selected.faction?.color ?? "#5cc8ff"} strokeWidth={0.9} />
             <text x={selected.x} y={selected.y - 52} textAnchor="middle" className="atlas2d__target-label">
               TARGET LOCK
             </text>

@@ -8,7 +8,6 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
 import { ScrollRestore } from "@/components/ScrollRestore";
 import { CockpitHud } from "@/components/CockpitHud";
-import { SpaceBackdrop } from "@/components/SpaceBackdrop";
 import { CockpitRails } from "@/components/CockpitRails";
 import { display, mono } from "@/app/fonts";
 import { themeBootScript } from "@/app/theme-script";
@@ -62,7 +61,7 @@ export async function generateMetadata({
 }
 
 export const viewport = {
-  themeColor: "#020805",
+  themeColor: "#020816",
   colorScheme: "dark light" as const,
   width: "device-width",
   initialScale: 1,
@@ -104,7 +103,6 @@ export default async function LangLayout({
       <body className={`${display.variable} ${mono.variable}`}>
         <div className="site" data-lang={typed}>
           <ScrollRestore />
-          <SpaceBackdrop />
           <div className="site-bg" aria-hidden />
           <CockpitHud dict={dict} machineCount={bundle.machines.length} eraCount={bundle.eras.length} />
           <SiteHeader lang={typed} dict={dict} />

@@ -314,7 +314,7 @@ export function AtlasExplorer({
                       className={`atlas-index ${node.id === selectedId ? "is-active" : ""}`}
                       onClick={() => setSelectedId(node.id)}
                     >
-                      <span className="atlas-index__dot" style={{ background: factions.find((f) => f.id === node.factionId)?.color ?? "#58ff9d" }} />
+                      <span className="atlas-index__dot" style={{ background: factions.find((f) => f.id === node.factionId)?.color ?? "#5cc8ff" }} />
                       {pick(node.name, lang)}
                       <span className="mono">{node.orbit ?? node.kind}</span>
                     </button>

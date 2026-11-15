@@ -9,13 +9,13 @@ export function TacticalScope({ code, label }: { code: string; label: string }) 
       <svg className="scope__svg" viewBox="0 0 600 600" role="presentation">
         <defs>
           <radialGradient id="scope-glow" cx="50%" cy="50%" r="50%">
-            <stop offset="55%" stopColor="rgba(88,255,157,0)" />
-            <stop offset="92%" stopColor="rgba(88,255,157,0.14)" />
-            <stop offset="100%" stopColor="rgba(88,255,157,0)" />
+            <stop offset="55%" stopColor="rgba(92,200,255,0)" />
+            <stop offset="92%" stopColor="rgba(92,200,255,0.14)" />
+            <stop offset="100%" stopColor="rgba(92,200,255,0)" />
           </radialGradient>
           <linearGradient id="scope-sweep" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="rgba(88,255,157,0.26)" />
-            <stop offset="100%" stopColor="rgba(88,255,157,0)" />
+            <stop offset="0%" stopColor="rgba(92,200,255,0.26)" />
+            <stop offset="100%" stopColor="rgba(92,200,255,0)" />
           </linearGradient>
         </defs>
 

@@ -3,7 +3,7 @@
 [中文](README.md) ｜ [English](README.en.md)
 
 > 文档按“唯一职责”维护，避免同一事实在多处漂移。  
-> 当前发布：v3.3.2 · 2026-11-16。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
+> 当前发布：v3.4.0 · 2026-11-16。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
 
 ## 1. 权威顺序
 
@@ -52,7 +52,7 @@
 | 改一段文字 | [EDITORIAL](EDITORIAL.md) | `pnpm language:check` |
 | 判断出处能不能用 | [GOVERNANCE](GOVERNANCE.md) | [DATA_SOURCES](DATA_SOURCES.md) |
 | 部署/回滚/排障 | [OPERATIONS](OPERATIONS.md) | `.github/workflows/` |
-| 改 UI/图表 | [DESIGN_SYSTEM](DESIGN_SYSTEM.md) | [ARCHITECTURE](ARCHITECTURE.md) 的 v3.3 节 |
+| 改 UI/图表 | [DESIGN_SYSTEM](DESIGN_SYSTEM.md) | [ARCHITECTURE](ARCHITECTURE.md) 的 v3.4 节 |
 | 接 3D 资产 | [ASSET_PIPELINE](ASSET_PIPELINE.md) | `docs/templates/asset-manifest.example.json` |
 | 看版本计划 | [ROADMAP](ROADMAP.md) | [../CHANGELOG.md](../CHANGELOG.md) |
 
@@ -60,7 +60,7 @@
 
 - **第一次接触**：README → ARCHITECTURE“六层模型” → 本页。
 - **新增内容**：CONTENT_GUIDE → DATA_DICTIONARY → `pnpm check`。
-- **改前端/查看器/图表**：DESIGN_SYSTEM → ARCHITECTURE 的 v3.3 节 → CONTRIBUTING。
+- **改前端/查看器/图表**：DESIGN_SYSTEM → ARCHITECTURE 的 v3.4 节 → CONTRIBUTING。
 - **发布/运维**：OPERATIONS → `.github/workflows/` → `pnpm check`。
 - **做 3D 资产**：ASSET_PIPELINE → DATA_DICTIONARY 的 ViewerConfig → `docs/templates/asset-manifest.example.json`。
 - **处理出处/版权**：GOVERNANCE → CONTENT_GUIDE → NOTICE。
@@ -72,8 +72,8 @@
 | 新增/删除条目 | README/README.ja 数量快照、CHANGELOG、相关覆盖表 | `pnpm docs:check`、`pnpm validate` |
 | 修改 schema 字段/枚举 | DATA_DICTIONARY、CONTENT_GUIDE、README 架构描述 | `pnpm typecheck`、`pnpm validate` |
 | 修改内容数字（纪元/事件/势力/标签） | CHRONOLOGY、MACHINE_COVERAGE、README | `pnpm docs:check` |
-| 新增/修改 Atlas | DATA_DICTIONARY（Atlas）、CONTENT_GUIDE 2.10、ARCHITECTURE v3.3 | `pnpm validate` |
-| 修改座舱/图表/缩放 | DESIGN_SYSTEM、ARCHITECTURE v3.3 | `pnpm typecheck`、`pnpm build` |
+| 新增/修改 Atlas | DATA_DICTIONARY（Atlas）、CONTENT_GUIDE 2.10、ARCHITECTURE v3.4 | `pnpm validate` |
+| 修改座舱/图表/缩放 | DESIGN_SYSTEM、ARCHITECTURE v3.4 | `pnpm typecheck`、`pnpm build` |
 | 修改 CI/发布/依赖 | OPERATIONS、CONTRIBUTING、README 部署表 | CI 与 Pages 实际跑通 |
 | 发布新版本 | CHANGELOG、ROADMAP、README 版本、package.json | `pnpm docs:check`、CI |
 

@@ -12,39 +12,39 @@
     "Noto Sans JP", system-ui, sans-serif;
   --font-mono: var(--font-mono), "SFMono-Regular", "JetBrains Mono", Menlo, monospace;
 
-  /* cockpit palette — phosphor green CRT, olive-black bezels, standby amber */
-  --bg-base: #020805;
-  --bg-deep: #010402;
-  --bg-panel: #04110a;
-  --bg-elevated: #071a10;
-  --bg-hover: #0a2415;
-  --line: #143d26;
-  --line-strong: #1f6b3e;
-  --text: #e4ffec;
-  --text-2: #a9e8bf;
-  --text-3: #74b48d;
-  --cyan: #58ff9d;
-  --cyan-soft: rgba(88, 255, 157, 0.12);
-  --cyan-line: rgba(88, 255, 157, 0.44);
-  --holo: #b4ff6a;
-  --holo-soft: rgba(180, 255, 106, 0.14);
-  --holo-line: rgba(180, 255, 106, 0.42);
-  --amber: #d8ff63;
-  --amber-soft: rgba(216, 255, 99, 0.12);
+  /* cockpit palette — deep-space blue CRT, slate-blue bezels, ice-blue highlights */
+  --bg-base: #020816;
+  --bg-deep: #01030a;
+  --bg-panel: #040d1b;
+  --bg-elevated: #07162a;
+  --bg-hover: #0a1d33;
+  --line: #14345a;
+  --line-strong: #2a5f9a;
+  --text: #e5f3ff;
+  --text-2: #b8d9ff;
+  --text-3: #7ea9d6;
+  --cyan: #5cc8ff;
+  --cyan-soft: rgba(92, 200, 255, 0.12);
+  --cyan-line: rgba(92, 200, 255, 0.44);
+  --holo: #6fbcff;
+  --holo-soft: rgba(111, 188, 255, 0.14);
+  --holo-line: rgba(111, 188, 255, 0.42);
+  --amber: #8ed8ff;
+  --amber-soft: rgba(142, 216, 255, 0.12);
   --red: #ff7164;
-  --blue: #45ffd0;
-  --violet: #b4ff6a;
-  --green: #6bff9f;
-  --white: #f1fff6;
+  --blue: #60d8ff;
+  --violet: #6fbcff;
+  --green: #6fc8ff;
+  --white: #f2f9ff;
 
   /* canopy / bezel metal */
-  --frame-hi: #2b4533;
-  --frame-1: #1a2f21;
-  --frame-2: #101f16;
-  --frame-3: #08130c;
-  --frame-4: #030a05;
-  --frame-ink: #c9ffda;
-  --screen-ink: #010603;
+  --frame-hi: #2b3f58;
+  --frame-1: #1a2b40;
+  --frame-2: #101d30;
+  --frame-3: #081322;
+  --frame-4: #030711;
+  --frame-ink: #cbe7ff;
+  --screen-ink: #01050f;
 
   --header-h: 76px;
   --console-h: 0px;
@@ -56,43 +56,43 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --dur: 200ms;
 
-  --stage-bg: #010603;
-  --stage-grid: #123f26;
+  --stage-bg: #01050f;
+  --stage-grid: #12345c;
 
   color-scheme: dark;
 }
 
 [data-theme="light"] {
-  --bg-base: #f1f7f2;
-  --bg-deep: #e4eee6;
-  --bg-panel: #fbfefa;
+  --bg-base: #f2f7ff;
+  --bg-deep: #e6efff;
+  --bg-panel: #fbfdff;
   --bg-elevated: #ffffff;
-  --bg-hover: #e2f2e6;
-  --line: #c3ddc9;
-  --line-strong: #8fbd9e;
-  --text: #071a10;
-  --text-2: #315c40;
-  --text-3: #557d63;
-  --cyan: #0a6b3c;
-  --cyan-soft: rgba(10, 107, 60, 0.09);
-  --cyan-line: rgba(10, 107, 60, 0.34);
-  --holo: #3f6b00;
-  --holo-soft: rgba(63, 107, 0, 0.08);
-  --holo-line: rgba(63, 107, 0, 0.3);
-  --amber: #6a5200;
-  --amber-soft: rgba(106, 82, 0, 0.1);
+  --bg-hover: #e4efff;
+  --line: #c6daf2;
+  --line-strong: #8fb2d8;
+  --text: #071426;
+  --text-2: #31506f;
+  --text-3: #5c7694;
+  --cyan: #0b63a8;
+  --cyan-soft: rgba(11, 99, 168, 0.09);
+  --cyan-line: rgba(11, 99, 168, 0.34);
+  --holo: #1b5fa8;
+  --holo-soft: rgba(27, 95, 168, 0.08);
+  --holo-line: rgba(27, 95, 168, 0.3);
+  --amber: #8a5a00;
+  --amber-soft: rgba(138, 90, 0, 0.1);
   --red: #b3261e;
-  --blue: #006b63;
-  --violet: #3f6b00;
-  --green: #06754c;
-  --white: #06160d;
+  --blue: #006b8f;
+  --violet: #3b5fa8;
+  --green: #0b6f9a;
+  --white: #06121f;
   --frame-hi: #ffffff;
-  --frame-1: #e8f0e9;
-  --frame-2: #c9d9cc;
-  --frame-3: #9db5a4;
-  --frame-4: #78947f;
-  --frame-ink: #173123;
-  --screen-ink: #f8fdf9;
+  --frame-1: #e6eef9;
+  --frame-2: #c5d8ee;
+  --frame-3: #9fb8d4;
+  --frame-4: #718aa8;
+  --frame-ink: #102a44;
+  --screen-ink: #f7fbff;
   color-scheme: light;
 }
 

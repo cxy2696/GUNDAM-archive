@@ -1,13 +1,13 @@
-# 设计系统 · v3.3 动态战术座舱
+# 设计系统 · v3.4 深空蓝座舱
 
-> 视觉规则只维护在这一页。实现位置：Token 在 `src/app/globals.css`，座舱在 `src/styles/cockpit.css`，绿色磷光覆盖层在 `src/styles/tactical.css`，缩放/图谱在 `zoom.css`、`graph.css`、`atlas.css`、`era-demo.css`、`tag-map.css`。  
-> 改 Token 或组件规则时，同步本页与 `docs/ARCHITECTURE.md` 的“v3.3 动态战术座舱”一节。
+> 视觉规则只维护在这一页。实现位置：Token 在 `src/app/globals.css`，座舱在 `src/styles/cockpit.css`，蓝色星层与座舱覆盖在 `src/styles/tactical.css`，缩放/图谱在 `zoom.css`、`graph.css`、`atlas.css`、`era-demo.css`、`tag-map.css`。  
+> 改 Token 或组件规则时，同步本页与 `docs/ARCHITECTURE.md` 的“v3.4 动态战术座舱”一节。
 
 ## 1. 原则
 
 1. **阅读优先**：任何装饰都不能压住正文、链接或按钮；固定层必须给内容预留空间，并允许收起。
 2. **结构可见**：信息用边框、轨道、编号和分组说明“它是什么”，不靠大面积发光。
-3. **磷光仪器感**：参考绿色 CRT 座舱，深色屏幕 + 墨绿边框 + 磷光绿读数；状态色不超过画面约 8%，正文始终用高对比浅绿。
+3. **深空仪器感**：深海军蓝屏幕 + 蓝灰金属边框 + 冰蓝读数；状态色不超过画面约 8%，正文始终用高对比浅蓝白。
 4. **悬停才发光**：常态低对比，hover/focus 才提高亮度；不用颜色作为唯一语义。
 5. **可维护的复用**：新页面先复用 Token 与现有组件类，不引入第二套配色或字号体系。
 
@@ -69,7 +69,7 @@
 | 屏幕状态条 | `.screen-chrome` | 38px；左 MFD-00、中链路、右状态；移动隐藏中段 |
 | 侧 MFD | `.mfd-rail`, `.mfd-panel` | 圆角墨绿框 + 磷光内屏；≥1760px 才显示；不做正文遮挡 |
 | 操纵台 | `.console`, `.console-card` | 纪元驱动/事件信号/目标队列/辅助键四块；卡片错落、可收起 |
-| 磷光相框 | `glass.css` + `tactical.css` | 主屏、地图、谱系、世纪表、关联图、Tag 地图共用墨绿边 + 绿色柔光；英雄舞台叠圆环瞄准镜 |
+| 磷光相框 | `glass.css` + `tactical.css` | 主屏、地图、谱系、世纪表、关联图、Tag 地图共用蓝灰边 + 冰蓝柔光；英雄舞台叠圆环瞄准镜 |
 | 缩放框 | `ZoomFrame` | −/+/重置/全屏；全屏用 portal 到 `body`；2D/3D 图表通用 |
 | 瞄准镜 | `TacticalScope` / `tactical.css` | 纯 CSS/SVG 圆环、方位刻度、扫描扇区与接触点；不拦截指针，`prefers-reduced-motion` 停止旋转 |
 | 快速检索 | `QuickQuery` / `tactical.css` | 首页检索带；提交进入 `/search?q=`，四个示例词与十二纪元快捷入口；`/` 与 `⌘K` 打开全局检索 |
