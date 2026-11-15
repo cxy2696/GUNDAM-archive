@@ -56,7 +56,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             </a>
             <Link href={`/${lang}/about#roadmap`}>{dict.about.roadmapTitle}</Link>
             <Link href={`/${lang}/about#license`}>{dict.about.licenseTitle}</Link>
-            <span>v3.3.1</span>
+            <span>v3.3.2</span>
           </div>
         </div>
 

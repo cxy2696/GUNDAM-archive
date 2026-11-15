@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.3.2] — 2026-11-16
+
+### Changed
+
+- Removed the fixed bottom operation console and its toggle. The main display now owns the full viewport height; the cockpit frame, side rails and footer carry the interface without a console deck.
+- Added a second, slower star layer inside the main display itself, so the space background is visible through the cockpit glass rather than only around the bezel.
+- Increased the outer star pattern opacity and reduced console-era spacing variables to zero.
+
+### Checks
+
+- Same content snapshot: 148 machines, 114 characters, 69 events, 82 factions, 12 eras, 156 atlas nodes.
+- 1,280 static pages, 1,272 sitemap routes, 487 search entries per language.
+
 ## [3.3.1] — 2026-11-16
 
 ### Added

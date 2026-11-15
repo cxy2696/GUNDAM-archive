@@ -9,10 +9,7 @@ import { CommandPalette } from "@/components/CommandPalette";
 import { ScrollRestore } from "@/components/ScrollRestore";
 import { CockpitHud } from "@/components/CockpitHud";
 import { SpaceBackdrop } from "@/components/SpaceBackdrop";
-import { CockpitConsole } from "@/components/CockpitConsole";
 import { CockpitRails } from "@/components/CockpitRails";
-import { getMachine } from "@/lib/content";
-import { formatStoryDate } from "@/lib/format";
 import { display, mono } from "@/app/fonts";
 import { themeBootScript } from "@/app/theme-script";
 import "@/app/globals.css";
@@ -99,36 +96,6 @@ export default async function LangLayout({
     tags: bundle.tags.length,
     pages: bundle.machines.length + bundle.characters.length + bundle.factions.length + bundle.events.length + bundle.tags.length + bundle.works.length,
   };
-  const latestEvents = [...bundle.events]
-    .sort((a, b) => a.date.year - b.date.year || (a.date.month ?? 0) - (b.date.month ?? 0))
-    .slice(-2)
-    .reverse();
-  const featured = getMachine("rx-78-2") ?? bundle.machines[0];
-  const latest = latestEvents[0];
-  const latestEra = latest ? bundle.eras.find((item) => item.id === latest.eraId) : undefined;
-  const targets = [
-    latest
-      ? {
-          kind: "COM",
-          label: pick(latest.title, typed),
-          meta: latestEra ? formatStoryDate(latest.date, latestEra.code, typed) : String(latest.date.year),
-          href: `/${typed}/events/${latest.id}`,
-        }
-      : null,
-    {
-      kind: "MS",
-      label: pick(featured.name, typed),
-      meta: featured.modelCode,
-      href: `/${typed}/machines/${featured.id}`,
-    },
-    {
-      kind: "MAP",
-      label: dict.nav.map,
-      meta: `${bundle.eras.length} ERAS`,
-      href: `/${typed}/map`,
-    },
-  ].filter((item): item is { kind: string; label: string; meta: string; href: string } => Boolean(item));
-
   return (
     <html lang={typed === "ja" ? "ja" : typed === "en" ? "en" : "zh-CN"} data-theme="dark" data-hud="on" data-read="std" suppressHydrationWarning>
       <head>
@@ -160,7 +127,6 @@ export default async function LangLayout({
               </div>
             </div>
           </main>
-          <CockpitConsole eras={eraStats} targets={targets} totals={totals} lang={typed} dict={dict} />
           <CommandPalette lang={typed} dict={dict} />
         </div>
       </body>

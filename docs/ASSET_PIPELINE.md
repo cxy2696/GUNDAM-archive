@@ -1,6 +1,6 @@
 # 3D 资产与渲染管线
 
-> 对应方案书第七章。当前 v3.3.1 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第七章。当前 v3.3.2 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. LOD 规范
 
@@ -149,7 +149,7 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 - 动画只做姿态与特效，不改变机体参数、分件 ID 或 `partId` 悬停契约。接入 glTF LOD0 时，骨骼动画可替换本层，页面接口不变。
 
 
-## 10. C++ WebAssembly 骨架核心（v3.3.1）
+## 10. C++ WebAssembly 骨架核心（v3.3.2）
 
 `engine/mech_core.cpp` 是 freestanding C++，不依赖 libc/libm，由 `scripts/build-wasm.sh` 编译为 `public/mech-core.wasm`：
 

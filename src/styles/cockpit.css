@@ -1105,7 +1105,7 @@ body {
 @media (max-width: 1500px) {
   :root {
     --deck-max: 100%;
-    --console-h: 138px;
+    --console-h: 0px;
   }
   .console {
     grid-template-columns: minmax(200px, 1fr) minmax(220px, 1.05fr) minmax(220px, 1fr) auto;
@@ -1114,7 +1114,7 @@ body {
 
 @media (max-width: 1180px) {
   :root {
-    --console-h: 122px;
+    --console-h: 0px;
     --rail-w: 0px;
   }
   .console {
@@ -1542,4 +1542,38 @@ body {
     font-size: 20px;
     line-height: 1;
   }
+}
+
+/* ---------- starfield inside the main display (v3.3.2) ---------- */
+
+.cockpit-screen__inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image:
+    radial-gradient(1px 1px at 7% 12%, rgba(234, 255, 240, 0.9), transparent 100%),
+    radial-gradient(1px 1px at 17% 68%, rgba(184, 255, 210, 0.7), transparent 100%),
+    radial-gradient(1.3px 1.3px at 29% 28%, rgba(216, 255, 99, 0.65), transparent 100%),
+    radial-gradient(1px 1px at 41% 82%, rgba(234, 255, 240, 0.75), transparent 100%),
+    radial-gradient(1.2px 1.2px at 55% 18%, rgba(184, 255, 210, 0.75), transparent 100%),
+    radial-gradient(1px 1px at 68% 56%, rgba(234, 255, 240, 0.55), transparent 100%),
+    radial-gradient(1.4px 1.4px at 79% 33%, rgba(216, 255, 99, 0.5), transparent 100%),
+    radial-gradient(1px 1px at 91% 74%, rgba(234, 255, 240, 0.65), transparent 100%),
+    radial-gradient(1px 1px at 12% 92%, rgba(184, 255, 210, 0.55), transparent 100%),
+    radial-gradient(1px 1px at 63% 91%, rgba(234, 255, 240, 0.5), transparent 100%);
+  background-size: 340px 340px;
+  animation: screen-star-drift 90s linear infinite;
+  mask-image: radial-gradient(120% 90% at 50% 35%, #000 30%, rgba(0, 0, 0, 0.65) 70%, transparent 100%);
+}
+
+@keyframes screen-star-drift {
+  from { background-position: 0 0; }
+  to { background-position: -340px 170px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cockpit-screen__inner::before { animation: none; }
 }

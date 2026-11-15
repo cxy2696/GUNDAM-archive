@@ -15,7 +15,7 @@
 }
 
 [data-theme="dark"] .site-bg::before {
-  opacity: 0.34;
+  opacity: 0.62;
   filter: hue-rotate(76deg) saturate(1.5);
 }
 
