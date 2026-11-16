@@ -65,6 +65,8 @@ export function MechViewer({
   const [hovered, setHovered] = useState<string | null>(null);
   const [motion, setMotion] = useState<MotionMode>("idle");
   const [motionEnabled, setMotionEnabled] = useState(true);
+  const [walking, setWalking] = useState(false);
+  const [walkSpeed] = useState(1);
   const [core, setCore] = useState<MechCore | null>(null);
   const mocapRef = useRef<BvhPlayback | null>(null);
   const [mocapName, setMocapName] = useState("");
@@ -150,6 +152,7 @@ export function MechViewer({
       className={`viewer ${hero ? "viewer--hero" : ""} viewer--${mode}`}
       data-viewer-ready={ready ? "true" : "false"}
       data-motion={motionEnabled ? motion : "off"}
+      data-walk={walking ? "on" : "off"}
       data-core={core ? "cpp" : "ts"}
     >
       <div className="viewer__frame" aria-hidden>
@@ -196,6 +199,8 @@ export function MechViewer({
                 motionEnabled={motionEnabled}
                 core={core}
                 mocapRef={mocapRef}
+                walking={walking}
+                walkSpeed={walkSpeed}
                 transparent={hero}
               />
             </ViewerBoundary>
@@ -309,6 +314,19 @@ export function MechViewer({
                 title={`${labels.motion}: ${motionEnabled ? motionLabel : "OFF"}`}
               >
                 {labels.motion} · {motionEnabled ? motionLabel : "OFF"}
+              </button>
+              <button
+                type="button"
+                className={walking ? "is-active" : ""}
+                onClick={() => {
+                  setWalking((value) => !value);
+                  core?.applyImpulse(0.55);
+                }}
+                aria-pressed={walking}
+                aria-label={labels.walkHint}
+                title={labels.walkHint}
+              >
+                {labels.walk} · {walking ? "ON" : "OFF"}
               </button>
               <button
                 type="button"

@@ -2,24 +2,114 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, RoundedBox } from "@react-three/drei";
-import { useRef, useState } from "react";
+import { Component, useRef, useState, type ReactNode } from "react";
 import type * as THREE from "three";
 import type { Dictionary } from "@/lib/i18n";
 import type { Lang } from "@/lib/schema";
 
 type PartKey = "seat" | "console" | "pedals" | "canopy" | "overhead" | "screen" | "stick";
 type ViewMode = "3d" | "2d";
+type SystemKey = "power" | "comms" | "weapon";
+type Systems = Record<SystemKey, boolean>;
 
-function Screen({ position, rotation, size }: { position: [number, number, number]; rotation?: [number, number, number]; size: [number, number] }) {
+class CockpitCanvasBoundary extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { failed: boolean }
+> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  render() {
+    return this.state.failed ? this.props.fallback : this.props.children;
+  }
+}
+
+function Screen({
+  position,
+  rotation,
+  size,
+  dim = false,
+}: {
+  position: [number, number, number];
+  rotation?: [number, number, number];
+  size: [number, number];
+  dim?: boolean;
+}) {
   return (
     <group position={position} rotation={rotation}>
+      <RoundedBox args={[size[0] + 0.12, size[1] + 0.12, 0.05]} radius={0.025} position={[0, 0, -0.02]}>
+        <meshStandardMaterial color="#2a3f58" metalness={0.7} roughness={0.35} />
+      </RoundedBox>
       <mesh>
         <boxGeometry args={[size[0], size[1], 0.06]} />
-        <meshStandardMaterial color="#b9e8ff" emissive="#5cc8ff" emissiveIntensity={2.4} toneMapped={false} />
+        <meshStandardMaterial
+          color={dim ? "#263a58" : "#b9e8ff"}
+          emissive={dim ? "#1b2a40" : "#5cc8ff"}
+          emissiveIntensity={dim ? 0.35 : 2.4}
+          toneMapped={false}
+        />
       </mesh>
       <mesh position={[0, 0, 0.04]}>
         <planeGeometry args={[size[0] * 0.9, size[1] * 0.88]} />
         <meshBasicMaterial color="#020b1a" transparent opacity={0.45} />
+      </mesh>
+    </group>
+  );
+}
+
+function ConsoleButton({
+  position,
+  active,
+  tone = "#5cc8ff",
+  onClick,
+}: {
+  position: [number, number, number];
+  active: boolean;
+  tone?: string;
+  onClick: () => void;
+}) {
+  return (
+    <group
+      position={position}
+      onClick={(event) => {
+        event.stopPropagation();
+        onClick();
+      }}
+    >
+      <RoundedBox args={[0.28, 0.12, 0.2]} radius={0.035}>
+        <meshStandardMaterial color={active ? tone : "#263a58"} metalness={0.6} roughness={0.3} />
+      </RoundedBox>
+      <mesh position={[0, 0.065, 0]}>
+        <circleGeometry args={[0.055, 20]} />
+        <meshBasicMaterial color={active ? tone : "#4e6f8f"} />
+      </mesh>
+      <pointLight position={[0, 0.16, 0]} intensity={active ? 0.7 : 0.08} color={tone} distance={0.8} />
+    </group>
+  );
+}
+
+function ControlStick({ x }: { x: number }) {
+  return (
+    <group position={[x, 1.4, -1.05]} rotation={[-0.12, 0, 0]}>
+      <mesh position={[0, 0.03, 0]}>
+        <cylinderGeometry args={[0.15, 0.18, 0.1, 20]} />
+        <meshStandardMaterial color="#2a3f58" metalness={0.8} roughness={0.32} />
+      </mesh>
+      <mesh position={[0, 0.28, 0]}>
+        <cylinderGeometry args={[0.045, 0.075, 0.52, 12]} />
+        <meshStandardMaterial color="#5f84a8" metalness={0.85} roughness={0.22} />
+      </mesh>
+      <RoundedBox args={[0.22, 0.28, 0.18]} radius={0.07} position={[0, 0.68, 0]} rotation={[0, 0, x > 0 ? -0.2 : 0.2]}>
+        <meshStandardMaterial color="#1b2a40" metalness={0.6} roughness={0.38} />
+      </RoundedBox>
+      <mesh position={[x > 0 ? -0.11 : 0.11, 0.62, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.035, 0.035, 0.16, 10]} />
+        <meshStandardMaterial color="#9dd8ff" metalness={0.5} roughness={0.3} />
+      </mesh>
+      <mesh position={[0, 0.84, -0.02]}>
+        <sphereGeometry args={[0.045, 12, 10]} />
+        <meshBasicMaterial color="#8ed8ff" />
       </mesh>
     </group>
   );
@@ -81,13 +171,17 @@ function CockpitScene({
   labels,
   selected,
   autoRotate,
+  systems,
   onSelect,
+  onSystem,
 }: {
   open: boolean;
   labels: boolean;
   selected: PartKey;
   autoRotate: boolean;
+  systems: Systems;
   onSelect: (part: PartKey) => void;
+  onSystem: (key: SystemKey) => void;
 }) {
   const select = (part: PartKey) => (event: { stopPropagation: () => void }) => {
     event.stopPropagation();
@@ -139,10 +233,15 @@ function CockpitScene({
         <RoundedBox args={[3.9, 0.12, 1.05]} radius={0.05} position={[0, 1.52, -1.55]} rotation={[-0.15, 0, 0]}>
           <meshStandardMaterial color="#6e93b8" metalness={0.4} roughness={0.26} />
         </RoundedBox>
-        <Screen position={[-1.2, 1.6, -1.93]} rotation={[-0.18, 0.18, 0]} size={[1.1, 0.44]} />
-        <Screen position={[0, 1.62, -1.98]} rotation={[-0.18, 0, 0]} size={[1.25, 0.5]} />
-        <Screen position={[1.2, 1.6, -1.93]} rotation={[-0.18, -0.18, 0]} size={[1.1, 0.44]} />
+        <Screen position={[-1.2, 1.6, -1.93]} rotation={[-0.18, 0.18, 0]} size={[1.1, 0.44]} dim={!systems.power} />
+        <Screen position={[0, 1.62, -1.98]} rotation={[-0.18, 0, 0]} size={[1.25, 0.5]} dim={!systems.power} />
+        <Screen position={[1.2, 1.6, -1.93]} rotation={[-0.18, -0.18, 0]} size={[1.1, 0.44]} dim={!systems.power} />
         <Radar />
+        <group position={[0, 1.43, -2.02]}>
+          <ConsoleButton position={[-1.1, 0, 0]} active={systems.power} tone="#5cc8ff" onClick={() => onSystem("power")} />
+          <ConsoleButton position={[0, 0, 0]} active={systems.comms} tone="#6fbcff" onClick={() => onSystem("comms")} />
+          <ConsoleButton position={[1.1, 0, 0]} active={systems.weapon} tone="#ffb45e" onClick={() => onSystem("weapon")} />
+        </group>
       </group>
 
       <group onClick={select("pedals")}>
@@ -160,18 +259,8 @@ function CockpitScene({
       </group>
 
       <group onClick={select("stick")}>
-        {[-0.95, 0.95].map((x) => (
-          <group key={x} position={[x, 1.4, -1.05]} rotation={[-0.12, 0, 0]}>
-            <mesh>
-              <cylinderGeometry args={[0.07, 0.09, 0.75, 12]} />
-              <meshStandardMaterial color="#526a8a" metalness={0.8} roughness={0.25} />
-            </mesh>
-            <mesh position={[0, 0.46, 0]}>
-              <sphereGeometry args={[0.15, 16, 12]} />
-              <meshStandardMaterial color="#1b2a40" metalness={0.6} roughness={0.4} />
-            </mesh>
-          </group>
-        ))}
+        <ControlStick x={-0.95} />
+        <ControlStick x={0.95} />
       </group>
 
       <group onClick={select("overhead")}>
@@ -179,7 +268,17 @@ function CockpitScene({
           <meshStandardMaterial color="#2a3f58" metalness={0.8} roughness={0.3} />
         </RoundedBox>
         {[-0.9, 0, 0.9].map((x) => (
-          <Screen key={x} position={[x, 3.03, -0.12]} rotation={[0.12, 0, 0]} size={[0.64, 0.24]} />
+          <Screen key={x} position={[x, 3.03, -0.12]} rotation={[0.12, 0, 0]} size={[0.64, 0.24]} dim={!systems.power} />
+        ))}
+        {([
+          [-1.55, systems.power, "#5cc8ff"],
+          [-1.38, systems.comms, "#6fbcff"],
+          [1.38, systems.weapon, "#ffb45e"],
+        ] as const).map(([x, active, tone]) => (
+          <mesh key={String(x)} position={[x, 3.01, 0.02]}>
+            <sphereGeometry args={[0.045, 12, 10]} />
+            <meshBasicMaterial color={active ? tone : "#263a58"} />
+          </mesh>
         ))}
       </group>
 
@@ -194,7 +293,7 @@ function CockpitScene({
             <meshBasicMaterial color="#5cc8ff" transparent opacity={0.1} />
           </mesh>
         ))}
-        <Screen position={[0, 3.6, -3.28]} size={[2.4, 0.2]} />
+        <Screen position={[0, 3.6, -3.28]} size={[2.4, 0.2]} dim={!systems.power} />
       </group>
 
       <group aria-hidden>
@@ -241,6 +340,8 @@ export default function CockpitViewer({ lang, dict }: { lang: Lang; dict: Dictio
   const [open, setOpen] = useState(false);
   const [labels, setLabels] = useState(true);
   const [autoRotate, setAutoRotate] = useState(false);
+  const [systems, setSystems] = useState<Systems>({ power: true, comms: true, weapon: false });
+  const toggleSystem = (key: SystemKey) => setSystems((current) => ({ ...current, [key]: !current[key] }));
   const labelsMap = dict.cockpitBay.parts;
   const partKeys = Object.keys(labelsMap) as PartKey[];
 
@@ -281,15 +382,40 @@ export default function CockpitViewer({ lang, dict }: { lang: Lang; dict: Dictio
       <div className="cockpit-bay__stage">
         {view === "3d" ? (
           <div className="cockpit-bay__canvas">
-            <Canvas camera={{ position: [4.9, 3.5, 5.8], fov: 44 }} shadows dpr={[1, 1.6]} gl={{ antialias: true }}>
-              <CockpitScene
-                open={open}
-                labels={labels}
-                selected={selected}
-                autoRotate={autoRotate}
-                onSelect={setSelected}
-              />
-            </Canvas>
+            <CockpitCanvasBoundary
+              fallback={
+                <Blueprint labels={labelsMap} selected={selected} onSelect={setSelected} />
+              }
+            >
+              <Canvas camera={{ position: [4.9, 3.5, 5.8], fov: 44 }} shadows dpr={[1, 1.6]} gl={{ antialias: true }}>
+                <CockpitScene
+                  open={open}
+                  labels={labels}
+                  selected={selected}
+                  autoRotate={autoRotate}
+                  systems={systems}
+                  onSelect={setSelected}
+                  onSystem={toggleSystem}
+                />
+              </Canvas>
+            </CockpitCanvasBoundary>
+            <div className="cockpit-bay__systems" aria-label={dict.cockpitBay.systems}>
+              <span className="micro">{dict.cockpitBay.systems}</span>
+              {(["power", "comms", "weapon"] as const).map((key) => (
+                <button
+                  key={key}
+                  type="button"
+                  className={systems[key] ? "is-active" : ""}
+                  onClick={() => toggleSystem(key)}
+                  aria-pressed={systems[key]}
+                  data-system={key}
+                >
+                  <i />
+                  <span>{dict.cockpitBay[key]}</span>
+                  <b>{systems[key] ? dict.cockpitBay.systemOn : dict.cockpitBay.systemOff}</b>
+                </button>
+              ))}
+            </div>
             <div className="cockpit-bay__part-list">
               {partKeys.map((part) => (
                 <button key={part} type="button" className={selected === part ? "is-active" : ""} onClick={() => setSelected(part)}>

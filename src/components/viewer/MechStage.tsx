@@ -396,6 +396,8 @@ function Mech({
   motionEnabled,
   core,
   mocapRef,
+  walking,
+  walkSpeed,
 }: {
   machine: Machine;
   explode: number;
@@ -407,6 +409,8 @@ function Mech({
   motionEnabled: boolean;
   core: MechCore | null;
   mocapRef?: React.RefObject<BvhPlayback | null>;
+  walking: boolean;
+  walkSpeed: number;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   const scale = height / 18;
@@ -452,16 +456,25 @@ function Mech({
           pointer.current.x,
           pointer.current.y,
           motionEnabled,
+          walking,
+          walkSpeed,
         )
       : null;
     const mocapPose = mocapRef?.current?.sample() ?? null;
     const alert = motion === "alert" ? 1 : 0;
     const idle = 1 - Math.max(boost, alert);
     if (root.current) {
-      root.current.position.y += ((Math.sin(t * 0.85) * 0.018 * active) + boost * 0.1 - root.current.position.y) * k;
+      const cppRoot = core?.getRoot();
+      if (cppRoot) {
+        root.current.position.x = cppRoot[0];
+        root.current.position.y = cppRoot[1] + boost * 0.1;
+        root.current.rotation.z = cppRoot[2];
+      } else {
+        root.current.position.y += ((Math.sin(t * 0.85) * 0.018 * active) + boost * 0.1 - root.current.position.y) * k;
+        root.current.rotation.z += (Math.sin(t * 0.52) * 0.004 * active - root.current.rotation.z) * (k * 0.55);
+      }
       const targetLean = active * (boost * -0.035 + alert * -0.012);
       root.current.rotation.x += (targetLean - root.current.rotation.x) * (k * 0.55);
-      root.current.rotation.z += (Math.sin(t * 0.52) * 0.004 * active - root.current.rotation.z) * (k * 0.55);
     }
 
     for (const part of parts) {
@@ -839,6 +852,8 @@ function StageScene({
   motionEnabled,
   core,
   mocapRef,
+  walking,
+  walkSpeed,
   transparent = false,
 }: {
   machine: Machine;
@@ -854,6 +869,8 @@ function StageScene({
   motionEnabled: boolean;
   core: MechCore | null;
   mocapRef?: React.RefObject<BvhPlayback | null>;
+  walking: boolean;
+  walkSpeed: number;
   transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
@@ -901,6 +918,8 @@ function StageScene({
         motionEnabled={motionEnabled}
         core={core}
         mocapRef={mocapRef}
+        walking={walking}
+        walkSpeed={walkSpeed}
       />
 
       <ScanSweep height={height} />
@@ -1012,6 +1031,8 @@ export function MechStage({
   motionEnabled = true,
   core = null,
   mocapRef,
+  walking = false,
+  walkSpeed = 1,
   className = "",
   transparent = false,
 }: {
@@ -1029,6 +1050,8 @@ export function MechStage({
   motionEnabled?: boolean;
   core?: MechCore | null;
   mocapRef?: React.RefObject<BvhPlayback | null>;
+  walking?: boolean;
+  walkSpeed?: number;
   className?: string;
   transparent?: boolean;
 }) {
@@ -1061,6 +1084,8 @@ export function MechStage({
         motionEnabled={motionEnabled}
         core={core}
         mocapRef={mocapRef}
+        walking={walking}
+        walkSpeed={walkSpeed}
         transparent={transparent}
       />
     </Canvas>

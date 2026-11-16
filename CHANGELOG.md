@@ -1,18 +1,18 @@
 # Changelog
 
-## [3.5.0] — 2026-11-17
+## [3.6.0] — 2026-11-17
 
-### C++ physics and interaction
+### C++ walking and interaction
 
-- Replaced TypeScript pose smoothing with a C++ damped-spring solver compiled to WebAssembly.
-- Added pointer-driven head, torso, waist, arm and leg targets; moving the pointer over the viewer makes the suit track it in real time.
-- Added a C++ recoil impulse used when the motion mode changes.
-- Added a reset entry point for the physics state; the TypeScript fallback remains.
+- Added a C++ gait controller: leg stride, opposing arm swing, torso counter-rotation and a ground-contact root bob are advanced by the physics step.
+- Added `root_ptr()`; the renderer applies C++ sway, bob and lean instead of a separate JavaScript oscillation.
+- Added a `Walk` control in the viewer. Motion mode changes and walk toggles inject a C++ recoil impulse.
 
-### Redundancy pass
+### Cockpit detail
 
-- Removed the retired operation console stylesheet block and unused console copy from the dictionaries.
-- The viewer now exposes `C++ PHYSICS` instead of the older `C++ RIG` label.
+- Rebuilt the control sticks with a base, shaft, grip, trigger and thumb button.
+- Added dedicated power/comms/weapon console buttons with active lights; the same state is available in the cockpit overlay and powers the screens.
+- Added more display bezels, warning lamps and switch detail around the main console.
 
 ### Current snapshot
 

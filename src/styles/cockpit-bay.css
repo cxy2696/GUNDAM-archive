@@ -50,3 +50,43 @@
   .cockpit-bay__canvas { min-height: 380px; }
   .cockpit-bay__part-list { display: none; }
 }
+
+.cockpit-bay__systems {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 6px;
+  border: 1px solid rgba(92, 200, 255, 0.22);
+  background: rgba(2, 12, 26, 0.8);
+  backdrop-filter: blur(5px);
+}
+.cockpit-bay__systems > .micro { margin-right: 3px; color: var(--text-3); }
+.cockpit-bay__systems button {
+  display: grid;
+  grid-template-columns: 5px auto;
+  gap: 1px 6px;
+  padding: 4px 7px;
+  border: 1px solid rgba(92, 200, 255, 0.14);
+  color: var(--text-3);
+  text-align: left;
+}
+.cockpit-bay__systems button i {
+  grid-row: span 2;
+  align-self: center;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #263a58;
+}
+.cockpit-bay__systems button span { font-family: var(--font-mono); font-size: 10px; }
+.cockpit-bay__systems button b { font-family: var(--font-mono); font-size: 8px; font-weight: 400; opacity: 0.6; }
+.cockpit-bay__systems button.is-active { color: var(--cyan); border-color: var(--cyan-line); background: rgba(92, 200, 255, 0.09); }
+.cockpit-bay__systems button.is-active i { background: var(--cyan); box-shadow: 0 0 7px var(--cyan); }
+@media (max-width: 760px) {
+  .cockpit-bay__systems { left: 8px; right: 8px; bottom: 8px; flex-wrap: wrap; }
+  .cockpit-bay__systems > .micro { width: 100%; }
+}

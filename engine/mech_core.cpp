@@ -1,5 +1,5 @@
 /*
- * GUNDAM Archive — C++ simulation core (v3.5.0)
+ * GUNDAM Archive — C++ simulation core (v3.6.0)
  *
  * Freestanding WebAssembly module. It owns:
  *   - 12-part joint targets for Idle / Alert / Boost
@@ -19,7 +19,10 @@ constexpr int VALUE_COUNT = PART_COUNT * 3;
 static float target[VALUE_COUNT];
 static float pose[VALUE_COUNT];
 static float velocity[VALUE_COUNT];
+static float rootOut[3];
 static float ikOut[2];
+static float gaitPhase = 0.0f;
+static float walkBlend = 0.0f;
 static int initialized = 0;
 
 static inline float absf(float x) { return x < 0 ? -x : x; }
@@ -65,6 +68,7 @@ static inline float facos(float x) {
 }
 
 __attribute__((export_name("pose_ptr"))) float* pose_ptr() { return pose; }
+__attribute__((export_name("root_ptr"))) float* root_ptr() { return rootOut; }
 __attribute__((export_name("ik_ptr"))) float* ik_ptr() { return ikOut; }
 
 /* Write the unbounded target pose for the current mode and pointer. */
@@ -131,6 +135,18 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
   target[33] = 0.0f;
   target[34] = 0.0f;
   target[35] = active * -1.0f * (idle * fsin(t * 0.9f + 0.5f) * 0.005f + alert * 0.01f + boost * 0.018f);
+
+  // Walk gait: opposing arm/leg swing, torso counter-rotation and a
+  // ground-contact bob. The phase is advanced in step_physics().
+  if (walkBlend > 0.001f) {
+    const float swing = fsin(gaitPhase);
+    target[15] += swing * 0.24f * walkBlend;
+    target[18] -= swing * 0.24f * walkBlend;
+    target[21] += swing * 0.32f * walkBlend;
+    target[24] -= swing * 0.32f * walkBlend;
+    target[4] += swing * 0.055f * walkBlend;
+    target[7] += swing * 0.035f * walkBlend;
+  }
 }
 
 /*
@@ -138,7 +154,16 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
  * substeps for stability without a heap or libm.
  */
 __attribute__((export_name("step_physics"))) void step_physics(
-    int mode, float t, float dt, float pointerX, float pointerY, int enabled) {
+    int mode, float t, float dt, float pointerX, float pointerY, int enabled, int walking, float speed) {
+  const float clampedDt = clampf(dt, 0.001f, 0.05f);
+  const float walkTarget = (enabled && walking) ? 1.0f : 0.0f;
+  walkBlend += (walkTarget - walkBlend) * clampf(clampedDt * 5.0f, 0.0f, 1.0f);
+  if (walkBlend > 0.001f) {
+    gaitPhase += clampedDt * clampf(speed, 0.4f, 2.2f) * 4.2f;
+    if (gaitPhase > PI * 2.0f) gaitPhase -= PI * 2.0f;
+  } else {
+    gaitPhase = 0.0f;
+  }
   compute_target(mode, t, pointerX, pointerY, enabled);
   if (!initialized) {
     for (int i = 0; i < VALUE_COUNT; i++) {
@@ -149,7 +174,7 @@ __attribute__((export_name("step_physics"))) void step_physics(
     return;
   }
 
-  const float step = clampf(dt, 0.001f, 0.05f) * 0.5f;
+  const float step = clampedDt * 0.5f;
   for (int sub = 0; sub < 2; sub++) {
     for (int i = 0; i < VALUE_COUNT; i++) {
       const float stiffness = 78.0f + (i % 3) * 14.0f;
@@ -160,6 +185,10 @@ __attribute__((export_name("step_physics"))) void step_physics(
       pose[i] = clampf(pose[i], -0.85f, 0.85f);
     }
   }
+  const float swing = fsin(gaitPhase);
+  rootOut[0] = swing * 0.035f * walkBlend;
+  rootOut[1] = (1.0f - fcos(gaitPhase * 2.0f)) * 0.022f * walkBlend;
+  rootOut[2] = -swing * 0.018f * walkBlend;
 }
 
 /* A short recoil / acknowledgement impulse for real-time UI events. */
@@ -176,6 +205,9 @@ __attribute__((export_name("apply_impulse"))) void apply_impulse(float amount) {
 
 __attribute__((export_name("reset_physics"))) void reset_physics() {
   initialized = 0;
+  gaitPhase = 0.0f;
+  walkBlend = 0.0f;
+  rootOut[0] = rootOut[1] = rootOut[2] = 0.0f;
   for (int i = 0; i < VALUE_COUNT; i++) {
     pose[i] = 0.0f;
     velocity[i] = 0.0f;

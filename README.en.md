@@ -15,7 +15,7 @@
 
 The site is a fully static Next.js export. Content is maintained as JSON and validated by Zod at build time. It ships Chinese, Japanese and English routes, a procedural 3D viewer, a technology DAG, a chronology, a 2D/3D orbital atlas and relationship graphs. Adding an entry does not require changing page code; one `pnpm check` validates content, docs, types, language, links and every exported route.
 
-Current version: **v3.5.0** (2026-11-16).  
+Current version: **v3.6.0** (2026-11-16).  
 Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 events · 82 factions · 32 controlled tags · 116 lineage edges · 156 atlas nodes**. The `/zh`, `/ja` and `/en` sites have **1280 static pages**, **487 search entries per language** and **1272 sitemap routes**.
 
 ## 30-second overview
@@ -27,14 +27,14 @@ Current snapshot: **148 machines · 12 eras · 114 characters · 42 works · 69 
 
 > **Scope**: 148 machines — 146 from 11 mainline eras plus 2 A.A. originals — covering mainline and core side stories. This is not a 5,000+ variant catalogue and contains no official artwork.
 
-## What's new in v3.5.0
+## What's new in v3.6.0
 
 | Area | Current state |
 | --- | --- |
-| **C++ physics** | A C++ WebAssembly damped-spring solver owns all 12 joint targets, velocities and recoil; TypeScript only reads and draws the pose |
-| **Real-time aim** | Moving the pointer over the viewer drives head, torso, waist, arms and legs in real time; motion changes apply a C++ impulse |
-| **Blue cockpit** | Deep-space navy surfaces, ice-blue highlights, slate-blue bezels and blue starfields |
-| **No console** | The fixed operation console and its copy are removed; the main display fills the viewport |
+| **C++ walking** | The C++ solver advances a gait phase, leg stride, opposing arm swing, torso counter-rotation and ground-contact root bob |
+| **Real-time aim** | Pointer movement drives head, torso, waist, arms and legs; a `Walk` control and mode changes apply C++ impulses |
+| **Cockpit detail** | Control sticks gain bases, shafts, grips, triggers and thumb buttons; screens, warning lamps and power/comms/weapon buttons are interactive |
+| **Blue cockpit** | Deep-space navy surfaces, ice-blue highlights and blue starfields; no bottom console |
 
 ## How to read the archive
 

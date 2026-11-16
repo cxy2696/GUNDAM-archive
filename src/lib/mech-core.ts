@@ -11,7 +11,10 @@ export type MechCore = {
     pointerX: number,
     pointerY: number,
     enabled: boolean,
+    walking: boolean,
+    speed: number,
   ) => Float32Array;
+  getRoot: () => Float32Array;
   applyImpulse: (amount: number) => void;
   resetPhysics: () => void;
   solveIk: (targetX: number, targetY: number, lengthA: number, lengthB: number) => [number, number] | null;
@@ -20,8 +23,9 @@ export type MechCore = {
 type CoreExports = WebAssembly.Exports & {
   memory: WebAssembly.Memory;
   pose_ptr: () => number;
+  root_ptr: () => number;
   ik_ptr: () => number;
-  step_physics: (mode: number, time: number, dt: number, px: number, py: number, enabled: number) => void;
+  step_physics: (mode: number, time: number, dt: number, px: number, py: number, enabled: number, walking: number, speed: number) => void;
   apply_impulse: (amount: number) => void;
   reset_physics: () => void;
   two_bone_ik: (x: number, y: number, a: number, b: number, out: number) => number;
@@ -40,11 +44,15 @@ export function loadMechCore(): Promise<MechCore | null> {
       const { instance } = await WebAssembly.instantiate(bytes, {});
       const exports = instance.exports as CoreExports;
       const posePtr = exports.pose_ptr();
+      const rootPtr = exports.root_ptr();
       const ikPtr = exports.ik_ptr();
       return {
-        stepPhysics(mode, time, dt, pointerX, pointerY, enabled) {
-          exports.step_physics(mode, time, dt, pointerX, pointerY, enabled ? 1 : 0);
+        stepPhysics(mode, time, dt, pointerX, pointerY, enabled, walking, speed) {
+          exports.step_physics(mode, time, dt, pointerX, pointerY, enabled ? 1 : 0, walking ? 1 : 0, speed);
           return new Float32Array(exports.memory.buffer, posePtr, 36);
+        },
+        getRoot() {
+          return new Float32Array(exports.memory.buffer, rootPtr, 3);
         },
         applyImpulse(amount) {
           exports.apply_impulse(amount);
