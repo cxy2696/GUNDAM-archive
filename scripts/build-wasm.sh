@@ -13,7 +13,8 @@ if [ -z "$WASM_LD" ]; then
 fi
 "$CLANG" --target=wasm32 -O3 -nostdlib -fno-exceptions -fno-rtti -fvisibility=hidden \
   -c engine/mech_core.cpp -o build/mech_core.o
-"$WASM_LD" --no-entry --export=pose_ptr --export=ik_ptr --export=solve_pose \
-  --export=two_bone_ik --export-memory --initial-memory=131072 --max-memory=131072 \
-  --stack-first -o public/mech-core.wasm build/mech_core.o
+"$WASM_LD" --no-entry --export=pose_ptr --export=ik_ptr --export=step_physics \
+  --export=apply_impulse --export=reset_physics --export=two_bone_ik \
+  --export-memory --initial-memory=131072 --max-memory=131072 --stack-first \
+  -o public/mech-core.wasm build/mech_core.o
 ls -lh public/mech-core.wasm

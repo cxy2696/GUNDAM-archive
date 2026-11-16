@@ -134,9 +134,12 @@ export function MechViewer({
     if (!motionEnabled) {
       setMotionEnabled(true);
       setMotion("idle");
+      core?.applyImpulse(0.4);
       return;
     }
-    setMotion((current) => (current === "idle" ? "alert" : current === "alert" ? "boost" : "idle"));
+    const next = motion === "idle" ? "alert" : motion === "alert" ? "boost" : "idle";
+    core?.applyImpulse(next === "boost" ? 1.15 : 0.45);
+    setMotion(next);
   };
 
   const motionLabel =
@@ -164,7 +167,7 @@ export function MechViewer({
           </div>
           <div className="viewer__badges">
             <span>{labels.lodLabel}</span>
-            <span className={`viewer__core ${core ? "is-ready" : ""}`}>{core ? "C++ RIG" : "TS RIG"}</span>
+            <span className={`viewer__core ${core ? "is-ready" : ""}`}>{core ? "C++ PHYSICS" : "TS FALLBACK"}</span>
             <span>{machine.specs.heightOverall ? `${machine.specs.heightOverall.toFixed(1)} M` : "N/A"}</span>
             <span className="viewer__live">
               <i />

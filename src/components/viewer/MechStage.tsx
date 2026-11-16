@@ -414,6 +414,30 @@ function Mech({
   const refs = useRef<Record<string, THREE.Group | null>>({});
   const innerRefs = useRef<Record<string, THREE.Group | null>>({});
   const root = useRef<THREE.Group>(null);
+  const { gl } = useThree();
+  const pointer = useRef({ x: 0, y: 0 });
+
+  useEffect(() => () => core?.resetPhysics(), [core]);
+
+  useEffect(() => {
+    const el = gl.domElement;
+    const onMove = (event: PointerEvent) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+      pointer.current.x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+      pointer.current.y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+    };
+    const onLeave = () => {
+      pointer.current.x = 0;
+      pointer.current.y = 0;
+    };
+    el.addEventListener("pointermove", onMove);
+    el.addEventListener("pointerleave", onLeave);
+    return () => {
+      el.removeEventListener("pointermove", onMove);
+      el.removeEventListener("pointerleave", onLeave);
+    };
+  }, [gl]);
 
   useFrame((state, delta) => {
     const t = state.clock.elapsedTime;
@@ -421,7 +445,14 @@ function Mech({
     const active = motionEnabled ? 1 : 0;
     const boost = motion === "boost" ? 1 : 0;
     const cppPose = core
-      ? core.solvePose(motion === "boost" ? 2 : motion === "alert" ? 1 : 0, t, motionEnabled)
+      ? core.stepPhysics(
+          motion === "boost" ? 2 : motion === "alert" ? 1 : 0,
+          t,
+          delta,
+          pointer.current.x,
+          pointer.current.y,
+          motionEnabled,
+        )
       : null;
     const mocapPose = mocapRef?.current?.sample() ?? null;
     const alert = motion === "alert" ? 1 : 0;
@@ -535,9 +566,13 @@ function Mech({
         );
       }
 
-      inner.rotation.x += (rx - inner.rotation.x) * k;
-      inner.rotation.y += (ry - inner.rotation.y) * k;
-      inner.rotation.z += (rz - inner.rotation.z) * k;
+      if (core && !mocapRotation) {
+        inner.rotation.set(rx, ry, rz);
+      } else {
+        inner.rotation.x += (rx - inner.rotation.x) * k;
+        inner.rotation.y += (ry - inner.rotation.y) * k;
+        inner.rotation.z += (rz - inner.rotation.z) * k;
+      }
     }
   });
 

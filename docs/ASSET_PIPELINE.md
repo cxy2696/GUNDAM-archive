@@ -1,6 +1,6 @@
 # 3D 资产与渲染管线
 
-> 对应方案书第七章。当前 v3.4.0 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第七章。当前 v3.5.0 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. LOD 规范
 
@@ -139,7 +139,7 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 - 未登记授权的图片不得进入构建；`pnpm validate` / review 应拒绝。
 - 当前机体视觉是自绘 SVG 与程序化 LOD-P，不是官方设计图。外部索引只用于事实核对，见 [DATA_SOURCES](DATA_SOURCES.md)。
 
-## 9. 动态活动层（v3.4）
+## 9. 动态活动层（v3.5）
 
 程序化 LOD-P 现在带有一层不依赖外部骨骼动画的运行时活动契约：
 
@@ -149,12 +149,13 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 - 动画只做姿态与特效，不改变机体参数、分件 ID 或 `partId` 悬停契约。接入 glTF LOD0 时，骨骼动画可替换本层，页面接口不变。
 
 
-## 10. C++ WebAssembly 骨架核心（v3.4.0）
+## 10. C++ WebAssembly 骨架核心（v3.5.0）
 
 `engine/mech_core.cpp` 是 freestanding C++，不依赖 libc/libm，由 `scripts/build-wasm.sh` 编译为 `public/mech-core.wasm`：
 
-- `solve_pose(mode, t, enabled)`：输出 12 个部位的关节目标旋转；
-- `two_bone_ik(targetX, targetY, lengthA, lengthB)`：为后续动作重定向提供双骨 IK；
-- 浏览器通过 `src/lib/mech-core.ts` 加载；加载失败时退回 TypeScript 动作层，页面不会中断。
+- `step_physics(mode, t, dt, pointerX, pointerY, enabled)`：主入口。C++ 先计算 12 部位目标，再用阻尼弹簧积分位置与速度；`pointerX/Y` 为画布归一化坐标，驱动头部、躯干、腰、手臂和腿部的实时跟随。
+- `apply_impulse(amount)`：动作模式切换时向头、胸、手臂和腿部注入一次反向冲量。
+- `reset_physics()`：清空积分状态，组件卸载或重置视角时调用。
+- `two_bone_ik(targetX, targetY, lengthA, lengthB)`：为 BVH 动作重定向提供双骨 IK。
 
-WebGL 绘制仍由 Three.js 执行；C++ 负责骨架目标、IK 与可复现的关节物理，不替代浏览器的图形 API。BVH 动作由 `src/lib/bvh.ts` 解析并在同一骨架上重定向。
+浏览器通过 `src/lib/mech-core.ts` 加载；加载失败时退回 TypeScript 动作层，页面不会中断。WebGL 绘制仍由 Three.js 执行；C++ 负责关节动力学、回弹、指向交互与 IK，不替代浏览器的图形 API。BVH 动作由 `src/lib/bvh.ts` 解析并在同一骨架上重定向。

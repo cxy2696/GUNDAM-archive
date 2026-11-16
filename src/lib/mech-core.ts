@@ -4,7 +4,16 @@
  * keeps its TypeScript fallback so the page never hard-fails.
  */
 export type MechCore = {
-  solvePose: (mode: 0 | 1 | 2, time: number, enabled: boolean) => Float32Array;
+  stepPhysics: (
+    mode: 0 | 1 | 2,
+    time: number,
+    dt: number,
+    pointerX: number,
+    pointerY: number,
+    enabled: boolean,
+  ) => Float32Array;
+  applyImpulse: (amount: number) => void;
+  resetPhysics: () => void;
   solveIk: (targetX: number, targetY: number, lengthA: number, lengthB: number) => [number, number] | null;
 };
 
@@ -12,7 +21,9 @@ type CoreExports = WebAssembly.Exports & {
   memory: WebAssembly.Memory;
   pose_ptr: () => number;
   ik_ptr: () => number;
-  solve_pose: (mode: number, time: number, enabled: number) => void;
+  step_physics: (mode: number, time: number, dt: number, px: number, py: number, enabled: number) => void;
+  apply_impulse: (amount: number) => void;
+  reset_physics: () => void;
   two_bone_ik: (x: number, y: number, a: number, b: number, out: number) => number;
 };
 
@@ -31,9 +42,15 @@ export function loadMechCore(): Promise<MechCore | null> {
       const posePtr = exports.pose_ptr();
       const ikPtr = exports.ik_ptr();
       return {
-        solvePose(mode, time, enabled) {
-          exports.solve_pose(mode, time, enabled ? 1 : 0);
+        stepPhysics(mode, time, dt, pointerX, pointerY, enabled) {
+          exports.step_physics(mode, time, dt, pointerX, pointerY, enabled ? 1 : 0);
           return new Float32Array(exports.memory.buffer, posePtr, 36);
+        },
+        applyImpulse(amount) {
+          exports.apply_impulse(amount);
+        },
+        resetPhysics() {
+          exports.reset_physics();
         },
         solveIk(targetX, targetY, lengthA, lengthB) {
           const ok = exports.two_bone_ik(targetX, targetY, lengthA, lengthB, ikPtr);

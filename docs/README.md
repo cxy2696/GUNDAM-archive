@@ -3,7 +3,7 @@
 [中文](README.md) ｜ [English](README.en.md)
 
 > 文档按“唯一职责”维护，避免同一事实在多处漂移。  
-> 当前发布：v3.4.0 · 2026-11-16。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
+> 当前发布：v3.5.0 · 2026-11-16。第一次来先读 [CHRONOLOGY](CHRONOLOGY.md) 的一分钟版。
 
 ## 1. 权威顺序
 
