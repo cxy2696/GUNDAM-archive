@@ -1,7 +1,7 @@
-# 设计系统 · v3.6 深空蓝座舱
+# 设计系统 · v3.7 深空蓝座舱
 
 > 视觉规则只维护在这一页。实现位置：Token 在 `src/app/globals.css`，座舱在 `src/styles/cockpit.css`，蓝色星层与座舱覆盖在 `src/styles/tactical.css`，缩放/图谱在 `zoom.css`、`graph.css`、`atlas.css`、`era-demo.css`、`tag-map.css`。  
-> 改 Token 或组件规则时，同步本页与 `docs/ARCHITECTURE.md` 的“v3.6 动态战术座舱”一节。
+> 改 Token 或组件规则时，同步本页与 `docs/ARCHITECTURE.md` 的“v3.7 动态战术座舱”一节。
 
 ## 1. 原则
 

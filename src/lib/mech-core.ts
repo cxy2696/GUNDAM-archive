@@ -13,6 +13,7 @@ export type MechCore = {
     enabled: boolean,
     walking: boolean,
     speed: number,
+    crouching: boolean,
   ) => Float32Array;
   getRoot: () => Float32Array;
   applyImpulse: (amount: number) => void;
@@ -25,7 +26,7 @@ type CoreExports = WebAssembly.Exports & {
   pose_ptr: () => number;
   root_ptr: () => number;
   ik_ptr: () => number;
-  step_physics: (mode: number, time: number, dt: number, px: number, py: number, enabled: number, walking: number, speed: number) => void;
+  step_physics: (mode: number, time: number, dt: number, px: number, py: number, enabled: number, walking: number, speed: number, crouching: number) => void;
   apply_impulse: (amount: number) => void;
   reset_physics: () => void;
   two_bone_ik: (x: number, y: number, a: number, b: number, out: number) => number;
@@ -46,13 +47,25 @@ export function loadMechCore(): Promise<MechCore | null> {
       const posePtr = exports.pose_ptr();
       const rootPtr = exports.root_ptr();
       const ikPtr = exports.ik_ptr();
+      const poseView = new Float32Array(exports.memory.buffer, posePtr, 48);
+      const rootView = new Float32Array(exports.memory.buffer, rootPtr, 3);
       return {
-        stepPhysics(mode, time, dt, pointerX, pointerY, enabled, walking, speed) {
-          exports.step_physics(mode, time, dt, pointerX, pointerY, enabled ? 1 : 0, walking ? 1 : 0, speed);
-          return new Float32Array(exports.memory.buffer, posePtr, 36);
+        stepPhysics(mode, time, dt, pointerX, pointerY, enabled, walking, speed, crouching) {
+          exports.step_physics(
+            mode,
+            time,
+            dt,
+            pointerX,
+            pointerY,
+            enabled ? 1 : 0,
+            walking ? 1 : 0,
+            speed,
+            crouching ? 1 : 0,
+          );
+          return poseView;
         },
         getRoot() {
-          return new Float32Array(exports.memory.buffer, rootPtr, 3);
+          return rootView;
         },
         applyImpulse(amount) {
           exports.apply_impulse(amount);

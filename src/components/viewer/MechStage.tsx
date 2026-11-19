@@ -13,7 +13,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import type { Machine } from "@/lib/schema";
-import { buildMech, getThrusterAnchors, type ColorKey, type MechPart, type MotionMode, type Piece, type Vec3 } from "./model";
+import { buildMech, getThrusterAnchors, type ColorKey, type JointId, type MechPart, type MotionMode, type Piece, type Vec3 } from "./model";
 import type { MechCore } from "@/lib/mech-core";
 import type { BvhPlayback, BvhPose } from "@/lib/bvh";
 
@@ -370,7 +370,7 @@ const MOCAP_PART: Partial<Record<MechPart["id"], keyof BvhPose>> = {
   leg_r: "leg_r",
 };
 
-const PART_INDEX: Record<MechPart["id"], number> = {
+const PART_INDEX: Record<MechPart["id"] | JointId, number> = {
   head: 0,
   torso: 1,
   waist: 2,
@@ -383,6 +383,10 @@ const PART_INDEX: Record<MechPart["id"], number> = {
   backpack: 9,
   weapon: 10,
   shield: 11,
+  forearm_l: 12,
+  forearm_r: 13,
+  knee_l: 14,
+  knee_r: 15,
 };
 
 function Mech({
@@ -398,6 +402,7 @@ function Mech({
   mocapRef,
   walking,
   walkSpeed,
+  crouching,
 }: {
   machine: Machine;
   explode: number;
@@ -411,12 +416,14 @@ function Mech({
   mocapRef?: React.RefObject<BvhPlayback | null>;
   walking: boolean;
   walkSpeed: number;
+  crouching: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
   const scale = height / 18;
   const parts = useMemo(() => buildMech(machine.viewer), [machine.viewer]);
   const refs = useRef<Record<string, THREE.Group | null>>({});
   const innerRefs = useRef<Record<string, THREE.Group | null>>({});
+  const jointRefs = useRef<Record<string, THREE.Group | null>>({});
   const root = useRef<THREE.Group>(null);
   const { gl } = useThree();
   const pointer = useRef({ x: 0, y: 0 });
@@ -458,6 +465,7 @@ function Mech({
           motionEnabled,
           walking,
           walkSpeed,
+          crouching,
         )
       : null;
     const mocapPose = mocapRef?.current?.sample() ?? null;
@@ -587,6 +595,24 @@ function Mech({
         inner.rotation.z += (rz - inner.rotation.z) * k;
       }
     }
+
+    for (const part of parts) {
+      for (const joint of part.joints ?? []) {
+        const jointGroup = jointRefs.current[joint.id];
+        if (!jointGroup) continue;
+        const base = PART_INDEX[joint.id] * 3;
+        const rx = cppPose ? cppPose[base] : joint.id.startsWith("forearm") ? 0.1 : -0.13;
+        const ry = cppPose ? cppPose[base + 1] : 0;
+        const rz = cppPose ? cppPose[base + 2] : 0;
+        if (core) {
+          jointGroup.rotation.set(rx, ry, rz);
+        } else {
+          jointGroup.rotation.x += (rx - jointGroup.rotation.x) * k;
+          jointGroup.rotation.y += (ry - jointGroup.rotation.y) * k;
+          jointGroup.rotation.z += (rz - jointGroup.rotation.z) * k;
+        }
+      }
+    }
   });
 
   return (
@@ -623,6 +649,28 @@ function Mech({
                     quantum={quantum}
                     wireframe={wireframe}
                   />
+                ))}
+                {part.joints?.map((joint) => (
+                  <group
+                    key={joint.id}
+                    position={joint.pivot}
+                    ref={(node) => {
+                      jointRefs.current[joint.id] = node;
+                    }}
+                  >
+                    <group position={[-joint.pivot[0], -joint.pivot[1], -joint.pivot[2]]}>
+                      {joint.pieces.map((piece, index) => (
+                        <PieceMesh
+                          key={`${joint.id}-${index}`}
+                          piece={piece}
+                          colors={machine.viewer.colors}
+                          active={hovered === part.id}
+                          quantum={quantum}
+                          wireframe={wireframe}
+                        />
+                      ))}
+                    </group>
+                  </group>
                 ))}
               </group>
             </group>
@@ -854,6 +902,7 @@ function StageScene({
   mocapRef,
   walking,
   walkSpeed,
+  crouching,
   transparent = false,
 }: {
   machine: Machine;
@@ -871,6 +920,7 @@ function StageScene({
   mocapRef?: React.RefObject<BvhPlayback | null>;
   walking: boolean;
   walkSpeed: number;
+  crouching: boolean;
   transparent?: boolean;
 }) {
   const height = machine.specs.heightOverall ?? 18;
@@ -920,6 +970,7 @@ function StageScene({
         mocapRef={mocapRef}
         walking={walking}
         walkSpeed={walkSpeed}
+        crouching={crouching}
       />
 
       <ScanSweep height={height} />
@@ -1033,6 +1084,7 @@ export function MechStage({
   mocapRef,
   walking = false,
   walkSpeed = 1,
+  crouching = false,
   className = "",
   transparent = false,
 }: {
@@ -1052,6 +1104,7 @@ export function MechStage({
   mocapRef?: React.RefObject<BvhPlayback | null>;
   walking?: boolean;
   walkSpeed?: number;
+  crouching?: boolean;
   className?: string;
   transparent?: boolean;
 }) {
@@ -1086,6 +1139,7 @@ export function MechStage({
         mocapRef={mocapRef}
         walking={walking}
         walkSpeed={walkSpeed}
+        crouching={crouching}
         transparent={transparent}
       />
     </Canvas>

@@ -1,5 +1,5 @@
 /*
- * GUNDAM Archive — C++ simulation core (v3.6.0)
+ * GUNDAM Archive — C++ simulation core (v3.7.0)
  *
  * Freestanding WebAssembly module. It owns:
  *   - 12-part joint targets for Idle / Alert / Boost
@@ -13,7 +13,7 @@
 extern "C" {
 
 constexpr float PI = 3.14159265358979323846f;
-constexpr int PART_COUNT = 12;
+constexpr int PART_COUNT = 16;
 constexpr int VALUE_COUNT = PART_COUNT * 3;
 
 static float target[VALUE_COUNT];
@@ -23,6 +23,7 @@ static float rootOut[3];
 static float ikOut[2];
 static float gaitPhase = 0.0f;
 static float walkBlend = 0.0f;
+static float crouchBlend = 0.0f;
 static int initialized = 0;
 
 static inline float absf(float x) { return x < 0 ? -x : x; }
@@ -88,12 +89,12 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
   target[2] = active * px * -0.035f;
 
   // 1 torso follows the pointer at a smaller angle
-  target[3] = active * (idle * fsin(t * 0.44f + 1.1f) * 0.006f + alert * 0.012f + boost * 0.02f + py * 0.018f);
+  target[3] = active * (idle * fsin(t * 0.44f + 1.1f) * 0.006f + alert * 0.012f + boost * 0.02f + py * 0.018f + crouchBlend * 0.16f);
   target[4] = active * (idle * fsin(t * 0.31f + 0.7f) * 0.012f + alert * fsin(t * 1.05f) * 0.03f + boost * -0.025f + px * 0.075f);
   target[5] = active * px * -0.018f;
 
   // 2 waist
-  target[6] = 0.0f;
+  target[6] = active * (idle * 0.008f + alert * 0.025f + boost * 0.045f + py * 0.02f + crouchBlend * 0.22f);
   target[7] = active * (idle * fsin(t * 0.29f + 1.4f) * 0.006f + boost * 0.012f + px * 0.025f);
   target[8] = 0.0f;
 
@@ -121,6 +122,14 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
   target[25] = 0.0f;
   target[26] = active * boost * 0.018f + px * 0.008f;
 
+  // 12/13 elbows and 14/15 knees (children of arms/legs)
+  const float elbowBend = 0.10f + alert * 0.08f + boost * 0.12f + walkBlend * 0.12f + crouchBlend * 0.26f;
+  const float kneeBend = -0.13f - alert * 0.08f - boost * 0.10f - walkBlend * 0.16f - crouchBlend * 0.38f;
+  target[36] = active * elbowBend;
+  target[39] = active * elbowBend;
+  target[42] = active * kneeBend;
+  target[45] = active * kneeBend;
+
   // 9 backpack
   target[27] = active * (idle * fsin(t * 6.5f) * 0.0015f + alert * fsin(t * 8.5f) * 0.0025f + boost * fsin(t * 25.0f) * 0.007f);
   target[28] = 0.0f;
@@ -144,6 +153,10 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
     target[18] -= swing * 0.24f * walkBlend;
     target[21] += swing * 0.32f * walkBlend;
     target[24] -= swing * 0.32f * walkBlend;
+    target[36] += (0.16f + 0.08f * swing) * walkBlend;
+    target[39] += (0.16f - 0.08f * swing) * walkBlend;
+    target[42] -= (0.12f + 0.18f * (0.5f + 0.5f * swing)) * walkBlend;
+    target[45] -= (0.12f + 0.18f * (0.5f - 0.5f * swing)) * walkBlend;
     target[4] += swing * 0.055f * walkBlend;
     target[7] += swing * 0.035f * walkBlend;
   }
@@ -154,10 +167,12 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
  * substeps for stability without a heap or libm.
  */
 __attribute__((export_name("step_physics"))) void step_physics(
-    int mode, float t, float dt, float pointerX, float pointerY, int enabled, int walking, float speed) {
+    int mode, float t, float dt, float pointerX, float pointerY, int enabled, int walking, float speed, int crouching) {
   const float clampedDt = clampf(dt, 0.001f, 0.05f);
   const float walkTarget = (enabled && walking) ? 1.0f : 0.0f;
   walkBlend += (walkTarget - walkBlend) * clampf(clampedDt * 5.0f, 0.0f, 1.0f);
+  const float crouchTarget = (enabled && crouching) ? 1.0f : 0.0f;
+  crouchBlend += (crouchTarget - crouchBlend) * clampf(clampedDt * 4.5f, 0.0f, 1.0f);
   if (walkBlend > 0.001f) {
     gaitPhase += clampedDt * clampf(speed, 0.4f, 2.2f) * 4.2f;
     if (gaitPhase > PI * 2.0f) gaitPhase -= PI * 2.0f;
@@ -187,7 +202,7 @@ __attribute__((export_name("step_physics"))) void step_physics(
   }
   const float swing = fsin(gaitPhase);
   rootOut[0] = swing * 0.035f * walkBlend;
-  rootOut[1] = (1.0f - fcos(gaitPhase * 2.0f)) * 0.022f * walkBlend;
+  rootOut[1] = (1.0f - fcos(gaitPhase * 2.0f)) * 0.022f * walkBlend - crouchBlend * 0.14f;
   rootOut[2] = -swing * 0.018f * walkBlend;
 }
 
@@ -201,12 +216,17 @@ __attribute__((export_name("apply_impulse"))) void apply_impulse(float amount) {
   velocity[18] -= a * 0.35f;
   velocity[21] += a * 0.25f;
   velocity[24] -= a * 0.25f;
+  velocity[36] += a * 0.25f;
+  velocity[39] -= a * 0.25f;
+  velocity[42] -= a * 0.3f;
+  velocity[45] += a * 0.3f;
 }
 
 __attribute__((export_name("reset_physics"))) void reset_physics() {
   initialized = 0;
   gaitPhase = 0.0f;
   walkBlend = 0.0f;
+  crouchBlend = 0.0f;
   rootOut[0] = rootOut[1] = rootOut[2] = 0.0f;
   for (int i = 0; i < VALUE_COUNT; i++) {
     pose[i] = 0.0f;

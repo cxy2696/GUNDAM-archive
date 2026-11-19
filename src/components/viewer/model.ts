@@ -16,6 +16,17 @@ export type Piece = {
   points?: [number, number][];
 };
 
+export type JointId = "forearm_l" | "forearm_r" | "knee_l" | "knee_r";
+
+export type MechJoint = {
+  id: JointId;
+  /** Rotation axis for the elbow / knee bend. */
+  axis: Vec3;
+  /** Joint centre in model space. */
+  pivot: Vec3;
+  pieces: Piece[];
+};
+
 export type MechPart = {
   id:
     | "head"
@@ -35,6 +46,8 @@ export type MechPart = {
   /** Joint centre used by the idle/alert/boost animation. */
   pivot: Vec3;
   pieces: Piece[];
+  /** Child joints that bend inside this part (elbow / knee). */
+  joints?: MechJoint[];
 };
 
 export type MotionMode = "idle" | "alert" | "boost";
@@ -216,7 +229,15 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       axis: [side * 0.42, -1, 0],
       order: 0.75,
       pivot: [x, 9.55, 0],
-      pieces,
+      pieces: pieces.slice(0, 7),
+      joints: [
+        {
+          id: side === -1 ? "knee_l" : "knee_r",
+          axis: [side, 0, 0],
+          pivot: [x, 5.62, 0],
+          pieces: pieces.slice(7),
+        },
+      ],
     });
   }
 
@@ -347,24 +368,33 @@ export function buildMech(config: ViewerConfig): MechPart[] {
   /* ---------------- arms ---------------- */
   for (const side of [-1, 1] as const) {
     const x = side * (chestW / 2 + 1.25);
+    const armPieces: Piece[] = [
+      sphere(0.58, [x, 12.1, 0], "frame"),
+      box([0.92, 2.3, 0.95], [x, 10.9, 0], "frame"),
+      box([1.12, 1.2, 1.2], [x, 9.65, 0], "primary"),
+      sphere(0.5, [x, 9.3, 0], "frame"),
+      box([1.18, 2.2, 1.3], [x, 8.3, 0.06], "primary"),
+      box([0.9, 1.3, 0.12], [x, 8.35, 0.74], "secondary"),
+      box([0.3, 0.9, 0.08], [x, 8.3, 0.8], "accent"),
+      box([0.66, 0.62, 0.58], [x, 7.0, 0.1], "frame"),
+      box([0.62, 0.14, 0.14], [x, 9.1, 0.72], "accent"),
+      box([0.5, 0.5, 0.14], [x, 8.55, 0.83], "frame"),
+      box([0.14, 0.7, 0.14], [x + side * 0.62, 8.4, 0.35], "accent"),
+      sphere(0.18, [x, 7.0, 0.44], "frame"),
+    ];
     parts.push({
       id: side === -1 ? "arm_l" : "arm_r",
       axis: [side, 0.1, 0],
       order: 1.35,
       pivot: [x, 12.1, 0],
-      pieces: [
-        sphere(0.58, [x, 12.1, 0], "frame"),
-        box([0.92, 2.3, 0.95], [x, 10.9, 0], "frame"),
-        box([1.12, 1.2, 1.2], [x, 9.65, 0], "primary"),
-        sphere(0.5, [x, 9.3, 0], "frame"),
-        box([1.18, 2.2, 1.3], [x, 8.3, 0.06], "primary"),
-        box([0.9, 1.3, 0.12], [x, 8.35, 0.74], "secondary"),
-        box([0.3, 0.9, 0.08], [x, 8.3, 0.8], "accent"),
-        box([0.66, 0.62, 0.58], [x, 7.0, 0.1], "frame"),
-        box([0.62, 0.14, 0.14], [x, 9.1, 0.72], "accent"),
-        box([0.5, 0.5, 0.14], [x, 8.55, 0.83], "frame"),
-        box([0.14, 0.7, 0.14], [x + side * 0.62, 8.4, 0.35], "accent"),
-        sphere(0.18, [x, 7.0, 0.44], "frame"),
+      pieces: armPieces.slice(0, 4),
+      joints: [
+        {
+          id: side === -1 ? "forearm_l" : "forearm_r",
+          axis: [side, 0, 0],
+          pivot: [x, 9.3, 0],
+          pieces: [...armPieces.slice(4, 8), ...armPieces.slice(8)],
+        },
       ],
     });
   }
@@ -696,6 +726,17 @@ export function buildMech(config: ViewerConfig): MechPart[] {
       box([0.18, 0.12, 0.4], [3.5, 8.6, 1.72], "accent"),
       cyl([0.1, 0.1, 0.2], [3.5, 7.72, 0.55], "frame", [Math.PI / 2, 0, 0]),
     ]);
+  }
+
+  // Re-split after the universal detail pass. Details added later are
+  // authored in model space, so route them to the elbow/knee child by height.
+  for (const part of parts) {
+    const joint = part.joints?.[0];
+    if (!joint) continue;
+    const cutoff = part.id === "arm_l" || part.id === "arm_r" ? 9.3 : 5.62;
+    const all = [...part.pieces, ...joint.pieces];
+    part.pieces = all.filter((piece) => piece.pos[1] >= cutoff);
+    joint.pieces = all.filter((piece) => piece.pos[1] < cutoff);
   }
 
   return parts;

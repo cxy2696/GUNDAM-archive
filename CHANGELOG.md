@@ -1,18 +1,24 @@
 # Changelog
 
-## [3.6.0] — 2026-11-17
+## [3.7.0] — 2026-11-19
 
-### C++ walking and interaction
+### Jointed model
 
-- Added a C++ gait controller: leg stride, opposing arm swing, torso counter-rotation and a ground-contact root bob are advanced by the physics step.
-- Added `root_ptr()`; the renderer applies C++ sway, bob and lean instead of a separate JavaScript oscillation.
-- Added a `Walk` control in the viewer. Motion mode changes and walk toggles inject a C++ recoil impulse.
+- Split every arm and leg into a parent limb plus a child forearm / shin joint, giving all 148 machines separate elbow and knee pivots.
+- Added C++ elbow and knee targets, so idle, alert, boost, walk and crouch all bend the joints instead of rotating a rigid limb.
+- Added a `Bend` control backed by a C++ crouch blend: waist lean, torso flex, elbow bend, knee bend and root drop.
+- Reclassified the universal detail kit by joint height, so later-added mechanical detail follows the correct upper/lower segment.
 
-### Cockpit detail
+### C++ performance
 
-- Rebuilt the control sticks with a base, shaft, grip, trigger and thumb button.
-- Added dedicated power/comms/weapon console buttons with active lights; the same state is available in the cockpit overlay and powers the screens.
-- Added more display bezels, warning lamps and switch detail around the main console.
+- The physics state now covers 48 joint values, integrated in two fixed substeps with per-joint stiffness/damping.
+- Cached the WASM pose and root views in the browser bridge; per-frame stepping no longer allocates typed arrays.
+- Pointer-driven aim, walk, crouch and recoil all run through the same C++ solver.
+
+### Cockpit
+
+- Control sticks rebuilt with base, shaft, grip, trigger and thumb button.
+- Added power/comms/weapon buttons with active lights, screen bezels, warning lamps and a WebGL fallback to the 2D blueprint.
 
 ### Current snapshot
 

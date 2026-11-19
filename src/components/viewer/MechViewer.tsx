@@ -66,6 +66,7 @@ export function MechViewer({
   const [motion, setMotion] = useState<MotionMode>("idle");
   const [motionEnabled, setMotionEnabled] = useState(true);
   const [walking, setWalking] = useState(false);
+  const [crouching, setCrouching] = useState(false);
   const [walkSpeed] = useState(1);
   const [core, setCore] = useState<MechCore | null>(null);
   const mocapRef = useRef<BvhPlayback | null>(null);
@@ -153,6 +154,7 @@ export function MechViewer({
       data-viewer-ready={ready ? "true" : "false"}
       data-motion={motionEnabled ? motion : "off"}
       data-walk={walking ? "on" : "off"}
+      data-bend={crouching ? "on" : "off"}
       data-core={core ? "cpp" : "ts"}
     >
       <div className="viewer__frame" aria-hidden>
@@ -201,6 +203,7 @@ export function MechViewer({
                 mocapRef={mocapRef}
                 walking={walking}
                 walkSpeed={walkSpeed}
+                crouching={crouching}
                 transparent={hero}
               />
             </ViewerBoundary>
@@ -327,6 +330,19 @@ export function MechViewer({
                 title={labels.walkHint}
               >
                 {labels.walk} · {walking ? "ON" : "OFF"}
+              </button>
+              <button
+                type="button"
+                className={crouching ? "is-active" : ""}
+                onClick={() => {
+                  setCrouching((value) => !value);
+                  core?.applyImpulse(0.35);
+                }}
+                aria-pressed={crouching}
+                aria-label={labels.bendHint}
+                title={labels.bendHint}
+              >
+                {labels.bend} · {crouching ? "ON" : "OFF"}
               </button>
               <button
                 type="button"

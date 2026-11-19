@@ -1,6 +1,6 @@
 # 3D 资产与渲染管线
 
-> 对应方案书第七章。当前 v3.6.0 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第七章。当前 v3.7.0 仍交付 **LOD-P（程序化占位）**；本文同时定义未来 glTF LOD0 的接入契约，确保换资产不改页面代码。发布与回滚见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. LOD 规范
 
@@ -139,22 +139,23 @@ V1 仓库未包含 Blender 脚本与真实模型；流水线目录与脚本在 M
 - 未登记授权的图片不得进入构建；`pnpm validate` / review 应拒绝。
 - 当前机体视觉是自绘 SVG 与程序化 LOD-P，不是官方设计图。外部索引只用于事实核对，见 [DATA_SOURCES](DATA_SOURCES.md)。
 
-## 9. 动态活动层（v3.6）
+## 9. 动态活动层（v3.7）
 
 程序化 LOD-P 现在带有一层不依赖外部骨骼动画的运行时活动契约：
 
-- 每个 `MechPart` 有 `pivot`。查看器以 pivot 为旋转中心，让头、躯干、肩、臂、腿、背包、武器和盾牌分别做待机/警戒/推进动作。
+- 每个 `MechPart` 有 `pivot`；手臂和腿另有 `joints` 子关节（`forearm_*` / `knee_*`）。查看器以真实关节为旋转中心，上下段可以独立屈曲。
 - `MotionMode = idle | alert | boost` 由查看器控制。`idle` 是呼吸与扫描，`alert` 加快头部追踪，`boost` 前倾并加强推进效果。
 - 推进器位置由 `getThrusterAnchors(viewer)` 从现有 `backpack` 配置推导；`funnel` 背包额外生成浮游炮环绕，`saber` 武器生成辉光，所有机体共享地面扫描环与尘埃粒子。
 - 动画只做姿态与特效，不改变机体参数、分件 ID 或 `partId` 悬停契约。接入 glTF LOD0 时，骨骼动画可替换本层，页面接口不变。
 
 
-## 10. C++ WebAssembly 骨架核心（v3.6.0）
+## 10. C++ WebAssembly 骨架核心（v3.7.0）
 
 `engine/mech_core.cpp` 是 freestanding C++，不依赖 libc/libm，由 `scripts/build-wasm.sh` 编译为 `public/mech-core.wasm`：
 
-- `step_physics(mode, t, dt, pointerX, pointerY, enabled, walking, speed)`：主入口。C++ 计算 12 部位目标、步态相位和阻尼弹簧积分；`pointerX/Y` 驱动实时跟随，`walking/speed` 驱动摆臂、迈步、躯干扭转与接地起伏。
-- `root_ptr()`：输出行走时的横向摆动、接地上下和身体侧倾，渲染器直接读取，不再由 JavaScript 伪造步态。
+- `step_physics(mode, t, dt, pointerX, pointerY, enabled, walking, speed, crouching)`：主入口。C++ 计算 16 部位（含肘/膝）目标、步态相位、屈身混合和阻尼弹簧积分；`pointerX/Y` 驱动实时跟随。
+- `root_ptr()`：输出行走/屈身时的横向摆动、接地上下和身体侧倾，渲染器直接读取，不再由 JavaScript 伪造步态。
+- 浏览器侧缓存 `pose` 与 `root` 的 TypedArray 视图，每帧只读取同一块 WASM 内存。
 - `apply_impulse(amount)`：动作模式切换时向头、胸、手臂和腿部注入一次反向冲量。
 - `reset_physics()`：清空积分状态，组件卸载或重置视角时调用。
 - `two_bone_ik(targetX, targetY, lengthA, lengthB)`：为 BVH 动作重定向提供双骨 IK。
