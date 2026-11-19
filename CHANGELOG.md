@@ -1,24 +1,13 @@
 # Changelog
 
-## [3.7.0] — 2026-11-19
+## [3.7.1] — 2026-11-19
 
-### Jointed model
+### Fixed
 
-- Split every arm and leg into a parent limb plus a child forearm / shin joint, giving all 148 machines separate elbow and knee pivots.
-- Added C++ elbow and knee targets, so idle, alert, boost, walk and crouch all bend the joints instead of rotating a rigid limb.
-- Added a `Bend` control backed by a C++ crouch blend: waist lean, torso flex, elbow bend, knee bend and root drop.
-- Reclassified the universal detail kit by joint height, so later-added mechanical detail follows the correct upper/lower segment.
-
-### C++ performance
-
-- The physics state now covers 48 joint values, integrated in two fixed substeps with per-joint stiffness/damping.
-- Cached the WASM pose and root views in the browser bridge; per-frame stepping no longer allocates typed arrays.
-- Pointer-driven aim, walk, crouch and recoil all run through the same C++ solver.
-
-### Cockpit
-
-- Control sticks rebuilt with base, shaft, grip, trigger and thumb button.
-- Added power/comms/weapon buttons with active lights, screen bezels, warning lamps and a WebGL fallback to the 2D blueprint.
+- Corrected the elbow and knee rotation direction. The model faces +Z, so +X moves a downward segment toward -Z; elbows now flex negative (forward) and knees positive (heel back).
+- Synced the walk, crouch, recoil impulse and no-WebAssembly fallback joint signs.
+- Corrected the cockpit seat orientation: the backrest and headrest now sit behind the cushion at +Z, so the pilot faces the console and screens at -Z. The inspection camera moved to a side view so the interior remains readable.
+- Verified idle elbows at `-0.100 rad`, knees at `+0.130 rad`; crouch elbows at `-0.359 rad`, knees at `+0.509 rad`.
 
 ### Current snapshot
 

@@ -1,6 +1,6 @@
 # 架构与决策记录
 
-> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.7）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
+> 对应方案书第二章、第四章、第五章。本文记录 **当前实现（v3.7.1）** 与 **目标架构** 的差异，避免把路线图误读成现状。运营步骤见 [OPERATIONS](OPERATIONS.md)。
 
 ## 1. 约束与目标
 
@@ -154,7 +154,7 @@ MechViewer (client)
 
 迁移不需要改页面组件、查看器或 schema；只需要换 `content.ts` 的实现与部署方式。
 
-## 12. v3.7 动态查看器、座舱皮肤与关系图
+## 12. v3.7.1 动态查看器、座舱皮肤与关系图
 
 - **座舱外壳**：`src/styles/cockpit.css` 与 `glass.css` 定义毛玻璃白框、舱盖背景、侧 MFD 与可收起操纵台；`CockpitRails` 只在 ≥1760px 显示，`CockpitConsole` 在 ≤980px 变为抽屉。外壳不改变页面 DOM 契约，页面仍按原 `container` 排版。
 - **宇宙地图**：`content/atlas.json` 是唯一数据源，`src/lib/geo.ts` 负责 2D 正交投影与 3D 坐标，`Atlas2D` 用 SVG，`Atlas3D` 用 R3F + CanvasTexture 生成地球贴图；二者共享同一批节点与选中状态。2D 的 Lagrange 位置由 `lagrangeOrbit()` 从地月几何推导，表面点由 `globePoint()` 投影；3D 只把距离压缩，不改变归属。

@@ -210,17 +210,17 @@ function CockpitScene({
       </group>
 
       <group onClick={select("seat")}>
-        <RoundedBox args={[1.25, 0.22, 1.15]} radius={0.12} position={[0, 0.86, 0.35]} castShadow>
+        <RoundedBox args={[1.25, 0.22, 1.15]} radius={0.12} position={[0, 0.86, 0.45]} castShadow>
           <meshStandardMaterial color="#6d8fb8" metalness={0.38} roughness={0.38} />
         </RoundedBox>
-        <RoundedBox args={[1.1, 1.6, 0.24]} radius={0.12} position={[0, 1.62, -0.15]} rotation={[-0.16, 0, 0]} castShadow>
+        <RoundedBox args={[1.1, 1.6, 0.24]} radius={0.12} position={[0, 1.62, 1.0]} rotation={[0.16, 0, 0]} castShadow>
           <meshStandardMaterial color="#4e6f8f" metalness={0.38} roughness={0.4} />
         </RoundedBox>
-        <RoundedBox args={[0.72, 0.38, 0.25]} radius={0.1} position={[0, 2.45, -0.2]} castShadow>
+        <RoundedBox args={[0.72, 0.38, 0.25]} radius={0.1} position={[0, 2.45, 1.06]} rotation={[0.16, 0, 0]} castShadow>
           <meshStandardMaterial color="#53769a" metalness={0.45} roughness={0.38} />
         </RoundedBox>
         {[-0.78, 0.78].map((x) => (
-          <RoundedBox key={x} args={[0.24, 0.2, 1.2]} radius={0.06} position={[x, 1.04, 0.3]} castShadow>
+          <RoundedBox key={x} args={[0.24, 0.2, 1.2]} radius={0.06} position={[x, 1.04, 0.5]} castShadow>
             <meshStandardMaterial color="#405a7a" metalness={0.5} roughness={0.34} />
           </RoundedBox>
         ))}
@@ -317,7 +317,7 @@ function CockpitScene({
       {labels && (
         <group>
           {([
-            ["seat", [0, 2.1, 0.9]],
+            ["seat", [0, 2.1, 1.5]],
             ["console", [0, 1.25, -2.2]],
             ["canopy", [0, 3.8, 0]],
           ] as const).map(([part, position]) => (
@@ -329,7 +329,7 @@ function CockpitScene({
         </group>
       )}
 
-      <OrbitControls target={[0, 1.5, 0]} enablePan={false} minDistance={3.2} maxDistance={9.5} maxPolarAngle={Math.PI * 0.78} autoRotate={autoRotate} autoRotateSpeed={0.55} />
+      <OrbitControls target={[0, 1.4, -0.2]} enablePan={false} minDistance={3.2} maxDistance={9.5} maxPolarAngle={Math.PI * 0.78} autoRotate={autoRotate} autoRotateSpeed={0.55} />
     </>
   );
 }
@@ -387,7 +387,7 @@ export default function CockpitViewer({ lang, dict }: { lang: Lang; dict: Dictio
                 <Blueprint labels={labelsMap} selected={selected} onSelect={setSelected} />
               }
             >
-              <Canvas camera={{ position: [4.9, 3.5, 5.8], fov: 44 }} shadows dpr={[1, 1.6]} gl={{ antialias: true }}>
+              <Canvas camera={{ position: [6.4, 3.4, 0.6], fov: 44 }} shadows dpr={[1, 1.6]} gl={{ antialias: true }}>
                 <CockpitScene
                   open={open}
                   labels={labels}

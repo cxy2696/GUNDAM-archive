@@ -1,5 +1,5 @@
 /*
- * GUNDAM Archive — C++ simulation core (v3.7.0)
+ * GUNDAM Archive — C++ simulation core (v3.7.1)
  *
  * Freestanding WebAssembly module. It owns:
  *   - 12-part joint targets for Idle / Alert / Boost
@@ -123,8 +123,10 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
   target[26] = active * boost * 0.018f + px * 0.008f;
 
   // 12/13 elbows and 14/15 knees (children of arms/legs)
-  const float elbowBend = 0.10f + alert * 0.08f + boost * 0.12f + walkBlend * 0.12f + crouchBlend * 0.26f;
-  const float kneeBend = -0.13f - alert * 0.08f - boost * 0.10f - walkBlend * 0.16f - crouchBlend * 0.38f;
+  // +X rotation moves a downward segment toward -Z. The model faces +Z,
+  // so elbows must flex negative (forward) and knees positive (heel back).
+  const float elbowBend = -0.10f - alert * 0.08f - boost * 0.12f - walkBlend * 0.12f - crouchBlend * 0.26f;
+  const float kneeBend = 0.13f + alert * 0.08f + boost * 0.10f + walkBlend * 0.16f + crouchBlend * 0.38f;
   target[36] = active * elbowBend;
   target[39] = active * elbowBend;
   target[42] = active * kneeBend;
@@ -153,10 +155,10 @@ static void compute_target(int mode, float t, float pointerX, float pointerY, in
     target[18] -= swing * 0.24f * walkBlend;
     target[21] += swing * 0.32f * walkBlend;
     target[24] -= swing * 0.32f * walkBlend;
-    target[36] += (0.16f + 0.08f * swing) * walkBlend;
-    target[39] += (0.16f - 0.08f * swing) * walkBlend;
-    target[42] -= (0.12f + 0.18f * (0.5f + 0.5f * swing)) * walkBlend;
-    target[45] -= (0.12f + 0.18f * (0.5f - 0.5f * swing)) * walkBlend;
+    target[36] -= (0.16f + 0.08f * swing) * walkBlend;
+    target[39] -= (0.16f - 0.08f * swing) * walkBlend;
+    target[42] += (0.12f + 0.18f * (0.5f + 0.5f * swing)) * walkBlend;
+    target[45] += (0.12f + 0.18f * (0.5f - 0.5f * swing)) * walkBlend;
     target[4] += swing * 0.055f * walkBlend;
     target[7] += swing * 0.035f * walkBlend;
   }
@@ -216,9 +218,9 @@ __attribute__((export_name("apply_impulse"))) void apply_impulse(float amount) {
   velocity[18] -= a * 0.35f;
   velocity[21] += a * 0.25f;
   velocity[24] -= a * 0.25f;
-  velocity[36] += a * 0.25f;
+  velocity[36] -= a * 0.25f;
   velocity[39] -= a * 0.25f;
-  velocity[42] -= a * 0.3f;
+  velocity[42] += a * 0.3f;
   velocity[45] += a * 0.3f;
 }
 

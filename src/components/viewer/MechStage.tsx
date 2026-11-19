@@ -601,7 +601,7 @@ function Mech({
         const jointGroup = jointRefs.current[joint.id];
         if (!jointGroup) continue;
         const base = PART_INDEX[joint.id] * 3;
-        const rx = cppPose ? cppPose[base] : joint.id.startsWith("forearm") ? 0.1 : -0.13;
+        const rx = cppPose ? cppPose[base] : joint.id.startsWith("forearm") ? -0.1 : 0.13;
         const ry = cppPose ? cppPose[base + 1] : 0;
         const rz = cppPose ? cppPose[base + 2] : 0;
         if (core) {
